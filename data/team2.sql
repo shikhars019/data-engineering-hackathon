@@ -1,0 +1,11096 @@
+-- ---------------------------------------------------------------------------
+-- Challenge 1 dataset for TEAM 2 - "The Date Disaster"
+--
+-- Loaded automatically into the raw schema when your database first starts.
+--
+-- Every person in here is invented. All National Insurance numbers begin
+-- QQ, a prefix that is never issued in real life. No real government data is used.
+-- ---------------------------------------------------------------------------
+
+COPY raw.claimant (record_id, nino, title, first_name, last_name, date_of_birth, sex, marital_status, date_of_death, email, phone, source_system, ingested_at) FROM stdin;
+REC0000001	QQ199245C	Mr	Douglas	  BAILEY	23/08/1948	M	Married	N/A	douglas.bailey245@example.invalid	-	LEGACY_CSV	2025-09-16 00:00:00
+REC0000002	QQ267483D	Mrs	  SUSAN	Smith	12-Jul-1948	F	Widowed	N/A	susan.smith483@example.invalid	07214 505324	DIGITAL	2025-11-19 00:00:00
+REC0000003	QQ543160C	Mr	SIDNEY	Jones	06/05/1955	M	Married	\N	sidney.jones160@example.invalid	07358 584487	LEGACY_CSV	2025-10-31 00:00:00
+REC0000004	QQ430791B	Ms	  Wendy	Wilson	26/06/1959	F	Single	N/A	wendy.wilson791@example.invalid		LEGACY_CSV	2025-06-02 00:00:00
+REC0000005	QQ499467D	Mr	Michael	DAVIS	26/08/1934	M	Married	14/02/2025	michael.davis467@example.invalid	NULL	LEGACY_CSV	2026-03-15 00:00:00
+REC0000006	QQ680878A	Miss	Dorothy  	smith	07/07/1952	F	Widowed	07/03/2024		07177 278128	LEGACY_CSV	2025-09-07 00:00:00
+REC0000007	QQ270018B	Mrs	DIANE  	ROBERTS	1955-08-31	F	Married	\N	diane.roberts18@example.invalid	07184 680924	CIS	2025-06-08 00:00:00
+REC0000008	QQ867182D	Mr	Neville	Mitchell	26-Mar-1950	M	Widowed		neville.mitchell182@example.invalid	07518 166191	DIGITAL	2025-07-16 00:00:00
+REC0000009	QQ280013B	Mr	ROY  	Gray  	1957-08-02	M	Married	\N	UNKNOWN	07913 197766	CIS	2025-09-24 00:00:00
+REC0000010	QQ207182A	Mrs	Doreen  	ward	  	F	Married		doreen.ward182@example.invalid	07812 597895	CIS	2025-09-23 00:00:00
+REC0000011	QQ380793A	Mrs	Hazel	JAMES  	15-Oct-1955	F	Divorced	N/A	hazel.james793@example.invalid	07183 422975	DIGITAL	2026-03-17 00:00:00
+REC0000012	QQ257892A	Mr	Derek	Young	1952-01-27	M	Widowed	N/A	derek.young892@example.invalid	07205 318630	CIS	2025-08-29 00:00:00
+REC0000013	QQ737015B	Mr	Norman	  Watson	26/04/1942	M	Single	\N	norman.watson15@example.invalid	07616 614024	LEGACY_CSV	2025-08-06 00:00:00
+REC0000014	QQ175473D	Mrs	Pauline	KING	1954-11-04	F	Divorced	\N	pauline.king473@example.invalid	07350 909095	CIS	2025-10-12 00:00:00
+REC0000015	QQ111107D	Mr	Graham	Carter	1937-03-10	M	Married	N/A	graham.carter107@example.invalid	07236 091678	CIS	2025-11-29 00:00:00
+REC0000016	QQ191452C	Mrs	 Patricia 	RICHARDSON  	1955-04-23	F	Married		patricia.richardson452@example.invalid	07259 735916	CIS	2025-11-06 00:00:00
+REC0000017	QQ190120B	Mr	Barry	  james	15-Apr-1946	M	Married		barry.james120@example.invalid	07263 513272	DIGITAL	2026-03-22 00:00:00
+REC0000018	QQ717463D	Miss	Valerie  	shaw	20-Dec-1955	F	Widowed		valerie.shaw463@example.invalid	07609 707190	DIGITAL	2025-09-29 00:00:00
+REC0000019	QQ283028D	Miss	maureen	Evans	1944-12-15	F	Married		maureen.evans28@example.invalid	07556 891794	CIS	2025-08-08 00:00:00
+REC0000020	QQ326598D	Mr	Leonard	Phillips	30-Dec-1958	M	Married	N/A	leonard.phillips598@example.invalid	UNKNOWN	DIGITAL	2026-02-25 00:00:00
+REC0000021	QQ243083A	Mr	  CYRIL	  Shaw	08/06/1959	M	Single	23/05/1947	cyril.shaw83@example.invalid	\N	LEGACY_CSV	2025-07-10 00:00:00
+REC0000022	QQ620869B	Mrs	SHEILA	Harris	1952-11-22	F	n/a	N/A	sheila.harris869@example.invalid	07220 053227	CIS	2025-07-31 00:00:00
+REC0000023	QQ324476C	Ms	Susan	  Johnson	1944-07-16	F	n/a	N/A	susan.johnson476@example.invalid	07239 660808	CIS	2026-02-22 00:00:00
+REC0000024	QQ169859B	Mrs	 Rosemary 	YOUNG	14-Oct-1938	F	Married		rosemary.young859@example.invalid	07499 067701	DIGITAL	2025-07-22 00:00:00
+REC0000025	QQ314116C	Mr	  DAVID	Phillips	06/09/1954	M	Married	\N	david.phillips116@example.invalid	07712 414042	LEGACY_CSV	2025-11-02 00:00:00
+REC0000026	QQ559715D	Miss	ELIZABETH	YOUNG	20/02/1952	F	Divorced		elizabeth.young715@example.invalid	07250 222396	LEGACY_CSV	2025-12-22 00:00:00
+REC0000027	QQ395424D	Miss	Doreen	Clarke	1935-04-23	F	Married	2026-01-11	doreen.clarke424@example.invalid	07712 251939	CIS	2025-11-21 00:00:00
+REC0000028	QQ355057C	Ms	Sylvia	scott	27/08/1952	F	Married	16/02/1939	n/a	07625 868120	LEGACY_CSV	2025-09-12 00:00:00
+REC0000029	QQ161029D	Mr	JOHN  	Wilson	1944-12-10	M	Widowed	N/A	john.wilson29@example.invalid	07776 531382	CIS	2026-01-15 00:00:00
+REC0000030	QQ643839C	Mr	Alan	Thompson	04/02/1953	M	Widowed	\N	alan.thompson839@example.invalid	07551 450535	LEGACY_CSV	2026-03-08 00:00:00
+REC0000031	QQ657701C	Miss	  Gillian	 King 	1950-10-26	F	Married		gillian.king701@example.invalid	07665 462529	CIS	2025-10-18 00:00:00
+REC0000032	QQ139064B	Mrs	BARBARA  	WOOD	11/03/1958	F	Married		barbara.wood64@example.invalid	07604 053441	LEGACY_CSV	2025-07-20 00:00:00
+REC0000033	QQ558194A	Ms	IRENE	Murphy  	07/08/1947	F	Married		irene.murphy194@example.invalid	07924 212145	LEGACY_CSV	2025-10-07 00:00:00
+REC0000034	QQ159669B	Ms	Norma	  hall	1957-01-08	F	Single	N/A	norma.hall669@example.invalid	07665 896130	CIS	2026-02-03 00:00:00
+REC0000035	QQ503009A	Mr	Maurice	MOORE	12/06/2031	M	Married		maurice.moore9@example.invalid	07388 279520	LEGACY_CSV	2025-11-04 00:00:00
+REC0000036	QQ456588D	Miss	Barbara	Allen  	1959-06-28	F	Divorced		UNKNOWN	07917 631118	CIS	2026-03-24 00:00:00
+REC0000037	QQ207316A	Mr	Wilfred	JACKSON	1957-01-16	M	Married		wilfred.jackson316@example.invalid	07494 423035	CIS	2026-01-14 00:00:00
+REC0000038	QQ695045A	Mr	Bernard  	King	9999-12-31	M	n/a	N/A	bernard.king45@example.invalid	07640 028581	CIS	2025-12-07 00:00:00
+REC0000039	QQ300612B	Mr	Barry  	Richardson	27/05/1958	M	Single		barry.richardson612@example.invalid	07175 328909	LEGACY_CSV	2026-01-14 00:00:00
+REC0000040	QQ135260B	Mrs	  Jean	HALL  	11-Mar-1955	F	Widowed	\N	jean.hall260@example.invalid	07131 389744	DIGITAL	2025-07-07 00:00:00
+REC0000041	QQ137157D	Mr	  Maurice	shaw	16-Jul-1953	M	NULL	\N	maurice.shaw157@example.invalid	07133 669810	DIGITAL	2025-11-23 00:00:00
+REC0000042	QQ172349D	Mr	  Michael	Young	1945-10-20	M	Widowed		michael.young349@example.invalid	07447 257528	CIS	2026-01-03 00:00:00
+REC0000043	QQ747210C	Mrs	Muriel	White	1959-03-13	F	Married	\N	muriel.white210@example.invalid	07830 523135	CIS	2025-07-18 00:00:00
+REC0000044	QQ701769C	Mr	SIDNEY	Davies  	1954-11-17	M		\N	sidney.davies769@example.invalid	07880 715310	CIS	2025-10-18 00:00:00
+REC0000045	QQ892066C	Ms	 susan 	Hill	25-Mar-1948	F	Married	\N	UNKNOWN	07139 446925	DIGITAL	2025-08-01 00:00:00
+REC0000046	QQ348699C	Mrs	Doreen	Williams	09/09/1939	F	Married	16/10/2025	doreen.williams699@example.invalid	07451 041072	LEGACY_CSV	2026-01-31 00:00:00
+REC0000047	QQ341233A	Mr	Trevor	Rogers	05/03/1957	M	Widowed	N/A	trevor.rogers233@example.invalid	07677 737458	LEGACY_CSV	2025-06-19 00:00:00
+REC0000048	QQ320611A	Mrs	joan  	PARKER  	2031-06-12	F	Married	2025-12-14	joan.parker611@example.invalid	07502 855525	CIS	2025-11-04 00:00:00
+REC0000049	QQ641834B	Mrs	Valerie	Harrison	25/04/1954	F	Single	17/09/2029	valerie.harrison834@example.invalid	07606 871251	LEGACY_CSV	2025-08-29 00:00:00
+REC0000050	QQ343775C	Ms	  DOREEN	Ward	1941-06-25	F	Widowed		doreen.ward775@example.invalid	07586 870331	CIS	2025-07-05 00:00:00
+REC0000051	QQ700684D	Mr	ALAN  	Ward	05/07/1945	M	Widowed		alan.ward684@example.invalid	07299 714007	LEGACY_CSV	2025-08-01 00:00:00
+REC0000052	QQ394252B	Mr	Derek	Griffiths	22-Oct-1954	M	Widowed	\N	derek.griffiths252@example.invalid	07189 075717	DIGITAL	2025-07-27 00:00:00
+REC0000053	QQ294971D	Mr	gordon  	  Rogers	05/05/1940	M	Married	N/A	UNKNOWN	07468 751598	LEGACY_CSV	2025-10-26 00:00:00
+REC0000054	QQ174420B	Miss	Edna	wilson	1939-10-22	F	Widowed	\N	edna.wilson420@example.invalid	-	CIS	2026-02-02 00:00:00
+REC0000055	QQ578355A	Mr	  BARRY	Ward	26-Aug-1953	M	Single	\N	barry.ward355@example.invalid	07274 700113	DIGITAL	2026-02-24 00:00:00
+REC0000056	QQ693340B	Mr	 Keith 	Williams	1953-12-29	M	Divorced		NULL	07346 709826	CIS	2025-07-23 00:00:00
+REC0000057	QQ219398A	Mr	ARTHUR	 Johnson 	1952-10-15	M	Married	\N	arthur.johnson398@example.invalid	NULL	CIS	2026-02-13 00:00:00
+REC0000058	QQ256200C	Mr	Harold  	James	1958-07-30	M	UNKNOWN	\N	harold.james200@example.invalid	07984 846523	CIS	2025-07-18 00:00:00
+REC0000059	QQ882199B	Miss	LINDA	Allen	22-Oct-1947	F	Married	\N	linda.allen199@example.invalid	UNKNOWN	DIGITAL	2026-02-18 00:00:00
+REC0000060	QQ126065C	Mrs	Vera	  Bailey	1941-11-17	F	Married	\N	vera.bailey65@example.invalid	07349 970536	CIS	2025-07-21 00:00:00
+REC0000061	QQ288722C	Mr	 Neville 	MOORE	1956-12-05	M	Single		neville.moore722@example.invalid	07960 330613	CIS	2025-07-08 00:00:00
+REC0000062	QQ550865A	Miss	Elizabeth	  Young	  	F	Widowed	\N	elizabeth.young865@example.invalid	07120 531166	DIGITAL	2025-10-04 00:00:00
+REC0000063	QQ855354A	Mrs	WENDY	Hill	1954-04-29	F	Single	2024-02-16	wendy.hill354@example.invalid	07830 152091	CIS	2026-02-13 00:00:00
+REC0000064	QQ526899A	Mrs	Kathleen	Turner	1934-10-31	F	Single		kathleen.turner899@example.invalid	07563 209876	CIS	2025-08-21 00:00:00
+REC0000065	QQ567045C	Ms	 Eileen 	Morgan	12/06/2031	F	Widowed	\N	\N	07179 628699	LEGACY_CSV	2026-03-03 00:00:00
+REC0000066	QQ452620D	Mrs	  Irene	  Davies	20/02/1941	F	-		irene.davies620@example.invalid	07407 106836	LEGACY_CSV	2025-06-11 00:00:00
+REC0000067	QQ247458D	Mr	REGINALD	Roberts	01/01/1900	M	Widowed		reginald.roberts458@example.invalid	07735 401386	LEGACY_CSV	2026-02-04 00:00:00
+REC0000068	QQ844873C	Miss	  Rosemary	Wood	17-Aug-1934	F	Single		rosemary.wood873@example.invalid	n/a	DIGITAL	2026-01-29 00:00:00
+REC0000069	QQ139879D	Mrs	NORMA	RICHARDSON	05-Feb-1953	F	Married	N/A	norma.richardson879@example.invalid	07596 662898	DIGITAL	2025-10-23 00:00:00
+REC0000070	QQ877304C	Miss	Vera	Clark  	1947-12-07	F	Married	N/A	vera.clark304@example.invalid	07879 959170	CIS	2025-11-02 00:00:00
+REC0000071	QQ843608A	Ms	  diane	Cook	31-May-1945	F	Married		diane.cook608@example.invalid	N/A	DIGITAL	2025-12-19 00:00:00
+REC0000072	QQ456738D	Mr	  GORDON	Bailey  	1943-06-14	M	-	N/A	gordon.bailey738@example.invalid	07352 782993	CIS	2026-03-11 00:00:00
+REC0000073	QQ340553A	Mr	Alan  	Richardson	23/03/1955	M	Married	\N	alan.richardson553@example.invalid	07465 212526	LEGACY_CSV	2026-03-22 00:00:00
+REC0000074	QQ885187D	Mrs	edna	Thompson	01-Feb-1947	F	Divorced	N/A	\N	07167 209646	DIGITAL	2025-09-23 00:00:00
+REC0000075	QQ247455D	Miss	Sandra  	BELL  	1949-10-10	F	Married	\N	sandra.bell455@example.invalid	07852 974043	CIS	2026-02-06 00:00:00
+REC0000076	QQ634912D	Mrs	Elizabeth	bennett  	14/06/1941	F		N/A	elizabeth.bennett912@example.invalid	07298 723554	LEGACY_CSV	2025-09-07 00:00:00
+REC0000077	QQ529791A	Mr	BARRY	Roberts	1950-07-01	M	Single	N/A	barry.roberts791@example.invalid	07901 757262	CIS	2025-06-06 00:00:00
+REC0000078	QQ607795A	Mr	Gordon	  Morgan	19-Oct-1953	M	Single	N/A	gordon.morgan795@example.invalid	07823 535528	DIGITAL	2026-01-11 00:00:00
+REC0000079	QQ592806D	Mr	David	evans	9999-12-31	M	Widowed	\N	david.evans806@example.invalid	07380 636934	CIS	2025-08-15 00:00:00
+REC0000080	QQ692073D	Mrs	Marion	WHITE  	1945-06-15	F	Married		marion.white73@example.invalid	UNKNOWN	CIS	2026-03-21 00:00:00
+REC0000081	QQ743931A	Miss	Rosemary	  James	1952-10-20	F	Married	\N	N/A	07556 474173	CIS	2026-03-14 00:00:00
+REC0000082	QQ788446C	Mr	RAYMOND  	MITCHELL  	22-Jun-1947	M	Divorced		raymond.mitchell446@example.invalid	07834 149313	DIGITAL	2025-07-13 00:00:00
+REC0000083	QQ789036C	Ms	Sylvia	Smith	1954-03-26	F	Divorced	2024-12-18		07763 957473	CIS	2025-06-29 00:00:00
+REC0000084	QQ771635B	Mr	HAROLD	Morgan	09-May-1951	M	N/A	\N	harold.morgan635@example.invalid	07211 966386	DIGITAL	2025-11-22 00:00:00
+REC0000085	QQ884008C	Ms	LINDA	Johnson	04/09/1945	F	Widowed		linda.johnson8@example.invalid	07131 578781	LEGACY_CSV	2026-03-27 00:00:00
+REC0000086	QQ202314A	Mrs	Diane  	Jones	15/12/1947	F	Married	\N	diane.jones314@example.invalid	07122 629762	LEGACY_CSV	2025-08-04 00:00:00
+REC0000087	QQ108638A	Miss	  MARION	Phillips	1955-10-12	F	Widowed	\N	UNKNOWN	07161 946683	CIS	2025-11-22 00:00:00
+REC0000088	QQ661341B	Miss	  Doreen	Rogers	12-Dec-1941	F	Married	N/A	doreen.rogers341@example.invalid	07336 028627	DIGITAL	2026-03-15 00:00:00
+REC0000089	QQ797791A	Mrs	  Beryl	James  	01/06/1952	F	Married	N/A	beryl.james791@example.invalid	n/a	LEGACY_CSV	2025-08-11 00:00:00
+REC0000090	QQ105355D	Mr	douglas	  Cook	UNKNOWN	M	Single		douglas.cook355@example.invalid	UNKNOWN	CIS	2026-03-22 00:00:00
+REC0000091	QQ667593C	Miss	Rosemary	Moore	30-Aug-1952	F	Divorced	N/A	rosemary.moore593@example.invalid	07467 550830	DIGITAL	2025-10-12 00:00:00
+REC0000092	QQ763287A	Mr	  Bernard	  Bell	24-Mar-1943	M	Married	\N	bernard.bell287@example.invalid	07961 861094	DIGITAL	2025-07-06 00:00:00
+REC0000093	QQ847381B	Mr	  Derek	 lee 	08-Dec-1953	M	Widowed		derek.lee381@example.invalid	07304 288151	DIGITAL	2025-08-05 00:00:00
+REC0000094	QQ185353D	Ms	  brenda	Jones  	1957-03-05	F	Widowed	\N	NULL	07996 701368	CIS	2025-09-25 00:00:00
+REC0000095	QQ888528D	Mr	 Alan 	Bell	17-Mar-1958	M	Married		alan.bell528@example.invalid	07925 074463	DIGITAL	2025-10-13 00:00:00
+REC0000096	QQ570386B	Miss	Sheila	Clarke	18/10/1956	F	Widowed	N/A	sheila.clarke386@example.invalid	07710 686639	LEGACY_CSV	2025-07-11 00:00:00
+REC0000097	QQ146106B	Mrs	SUSAN	ROGERS	1954-06-27	F	Married	N/A	susan.rogers106@example.invalid	07827 225786	CIS	2025-08-10 00:00:00
+REC0000098	QQ529144B	Miss	 Edna 	TURNER	25-May-1947	F	Widowed		edna.turner144@example.invalid	07422 508175	DIGITAL	2025-09-24 00:00:00
+REC0000099	QQ692174A	Mr	Roy	Wright  	1957-08-12	M	Married		roy.wright174@example.invalid	07158 503835	CIS	2025-08-20 00:00:00
+REC0000100	QQ674320D	Mr	cyril  	Morris	1959-10-18	M			cyril.morris320@example.invalid	07237 371073	CIS	2026-03-14 00:00:00
+REC0000101	QQ625048B	Miss	Jean	CARTER  	28/02/1958	F	Married	\N	jean.carter48@example.invalid	07137 506241	LEGACY_CSV	2025-11-19 00:00:00
+REC0000102	QQ223344C	Ms	SUSAN	MORGAN  	1955-11-23	F	Divorced	\N	susan.morgan344@example.invalid	07235 894525	CIS	2026-01-08 00:00:00
+REC0000103	QQ561210A	Mrs	Jean  	Chapman	10-Jul-1953	F	Single		jean.chapman210@example.invalid	07741 850660	DIGITAL	2025-08-11 00:00:00
+REC0000104	QQ398517C	Mr	raymond	 Harris 	25-Sep-1954	M	Single	\N	raymond.harris517@example.invalid	07757 019991	DIGITAL	2026-02-28 00:00:00
+REC0000105	QQ117999B	Ms	marion  	Walker	13/01/1938	F	Widowed		marion.walker999@example.invalid	07903 530327	LEGACY_CSV	2025-12-15 00:00:00
+REC0000106	QQ651852D	Mr	Clive	  Gray	11/02/1949	M	Civil Partnership	\N	UNKNOWN	07867 426881	LEGACY_CSV	2025-08-27 00:00:00
+REC0000107	QQ721674B	Miss	BRENDA	Price  	1941-01-01	F	Widowed	N/A	brenda.price674@example.invalid	07135 668146	CIS	2025-10-06 00:00:00
+REC0000108	QQ140631B	Mr	  Harold	Price	21/04/1947	M	Widowed		harold.price631@example.invalid	07862 409183	LEGACY_CSV	2026-03-21 00:00:00
+REC0000109	QQ636158D	Mr	  Malcolm	JOHNSON		M	Widowed		malcolm.johnson158@example.invalid	07692 924260	LEGACY_CSV	2025-10-07 00:00:00
+REC0000110	QQ513752D	Miss	NORMA	GRIFFITHS	17-May-1944	F	Divorced	N/A	norma.griffiths752@example.invalid	07917 775427	DIGITAL	2025-12-10 00:00:00
+REC0000111	QQ233449B	Ms	 CHRISTINE 	  Wood	1942-03-12	F	NULL	N/A		07219 189833	CIS	2025-08-12 00:00:00
+REC0000112	QQ371296B	Miss	irene	WATSON	31-Dec-9999	F	Divorced		irene.watson296@example.invalid	07833 968024	DIGITAL	2025-11-10 00:00:00
+REC0000113	QQ195096A	Mr	Alan	  ROBERTS	1949-03-08	M	Married	N/A	alan.roberts96@example.invalid	07809 908206	CIS	2026-01-11 00:00:00
+REC0000114	QQ632437D	Mr	Ronald  	Clark	08-Jan-1958	M	n/a		ronald.clark437@example.invalid	07479 032550	DIGITAL	2026-03-16 00:00:00
+REC0000115	QQ408855B	Mr	malcolm	wood	07-Apr-1957	M	Married	06-Sep-2025	malcolm.wood855@example.invalid	07338 515452	DIGITAL	2025-11-25 00:00:00
+REC0000116	QQ707668B	Ms	sylvia  	WALKER	1958-05-14	F	Married		sylvia.walker668@example.invalid	07397 233446	CIS	2025-06-03 00:00:00
+REC0000117	QQ452373A	Ms	Dorothy	Chapman  	1938-03-23	F	Married		dorothy.chapman373@example.invalid	07117 288530	CIS	2025-09-05 00:00:00
+REC0000118	QQ802984C	Mr	DEREK	Brown	11/03/1952	M	Divorced		derek.brown984@example.invalid	n/a	LEGACY_CSV	2025-10-05 00:00:00
+REC0000119	QQ191688B	Mrs	JEAN  	Bell	12-Jun-2031	F	Widowed		jean.bell688@example.invalid	n/a	DIGITAL	2025-08-29 00:00:00
+REC0000120	QQ342480B	Mr	  neville	MORGAN	1952-02-17	M	Married	N/A	neville.morgan480@example.invalid	07655 970634	CIS	2026-01-07 00:00:00
+REC0000121	QQ161657D	Ms	Irene  	bell	9999-12-31	F	Widowed		irene.bell657@example.invalid	07800 714713	CIS	2025-06-10 00:00:00
+REC0000122	QQ479748C	Miss	Eileen  	Richardson  	1950-02-02	F	Married	2025-03-31	eileen.richardson748@example.invalid	07380 625408	CIS	2025-12-14 00:00:00
+REC0000123	QQ645158C	Mr	Douglas	Chapman	01/01/1900	M	Married	\N	douglas.chapman158@example.invalid	07464 773256	LEGACY_CSV	2025-07-22 00:00:00
+REC0000124	QQ534651D	Ms	MARGARET  	Griffiths	1959-09-05	F	Married	\N	margaret.griffiths651@example.invalid	07453 572574	CIS	2026-01-11 00:00:00
+REC0000125	QQ718182C	Mr	Maurice	Clark	20-Sep-1947	M	Single	\N	maurice.clark182@example.invalid	07648 366459	DIGITAL	2026-02-07 00:00:00
+REC0000126	QQ852686B	Mr	Frank	Morris	1947-03-09	M	Married		frank.morris686@example.invalid	07117 693726	CIS	2026-03-14 00:00:00
+REC0000127	QQ299023D	Ms	DIANE	rogers	05-Sep-1935	F	Single	\N	diane.rogers23@example.invalid	07698 823112	DIGITAL	2026-01-09 00:00:00
+REC0000128	QQ639285C	Mr	Brian	Carter	13-Jul-1953	M	Widowed	04-Oct-2025	brian.carter285@example.invalid	07935 389579	DIGITAL	2025-10-17 00:00:00
+REC0000129	QQ404655A	Mr	BERNARD	  Bell	1900-01-01	M	Widowed	N/A	bernard.bell655@example.invalid	07772 066943	CIS	2025-09-07 00:00:00
+REC0000130	QQ664783B	Mrs	Carol	King  	1957-09-08	F	Widowed	N/A	carol.king783@example.invalid	07852 449304	CIS	2025-07-07 00:00:00
+REC0000131	QQ514028B	Miss	jean  	  Turner	1951-05-17	F	Single	N/A	jean.turner28@example.invalid	07353 159736	CIS	2025-10-31 00:00:00
+REC0000132	QQ513686C	Ms	beryl	CHAPMAN	1944-04-12	F	Single		beryl.chapman686@example.invalid	07703 416283	CIS	2026-02-20 00:00:00
+REC0000133	QQ775592B	Ms	janet	Gray	1942-12-17	F	Widowed	N/A	janet.gray592@example.invalid	07228 511547	CIS	2026-03-12 00:00:00
+REC0000134	QQ588057A	Ms	Beryl  	Jackson	1955-07-16	F	Single		beryl.jackson57@example.invalid	07420 723438	CIS	2025-12-31 00:00:00
+REC0000135	QQ630799C	Mrs	Sheila	Watson	25/01/1957	F	Civil Partnership	N/A	sheila.watson799@example.invalid	07188 017473	LEGACY_CSV	2025-06-09 00:00:00
+REC0000136	QQ414531B	Mr	Ronald	Richardson	19/01/1951	M	Single	N/A	ronald.richardson531@example.invalid	07100 745160	LEGACY_CSV	2025-07-03 00:00:00
+REC0000137	QQ650935B	Mrs	Patricia	James	01/02/1952	F	Divorced		patricia.james935@example.invalid	07859 749087	LEGACY_CSV	2025-09-10 00:00:00
+REC0000138	QQ558624B	Mr	  MAURICE	  ROGERS	05-Sep-1945	M	Widowed	N/A	maurice.rogers624@example.invalid	07135 515910	DIGITAL	2025-06-20 00:00:00
+REC0000139	QQ722748D	Ms	 Christine 	Brown	28/01/1948	F	Married		-	n/a	LEGACY_CSV	2025-07-25 00:00:00
+REC0000140	QQ582409C	Miss	Audrey	ROGERS	1956-09-16	F	Married		audrey.rogers409@example.invalid	07130 306623	CIS	2025-06-30 00:00:00
+REC0000141	QQ127214A	Mr	REGINALD	Moore	1900-01-01	M	Widowed	N/A	reginald.moore214@example.invalid	07493 424646	CIS	2026-01-08 00:00:00
+REC0000142	QQ531006C	Mr	Malcolm	  clarke	1958-03-06	M	-	\N	malcolm.clarke6@example.invalid	07198 981345	CIS	2025-08-28 00:00:00
+REC0000143	QQ844608A	Mrs	LINDA	  James	1954-08-27	F	Married		linda.james608@example.invalid	07160 600365	CIS	2025-07-10 00:00:00
+REC0000144	QQ646841A	Mrs	Diane	Davis	1946-10-28	F	Widowed	N/A	diane.davis841@example.invalid	07547 166177	CIS	2025-07-30 00:00:00
+REC0000145	QQ376041C	Mr	WILFRED	Moore	1938-12-22	M	Married	N/A	wilfred.moore41@example.invalid	07535 968969	CIS	2025-08-13 00:00:00
+REC0000146	QQ786892B	Ms	Joan	Watson  	1946-10-31	F	Widowed		joan.watson892@example.invalid	07218 717566	CIS	2025-09-07 00:00:00
+REC0000147	QQ333105B	Mr	Maurice	COOPER	03-Aug-1952	M	Married	\N	maurice.cooper105@example.invalid	07308 343065	DIGITAL	2026-02-23 00:00:00
+REC0000148	QQ516039D	Mr	leonard	Murphy	1945-03-13	M	Widowed		leonard.murphy39@example.invalid	07979 411767	CIS	2026-02-10 00:00:00
+REC0000149	QQ828929D	Mr	cyril	Robinson	21-May-1958	M	Married	N/A	cyril.robinson929@example.invalid	07399 448239	DIGITAL	2025-09-30 00:00:00
+REC0000150	QQ846742C	Mr	Gordon	  HARRISON	1959-06-06	M	Married		gordon.harrison742@example.invalid	07576 357657	CIS	2025-11-01 00:00:00
+REC0000151	QQ151122C	Mr	  LEONARD	Jackson	15-Aug-1954	M	Widowed	N/A	leonard.jackson122@example.invalid	07288 100248	DIGITAL	2025-09-10 00:00:00
+REC0000152	QQ799265A	Ms	Muriel	  Jones	1937-05-11	F	Widowed		muriel.jones265@example.invalid	07815 216104	CIS	2025-07-03 00:00:00
+REC0000153	QQ271083B	Miss	  christine	 Shaw 	1951-07-01	F	Widowed		christine.shaw83@example.invalid		CIS	2025-09-03 00:00:00
+REC0000154	QQ834528B	Mr	NORMAN	KELLY	09/06/1944	M	Single	05/08/2023	norman.kelly528@example.invalid	07440 139136	LEGACY_CSV	2025-08-17 00:00:00
+REC0000155	QQ756438B	Mr	Wilfred	WRIGHT  	1953-09-06	M	Married	\N	wilfred.wright438@example.invalid	07828 460939	CIS	2026-02-16 00:00:00
+REC0000156	QQ650307B	Ms	PAULINE  	 Bennett 	1950-07-12	F	Single		pauline.bennett307@example.invalid	07708 355962	CIS	2025-10-16 00:00:00
+REC0000157	QQ743017D	Mrs	Joan  	White	1958-07-30	F	Married		joan.white17@example.invalid	07988 984481	CIS	2025-11-26 00:00:00
+REC0000158	QQ497866C	Mr	Keith	Young  	12/06/2031	M	Single	\N	keith.young866@example.invalid	07606 083252	LEGACY_CSV	2025-11-13 00:00:00
+REC0000159	QQ165814A	Ms	Diane  	Cook	N/A	F	Single	N/A	diane.cook814@example.invalid	07765 630062	CIS	2026-01-19 00:00:00
+REC0000160	QQ764386C	Mrs	  Linda	Scott	31/10/1945	F	Widowed	N/A	linda.scott386@example.invalid	07395 273410	LEGACY_CSV	2025-10-04 00:00:00
+REC0000161	QQ632974D	Mr	 DEREK 	  Richardson	08/01/1954	M	Single	N/A	derek.richardson974@example.invalid		LEGACY_CSV	2026-01-31 00:00:00
+REC0000162	QQ213494C	Mr	  GORDON	bell	1958-09-05	M	Married		gordon.bell494@example.invalid	07754 230270	CIS	2026-02-02 00:00:00
+REC0000163	QQ733732C	Mr	maurice	Wood	20/02/1956	M	Widowed	N/A	maurice.wood732@example.invalid	07865 423256	LEGACY_CSV	2026-01-29 00:00:00
+REC0000164	QQ129972A	Mr	 Michael 	Bailey  	1951-03-07	M	Widowed	\N	michael.bailey972@example.invalid	07120 829597	CIS	2025-10-26 00:00:00
+REC0000165	QQ183482B	Miss	  Eileen	  james	11-Oct-1952	F	Civil Partnership		eileen.james482@example.invalid	07529 224303	DIGITAL	2026-01-08 00:00:00
+REC0000166	QQ484456A	Mrs	SANDRA	  turner	28-May-1946	F	Married	09-Aug-2025	sandra.turner456@example.invalid	07965 833107	DIGITAL	2025-11-16 00:00:00
+REC0000167	QQ541493D	Mr	  trevor	  LEE	23/06/1956	M	Married		trevor.lee493@example.invalid	07180 525596	LEGACY_CSV	2026-03-01 00:00:00
+REC0000168	QQ288800C	Mr	malcolm  	White	1936-05-04	M	Married		malcolm.white800@example.invalid	07880 052660	CIS	2026-02-07 00:00:00
+REC0000169	QQ620923B	Mrs	Janet	Hill	1951-07-07	F	Married	N/A	janet.hill923@example.invalid	07701 007707	CIS	2025-07-14 00:00:00
+REC0000170	QQ653395C	Mr	Norman  	 Hall 	1938-07-29	M	Married		norman.hall395@example.invalid	07498 101363	CIS	2025-12-16 00:00:00
+REC0000171	QQ114958D	Mrs	Brenda	Clarke	28-Feb-1953	F		N/A	brenda.clarke958@example.invalid	07658 463615	DIGITAL	2026-01-31 00:00:00
+REC0000172	QQ217194C	Mr	  PETER	Wilson	1936-07-16	M	Widowed		peter.wilson194@example.invalid	07346 029146	CIS	2025-09-28 00:00:00
+REC0000173	QQ452068C	Ms	Marion	Shaw	15-Feb-1938	F	Married		marion.shaw68@example.invalid	07381 864162	DIGITAL	2025-06-26 00:00:00
+REC0000174	QQ853299B	Mr	frank  	White	07-Jan-1941	M	Widowed		frank.white299@example.invalid	07612 873240	DIGITAL	2025-09-16 00:00:00
+REC0000175	QQ122112D	Mrs	HAZEL	white  	1949-02-22	F	Married		hazel.white112@example.invalid	07210 486670	CIS	2025-09-24 00:00:00
+REC0000176	QQ763896B	Mr	Frank	Davis  	1943-08-06	M	Married	2023-05-28	frank.davis896@example.invalid	07270 200947	CIS	2025-09-20 00:00:00
+REC0000177	QQ187490C	Miss	dorothy	Carter	1935-08-26	F	Married	2025-05-13	dorothy.carter490@example.invalid	07551 699715	CIS	2025-10-03 00:00:00
+REC0000178	QQ738739A	Mr	Neville  	 Roberts 	26-Mar-1958	M	Widowed		neville.roberts739@example.invalid	07204 238442	DIGITAL	2025-09-11 00:00:00
+REC0000179	QQ102304D	Miss	Sylvia	Chapman  	10/10/1948	F	Single	N/A	sylvia.chapman304@example.invalid	07574 504858	LEGACY_CSV	2026-03-03 00:00:00
+REC0000180	QQ318107C	Mr	Peter	DAVIES	1954-09-06	M	Married	\N	peter.davies107@example.invalid	07664 891911	CIS	2025-09-07 00:00:00
+REC0000181	QQ876113B	Mrs	  ROSEMARY	wright	12/06/2031	F	Married	N/A	rosemary.wright113@example.invalid	07897 057875	LEGACY_CSV	2026-01-11 00:00:00
+REC0000182	QQ374494C	Mr	Bernard	  Morris	1952-02-10	M	Married	N/A	NULL	07870 509885	CIS	2026-01-08 00:00:00
+REC0000183	QQ250971A	Ms	  Carol	White	1958-08-30	F	Single	N/A	carol.white971@example.invalid	07833 179412	CIS	2026-01-07 00:00:00
+REC0000184	QQ868732B	Miss	Dorothy  	ROBERTS	1937-03-12	F	Married		-	07887 899612	CIS	2025-12-16 00:00:00
+REC0000185	QQ833806C	Mrs	  beryl	  Collins	1957-11-15	F	Married		beryl.collins806@example.invalid	07383 333089	CIS	2025-08-31 00:00:00
+REC0000186	QQ641189B	Mr	Clive	  Turner	29-Sep-1945	M	Married		clive.turner189@example.invalid	07870 476347	DIGITAL	2025-07-26 00:00:00
+REC0000187	QQ266341A	Mr	trevor	  White	17/01/1942	M	NULL	11/05/1939	trevor.white341@example.invalid	07836 559566	LEGACY_CSV	2025-12-10 00:00:00
+REC0000188	QQ815989C	Mr	Barry	 watson 	1955-07-06	M	Divorced	\N	barry.watson989@example.invalid	07846 494472	CIS	2025-08-03 00:00:00
+REC0000189	QQ367962A	Mr	Colin	  Turner	18-Apr-1956	M	Widowed	\N	colin.turner962@example.invalid	07232 440614	DIGITAL	2025-09-20 00:00:00
+REC0000190	QQ853479D	Miss	 Doreen 	COOPER	05-Apr-1949	F	Married	03-Feb-1943	doreen.cooper479@example.invalid	07526 996085	DIGITAL	2026-01-25 00:00:00
+REC0000191	QQ575474A	Miss	diane	Wright  	1957-02-07	F	Single	N/A	diane.wright474@example.invalid	07274 550074	CIS	2026-01-12 00:00:00
+REC0000192	QQ801010C	Ms	Elizabeth	Richardson  	01/09/1940	F	Married	N/A	elizabeth.richardson10@example.invalid	07431 736323	LEGACY_CSV	2025-06-29 00:00:00
+REC0000193	QQ464239C	Miss	Janet  	  rogers	23/10/1940	F	Married	\N	janet.rogers239@example.invalid	07567 966899	LEGACY_CSV	2025-07-26 00:00:00
+REC0000194	QQ479995D	Mr	Nigel	  Shaw	28/07/1948	M	Widowed	\N	nigel.shaw995@example.invalid	07848 063639	LEGACY_CSV	2025-07-16 00:00:00
+REC0000195	QQ879838B	Mr	Colin  	jones	1958-09-05	M	Married	N/A	colin.jones838@example.invalid	07676 793614	CIS	2026-02-27 00:00:00
+REC0000196	QQ506511C	Miss	Brenda	  Griffiths	1949-11-19	F	Married	\N	brenda.griffiths511@example.invalid	07573 025046	CIS	2026-01-08 00:00:00
+REC0000197	QQ401545A	Mr	Bernard  	Richardson	22-Nov-1934	M	Single	\N	bernard.richardson545@example.invalid		DIGITAL	2025-08-08 00:00:00
+REC0000198	QQ272396A	Mr	Nigel	Wright	08-Jan-1952	M	\N	\N	nigel.wright396@example.invalid	07194 477437	DIGITAL	2026-03-26 00:00:00
+REC0000199	QQ196537D	Mr	Stuart	Baker	07-Jun-1956	M	Single	N/A	stuart.baker537@example.invalid	07244 276624	DIGITAL	2025-12-09 00:00:00
+REC0000200	QQ753258A	Mr	Terence	Price	01-Dec-1958	M	Civil Partnership	23-Mar-2029	terence.price258@example.invalid	07632 356419	DIGITAL	2026-01-20 00:00:00
+REC0000201	QQ859114A	Ms	Sylvia	PRICE	25/08/1937	F	Married	\N	sylvia.price114@example.invalid	-	LEGACY_CSV	2025-06-09 00:00:00
+REC0000202	QQ184685C	Mr	Stuart	Watson	26/02/1946	M	Married	N/A	stuart.watson685@example.invalid	07644 854966	LEGACY_CSV	2026-01-29 00:00:00
+REC0000203	QQ845427C	Mr	BRIAN	Jones	1953-11-08	M	Widowed	N/A	brian.jones427@example.invalid	07253 070384	CIS	2025-08-06 00:00:00
+REC0000204	QQ124918D	Miss	  muriel	  Morgan	18/02/1959	F	Married		muriel.morgan918@example.invalid	07810 417490	LEGACY_CSV	2025-11-13 00:00:00
+REC0000205	QQ838412B	Mrs	Jean	White	12-Dec-1936	F	Married	N/A	jean.white412@example.invalid	07276 268591	DIGITAL	2025-08-03 00:00:00
+REC0000206	QQ272057D	Mrs	Rosemary  	King  	1944-06-28	F	Divorced	\N	rosemary.king57@example.invalid	07369 020874	CIS	2026-03-20 00:00:00
+REC0000207	QQ211161D	Ms	Sylvia	Walker  	05/04/1945	F	Divorced			07136 239707	LEGACY_CSV	2026-01-13 00:00:00
+REC0000208	QQ641179A	Mr	Douglas  	Roberts	03/05/1957	M	UNKNOWN	20/01/2023	douglas.roberts179@example.invalid	07843 269447	LEGACY_CSV	2025-08-30 00:00:00
+REC0000209	QQ274802D	Mr	ROY	Cooper	07-May-1953	M	Married		roy.cooper802@example.invalid	07871 055479	DIGITAL	2025-06-03 00:00:00
+REC0000210	QQ570037B	Ms	  Vera	  Turner	30-May-1945	F	Married		vera.turner37@example.invalid	-	DIGITAL	2025-10-30 00:00:00
+REC0000211	QQ337200B	Ms	  Sylvia	smith	17/03/1944	F	Widowed	\N	sylvia.smith200@example.invalid	07147 639083	LEGACY_CSV	2025-07-20 00:00:00
+REC0000212	QQ428262B	Miss	Jean	CARTER	21-Mar-1941	F	Married	N/A	N/A	07515 613899	DIGITAL	2025-08-30 00:00:00
+REC0000213	QQ889210A	Miss	Doreen	 Price 	30-Nov-1947	F	Widowed		doreen.price210@example.invalid	07537 552211	DIGITAL	2025-11-29 00:00:00
+REC0000214	QQ157202C	Mrs	 Marion 	Shaw  	06/01/1945	F	Married		marion.shaw202@example.invalid	07653 630486	LEGACY_CSV	2025-06-21 00:00:00
+REC0000215	QQ834739A	Mr	  KEITH	BELL	1954-04-27	M	Single	\N	keith.bell739@example.invalid	07985 982821	CIS	2026-01-23 00:00:00
+REC0000216	QQ818043A	Miss	Pauline	Evans	16/10/1940	F	Married	12/06/2024	pauline.evans43@example.invalid	-	LEGACY_CSV	2026-02-11 00:00:00
+REC0000217	QQ443852B	Miss	sandra	  CHAPMAN	19/12/1949	F	Married		sandra.chapman852@example.invalid	07705 060913	LEGACY_CSV	2025-11-07 00:00:00
+REC0000218	QQ836519A	Mr	stuart  	Phillips	1936-12-15	M	Widowed		stuart.phillips519@example.invalid	07270 116645	CIS	2025-08-20 00:00:00
+REC0000219	QQ498476D	Miss	  Susan	Young	1957-06-22	F	Married	N/A	susan.young476@example.invalid	07533 711873	CIS	2025-06-21 00:00:00
+REC0000220	QQ652782B	Ms	Beryl	MORRIS	04-Sep-1945	F	Married	N/A	beryl.morris782@example.invalid	07880 903325	DIGITAL	2025-08-06 00:00:00
+REC0000221	QQ681340D	Mr	TERENCE	Harris	05/03/1954	M	Married	\N	terence.harris340@example.invalid	07394 680145	LEGACY_CSV	2025-06-28 00:00:00
+REC0000222	QQ324807A	Mr	  ARTHUR	Williams	1943-07-04	M	-		arthur.williams807@example.invalid	07539 745182	CIS	2025-07-30 00:00:00
+REC0000223	QQ650091D	Mrs	Pauline  	  White	01-Jan-1900	F	UNKNOWN		pauline.white91@example.invalid	07173 619857	DIGITAL	2025-08-14 00:00:00
+REC0000224	QQ446260D	Mr	roy	Price	25-May-1955	M	Divorced		roy.price260@example.invalid	07106 515685	DIGITAL	2025-07-26 00:00:00
+REC0000225	QQ873057D	Ms	Rosemary	  Cooper	12-Mar-1956	F	Married		rosemary.cooper57@example.invalid	07974 744289	DIGITAL	2025-12-28 00:00:00
+REC0000226	QQ461032B	Mr	Neville	  thompson	1959-03-10	M	Married	2025-08-25	neville.thompson32@example.invalid	07173 655114	CIS	2025-12-09 00:00:00
+REC0000227	QQ497164A	Miss	Eileen	Griffiths	1953-09-29	F	Divorced	2025-04-06	eileen.griffiths164@example.invalid	07567 473809	CIS	2025-10-12 00:00:00
+REC0000228	QQ853157C	Mr	  Ronald	  PRICE	31/05/1943	M	Widowed	\N	ronald.price157@example.invalid	07878 469742	LEGACY_CSV	2025-10-04 00:00:00
+REC0000229	QQ247395D	Mr	Barry	Allen	24-Apr-1949	M	Divorced		N/A	07472 252008	DIGITAL	2025-07-20 00:00:00
+REC0000230	QQ550069C	Miss	BARBARA	Mitchell  	24-Jan-1944	F	Widowed	23-Jun-2024	\N	07790 590682	DIGITAL	2025-08-31 00:00:00
+REC0000231	QQ763244A	Mr	  TREVOR	Wilson	1950-11-20	M	Married	N/A	trevor.wilson244@example.invalid	07236 278129	CIS	2025-10-18 00:00:00
+REC0000232	QQ674147B	Miss	Sandra	Cooper	04-Jan-1945	F	Married	N/A	sandra.cooper147@example.invalid	07832 320887	DIGITAL	2026-03-11 00:00:00
+REC0000233	QQ764529B	Ms	Vera  	Scott	02/02/1945	F	Single		vera.scott529@example.invalid	07759 809720	LEGACY_CSV	2026-02-02 00:00:00
+REC0000234	QQ805529B	Mr	Roy	  JOHNSON	1948-08-13	M	Widowed		roy.johnson529@example.invalid	07617 919373	CIS	2025-11-24 00:00:00
+REC0000235	QQ760812B	Mr	BRIAN	PRICE	1953-08-13	M	Married	\N	brian.price812@example.invalid	07194 831878	CIS	2025-08-23 00:00:00
+REC0000236	QQ107360D	Ms	Christine	Hill  	13/01/1954	F	Divorced	\N	-	07337 818843	LEGACY_CSV	2025-10-30 00:00:00
+REC0000237	QQ452280B	Mr	Neville	  Bennett	1957-11-04	M	Married	\N	neville.bennett280@example.invalid	07613 498609	CIS	2025-09-18 00:00:00
+REC0000238	QQ269422B	Miss	  Dorothy	Gray	07-Feb-1960	F	Civil Partnership	06-Jul-2024	dorothy.gray422@example.invalid	07550 115119	DIGITAL	2026-03-28 00:00:00
+REC0000239	QQ342997D	Ms	barbara  	brown	1957-06-20	F	Widowed	\N	barbara.brown997@example.invalid	07987 806981	CIS	2025-10-15 00:00:00
+REC0000240	QQ435353B	Mr	Cyril  	griffiths	26/08/1957	M	Widowed		cyril.griffiths353@example.invalid	07847 618506	LEGACY_CSV	2025-12-13 00:00:00
+REC0000241	QQ860153D	Mr	Ronald	Kelly	05-May-1958	M	Married		ronald.kelly153@example.invalid	07113 058689	DIGITAL	2025-12-30 00:00:00
+REC0000242	QQ181529C	Mr	 nigel 	Carter	13/09/1957	M	Married	N/A	nigel.carter529@example.invalid	07553 419842	LEGACY_CSV	2026-01-22 00:00:00
+REC0000243	QQ614843A	Mr	frank	Bennett  	06-Jul-1959	M	Widowed	\N	\N	07966 171769	DIGITAL	2025-08-19 00:00:00
+REC0000244	QQ807466B	Ms	DOROTHY  	 wood 	02-Jan-1954	F	Widowed		dorothy.wood466@example.invalid	07877 693036	DIGITAL	2025-10-01 00:00:00
+REC0000245	QQ443111C	Mr	  Gordon	Robinson  	25-May-1944	M	\N	N/A	gordon.robinson111@example.invalid	NULL	DIGITAL	2025-08-11 00:00:00
+REC0000246	QQ457089C	Miss	JEAN  	murphy	21/06/1945	F	N/A		jean.murphy89@example.invalid	NULL	LEGACY_CSV	2025-07-14 00:00:00
+REC0000247	QQ614793B	Miss	Sandra  	CHAPMAN	1944-08-31	F	Married	2029-12-14	sandra.chapman793@example.invalid	07952 048192	CIS	2025-10-23 00:00:00
+REC0000248	QQ243410B	Ms	IRENE	Parker	1956-01-15	F	Married	N/A	irene.parker410@example.invalid	07743 778903	CIS	2025-08-31 00:00:00
+REC0000249	QQ468313B	Ms	Norma	Bailey	1949-11-13	F	n/a	N/A	norma.bailey313@example.invalid	07969 057599	CIS	2025-12-02 00:00:00
+REC0000250	QQ717637A	Miss	Patricia	Chapman	11/05/1935	F	Married	N/A	patricia.chapman637@example.invalid	n/a	LEGACY_CSV	2025-06-04 00:00:00
+REC0000251	QQ655961A	Miss	 sandra 	JOHNSON	1948-10-01	F	Civil Partnership		sandra.johnson961@example.invalid	07558 244677	CIS	2025-07-07 00:00:00
+REC0000252	QQ459855D	Ms	sheila	Moore	03/07/1949	F	Widowed		sheila.moore855@example.invalid	07565 368086	LEGACY_CSV	2025-07-03 00:00:00
+REC0000253	QQ875422C	Mr	  Stanley	Phillips	25-Aug-1951	M	Single	N/A	stanley.phillips422@example.invalid	07783 210835	DIGITAL	2025-10-28 00:00:00
+REC0000254	QQ635897C	Mr	leonard	ROBINSON	1947-03-11	M	Single		leonard.robinson897@example.invalid	07535 424491	CIS	2026-01-10 00:00:00
+REC0000255	QQ506192D	Mrs	Susan	HARRIS	31-Dec-9999	F	Married		susan.harris192@example.invalid	-	DIGITAL	2025-12-01 00:00:00
+REC0000256	QQ422710C	Ms	Eileen	Cooper	1953-12-26	F	Married	N/A	eileen.cooper710@example.invalid		CIS	2026-03-01 00:00:00
+REC0000257	QQ849740A	Mr	Gordon	Moore	1957-10-27	M	Single		gordon.moore740@example.invalid	07288 828711	CIS	2025-10-17 00:00:00
+REC0000258	QQ262024C	Mrs	Christine  	SCOTT	23/12/1940	F	Married		christine.scott24@example.invalid	07255 176110	LEGACY_CSV	2025-09-19 00:00:00
+REC0000259	QQ814336B	Mrs	  Hazel	Kelly	17/06/1941	F	Married	\N		07367 521821	LEGACY_CSV	2025-08-03 00:00:00
+REC0000260	QQ234111D	Miss	JOAN	Moore	1959-01-04	F	Married		joan.moore111@example.invalid	07283 076911	CIS	2025-06-01 00:00:00
+REC0000261	QQ102626A	Ms	Sylvia  	  Baker	22/05/1951	F	Single	N/A	sylvia.baker626@example.invalid	N/A	LEGACY_CSV	2026-02-25 00:00:00
+REC0000262	QQ690932B	Mr	Cyril	Cooper	05-Jan-1935	M	Single	\N	cyril.cooper932@example.invalid	07304 605946	DIGITAL	2026-03-26 00:00:00
+REC0000263	QQ607657A	Mr	Frank	  allen	1941-08-19	M	Married	\N	frank.allen657@example.invalid	07704 994590	CIS	2025-07-15 00:00:00
+REC0000264	QQ449617D	Ms	SHEILA	clarke	01/01/1900	F	Divorced	\N	sheila.clarke617@example.invalid	07612 579318	LEGACY_CSV	2025-07-10 00:00:00
+REC0000265	QQ319495D	Ms	Kathleen	Price	29/04/1948	F	-	N/A	kathleen.price495@example.invalid	07455 318165	LEGACY_CSV	2025-08-02 00:00:00
+REC0000266	QQ296585D	Miss	Joan	Walker	28/10/1955	F	Married		joan.walker585@example.invalid	UNKNOWN	LEGACY_CSV	2026-03-02 00:00:00
+REC0000267	QQ144318B	Mr	  Peter	  wilson	9999-12-31	M	Divorced	\N	peter.wilson318@example.invalid	07748 131653	CIS	2026-03-09 00:00:00
+REC0000268	QQ447030D	Mrs	Carol	King	07/07/1954	F	Married	21/03/1942	carol.king30@example.invalid	-	LEGACY_CSV	2025-11-30 00:00:00
+REC0000269	QQ412760D	Miss	Sandra	 Harris 	1944-03-29	F	Married		sandra.harris760@example.invalid	07336 716765	CIS	2026-01-23 00:00:00
+REC0000270	QQ738399D	Mrs	 Hazel 	  PRICE	09/02/1943	F	Divorced		-	07716 086167	LEGACY_CSV	2026-02-17 00:00:00
+REC0000271	QQ271908B	Mr	John	  Gray	10-Oct-1953	M	Widowed	\N	n/a	07900 476745	DIGITAL	2025-08-11 00:00:00
+REC0000272	QQ838527C	Mr	  Alan	Bennett  	1954-02-07	M	Married		alan.bennett527@example.invalid	UNKNOWN	CIS	2025-07-06 00:00:00
+REC0000273	QQ470949B	Mrs	DOROTHY	Jones	1955-12-24	F	Married	N/A	dorothy.jones949@example.invalid	07722 899595	CIS	2026-03-10 00:00:00
+REC0000274	QQ849417D	Mr	  Gordon	HARRISON  	1949-05-02	M	Widowed		gordon.harrison417@example.invalid	07834 142871	CIS	2025-07-31 00:00:00
+REC0000275	QQ562518C	Mr	STUART	Parker	1951-11-07	M	Single	N/A	N/A	07533 517467	CIS	2026-03-03 00:00:00
+REC0000276	QQ468580C	Miss	PATRICIA  	johnson	27-Jun-1952	F	Married		patricia.johnson580@example.invalid	07369 868334	DIGITAL	2025-08-02 00:00:00
+REC0000277	QQ675225D	Mrs	  IRENE	Clarke	18/08/1942	F	Divorced	N/A	irene.clarke225@example.invalid	07820 145467	LEGACY_CSV	2025-10-23 00:00:00
+REC0000278	QQ147986B	Mr	Neville	Cook	18/08/1947	M	Single	\N	neville.cook986@example.invalid	07988 490720	LEGACY_CSV	2025-07-29 00:00:00
+REC0000279	QQ819980D	Miss	Sandra	 Ward 	1957-04-23	F	Single	N/A	sandra.ward980@example.invalid	07157 941818	CIS	2026-03-11 00:00:00
+REC0000280	QQ375753B	Miss	Linda	  Bailey	1949-05-09	F	Single		linda.bailey753@example.invalid	07940 774827	CIS	2025-11-17 00:00:00
+REC0000281	QQ634255D	Ms	joan  	WHITE	06/04/1942	F	Married		joan.white255@example.invalid	07102 071406	LEGACY_CSV	2025-06-13 00:00:00
+REC0000282	QQ424287D	Mr	Reginald	  Collins	18/05/1954	M	Widowed		reginald.collins287@example.invalid	07429 630406	LEGACY_CSV	2025-07-17 00:00:00
+REC0000283	QQ499197D	Mr	douglas	GRIFFITHS	06/06/1950	M		N/A	douglas.griffiths197@example.invalid	07606 275503	LEGACY_CSV	2025-08-27 00:00:00
+REC0000284	QQ826982C	Mr	Keith  	ALLEN	1944-05-20	M	Widowed	2025-02-21	keith.allen982@example.invalid	07525 877146	CIS	2026-03-26 00:00:00
+REC0000285	QQ572888C	Ms	  Valerie	Walker	04/04/1936	F	Widowed		valerie.walker888@example.invalid	07404 130136	LEGACY_CSV	2025-06-05 00:00:00
+REC0000286	QQ208211A	Ms	Sheila	  WOOD	31/12/9999	F	Single		sheila.wood211@example.invalid	07268 421222	LEGACY_CSV	2025-08-05 00:00:00
+REC0000287	QQ225600B	Ms	JEAN	turner	20-Apr-1947	F	Widowed		jean.turner600@example.invalid	07870 592324	DIGITAL	2026-02-24 00:00:00
+REC0000288	QQ319083D	Ms	  JOAN	Hall  	26-Jan-1957	F	Widowed		joan.hall83@example.invalid	07366 735297	DIGITAL	2026-02-19 00:00:00
+REC0000289	QQ682493D	Mr	Maurice	Lee	17/12/1954	M	Married		n/a	07862 634266	LEGACY_CSV	2025-12-27 00:00:00
+REC0000290	QQ386315B	Mr	Stuart	WILLIAMS	1959-07-25	M	Widowed		-	07663 141225	CIS	2025-07-24 00:00:00
+REC0000291	QQ512325D	Ms	Doreen  	Evans	1959-09-23	F	Married	2025-03-12	doreen.evans325@example.invalid	07261 853110	CIS	2025-10-25 00:00:00
+REC0000292	QQ454243B	Mr	Nigel	Morris	15/10/1944	M	Single	13/03/1938	nigel.morris243@example.invalid	07461 485748	LEGACY_CSV	2025-07-30 00:00:00
+REC0000293	QQ132993C	Miss	Hazel  	cooper	1955-06-27	F	Widowed	N/A	hazel.cooper993@example.invalid	07650 337400	CIS	2026-03-16 00:00:00
+REC0000294	QQ652780B	Miss	Marion  	Price	1951-07-27	F	n/a		marion.price780@example.invalid	07185 317341	CIS	2025-07-27 00:00:00
+REC0000295	QQ303302C	Mrs	  JEAN	WILLIAMS	10-Nov-1956	F	Married	\N	jean.williams302@example.invalid	07183 365304	DIGITAL	2026-03-10 00:00:00
+REC0000296	QQ361020A	Ms	Rosemary  	Thompson	1958-06-29	F	Married	\N	rosemary.thompson20@example.invalid	07722 110446	CIS	2025-09-23 00:00:00
+REC0000297	QQ552209C	Miss	Hazel	  rogers	1952-07-10	F	Married	N/A	hazel.rogers209@example.invalid	07377 621816	CIS	2025-09-06 00:00:00
+REC0000298	QQ751270C	Miss	Sandra	PRICE	1943-04-15	F	Married		sandra.price270@example.invalid	07234 122610	CIS	2025-11-20 00:00:00
+REC0000299	QQ889431A	Ms	irene	Gray	1950-06-25	F	Married	\N	irene.gray431@example.invalid	07605 874521	CIS	2026-01-02 00:00:00
+REC0000300	QQ884142A	Ms	Audrey	  griffiths	1948-03-16	F	\N	\N	audrey.griffiths142@example.invalid	07584 382986	CIS	2025-08-09 00:00:00
+REC0000301	QQ325758A	Mr	peter	Wilson  	05-Dec-1953	M	Married	10-Aug-2029	peter.wilson758@example.invalid	07370 931033	DIGITAL	2025-08-23 00:00:00
+REC0000302	QQ806973D	Miss	Edna  	  ward	1950-09-02	F	Married		edna.ward973@example.invalid	07629 014641	CIS	2026-03-01 00:00:00
+REC0000303	QQ443425B	Mrs	Sheila	JONES	24-Mar-1948	F	Single	21-Oct-2023	sheila.jones425@example.invalid	07343 637191	DIGITAL	2026-02-26 00:00:00
+REC0000304	QQ261527C	Mrs	Wendy	 Chapman 	1952-12-03	F	Divorced		wendy.chapman527@example.invalid	07400 224555	CIS	2026-03-16 00:00:00
+REC0000305	QQ853552D	Mrs	  BRENDA	WALKER	24-Dec-1939	F	Divorced		brenda.walker552@example.invalid	07700 696406	DIGITAL	2025-09-29 00:00:00
+REC0000306	QQ400579C	Miss	 AUDREY 	GRAY	18-Aug-1935	F	Married	\N	audrey.gray579@example.invalid	07936 450156	DIGITAL	2025-12-15 00:00:00
+REC0000307	QQ674170C	Ms	doreen	Watson	01-Jan-1957	F	Married	\N	doreen.watson170@example.invalid	07444 509688	DIGITAL	2026-03-10 00:00:00
+REC0000308	QQ547389A	Ms	ROSEMARY	  Shaw	1937-09-14	F	Married	\N	rosemary.shaw389@example.invalid	07231 190843	CIS	2025-12-28 00:00:00
+REC0000309	QQ668030C	Mrs	 NORMA 	Johnson	1957-09-22	F	Single		norma.johnson30@example.invalid	07273 064121	CIS	2026-02-27 00:00:00
+REC0000310	QQ164559D	Miss	Margaret	Griffiths	02/05/1952	F	Widowed	N/A	margaret.griffiths559@example.invalid	07554 117380	LEGACY_CSV	2026-03-27 00:00:00
+REC0000311	QQ753681C	Miss	Carol	Collins  	1957-09-02	F	\N		carol.collins681@example.invalid	07331 803121	CIS	2025-07-17 00:00:00
+REC0000312	QQ456691B	Miss	Margaret	 Roberts 	30/12/1959	F	Married		margaret.roberts691@example.invalid	07135 117697	LEGACY_CSV	2025-12-06 00:00:00
+REC0000313	QQ326458C	Mr	Bernard  	  clark	06/12/1958	M	Divorced		bernard.clark458@example.invalid	07480 349469	LEGACY_CSV	2025-10-19 00:00:00
+REC0000314	QQ227487C	Mrs	Vera	Bennett	14/09/1953	F	Widowed	N/A	vera.bennett487@example.invalid	07576 467799	LEGACY_CSV	2025-09-05 00:00:00
+REC0000315	QQ728955A	Mr	Douglas	Carter	1957-09-30	M	Widowed	\N	douglas.carter955@example.invalid	07402 665134	CIS	2025-07-07 00:00:00
+REC0000316	QQ611569D	Miss	muriel	Shaw	04/01/1956	F	Divorced		muriel.shaw569@example.invalid	07922 179325	LEGACY_CSV	2026-01-19 00:00:00
+REC0000317	QQ307059B	Miss	Vera	Brown	15/01/1941	F	Single		vera.brown59@example.invalid	07283 462498	LEGACY_CSV	2026-03-20 00:00:00
+REC0000318	QQ207053A	Mr	ROY	Ward	28-Jun-1943	M	Married		roy.ward53@example.invalid	07159 874766	DIGITAL	2025-07-28 00:00:00
+REC0000319	QQ894310D	Miss	Valerie	harrison	19-Apr-1947	F	Married		valerie.harrison310@example.invalid	07662 937296	DIGITAL	2025-09-09 00:00:00
+REC0000320	QQ524985A	Ms	 Elizabeth 	Bennett	1941-03-07	F	Married	N/A	-	07608 121551	CIS	2025-08-31 00:00:00
+REC0000321	QQ503670A	Mr	  Trevor	griffiths	1957-10-23	M	Married	N/A	trevor.griffiths670@example.invalid	07386 436206	CIS	2025-11-20 00:00:00
+REC0000322	QQ105525C	Mr	Cyril	 Williams 	06/07/1949	M	Married	\N	cyril.williams525@example.invalid	07380 791331	LEGACY_CSV	2025-07-09 00:00:00
+REC0000323	QQ755853B	Mr	Arthur	Cook	20-Apr-1955	M	Single		arthur.cook853@example.invalid	UNKNOWN	DIGITAL	2026-01-05 00:00:00
+REC0000324	QQ583983C	Miss	Elizabeth	Young	26-Dec-1954	F	Married		elizabeth.young983@example.invalid	07218 790476	DIGITAL	2025-11-05 00:00:00
+REC0000325	QQ581778A	Mrs	VALERIE	GRIFFITHS	1957-08-26	F	Widowed		valerie.griffiths778@example.invalid	07474 377756	CIS	2026-02-23 00:00:00
+REC0000326	QQ359732C	Mr	Maurice	MORGAN	1957-07-23	M	Single	N/A	maurice.morgan732@example.invalid	07769 981155	CIS	2026-03-28 00:00:00
+REC0000327	QQ629925A	Mr	Leonard	Chapman	9999-12-31	M	Married		\N	07374 705003	CIS	2025-07-31 00:00:00
+REC0000328	QQ170668C	Mrs	Patricia	ROBERTS  	11-Apr-1947	F	Divorced	N/A	patricia.roberts668@example.invalid	07832 068892	DIGITAL	2026-01-22 00:00:00
+REC0000329	QQ240430A	Ms	Elizabeth  	Shaw	27-May-1945	F	Single		elizabeth.shaw430@example.invalid	\N	DIGITAL	2026-02-09 00:00:00
+REC0000330	QQ607812B	Mrs	  Norma	Bennett	19/07/1944	F	Widowed		norma.bennett812@example.invalid	07599 207201	LEGACY_CSV	2025-06-02 00:00:00
+REC0000331	QQ862763D	Mr	  Trevor	  Collins	09-Feb-1938	M	Single	25-Aug-2024	trevor.collins763@example.invalid	07793 962793	DIGITAL	2025-06-29 00:00:00
+REC0000332	QQ606210D	Mr	BARRY	  Clark	16-Mar-1948	M	Married	\N	barry.clark210@example.invalid		DIGITAL	2025-10-17 00:00:00
+REC0000333	QQ333503C	Mrs	muriel	SMITH	27/01/1958	F	Single	\N	N/A	07117 792387	LEGACY_CSV	2025-12-30 00:00:00
+REC0000334	QQ539567B	Miss	Diane	Chapman	NULL	F			\N	07520 078362	LEGACY_CSV	2025-08-26 00:00:00
+REC0000335	QQ620420A	Mr	neville  	mitchell	01/01/1900	M	Married	N/A	neville.mitchell420@example.invalid	07481 585175	LEGACY_CSV	2025-06-07 00:00:00
+REC0000336	QQ845770B	Mr	  NIGEL	Wilson	01/11/1948	M	Widowed	10/02/2024	nigel.wilson770@example.invalid	07898 962991	LEGACY_CSV	2025-09-28 00:00:00
+REC0000337	QQ174088C	Miss	IRENE	WILLIAMS	1957-04-01	F	Widowed		\N	07166 333574	CIS	2026-02-12 00:00:00
+REC0000338	QQ828636C	Mr	CYRIL	CLARK	14/03/1944	M	Married		cyril.clark636@example.invalid	07655 682258	LEGACY_CSV	2025-11-27 00:00:00
+REC0000339	QQ350933C	Ms	Susan	  BENNETT	31-Mar-1959	F	Married	01-Dec-2023	-	07115 505999	DIGITAL	2025-09-06 00:00:00
+REC0000340	QQ831585C	Mr	derek	  Lee	21-Apr-1943	M	Single	N/A	derek.lee585@example.invalid	07239 082378	DIGITAL	2025-07-10 00:00:00
+REC0000341	QQ680721B	Mrs	 Doreen 	TAYLOR  	NULL	F	Widowed	\N	doreen.taylor721@example.invalid	07430 898451	LEGACY_CSV	2025-08-26 00:00:00
+REC0000342	QQ630599A	Mr	Trevor  	Davis	1941-11-24	M	Divorced		trevor.davis599@example.invalid	07209 676803	CIS	2025-08-05 00:00:00
+REC0000343	QQ823368C	Ms	pauline	  Roberts	12-Sep-1950	F	Married		pauline.roberts368@example.invalid	07536 677459	DIGITAL	2025-09-18 00:00:00
+REC0000344	QQ666315A	Mrs	LINDA	green	03/01/1953	F	Married	N/A	linda.green315@example.invalid	07534 984140	LEGACY_CSV	2026-01-30 00:00:00
+REC0000345	QQ527756C	Mrs	Susan	Green	1943-04-17	F	Married		susan.green756@example.invalid	07665 389802	CIS	2025-12-20 00:00:00
+REC0000346	QQ156328C	Ms	Vera	Robinson  	1942-06-26	F	Married	1926-09-12	vera.robinson328@example.invalid	07203 816221	CIS	2025-12-02 00:00:00
+REC0000347	QQ570889B	Mr	Alan  	 SHAW 	20/12/1955	M	Married	\N	alan.shaw889@example.invalid	07818 019189	LEGACY_CSV	2025-10-14 00:00:00
+REC0000348	QQ383466B	Mr	Frank	Bennett	28/04/1951	M	Widowed		n/a	07240 921229	LEGACY_CSV	2026-02-09 00:00:00
+REC0000349	QQ291636C	Mrs	IRENE	Price	31-Jul-1944	F	Single	N/A	irene.price636@example.invalid	07606 255279	DIGITAL	2025-08-20 00:00:00
+REC0000350	QQ612098A	Miss	beryl	BELL  	1940-10-12	F	Married			07274 896217	CIS	2025-11-29 00:00:00
+REC0000351	QQ209113A	Mrs	 Susan 	Baker	30/08/1952	F	Married		susan.baker113@example.invalid	-	LEGACY_CSV	2025-10-03 00:00:00
+REC0000352	QQ551694B	Mr	derek	Carter	15/05/1936	M	Divorced	\N	derek.carter694@example.invalid	07157 117751	LEGACY_CSV	2025-06-18 00:00:00
+REC0000353	QQ632055D	Mr	ALAN	BELL	9999-12-31	M	Married		alan.bell55@example.invalid	07727 241827	CIS	2026-01-26 00:00:00
+REC0000354	QQ420381B	Mr	Trevor	wood	1948-02-17	M	Married	\N	trevor.wood381@example.invalid	07802 218403	CIS	2025-08-06 00:00:00
+REC0000355	QQ270414A	Ms	Audrey  	Thompson	03/10/1959	F	Married		audrey.thompson414@example.invalid	07587 076649	LEGACY_CSV	2025-09-29 00:00:00
+REC0000356	QQ751468B	Mr	Brian	Bennett	1959-06-15	M	Widowed		-	07597 058474	CIS	2025-11-22 00:00:00
+REC0000357	QQ716287B	Mr	 Neville 	 Jackson 	1949-07-20	M	Married	\N	neville.jackson287@example.invalid	07585 930534	CIS	2025-11-11 00:00:00
+REC0000358	QQ530341D	Mr	Terence  	  Turner	1950-04-23	M	Single	\N	terence.turner341@example.invalid	07588 459679	CIS	2025-10-31 00:00:00
+REC0000359	QQ415990C	Mr	  graham	  white	07/07/1958	M	Married	\N	graham.white990@example.invalid	07290 472594	LEGACY_CSV	2025-11-01 00:00:00
+REC0000360	QQ654938A	Mr	Nigel	Allen	1935-12-15	M	Widowed		\N	07892 183029	CIS	2025-08-30 00:00:00
+REC0000361	QQ413936A	Mrs	DIANE	Clark	04/09/1938	F	Married		diane.clark936@example.invalid	07529 503610	LEGACY_CSV	2025-07-09 00:00:00
+REC0000362	QQ349884B	Mrs	 MAUREEN 	bell	30/09/1957	F	Divorced	\N	maureen.bell884@example.invalid	07884 740868	LEGACY_CSV	2025-12-11 00:00:00
+REC0000363	QQ377916C	Ms	Valerie	Clarke	1957-09-03	F	Widowed	\N	valerie.clarke916@example.invalid	07850 737700	CIS	2025-07-26 00:00:00
+REC0000364	QQ767537A	Mr	gordon	 Bell 	1954-09-15	M	Married	2024-05-02	gordon.bell537@example.invalid	07903 212087	CIS	2025-08-20 00:00:00
+REC0000365	QQ348134D	Ms	SHEILA	Lee	16/07/1953	F	Single	\N	sheila.lee134@example.invalid	N/A	LEGACY_CSV	2025-10-03 00:00:00
+REC0000366	QQ396955D	Mr	Nigel	White  	1957-11-13	M	-	N/A	nigel.white955@example.invalid	07269 919038	CIS	2025-11-18 00:00:00
+REC0000367	QQ880926B	Ms	edna	Wright	01-Jan-1900	F	Married	\N	edna.wright926@example.invalid	07932 562383	DIGITAL	2025-08-10 00:00:00
+REC0000368	QQ616957A	Mrs	Barbara  	  Parker	18-Mar-1935	F	Married	23-Jul-1920	barbara.parker957@example.invalid	07546 458357	DIGITAL	2026-03-08 00:00:00
+REC0000369	QQ209707A	Mr	 Neville 	  wood	1952-12-19	M	Married		neville.wood707@example.invalid	07129 996993	CIS	2025-09-14 00:00:00
+REC0000370	QQ276987C	Mrs	hazel	GRAY	23-Mar-1942	F	Widowed		hazel.gray987@example.invalid	07536 381948	DIGITAL	2025-09-08 00:00:00
+REC0000371	QQ812984D	Miss	Janet	 allen 	1943-08-10	F	Married	\N	janet.allen984@example.invalid	07678 042163	CIS	2025-12-11 00:00:00
+REC0000372	QQ236695D	Mr	colin	  Chapman	10/12/1941	M	Widowed	\N	colin.chapman695@example.invalid	07133 515769	LEGACY_CSV	2026-03-09 00:00:00
+REC0000373	QQ250116D	Miss	Pauline	  Griffiths	1957-04-25	F	Married	N/A	pauline.griffiths116@example.invalid	07154 722203	CIS	2025-07-07 00:00:00
+REC0000374	QQ466951A	Miss	Diane  	Mitchell	01/01/1900	F	Married		diane.mitchell951@example.invalid	07282 841736	LEGACY_CSV	2025-07-17 00:00:00
+REC0000375	QQ593003D	Mrs	Elizabeth	Walker	1957-10-28	F	Married		elizabeth.walker3@example.invalid	NULL	CIS	2025-08-30 00:00:00
+REC0000376	QQ369755A	Mr	Cyril  	Brown	14/05/1957	M	Widowed	14/12/2022	cyril.brown755@example.invalid	07376 292294	LEGACY_CSV	2025-06-13 00:00:00
+REC0000377	QQ867464D	Mr	  Bernard	davis	12-Nov-1942	M	Widowed		bernard.davis464@example.invalid	07291 858035	DIGITAL	2026-01-26 00:00:00
+REC0000378	QQ753468B	Miss	JANET  	  DAVIES	1957-01-08	F	\N	N/A	janet.davies468@example.invalid	07515 540599	CIS	2025-11-13 00:00:00
+REC0000379	QQ229940C	Mrs	Elizabeth	GRIFFITHS  	1948-07-23	F	UNKNOWN	N/A	elizabeth.griffiths940@example.invalid	07291 837008	CIS	2025-10-10 00:00:00
+REC0000380	QQ692031B	Mrs	EILEEN	Cooper	21-Jun-1958	F	UNKNOWN		eileen.cooper31@example.invalid	07706 794734	DIGITAL	2026-03-14 00:00:00
+REC0000381	QQ647239D	Mr	NORMAN  	Clarke	1953-05-10	M	Single	\N	norman.clarke239@example.invalid	07678 659944	CIS	2026-01-24 00:00:00
+REC0000382	QQ752747D	Mr	Arthur	TURNER	22/08/1940	M	Widowed		NULL	07787 894108	LEGACY_CSV	2025-12-23 00:00:00
+REC0000383	QQ143344B	Mr	Clive  	SCOTT	1940-04-21	M	Married	2025-06-07	clive.scott344@example.invalid	07577 272545	CIS	2025-08-11 00:00:00
+REC0000384	QQ371724B	Mr	ALAN  	KING	NULL	M	Widowed	N/A	alan.king724@example.invalid	07677 055690	DIGITAL	2025-12-17 00:00:00
+REC0000385	QQ574080B	Mr	Graham	Morris	22/02/1948	M	Married		graham.morris80@example.invalid	07717 088096	LEGACY_CSV	2025-08-20 00:00:00
+REC0000386	QQ243407B	Mr	Bernard  	Green	05/09/1940	M	Single		bernard.green407@example.invalid	07454 268212	LEGACY_CSV	2025-12-29 00:00:00
+REC0000387	QQ466344C	Miss	  Elizabeth	GRIFFITHS	1955-08-13	F	Single	2025-01-20	elizabeth.griffiths344@example.invalid	07980 365365	CIS	2025-07-13 00:00:00
+REC0000388	QQ759664D	Mrs	JEAN	Evans	1960-01-21	F	Widowed		jean.evans664@example.invalid	07400 991909	CIS	2026-02-27 00:00:00
+REC0000389	QQ855000A	Miss	  Doreen	Thompson	1951-01-09	F	Single		doreen.thompson0@example.invalid	07527 826650	CIS	2025-11-18 00:00:00
+REC0000390	QQ805100B	Mr	Harold	RICHARDSON  	02-Dec-1934	M	Widowed	\N	harold.richardson100@example.invalid	07839 749754	DIGITAL	2026-01-29 00:00:00
+REC0000391	QQ690714B	Mr	Neville	Brown	1954-11-14	M	NULL		NULL	07889 481319	CIS	2025-09-13 00:00:00
+REC0000392	QQ268077C	Mr	  Arthur	  Robinson	9999-12-31	M	Married		arthur.robinson77@example.invalid	07795 272303	CIS	2025-12-19 00:00:00
+REC0000393	QQ291495D	Miss	Beryl	Clarke	1958-01-19	F	Single		N/A	-	CIS	2025-11-18 00:00:00
+REC0000394	QQ577805D	Mr	Clive	Harrison	1938-08-14	M	\N	\N	UNKNOWN	n/a	CIS	2025-08-04 00:00:00
+REC0000395	QQ615560C	Ms	joan  	  Hill	16/05/1954	F	Married	\N	joan.hill560@example.invalid	07650 950776	LEGACY_CSV	2025-09-17 00:00:00
+REC0000396	QQ389638B	Miss	Eileen	Jackson	1941-02-11	F	\N		eileen.jackson638@example.invalid	07459 917932	CIS	2025-11-02 00:00:00
+REC0000397	QQ413165B	Mr	Keith	Mitchell	18/08/1956	M	Divorced		keith.mitchell165@example.invalid	07853 741750	LEGACY_CSV	2025-06-21 00:00:00
+REC0000398	QQ188650B	Ms	  Marion	Bailey	12-Jun-2031	F	Civil Partnership			07612 593649	DIGITAL	2025-07-08 00:00:00
+REC0000399	QQ359711B	Miss	Janet	Evans	31-Dec-9999	F	Widowed		janet.evans711@example.invalid	07362 306630	DIGITAL	2025-11-03 00:00:00
+REC0000400	QQ130319A	Mr	 Maurice 	Wilson	1937-01-08	M	Divorced		maurice.wilson319@example.invalid	07620 643317	CIS	2025-10-10 00:00:00
+REC0000401	QQ366475B	Mr	HAROLD	HARRIS	1949-01-30	M	Married	\N	harold.harris475@example.invalid	07882 775511	CIS	2025-07-22 00:00:00
+REC0000402	QQ630492A	Mr	  DEREK	  collins	14/10/1954	M	Widowed	\N	derek.collins492@example.invalid	07743 731660	LEGACY_CSV	2026-01-10 00:00:00
+REC0000403	QQ409634D	Mr	Brian  	Allen	1938-06-09	M	Married		brian.allen634@example.invalid	07303 031775	CIS	2025-12-21 00:00:00
+REC0000404	QQ880421B	Miss	Linda  	Mitchell  	1955-07-31	F	Civil Partnership	N/A	linda.mitchell421@example.invalid	07146 839356	CIS	2025-07-10 00:00:00
+REC0000405	QQ334138B	Mr	  Neville	Clarke	1958-02-03	M	Married	\N	neville.clarke138@example.invalid	07801 309599	CIS	2025-10-09 00:00:00
+REC0000406	QQ368203D	Mr	Roy	Richardson  	1941-03-31	M	Married	N/A	roy.richardson203@example.invalid	07356 133974	CIS	2026-03-06 00:00:00
+REC0000407	QQ812193D	Ms	  MARION	Williams	2031-06-12	F	Widowed	N/A	marion.williams193@example.invalid	07782 255602	CIS	2025-06-16 00:00:00
+REC0000408	QQ585389B	Mrs	 eileen 	Young	18-Feb-1949	F	N/A	N/A	N/A	07175 460246	DIGITAL	2025-12-20 00:00:00
+REC0000409	QQ674870D	Mr	Stuart	Clark	1943-03-28	M	Married	\N	stuart.clark870@example.invalid	07437 801040	CIS	2025-08-05 00:00:00
+REC0000410	QQ776888D	Mr	Stanley  	  SHAW	07/08/1937	M	Married		stanley.shaw888@example.invalid	07304 110564	LEGACY_CSV	2025-08-09 00:00:00
+REC0000411	QQ737803A	Mr	Norman	CLARKE  	1950-06-20	M	Divorced		\N	07920 291593	CIS	2025-07-26 00:00:00
+REC0000412	QQ411506C	Ms	Beryl	DAVIS  	1951-03-13	F	Married		beryl.davis506@example.invalid	07426 426981	CIS	2025-11-29 00:00:00
+REC0000413	QQ477717C	Mr	Stanley	Smith	12/06/2031	M	Divorced	N/A	stanley.smith717@example.invalid	07367 861285	LEGACY_CSV	2026-02-03 00:00:00
+REC0000414	QQ351584C	Mr	ALAN	  Parker	1952-01-04	M	Civil Partnership	\N	alan.parker584@example.invalid	07264 491788	CIS	2025-08-09 00:00:00
+REC0000415	QQ192193A	Mr	 Nigel 	Richardson	25/09/1949	M	Widowed	\N	nigel.richardson193@example.invalid	07383 123174	LEGACY_CSV	2025-06-13 00:00:00
+REC0000416	QQ208016D	Mrs	ELIZABETH	Allen	1959-05-21	F	Widowed	\N	elizabeth.allen16@example.invalid	07691 106087	CIS	2025-10-26 00:00:00
+REC0000417	QQ635842C	Ms	 EILEEN 	COLLINS	09/01/1958	F	Single	13/08/2023	eileen.collins842@example.invalid	07380 079277	LEGACY_CSV	2025-07-11 00:00:00
+REC0000418	QQ402532A	Ms	  Rosemary	 Hall 	11-Feb-1940	F	Divorced	\N	rosemary.hall532@example.invalid	07372 671733	DIGITAL	2025-07-31 00:00:00
+REC0000419	QQ515341A	Mr	Peter	Murphy	1947-05-17	M	Married	N/A	peter.murphy341@example.invalid	07178 403178	CIS	2025-08-18 00:00:00
+REC0000420	QQ419699A	Mrs	Joan	  GRAY	19/06/1948	F	Married	21/10/2022	joan.gray699@example.invalid	07154 486032	LEGACY_CSV	2025-07-29 00:00:00
+REC0000421	QQ129579D	Miss	  Margaret	kelly	03-Sep-1955	F	Single		margaret.kelly579@example.invalid	07633 375789	DIGITAL	2025-09-25 00:00:00
+REC0000422	QQ703216C	Mrs	 sandra 	ALLEN	29/09/1957	F	Married		sandra.allen216@example.invalid	07861 859624	LEGACY_CSV	2025-06-12 00:00:00
+REC0000423	QQ327963A	Miss	Pauline	Phillips	1950-11-09	F	Widowed		pauline.phillips963@example.invalid	07744 870500	CIS	2025-07-19 00:00:00
+REC0000424	QQ339469A	Mr	Stuart	wood	28-May-1940	M	Divorced	\N	stuart.wood469@example.invalid	07800 616161	DIGITAL	2025-08-08 00:00:00
+REC0000425	QQ584044B	Miss	Wendy  	Davis	1960-02-01	F	Single		wendy.davis44@example.invalid	07742 746056	CIS	2025-07-23 00:00:00
+REC0000426	QQ659469D	Miss	Hazel  	  Turner	01/01/1900	F	Married		hazel.turner469@example.invalid	07400 274863	LEGACY_CSV	2025-09-19 00:00:00
+REC0000427	QQ498224A	Miss	Brenda	Jackson	04-Aug-1949	F	Married		brenda.jackson224@example.invalid	07614 874847	DIGITAL	2026-02-15 00:00:00
+REC0000428	QQ131297D	Mr	 Leonard 	Kelly	12-May-1952	M	Widowed		leonard.kelly297@example.invalid	07932 880412	DIGITAL	2025-06-10 00:00:00
+REC0000429	QQ798214B	Miss	 Diane 	  Johnson		F	Married		diane.johnson214@example.invalid	07645 105770	CIS	2025-10-30 00:00:00
+REC0000430	QQ202958A	Mrs	Sandra	  Walker	15-Jun-1955	F	Widowed	\N	sandra.walker958@example.invalid	07798 431191	DIGITAL	2025-08-22 00:00:00
+REC0000431	QQ335258C	Ms	Rosemary	roberts	1957-12-25	F	Divorced	N/A	rosemary.roberts258@example.invalid	-	CIS	2025-08-21 00:00:00
+REC0000432	QQ188100D	Mr	COLIN	Allen	1943-05-11	M	Civil Partnership	\N	colin.allen100@example.invalid	07825 368755	CIS	2025-06-08 00:00:00
+REC0000433	QQ831294A	Mr	 Michael 	HILL	1957-12-26	M	Married	N/A	michael.hill294@example.invalid	UNKNOWN	CIS	2025-07-02 00:00:00
+REC0000434	QQ228356A	Mr	TREVOR	Phillips	1954-08-06	M	Widowed		trevor.phillips356@example.invalid	07921 085323	CIS	2025-08-08 00:00:00
+REC0000435	QQ751955A	Mr	Harold	Hall	03/09/1944	M	Married	N/A	harold.hall955@example.invalid	07591 978964	LEGACY_CSV	2025-12-14 00:00:00
+REC0000436	QQ196682A	Mrs	CHRISTINE	Wright	1952-07-21	F	Married	N/A	christine.wright682@example.invalid	07756 817125	CIS	2025-06-03 00:00:00
+REC0000437	QQ644559C	Mr	Leonard	  Johnson	1949-03-12	M	Married		leonard.johnson559@example.invalid	UNKNOWN	CIS	2025-09-21 00:00:00
+REC0000438	QQ706919D	Ms	HAZEL	Clark	08/04/1959	F	Widowed		hazel.clark919@example.invalid	07902 230759	LEGACY_CSV	2026-01-29 00:00:00
+REC0000439	QQ518843D	Mrs	Susan  	clark	22/08/1938	F	Divorced	N/A	susan.clark843@example.invalid	N/A	LEGACY_CSV	2026-01-23 00:00:00
+REC0000440	QQ827023B	Mrs	LINDA  	CLARK  	04-Jun-1940	F	Married	\N	linda.clark23@example.invalid	07897 380671	DIGITAL	2025-08-20 00:00:00
+REC0000441	QQ189514A	Mr	NORMAN	Hill	1934-08-30	M	Married		norman.hill514@example.invalid	07985 255986	CIS	2026-01-21 00:00:00
+REC0000442	QQ796327C	Mr	  FRANK	rogers  	1959-05-13	M	Married		frank.rogers327@example.invalid	07685 134569	CIS	2025-09-24 00:00:00
+REC0000443	QQ848879C	Miss	Susan	Morgan	1947-08-31	F	Married		susan.morgan879@example.invalid	n/a	CIS	2025-08-15 00:00:00
+REC0000444	QQ841317C	Mr	  frank	Harrison	27/09/1946	M	Married	N/A	frank.harrison317@example.invalid	07763 798050	LEGACY_CSV	2025-10-05 00:00:00
+REC0000445	QQ681088C	Mr	Arthur	  DAVIS	19-Dec-1935	M	Widowed	\N	arthur.davis88@example.invalid	07744 685554	DIGITAL	2025-10-10 00:00:00
+REC0000446	QQ544682D	Mr	terence	  James	14-Dec-1935	M	-	N/A	terence.james682@example.invalid	07534 868722	DIGITAL	2025-06-01 00:00:00
+REC0000447	QQ688516C	Mrs	HAZEL  	  Murphy	21/11/1949	F	Married		hazel.murphy516@example.invalid	UNKNOWN	LEGACY_CSV	2026-03-12 00:00:00
+REC0000448	QQ161964A	Ms	  Joan	 Carter 	1948-02-06	F	Single	\N	joan.carter964@example.invalid	07390 435676	CIS	2025-07-09 00:00:00
+REC0000449	QQ276735A	Mr	 Douglas 	Ward	1942-04-17	M	Divorced		douglas.ward735@example.invalid	07811 665896	CIS	2026-02-18 00:00:00
+REC0000450	QQ615258D	Mrs	Linda	Davis	1950-02-09	F	Widowed		linda.davis258@example.invalid	07167 264958	CIS	2026-02-16 00:00:00
+REC0000451	QQ130063A	Mr	  MALCOLM	Young	9999-12-31	M	Divorced		malcolm.young63@example.invalid	07462 508055	CIS	2025-11-28 00:00:00
+REC0000452	QQ767074C	Mr	Ronald	Johnson  	01-Mar-1952	M	Single	17-Aug-1947	ronald.johnson74@example.invalid	07804 714376	DIGITAL	2025-07-19 00:00:00
+REC0000453	QQ733100C	Ms	Linda  	Kelly	25-Jul-1951	F	Married	27-Sep-2029	linda.kelly100@example.invalid	07973 153181	DIGITAL	2025-11-26 00:00:00
+REC0000454	QQ289204A	Miss	 patricia 	Watson	1936-07-19	F	Widowed		patricia.watson204@example.invalid	07933 556554	CIS	2025-09-17 00:00:00
+REC0000455	QQ882855A	Miss	Sylvia	SHAW  	13/02/1958	F	Single	N/A	sylvia.shaw855@example.invalid	07534 000404	LEGACY_CSV	2025-11-13 00:00:00
+REC0000456	QQ241094C	Ms	 Vera 	COOPER	28-Feb-1957	F	N/A		vera.cooper94@example.invalid	07299 960700	DIGITAL	2025-08-17 00:00:00
+REC0000457	QQ543949A	Mrs	Elizabeth	White  	14/01/1943	F	Married	\N	elizabeth.white949@example.invalid	07843 631403	LEGACY_CSV	2025-06-09 00:00:00
+REC0000458	QQ676823C	Miss	Irene	BROWN	14/01/1940	F	Divorced	16/08/2024	irene.brown823@example.invalid	07835 826805	LEGACY_CSV	2026-01-28 00:00:00
+REC0000459	QQ508143C	Ms	  Eileen	Gray	1950-06-24	F	Widowed	N/A	eileen.gray143@example.invalid	07964 098339	CIS	2025-12-09 00:00:00
+REC0000460	QQ487318A	Ms	  Rosemary	Harris	1955-12-30	F	-	\N	rosemary.harris318@example.invalid	07306 302726	CIS	2025-09-27 00:00:00
+REC0000461	QQ761096A	Miss	BARBARA	 SCOTT 	1944-07-26	F	Married		barbara.scott96@example.invalid	07618 777172	CIS	2025-09-25 00:00:00
+REC0000462	QQ672499B	Mrs	Patricia	BENNETT	1953-04-22	F	Widowed		patricia.bennett499@example.invalid	07923 951571	CIS	2025-06-14 00:00:00
+REC0000463	QQ621180D	Mr	  Clive	 EVANS 	1940-10-06	M	Widowed	\N	clive.evans180@example.invalid	07798 490578	CIS	2026-01-25 00:00:00
+REC0000464	QQ534416B	Mr	Michael	Murphy  	1948-12-20	M	Married		michael.murphy416@example.invalid	07416 038757	CIS	2025-12-14 00:00:00
+REC0000465	QQ603093C	Mrs	Sylvia	  Collins	23-Mar-1960	F	Divorced		sylvia.collins93@example.invalid	07923 791165	DIGITAL	2025-07-03 00:00:00
+REC0000466	QQ368188A	Miss	Wendy  	Thompson	1955-02-08	F	Married		wendy.thompson188@example.invalid	07750 422889	CIS	2025-12-12 00:00:00
+REC0000467	QQ208257B	Mrs	  Muriel	Chapman	1944-04-12	F	Widowed		muriel.chapman257@example.invalid	N/A	CIS	2025-11-11 00:00:00
+REC0000468	QQ352206B	Mr	 Brian 	  White	01-Feb-1945	M	Married		brian.white206@example.invalid	07136 996814	DIGITAL	2026-03-24 00:00:00
+REC0000469	QQ383697A	Mr	BARRY	Davies	25/01/1940	M	Widowed		barry.davies697@example.invalid	07377 090081	LEGACY_CSV	2025-12-17 00:00:00
+REC0000470	QQ672310C	Mrs	Norma	Cook	1958-05-06	F	Married		norma.cook310@example.invalid	07271 275272	CIS	2025-11-23 00:00:00
+REC0000471	QQ402762A	Mr	Arthur	Harrison	19-Aug-1956	M	Widowed	12-Feb-1944	arthur.harrison762@example.invalid	UNKNOWN	DIGITAL	2025-11-07 00:00:00
+REC0000472	QQ295131B	Mr	graham	Harrison	1947-11-27	M	NULL		graham.harrison131@example.invalid	07998 945826	CIS	2026-03-02 00:00:00
+REC0000473	QQ710485A	Miss	  VALERIE	Ward	11-Jan-1950	F	Single		N/A	07330 182562	DIGITAL	2025-12-04 00:00:00
+REC0000474	QQ579431B	Mr	  Neville	 Allen 	26/04/1937	M	Married	N/A	neville.allen431@example.invalid	07255 321252	LEGACY_CSV	2025-12-16 00:00:00
+REC0000475	QQ757079D	Miss	Irene	morris  	18/08/1937	F	Single		irene.morris79@example.invalid	07881 975533	LEGACY_CSV	2025-06-27 00:00:00
+REC0000476	QQ853109A	Ms	Rosemary	 ROBERTS 	29-May-1934	F	Widowed	\N	rosemary.roberts109@example.invalid	07258 957241	DIGITAL	2025-08-08 00:00:00
+REC0000477	QQ530454C	Mr	Douglas	Bell	14-May-1950	M	Single		douglas.bell454@example.invalid	07105 592149	DIGITAL	2025-07-07 00:00:00
+REC0000478	QQ425884D	Miss	Sandra  	 CARTER 	15/11/1956	F	Married	N/A	sandra.carter884@example.invalid	07863 871766	LEGACY_CSV	2025-06-28 00:00:00
+REC0000479	QQ321521B	Mr	David	Collins	14/05/1955	M	Widowed		david.collins521@example.invalid	07952 011488	LEGACY_CSV	2025-07-29 00:00:00
+REC0000480	QQ427322D	Miss	 MAUREEN 	 TAYLOR 	22-Dec-1944	F	Divorced	N/A	maureen.taylor322@example.invalid	07240 707915	DIGITAL	2026-03-05 00:00:00
+REC0000481	QQ865878D	Ms	Eileen	  Brown	22-Jun-1957	F	Divorced	\N	eileen.brown878@example.invalid	07822 788609	DIGITAL	2026-03-13 00:00:00
+REC0000482	QQ615540A	Ms	Jean	YOUNG	1937-08-05	F	Divorced	N/A	jean.young540@example.invalid	07147 479828	CIS	2025-10-03 00:00:00
+REC0000483	QQ124780A	Ms	Joan	  Johnson	1959-01-02	F	Married	N/A	joan.johnson780@example.invalid	07757 256352	CIS	2026-02-21 00:00:00
+REC0000484	QQ171484C	Miss	Audrey	Hill	08/10/1948	F	Widowed		audrey.hill484@example.invalid	07325 875473	LEGACY_CSV	2025-12-25 00:00:00
+REC0000485	QQ437298D	Mr	  GORDON	Baker  	1954-07-18	M	Married	2024-09-18	gordon.baker298@example.invalid	07807 745964	CIS	2025-06-28 00:00:00
+REC0000486	QQ641654C	Mrs	SYLVIA	Richardson	22-Jul-1953	F	Married		sylvia.richardson654@example.invalid	07385 954018	DIGITAL	2025-11-05 00:00:00
+REC0000487	QQ356868B	Mr	Brian	  Clark	1951-08-24	M	Divorced		brian.clark868@example.invalid	UNKNOWN	CIS	2025-11-01 00:00:00
+REC0000488	QQ401386C	Mr	Malcolm  	Phillips	25-Oct-1955	M	Married	\N	malcolm.phillips386@example.invalid	07165 828472	DIGITAL	2025-07-28 00:00:00
+REC0000489	QQ892381C	Mrs	LINDA	Bennett	9999-12-31	F	Married		linda.bennett381@example.invalid	07798 419727	CIS	2026-02-15 00:00:00
+REC0000490	QQ388129B	Miss	  Sylvia	Bennett	13/09/1945	F	Divorced		sylvia.bennett129@example.invalid	07346 764389	LEGACY_CSV	2025-08-17 00:00:00
+REC0000491	QQ314262C	Ms	christine	Chapman	08-May-1940	F	Married	11-Oct-2024	christine.chapman262@example.invalid	07744 869974	DIGITAL	2025-10-13 00:00:00
+REC0000492	QQ698763B	Mrs	Valerie	 scott 	25-Jul-1950	F	Widowed	\N	valerie.scott763@example.invalid	07787 916030	DIGITAL	2025-10-20 00:00:00
+REC0000493	QQ177005C	Mr	TERENCE  	price	26-Jun-1942	M	Married	13-Nov-2029	terence.price5@example.invalid	07803 012256	DIGITAL	2025-09-08 00:00:00
+REC0000494	QQ607172D	Mr	  Leonard	Griffiths	05/03/1947	M	Married		leonard.griffiths172@example.invalid	07789 465719	LEGACY_CSV	2026-03-10 00:00:00
+REC0000495	QQ408260C	Mrs	AUDREY  	johnson  	1957-11-25	F	Divorced	\N	audrey.johnson260@example.invalid	07531 992693	CIS	2025-11-15 00:00:00
+REC0000496	QQ659492A	Mrs	PATRICIA	Wright  	1959-09-22	F	Widowed		patricia.wright492@example.invalid	07715 294215	CIS	2025-12-23 00:00:00
+REC0000497	QQ228402D	Mr	ROY	baker	10/11/1957	M	Widowed	\N	roy.baker402@example.invalid	07437 312477	LEGACY_CSV	2025-06-21 00:00:00
+REC0000498	QQ561748A	Mr	Leonard	James	16-May-1956	M	Divorced	\N	leonard.james748@example.invalid	07342 616083	DIGITAL	2025-11-03 00:00:00
+REC0000499	QQ262391C	Mr	Raymond  	Taylor	1953-07-11	M	Widowed	N/A	n/a	07274 734570	CIS	2025-08-16 00:00:00
+REC0000500	QQ488320D	Mr	Wilfred	Taylor	14-Nov-1956	M	Single	N/A	wilfred.taylor320@example.invalid	07358 899145	DIGITAL	2025-12-02 00:00:00
+REC0000501	QQ350106C	Miss	  Sylvia	Roberts	04/09/1957	F	Single		sylvia.roberts106@example.invalid	07816 530682	LEGACY_CSV	2026-02-08 00:00:00
+REC0000502	QQ125443C	Mr	 Malcolm 	Watson	04/08/1942	M	Civil Partnership	N/A	malcolm.watson443@example.invalid	07359 050021	LEGACY_CSV	2026-02-13 00:00:00
+REC0000503	QQ691409B	Mr	Brian	Clarke	1937-08-20	M	Married	N/A	brian.clarke409@example.invalid	07821 897146	CIS	2025-12-17 00:00:00
+REC0000504	QQ551355A	Mrs	  muriel	  RICHARDSON	1945-03-16	F	Married	N/A	muriel.richardson355@example.invalid	07623 109748	CIS	2026-03-10 00:00:00
+REC0000505	QQ419929B	Mr	  raymond	GREEN	1953-09-20	M	Widowed		raymond.green929@example.invalid	07131 728485	CIS	2025-06-21 00:00:00
+REC0000506	QQ173457A	Mr	 peter 	Wright  	22/02/1954	M	Married	24/10/2023	peter.wright457@example.invalid	07862 439096	LEGACY_CSV	2025-11-29 00:00:00
+REC0000507	QQ877531D	Mrs	Diane	Scott	02/05/1953	F	Divorced	N/A	diane.scott531@example.invalid	07480 290886	LEGACY_CSV	2025-10-28 00:00:00
+REC0000508	QQ150354D	Mr	  Derek	Clark	19-Apr-1937	M	Married		derek.clark354@example.invalid	07384 737030	DIGITAL	2025-10-05 00:00:00
+REC0000509	QQ634294A	Mr	  DEREK	Phillips	1951-01-07	M	Married	N/A	derek.phillips294@example.invalid	07372 962510	CIS	2025-07-09 00:00:00
+REC0000510	QQ123363C	Mr	Michael  	Green	1946-05-14	M	Single		michael.green363@example.invalid	07602 186782	CIS	2025-06-03 00:00:00
+REC0000511	QQ252179B	Mr	BERNARD	  ROGERS	20/06/1934	M	Married	22/01/2025	bernard.rogers179@example.invalid	07841 522660	LEGACY_CSV	2025-09-11 00:00:00
+REC0000512	QQ632336B	Mr	Alan	 Ward 	01/06/1954	M	Married		alan.ward336@example.invalid	07393 890663	LEGACY_CSV	2025-07-14 00:00:00
+REC0000513	QQ876367A	Mr	Arthur	Allen	14/03/1958	M	Married	N/A	arthur.allen367@example.invalid	07244 563996	LEGACY_CSV	2026-01-14 00:00:00
+REC0000514	QQ537237B	Mrs	Sandra	  Clarke	21-May-1947	F	Married	\N	sandra.clarke237@example.invalid	07201 300311	DIGITAL	2025-11-21 00:00:00
+REC0000515	QQ836589A	Mr	Nigel	  JONES	1942-12-02	M	\N	\N	nigel.jones589@example.invalid	07407 089916	CIS	2025-09-11 00:00:00
+REC0000516	QQ632744A	Ms	 marion 	  Walker	UNKNOWN	F	Single	29/11/2023	marion.walker744@example.invalid	\N	LEGACY_CSV	2025-10-11 00:00:00
+REC0000517	QQ817880B	Ms	carol	Williams	1954-11-16	F	Married		carol.williams880@example.invalid	07567 488283	CIS	2026-01-24 00:00:00
+REC0000518	QQ574692A	Miss	Christine  	Carter  	1950-01-25	F	Married	2025-11-16	christine.carter692@example.invalid	07214 376057	CIS	2026-03-08 00:00:00
+REC0000519	QQ505914D	Mr	Bernard	Lee	25-Aug-1947	M	-	\N	bernard.lee914@example.invalid	07506 859885	DIGITAL	2026-02-25 00:00:00
+REC0000520	QQ153971A	Miss	Edna	young	1940-07-13	F	Divorced		edna.young971@example.invalid	07719 383766	CIS	2025-11-01 00:00:00
+REC0000521	QQ582211B	Mr	Alan	Morgan	19-Dec-1942	M	Single	04-Nov-1940	-	07132 452109	DIGITAL	2026-03-03 00:00:00
+REC0000522	QQ678821D	Ms	Carol	Wright	1959-01-13	F	Civil Partnership		carol.wright821@example.invalid	07467 869766	CIS	2025-11-05 00:00:00
+REC0000523	QQ780436B	Ms	Maureen  	Clarke	1956-10-13	F	Married		maureen.clarke436@example.invalid	07499 379779	CIS	2026-01-13 00:00:00
+REC0000524	QQ712776A	Mr	Ronald  	Walker  	1900-01-01	M	Divorced	\N	ronald.walker776@example.invalid	07131 847845	CIS	2026-02-01 00:00:00
+REC0000525	QQ556630B	Mrs	Rosemary	Ward	19-Mar-1955	F	Widowed	\N	rosemary.ward630@example.invalid	N/A	DIGITAL	2025-12-11 00:00:00
+REC0000526	QQ255534B	Mrs	Carol	  Young	05-Aug-1952	F	Single	12-Apr-1947	carol.young534@example.invalid	07548 106439	DIGITAL	2026-01-30 00:00:00
+REC0000527	QQ674341D	Mrs	 Wendy 	Shaw	1946-07-16	F	Single		wendy.shaw341@example.invalid	07578 977569	CIS	2026-01-02 00:00:00
+REC0000528	QQ346297B	Mr	Frank	  walker	1960-01-10	M	Married		frank.walker297@example.invalid	07684 562787	CIS	2026-01-12 00:00:00
+REC0000529	QQ400971B	Mr	Norman  	Moore	1958-11-08	M	Single		norman.moore971@example.invalid	\N	CIS	2025-08-18 00:00:00
+REC0000530	QQ496110C	Mrs	AUDREY	COOPER	01/01/1900	F	Widowed	N/A	audrey.cooper110@example.invalid	07365 828411	LEGACY_CSV	2025-07-27 00:00:00
+REC0000531	QQ637509D	Mr	brian	Bailey	1955-01-12	M	Divorced		N/A	07291 512321	CIS	2025-06-05 00:00:00
+REC0000532	QQ829746B	Mr	  clive	  Carter	1945-09-23	M	Single	N/A	clive.carter746@example.invalid	07848 127668	CIS	2025-08-30 00:00:00
+REC0000533	QQ811941B	Mr	Graham	  Jackson	1959-06-02	M	Divorced	2026-03-14	graham.jackson941@example.invalid	07618 931810	CIS	2025-09-20 00:00:00
+REC0000534	QQ547794A	Mr	WILFRED	Clarke  	1958-02-13	M	Married	2023-09-25	wilfred.clarke794@example.invalid	07379 861450	CIS	2025-09-18 00:00:00
+REC0000535	QQ332591A	Mr	Norman	JAMES	1958-06-06	M	-	N/A	norman.james591@example.invalid	07612 616149	CIS	2025-06-07 00:00:00
+REC0000536	QQ117781C	Mr	Peter	  Davies	16-Feb-1937	M	Single		peter.davies781@example.invalid	07774 401414	DIGITAL	2025-11-05 00:00:00
+REC0000537	QQ662005B	Mr	STUART	Murphy	16-Apr-1957	M	Married	\N	stuart.murphy5@example.invalid	07291 292619	DIGITAL	2025-09-03 00:00:00
+REC0000538	QQ138514C	Mrs	Eileen	mitchell  	22-Dec-1941	F		N/A	eileen.mitchell514@example.invalid	07286 708597	DIGITAL	2026-01-19 00:00:00
+REC0000539	QQ392760A	Mr	  RAYMOND	Parker	1956-07-09	M	Civil Partnership	N/A	-	07264 328139	CIS	2025-11-22 00:00:00
+REC0000540	QQ374250A	Mrs	Janet	  Bennett	21/08/1949	F	UNKNOWN		janet.bennett250@example.invalid	07268 309392	LEGACY_CSV	2026-02-05 00:00:00
+REC0000541	QQ401654D	Ms	brenda  	WOOD	1949-03-13	F	Divorced	\N	brenda.wood654@example.invalid	07692 420574	CIS	2026-03-05 00:00:00
+REC0000542	QQ380949D	Mr	RONALD	Wood	01/02/1942	M	Single	\N	ronald.wood949@example.invalid	07135 931400	LEGACY_CSV	2025-08-23 00:00:00
+REC0000543	QQ512857C	Mr	frank	PHILLIPS	09/06/1956	M	Married		frank.phillips857@example.invalid	07832 775930	LEGACY_CSV	2025-10-25 00:00:00
+REC0000544	QQ415799B	Mr	Derek	mitchell  	09/11/1948	M	Divorced	N/A	derek.mitchell799@example.invalid	07904 986689	LEGACY_CSV	2026-01-27 00:00:00
+REC0000545	QQ789590C	Mrs	Christine	  Rogers	16-Jul-1946	F	-		christine.rogers590@example.invalid	07307 838797	DIGITAL	2025-07-23 00:00:00
+REC0000546	QQ405438A	Ms	margaret	Clark	21-Oct-1944	F	Widowed	08-Dec-2029	margaret.clark438@example.invalid	07564 998663	DIGITAL	2025-08-07 00:00:00
+REC0000547	QQ523318D	Miss	DIANE	  DAVIES	30/04/1939	F	N/A	N/A	-	n/a	LEGACY_CSV	2026-03-05 00:00:00
+REC0000548	QQ695608B	Ms	 Brenda 	WATSON	1935-04-04	F	Single	\N	brenda.watson608@example.invalid	07890 244203	CIS	2025-12-16 00:00:00
+REC0000549	QQ581330B	Mr	Harold	Hall	1952-08-16	M	Married	\N	harold.hall330@example.invalid	07810 713441	CIS	2025-06-08 00:00:00
+REC0000550	QQ679798D	Miss	Elizabeth	WARD	1935-08-22	F	Divorced		elizabeth.ward798@example.invalid	07277 068151	CIS	2025-12-25 00:00:00
+REC0000551	QQ409131A	Mr	Michael	WRIGHT	1957-07-15	M	Married		michael.wright131@example.invalid	07847 324340	CIS	2025-09-04 00:00:00
+REC0000552	QQ522156A	Mr	Leonard  	Collins	16/12/1955	M	Widowed			07499 377275	LEGACY_CSV	2026-01-06 00:00:00
+REC0000553	QQ718716C	Mrs	Gillian	scott	1934-04-18	F	Married		gillian.scott716@example.invalid	07446 669984	CIS	2025-12-15 00:00:00
+REC0000554	QQ216655C	Mrs	Doreen  	Hall	1950-12-30	F	Widowed	N/A	doreen.hall655@example.invalid	07412 220662	CIS	2025-09-03 00:00:00
+REC0000555	QQ255094C	Miss	PAULINE	gray	05-Sep-1957	F	Married		pauline.gray94@example.invalid	07416 727651	DIGITAL	2025-09-02 00:00:00
+REC0000556	QQ242003C	Miss	Gillian	Morris	01-Jan-1900	F	Divorced	\N	gillian.morris3@example.invalid	07269 052294	DIGITAL	2025-11-02 00:00:00
+REC0000557	QQ512189C	Mr	douglas	Davis  	13-Feb-1951	M	Married	N/A	douglas.davis189@example.invalid	07744 691117	DIGITAL	2026-03-25 00:00:00
+REC0000558	QQ392169A	Mr	Cyril	GREEN  	1938-02-23	M	Single	N/A	cyril.green169@example.invalid	07806 816641	CIS	2025-10-14 00:00:00
+REC0000559	QQ681244B	Miss	norma	Moore	12/09/1957	F	NULL	01/05/2023	norma.moore244@example.invalid	07972 258481	LEGACY_CSV	2026-01-10 00:00:00
+REC0000560	QQ840380A	Mr	Trevor	Green  	21/09/1946	M	Divorced	N/A	trevor.green380@example.invalid	07412 020261	LEGACY_CSV	2026-02-25 00:00:00
+REC0000561	QQ235847B	Miss	BRENDA  	Bennett  	1952-10-13	F	Single		brenda.bennett847@example.invalid	07201 450211	CIS	2025-08-12 00:00:00
+REC0000562	QQ469440B	Mrs	Maureen  	Shaw	09/09/1954	F	Married		maureen.shaw440@example.invalid	07107 082761	LEGACY_CSV	2025-07-12 00:00:00
+REC0000563	QQ893231A	Mr	 John 	Wood  	01-Apr-1941	M	Single	\N	john.wood231@example.invalid	07147 585702	DIGITAL	2025-11-05 00:00:00
+REC0000564	QQ525134C	Ms	ROSEMARY	hill	21/08/1955	F	n/a		\N	07649 268485	LEGACY_CSV	2026-02-04 00:00:00
+REC0000565	QQ250737A	Miss	CHRISTINE	 walker 	08/09/1950	F	Married	N/A	christine.walker737@example.invalid	07415 074358	LEGACY_CSV	2025-12-17 00:00:00
+REC0000566	QQ349556A	Mr	Barry	Collins	1947-04-25	M	Married	2025-06-22	barry.collins556@example.invalid	07947 525400	CIS	2025-11-16 00:00:00
+REC0000567	QQ875550D	Ms	  Hazel	WATSON  	1952-12-15	F	Single		hazel.watson550@example.invalid	07663 539023	CIS	2025-12-10 00:00:00
+REC0000568	QQ332328B	Miss	Sheila	  Collins	17/10/1956	F	Married	\N	sheila.collins328@example.invalid	07856 510440	LEGACY_CSV	2025-10-20 00:00:00
+REC0000569	QQ889874D	Miss	Sheila	moore	1944-04-05	F	Single	N/A	sheila.moore874@example.invalid	07469 054150	CIS	2026-01-25 00:00:00
+REC0000570	QQ448096A	Miss	barbara	  Thompson	1958-02-05	F	Married	2025-06-28	barbara.thompson96@example.invalid	07982 561007	CIS	2025-09-15 00:00:00
+REC0000571	QQ655305C	Mr	  NIGEL	  murphy	28/06/1936	M	Married	N/A	nigel.murphy305@example.invalid	07499 004942	LEGACY_CSV	2025-09-27 00:00:00
+REC0000572	QQ627360A	Miss	margaret	Lee	25/08/1952	F	Widowed	\N	margaret.lee360@example.invalid	07573 760187	LEGACY_CSV	2026-03-28 00:00:00
+REC0000573	QQ419516B	Miss	 Jean 	DAVIES  	1939-04-06	F	Civil Partnership	2024-05-20	jean.davies516@example.invalid	07965 757070	CIS	2025-11-30 00:00:00
+REC0000574	QQ794141D	Mr	Barry	thompson	05/05/1947	M	Divorced	N/A	barry.thompson141@example.invalid	07857 343361	LEGACY_CSV	2025-12-07 00:00:00
+REC0000575	QQ332082C	Mr	Sidney	Ward	29/04/1947	M	Married	\N	sidney.ward82@example.invalid	07403 548245	LEGACY_CSV	2025-08-20 00:00:00
+REC0000576	QQ544399C	Ms	  Valerie	Turner	02/09/1949	F	Widowed		valerie.turner399@example.invalid	07148 878098	LEGACY_CSV	2025-09-09 00:00:00
+REC0000577	QQ589171C	Mr	  CYRIL	Moore  	19-Feb-1939	M	Single	\N	cyril.moore171@example.invalid	07236 046461	DIGITAL	2025-07-15 00:00:00
+REC0000578	QQ778865C	Mr	david	Murphy	1949-12-06	M	Married	2029-03-10	david.murphy865@example.invalid	07631 161667	CIS	2025-06-28 00:00:00
+REC0000579	QQ210094A	Mr	BERNARD	Mitchell	12/06/2031	M	Married	\N	bernard.mitchell94@example.invalid	07168 144411	LEGACY_CSV	2025-11-10 00:00:00
+REC0000580	QQ110404B	Mr	NIGEL	Hall	1947-11-07	M	Widowed	N/A	nigel.hall404@example.invalid	07863 527246	CIS	2025-12-06 00:00:00
+REC0000581	QQ255990B	Ms	  Dorothy	Turner	1955-10-31	F	NULL	N/A	-	07970 334174	CIS	2025-06-15 00:00:00
+REC0000582	QQ552263C	Ms	JANET	Morgan	1953-08-16	F	Divorced	2025-06-19	janet.morgan263@example.invalid	07363 207448	CIS	2025-07-05 00:00:00
+REC0000583	QQ864180B	Mrs	  Irene	Johnson	1957-06-25	F	Married		irene.johnson180@example.invalid	07935 301130	CIS	2025-09-14 00:00:00
+REC0000584	QQ170181B	Mr	 Ronald 	RICHARDSON	1954-05-17	M	Single	N/A	ronald.richardson181@example.invalid	UNKNOWN	CIS	2025-06-28 00:00:00
+REC0000585	QQ852430D	Mr	Douglas	 Turner 	18-Nov-1941	M	Divorced	25-Dec-2029	douglas.turner430@example.invalid	07820 180954	DIGITAL	2025-12-06 00:00:00
+REC0000586	QQ518111C	Mr	Maurice	KING  	1958-03-28	M	Married	N/A	maurice.king111@example.invalid	07337 801048	CIS	2025-11-20 00:00:00
+REC0000587	QQ783502C	Mr	Reginald	Davis  	06-Feb-1942	M	Married		reginald.davis502@example.invalid	07920 368349	DIGITAL	2026-01-28 00:00:00
+REC0000588	QQ453982B	Mrs	Joan	mitchell	14/09/1945	F	Married	\N	joan.mitchell982@example.invalid	07383 947251	LEGACY_CSV	2026-01-17 00:00:00
+REC0000589	QQ372216B	Ms	Kathleen  	Hill	30/06/1947	F	Married		kathleen.hill216@example.invalid	07682 024731	LEGACY_CSV	2025-11-21 00:00:00
+REC0000590	QQ236174D	Mrs	Irene	Phillips	1947-01-04	F	Divorced	2024-02-04	irene.phillips174@example.invalid	07814 122025	CIS	2025-12-26 00:00:00
+REC0000591	QQ512130A	Mr	Norman	YOUNG	1957-12-08	M	Single	N/A	norman.young130@example.invalid	07623 845488	CIS	2025-09-16 00:00:00
+REC0000592	QQ825124D	Mr	  Terence	Smith	25-Jan-1948	M	Married	N/A	terence.smith124@example.invalid	07611 468624	DIGITAL	2025-07-01 00:00:00
+REC0000593	QQ327562A	Mr	KEITH  	 baker 	27/09/1959	M	NULL		keith.baker562@example.invalid		LEGACY_CSV	2025-10-02 00:00:00
+REC0000594	QQ279910C	Mr	STANLEY	WATSON	12-Oct-1948	M	NULL		stanley.watson910@example.invalid	n/a	DIGITAL	2025-08-02 00:00:00
+REC0000595	QQ567640B	Ms	Irene	PHILLIPS	19-Mar-1951	F	Married		irene.phillips640@example.invalid	07245 984756	DIGITAL	2025-09-17 00:00:00
+REC0000596	QQ867187A	Mr	BERNARD	 WALKER 	1938-06-02	M	Divorced	N/A	bernard.walker187@example.invalid	07599 431959	CIS	2026-01-18 00:00:00
+REC0000597	QQ278023A	Mrs	Pauline  	ROGERS	1946-07-23	F	Divorced		pauline.rogers23@example.invalid	07424 969618	CIS	2026-01-27 00:00:00
+REC0000598	QQ252105C	Mr	 malcolm 	CARTER	15/07/1959	M	Civil Partnership		malcolm.carter105@example.invalid	07568 134366	LEGACY_CSV	2025-11-04 00:00:00
+REC0000599	QQ474596D	Ms	Sheila	  Walker	1953-12-21	F	Divorced	\N	sheila.walker596@example.invalid	07463 932756	CIS	2025-08-12 00:00:00
+REC0000600	QQ492735A	Mrs	 Valerie 	white	1944-06-17	F	Widowed		valerie.white735@example.invalid	07352 455663	CIS	2025-08-02 00:00:00
+REC0000601	QQ298801D	Mr	Cyril	cook  	26-Oct-1949	M	Widowed	\N	cyril.cook801@example.invalid	07541 768455	DIGITAL	2025-08-15 00:00:00
+REC0000602	QQ391683D	Ms	MURIEL	  Ward	1948-05-13	F	Divorced	N/A	muriel.ward683@example.invalid	07622 434730	CIS	2025-07-08 00:00:00
+REC0000603	QQ710191B	Mrs	Barbara	Moore	1955-07-19	F	Widowed		barbara.moore191@example.invalid	07582 136589	CIS	2026-03-05 00:00:00
+REC0000604	QQ853688B	Mrs	  JEAN	Bailey	06/04/1947	F	Married		jean.bailey688@example.invalid	NULL	LEGACY_CSV	2025-11-20 00:00:00
+REC0000605	QQ442047B	Ms	  Hazel	Morris	1954-03-06	F	Married	2024-10-13	hazel.morris47@example.invalid	n/a	CIS	2025-12-25 00:00:00
+REC0000606	QQ755400B	Mr	Reginald	Lee	1958-09-05	M	Married	N/A	reginald.lee400@example.invalid	07858 119340	CIS	2025-10-17 00:00:00
+REC0000607	QQ268442D	Mrs	  EILEEN	WHITE  	1943-03-04	F	Married		NULL	07681 813809	CIS	2025-12-06 00:00:00
+REC0000608	QQ758903A	Mrs	 Kathleen 	WALKER	1940-09-26	F	Divorced	N/A	kathleen.walker903@example.invalid	07512 793192	CIS	2025-10-01 00:00:00
+REC0000609	QQ462992D	Mr	Malcolm	Davies	12-Jun-2031	M	Divorced		malcolm.davies992@example.invalid	\N	DIGITAL	2025-10-31 00:00:00
+REC0000610	QQ584071C	Miss	Carol	 Baker 	09-Sep-1958	F	Civil Partnership		carol.baker71@example.invalid	07892 694927	DIGITAL	2026-02-28 00:00:00
+REC0000611	QQ780553B	Mr	arthur	HARRISON	25/04/1950	M	Single	10/08/2024	arthur.harrison553@example.invalid	07628 677328	LEGACY_CSV	2026-03-18 00:00:00
+REC0000612	QQ530391C	Mr	John	Chapman	12/07/1948	M	Widowed	13/02/2026	john.chapman391@example.invalid	07306 133985	LEGACY_CSV	2026-02-14 00:00:00
+REC0000613	QQ423829C	Miss	Rosemary  	Chapman	1952-04-26	F	Divorced	2023-08-25	rosemary.chapman829@example.invalid	07926 943059	CIS	2025-06-14 00:00:00
+REC0000614	QQ502029A	Ms	  wendy	Williams  	02-Mar-1943	F	Married		wendy.williams29@example.invalid	07746 237414	DIGITAL	2025-11-21 00:00:00
+REC0000615	QQ609788C	Miss	Diane	  phillips	1948-07-20	F	Married	\N	diane.phillips788@example.invalid	07639 724805	CIS	2025-10-22 00:00:00
+REC0000616	QQ216383A	Mr	DAVID	Scott	13/08/1956	M	Widowed	\N	david.scott383@example.invalid	07216 505559	LEGACY_CSV	2025-09-22 00:00:00
+REC0000617	QQ247393C	Mr	  roy	Smith  	1955-03-14	M	Widowed	\N	roy.smith393@example.invalid	07844 535578	CIS	2025-07-13 00:00:00
+REC0000618	QQ104671B	Mr	Graham	jackson  	18-Jun-1956	M	Divorced	15-Apr-1951	graham.jackson671@example.invalid	07221 438356	DIGITAL	2025-08-18 00:00:00
+REC0000619	QQ172220C	Miss	 Hazel 	  Bennett	1935-09-14	F	UNKNOWN	\N	hazel.bennett220@example.invalid	07242 085602	CIS	2025-11-27 00:00:00
+REC0000620	QQ689969A	Miss	joan	davies	19/09/1947	F	Married	\N	joan.davies969@example.invalid	07744 005068	LEGACY_CSV	2025-10-13 00:00:00
+REC0000621	QQ654894C	Mr	clive	KELLY	1953-02-25	M	Widowed	\N	n/a	07580 948564	CIS	2025-08-11 00:00:00
+REC0000622	QQ251566B	Mr	Keith	Scott	1943-02-26	M	UNKNOWN	N/A	keith.scott566@example.invalid	07692 246549	CIS	2025-12-13 00:00:00
+REC0000623	QQ699934A	Mr	  WILFRED	 white 	09-Mar-1943	M	Single	N/A	wilfred.white934@example.invalid	07772 853110	DIGITAL	2026-02-23 00:00:00
+REC0000624	QQ492425D	Miss	Hazel	Hill	06/05/1958	F	Single		hazel.hill425@example.invalid	07860 185108	LEGACY_CSV	2025-08-19 00:00:00
+REC0000625	QQ441166A	Ms	  Brenda	WARD	1950-02-02	F	Single	N/A	brenda.ward166@example.invalid	07872 815928	CIS	2025-07-29 00:00:00
+REC0000626	QQ174133A	Miss	Sandra	Hall	07-Jul-1955	F	Widowed		sandra.hall133@example.invalid	07125 781153	DIGITAL	2025-12-20 00:00:00
+REC0000627	QQ182947D	Ms	Elizabeth	Clark	03-Feb-1940	F	Married	\N	elizabeth.clark947@example.invalid	07347 218055	DIGITAL	2026-01-17 00:00:00
+REC0000628	QQ593738B	Miss	  Janet	Mitchell  	2031-06-12	F	Widowed	N/A	n/a	07891 548164	CIS	2025-07-07 00:00:00
+REC0000629	QQ636509C	Mr	FRANK  	 COLLINS 	13-Dec-1945	M	Single		frank.collins509@example.invalid	07487 743863	DIGITAL	2025-12-28 00:00:00
+REC0000630	QQ335664D	Mrs	  Maureen	Davis	1955-05-15	F	Single		maureen.davis664@example.invalid		CIS	2025-11-28 00:00:00
+REC0000631	QQ356959A	Ms	margaret	  Jackson	1952-05-02	F	Divorced		margaret.jackson959@example.invalid	07308 249627	CIS	2025-11-29 00:00:00
+REC0000632	QQ331453A	Mr	BERNARD	Young	1947-01-15	M	Married	N/A	N/A	07187 866078	CIS	2026-01-15 00:00:00
+REC0000633	QQ530668B	Miss	  BARBARA	Smith	1941-01-31	F	Married	\N	barbara.smith668@example.invalid	07614 407961	CIS	2025-10-25 00:00:00
+REC0000634	QQ531509B	Mr	Frank	Wright  	02/11/1952	M	Married	\N	frank.wright509@example.invalid	07144 770501	LEGACY_CSV	2025-12-31 00:00:00
+REC0000635	QQ800379B	Miss	CHRISTINE	phillips  	08-Sep-1948	F	Married	\N	UNKNOWN	07394 393610	DIGITAL	2025-08-21 00:00:00
+REC0000636	QQ778329A	Mr	 John 	Price	09-Jun-1936	M	Married	N/A	john.price329@example.invalid	07527 899010	DIGITAL	2025-09-16 00:00:00
+REC0000637	QQ605215B	Mrs	Sylvia	Brown	1942-06-18	F	Divorced		sylvia.brown215@example.invalid	07265 967643	CIS	2025-10-09 00:00:00
+REC0000638	QQ733283B	Mr	STUART	ROGERS	15-Feb-1958	M	Married	\N	stuart.rogers283@example.invalid	N/A	DIGITAL	2026-01-17 00:00:00
+REC0000639	QQ217419A	Mrs	PATRICIA	Carter	21-Apr-1952	F	Married		patricia.carter419@example.invalid	07786 955883	DIGITAL	2026-02-17 00:00:00
+REC0000640	QQ887448C	Mr	Norman	Johnson  	28-Sep-1957	M	Married	\N	norman.johnson448@example.invalid	07409 006303	DIGITAL	2026-03-03 00:00:00
+REC0000641	QQ880700B	Mr	  Peter	Scott	1958-01-06	M	Widowed	N/A	peter.scott700@example.invalid	07462 740095	CIS	2025-07-09 00:00:00
+REC0000642	QQ851117D	Ms	Edna	Johnson  	10-Jun-1947	F	Married	\N	N/A	07243 753985	DIGITAL	2025-10-15 00:00:00
+REC0000643	QQ596517C	Mr	Douglas	SHAW	01-Oct-1957	M	Divorced	\N	douglas.shaw517@example.invalid	07382 647813	DIGITAL	2025-07-23 00:00:00
+REC0000644	QQ230258B	Mr	KEITH	Ward	08/03/1952	M	\N	\N	keith.ward258@example.invalid	07633 646727	LEGACY_CSV	2026-03-03 00:00:00
+REC0000645	QQ742043A	Miss	ELIZABETH	Bennett  	1956-09-02	F	Single	N/A	elizabeth.bennett43@example.invalid	07822 760229	CIS	2026-01-07 00:00:00
+REC0000646	QQ687013C	Miss	  Audrey	 Evans 	1957-11-07	F	Widowed		audrey.evans13@example.invalid	07632 762178	CIS	2025-12-18 00:00:00
+REC0000647	QQ515348C	Mrs	Jean	 Taylor 	21/01/1960	F	Single		jean.taylor348@example.invalid	07763 194619	LEGACY_CSV	2025-08-01 00:00:00
+REC0000648	QQ306802C	Mrs	Eileen	  Wilson	1950-10-23	F	Married	N/A	eileen.wilson802@example.invalid	07977 374345	CIS	2025-09-02 00:00:00
+REC0000649	QQ822390C	Mrs	LINDA	CARTER	18/09/1946	F	Married	02/02/2026	linda.carter390@example.invalid	07324 917920	LEGACY_CSV	2026-02-08 00:00:00
+REC0000650	QQ455372C	Mrs	Eileen	ROBERTS	1944-05-12	F	Married	\N	eileen.roberts372@example.invalid	07666 474263	CIS	2025-10-12 00:00:00
+REC0000651	QQ537142D	Ms	Irene	Watson	19/06/1952	F	Married	N/A	irene.watson142@example.invalid	07908 468623	LEGACY_CSV	2026-02-13 00:00:00
+REC0000652	QQ478356D	Miss	Joan	Cooper	1952-03-06	F	Divorced		joan.cooper356@example.invalid	07719 217548	CIS	2025-11-07 00:00:00
+REC0000653	QQ779643A	Miss	muriel	  BAKER	26/10/1959	F	Married		muriel.baker643@example.invalid	07145 204031	LEGACY_CSV	2025-11-17 00:00:00
+REC0000654	QQ617762D	Mrs	Barbara  	Smith	1950-10-07	F	Single		barbara.smith762@example.invalid	07535 658965	CIS	2025-11-06 00:00:00
+REC0000655	QQ514875D	Mr	  michael	MURPHY	19/12/1939	M	Civil Partnership	\N	UNKNOWN	07565 845533	LEGACY_CSV	2025-08-16 00:00:00
+REC0000656	QQ306292C	Ms	GILLIAN	Wilson  	1951-06-15	F	NULL	N/A	gillian.wilson292@example.invalid	07206 684211	CIS	2026-02-20 00:00:00
+REC0000657	QQ168221C	Miss	Rosemary	  ALLEN	1949-10-18	F	Widowed		rosemary.allen221@example.invalid	07948 659219	CIS	2025-06-30 00:00:00
+REC0000658	QQ554367B	Mrs	Gillian	Mitchell  	1949-01-12	F	Divorced		gillian.mitchell367@example.invalid	UNKNOWN	CIS	2026-02-21 00:00:00
+REC0000659	QQ130786D	Mr	John	Phillips	09/02/1950	M	Married		john.phillips786@example.invalid	07320 072330	LEGACY_CSV	2025-12-22 00:00:00
+REC0000660	QQ272201C	Ms	Patricia  	Ward  	1958-02-15	F	Married		patricia.ward201@example.invalid	07872 798827	CIS	2026-03-24 00:00:00
+REC0000661	QQ209497A	Miss	janet  	Johnson	17-Nov-1944	F	Married	30-Jan-2026	-	UNKNOWN	DIGITAL	2025-08-26 00:00:00
+REC0000662	QQ415860D	Miss	 Sandra 	Shaw	09-Jul-1949	F	Single		sandra.shaw860@example.invalid	07514 934685	DIGITAL	2025-12-01 00:00:00
+REC0000663	QQ424638A	Ms	  Sheila	taylor	05-Jun-1959	F	Married	\N	sheila.taylor638@example.invalid	07670 899361	DIGITAL	2025-07-10 00:00:00
+REC0000664	QQ798485C	Ms	  Pauline	  Wright	28-Jul-1945	F	Widowed	\N	pauline.wright485@example.invalid	07324 433510	DIGITAL	2025-11-12 00:00:00
+REC0000665	QQ281729D	Mrs	maureen	Hall	10-Jul-1957	F	Married	\N	maureen.hall729@example.invalid	07693 521524	DIGITAL	2025-12-21 00:00:00
+REC0000666	QQ836072C	Ms	kathleen  	King	12/06/2031	F	Married	19/04/2023	kathleen.king72@example.invalid	07722 574648	LEGACY_CSV	2025-12-14 00:00:00
+REC0000667	QQ543765A	Mrs	  Eileen	Johnson	17-May-1942	F	Married	23-Feb-2025	eileen.johnson765@example.invalid	07196 277940	DIGITAL	2025-08-26 00:00:00
+REC0000668	QQ864183B	Mrs	Kathleen	  Cook	21/11/1950	F	Married		kathleen.cook183@example.invalid	07619 570388	LEGACY_CSV	2026-01-03 00:00:00
+REC0000669	QQ232672B	Ms	Wendy	CARTER	1938-10-08	F	Married		wendy.carter672@example.invalid	07452 141975	CIS	2025-08-29 00:00:00
+REC0000670	QQ532309D	Mr	  Arthur	Collins  	1958-01-26	M	Married	N/A	arthur.collins309@example.invalid	07195 081784	CIS	2025-11-12 00:00:00
+REC0000671	QQ237565C	Mrs	Pauline  	Murphy	11-Jun-1959	F	Married	N/A	pauline.murphy565@example.invalid	07622 115708	DIGITAL	2026-01-13 00:00:00
+REC0000672	QQ802032A	Mrs	  Irene	ROBINSON	20/10/1938	F	Married	16/01/2025	irene.robinson32@example.invalid	07511 550075	LEGACY_CSV	2026-03-11 00:00:00
+REC0000673	QQ487039D	Mrs	  Rosemary	CHAPMAN	25-Dec-1943	F	Single		rosemary.chapman39@example.invalid	07325 067802	DIGITAL	2026-01-08 00:00:00
+REC0000674	QQ887565D	Mrs	Muriel	Scott  	1940-05-24	F	Married	N/A	muriel.scott565@example.invalid	07311 371156	CIS	2025-08-29 00:00:00
+REC0000675	QQ885416A	Mr	Cyril  	Johnson	1934-10-31	M			cyril.johnson416@example.invalid	07860 541245	CIS	2025-11-07 00:00:00
+REC0000676	QQ880090D	Ms	Audrey	rogers  	1953-02-15	F	Widowed		audrey.rogers90@example.invalid	07766 247403	CIS	2026-02-20 00:00:00
+REC0000677	QQ583409A	Mr	ARTHUR	Williams	06/07/1956	M	Divorced	25/04/2025	arthur.williams409@example.invalid	07913 300193	LEGACY_CSV	2025-07-15 00:00:00
+REC0000678	QQ288276A	Ms	joan	Jackson	04/09/1953	F	Married		joan.jackson276@example.invalid	07761 862831	LEGACY_CSV	2025-10-18 00:00:00
+REC0000679	QQ379984A	Mr	Gordon	WILLIAMS	07/03/1937	M	Married	\N	gordon.williams984@example.invalid	07455 146800	LEGACY_CSV	2025-08-17 00:00:00
+REC0000680	QQ376456A	Mr	roy	allen	1957-09-02	M	Widowed		roy.allen456@example.invalid	07631 279888	CIS	2025-11-29 00:00:00
+REC0000681	QQ829247D	Miss	Kathleen	ROBINSON	1946-03-11	F	Divorced	\N	kathleen.robinson247@example.invalid	07478 360872	CIS	2025-12-11 00:00:00
+REC0000682	QQ832972C	Mr	Cyril	Brown	22/11/1957	M	Widowed	N/A	cyril.brown972@example.invalid	-	LEGACY_CSV	2025-08-07 00:00:00
+REC0000683	QQ401788B	Mr	NIGEL	  Johnson	11/10/1946	M	Widowed		nigel.johnson788@example.invalid	07495 787913	LEGACY_CSV	2025-09-15 00:00:00
+REC0000684	QQ443854D	Mr	  MICHAEL	Smith	03-Nov-1941	M		\N	michael.smith854@example.invalid	07777 260213	DIGITAL	2025-07-03 00:00:00
+REC0000685	QQ201732D	Mr	  Brian	Jones  	27-Jun-1957	M	Divorced		brian.jones732@example.invalid	07511 981103	DIGITAL	2025-12-20 00:00:00
+REC0000686	QQ833930B	Mr	Frank	Clarke  	03-Jun-1959	M	Single	\N	frank.clarke930@example.invalid	07889 769155	DIGITAL	2025-07-14 00:00:00
+REC0000687	QQ445897D	Ms	Edna	Scott	28-Jul-1956	F	Married	N/A	UNKNOWN	N/A	DIGITAL	2025-11-18 00:00:00
+REC0000688	QQ565808A	Mr	LEONARD	Baker	01-Jan-1900	M	Married		leonard.baker808@example.invalid	07553 933920	DIGITAL	2025-07-10 00:00:00
+REC0000689	QQ414279C	Ms	Pauline	Jones	27-Oct-1946	F	Married	01-Oct-1933	pauline.jones279@example.invalid	NULL	DIGITAL	2026-02-11 00:00:00
+REC0000690	QQ675888D	Mr	Neville	Allen		M	Widowed		neville.allen888@example.invalid	07178 344935	CIS	2026-02-04 00:00:00
+REC0000691	QQ458343C	Mr	Clive  	Lee  	13/02/1944	M	Widowed		clive.lee343@example.invalid	07674 646940	LEGACY_CSV	2026-01-13 00:00:00
+REC0000692	QQ817984B	Mr	  Frank	  Shaw	21-Apr-1938	M	Civil Partnership		frank.shaw984@example.invalid	-	DIGITAL	2025-07-28 00:00:00
+REC0000693	QQ630487C	Ms	Irene	Collins	12/06/2031	F	Married	N/A	irene.collins487@example.invalid	07327 904993	LEGACY_CSV	2026-01-19 00:00:00
+REC0000694	QQ787170D	Ms	marion	White	1900-01-01	F	Widowed	N/A	marion.white170@example.invalid	07779 685984	CIS	2025-11-22 00:00:00
+REC0000695	QQ307164D	Mr	Harold	DAVIS	31-Dec-9999	M	Divorced		harold.davis164@example.invalid	07796 881360	DIGITAL	2026-01-03 00:00:00
+REC0000696	QQ589633B	Miss	Sheila	Scott	30-Mar-1936	F	Civil Partnership		sheila.scott633@example.invalid	07279 030295	DIGITAL	2025-11-08 00:00:00
+REC0000697	QQ214063B	Ms	  Hazel	Wilson	1943-11-24	F	Married		hazel.wilson63@example.invalid	07383 334825	CIS	2026-01-24 00:00:00
+REC0000698	QQ142442D	Mrs	Rosemary	Cook	1948-07-20	F	Married		rosemary.cook442@example.invalid	N/A	CIS	2025-10-20 00:00:00
+REC0000699	QQ286859A	Ms	Barbara	Collins	1943-01-13	F	UNKNOWN		barbara.collins859@example.invalid	07544 553318	CIS	2026-02-22 00:00:00
+REC0000700	QQ346813C	Mr	Norman	Robinson  	07-Jan-1936	M	Widowed		norman.robinson813@example.invalid	07778 857725	DIGITAL	2025-07-27 00:00:00
+REC0000701	QQ706881C	Mr	Colin	 Wood 	1953-07-16	M	Single		colin.wood881@example.invalid	07209 822753	CIS	2025-12-19 00:00:00
+REC0000702	QQ631648D	Mr	Derek	Rogers	1948-06-28	M	Married		derek.rogers648@example.invalid	07444 429383	CIS	2026-02-01 00:00:00
+REC0000703	QQ471519C	Ms	  Gillian	Johnson  	1944-07-04	F	Widowed		gillian.johnson519@example.invalid	07317 074506	CIS	2025-07-17 00:00:00
+REC0000704	QQ563679D	Mr	Keith	parker	20/11/1954	M	Widowed		keith.parker679@example.invalid	07928 354037	LEGACY_CSV	2026-03-09 00:00:00
+REC0000705	QQ385373D	Mr	John  	  davies	1957-08-25	M	Widowed		john.davies373@example.invalid	07165 059889	CIS	2025-07-10 00:00:00
+REC0000706	QQ737739C	Ms	 Beryl 	  MITCHELL	1943-10-21	F	Married		beryl.mitchell739@example.invalid	NULL	CIS	2025-11-26 00:00:00
+REC0000707	QQ610496A	Mrs	PATRICIA	Morgan  	1955-07-26	F	Single		-	07502 531265	CIS	2025-06-15 00:00:00
+REC0000708	QQ642557C	Mrs	Irene	Clark	12/06/2031	F	N/A		irene.clark557@example.invalid	07553 493820	LEGACY_CSV	2025-09-17 00:00:00
+REC0000709	QQ477463C	Mrs	Joan	Smith	22-Dec-1942	F	Single		joan.smith463@example.invalid	07599 307763	DIGITAL	2025-06-16 00:00:00
+REC0000710	QQ586416A	Mr	Nigel	SHAW  	14/10/1956	M	Married		nigel.shaw416@example.invalid	n/a	LEGACY_CSV	2025-10-28 00:00:00
+REC0000711	QQ730194D	Mr	  Clive	Bell	08-Dec-1950	M	Divorced	N/A	clive.bell194@example.invalid	07982 479417	DIGITAL	2025-08-15 00:00:00
+REC0000712	QQ352247B	Mr	DAVID	Evans	02-Feb-1949	M	Widowed		david.evans247@example.invalid	07701 273333	DIGITAL	2025-09-12 00:00:00
+REC0000713	QQ544838C	Mr	John	Morgan	09-Apr-1941	M	Single		john.morgan838@example.invalid	07327 606999	DIGITAL	2025-06-22 00:00:00
+REC0000714	QQ101717D	Mr	 arthur 	Morgan	2031-06-12	M	Single		arthur.morgan717@example.invalid		CIS	2025-12-10 00:00:00
+REC0000715	QQ354731A	Ms	Susan	James	1952-03-25	F	Single	\N	\N	07961 096160	CIS	2026-03-26 00:00:00
+REC0000716	QQ716123C	Ms	  VALERIE	  Watson	15/07/1940	F	Married	N/A	valerie.watson123@example.invalid	07268 483678	LEGACY_CSV	2025-08-27 00:00:00
+REC0000717	QQ707998B	Miss	 Margaret 	Hall  	12/06/2031	F	Single		margaret.hall998@example.invalid	07632 845194	LEGACY_CSV	2026-02-09 00:00:00
+REC0000718	QQ743935A	Mr	Peter  	Taylor	1938-09-07	M	Married		peter.taylor935@example.invalid	07951 401898	CIS	2025-06-17 00:00:00
+REC0000719	QQ811225B	Ms	patricia	Morris	1953-08-27	F	Widowed	\N	\N	07830 592876	CIS	2025-09-26 00:00:00
+REC0000720	QQ264077B	Mr	Trevor	Griffiths  	25/01/1958	M	Single	\N	trevor.griffiths77@example.invalid	07298 003327	LEGACY_CSV	2025-08-24 00:00:00
+REC0000721	QQ899902D	Mr	NORMAN	  Chapman	24-Feb-1958	M	-	\N	norman.chapman902@example.invalid	07309 537946	DIGITAL	2025-08-03 00:00:00
+REC0000722	QQ609986D	Miss	Beryl	JOHNSON	20/08/1951	F	Single	N/A	beryl.johnson986@example.invalid	07110 020603	LEGACY_CSV	2025-07-30 00:00:00
+REC0000723	QQ347921A	Mrs	 SUSAN 	BROWN  	22/02/1956	F	Divorced	N/A	susan.brown921@example.invalid	07176 434335	LEGACY_CSV	2026-03-07 00:00:00
+REC0000724	QQ460063A	Ms	  Dorothy	davies	1959-05-12	F	Divorced		dorothy.davies63@example.invalid	07905 398030	CIS	2026-02-12 00:00:00
+REC0000725	QQ809952D	Ms	  Janet	Jones	01/01/1900	F	Married		janet.jones952@example.invalid	07298 618990	LEGACY_CSV	2025-08-16 00:00:00
+REC0000726	QQ251312C	Mr	GRAHAM	Kelly  	1947-09-23	M	Married		graham.kelly312@example.invalid	07505 600552	CIS	2025-09-15 00:00:00
+REC0000727	QQ249914B	Mr	  Michael	SCOTT	01-Aug-1942	M	Married		michael.scott914@example.invalid	07843 838083	DIGITAL	2025-07-31 00:00:00
+REC0000728	QQ200384C	Mr	  Stuart	  Chapman	1958-09-16	M	Widowed		stuart.chapman384@example.invalid	07872 268304	CIS	2025-11-28 00:00:00
+REC0000729	QQ191899C	Mr	Roy	  Price	1955-04-15	M	-	N/A	roy.price899@example.invalid	07332 432132	CIS	2025-08-14 00:00:00
+REC0000730	QQ794871A	Mrs	 Audrey 	Robinson	25-Aug-1938	F	Divorced	N/A	audrey.robinson871@example.invalid	07117 327372	DIGITAL	2026-03-10 00:00:00
+REC0000731	QQ599722B	Ms	VALERIE	  SHAW	17/11/1950	F	Widowed	N/A	valerie.shaw722@example.invalid	07167 934029	LEGACY_CSV	2025-12-30 00:00:00
+REC0000732	QQ215290D	Miss	Audrey	WRIGHT	20/03/1944	F	Single	N/A	UNKNOWN	07630 298096	LEGACY_CSV	2025-12-02 00:00:00
+REC0000733	QQ402995C	Mrs	  janet	COLLINS  	22/07/1952	F	Married		janet.collins995@example.invalid	N/A	LEGACY_CSV	2025-08-26 00:00:00
+REC0000734	QQ887658A	Miss	Doreen	HILL	10-Nov-1957	F	Married		doreen.hill658@example.invalid	07417 213865	DIGITAL	2025-09-19 00:00:00
+REC0000735	QQ734390B	Miss	Norma	  Lee	17/03/1960	F	Single		norma.lee390@example.invalid	07466 151250	LEGACY_CSV	2026-01-20 00:00:00
+REC0000736	QQ516279B	Mrs	Jean	  Evans	11/01/1955	F	Divorced	N/A	jean.evans279@example.invalid	07686 887495	LEGACY_CSV	2025-12-05 00:00:00
+REC0000737	QQ659318C	Mrs	Rosemary	ROGERS	23-Sep-1957	F	Married		\N	07503 008841	DIGITAL	2025-10-03 00:00:00
+REC0000738	QQ187287A	Mr	Clive	James	1946-03-08	M	Married	\N	clive.james287@example.invalid	07472 634636	CIS	2025-10-05 00:00:00
+REC0000739	QQ313434B	Mr	colin	  Baker	1949-03-26	M	Single	2025-11-12	colin.baker434@example.invalid	07660 877967	CIS	2025-12-16 00:00:00
+REC0000740	QQ528201D	Miss	Doreen	Williams	1945-01-14	F	NULL	\N	doreen.williams201@example.invalid	07603 359489	CIS	2025-11-18 00:00:00
+REC0000741	QQ151344D	Mr	GRAHAM  	Harris	10/09/1959	M	Married	N/A	graham.harris344@example.invalid	07571 466590	LEGACY_CSV	2025-08-21 00:00:00
+REC0000742	QQ190995D	Ms	Sheila  	Phillips	16/07/1948	F	Single	28/09/2023	sheila.phillips995@example.invalid	07478 812043	LEGACY_CSV	2025-08-29 00:00:00
+REC0000743	QQ360046A	Mrs	EDNA	CARTER	31/03/1948	F	Widowed		edna.carter46@example.invalid	07381 380170	LEGACY_CSV	2025-07-29 00:00:00
+REC0000744	QQ210294D	Mrs	Janet  	Mitchell	1948-05-26	F	Divorced		janet.mitchell294@example.invalid	07827 578752	CIS	2025-12-23 00:00:00
+REC0000745	QQ699594D	Mr	Wilfred  	Davis	  	M	Single	\N	wilfred.davis594@example.invalid	07592 705682	LEGACY_CSV	2025-08-14 00:00:00
+REC0000746	QQ431386C	Mrs	  Irene	Taylor	13/08/1951	F	Single		irene.taylor386@example.invalid	07906 656173	LEGACY_CSV	2025-10-26 00:00:00
+REC0000747	QQ187884D	Mr	Terence	Kelly	08/04/1946	M	Married	N/A	terence.kelly884@example.invalid	07424 281428	LEGACY_CSV	2025-07-24 00:00:00
+REC0000748	QQ319621A	Ms	Jean	WHITE	1936-07-13	F	Married	N/A	jean.white621@example.invalid	07999 350823	CIS	2026-01-12 00:00:00
+REC0000749	QQ394397D	Miss	MARION	Kelly	09/10/1951	F	Married		marion.kelly397@example.invalid	07608 004387	LEGACY_CSV	2025-07-28 00:00:00
+REC0000750	QQ323452C	Mr	Trevor	  Jones	16/03/1958	M	Single	N/A	trevor.jones452@example.invalid	07999 663214	LEGACY_CSV	2025-08-31 00:00:00
+REC0000751	QQ264082C	Mr	Reginald	Turner	1941-12-28	M	Divorced	N/A	reginald.turner82@example.invalid	07651 815498	CIS	2025-11-02 00:00:00
+REC0000752	QQ287352D	Ms	  Audrey	Taylor	06/08/1945	F	Married	\N	audrey.taylor352@example.invalid	07962 965479	LEGACY_CSV	2026-02-10 00:00:00
+REC0000753	QQ529690A	Mr	Stanley	clarke	11-May-1951	M	Single	27-Feb-2029	stanley.clarke690@example.invalid	07410 827208	DIGITAL	2025-08-06 00:00:00
+REC0000754	QQ463621C	Mrs	Maureen	DAVIES	16/08/1956	F	Married	\N	maureen.davies621@example.invalid	NULL	LEGACY_CSV	2025-08-26 00:00:00
+REC0000755	QQ121457C	Mrs	Linda	Wood	1958-03-09	F	NULL	N/A	linda.wood457@example.invalid	07285 513132	CIS	2026-01-23 00:00:00
+REC0000756	QQ433711B	Mr	Arthur	Parker	1955-03-10	M	Single	\N	arthur.parker711@example.invalid		CIS	2025-12-25 00:00:00
+REC0000757	QQ785602A	Mr	Stuart	Ward	21-Oct-1940	M	Single	\N	N/A	07341 621785	DIGITAL	2025-07-10 00:00:00
+REC0000758	QQ447619B	Mr	  Douglas	  Turner	1936-01-16	M	Widowed		douglas.turner619@example.invalid	07413 722181	CIS	2025-08-10 00:00:00
+REC0000759	QQ330028B	Mrs	Marion	Collins	1955-08-14	F		N/A	-	07587 798410	CIS	2025-07-27 00:00:00
+REC0000760	QQ316726B	Mrs	Irene  	  Thompson	06-Jan-1956	F	Divorced		irene.thompson726@example.invalid	07309 069326	DIGITAL	2025-07-13 00:00:00
+REC0000761	QQ359617A	Mr	STUART	Young	13/05/1943	M	Married		stuart.young617@example.invalid	07616 073464	LEGACY_CSV	2025-06-17 00:00:00
+REC0000762	QQ894841B	Miss	Dorothy	Williams	1950-11-15	F	Married	N/A	dorothy.williams841@example.invalid	07263 591022	CIS	2026-03-13 00:00:00
+REC0000763	QQ651126B	Ms	Christine	moore	1958-04-17	F	Single		christine.moore126@example.invalid	07457 940061	CIS	2025-09-28 00:00:00
+REC0000764	QQ870307D	Ms	Christine  	Hall	1958-06-01	F	Married		christine.hall307@example.invalid	07354 574804	CIS	2025-09-23 00:00:00
+REC0000765	QQ188244C	Mr	arthur	  Wood	18/03/1958	M	Widowed	N/A	arthur.wood244@example.invalid	07112 264658	LEGACY_CSV	2026-02-10 00:00:00
+REC0000766	QQ799494C	Mrs	Sandra	  White	13-Oct-1952	F	Civil Partnership	N/A	sandra.white494@example.invalid	07289 645353	DIGITAL	2025-09-25 00:00:00
+REC0000767	QQ769750C	Ms	Hazel	Morris	1954-06-23	F	Married	\N	\N		CIS	2025-08-19 00:00:00
+REC0000768	QQ181814B	Ms	marion	ROGERS	25/11/1958	F	Divorced		marion.rogers814@example.invalid	07864 583478	LEGACY_CSV	2025-09-23 00:00:00
+REC0000769	QQ577034B	Miss	Margaret  	Cook  	25-Apr-1939	F	Divorced		margaret.cook34@example.invalid	07863 103401	DIGITAL	2025-09-25 00:00:00
+REC0000770	QQ216262C	Mrs	  Kathleen	Harris	26/02/1942	F	Widowed	N/A	kathleen.harris262@example.invalid	07825 743769	LEGACY_CSV	2025-08-07 00:00:00
+REC0000771	QQ671829A	Miss	Irene	ROBINSON	12/05/1955	F	Married		irene.robinson829@example.invalid	07716 104316	LEGACY_CSV	2026-02-06 00:00:00
+REC0000772	QQ405262D	Mr	Raymond	Griffiths	1939-12-15	M	Widowed		raymond.griffiths262@example.invalid	07281 274340	CIS	2026-01-21 00:00:00
+REC0000773	QQ766720D	Ms	Carol	  wilson	1957-10-08	F	Civil Partnership	\N	carol.wilson720@example.invalid	07566 824856	CIS	2025-07-31 00:00:00
+REC0000774	QQ356220B	Mr	  Ronald	WOOD	1946-09-01	M	Married		ronald.wood220@example.invalid	07272 767892	CIS	2025-06-08 00:00:00
+REC0000775	QQ339092B	Mr	FRANK  	 BENNETT 	07-Apr-1937	M	Married	N/A	frank.bennett92@example.invalid	07450 711089	DIGITAL	2025-07-26 00:00:00
+REC0000776	QQ836404D	Mrs	Kathleen  	James	1954-05-30	F	Married		kathleen.james404@example.invalid	07792 170095	CIS	2025-08-10 00:00:00
+REC0000777	QQ701613C	Mrs	Eileen  	  Cooper	10/10/1957	F	Married		eileen.cooper613@example.invalid	07588 753442	LEGACY_CSV	2025-06-18 00:00:00
+REC0000778	QQ798965D	Mrs	wendy	Brown	06/06/1940	F	Married	N/A	wendy.brown965@example.invalid	07157 624045	LEGACY_CSV	2025-09-30 00:00:00
+REC0000779	QQ671266A	Miss	DOROTHY	Clarke	09-Nov-1950	F	Single	17-Oct-1936	dorothy.clarke266@example.invalid	07175 221297	DIGITAL	2025-10-06 00:00:00
+REC0000780	QQ656652B	Miss	Doreen	Griffiths  	1940-05-31	F	Divorced	N/A	N/A	07304 066292	CIS	2026-01-11 00:00:00
+REC0000781	QQ864326D	Ms	SHEILA	 Collins 	1943-11-04	F	Widowed		sheila.collins326@example.invalid	07582 604338	CIS	2025-09-17 00:00:00
+REC0000782	QQ489118A	Mr	Bernard	Roberts	04/08/1948	M	Single	\N	bernard.roberts118@example.invalid	07837 424074	LEGACY_CSV	2025-11-29 00:00:00
+REC0000783	QQ241848C	Ms	Susan  	  Phillips	23/11/1959	F	Single	N/A	susan.phillips848@example.invalid	07972 268312	LEGACY_CSV	2025-11-01 00:00:00
+REC0000784	QQ327096B	Mrs	Pauline	Roberts	1956-04-10	F	Single		pauline.roberts96@example.invalid	07703 244320	CIS	2025-08-04 00:00:00
+REC0000785	QQ228303B	Mr	Alan  	Davis  	1941-02-22	M	N/A		alan.davis303@example.invalid	07674 858341	CIS	2025-12-21 00:00:00
+REC0000786	QQ807259B	Mr	barry  	Moore	17/06/1945	M	Widowed	N/A	barry.moore259@example.invalid	07693 076972	LEGACY_CSV	2025-10-19 00:00:00
+REC0000787	QQ673700A	Mr	Neville	Ward	22/04/1946	M	Single	\N	neville.ward700@example.invalid	07869 293394	LEGACY_CSV	2025-06-10 00:00:00
+REC0000788	QQ493120A	Mr	 SIDNEY 	CLARKE	1956-06-13	M	Divorced		N/A	07841 295124	CIS	2025-11-24 00:00:00
+REC0000789	QQ362542B	Miss	 Barbara 	 Harris 	12/07/1953	F	Single		barbara.harris542@example.invalid	07177 915957	LEGACY_CSV	2025-12-01 00:00:00
+REC0000790	QQ395758D	Miss	Eileen	King	1947-10-17	F	Married		eileen.king758@example.invalid	07940 443147	CIS	2026-02-01 00:00:00
+REC0000791	QQ494514D	Miss	Muriel	JONES	1946-09-20	F	Divorced		muriel.jones514@example.invalid	07945 791564	CIS	2026-01-30 00:00:00
+REC0000792	QQ898247D	Mrs	CAROL	Walker  	03/08/1949	F	NULL	N/A	carol.walker247@example.invalid	07644 961657	LEGACY_CSV	2025-11-30 00:00:00
+REC0000793	QQ897775D	Mr	Bernard	Davies	1950-02-05	M	Married		bernard.davies775@example.invalid	07221 384923	CIS	2025-07-22 00:00:00
+REC0000794	QQ236361B	Mr	Nigel  	Wright	1952-07-04	M	Married	\N	nigel.wright361@example.invalid	07455 946102	CIS	2025-11-15 00:00:00
+REC0000795	QQ660000B	Mrs	Sylvia	Morgan	1947-12-19	F	-		sylvia.morgan0@example.invalid	07460 025152	CIS	2025-06-15 00:00:00
+REC0000796	QQ873263A	Mr	  Raymond	BROWN  	1957-07-26	M		N/A	raymond.brown263@example.invalid	07504 841966	CIS	2025-09-02 00:00:00
+REC0000797	QQ856126C	Ms	Hazel  	WILLIAMS	1945-11-21	F	Married		hazel.williams126@example.invalid	07932 923184	CIS	2025-08-20 00:00:00
+REC0000798	QQ380954D	Mr	Graham	 CLARK 	1953-05-02	M	Widowed	N/A	graham.clark954@example.invalid	07342 475241	CIS	2025-06-03 00:00:00
+REC0000799	QQ213489B	Ms	Edna  	Clarke	26/06/1953	F	Married		edna.clarke489@example.invalid	07332 437111	LEGACY_CSV	2026-02-21 00:00:00
+REC0000800	QQ656140A	Mr	keith	  Kelly	1940-09-18	M	Married	\N	keith.kelly140@example.invalid	07660 856809	CIS	2026-02-04 00:00:00
+REC0000801	QQ431617C	Mrs	Gillian  	Harrison	06-Dec-1954	F	Married	N/A	-	07362 867857	DIGITAL	2025-06-23 00:00:00
+REC0000802	QQ542195A	Mr	Cyril	CLARK  	21/07/1957	M	Married		cyril.clark195@example.invalid	07634 270107	LEGACY_CSV	2025-10-07 00:00:00
+REC0000803	QQ762359B	Mrs	  Irene	  White	10-Apr-1947	F	Married	N/A	irene.white359@example.invalid	07373 245866	DIGITAL	2025-09-16 00:00:00
+REC0000804	QQ358560C	Mr	  BRIAN	  Evans	1959-05-29	M	Married	2023-01-18	brian.evans560@example.invalid	07718 561448	CIS	2025-07-02 00:00:00
+REC0000805	QQ812103D	Mrs	Patricia	 Scott 	15-Mar-1943	F	Single	\N	patricia.scott103@example.invalid	07440 744103	DIGITAL	2026-03-15 00:00:00
+REC0000806	QQ711143C	Mr	DOUGLAS  	  smith	16-Feb-1959	M	Married	N/A	douglas.smith143@example.invalid	07254 188003	DIGITAL	2026-01-21 00:00:00
+REC0000807	QQ215609A	Ms	IRENE  	Phillips	18/02/1955	F	Married	N/A	irene.phillips609@example.invalid	07526 056474	LEGACY_CSV	2026-01-29 00:00:00
+REC0000808	QQ754535D	Mr	arthur	Johnson	14/06/1952	M	Single	N/A	arthur.johnson535@example.invalid	07668 105245	LEGACY_CSV	2026-03-26 00:00:00
+REC0000809	QQ593174C	Mr	Leonard	carter	1959-07-21	M	Married	\N	leonard.carter174@example.invalid	07940 030317	CIS	2026-03-07 00:00:00
+REC0000810	QQ316019A	Ms	Barbara  	Hill	02/12/1955	F	Divorced	\N	barbara.hill19@example.invalid	07943 438530	LEGACY_CSV	2025-11-16 00:00:00
+REC0000811	QQ430191B	Miss	PAULINE	MORRIS	09/03/1953	F	Widowed		\N	07192 291236	LEGACY_CSV	2025-06-04 00:00:00
+REC0000812	QQ355752A	Miss	  Susan	  Hall	01/02/1943	F	Divorced		susan.hall752@example.invalid	07266 581227	LEGACY_CSV	2025-07-05 00:00:00
+REC0000813	QQ423778C	Mr	Cyril	  Harris	1947-09-11	M	Married	N/A	cyril.harris778@example.invalid	07974 666929	CIS	2025-11-20 00:00:00
+REC0000814	QQ594993A	Miss	Christine	Morgan	14/01/1950	F	Divorced	N/A		07445 741470	LEGACY_CSV	2026-01-05 00:00:00
+REC0000815	QQ326224B	Mrs	Wendy	  Baker	04/03/1954	F		N/A	wendy.baker224@example.invalid	07595 554792	LEGACY_CSV	2025-10-18 00:00:00
+REC0000816	QQ587000B	Miss	 Sheila 	Bell  	05/05/1943	F	Married		sheila.bell0@example.invalid	07791 488065	LEGACY_CSV	2025-06-17 00:00:00
+REC0000817	QQ782407A	Mrs	 Janet 	Roberts	05/05/1941	F	Civil Partnership		janet.roberts407@example.invalid	07919 403671	LEGACY_CSV	2026-01-25 00:00:00
+REC0000818	QQ375912C	Miss	Norma	Robinson	18-Aug-1946	F	Widowed	N/A	norma.robinson912@example.invalid	07805 312546	DIGITAL	2025-08-29 00:00:00
+REC0000819	QQ738124A	Mr	Bernard	  LEE	01/02/1957	M	Widowed		bernard.lee124@example.invalid	07478 679158	LEGACY_CSV	2025-08-07 00:00:00
+REC0000820	QQ636277A	Mr	Sidney	Davis	24/04/1953	M	Divorced	\N	sidney.davis277@example.invalid	N/A	LEGACY_CSV	2025-12-03 00:00:00
+REC0000821	QQ819031C	Mr	STUART  	Ward	1959-12-19	M	n/a	N/A	stuart.ward31@example.invalid	07236 365859	CIS	2025-11-11 00:00:00
+REC0000822	QQ436396A	Miss	Barbara	Shaw	1941-12-02	F	Divorced	N/A	barbara.shaw396@example.invalid	07585 438458	CIS	2025-09-20 00:00:00
+REC0000823	QQ785228D	Mr	 DAVID 	 Brown 	08-Feb-1958	M	Single	\N	david.brown228@example.invalid	07326 385935	DIGITAL	2025-10-08 00:00:00
+REC0000824	QQ417989B	Mrs	Hazel	Turner	1934-12-28	F		\N	hazel.turner989@example.invalid	07788 520225	CIS	2026-02-07 00:00:00
+REC0000825	QQ271081C	Miss	 SUSAN 	HARRIS	1954-07-23	F	Divorced	2025-10-26	susan.harris81@example.invalid	07905 877508	CIS	2025-06-23 00:00:00
+REC0000826	QQ571393B	Mr	Michael	harrison	03/12/1941	M	Married	N/A	michael.harrison393@example.invalid	07292 439030	LEGACY_CSV	2026-02-18 00:00:00
+REC0000827	QQ243914A	Mrs	Carol	 ALLEN 	09-Jul-1941	F	UNKNOWN	10-Oct-2029	carol.allen914@example.invalid	07105 435898	DIGITAL	2025-07-04 00:00:00
+REC0000828	QQ373627A	Mr	Reginald	  Phillips	1947-08-24	M	NULL	N/A	reginald.phillips627@example.invalid	07556 571965	CIS	2025-07-02 00:00:00
+REC0000829	QQ224009D	Miss	  Gillian	Collins	09/10/1947	F	Divorced	\N	gillian.collins9@example.invalid	07608 809327	LEGACY_CSV	2025-08-21 00:00:00
+REC0000830	QQ447156B	Mr	  Bernard	  GREEN	21/01/1959	M	Married		bernard.green156@example.invalid	n/a	LEGACY_CSV	2026-01-19 00:00:00
+REC0000831	QQ879538D	Mrs	  Doreen	MITCHELL		F	Divorced		doreen.mitchell538@example.invalid	07886 166103	DIGITAL	2025-06-16 00:00:00
+REC0000832	QQ381989B	Mr	  NIGEL	Ward	18/07/1944	M	Single	\N	nigel.ward989@example.invalid	07706 900744	LEGACY_CSV	2026-01-28 00:00:00
+REC0000833	QQ242299D	Miss	Marion  	Moore	1959-06-24	F	Married	2029-11-18	marion.moore299@example.invalid	07312 762410	CIS	2025-12-02 00:00:00
+REC0000834	QQ344882B	Mr	Michael  	COOK  	20-Nov-1958	M	Widowed		michael.cook882@example.invalid	07401 952414	DIGITAL	2025-08-04 00:00:00
+REC0000835	QQ282116C	Mr	PETER	  Chapman	07-Aug-1948	M	\N		peter.chapman116@example.invalid	UNKNOWN	DIGITAL	2026-01-06 00:00:00
+REC0000836	QQ206856A	Mr	Derek  	rogers	1957-07-30	M	Married		derek.rogers856@example.invalid	07276 979046	CIS	2025-12-01 00:00:00
+REC0000837	QQ609022B	Mr	frank	Price	04/03/1958	M	Married		frank.price22@example.invalid	07708 387513	LEGACY_CSV	2025-11-09 00:00:00
+REC0000838	QQ339383D	Mr	  Stuart	Jones	1941-06-12	M	Divorced		stuart.jones383@example.invalid	07981 874240	CIS	2025-12-06 00:00:00
+REC0000839	QQ498120A	Mr	RAYMOND	Lee	1960-03-30	M	Single		raymond.lee120@example.invalid	-	CIS	2025-06-08 00:00:00
+REC0000840	QQ548530B	Mr	Wilfred	shaw  	2031-06-12	M	Single	\N	wilfred.shaw530@example.invalid	07458 186898	CIS	2026-02-10 00:00:00
+REC0000841	QQ536250C	Ms	Maureen	  Chapman	06/04/1948	F	Single		maureen.chapman250@example.invalid	07677 929128	LEGACY_CSV	2026-02-05 00:00:00
+REC0000842	QQ236941B	Mrs	Diane	Hill	1957-08-02	F			diane.hill941@example.invalid	07364 804089	CIS	2025-10-01 00:00:00
+REC0000843	QQ508670D	Ms	MURIEL	  Watson	9999-12-31	F	Widowed	N/A	muriel.watson670@example.invalid	07923 734223	CIS	2025-07-15 00:00:00
+REC0000844	QQ606503D	Miss	Edna	Shaw	1953-02-24	F	Widowed	\N	edna.shaw503@example.invalid	07105 764102	CIS	2026-02-04 00:00:00
+REC0000845	QQ302289A	Mr	Douglas	Smith	1954-09-14	M	Single		douglas.smith289@example.invalid	07433 818762	CIS	2026-03-12 00:00:00
+REC0000846	QQ357154A	Mr	Colin	BENNETT	04-Jan-1936	M	Married		colin.bennett154@example.invalid	07698 346335	DIGITAL	2026-03-18 00:00:00
+REC0000847	QQ746034B	Miss	Muriel	TAYLOR  	07/02/1942	F	Widowed		N/A	07333 666364	LEGACY_CSV	2026-02-18 00:00:00
+REC0000848	QQ255497B	Ms	LINDA	  Roberts	1959-09-07	F	Married		linda.roberts497@example.invalid	07904 443194	CIS	2026-02-21 00:00:00
+REC0000849	QQ677850B	Mr	Leonard	SCOTT	1956-01-28	M	Married		leonard.scott850@example.invalid	07562 029810	CIS	2025-11-10 00:00:00
+REC0000850	QQ691361C	Mrs	Diane	Watson	03/04/1951	F	Single		diane.watson361@example.invalid	07847 047086	LEGACY_CSV	2025-07-22 00:00:00
+REC0000851	QQ384415C	Mr	Graham	price	16/12/1950	M	UNKNOWN	16/01/2026	graham.price415@example.invalid	07310 114802	LEGACY_CSV	2025-08-25 00:00:00
+REC0000852	QQ510343B	Mr	Derek	Green	14/06/1953	M	Married	\N	derek.green343@example.invalid	07401 899616	LEGACY_CSV	2026-01-01 00:00:00
+REC0000853	QQ226592D	Miss	Kathleen	Hall	06/12/1948	F	Married	N/A	kathleen.hall592@example.invalid	N/A	LEGACY_CSV	2025-08-08 00:00:00
+REC0000854	QQ618102C	Ms	Doreen  	  WATSON	20/10/1950	F	Civil Partnership	N/A	doreen.watson102@example.invalid	07688 748829	LEGACY_CSV	2026-02-19 00:00:00
+REC0000855	QQ398837B	Mrs	maureen	  Young	1943-07-31	F	Married	\N	n/a	07989 420076	CIS	2025-12-09 00:00:00
+REC0000856	QQ898535B	Mr	Raymond	Clarke	1957-09-07	M	Widowed	N/A	raymond.clarke535@example.invalid	07812 485797	CIS	2026-03-09 00:00:00
+REC0000857	QQ485034B	Mr	  david	ROGERS	1958-03-22	M	Single		david.rogers34@example.invalid	07935 452088	CIS	2025-07-24 00:00:00
+REC0000858	QQ282742C	Mrs	Valerie	Phillips	26/07/1941	F	UNKNOWN	N/A	valerie.phillips742@example.invalid	07182 113661	LEGACY_CSV	2026-03-20 00:00:00
+REC0000859	QQ785601A	Mr	Roy	WARD	08-Oct-1943	M	Widowed		roy.ward601@example.invalid	07101 126831	DIGITAL	2025-11-26 00:00:00
+REC0000860	QQ217238B	Mrs	LINDA	  bell	26/08/1946	F	Widowed	N/A	linda.bell238@example.invalid	07318 294603	LEGACY_CSV	2025-10-05 00:00:00
+REC0000861	QQ695591C	Mrs	  Vera	Wood	26/06/1942	F	Widowed		vera.wood591@example.invalid	07724 144998	LEGACY_CSV	2025-07-05 00:00:00
+REC0000862	QQ716086A	Ms	  SUSAN	HARRISON  	17/10/1957	F	Single		susan.harrison86@example.invalid	\N	LEGACY_CSV	2025-07-12 00:00:00
+REC0000863	QQ805544C	Miss	Hazel  	Cook  	18-May-1939	F	Married	\N	hazel.cook544@example.invalid	07743 994657	DIGITAL	2025-10-18 00:00:00
+REC0000864	QQ539239A	Mrs	  Joan	Cook	UNKNOWN	F	n/a		joan.cook239@example.invalid	07509 790331	LEGACY_CSV	2026-02-15 00:00:00
+REC0000865	QQ250318D	Mr	Trevor	BROWN  	17/10/1957	M	Married		trevor.brown318@example.invalid	07922 428726	LEGACY_CSV	2026-02-02 00:00:00
+REC0000866	QQ636700C	Mr	 Graham 	Griffiths	1957-05-20	M	Married	N/A	graham.griffiths700@example.invalid	07192 127433	CIS	2025-12-03 00:00:00
+REC0000867	QQ210038A	Mrs	  Norma	  Brown	1949-06-03	F	Married		norma.brown38@example.invalid	07240 414230	CIS	2025-11-26 00:00:00
+REC0000868	QQ504436D	Mrs	JANET	Robinson	1940-10-06	F			janet.robinson436@example.invalid	\N	CIS	2025-08-03 00:00:00
+REC0000869	QQ753550B	Mrs	Doreen	Turner	1957-11-25	F	Divorced	N/A	doreen.turner550@example.invalid	07276 204812	CIS	2025-06-26 00:00:00
+REC0000870	QQ746565A	Mrs	IRENE	harris	1942-05-28	F	Divorced	\N	irene.harris565@example.invalid	07274 281325	CIS	2026-03-09 00:00:00
+REC0000871	QQ267102A	Mr	  David	PRICE	1958-03-10	M	Married	\N	david.price102@example.invalid	07914 242403	CIS	2025-10-07 00:00:00
+REC0000872	QQ417480C	Mr	ROY  	Kelly	03-Jan-1952	M	Married	\N	roy.kelly480@example.invalid	07207 406204	DIGITAL	2025-07-20 00:00:00
+REC0000873	QQ510243C	Mr	Arthur	White  	1955-10-10	M	Single	N/A	arthur.white243@example.invalid	07770 639955	CIS	2025-11-07 00:00:00
+REC0000874	QQ486499B	Ms	Jean	Scott  	1955-08-05	F	Married		jean.scott499@example.invalid	07380 160152	CIS	2025-11-18 00:00:00
+REC0000875	QQ233130A	Mrs	Valerie	  Clarke	1957-04-08	F	Divorced	2024-05-29	valerie.clarke130@example.invalid	07449 542907	CIS	2025-09-22 00:00:00
+REC0000876	QQ238375D	Mrs	Barbara	White	09-Feb-1952	F	Married	\N	barbara.white375@example.invalid	07272 941427	DIGITAL	2025-12-24 00:00:00
+REC0000877	QQ606573A	Mrs	Pauline	Williams	1955-10-02	F	Married	2024-01-05	pauline.williams573@example.invalid	07395 428370	CIS	2025-12-03 00:00:00
+REC0000878	QQ107346C	Miss	Barbara	ALLEN  	1956-10-24	F	Widowed	N/A	barbara.allen346@example.invalid	07704 103566	CIS	2026-02-21 00:00:00
+REC0000879	QQ761227B	Ms	  AUDREY	  BROWN	20/02/1958	F	Married	\N	audrey.brown227@example.invalid	07463 223885	LEGACY_CSV	2026-03-02 00:00:00
+REC0000880	QQ262867C	Mrs	  linda	Allen	08/02/1957	F	Widowed		linda.allen867@example.invalid	07998 600438	LEGACY_CSV	2025-08-23 00:00:00
+REC0000881	QQ154975A	Mr	Cyril	James	13-Sep-1958	M	Married		cyril.james975@example.invalid	07584 097108	DIGITAL	2025-09-21 00:00:00
+REC0000882	QQ313170D	Miss	Pauline	Rogers	14-Oct-1957	F	Widowed		n/a	07622 717443	DIGITAL	2025-08-12 00:00:00
+REC0000883	QQ722463D	Mrs	  Patricia	 phillips 	16-Sep-1959	F	Married		patricia.phillips463@example.invalid	07705 001132	DIGITAL	2025-09-20 00:00:00
+REC0000884	QQ196516D	Miss	sylvia	TAYLOR	23-Apr-1949	F	Married		sylvia.taylor516@example.invalid	07640 002957	DIGITAL	2025-12-21 00:00:00
+REC0000885	QQ350360C	Mr	neville	MURPHY  	30-Mar-1956	M	Single		neville.murphy360@example.invalid	07761 470497	DIGITAL	2025-08-31 00:00:00
+REC0000886	QQ552217B	Mr	MAURICE	MOORE  	1955-05-24	M	Married		maurice.moore217@example.invalid	07532 242125	CIS	2025-10-19 00:00:00
+REC0000887	QQ217966D	Mr	MALCOLM	Baker  	1948-10-29	M	Single	2026-03-20	N/A	07755 532867	CIS	2026-03-21 00:00:00
+REC0000888	QQ188253B	Mr	  Maurice	wood	29/10/1957	M	Widowed		maurice.wood253@example.invalid	07219 898784	LEGACY_CSV	2025-07-16 00:00:00
+REC0000889	QQ806348A	Miss	Doreen	  Smith	1947-01-05	F	Single	N/A	doreen.smith348@example.invalid	07449 609478	CIS	2026-03-22 00:00:00
+REC0000890	QQ692798D	Mr	STANLEY	Shaw	1955-05-06	M	Widowed	\N	stanley.shaw798@example.invalid	07264 572490	CIS	2025-06-10 00:00:00
+REC0000891	QQ761420C	Mr	NIGEL	Bell  	31/08/1941	M	Single		nigel.bell420@example.invalid	UNKNOWN	LEGACY_CSV	2025-09-29 00:00:00
+REC0000892	QQ670906C	Mrs	VALERIE  	CLARK  	07/10/1948	F	Married		valerie.clark906@example.invalid	07584 512362	LEGACY_CSV	2025-09-22 00:00:00
+REC0000893	QQ253371B	Mr	Nigel	EVANS	1940-11-17	M	Married	\N	nigel.evans371@example.invalid	UNKNOWN	CIS	2025-11-24 00:00:00
+REC0000894	QQ845657C	Mrs	Norma	Clark	19-Jul-1946	F	Married	\N	UNKNOWN	07691 256702	DIGITAL	2026-02-04 00:00:00
+REC0000895	QQ665837A	Mr	Trevor	 Wright 	31/12/9999	M	Married	\N	trevor.wright837@example.invalid	07611 783386	LEGACY_CSV	2025-09-18 00:00:00
+REC0000896	QQ525993A	Mr	gordon	Smith	1949-03-08	M	Single		gordon.smith993@example.invalid	07865 555429	CIS	2025-12-04 00:00:00
+REC0000897	QQ572521A	Miss	sheila  	WILLIAMS	27/10/1943	F	Married		sheila.williams521@example.invalid	07873 482272	LEGACY_CSV	2025-11-12 00:00:00
+REC0000898	QQ757243C	Mrs	Valerie	phillips	1959-10-27	F	Married	2024-04-06	valerie.phillips243@example.invalid	07749 739503	CIS	2026-01-13 00:00:00
+REC0000899	QQ113129D	Miss	Susan  	johnson	08/01/1950	F	Married	\N	susan.johnson129@example.invalid	07389 543341	LEGACY_CSV	2025-07-29 00:00:00
+REC0000900	QQ125220A	Mrs	Kathleen	Walker	1940-07-14	F	Married	2024-09-12	kathleen.walker220@example.invalid		CIS	2026-01-27 00:00:00
+REC0000901	QQ462224D	Mr	Gordon	bennett	1942-05-27	M	n/a	N/A	UNKNOWN	07280 486686	CIS	2026-03-07 00:00:00
+REC0000902	QQ376851A	Mr	Sidney	  Smith	30/04/1943	M	Married	\N	sidney.smith851@example.invalid	07369 921218	LEGACY_CSV	2025-09-14 00:00:00
+REC0000903	QQ440991B	Mrs	diane	Lee	05/12/1951	F	Married	\N	diane.lee991@example.invalid	\N	LEGACY_CSV	2025-12-20 00:00:00
+REC0000904	QQ574773D	Mr	Harold	WALKER	02-Apr-1937	M	Married		harold.walker773@example.invalid	07602 012562	DIGITAL	2026-03-08 00:00:00
+REC0000905	QQ332914B	Mr	Terence	  Bailey	05/03/1938	M	Divorced	20/05/1928	terence.bailey914@example.invalid	07270 368538	LEGACY_CSV	2026-01-06 00:00:00
+REC0000906	QQ495879B	Mr	michael	 Clark 	02/10/1940	M	Married		michael.clark879@example.invalid	07311 295790	LEGACY_CSV	2026-01-24 00:00:00
+REC0000907	QQ535734D	Mrs	Muriel	Evans	13/05/1936	F	Divorced	N/A	-	07146 337342	LEGACY_CSV	2025-10-18 00:00:00
+REC0000908	QQ419434A	Ms	Hazel	EVANS	1951-09-16	F	Married	\N	UNKNOWN	07684 710034	CIS	2026-03-19 00:00:00
+REC0000909	QQ697259A	Mr	Graham	Williams	1950-04-30	M	Married	N/A	graham.williams259@example.invalid	07811 346498	CIS	2025-12-11 00:00:00
+REC0000910	QQ333530A	Mr	barry	Thompson	31-Dec-9999	M	Single	N/A	barry.thompson530@example.invalid	07852 146542	DIGITAL	2025-10-06 00:00:00
+REC0000911	QQ810995B	Mr	CLIVE	  murphy	03-Feb-1936	M	Divorced	N/A	clive.murphy995@example.invalid	07893 230348	DIGITAL	2025-10-29 00:00:00
+REC0000912	QQ422493C	Mr	  Nigel	Clark	1941-03-15	M	Widowed		nigel.clark493@example.invalid	07210 130194	CIS	2026-02-25 00:00:00
+REC0000913	QQ465845C	Mr	 brian 	Thompson	1955-09-04	M	Married	N/A	brian.thompson845@example.invalid	07890 685175	CIS	2025-11-11 00:00:00
+REC0000914	QQ872835C	Ms	Dorothy  	JONES	13/02/1955	F	Widowed	\N	dorothy.jones835@example.invalid	\N	LEGACY_CSV	2026-02-21 00:00:00
+REC0000915	QQ370889C	Mr	  PETER	COLLINS	1953-08-25	M	n/a		peter.collins889@example.invalid	07803 838971	CIS	2026-01-25 00:00:00
+REC0000916	QQ727993A	Miss	Brenda	Cooper  	11/02/1958	F	Widowed	\N	-	07806 796826	LEGACY_CSV	2025-08-30 00:00:00
+REC0000917	QQ488975C	Mr	Arthur	Taylor	1941-01-01	M	Single	2024-05-25	arthur.taylor975@example.invalid	07297 675453	CIS	2025-06-11 00:00:00
+REC0000918	QQ413577D	Ms	NORMA	Gray	1948-11-25	F	Divorced		norma.gray577@example.invalid	07290 688240	CIS	2025-09-19 00:00:00
+REC0000919	QQ442188D	Mrs	 BRENDA 	Bennett	25/02/1954	F	Married	N/A	brenda.bennett188@example.invalid	07248 900047	LEGACY_CSV	2025-06-10 00:00:00
+REC0000920	QQ244019D	Mr	Raymond	KING	09-Nov-1958	M	Married		raymond.king19@example.invalid	07776 187490	DIGITAL	2025-08-03 00:00:00
+REC0000921	QQ785712B	Mr	  TREVOR	Clark	01-May-1944	M	Married	N/A	trevor.clark712@example.invalid	07608 319006	DIGITAL	2025-12-14 00:00:00
+REC0000922	QQ848081C	Ms	Sandra	Murphy	15/07/1953	F	Married		sandra.murphy81@example.invalid	07504 329932	LEGACY_CSV	2026-02-28 00:00:00
+REC0000923	QQ801579A	Mr	bernard	thompson	20/07/1959	M	Single	\N	NULL	07634 699575	LEGACY_CSV	2026-03-13 00:00:00
+REC0000924	QQ139251D	Mrs	Beryl	Murphy	12/02/1947	F	Widowed		beryl.murphy251@example.invalid	07703 289107	LEGACY_CSV	2025-06-27 00:00:00
+REC0000925	QQ784977D	Mr	Clive	 Gray 	1947-08-05	M	Divorced	N/A	clive.gray977@example.invalid	07797 814914	CIS	2025-06-14 00:00:00
+REC0000926	QQ243390A	Ms	 Rosemary 	Scott	1935-09-12	F	Married		rosemary.scott390@example.invalid	07106 908735	CIS	2025-10-06 00:00:00
+REC0000927	QQ552102A	Miss	PATRICIA	Evans  	1951-01-07	F	Single	N/A	patricia.evans102@example.invalid	07376 525564	CIS	2026-01-27 00:00:00
+REC0000928	QQ578737A	Mr	Bernard	  Murphy	21-Aug-1945	M	Married	\N	bernard.murphy737@example.invalid	07350 252019	DIGITAL	2026-03-12 00:00:00
+REC0000929	QQ771645D	Mrs	Joan	  Robinson	01-Jan-1900	F	Married		joan.robinson645@example.invalid	07599 388125	DIGITAL	2026-03-12 00:00:00
+REC0000930	QQ755635D	Ms	rosemary	 Bailey 	1938-05-07	F	Divorced	2023-09-10	rosemary.bailey635@example.invalid	07731 566839	CIS	2026-03-06 00:00:00
+REC0000931	QQ601494A	Ms	Christine	  jones	1953-09-25	F	Single		christine.jones494@example.invalid	07448 757467	CIS	2025-09-28 00:00:00
+REC0000932	QQ223269D	Miss	SYLVIA	Murphy	1939-02-11	F	Divorced	N/A	sylvia.murphy269@example.invalid	07924 322174	CIS	2025-10-18 00:00:00
+REC0000933	QQ605616B	Mrs	Doreen  	BROWN	1954-05-22	F	Widowed	\N	doreen.brown616@example.invalid	07953 626545	CIS	2025-11-19 00:00:00
+REC0000934	QQ263264B	Mrs	  pauline	james	05-Mar-1958	F	Widowed	\N	pauline.james264@example.invalid	07292 250072	DIGITAL	2026-02-24 00:00:00
+REC0000935	QQ748984A	Miss	Sheila	ROGERS	1936-12-04	F	Married	\N	sheila.rogers984@example.invalid	07714 448643	CIS	2026-01-04 00:00:00
+REC0000936	QQ361364A	Mr	  DOUGLAS	 Turner 	1937-02-02	M	Divorced		douglas.turner364@example.invalid	07971 117489	CIS	2026-02-19 00:00:00
+REC0000937	QQ167602B	Mr	 Maurice 	Morgan	1941-07-22	M	Married		maurice.morgan602@example.invalid	NULL	CIS	2026-01-12 00:00:00
+REC0000938	QQ504826C	Miss	Vera	 Davies 	25/04/1942	F	Divorced	\N	vera.davies826@example.invalid	07476 403441	LEGACY_CSV	2026-03-28 00:00:00
+REC0000939	QQ871570A	Mr	Neville  	Parker	1954-06-23	M	Married	N/A	neville.parker570@example.invalid	07933 622154	CIS	2025-08-27 00:00:00
+REC0000940	QQ175748D	Mr	Gordon	DAVIS  	1942-11-16	M	Widowed	1936-11-11	NULL	07644 369855	CIS	2025-10-26 00:00:00
+REC0000941	QQ520925D	Mrs	Marion  	Scott	1955-10-02	F	Single		marion.scott925@example.invalid	07888 447491	CIS	2025-10-17 00:00:00
+REC0000942	QQ235215D	Mr	GRAHAM	Cook  	1958-10-12	M	Single	\N	graham.cook215@example.invalid	07560 528815	CIS	2025-07-15 00:00:00
+REC0000943	QQ158367D	Mrs	DOREEN	Clark	1956-04-07	F	Widowed		doreen.clark367@example.invalid	07143 723527	CIS	2025-07-14 00:00:00
+REC0000944	QQ484082B	Mr	 Sidney 	  Roberts	1960-01-08	M	Single	2024-06-13	sidney.roberts82@example.invalid	07666 510118	CIS	2025-11-09 00:00:00
+REC0000945	QQ703538B	Miss	Christine	Wright  	1947-03-30	F	Widowed		christine.wright538@example.invalid	07822 595189	CIS	2025-10-05 00:00:00
+REC0000946	QQ582087C	Mrs	 Kathleen 	  Hill	05-Jan-1956	F	Divorced		kathleen.hill87@example.invalid	07410 309440	DIGITAL	2025-06-21 00:00:00
+REC0000947	QQ241955D	Miss	Beryl	  hill	1940-05-29	F	Married	2022-06-25	beryl.hill955@example.invalid	07406 442764	CIS	2025-07-21 00:00:00
+REC0000948	QQ751333D	Mrs	BARBARA	Wright	1949-01-19	F	Divorced	N/A	barbara.wright333@example.invalid	07361 276121	CIS	2025-11-23 00:00:00
+REC0000949	QQ533885B	Mr	Ronald  	  Griffiths	20-May-1952	M	Married		\N	07185 597506	DIGITAL	2026-01-17 00:00:00
+REC0000950	QQ503070B	Ms	Linda	Smith  	13/06/1957	F	Married	06/01/2023	linda.smith70@example.invalid	07355 745768	LEGACY_CSV	2025-12-10 00:00:00
+REC0000951	QQ317435B	Mr	  FRANK	Wilson	1952-01-31	M	Single	N/A	UNKNOWN	07797 973117	CIS	2026-03-06 00:00:00
+REC0000952	QQ761590B	Mrs	PATRICIA	HALL	1943-09-07	F	Divorced	N/A	patricia.hall590@example.invalid	07222 667875	CIS	2025-11-27 00:00:00
+REC0000953	QQ566155D	Mr	DAVID	Bell	27/11/1949	M	Married		david.bell155@example.invalid	NULL	LEGACY_CSV	2025-09-11 00:00:00
+REC0000954	QQ682509D	Mr	COLIN	Evans	18/07/1949	M	Married	N/A	NULL	NULL	LEGACY_CSV	2025-09-15 00:00:00
+REC0000955	QQ268659A	Mr	  GORDON	kelly	07/05/1943	M	Divorced		-	07605 897505	LEGACY_CSV	2025-11-12 00:00:00
+REC0000956	QQ797939C	Ms	sandra	  Watson	1942-10-22	F	NULL	\N	sandra.watson939@example.invalid	07171 956779	CIS	2025-09-24 00:00:00
+REC0000957	QQ816248D	Mr	Brian	Hall	24/11/1937	M	Widowed		brian.hall248@example.invalid	07555 352686	LEGACY_CSV	2026-01-20 00:00:00
+REC0000958	QQ384242A	Mr	Norman	Moore  	1942-10-11	M	n/a	2024-06-11	norman.moore242@example.invalid	07930 542509	CIS	2025-11-01 00:00:00
+REC0000959	QQ818246C	Mrs	PAULINE	murphy	13-Dec-1950	F	Married		\N	07707 245104	DIGITAL	2026-02-11 00:00:00
+REC0000960	QQ445595B	Ms	  Dorothy	Collins  	1940-12-15	F	Single	\N	dorothy.collins595@example.invalid	07660 233282	CIS	2025-11-02 00:00:00
+REC0000961	QQ316155C	Ms	Norma  	hall	1939-01-02	F	Married	\N	norma.hall155@example.invalid	07970 332379	CIS	2025-07-30 00:00:00
+REC0000962	QQ135825C	Ms	Dorothy	Davis	20/02/1958	F	Married	\N	dorothy.davis825@example.invalid	07348 491263	LEGACY_CSV	2025-07-31 00:00:00
+REC0000963	QQ820899A	Mrs	Carol	Collins	1953-12-14	F	Single	N/A	carol.collins899@example.invalid	07408 848423	CIS	2025-11-10 00:00:00
+REC0000964	QQ849053C	Mr	Colin	Parker	1956-12-08	M	N/A	N/A	colin.parker53@example.invalid	07989 535767	CIS	2025-07-12 00:00:00
+REC0000965	QQ423929A	Miss	Sylvia  	Price	22/08/1939	F	Single		sylvia.price929@example.invalid	07320 371537	LEGACY_CSV	2025-09-12 00:00:00
+REC0000966	QQ710617A	Mr	MAURICE	smith  	02-Nov-1936	M	Married	N/A		07891 975294	DIGITAL	2026-01-16 00:00:00
+REC0000967	QQ297918B	Miss	  brenda	Hall	22-Dec-1955	F	Single	23-Dec-2029	brenda.hall918@example.invalid	07305 143865	DIGITAL	2025-06-14 00:00:00
+REC0000968	QQ635462A	Mr	Roy	Walker	12/06/1957	M	Single	\N	roy.walker462@example.invalid	07399 996457	LEGACY_CSV	2025-12-20 00:00:00
+REC0000969	QQ541879B	Ms	Norma  	  Williams	1959-04-09	F	Divorced	\N	norma.williams879@example.invalid	07261 461421	CIS	2025-08-19 00:00:00
+REC0000970	QQ214107D	Mr	  maurice	hall	1957-07-11	M	Widowed	2029-04-24	maurice.hall107@example.invalid	07821 787982	CIS	2025-09-05 00:00:00
+REC0000971	QQ190185A	Mr	 Neville 	  Robinson	1954-09-22	M	Widowed	N/A	neville.robinson185@example.invalid	-	CIS	2025-12-06 00:00:00
+REC0000972	QQ698234B	Ms	Vera	JONES	1955-02-10	F	Married		vera.jones234@example.invalid	07673 943868	CIS	2025-10-13 00:00:00
+REC0000973	QQ223239B	Ms	PAULINE	Scott	1959-02-22	F	Single		pauline.scott239@example.invalid	07263 632121	CIS	2025-08-18 00:00:00
+REC0000974	QQ638922D	Mr	  Alan	ROGERS	1944-08-29	M	Married	N/A	alan.rogers922@example.invalid	07408 408383	CIS	2026-02-23 00:00:00
+REC0000975	QQ888246D	Ms	Marion	 Morgan 	1945-11-06	F	Married	\N	marion.morgan246@example.invalid	07973 455622	CIS	2025-11-02 00:00:00
+REC0000976	QQ253969B	Mrs	  Doreen	EVANS	1956-08-16	F	Married	N/A	doreen.evans969@example.invalid	07322 249788	CIS	2025-11-10 00:00:00
+REC0000977	QQ832873B	Mr	 MALCOLM 	Griffiths	06-Nov-1958	M	Married		malcolm.griffiths873@example.invalid	\N	DIGITAL	2025-11-26 00:00:00
+REC0000978	QQ247258D	Mr	  Arthur	Phillips	01/02/1958	M	Married	N/A	arthur.phillips258@example.invalid	07910 884897	LEGACY_CSV	2025-09-21 00:00:00
+REC0000979	QQ683793D	Mr	  ALAN	Turner	1939-11-18	M	Married	\N	NULL	07374 412224	CIS	2025-12-08 00:00:00
+REC0000980	QQ543023B	Miss	Margaret	Bell	1940-12-12	F	Single		margaret.bell23@example.invalid	07805 748755	CIS	2025-10-17 00:00:00
+REC0000981	QQ369921C	Mr	stuart	PRICE  		M	Widowed	\N	stuart.price921@example.invalid	07252 418467	LEGACY_CSV	2026-03-13 00:00:00
+REC0000982	QQ376179D	Miss	DIANE	Davies  	1900-01-01	F	Married		diane.davies179@example.invalid	07348 971445	CIS	2026-01-29 00:00:00
+REC0000983	QQ623620D	Miss	Christine	Phillips	28/12/1934	F	Married		christine.phillips620@example.invalid	07342 439977	LEGACY_CSV	2026-03-07 00:00:00
+REC0000984	QQ468326A	Ms	Hazel	Evans	1949-02-06	F	Widowed	N/A	hazel.evans326@example.invalid	07477 488868	CIS	2025-08-05 00:00:00
+REC0000985	QQ192984A	Mr	RAYMOND	hall	22-Sep-1951	M	Married	\N	raymond.hall984@example.invalid	07703 808306	DIGITAL	2025-08-06 00:00:00
+REC0000986	QQ432445B	Mr	John  	  Taylor	28/02/1951	M	Divorced	\N	-	07510 505257	LEGACY_CSV	2025-08-20 00:00:00
+REC0000987	QQ129463A	Mr	BRIAN	LEE	1954-03-20	M	Divorced	N/A	brian.lee463@example.invalid	07767 788470	CIS	2025-11-10 00:00:00
+REC0000988	QQ657375A	Mr	Alan	BROWN  	1957-09-25	M	Married	N/A	alan.brown375@example.invalid	07734 035233	CIS	2025-09-18 00:00:00
+REC0000989	QQ428467D	Miss	Janet	Wright	1954-12-26	F	Married	\N	janet.wright467@example.invalid	07266 255085	CIS	2025-07-24 00:00:00
+REC0000990	QQ393424C	Mr	wilfred	King	04/06/1953	M	Divorced	\N	wilfred.king424@example.invalid	07779 468285	LEGACY_CSV	2025-07-24 00:00:00
+REC0000991	QQ509734C	Mr	DAVID  	Price	1953-03-28	M	Single	\N	UNKNOWN	07679 660466	CIS	2025-07-10 00:00:00
+REC0000992	QQ713289D	Mr	John	Smith  	9999-12-31	M	Divorced		john.smith289@example.invalid	07156 058986	CIS	2025-11-24 00:00:00
+REC0000993	QQ806303B	Ms	  Maureen	  Jones	21/09/1949	F	Single	12/04/2024	-	07260 733873	LEGACY_CSV	2025-10-14 00:00:00
+REC0000994	QQ107085C	Mr	Trevor	Scott	1947-01-18	M	Widowed	N/A	trevor.scott85@example.invalid	07620 718067	CIS	2026-03-13 00:00:00
+REC0000995	QQ433884D	Mr	Stuart  	  Phillips	30-Mar-1958	M	Married	\N	stuart.phillips884@example.invalid	07955 961870	DIGITAL	2025-07-22 00:00:00
+REC0000996	QQ359135C	Ms	ELIZABETH	collins	18-Apr-1954	F	Single	\N	elizabeth.collins135@example.invalid	07303 664680	DIGITAL	2025-09-10 00:00:00
+REC0000997	QQ362666B	Mr	  Peter	WARD	14-May-1953	M	Married		peter.ward666@example.invalid	07802 425782	DIGITAL	2025-08-08 00:00:00
+REC0000998	QQ539324A	Mr	 KEITH 	  Young	09-Mar-1958	M	Married		keith.young324@example.invalid	N/A	DIGITAL	2025-09-14 00:00:00
+REC0000999	QQ284854C	Mrs	Gillian	  Ward	1960-03-19	F	Married	\N	gillian.ward854@example.invalid	07730 174441	CIS	2026-03-02 00:00:00
+REC0001000	QQ727862B	Mrs	JOAN  	CHAPMAN  	11-Jun-1955	F	Single		\N	07107 057205	DIGITAL	2025-10-11 00:00:00
+REC0001001	QQ828481C	Mr	  Trevor	  Baker	22/06/1944	M	UNKNOWN		trevor.baker481@example.invalid	07517 684657	LEGACY_CSV	2025-08-10 00:00:00
+REC0001002	QQ288657D	Ms	Susan  	Hall	26/03/1950	F	Married	N/A	susan.hall657@example.invalid	\N	LEGACY_CSV	2025-11-15 00:00:00
+REC0001003	QQ720151A	Mrs	Edna	 RICHARDSON 	12/08/1955	F	Married	\N	edna.richardson151@example.invalid	07342 954701	LEGACY_CSV	2025-07-08 00:00:00
+REC0001004	QQ757716B	Mrs	  Rosemary	Lee  	30/12/1947	F	Married	\N	rosemary.lee716@example.invalid	07737 806991	LEGACY_CSV	2025-07-12 00:00:00
+REC0001005	QQ685406D	Mrs	Sandra	ward	19-Jan-1960	F	Widowed	\N	sandra.ward406@example.invalid	N/A	DIGITAL	2026-01-26 00:00:00
+REC0001006	QQ854234D	Mr	Keith  	Parker	1958-11-20	M	Married		keith.parker234@example.invalid	07897 280985	CIS	2025-08-20 00:00:00
+REC0001007	QQ582352B	Miss	pauline	Johnson	1943-03-13	F	Single	N/A		07854 845482	CIS	2025-07-22 00:00:00
+REC0001008	QQ763718B	Mr	graham	harris	24-Mar-1953	M	Single		graham.harris718@example.invalid	07101 173276	DIGITAL	2026-01-22 00:00:00
+REC0001009	QQ180695D	Miss	Margaret	  white	05/11/1954	F	Divorced	N/A	n/a	07448 765426	LEGACY_CSV	2025-07-11 00:00:00
+REC0001010	QQ392462B	Mrs	Vera	Turner	1947-08-11	F	Single		vera.turner462@example.invalid	07371 636362	CIS	2026-02-09 00:00:00
+REC0001011	QQ229542B	Ms	Marion	morris	1956-03-27	F	Married		marion.morris542@example.invalid	07708 318381	CIS	2026-01-28 00:00:00
+REC0001012	QQ445348C	Miss	WENDY  	THOMPSON	17-Nov-1951	F	Civil Partnership	N/A	wendy.thompson348@example.invalid	07274 478382	DIGITAL	2026-01-20 00:00:00
+REC0001013	QQ296544A	Mrs	  CAROL	Clark	1938-11-07	F	Widowed	N/A	carol.clark544@example.invalid	N/A	CIS	2026-01-04 00:00:00
+REC0001014	QQ396089A	Ms	  rosemary	Kelly	10-Nov-1959	F	Widowed	\N	rosemary.kelly89@example.invalid	07423 608058	DIGITAL	2025-06-11 00:00:00
+REC0001015	QQ153830C	Miss	Hazel	clarke	1953-11-01	F	Single	1948-08-19	hazel.clarke830@example.invalid	07548 426758	CIS	2025-09-01 00:00:00
+REC0001016	QQ142091D	Mr	 terence 	Parker	14/10/1934	M	Widowed	08/05/2029	n/a	UNKNOWN	LEGACY_CSV	2025-06-10 00:00:00
+REC0001017	QQ130521B	Mr	Derek	TURNER	N/A	M	Single	N/A	derek.turner521@example.invalid	07275 374421	LEGACY_CSV	2025-09-15 00:00:00
+REC0001018	QQ392232A	Miss	Carol	 MURPHY 	1950-07-02	F	-	N/A	carol.murphy232@example.invalid	07772 558659	CIS	2026-03-19 00:00:00
+REC0001019	QQ417273B	Miss	Irene  	Wood	08/01/1947	F	Widowed		irene.wood273@example.invalid	07192 763699	LEGACY_CSV	2026-02-27 00:00:00
+REC0001020	QQ107277A	Mrs	Kathleen	HILL  	17/05/1957	F	Married		kathleen.hill277@example.invalid	07680 106667	LEGACY_CSV	2026-03-27 00:00:00
+REC0001021	QQ213465B	Mrs	Jean  	  Scott	30-May-1956	F	Widowed		jean.scott465@example.invalid	07501 297284	DIGITAL	2025-07-27 00:00:00
+REC0001022	QQ339006C	Mr	 STUART 	brown	24-Jun-1948	M	Married		stuart.brown6@example.invalid	07518 257105	DIGITAL	2026-03-16 00:00:00
+REC0001023	QQ245906D	Ms	Susan	MORRIS	17/05/1946	F	Widowed		susan.morris906@example.invalid	07922 998576	LEGACY_CSV	2026-03-27 00:00:00
+REC0001024	QQ686677A	Mr	  Colin	Thompson  	05/10/1949	M	Civil Partnership		colin.thompson677@example.invalid	07905 491512	LEGACY_CSV	2026-02-13 00:00:00
+REC0001025	QQ802805A	Miss	  Joan	Griffiths	01/04/1956	F	Widowed	24/07/2023	joan.griffiths805@example.invalid	07867 744009	LEGACY_CSV	2025-06-24 00:00:00
+REC0001026	QQ228450D	Ms	  Sheila	Scott  	1934-10-07	F	Married		sheila.scott450@example.invalid	07307 059638	CIS	2026-03-19 00:00:00
+REC0001027	QQ813845D	Mr	GRAHAM	Lee	1949-04-25	M	Divorced	\N	graham.lee845@example.invalid	07196 454336	CIS	2026-01-18 00:00:00
+REC0001028	QQ588639A	Ms	  Christine	Parker	22-Apr-1951	F	Widowed		christine.parker639@example.invalid	07848 083369	DIGITAL	2025-09-12 00:00:00
+REC0001029	QQ464235A	Mr	Douglas  	Collins	1944-03-22	M	Married		douglas.collins235@example.invalid	07751 911047	CIS	2025-12-19 00:00:00
+REC0001030	QQ743397D	Mr	  BERNARD	PHILLIPS	21/05/1946	M	Single		bernard.phillips397@example.invalid	07835 410471	LEGACY_CSV	2025-09-08 00:00:00
+REC0001031	QQ174704A	Mr	Ronald  	  Evans	1957-12-31	M	Married		ronald.evans704@example.invalid	07422 609794	CIS	2026-01-30 00:00:00
+REC0001032	QQ133304A	Mr	leonard	Wood	1956-09-02	M	Married		UNKNOWN	07740 874285	CIS	2025-12-19 00:00:00
+REC0001033	QQ648778C	Mr	Malcolm	Robinson	06-Mar-1944	M	Married	N/A	malcolm.robinson778@example.invalid	07204 546077	DIGITAL	2025-11-19 00:00:00
+REC0001034	QQ560041D	Mr	Harold	James	1956-10-26	M	UNKNOWN	N/A	harold.james41@example.invalid	07320 901331	CIS	2026-02-27 00:00:00
+REC0001035	QQ311360A	Mr	Michael	Scott	1954-11-26	M	Divorced		michael.scott360@example.invalid	07861 216182	CIS	2025-06-14 00:00:00
+REC0001036	QQ635278D	Ms	MARGARET  	Lee	1958-08-28	F	Married		margaret.lee278@example.invalid	07929 279767	CIS	2026-03-23 00:00:00
+REC0001037	QQ197898A	Mr	Derek	Harrison	06/06/1957	M	-		derek.harrison898@example.invalid	07241 550256	LEGACY_CSV	2026-01-07 00:00:00
+REC0001038	QQ645923A	Miss	Joan	JACKSON  	9999-12-31	F	Married	N/A	joan.jackson923@example.invalid	UNKNOWN	CIS	2026-01-02 00:00:00
+REC0001039	QQ490828A	Mr	  Stuart	Ward  	1959-06-06	M	Married	2024-11-14	stuart.ward828@example.invalid	07682 556506	CIS	2025-07-23 00:00:00
+REC0001040	QQ590816A	Ms	MAUREEN	bennett  	1947-06-11	F	Divorced		maureen.bennett816@example.invalid	07182 009308	CIS	2026-01-12 00:00:00
+REC0001041	QQ838654C	Mr	Gordon  	  Wright	1956-03-23	M	Divorced	N/A	gordon.wright654@example.invalid	07718 803777	CIS	2025-08-11 00:00:00
+REC0001042	QQ633999B	Miss	  jean	PHILLIPS  	02-Aug-1954	F	Widowed		jean.phillips999@example.invalid	07236 801111	DIGITAL	2026-01-09 00:00:00
+REC0001043	QQ178036B	Mrs	  Sheila	Wood  	10-Nov-1950	F	Widowed		sheila.wood36@example.invalid	07796 375366	DIGITAL	2025-12-09 00:00:00
+REC0001044	QQ852494C	Mr	  Stuart	YOUNG	27/10/1936	M	Widowed	N/A	stuart.young494@example.invalid	07602 211409	LEGACY_CSV	2025-08-03 00:00:00
+REC0001045	QQ368463C	Mrs	Sheila	Harris	01-Jan-1900	F	Married	N/A	sheila.harris463@example.invalid	07510 516717	DIGITAL	2026-03-02 00:00:00
+REC0001046	QQ306375B	Mr	  ALAN	Price	18/07/1947	M	Married	\N	alan.price375@example.invalid	UNKNOWN	LEGACY_CSV	2025-07-27 00:00:00
+REC0001047	QQ554421C	Mrs	AUDREY	WILLIAMS	06-Sep-1952	F	Civil Partnership	16-Oct-1949	audrey.williams421@example.invalid	07919 457110	DIGITAL	2025-09-02 00:00:00
+REC0001048	QQ520354C	Mr	 david 	  Davies	1950-12-11	M	Married	\N	david.davies354@example.invalid	07982 197649	CIS	2026-02-04 00:00:00
+REC0001049	QQ888454C	Ms	Dorothy	MURPHY	1953-07-04	F	Divorced		dorothy.murphy454@example.invalid	07606 032371	CIS	2025-12-20 00:00:00
+REC0001050	QQ376516B	Mr	Bernard	  Thompson	1954-01-14	M	Married	\N	bernard.thompson516@example.invalid	07288 467399	CIS	2026-03-20 00:00:00
+REC0001051	QQ242291A	Ms	  susan	Chapman  	1944-10-18	F	Married	\N	\N	07593 554265	CIS	2026-03-19 00:00:00
+REC0001052	QQ639270D	Mr	Bernard  	evans	19-Dec-1944	M	UNKNOWN	\N	bernard.evans270@example.invalid	07985 475235	DIGITAL	2025-09-13 00:00:00
+REC0001053	QQ497972B	Mr	 Stuart 	Morris		M	Married	2024-05-12	NULL	\N	CIS	2025-10-22 00:00:00
+REC0001054	QQ887908C	Miss	marion	GRIFFITHS	16/01/1941	F	Widowed	10/04/2023	marion.griffiths908@example.invalid	07911 258955	LEGACY_CSV	2025-11-10 00:00:00
+REC0001055	QQ734161C	Miss	ELIZABETH	  WALKER	30-Dec-1958	F	Married		elizabeth.walker161@example.invalid	07876 471232	DIGITAL	2025-10-09 00:00:00
+REC0001056	QQ198896D	Mr	terence	Parker	1946-12-28	M	Married	\N	terence.parker896@example.invalid	07323 312447	CIS	2025-11-15 00:00:00
+REC0001057	QQ739956A	Miss	  Irene	 Morris 	1949-01-17	F	Married		irene.morris956@example.invalid	07640 311698	CIS	2025-09-08 00:00:00
+REC0001058	QQ388391B	Mrs	Muriel	Smith	1958-02-18	F	Married	2024-09-02	muriel.smith391@example.invalid	07592 546587	CIS	2025-12-03 00:00:00
+REC0001059	QQ192578D	Mr	Trevor	Green  	07/06/1957	M	Widowed		trevor.green578@example.invalid	07768 842343	LEGACY_CSV	2025-11-15 00:00:00
+REC0001060	QQ605005A	Ms	EDNA	Robinson  	07-Jan-1950	F	Widowed	\N	edna.robinson5@example.invalid	07693 096912	DIGITAL	2025-06-19 00:00:00
+REC0001061	QQ510047A	Mr	 Reginald 	wright	1960-03-30	M	Widowed	\N	reginald.wright47@example.invalid	07831 756194	CIS	2026-01-14 00:00:00
+REC0001062	QQ839150D	Mr	 Barry 	 Harris 	02/05/1958	M	Single		barry.harris150@example.invalid	07142 363018	LEGACY_CSV	2026-01-31 00:00:00
+REC0001063	QQ246507D	Mr	 Clive 	COOPER  	31/12/9999	M	Married		clive.cooper507@example.invalid	07446 955377	LEGACY_CSV	2025-11-07 00:00:00
+REC0001064	QQ353105C	Mr	BRIAN	BAKER  	1950-11-15	M	Married	N/A	brian.baker105@example.invalid	07459 132200	CIS	2025-10-07 00:00:00
+REC0001065	QQ448749B	Mr	Gordon	WOOD	1952-05-20	M	Married		gordon.wood749@example.invalid	07631 189941	CIS	2026-02-12 00:00:00
+REC0001066	QQ536678A	Mr	Raymond	Harris	1958-11-01	M	Married		raymond.harris678@example.invalid	07541 773297	CIS	2025-09-23 00:00:00
+REC0001067	QQ773110C	Mrs	  Dorothy	Scott	1948-12-14	F	Married	\N	dorothy.scott110@example.invalid	07618 204477	CIS	2026-01-18 00:00:00
+REC0001068	QQ718621C	Mr	GRAHAM	  Johnson	1947-07-23	M	NULL	N/A	\N	07511 276457	CIS	2025-10-15 00:00:00
+REC0001069	QQ614751A	Mr	 John 	  brown	1950-10-10	M	Divorced		john.brown751@example.invalid	07366 167882	CIS	2025-08-23 00:00:00
+REC0001070	QQ487260D	Miss	  Valerie	Gray  	24/07/1959	F	Married	\N	valerie.gray260@example.invalid	07266 535638	LEGACY_CSV	2026-02-27 00:00:00
+REC0001071	QQ452547C	Mr	  reginald	JAMES	1952-10-07	M	Married	2029-03-07	reginald.james547@example.invalid	-	CIS	2025-08-25 00:00:00
+REC0001072	QQ425556A	Ms	Valerie	 MORRIS 	09/11/1947	F	Divorced	\N	valerie.morris556@example.invalid	07687 716784	LEGACY_CSV	2025-08-18 00:00:00
+REC0001073	QQ470324D	Ms	LINDA  	MORRIS	23/08/1943	F	Married	N/A	linda.morris324@example.invalid	07888 029868	LEGACY_CSV	2026-02-08 00:00:00
+REC0001074	QQ824491A	Mr	malcolm	morris	1951-08-13	M	Married		malcolm.morris491@example.invalid	07829 860785	CIS	2025-06-22 00:00:00
+REC0001075	QQ811241D	Mr	cyril	Brown	28/03/1958	M	Married	17/06/1952	cyril.brown241@example.invalid	07979 489381	LEGACY_CSV	2025-08-20 00:00:00
+REC0001076	QQ638039B	Mrs	Valerie	  Carter	15/10/1935	F	n/a	27/01/2024	UNKNOWN	07727 536453	LEGACY_CSV	2025-10-26 00:00:00
+REC0001077	QQ717530B	Mr	GRAHAM	BAKER	1954-05-15	M	Widowed	N/A	n/a		CIS	2025-06-18 00:00:00
+REC0001078	QQ549145D	Mr	Brian	Rogers	28/10/1955	M	Married		brian.rogers145@example.invalid	07947 772495	LEGACY_CSV	2026-01-26 00:00:00
+REC0001079	QQ424749A	Ms	JOAN	  scott	23/08/1955	F	Single	\N	joan.scott749@example.invalid	07974 139051	LEGACY_CSV	2025-10-20 00:00:00
+REC0001080	QQ210246A	Miss	Doreen	GREEN	09/04/1934	F	Widowed	N/A	doreen.green246@example.invalid	07491 920338	LEGACY_CSV	2026-03-11 00:00:00
+REC0001081	QQ675247B	Ms	Irene	Hall	01-Aug-1956	F	Single	N/A	irene.hall247@example.invalid	07973 709957	DIGITAL	2026-02-23 00:00:00
+REC0001082	QQ510301A	Mr	leonard	CHAPMAN  	25/06/1934	M	Married		leonard.chapman301@example.invalid	07950 600122	LEGACY_CSV	2025-09-18 00:00:00
+REC0001083	QQ716341A	Ms	  Irene	Williams	1954-08-11	F	Married		irene.williams341@example.invalid	07901 650798	CIS	2025-10-14 00:00:00
+REC0001084	QQ136117A	Miss	hazel	Clarke  	11-Mar-1955	F	Married	\N	hazel.clarke117@example.invalid	07221 294370	DIGITAL	2025-10-01 00:00:00
+REC0001085	QQ210446D	Mr	Colin	PARKER	29/04/1955	M	Divorced	\N	N/A	07225 118858	LEGACY_CSV	2026-01-26 00:00:00
+REC0001086	QQ708569B	Miss	ELIZABETH	DAVIS	04/03/1958	F	Widowed		elizabeth.davis569@example.invalid	07484 465166	LEGACY_CSV	2025-09-04 00:00:00
+REC0001087	QQ893237D	Mr	Keith  	BELL	1958-02-08	M	Married	N/A	keith.bell237@example.invalid	07923 333475	CIS	2025-06-29 00:00:00
+REC0001088	QQ327256A	Mr	Michael	richardson	12-Jun-2031	M	Widowed	04-Jun-2023	michael.richardson256@example.invalid	07195 332139	DIGITAL	2026-01-05 00:00:00
+REC0001089	QQ284112D	Miss	HAZEL	Clarke  	25/12/1957	F	Married		hazel.clarke112@example.invalid	07975 036524	LEGACY_CSV	2025-11-03 00:00:00
+REC0001090	QQ503407C	Miss	Maureen	clarke	09/10/1949	F	Married	N/A	maureen.clarke407@example.invalid	07261 959189	LEGACY_CSV	2025-06-14 00:00:00
+REC0001091	QQ599883C	Mr	John	HARRIS	1946-08-11	M	Married		john.harris883@example.invalid	07214 679063	CIS	2025-08-30 00:00:00
+REC0001092	QQ131704D	Mr	JOHN	GRAY  	1947-05-28	M	Married	N/A	john.gray704@example.invalid	07361 367949	CIS	2025-07-18 00:00:00
+REC0001093	QQ242146C	Mrs	Jean	  johnson	1942-06-05	F	Divorced	N/A	jean.johnson146@example.invalid	07845 945926	CIS	2026-02-09 00:00:00
+REC0001094	QQ196051A	Mr	Nigel	Roberts	1940-01-04	M	Single		nigel.roberts51@example.invalid	07507 364903	CIS	2025-06-16 00:00:00
+REC0001095	QQ337008D	Miss	Brenda	Griffiths	30-Aug-1945	F	Married		brenda.griffiths8@example.invalid	07512 431553	DIGITAL	2025-07-22 00:00:00
+REC0001096	QQ834825C	Mr	  Graham	Cooper  	1950-09-12	M	Widowed		NULL	\N	CIS	2025-12-11 00:00:00
+REC0001097	QQ334780C	Ms	Susan	 Williams 	1955-09-25	F	Single	\N	susan.williams780@example.invalid	-	CIS	2026-01-13 00:00:00
+REC0001098	QQ625506C	Ms	Dorothy	  HILL	9999-12-31	F	Widowed		dorothy.hill506@example.invalid	07573 991013	CIS	2025-09-05 00:00:00
+REC0001099	QQ456069B	Ms	 BRENDA 	Davies	1957-11-25	F	Married		brenda.davies69@example.invalid	07116 493123	CIS	2026-02-07 00:00:00
+REC0001100	QQ529553D	Mrs	 Linda 	gray	1953-04-14	F	Civil Partnership	\N	linda.gray553@example.invalid	07611 465872	CIS	2025-07-25 00:00:00
+REC0001101	QQ434140D	Mr	Douglas	Ward	1956-05-20	M	Married		douglas.ward140@example.invalid	07871 837316	CIS	2025-06-16 00:00:00
+REC0001102	QQ600790D	Mr	Raymond  	BAKER	02/11/1950	M	Single	N/A	UNKNOWN	07505 530195	LEGACY_CSV	2025-09-09 00:00:00
+REC0001103	QQ218282A	Mr	Michael	hall	07-Aug-1954	M	Married		michael.hall282@example.invalid	07307 798061	DIGITAL	2025-12-08 00:00:00
+REC0001104	QQ101214A	Mrs	Gillian	Young	21/08/1955	F	Divorced		gillian.young214@example.invalid	07825 709979	LEGACY_CSV	2025-09-07 00:00:00
+REC0001105	QQ551337A	Mrs	Sheila  	Hill	23-Feb-1941	F	Civil Partnership	\N	sheila.hill337@example.invalid	07218 478718	DIGITAL	2026-03-27 00:00:00
+REC0001106	QQ310781D	Mrs	SYLVIA	  Phillips	2031-06-12	F	n/a		sylvia.phillips781@example.invalid	07132 362686	CIS	2025-08-26 00:00:00
+REC0001107	QQ806768C	Mr	Stanley	CHAPMAN  	1958-07-29	M	Married		-	07381 114314	CIS	2025-10-04 00:00:00
+REC0001108	QQ144966B	Miss	Irene  	Jones	1948-01-22	F	Widowed		irene.jones966@example.invalid	07401 175939	CIS	2025-06-16 00:00:00
+REC0001109	QQ846288A	Mr	GRAHAM	Wright  	27-Oct-1941	M	Widowed		graham.wright288@example.invalid	07707 556475	DIGITAL	2025-09-19 00:00:00
+REC0001110	QQ105166C	Mrs	NORMA  	 CLARK 	12/11/1957	F	Married	03/05/2029	norma.clark166@example.invalid	07584 455951	LEGACY_CSV	2025-12-16 00:00:00
+REC0001111	QQ290569B	Mr	Colin  	Morris	1934-06-08	M	Widowed	\N	colin.morris569@example.invalid	07974 918658	CIS	2025-08-26 00:00:00
+REC0001112	QQ392697D	Miss	Susan	Cooper	12/06/2031	F	Married		susan.cooper697@example.invalid	07382 213072	LEGACY_CSV	2025-12-29 00:00:00
+REC0001113	QQ897108A	Mr	Peter	  Collins	22/10/1959	M	Single	\N		07774 601297	LEGACY_CSV	2025-09-26 00:00:00
+REC0001114	QQ425183A	Miss	  Brenda	Morris	1958-08-06	F	Widowed		brenda.morris183@example.invalid	07484 067457	CIS	2025-09-23 00:00:00
+REC0001115	QQ607911A	Ms	EILEEN  	James	1947-04-27	F	n/a		eileen.james911@example.invalid	07919 112391	CIS	2025-06-05 00:00:00
+REC0001116	QQ758028A	Mr	David	CARTER	10/09/1956	M	Married		david.carter28@example.invalid	07179 780819	LEGACY_CSV	2025-12-21 00:00:00
+REC0001117	QQ369527A	Mr	Graham	  Wilson	03/12/1947	M	Married	N/A	graham.wilson527@example.invalid	07176 193003	LEGACY_CSV	2025-09-08 00:00:00
+REC0001118	QQ132063A	Mrs	AUDREY	Watson	29-Apr-1952	F	Married		audrey.watson63@example.invalid	07978 577255	DIGITAL	2025-12-03 00:00:00
+REC0001119	QQ566913B	Mr	  PETER	WARD	26/05/1951	M	Married	N/A	peter.ward913@example.invalid	07661 439736	LEGACY_CSV	2026-02-09 00:00:00
+REC0001120	QQ225741D	Mr	Clive  	Carter	07-Aug-1957	M	Widowed	N/A	clive.carter741@example.invalid	07258 835862	DIGITAL	2025-11-19 00:00:00
+REC0001121	QQ804446A	Mr	sidney	jones	1957-12-30	M	Single		sidney.jones446@example.invalid	07444 409917	CIS	2025-11-02 00:00:00
+REC0001122	QQ620986D	Mr	Barry  	james	1959-06-11	M	Widowed		n/a	07341 788604	CIS	2025-10-13 00:00:00
+REC0001123	QQ226739A	Ms	Susan  	Carter	1957-06-05	F	Married	2024-01-24	susan.carter739@example.invalid	07728 290339	CIS	2025-09-16 00:00:00
+REC0001124	QQ178221D	Miss	JOAN	Gray	1957-12-07	F	Divorced	\N	joan.gray221@example.invalid	07110 909391	CIS	2025-06-14 00:00:00
+REC0001125	QQ610259A	Mrs	Muriel	YOUNG	15/10/1953	F	Single	\N	muriel.young259@example.invalid	07615 842385	LEGACY_CSV	2025-10-24 00:00:00
+REC0001126	QQ427337D	Mr	maurice	TAYLOR	20-Jun-1943	M	Married	N/A	N/A	07273 442611	DIGITAL	2026-03-23 00:00:00
+REC0001127	QQ618134D	Mr	David	MORRIS	21/12/1942	M	Married		UNKNOWN	N/A	LEGACY_CSV	2025-11-14 00:00:00
+REC0001128	QQ162214A	Ms	Kathleen	MOORE	18-Jan-1949	F	Widowed	04-Apr-2025	kathleen.moore214@example.invalid	07449 631439	DIGITAL	2025-09-22 00:00:00
+REC0001129	QQ338776D	Miss	JANET	  lee	29/08/1950	F	Widowed	N/A	janet.lee776@example.invalid	07675 986236	LEGACY_CSV	2025-07-21 00:00:00
+REC0001130	QQ880931A	Miss	CHRISTINE	Bell  	01/02/1954	F	Single	04/04/1939		07515 208743	LEGACY_CSV	2025-11-10 00:00:00
+REC0001131	QQ436749D	Miss	Norma	Bennett  	1934-07-17	F	Divorced	\N	norma.bennett749@example.invalid	07663 045434	CIS	2025-12-02 00:00:00
+REC0001132	QQ730810B	Mrs	BRENDA	jackson  	25/08/1953	F	Widowed	09/09/2022	\N	07250 538609	LEGACY_CSV	2025-10-15 00:00:00
+REC0001133	QQ729364A	Ms	Gillian	Jones	02/12/1952	F	Widowed		gillian.jones364@example.invalid	07296 756459	LEGACY_CSV	2025-06-22 00:00:00
+REC0001134	QQ419243C	Ms	Doreen	  Hill	13/05/1948	F	Married		doreen.hill243@example.invalid	07769 821567	LEGACY_CSV	2026-03-25 00:00:00
+REC0001135	QQ104327C	Mr	Maurice	Harrison	1944-01-11	M	-	N/A	maurice.harrison327@example.invalid	07969 137689	CIS	2025-09-24 00:00:00
+REC0001136	QQ601035D	Mr	Barry  	Murphy	04/01/1946	M	Married		UNKNOWN	07906 702868	LEGACY_CSV	2025-11-01 00:00:00
+REC0001137	QQ662080A	Mr	 Graham 	Taylor	30/03/1954	M	NULL		graham.taylor80@example.invalid	07901 408943	LEGACY_CSV	2026-01-27 00:00:00
+REC0001138	QQ287336A	Ms	 Elizabeth 	  Wright	28-Nov-1950	F	Single	\N	elizabeth.wright336@example.invalid	07226 583471	DIGITAL	2026-02-02 00:00:00
+REC0001139	QQ796837D	Miss	Edna	Mitchell  	1957-09-22	F	Married	N/A	edna.mitchell837@example.invalid	07542 450378	CIS	2025-12-08 00:00:00
+REC0001140	QQ760294D	Mr	Norman	Hill	19/12/1951	M	Married	\N	norman.hill294@example.invalid	07415 257545	LEGACY_CSV	2026-01-07 00:00:00
+REC0001141	QQ354269C	Mrs	NORMA	Cooper  	18/06/1949	F	Married		norma.cooper269@example.invalid	07626 908872	LEGACY_CSV	2025-09-10 00:00:00
+REC0001142	QQ716916C	Mrs	valerie	Kelly	01/01/1900	F	Divorced		valerie.kelly916@example.invalid	07418 709297	LEGACY_CSV	2025-11-23 00:00:00
+REC0001143	QQ318966B	Miss	janet	Jones  	1944-05-19	F	Widowed		janet.jones966@example.invalid	07103 566576	CIS	2025-06-12 00:00:00
+REC0001144	QQ103802B	Mr	Harold	James  	1948-08-09	M	Married	N/A	harold.james802@example.invalid	07204 700799	CIS	2026-02-16 00:00:00
+REC0001145	QQ814558C	Miss	 Patricia 	 BAKER 	10-Jan-1951	F	Widowed	\N	patricia.baker558@example.invalid	07505 361119	DIGITAL	2026-01-08 00:00:00
+REC0001146	QQ154811B	Miss	Patricia	  baker	29/07/1955	F	Married	04/12/2023	patricia.baker811@example.invalid	07945 718124	LEGACY_CSV	2025-11-16 00:00:00
+REC0001147	QQ159090A	Mrs	 Christine 	  Bailey	1959-11-19	F	Widowed	N/A	christine.bailey90@example.invalid	07999 596739	CIS	2026-02-27 00:00:00
+REC0001148	QQ127055C	Mr	Terence	 PRICE 	1952-10-29	M	Married		terence.price55@example.invalid	07140 344968	CIS	2025-12-17 00:00:00
+REC0001149	QQ713304D	Ms	Hazel	  HARRIS	13/06/1948	F	UNKNOWN		hazel.harris304@example.invalid	07506 988369	LEGACY_CSV	2025-09-09 00:00:00
+REC0001150	QQ559903B	Mr	GORDON	 Phillips 	26/05/1950	M	Widowed		gordon.phillips903@example.invalid	07713 399433	LEGACY_CSV	2025-08-19 00:00:00
+REC0001151	QQ224524D	Mrs	Gillian	Smith	1938-05-15	F	-	\N		07270 986589	CIS	2026-03-21 00:00:00
+REC0001152	QQ878204A	Mr	Nigel	Cook	1953-04-19	M	Married	\N	nigel.cook204@example.invalid	07833 845738	CIS	2025-09-16 00:00:00
+REC0001153	QQ767718C	Ms	Diane	 Murphy 	13-Feb-1948	F	Married	N/A	diane.murphy718@example.invalid	07352 809590	DIGITAL	2025-10-23 00:00:00
+REC0001154	QQ707272A	Mr	Colin	Young	1951-02-07	M	Single		colin.young272@example.invalid	07612 374295	CIS	2025-12-20 00:00:00
+REC0001155	QQ154410A	Mr	CLIVE	KING	27-Jun-1952	M	Divorced	\N	clive.king410@example.invalid	\N	DIGITAL	2025-12-31 00:00:00
+REC0001156	QQ845108B	Ms	  Elizabeth	 Price 	1900-01-01	F	Widowed	\N	elizabeth.price108@example.invalid	07407 409032	CIS	2025-07-14 00:00:00
+REC0001157	QQ740084C	Mr	TERENCE	  Davis	1951-03-09	M	Widowed		terence.davis84@example.invalid	07629 989134	CIS	2025-08-30 00:00:00
+REC0001158	QQ247609A	Mr	Ronald	Cooper	1954-07-16	M	NULL	2024-10-08	ronald.cooper609@example.invalid	07527 172001	CIS	2025-07-14 00:00:00
+REC0001159	QQ443379C	Mr	MAURICE	Johnson  	2031-06-12	M	Single	\N	maurice.johnson379@example.invalid	07200 618085	CIS	2026-03-21 00:00:00
+REC0001160	QQ842455C	Mrs	beryl	Wilson	1945-11-05	F	Widowed	N/A	beryl.wilson455@example.invalid	07579 930211	CIS	2025-09-26 00:00:00
+REC0001161	QQ772146C	Mrs	pauline  	Collins  	21-May-1940	F	Widowed		pauline.collins146@example.invalid	07830 496867	DIGITAL	2026-03-26 00:00:00
+REC0001162	QQ352448A	Mrs	  Kathleen	  Ward	04-Oct-1938	F	Widowed	\N	kathleen.ward448@example.invalid	07556 111868	DIGITAL	2025-07-04 00:00:00
+REC0001163	QQ602909D	Mr	Raymond	Clarke	1952-12-17	M	Married	\N	raymond.clarke909@example.invalid	07945 884569	CIS	2025-08-07 00:00:00
+REC0001164	QQ778922A	Ms	Valerie	Bailey	1949-10-04	F	UNKNOWN		valerie.bailey922@example.invalid	07863 702748	CIS	2026-03-06 00:00:00
+REC0001165	QQ499365B	Mr	WILFRED	  harrison	31/12/9999	M	Married		wilfred.harrison365@example.invalid	07756 681377	LEGACY_CSV	2026-01-22 00:00:00
+REC0001166	QQ609315A	Mrs	Wendy	Rogers	20-Aug-1946	F	Divorced		wendy.rogers315@example.invalid	07412 607562	DIGITAL	2025-06-24 00:00:00
+REC0001167	QQ222002A	Ms	Beryl  	king	31-Dec-1935	F	Single	\N	beryl.king2@example.invalid	07720 815716	DIGITAL	2025-06-18 00:00:00
+REC0001168	QQ730258B	Ms	ROSEMARY	  davis	22/04/1945	F	Divorced	\N	rosemary.davis258@example.invalid	07662 924811	LEGACY_CSV	2025-07-08 00:00:00
+REC0001169	QQ892221B	Miss	Muriel	MITCHELL  	16/05/1953	F	Single	N/A	muriel.mitchell221@example.invalid	07865 832613	LEGACY_CSV	2025-11-24 00:00:00
+REC0001170	QQ152115A	Mrs	CAROL	Harrison	1958-04-26	F	Married		carol.harrison115@example.invalid	07452 247258	CIS	2025-07-19 00:00:00
+REC0001171	QQ760417D	Mr	 Derek 	Watson	02-Feb-1959	M	Married	\N	derek.watson417@example.invalid	n/a	DIGITAL	2025-07-02 00:00:00
+REC0001172	QQ239564B	Mrs	Gillian  	  JOHNSON	14/02/1947	F	Married	N/A	gillian.johnson564@example.invalid	07905 354109	LEGACY_CSV	2025-07-31 00:00:00
+REC0001173	QQ173658C	Miss	DOREEN	Chapman	14-Dec-1942	F	Married		doreen.chapman658@example.invalid	07196 663847	DIGITAL	2025-08-08 00:00:00
+REC0001174	QQ702305D	Mrs	Audrey  	white  	1951-03-05	F	Married	N/A	audrey.white305@example.invalid	07739 978032	CIS	2026-02-06 00:00:00
+REC0001175	QQ517987B	Mrs	  PAULINE	Jackson	06-Sep-1957	F	Married	19-Jul-1946	pauline.jackson987@example.invalid	07920 100625	DIGITAL	2025-09-09 00:00:00
+REC0001176	QQ575822A	Miss	MARION	Phillips	1946-03-03	F	Divorced	\N	marion.phillips822@example.invalid	07663 455641	CIS	2025-12-24 00:00:00
+REC0001177	QQ864668D	Mr	Brian  	 Carter 	UNKNOWN	M	\N		brian.carter668@example.invalid	07984 361023	DIGITAL	2026-01-08 00:00:00
+REC0001178	QQ104571C	Mr	john	Davies	22/10/1957	M	Married		john.davies571@example.invalid	07723 046436	LEGACY_CSV	2025-07-14 00:00:00
+REC0001179	QQ460120A	Mr	  BERNARD	Phillips	1958-11-06	M	Divorced	\N	bernard.phillips120@example.invalid	07393 028662	CIS	2025-10-06 00:00:00
+REC0001180	QQ757236B	Mr	Leonard	King	20-Dec-1943	M	Single		leonard.king236@example.invalid	07219 188794	DIGITAL	2025-12-31 00:00:00
+REC0001181	QQ356139B	Miss	Edna	Cook  	1947-08-03	F	Married		edna.cook139@example.invalid	07206 225762	CIS	2025-12-07 00:00:00
+REC0001182	QQ423116D	Mrs	BERYL	SHAW	15/05/1947	F	Married	N/A	beryl.shaw116@example.invalid	07193 059046	LEGACY_CSV	2025-07-23 00:00:00
+REC0001183	QQ179613A	Mr	Douglas  	James  	25/02/1949	M	Single		-	07359 393706	LEGACY_CSV	2025-11-05 00:00:00
+REC0001184	QQ646848C	Mrs	PATRICIA	Rogers	15-Sep-1944	F	Married		patricia.rogers848@example.invalid	07285 525239	DIGITAL	2026-01-07 00:00:00
+REC0001185	QQ406407C	Mr	Peter	Collins	27/04/1955	M	Married	23/02/2029	peter.collins407@example.invalid	07119 772998	LEGACY_CSV	2025-08-01 00:00:00
+REC0001186	QQ467973C	Mrs	Vera  	  SHAW	1947-01-15	F	Single	N/A	vera.shaw973@example.invalid	07393 114678	CIS	2025-07-09 00:00:00
+REC0001187	QQ514502D	Mr	  Alan	Robinson	14-Jul-1948	M	Widowed		alan.robinson502@example.invalid	07788 762406	DIGITAL	2025-07-17 00:00:00
+REC0001188	QQ723102B	Miss	  ROSEMARY	 morgan 	1957-06-30	F	Married	\N	rosemary.morgan102@example.invalid	07107 083083	CIS	2026-01-21 00:00:00
+REC0001189	QQ248960D	Mr	Nigel	Scott	1959-06-02	M	n/a	N/A	nigel.scott960@example.invalid	07368 684020	CIS	2025-09-20 00:00:00
+REC0001190	QQ140172C	Mr	Harold	SMITH	11/09/1946	M	Widowed		harold.smith172@example.invalid	07622 755522	LEGACY_CSV	2026-01-10 00:00:00
+REC0001191	QQ801333B	Mrs	Muriel	Cooper	16/03/1955	F	Single	N/A	muriel.cooper333@example.invalid	07900 009007	LEGACY_CSV	2025-06-14 00:00:00
+REC0001192	QQ561633D	Mr	Malcolm  	  Collins	21/09/1945	M	Married		\N	07944 985991	LEGACY_CSV	2025-09-16 00:00:00
+REC0001193	QQ200294B	Mr	Trevor	  HILL	1946-04-19	M	Married		trevor.hill294@example.invalid	07679 548508	CIS	2025-07-18 00:00:00
+REC0001194	QQ313806A	Mr	CLIVE	ROBINSON	1948-07-02	M	Single		clive.robinson806@example.invalid		CIS	2025-11-07 00:00:00
+REC0001195	QQ108740B	Mr	Alan	Wilson	01-Jan-1900	M	Widowed		alan.wilson740@example.invalid	-	DIGITAL	2025-09-17 00:00:00
+REC0001196	QQ391090C	Mr	Roy	price  	1954-12-19	M	Widowed	N/A	roy.price90@example.invalid	-	CIS	2025-06-15 00:00:00
+REC0001197	QQ867509C	Mr	  Raymond	Griffiths	23-Mar-1945	M	Married		raymond.griffiths509@example.invalid	07972 389002	DIGITAL	2025-09-15 00:00:00
+REC0001198	QQ732680D	Mrs	Kathleen  	Rogers	1953-12-08	F	Divorced		kathleen.rogers680@example.invalid	\N	CIS	2026-02-21 00:00:00
+REC0001199	QQ469037A	Mr	Bernard	Ward	02/02/1959	M	Married		bernard.ward37@example.invalid	07248 051210	LEGACY_CSV	2025-12-06 00:00:00
+REC0001200	QQ593279A	Mr	CLIVE  	CHAPMAN  	09-Jul-1957	M	\N		clive.chapman279@example.invalid	NULL	DIGITAL	2025-09-11 00:00:00
+\.
+
+COPY raw.address (address_id, claimant_ref, address_line_1, address_line_2, town, county, postcode, valid_from, valid_to, is_current) FROM stdin;
+ADR0000001	QQ199245C	129 Grange Road	The Annexe	Exeter	Devon	EX9 6FR	2015-11-07	\N	Y
+ADR0000002	QQ267483D	60 Kings Road	Apartment 3	Nottingham	Nottinghamshire	NG14 2ZN	2022-12-09	\N	Y
+ADR0000003	QQ543160C	16 Manor Road	Flat A	Birmingham	West Midlands	B14 3LG	2004-04-02	\N	Y
+ADR0000004	QQ430791B	170 York Road	\N	Nottingham	Nottinghamshire	NG12 0ZD	2024-02-07	\N	Y
+ADR0000005	QQ499467D	115 School Lane	Apartment 3	Cambridge	Cambridgeshire	CB1 5GY	2002-06-07	\N	Y
+ADR0000006	QQ680878A	154 Queens Road	\N	Nottingham	Nottinghamshire	NG10 0GR	2015-09-25	\N	Y
+ADR0000007	QQ270018B	167 Kings Road	\N	Cardiff	South Glamorgan	CF14 2XL	2019-01-31	\N	Y
+ADR0000008	QQ867182D	104 Church Lane	\N	Liverpool	Merseyside	L14 9HP	2017-10-17	\N	Y
+ADR0000009	QQ280013B	110 New Road	\N	Exeter	Devon	EX12 7JF	2012-07-18	\N	Y
+ADR0000010	QQ380793A	104 Meadow View	Flat A	London	Greater London	SW17 3JT	2012-04-19	\N	Y
+ADR0000011	QQ257892A	117 High Street	\N	Belfast	County Antrim	BT1 2LP	2006-07-24	\N	Y
+ADR0000012	QQ737015B	157 Oak Avenue	\N	Norwich	Norfolk	NR6 4LH	2002-10-21	\N	Y
+ADR0000013	QQ175473D	67 Mill Lane	The Annexe	Preston	Lancashire	PR4 4FA	2021-10-08	\N	Y
+ADR0000014	QQ111107D	140 Elm Close	\N	London	Greater London	SW12 3JL	2018-07-11	\N	Y
+ADR0000015	QQ191452C	175 Oak Avenue	\N	Sheffield	South Yorkshire	S1 6WG	2007-09-29	\N	Y
+ADR0000016	QQ190120B	95 Kings Road	\N	Leeds	West Yorkshire	LS13 4PG	2010-02-22	\N	Y
+ADR0000017	QQ717463D	24 York Road	The Annexe	London	Greater London	SW10 2SQ	2021-11-25	\N	Y
+ADR0000018	QQ283028D	21 Beech Drive	The Annexe	Exeter	Devon	EX15 1RR	2024-11-17	\N	Y
+ADR0000019	QQ326598D	128 Oak Avenue	The Annexe	Bristol	Somerset	BS3 6LH	2002-06-03	\N	Y
+ADR0000020	QQ243083A	142 Beech Drive	Flat A	Norwich	Norfolk	NR14 3QQ	2025-02-11	\N	Y
+ADR0000021	QQ620869B	19 West Street	Flat A	Reading	Berkshire	RG6 5UZ	2019-05-04	\N	Y
+ADR0000022	QQ324476C	2 Meadow View	\N	Cardiff	South Glamorgan	CF8 0QQ	2019-05-20	\N	Y
+ADR0000023	QQ169859B	147 Elm Close	Apartment 3	Coventry	West Midlands	CV9 8WE	2012-10-02	\N	Y
+ADR0000024	QQ314116C	147 Cedar Grove	Flat A	Preston	Lancashire	PR14 2DT	2021-01-23	\N	Y
+ADR0000025	QQ559715D	130 Victoria Road	\N	Glasgow	Lanarkshire	G16 8DD	2014-01-18	\N	Y
+ADR0000026	QQ395424D	176 High Street	Flat A	Sheffield	South Yorkshire	S16 4BU	2022-12-13	\N	Y
+ADR0000027	QQ355057C	95 Windsor Road	\N	London	Greater London	SE20 2FX	2007-02-24	\N	Y
+ADR0000028	QQ161029D	127 Windsor Road	Flat A	Newcastle upon Tyne	Tyne and Wear	NE11 5WN	2015-01-02	\N	Y
+ADR0000029	QQ643839C	141 Meadow View	Apartment 3	Swansea	West Glamorgan	SA18 5PF	2004-06-12	\N	Y
+ADR0000030	QQ657701C	107 Springfield Road	Apartment 3	Nottingham	Nottinghamshire	NG10 4QG	2010-05-14	\N	Y
+ADR0000031	QQ139064B	111 Grange Road	Apartment 3	Cardiff	South Glamorgan	CF15 9GP	2009-01-19	\N	Y
+ADR0000032	QQ558194A	123 Cedar Grove	\N	Manchester	Greater Manchester	M3 7BH	2003-10-29	\N	Y
+ADR0000033	QQ159669B	55 School Lane	The Annexe	Brighton	East Sussex	BN12 2TG	2011-04-25	\N	Y
+ADR0000034	QQ456588D	148 Windsor Road	\N	Exeter	Devon	EX10 5JF	2014-08-06	\N	Y
+ADR0000035	QQ207316A	41 Kings Road	\N	Manchester	Greater Manchester	M10 2EG	2022-05-05	\N	Y
+ADR0000036	QQ300612B	164 High Street	Apartment 3	Norwich	Norfolk	NR7 7DA	2003-03-28	\N	Y
+ADR0000037	QQ135260B	78 Meadow View	\N	London	Greater London	SW17 5RA	2009-04-25	\N	Y
+ADR0000038	QQ137157D	67 Victoria Road	The Annexe	Bristol	Somerset	BS16 5DF	2004-06-08	\N	Y
+ADR0000039	QQ172349D	93 Kings Road	The Annexe	London	Greater London	SW9 9BL	2004-02-29	\N	Y
+ADR0000040	QQ747210C	130 Park Avenue	\N	Preston	Lancashire	PR11 7PW	2020-07-17	\N	Y
+ADR0000041	QQ701769C	156 Beech Drive	\N	London	Greater London	SE18 7BW	2013-02-25	\N	Y
+ADR0000042	QQ892066C	88 The Green	\N	Brighton	East Sussex	BN16 4YN	2023-01-19	\N	Y
+ADR0000043	QQ348699C	151 Victoria Road	\N	Exeter	Devon	EX20 0EL	2023-02-12	\N	Y
+ADR0000044	QQ341233A	129 Meadow View	\N	Leeds	West Yorkshire	LS14 0ZD	2005-11-21	\N	Y
+ADR0000045	QQ641834B	167 The Green	The Annexe	Leeds	West Yorkshire	LS6 8NR	2018-10-12	\N	Y
+ADR0000046	QQ343775C	34 Meadow View	The Annexe	Sunderland	Tyne and Wear	SR14 2JZ	2016-08-03	\N	Y
+ADR0000047	QQ700684D	65 Windsor Road	Apartment 3	Edinburgh	Midlothian	EH7 7DB	2014-05-04	\N	Y
+ADR0000048	QQ394252B	96 Kings Road	Apartment 3	Preston	Lancashire	PR13 2ZP	2019-08-14	\N	Y
+ADR0000049	QQ294971D	126 Mill Lane	The Annexe	Exeter	Devon	EX5 9ZH	2012-08-16	\N	Y
+ADR0000050	QQ174420B	97 Beech Drive	The Annexe	Belfast	County Antrim	BT14 8YY	2017-08-15	\N	Y
+ADR0000051	QQ578355A	91 Beech Drive	\N	Swansea	West Glamorgan	SA9 8TS	2008-12-28	\N	Y
+ADR0000052	QQ693340B	158 High Street	The Annexe	Sheffield	South Yorkshire	S17 3XE	2008-08-24	\N	Y
+ADR0000053	QQ219398A	31 York Road	The Annexe	Preston	Lancashire	PR6 1PY	2003-04-28	\N	Y
+ADR0000054	QQ256200C	103 Albert Road	Flat A	Leicester	Leicestershire	LE11 1DF	2007-05-05	\N	Y
+ADR0000055	QQ882199B	165 Oak Avenue	Flat A	Nottingham	Nottinghamshire	NG20 7ZA	2023-04-19	\N	Y
+ADR0000056	QQ126065C	125 Elm Close	\N	Sunderland	Tyne and Wear	SR12 9QW	2003-10-24	\N	Y
+ADR0000057	QQ288722C	116 High Street	The Annexe	Exeter	Devon	EX8 7HU	2015-06-26	\N	Y
+ADR0000058	QQ855354A	55 Albert Road	\N	Leicester	Leicestershire	LE16 6AH	2018-06-06	\N	Y
+ADR0000059	QQ526899A	132 Elm Close	\N	Sunderland	Tyne and Wear	SR11 6AR	2014-05-06	\N	Y
+ADR0000060	QQ452620D	174 Albert Road	\N	Hull	East Yorkshire	HU16 5WP	2017-05-12	\N	Y
+ADR0000061	QQ844873C	114 School Lane	The Annexe	Coventry	West Midlands	CV17 5TA	2014-03-03	\N	Y
+ADR0000062	QQ139879D	168 West Street	\N	London	Greater London	SW18 5SL	2023-01-03	\N	Y
+ADR0000063	QQ877304C	48 Albert Road	\N	Plymouth	Devon	PL7 6AX	2021-02-21	\N	Y
+ADR0000064	QQ843608A	35 Springfield Road	Apartment 3	Glasgow	Lanarkshire	G20 4FE	2010-09-25	\N	Y
+ADR0000065	QQ456738D	99 Victoria Road	The Annexe	Manchester	Greater Manchester	M8 7TZ	2017-03-12	\N	Y
+ADR0000066	QQ340553A	134 Chapel Street	Flat A	Birmingham	West Midlands	B12 4YR	2012-09-13	\N	Y
+ADR0000067	QQ885187D	136 Park Avenue	The Annexe	Preston	Lancashire	PR17 2ZQ	2020-05-04	\N	Y
+ADR0000068	QQ247455D	150 Albert Road	The Annexe	Sheffield	South Yorkshire	S3 4XJ	2013-01-19	\N	Y
+ADR0000069	QQ634912D	25 West Street	Apartment 3	Sunderland	Tyne and Wear	SR5 6GH	2011-12-20	\N	Y
+ADR0000070	QQ529791A	70 Alexandra Road	Flat A	Plymouth	Devon	PL3 9TZ	2005-03-09	\N	Y
+ADR0000071	QQ607795A	118 Victoria Road	\N	Manchester	Greater Manchester	M6 3DP	2014-12-30	\N	Y
+ADR0000072	QQ692073D	82 Cedar Grove	Apartment 3	Cardiff	South Glamorgan	CF14 2FB	2011-02-04	\N	Y
+ADR0000073	QQ743931A	39 Windsor Road	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE9 3SW	2004-02-10	\N	Y
+ADR0000074	QQ788446C	48 Manor Road	\N	Birmingham	West Midlands	B19 5ES	2010-08-02	\N	Y
+ADR0000075	QQ789036C	165 Windsor Road	Flat A	Manchester	Greater Manchester	M19 6TL	2009-11-25	\N	Y
+ADR0000076	QQ771635B	30 Windsor Road	\N	Brighton	East Sussex	BN3 3ZR	2017-12-04	\N	Y
+ADR0000077	QQ884008C	159 Queens Road	Flat A	Edinburgh	Midlothian	EH14 1SB	2002-12-23	\N	Y
+ADR0000078	QQ202314A	95 Beech Drive	Flat A	Hull	East Yorkshire	HU10 3QG	2005-07-26	\N	Y
+ADR0000079	QQ108638A	146 Grange Road	\N	Exeter	Devon	EX10 7DE	2005-12-01	\N	Y
+ADR0000080	QQ661341B	62 Queens Road	\N	London	Greater London	SE15 9TQ	2018-02-17	\N	Y
+ADR0000081	QQ797791A	88 West Street	The Annexe	Cambridge	Cambridgeshire	CB1 2ZX	2008-10-14	\N	Y
+ADR0000082	QQ667593C	124 Oak Avenue	\N	Belfast	County Antrim	BT15 2QR	2013-05-01	\N	Y
+ADR0000083	QQ763287A	34 School Lane	\N	Preston	Lancashire	PR16 3NX	2022-10-02	\N	Y
+ADR0000084	QQ847381B	140 Windsor Road	Apartment 3	Sheffield	South Yorkshire	S19 7WW	2020-01-30	\N	Y
+ADR0000085	QQ185353D	136 School Lane	\N	Liverpool	Merseyside	L5 1ZN	2024-05-28	\N	Y
+ADR0000086	QQ888528D	22 Queens Road	\N	Exeter	Devon	EX3 7AN	2019-11-24	\N	Y
+ADR0000087	QQ570386B	95 The Green	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE2 3JU	2012-11-11	\N	Y
+ADR0000088	QQ146106B	54 School Lane	Apartment 3	Reading	Berkshire	RG12 9BR	2013-12-22	\N	Y
+ADR0000089	QQ529144B	107 Kings Road	Apartment 3	Glasgow	Lanarkshire	G6 2PW	2016-11-03	\N	Y
+ADR0000090	QQ692174A	108 Mill Lane	Flat A	Belfast	County Antrim	BT8 3TS	2006-01-09	\N	Y
+ADR0000091	QQ674320D	53 West Street	Apartment 3	Belfast	County Antrim	BT13 1TA	2008-02-04	\N	Y
+ADR0000092	QQ625048B	74 New Road	Apartment 3	Manchester	Greater Manchester	M4 2AN	2022-08-29	\N	Y
+ADR0000093	QQ223344C	19 Meadow View	Apartment 3	Manchester	Greater Manchester	M20 9NE	2015-04-10	\N	Y
+ADR0000094	QQ561210A	79 York Road	\N	Sheffield	South Yorkshire	S15 0JG	2001-08-22	\N	Y
+ADR0000095	QQ398517C	126 School Lane	\N	Sheffield	South Yorkshire	S8 4AR	2001-12-12	\N	Y
+ADR0000096	QQ117999B	9 Park Avenue	Flat A	Cambridge	Cambridgeshire	CB7 7NW	2025-01-03	\N	Y
+ADR0000097	QQ651852D	109 Beech Drive	\N	Leeds	West Yorkshire	LS6 6AQ	2007-07-17	\N	Y
+ADR0000098	QQ721674B	7 New Road	Flat A	Edinburgh	Midlothian	EH8 8PQ	2018-06-09	\N	Y
+ADR0000099	QQ140631B	118 Alexandra Road	Flat A	Leeds	West Yorkshire	LS6 0TY	2013-01-28	\N	Y
+ADR0000100	QQ513752D	64 Mill Lane	\N	Manchester	Greater Manchester	M19 3HX	2001-10-13	\N	Y
+ADR0000101	QQ233449B	31 Windsor Road	The Annexe	Preston	Lancashire	PR2 2NY	2023-01-31	\N	Y
+ADR0000102	QQ195096A	85 Albert Road	Flat A	Hull	East Yorkshire	HU1 5NA	2004-09-17	\N	Y
+ADR0000103	QQ632437D	103 Windsor Road	Apartment 3	Sheffield	South Yorkshire	S15 8BX	2021-11-24	\N	Y
+ADR0000104	QQ408855B	130 Elm Close	\N	Belfast	County Antrim	BT8 7GH	2013-11-13	\N	Y
+ADR0000105	QQ707668B	149 Victoria Road	The Annexe	Leeds	West Yorkshire	LS5 8UH	2009-10-02	\N	Y
+ADR0000106	QQ452373A	97 Beech Drive	\N	Liverpool	Merseyside	L6 3AD	2008-11-09	\N	Y
+ADR0000107	QQ802984C	175 Elm Close	The Annexe	Bristol	Somerset	BS1 4DU	2005-01-30	\N	Y
+ADR0000108	QQ342480B	14 Beech Drive	\N	Sheffield	South Yorkshire	S10 7RP	2006-01-11	\N	Y
+ADR0000109	QQ479748C	101 High Street	The Annexe	Edinburgh	Midlothian	EH20 7ZD	2013-05-13	\N	Y
+ADR0000110	QQ534651D	167 Queens Road	\N	Plymouth	Devon	PL18 1HH	2022-04-21	\N	Y
+ADR0000111	QQ718182C	42 York Road	Apartment 3	Norwich	Norfolk	NR13 6SJ	2012-11-26	\N	Y
+ADR0000112	QQ852686B	111 Chapel Street	\N	Exeter	Devon	EX5 1SL	2006-08-14	\N	Y
+ADR0000113	QQ299023D	152 Mill Lane	\N	Plymouth	Devon	PL7 2NT	2023-04-14	\N	Y
+ADR0000114	QQ639285C	5 Mill Lane	The Annexe	Sunderland	Tyne and Wear	SR5 7JE	2019-06-10	\N	Y
+ADR0000115	QQ664783B	9 Kings Road	Apartment 3	Edinburgh	Midlothian	EH13 6BJ	2008-02-12	\N	Y
+ADR0000116	QQ514028B	43 Meadow View	\N	Reading	Berkshire	RG19 8SA	2004-11-04	\N	Y
+ADR0000117	QQ513686C	166 Kings Road	\N	Manchester	Greater Manchester	M10 6DN	2005-12-11	\N	Y
+ADR0000118	QQ775592B	16 Oak Avenue	\N	Hull	East Yorkshire	HU3 5AR	2017-04-28	\N	Y
+ADR0000119	QQ588057A	13 Manor Road	\N	Brighton	East Sussex	BN5 4RF	2003-06-19	\N	Y
+ADR0000120	QQ630799C	141 Chapel Street	\N	London	Greater London	SE15 7XB	2007-07-24	\N	Y
+ADR0000121	QQ414531B	108 Beech Drive	\N	Sheffield	South Yorkshire	S10 7TL	2015-11-30	\N	Y
+ADR0000122	QQ650935B	8 Victoria Road	\N	Belfast	County Antrim	BT12 7AR	2020-07-05	\N	Y
+ADR0000123	QQ558624B	50 Cedar Grove	Flat A	Belfast	County Antrim	BT1 5EZ	2022-01-04	\N	Y
+ADR0000124	QQ722748D	4 Springfield Road	\N	Norwich	Norfolk	NR18 2XR	2024-03-01	\N	Y
+ADR0000125	QQ582409C	35 Queens Road	\N	Preston	Lancashire	PR3 1DQ	2014-04-06	\N	Y
+ADR0000126	QQ531006C	55 Queens Road	\N	Coventry	West Midlands	CV6 6DX	2009-02-18	\N	Y
+ADR0000127	QQ844608A	99 York Road	\N	Plymouth	Devon	PL7 3GS	2022-11-22	\N	Y
+ADR0000128	QQ646841A	165 Grange Road	Flat A	Sheffield	South Yorkshire	S8 2SL	2004-06-19	\N	Y
+ADR0000129	QQ376041C	77 Queens Road	The Annexe	Norwich	Norfolk	NR10 9WZ	2017-10-17	\N	Y
+ADR0000130	QQ786892B	148 Station Road	Flat A	Preston	Lancashire	PR10 0XN	2024-02-22	\N	Y
+ADR0000131	QQ333105B	82 Kings Road	\N	Belfast	County Antrim	BT2 0UZ	2011-07-09	\N	Y
+ADR0000132	QQ516039D	132 Windsor Road	Flat A	Belfast	County Antrim	BT14 1NJ	2016-09-13	\N	Y
+ADR0000133	QQ828929D	138 High Street	\N	Swansea	West Glamorgan	SA1 5SA	2013-12-18	\N	Y
+ADR0000134	QQ846742C	142 Manor Road	Apartment 3	Brighton	East Sussex	BN13 4JW	2006-06-22	\N	Y
+ADR0000135	QQ151122C	112 Oak Avenue	Flat A	Norwich	Norfolk	NR1 4RG	2010-04-27	\N	Y
+ADR0000136	QQ799265A	173 School Lane	\N	Plymouth	Devon	PL9 9TT	2001-08-15	\N	Y
+ADR0000137	QQ271083B	137 The Green	The Annexe	Edinburgh	Midlothian	EH5 6QY	2017-10-30	\N	Y
+ADR0000138	QQ834528B	59 York Road	Apartment 3	Cambridge	Cambridgeshire	CB3 7BY	2010-02-07	\N	Y
+ADR0000139	QQ756438B	64 York Road	\N	Exeter	Devon	EX13 9JQ	2002-02-17	\N	Y
+ADR0000140	QQ650307B	134 Church Lane	\N	Norwich	Norfolk	NR18 5NW	2017-05-10	\N	Y
+ADR0000141	QQ743017D	117 Victoria Road	\N	Cambridge	Cambridgeshire	CB16 4YS	2019-04-13	\N	Y
+ADR0000142	QQ764386C	36 Springfield Road	Apartment 3	Coventry	West Midlands	CV9 2WG	2021-04-15	\N	Y
+ADR0000143	QQ632974D	73 Queens Road	Apartment 3	Reading	Berkshire	RG1 8RB	2015-06-21	\N	Y
+ADR0000144	QQ213494C	44 Elm Close	Flat A	Edinburgh	Midlothian	EH20 8AQ	2005-04-30	\N	Y
+ADR0000145	QQ733732C	88 York Road	The Annexe	Exeter	Devon	EX8 5LQ	2002-10-19	\N	Y
+ADR0000146	QQ129972A	132 Kings Road	\N	Edinburgh	Midlothian	EH11 1AR	2010-03-20	\N	Y
+ADR0000147	QQ183482B	126 The Green	Flat A	Belfast	County Antrim	BT14 5PL	2020-08-25	\N	Y
+ADR0000148	QQ484456A	94 Windsor Road	\N	Sunderland	Tyne and Wear	SR12 7TA	2001-11-14	\N	Y
+ADR0000149	QQ541493D	140 High Street	\N	Cardiff	South Glamorgan	CF1 5ED	2024-05-31	\N	Y
+ADR0000150	QQ288800C	35 Alexandra Road	The Annexe	Brighton	East Sussex	BN8 5XH	2022-08-25	\N	Y
+ADR0000151	QQ620923B	41 Beech Drive	Apartment 3	Plymouth	Devon	PL9 2HS	2022-03-23	\N	Y
+ADR0000152	QQ653395C	89 York Road	Apartment 3	Southampton	Hampshire	SO17 1EU	2004-11-19	\N	Y
+ADR0000153	QQ114958D	55 Meadow View	Apartment 3	Reading	Berkshire	RG5 8HF	2011-10-29	\N	Y
+ADR0000154	QQ217194C	26 Chapel Street	The Annexe	Hull	East Yorkshire	HU16 2NW	2003-03-19	\N	Y
+ADR0000155	QQ452068C	150 Grange Road	\N	Edinburgh	Midlothian	EH18 9DG	2024-03-03	\N	Y
+ADR0000156	QQ853299B	10 Kings Road	\N	Nottingham	Nottinghamshire	NG8 1JF	2005-09-28	\N	Y
+ADR0000157	QQ122112D	156 Windsor Road	\N	Brighton	East Sussex	BN3 9GL	2024-06-07	\N	Y
+ADR0000158	QQ763896B	130 Beech Drive	\N	Coventry	West Midlands	CV3 1GP	2022-10-07	\N	Y
+ADR0000159	QQ187490C	126 The Green	The Annexe	Sunderland	Tyne and Wear	SR17 1TW	2002-06-01	\N	Y
+ADR0000160	QQ738739A	40 Elm Close	Flat A	Sunderland	Tyne and Wear	SR1 9GA	2011-02-20	\N	Y
+ADR0000161	QQ102304D	29 The Green	\N	Coventry	West Midlands	CV9 3JE	2004-05-25	\N	Y
+ADR0000162	QQ318107C	48 The Green	Apartment 3	Norwich	Norfolk	NR10 6PA	2018-01-04	\N	Y
+ADR0000163	QQ374494C	140 Victoria Road	\N	London	Greater London	SE7 9NN	2004-08-20	\N	Y
+ADR0000164	QQ250971A	79 New Road	Apartment 3	Southampton	Hampshire	SO19 1PS	2001-09-20	\N	Y
+ADR0000165	QQ868732B	103 Springfield Road	\N	Leeds	West Yorkshire	LS5 0LF	2008-07-19	\N	Y
+ADR0000166	QQ833806C	177 Mill Lane	The Annexe	Hull	East Yorkshire	HU10 6NJ	2007-10-27	\N	Y
+ADR0000167	QQ641189B	127 Alexandra Road	Apartment 3	Birmingham	West Midlands	B18 5UQ	2021-08-01	\N	Y
+ADR0000168	QQ266341A	17 Manor Road	\N	Liverpool	Merseyside	L6 8RN	2009-11-30	\N	Y
+ADR0000169	QQ815989C	28 Windsor Road	\N	Leeds	West Yorkshire	LS1 7EP	2001-09-18	\N	Y
+ADR0000170	QQ367962A	115 Alexandra Road	\N	Brighton	East Sussex	BN10 8DT	2002-06-02	\N	Y
+ADR0000171	QQ853479D	91 Oak Avenue	\N	Cardiff	South Glamorgan	CF4 8GJ	2016-12-18	\N	Y
+ADR0000172	QQ575474A	56 Cedar Grove	Apartment 3	Belfast	County Antrim	BT16 5AB	2021-10-27	\N	Y
+ADR0000173	QQ801010C	86 Station Road	\N	Liverpool	Merseyside	L17 9PL	2003-12-19	\N	Y
+ADR0000174	QQ464239C	23 Windsor Road	Flat A	Leicester	Leicestershire	LE9 3DQ	2014-01-24	\N	Y
+ADR0000175	QQ479995D	155 York Road	Flat A	Sheffield	South Yorkshire	S7 6BH	2013-03-12	\N	Y
+ADR0000176	QQ879838B	139 High Street	\N	Reading	Berkshire	RG14 6JN	2024-06-05	\N	Y
+ADR0000177	QQ506511C	164 Cedar Grove	\N	Manchester	Greater Manchester	M13 2TZ	2023-03-08	\N	Y
+ADR0000178	QQ401545A	31 Meadow View	Flat A	Norwich	Norfolk	NR20 8BU	2023-02-08	\N	Y
+ADR0000179	QQ272396A	78 West Street	\N	Nottingham	Nottinghamshire	NG9 6AR	2011-12-22	\N	Y
+ADR0000180	QQ196537D	55 Albert Road	\N	Birmingham	West Midlands	B10 0JL	2024-06-09	\N	Y
+ADR0000181	QQ753258A	169 High Street	\N	Belfast	County Antrim	BT15 4WN	2011-04-25	\N	Y
+ADR0000182	QQ859114A	79 The Green	\N	Sunderland	Tyne and Wear	SR13 4NU	2012-12-04	\N	Y
+ADR0000183	QQ184685C	32 Albert Road	\N	Nottingham	Nottinghamshire	NG10 8AT	2016-04-05	\N	Y
+ADR0000184	QQ845427C	7 Albert Road	\N	Bristol	Somerset	BS19 5LT	2014-11-06	\N	Y
+ADR0000185	QQ124918D	115 Oak Avenue	Flat A	Cardiff	South Glamorgan	CF9 4XZ	2014-02-10	\N	Y
+ADR0000186	QQ838412B	158 Queens Road	Flat A	Newcastle upon Tyne	Tyne and Wear	NE16 4AE	2011-05-14	\N	Y
+ADR0000187	QQ272057D	18 Kings Road	\N	Southampton	Hampshire	SO14 4FZ	2008-02-09	\N	Y
+ADR0000188	QQ211161D	2 Mill Lane	\N	Norwich	Norfolk	NR6 1SP	2004-07-25	\N	Y
+ADR0000189	QQ641179A	17 The Green	The Annexe	Leeds	West Yorkshire	LS13 4JD	2009-08-16	\N	Y
+ADR0000190	QQ274802D	27 Queens Road	\N	Leicester	Leicestershire	LE11 0NN	2003-11-13	\N	Y
+ADR0000191	QQ570037B	35 High Street	Apartment 3	Plymouth	Devon	PL16 7NA	2016-12-04	\N	Y
+ADR0000192	QQ337200B	167 Beech Drive	The Annexe	Edinburgh	Midlothian	EH20 5UU	2019-03-22	\N	Y
+ADR0000193	QQ428262B	143 School Lane	Apartment 3	Reading	Berkshire	RG13 4GL	2010-01-18	\N	Y
+ADR0000194	QQ889210A	126 Queens Road	Flat A	London	Greater London	SE15 4FS	2014-03-31	\N	Y
+ADR0000195	QQ157202C	157 School Lane	\N	Sheffield	South Yorkshire	S10 2BS	2003-02-01	\N	Y
+ADR0000196	QQ834739A	129 West Street	The Annexe	Coventry	West Midlands	CV2 2HP	2014-11-20	\N	Y
+ADR0000197	QQ818043A	58 Kings Road	Flat A	Swansea	West Glamorgan	SA9 7XW	2008-12-28	\N	Y
+ADR0000198	QQ443852B	154 The Green	Flat A	Swansea	West Glamorgan	SA7 8GQ	2021-12-16	\N	Y
+ADR0000199	QQ836519A	133 New Road	Flat A	Sheffield	South Yorkshire	S11 7FP	2006-09-08	\N	Y
+ADR0000200	QQ498476D	51 The Green	\N	Edinburgh	Midlothian	EH7 9ZN	2018-07-27	\N	Y
+ADR0000201	QQ652782B	124 Park Avenue	The Annexe	Exeter	Devon	EX3 6JL	2020-11-03	\N	Y
+ADR0000202	QQ681340D	80 West Street	Apartment 3	Belfast	County Antrim	BT3 5DH	2011-10-09	\N	Y
+ADR0000203	QQ324807A	115 The Green	\N	Leicester	Leicestershire	LE4 8HS	2006-10-02	\N	Y
+ADR0000204	QQ446260D	41 Meadow View	The Annexe	Swansea	West Glamorgan	SA20 5RN	2015-03-24	\N	Y
+ADR0000205	QQ873057D	130 Oak Avenue	\N	Newcastle upon Tyne	Tyne and Wear	NE3 4YQ	2012-02-29	\N	Y
+ADR0000206	QQ461032B	85 Oak Avenue	Apartment 3	Liverpool	Merseyside	L12 0JL	2014-03-19	\N	Y
+ADR0000207	QQ497164A	59 Elm Close	Flat A	Coventry	West Midlands	CV8 8WA	2018-02-26	\N	Y
+ADR0000208	QQ853157C	25 Victoria Road	Flat A	Coventry	West Midlands	CV13 9ZD	2018-03-31	\N	Y
+ADR0000209	QQ247395D	144 Oak Avenue	Apartment 3	Plymouth	Devon	PL4 7ZW	2008-05-16	\N	Y
+ADR0000210	QQ550069C	108 Oak Avenue	Flat A	Preston	Lancashire	PR8 1QJ	2024-05-10	\N	Y
+ADR0000211	QQ763244A	22 Elm Close	Apartment 3	London	Greater London	SE14 2ZN	2012-09-11	\N	Y
+ADR0000212	QQ674147B	88 Chapel Street	\N	Plymouth	Devon	PL7 5QF	2009-07-02	\N	Y
+ADR0000213	QQ764529B	78 Chapel Street	The Annexe	Plymouth	Devon	PL7 1PN	2012-06-25	\N	Y
+ADR0000214	QQ805529B	170 Mill Lane	Apartment 3	Leicester	Leicestershire	LE7 6UL	2017-02-15	\N	Y
+ADR0000215	QQ760812B	68 Kings Road	\N	Edinburgh	Midlothian	EH19 6SE	2012-09-23	\N	Y
+ADR0000216	QQ107360D	108 High Street	\N	Leeds	West Yorkshire	LS17 4PA	2007-06-14	\N	Y
+ADR0000217	QQ452280B	57 Grange Road	\N	Cardiff	South Glamorgan	CF7 9SJ	2007-06-10	\N	Y
+ADR0000218	QQ269422B	134 Oak Avenue	\N	Newcastle upon Tyne	Tyne and Wear	NE10 9WW	2004-11-29	\N	Y
+ADR0000219	QQ342997D	93 The Green	Flat A	London	Greater London	SE8 6TT	2004-11-19	\N	Y
+ADR0000220	QQ435353B	31 School Lane	\N	Liverpool	Merseyside	L12 2EB	2017-08-17	\N	Y
+ADR0000221	QQ860153D	150 Victoria Road	Apartment 3	Swansea	West Glamorgan	SA20 4RH	2004-01-28	\N	Y
+ADR0000222	QQ181529C	42 Station Road	Flat A	Leeds	West Yorkshire	LS12 5BL	2024-08-08	\N	Y
+ADR0000223	QQ614843A	80 Church Lane	Apartment 3	Brighton	East Sussex	BN8 2UZ	2005-09-13	\N	Y
+ADR0000224	QQ807466B	105 York Road	Apartment 3	Hull	East Yorkshire	HU15 2JU	2023-08-28	\N	Y
+ADR0000225	QQ443111C	10 West Street	Flat A	Brighton	East Sussex	BN2 7NS	2009-03-02	\N	Y
+ADR0000226	QQ457089C	60 High Street	The Annexe	Liverpool	Merseyside	L3 3AS	2012-07-28	\N	Y
+ADR0000227	QQ614793B	119 Victoria Road	\N	Glasgow	Lanarkshire	G18 1ZU	2021-01-04	\N	Y
+ADR0000228	QQ243410B	179 Park Avenue	\N	Preston	Lancashire	PR4 9LN	2004-01-09	\N	Y
+ADR0000229	QQ468313B	146 Meadow View	Flat A	Hull	East Yorkshire	HU16 1GP	2022-12-31	\N	Y
+ADR0000230	QQ717637A	64 High Street	Flat A	Newcastle upon Tyne	Tyne and Wear	NE2 2PX	2003-05-23	\N	Y
+ADR0000231	QQ655961A	53 Beech Drive	\N	Sheffield	South Yorkshire	S5 0YW	2021-09-29	\N	Y
+ADR0000232	QQ459855D	43 Victoria Road	\N	Reading	Berkshire	RG4 4SZ	2019-03-23	\N	Y
+ADR0000233	QQ875422C	122 Victoria Road	\N	Birmingham	West Midlands	B10 0HN	2007-01-07	\N	Y
+ADR0000234	QQ635897C	50 Manor Road	Flat A	Leeds	West Yorkshire	LS4 3HD	2013-01-16	\N	Y
+ADR0000235	QQ422710C	75 Mill Lane	\N	Norwich	Norfolk	NR12 1SW	2013-02-16	\N	Y
+ADR0000236	QQ849740A	131 Manor Road	The Annexe	Swansea	West Glamorgan	SA10 3TE	2011-06-24	\N	Y
+ADR0000237	QQ262024C	85 Park Avenue	\N	Liverpool	Merseyside	L20 4GJ	2006-08-17	\N	Y
+ADR0000238	QQ814336B	161 Kings Road	\N	Sheffield	South Yorkshire	S5 6ST	2010-12-08	\N	Y
+ADR0000239	QQ234111D	2 Alexandra Road	Apartment 3	Exeter	Devon	EX9 5FY	2007-12-12	\N	Y
+ADR0000240	QQ102626A	165 Oak Avenue	\N	Swansea	West Glamorgan	SA19 8PH	2004-01-07	\N	Y
+ADR0000241	QQ690932B	65 Station Road	\N	Birmingham	West Midlands	B11 0NJ	2004-03-13	\N	Y
+ADR0000242	QQ607657A	176 Elm Close	\N	Cardiff	South Glamorgan	CF4 8ET	2020-05-13	\N	Y
+ADR0000243	QQ319495D	63 Kings Road	The Annexe	Leeds	West Yorkshire	LS1 2AP	2005-10-03	\N	Y
+ADR0000244	QQ296585D	163 Grange Road	The Annexe	Liverpool	Merseyside	L8 0XR	2023-01-27	\N	Y
+ADR0000245	QQ447030D	70 Oak Avenue	The Annexe	Cardiff	South Glamorgan	CF17 3RB	2016-01-03	\N	Y
+ADR0000246	QQ412760D	77 Cedar Grove	Flat A	Belfast	County Antrim	BT14 0YY	2011-06-22	\N	Y
+ADR0000247	QQ738399D	34 Springfield Road	Flat A	Nottingham	Nottinghamshire	NG20 7EH	2005-04-29	\N	Y
+ADR0000248	QQ271908B	147 Queens Road	Apartment 3	Cardiff	South Glamorgan	CF6 7YD	2011-09-22	\N	Y
+ADR0000249	QQ838527C	144 New Road	Apartment 3	Birmingham	West Midlands	B5 7ZJ	2008-01-06	\N	Y
+ADR0000250	QQ470949B	109 Alexandra Road	Flat A	Southampton	Hampshire	SO1 2QE	2020-07-19	\N	Y
+ADR0000251	QQ849417D	119 Park Avenue	\N	Brighton	East Sussex	BN14 9ZH	2018-07-12	\N	Y
+ADR0000252	QQ562518C	120 Chapel Street	\N	Coventry	West Midlands	CV6 6QL	2014-02-08	\N	Y
+ADR0000253	QQ468580C	76 York Road	\N	Reading	Berkshire	RG14 1LY	2023-10-20	\N	Y
+ADR0000254	QQ675225D	85 Station Road	Flat A	Nottingham	Nottinghamshire	NG1 9EF	2009-02-04	\N	Y
+ADR0000255	QQ147986B	43 High Street	\N	Bristol	Somerset	BS19 3GG	2015-06-29	\N	Y
+ADR0000256	QQ819980D	130 Park Avenue	The Annexe	Southampton	Hampshire	SO11 7JR	2013-11-04	\N	Y
+ADR0000257	QQ375753B	166 School Lane	Flat A	Leicester	Leicestershire	LE13 3WG	2008-12-25	\N	Y
+ADR0000258	QQ634255D	82 Manor Road	The Annexe	Plymouth	Devon	PL7 2QW	2008-02-22	\N	Y
+ADR0000259	QQ424287D	148 Oak Avenue	\N	Newcastle upon Tyne	Tyne and Wear	NE15 6GX	2012-07-16	\N	Y
+ADR0000260	QQ499197D	154 Windsor Road	Apartment 3	London	Greater London	SE8 3WZ	2007-09-06	\N	Y
+ADR0000261	QQ826982C	47 Beech Drive	The Annexe	London	Greater London	SE8 5GL	2008-05-25	\N	Y
+ADR0000262	QQ572888C	98 Meadow View	\N	Newcastle upon Tyne	Tyne and Wear	NE18 9XX	2003-10-13	\N	Y
+ADR0000263	QQ225600B	49 New Road	\N	London	Greater London	SE15 4YL	2006-01-08	\N	Y
+ADR0000264	QQ319083D	10 Station Road	The Annexe	London	Greater London	SE15 9FG	2015-11-21	\N	Y
+ADR0000265	QQ682493D	73 High Street	\N	Reading	Berkshire	RG15 7XD	2012-07-14	\N	Y
+ADR0000266	QQ386315B	60 Beech Drive	Apartment 3	Leicester	Leicestershire	LE8 5DW	2024-09-29	\N	Y
+ADR0000267	QQ512325D	24 Windsor Road	The Annexe	Exeter	Devon	EX19 6RL	2020-06-02	\N	Y
+ADR0000268	QQ454243B	17 Kings Road	The Annexe	Swansea	West Glamorgan	SA8 3TW	2020-08-16	\N	Y
+ADR0000269	QQ132993C	75 West Street	Flat A	Manchester	Greater Manchester	M9 8ZA	2010-08-28	\N	Y
+ADR0000270	QQ652780B	96 Elm Close	\N	Preston	Lancashire	PR14 2EU	2022-10-09	\N	Y
+ADR0000271	QQ303302C	127 Albert Road	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE15 5TJ	2004-02-04	\N	Y
+ADR0000272	QQ361020A	59 The Green	\N	Cardiff	South Glamorgan	CF1 7SZ	2013-10-19	\N	Y
+ADR0000273	QQ552209C	43 Queens Road	\N	Nottingham	Nottinghamshire	NG17 1UU	2013-07-31	\N	Y
+ADR0000274	QQ751270C	170 Springfield Road	Apartment 3	Swansea	West Glamorgan	SA13 0WP	2003-09-13	\N	Y
+ADR0000275	QQ889431A	59 High Street	The Annexe	Liverpool	Merseyside	L2 8GF	2011-08-12	\N	Y
+ADR0000276	QQ884142A	63 West Street	\N	Southampton	Hampshire	SO1 1AH	2019-09-06	\N	Y
+ADR0000277	QQ325758A	113 High Street	The Annexe	Leicester	Leicestershire	LE5 2XQ	2005-05-23	\N	Y
+ADR0000278	QQ806973D	146 Alexandra Road	Apartment 3	Newcastle upon Tyne	Tyne and Wear	NE12 9AX	2012-11-14	\N	Y
+ADR0000279	QQ443425B	179 Grange Road	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE17 0BF	2015-05-22	\N	Y
+ADR0000280	QQ261527C	13 The Green	The Annexe	Liverpool	Merseyside	L11 0AY	2022-12-17	\N	Y
+ADR0000281	QQ853552D	175 High Street	Apartment 3	London	Greater London	SW5 6YP	2016-04-06	\N	Y
+ADR0000282	QQ400579C	140 Windsor Road	The Annexe	Southampton	Hampshire	SO5 7PA	2019-06-21	\N	Y
+ADR0000283	QQ674170C	65 Cedar Grove	\N	Manchester	Greater Manchester	M11 8LN	2013-11-28	\N	Y
+ADR0000284	QQ547389A	82 School Lane	Flat A	Norwich	Norfolk	NR19 6AL	2005-02-22	\N	Y
+ADR0000285	QQ668030C	163 Victoria Road	\N	Sunderland	Tyne and Wear	SR18 9XL	2003-12-07	\N	Y
+ADR0000286	QQ164559D	169 Meadow View	The Annexe	Preston	Lancashire	PR13 2QX	2005-11-25	\N	Y
+ADR0000287	QQ753681C	46 Chapel Street	The Annexe	Belfast	County Antrim	BT2 7LB	2001-11-13	\N	Y
+ADR0000288	QQ456691B	148 Albert Road	\N	Cardiff	South Glamorgan	CF16 4DQ	2002-03-23	\N	Y
+ADR0000289	QQ326458C	157 Alexandra Road	The Annexe	Sunderland	Tyne and Wear	SR4 5QN	2003-04-05	\N	Y
+ADR0000290	QQ227487C	116 Kings Road	Flat A	Birmingham	West Midlands	B4 1TF	2020-04-10	\N	Y
+ADR0000291	QQ728955A	26 Victoria Road	The Annexe	Leeds	West Yorkshire	LS7 7JH	2018-10-06	\N	Y
+ADR0000292	QQ611569D	40 Springfield Road	\N	Southampton	Hampshire	SO12 4AH	2021-09-10	\N	Y
+ADR0000293	QQ307059B	162 Kings Road	Flat A	Leicester	Leicestershire	LE14 5XY	2023-12-27	\N	Y
+ADR0000294	QQ207053A	28 School Lane	Apartment 3	Birmingham	West Midlands	B1 7XH	2009-12-16	\N	Y
+ADR0000295	QQ894310D	21 School Lane	\N	London	Greater London	SE8 6BQ	2006-09-23	\N	Y
+ADR0000296	QQ524985A	9 Cedar Grove	\N	Nottingham	Nottinghamshire	NG4 7LW	2005-07-04	\N	Y
+ADR0000297	QQ503670A	141 Albert Road	\N	Cambridge	Cambridgeshire	CB11 6SB	2017-05-21	\N	Y
+ADR0000298	QQ105525C	130 Queens Road	Flat A	Hull	East Yorkshire	HU14 1YT	2014-06-17	\N	Y
+ADR0000299	QQ755853B	165 Mill Lane	The Annexe	Swansea	West Glamorgan	SA8 5FY	2009-09-12	\N	Y
+ADR0000300	QQ583983C	68 Station Road	\N	Reading	Berkshire	RG9 1NA	2007-12-03	\N	Y
+ADR0000301	QQ581778A	94 School Lane	Flat A	Bristol	Somerset	BS8 1YQ	2004-08-15	\N	Y
+ADR0000302	QQ359732C	45 Park Avenue	Apartment 3	Norwich	Norfolk	NR9 8QJ	2001-09-07	\N	Y
+ADR0000303	QQ170668C	3 Springfield Road	\N	Birmingham	West Midlands	B4 7HR	2006-06-07	\N	Y
+ADR0000304	QQ240430A	172 Beech Drive	Apartment 3	London	Greater London	SE9 3UE	2007-09-01	\N	Y
+ADR0000305	QQ607812B	42 The Green	Apartment 3	Nottingham	Nottinghamshire	NG9 4TB	2022-10-24	\N	Y
+ADR0000306	QQ862763D	128 Elm Close	The Annexe	Exeter	Devon	EX7 1QY	2017-09-07	\N	Y
+ADR0000307	QQ606210D	143 Cedar Grove	The Annexe	Norwich	Norfolk	NR6 4AU	2003-04-29	\N	Y
+ADR0000308	QQ333503C	133 Albert Road	\N	Hull	East Yorkshire	HU13 3BH	2018-10-05	\N	Y
+ADR0000309	QQ845770B	155 Mill Lane	Flat A	Glasgow	Lanarkshire	G3 8UB	2009-09-02	\N	Y
+ADR0000310	QQ174088C	156 Beech Drive	\N	Newcastle upon Tyne	Tyne and Wear	NE15 8AS	2009-08-27	\N	Y
+ADR0000311	QQ828636C	97 Elm Close	The Annexe	Sheffield	South Yorkshire	S12 8XE	2019-03-02	\N	Y
+ADR0000312	QQ350933C	151 New Road	Apartment 3	Edinburgh	Midlothian	EH2 9UW	2006-11-27	\N	Y
+ADR0000313	QQ831585C	158 Victoria Road	\N	Liverpool	Merseyside	L3 8PB	2021-06-05	\N	Y
+ADR0000314	QQ630599A	93 York Road	Flat A	Edinburgh	Midlothian	EH16 1TB	2013-06-29	\N	Y
+ADR0000315	QQ823368C	75 Queens Road	The Annexe	Leeds	West Yorkshire	LS8 9DT	2002-04-17	\N	Y
+ADR0000316	QQ666315A	56 School Lane	\N	Brighton	East Sussex	BN2 8WN	2007-05-19	\N	Y
+ADR0000317	QQ527756C	168 School Lane	The Annexe	Preston	Lancashire	PR15 3EU	2013-08-14	\N	Y
+ADR0000318	QQ156328C	45 Elm Close	The Annexe	Cardiff	South Glamorgan	CF11 9FQ	2010-08-28	\N	Y
+ADR0000319	QQ570889B	125 Meadow View	\N	Nottingham	Nottinghamshire	NG4 9TB	2015-06-24	\N	Y
+ADR0000320	QQ383466B	48 West Street	Apartment 3	Belfast	County Antrim	BT17 8BE	2005-02-13	\N	Y
+ADR0000321	QQ291636C	39 Manor Road	Flat A	Leeds	West Yorkshire	LS2 3YU	2019-02-18	\N	Y
+ADR0000322	QQ612098A	28 York Road	Flat A	Liverpool	Merseyside	L18 0RE	2021-03-03	\N	Y
+ADR0000323	QQ209113A	174 Manor Road	\N	Swansea	West Glamorgan	SA12 0UL	2010-01-02	\N	Y
+ADR0000324	QQ551694B	50 Alexandra Road	\N	Coventry	West Midlands	CV20 0WT	2023-05-06	\N	Y
+ADR0000325	QQ420381B	43 Mill Lane	Flat A	Newcastle upon Tyne	Tyne and Wear	NE4 6HY	2001-12-03	\N	Y
+ADR0000326	QQ270414A	133 Queens Road	The Annexe	Preston	Lancashire	PR10 0JR	2007-07-23	\N	Y
+ADR0000327	QQ751468B	173 Victoria Road	\N	Sunderland	Tyne and Wear	SR17 5DQ	2014-06-20	\N	Y
+ADR0000328	QQ716287B	176 York Road	The Annexe	Edinburgh	Midlothian	EH19 0YY	2002-09-13	\N	Y
+ADR0000329	QQ530341D	166 Grange Road	\N	Leeds	West Yorkshire	LS9 1LB	2020-07-17	\N	Y
+ADR0000330	QQ415990C	132 Victoria Road	The Annexe	Brighton	East Sussex	BN10 3TY	2024-04-03	\N	Y
+ADR0000331	QQ654938A	78 The Green	\N	Cambridge	Cambridgeshire	CB17 7RL	2020-08-29	\N	Y
+ADR0000332	QQ413936A	157 Kings Road	\N	Newcastle upon Tyne	Tyne and Wear	NE1 7QF	2009-08-17	\N	Y
+ADR0000333	QQ349884B	153 Kings Road	The Annexe	Hull	East Yorkshire	HU17 8YU	2014-02-04	\N	Y
+ADR0000334	QQ377916C	88 Beech Drive	\N	Sunderland	Tyne and Wear	SR5 7GX	2015-09-10	\N	Y
+ADR0000335	QQ767537A	24 Elm Close	\N	Plymouth	Devon	PL18 7YJ	2015-04-12	\N	Y
+ADR0000336	QQ348134D	44 Alexandra Road	Apartment 3	Hull	East Yorkshire	HU12 7DZ	2003-11-13	\N	Y
+ADR0000337	QQ396955D	79 High Street	\N	Coventry	West Midlands	CV1 8NH	2019-01-13	\N	Y
+ADR0000338	QQ616957A	60 Victoria Road	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE14 2GL	2008-10-05	\N	Y
+ADR0000339	QQ209707A	114 The Green	\N	Southampton	Hampshire	SO8 4JT	2018-09-02	\N	Y
+ADR0000340	QQ276987C	7 Kings Road	Flat A	Preston	Lancashire	PR8 8UA	2019-05-01	\N	Y
+ADR0000341	QQ812984D	26 High Street	The Annexe	Swansea	West Glamorgan	SA7 8TY	2015-07-12	\N	Y
+ADR0000342	QQ236695D	40 High Street	\N	London	Greater London	SW12 7DF	2007-03-27	\N	Y
+ADR0000343	QQ250116D	69 School Lane	\N	London	Greater London	SW19 5AB	2003-01-10	\N	Y
+ADR0000344	QQ593003D	67 Windsor Road	\N	Sheffield	South Yorkshire	S13 4DA	2020-08-03	\N	Y
+ADR0000345	QQ369755A	46 York Road	\N	Cambridge	Cambridgeshire	CB20 6PJ	2001-09-11	\N	Y
+ADR0000346	QQ867464D	23 Victoria Road	Flat A	Brighton	East Sussex	BN10 2TW	2018-09-05	\N	Y
+ADR0000347	QQ753468B	1 Alexandra Road	\N	Birmingham	West Midlands	B5 8BZ	2002-06-25	\N	Y
+ADR0000348	QQ229940C	42 Oak Avenue	\N	Bristol	Somerset	BS17 8WR	2021-01-10	\N	Y
+ADR0000349	QQ692031B	151 Oak Avenue	\N	Sunderland	Tyne and Wear	SR19 5UP	2021-03-31	\N	Y
+ADR0000350	QQ647239D	16 West Street	Flat A	Bristol	Somerset	BS17 7RW	2020-01-20	\N	Y
+ADR0000351	QQ752747D	123 High Street	\N	Newcastle upon Tyne	Tyne and Wear	NE4 6QT	2016-01-02	\N	Y
+ADR0000352	QQ143344B	66 Albert Road	\N	Cambridge	Cambridgeshire	CB10 7AQ	2020-04-08	\N	Y
+ADR0000353	QQ574080B	63 Chapel Street	\N	Leeds	West Yorkshire	LS20 9ZX	2009-08-24	\N	Y
+ADR0000354	QQ243407B	19 Chapel Street	Flat A	Brighton	East Sussex	BN12 8FH	2021-10-15	\N	Y
+ADR0000355	QQ466344C	89 Kings Road	\N	Brighton	East Sussex	BN16 2DT	2002-04-29	\N	Y
+ADR0000356	QQ759664D	22 Grange Road	Apartment 3	Cardiff	South Glamorgan	CF19 2TR	2004-02-28	\N	Y
+ADR0000357	QQ855000A	72 Manor Road	\N	Belfast	County Antrim	BT16 0FL	2003-03-13	\N	Y
+ADR0000358	QQ805100B	128 Meadow View	Apartment 3	Brighton	East Sussex	BN1 2UR	2022-05-14	\N	Y
+ADR0000359	QQ690714B	115 Elm Close	Flat A	Preston	Lancashire	PR10 3BW	2022-06-15	\N	Y
+ADR0000360	QQ291495D	87 Cedar Grove	\N	London	Greater London	SW1 8SA	2017-12-05	\N	Y
+ADR0000361	QQ577805D	176 Manor Road	\N	Exeter	Devon	EX12 1JN	2013-12-10	\N	Y
+ADR0000362	QQ615560C	152 New Road	Apartment 3	Newcastle upon Tyne	Tyne and Wear	NE18 7AQ	2019-04-05	\N	Y
+ADR0000363	QQ389638B	15 Grange Road	Flat A	Brighton	East Sussex	BN14 5UH	2021-02-07	\N	Y
+ADR0000364	QQ413165B	141 Alexandra Road	\N	Hull	East Yorkshire	HU10 4SP	2021-03-01	\N	Y
+ADR0000365	QQ130319A	17 Alexandra Road	\N	Preston	Lancashire	PR18 1XR	2008-01-13	\N	Y
+ADR0000366	QQ366475B	22 Oak Avenue	\N	London	Greater London	SW7 2JX	2007-11-11	\N	Y
+ADR0000367	QQ630492A	74 Kings Road	\N	Swansea	West Glamorgan	SA12 9AE	2008-11-01	\N	Y
+ADR0000368	QQ409634D	26 New Road	Apartment 3	London	Greater London	SW11 4RD	2023-11-24	\N	Y
+ADR0000369	QQ880421B	29 Meadow View	Flat A	London	Greater London	SE11 6YU	2009-01-31	\N	Y
+ADR0000370	QQ334138B	68 Beech Drive	Apartment 3	Swansea	West Glamorgan	SA4 9LW	2007-01-01	\N	Y
+ADR0000371	QQ368203D	59 Queens Road	The Annexe	Birmingham	West Midlands	B1 3WW	2014-11-04	\N	Y
+ADR0000372	QQ585389B	164 Church Lane	\N	Cardiff	South Glamorgan	CF11 4RL	2014-02-17	\N	Y
+ADR0000373	QQ674870D	45 Kings Road	\N	Cambridge	Cambridgeshire	CB19 5NX	2003-04-15	\N	Y
+ADR0000374	QQ776888D	176 Church Lane	\N	Brighton	East Sussex	BN7 8AG	2018-10-16	\N	Y
+ADR0000375	QQ737803A	98 New Road	\N	Cambridge	Cambridgeshire	CB12 0TD	2010-08-02	\N	Y
+ADR0000376	QQ411506C	163 Mill Lane	Flat A	Southampton	Hampshire	SO3 8YH	2004-10-02	\N	Y
+ADR0000377	QQ351584C	38 Windsor Road	\N	Sunderland	Tyne and Wear	SR14 2XD	2017-01-27	\N	Y
+ADR0000378	QQ192193A	180 Mill Lane	\N	Liverpool	Merseyside	L3 4XQ	2014-08-10	\N	Y
+ADR0000379	QQ208016D	10 Chapel Street	The Annexe	Coventry	West Midlands	CV5 7AB	2006-07-12	\N	Y
+ADR0000380	QQ635842C	28 Windsor Road	The Annexe	Edinburgh	Midlothian	EH13 8PY	2013-07-11	\N	Y
+ADR0000381	QQ402532A	89 New Road	\N	Leeds	West Yorkshire	LS10 7WR	2024-07-30	\N	Y
+ADR0000382	QQ515341A	114 Beech Drive	The Annexe	Brighton	East Sussex	BN10 4HP	2002-12-26	\N	Y
+ADR0000383	QQ419699A	48 Mill Lane	\N	Plymouth	Devon	PL19 2BB	2002-08-17	\N	Y
+ADR0000384	QQ129579D	9 Church Lane	\N	Manchester	Greater Manchester	M20 3WG	2020-04-15	\N	Y
+ADR0000385	QQ703216C	16 Windsor Road	\N	London	Greater London	SW2 0PR	2017-01-15	\N	Y
+ADR0000386	QQ327963A	137 Grange Road	Flat A	Sunderland	Tyne and Wear	SR7 5FY	2014-10-03	\N	Y
+ADR0000387	QQ339469A	112 Manor Road	\N	Hull	East Yorkshire	HU9 8PX	2021-06-22	\N	Y
+ADR0000388	QQ584044B	27 Grange Road	The Annexe	Plymouth	Devon	PL2 1UN	2012-11-01	\N	Y
+ADR0000389	QQ498224A	161 Springfield Road	Flat A	Sunderland	Tyne and Wear	SR1 2SL	2018-09-21	\N	Y
+ADR0000390	QQ131297D	34 Meadow View	Flat A	Sunderland	Tyne and Wear	SR20 7BW	2022-02-09	\N	Y
+ADR0000391	QQ202958A	111 Springfield Road	\N	Birmingham	West Midlands	B6 2UZ	2011-02-27	\N	Y
+ADR0000392	QQ335258C	168 Grange Road	\N	Newcastle upon Tyne	Tyne and Wear	NE18 2SY	2008-02-03	\N	Y
+ADR0000393	QQ188100D	77 Springfield Road	\N	Norwich	Norfolk	NR16 9FL	2002-11-05	\N	Y
+ADR0000394	QQ831294A	104 Beech Drive	Apartment 3	London	Greater London	SE11 7ZF	2013-07-22	\N	Y
+ADR0000395	QQ228356A	163 Station Road	\N	Newcastle upon Tyne	Tyne and Wear	NE15 6WJ	2011-07-10	\N	Y
+ADR0000396	QQ751955A	157 Springfield Road	Flat A	Cambridge	Cambridgeshire	CB16 9GA	2005-01-27	\N	Y
+ADR0000397	QQ196682A	51 Station Road	The Annexe	Preston	Lancashire	PR10 9FS	2005-08-05	\N	Y
+ADR0000398	QQ644559C	59 School Lane	The Annexe	Swansea	West Glamorgan	SA11 3YT	2008-07-03	\N	Y
+ADR0000399	QQ706919D	112 Windsor Road	Apartment 3	London	Greater London	SE8 9NA	2007-01-01	\N	Y
+ADR0000400	QQ518843D	16 Chapel Street	Flat A	Hull	East Yorkshire	HU3 7EF	2015-12-20	\N	Y
+ADR0000401	QQ827023B	169 Queens Road	Apartment 3	Sunderland	Tyne and Wear	SR7 5BJ	2010-11-06	\N	Y
+ADR0000402	QQ189514A	47 Meadow View	\N	Southampton	Hampshire	SO6 3NB	2018-03-27	\N	Y
+ADR0000403	QQ796327C	163 Manor Road	The Annexe	Cardiff	South Glamorgan	CF7 8UX	2017-10-01	\N	Y
+ADR0000404	QQ848879C	31 Park Avenue	Apartment 3	Brighton	East Sussex	BN6 1DN	2017-11-24	\N	Y
+ADR0000405	QQ841317C	32 Albert Road	\N	Leicester	Leicestershire	LE6 2RX	2007-08-09	\N	Y
+ADR0000406	QQ681088C	36 Beech Drive	The Annexe	Coventry	West Midlands	CV12 9EF	2006-06-10	\N	Y
+ADR0000407	QQ544682D	47 Springfield Road	Apartment 3	Southampton	Hampshire	SO1 3SB	2009-07-09	\N	Y
+ADR0000408	QQ688516C	171 Cedar Grove	\N	Leeds	West Yorkshire	LS13 1XN	2023-11-07	\N	Y
+ADR0000409	QQ161964A	136 Victoria Road	\N	Leeds	West Yorkshire	LS4 6PJ	2009-04-10	\N	Y
+ADR0000410	QQ276735A	142 Station Road	Apartment 3	Sheffield	South Yorkshire	S8 9YQ	2008-10-10	\N	Y
+ADR0000411	QQ615258D	101 Manor Road	\N	Birmingham	West Midlands	B13 9PF	2007-06-12	\N	Y
+ADR0000412	QQ767074C	71 The Green	Flat A	Nottingham	Nottinghamshire	NG15 8BL	2010-06-09	\N	Y
+ADR0000413	QQ733100C	165 Manor Road	\N	Sheffield	South Yorkshire	S15 9WH	2024-05-03	\N	Y
+ADR0000414	QQ289204A	159 Oak Avenue	\N	Leeds	West Yorkshire	LS1 6UD	2012-06-10	\N	Y
+ADR0000415	QQ882855A	144 West Street	Flat A	Hull	East Yorkshire	HU9 9UD	2003-03-17	\N	Y
+ADR0000416	QQ241094C	98 Cedar Grove	\N	Swansea	West Glamorgan	SA6 2YY	2011-04-23	\N	Y
+ADR0000417	QQ543949A	96 York Road	\N	Newcastle upon Tyne	Tyne and Wear	NE5 5EP	2015-11-22	\N	Y
+ADR0000418	QQ676823C	171 Queens Road	\N	Norwich	Norfolk	NR14 5RF	2017-12-05	\N	Y
+ADR0000419	QQ508143C	158 Church Lane	\N	Reading	Berkshire	RG12 9DF	2015-06-05	\N	Y
+ADR0000420	QQ487318A	5 The Green	\N	Edinburgh	Midlothian	EH3 8LQ	2009-12-01	\N	Y
+ADR0000421	QQ761096A	174 Springfield Road	Apartment 3	Leeds	West Yorkshire	LS10 6ES	2003-07-30	\N	Y
+ADR0000422	QQ672499B	174 Cedar Grove	Flat A	Bristol	Somerset	BS1 4RD	2018-07-04	\N	Y
+ADR0000423	QQ621180D	32 Springfield Road	\N	Plymouth	Devon	PL20 4NZ	2008-09-20	\N	Y
+ADR0000424	QQ534416B	110 Alexandra Road	The Annexe	Norwich	Norfolk	NR7 2WJ	2010-07-19	\N	Y
+ADR0000425	QQ603093C	80 Cedar Grove	The Annexe	Southampton	Hampshire	SO5 4AG	2023-01-05	\N	Y
+ADR0000426	QQ368188A	108 West Street	Flat A	Birmingham	West Midlands	B10 6ZY	2009-11-16	\N	Y
+ADR0000427	QQ208257B	86 West Street	\N	Exeter	Devon	EX2 3NT	2002-10-02	\N	Y
+ADR0000428	QQ352206B	136 Springfield Road	Apartment 3	Cambridge	Cambridgeshire	CB13 4FF	2017-11-30	\N	Y
+ADR0000429	QQ383697A	154 Cedar Grove	Apartment 3	Cardiff	South Glamorgan	CF19 9FT	2010-04-25	\N	Y
+ADR0000430	QQ672310C	63 York Road	\N	Cambridge	Cambridgeshire	CB20 9NQ	2018-04-16	\N	Y
+ADR0000431	QQ402762A	70 Springfield Road	Apartment 3	Brighton	East Sussex	BN12 8NW	2017-04-13	\N	Y
+ADR0000432	QQ295131B	26 Kings Road	Flat A	Reading	Berkshire	RG8 1NN	2013-06-21	\N	Y
+ADR0000433	QQ710485A	32 Grange Road	The Annexe	Manchester	Greater Manchester	M19 1EP	2010-11-05	\N	Y
+ADR0000434	QQ579431B	115 Alexandra Road	Apartment 3	Glasgow	Lanarkshire	G4 3FF	2002-05-11	\N	Y
+ADR0000435	QQ757079D	23 Cedar Grove	Apartment 3	Liverpool	Merseyside	L15 8AF	2012-03-26	\N	Y
+ADR0000436	QQ853109A	154 Springfield Road	Flat A	Liverpool	Merseyside	L8 0DX	2005-10-30	\N	Y
+ADR0000437	QQ530454C	59 Church Lane	Flat A	Manchester	Greater Manchester	M1 5UG	2004-05-13	\N	Y
+ADR0000438	QQ425884D	108 Chapel Street	Apartment 3	Coventry	West Midlands	CV14 6RD	2017-05-04	\N	Y
+ADR0000439	QQ321521B	121 West Street	\N	Bristol	Somerset	BS17 1ZL	2023-07-27	\N	Y
+ADR0000440	QQ427322D	172 Elm Close	Flat A	London	Greater London	SW9 4FL	2020-05-10	\N	Y
+ADR0000441	QQ865878D	8 Church Lane	Apartment 3	London	Greater London	SW16 7NQ	2002-03-14	\N	Y
+ADR0000442	QQ615540A	123 West Street	Flat A	Reading	Berkshire	RG13 2ED	2017-05-08	\N	Y
+ADR0000443	QQ124780A	144 Alexandra Road	The Annexe	London	Greater London	SW1 0NB	2020-12-05	\N	Y
+ADR0000444	QQ171484C	149 Cedar Grove	Flat A	Coventry	West Midlands	CV15 7BQ	2023-04-08	\N	Y
+ADR0000445	QQ437298D	108 Chapel Street	The Annexe	Swansea	West Glamorgan	SA17 7EF	2023-08-14	\N	Y
+ADR0000446	QQ641654C	143 Cedar Grove	Flat A	Belfast	County Antrim	BT3 5RN	2015-02-01	\N	Y
+ADR0000447	QQ356868B	75 Beech Drive	\N	Edinburgh	Midlothian	EH1 8LD	2003-10-06	\N	Y
+ADR0000448	QQ401386C	120 Cedar Grove	\N	London	Greater London	SE1 7WL	2016-07-12	\N	Y
+ADR0000449	QQ388129B	106 West Street	Flat A	Plymouth	Devon	PL17 8HU	2012-01-07	\N	Y
+ADR0000450	QQ314262C	112 Meadow View	\N	London	Greater London	SW20 8BS	2014-09-04	\N	Y
+ADR0000451	QQ698763B	76 Station Road	\N	Birmingham	West Midlands	B1 9EE	2024-08-29	\N	Y
+ADR0000452	QQ177005C	19 Cedar Grove	\N	Birmingham	West Midlands	B8 6JQ	2015-08-26	\N	Y
+ADR0000453	QQ607172D	109 Windsor Road	Flat A	Sunderland	Tyne and Wear	SR12 1LA	2018-04-04	\N	Y
+ADR0000454	QQ408260C	72 Church Lane	\N	Leeds	West Yorkshire	LS7 2NX	2013-05-02	\N	Y
+ADR0000455	QQ659492A	106 High Street	\N	Bristol	Somerset	BS11 2QN	2021-02-28	\N	Y
+ADR0000456	QQ228402D	38 Queens Road	Apartment 3	London	Greater London	SW7 4JS	2004-10-28	\N	Y
+ADR0000457	QQ561748A	29 Victoria Road	\N	Cardiff	South Glamorgan	CF6 3XW	2005-04-13	\N	Y
+ADR0000458	QQ262391C	66 High Street	\N	Belfast	County Antrim	BT14 0SA	2022-11-10	\N	Y
+ADR0000459	QQ488320D	116 The Green	\N	Preston	Lancashire	PR18 2ST	2005-03-24	\N	Y
+ADR0000460	QQ350106C	117 York Road	\N	Cambridge	Cambridgeshire	CB7 0BJ	2002-07-26	\N	Y
+ADR0000461	QQ125443C	78 School Lane	\N	Leeds	West Yorkshire	LS5 1GQ	2002-03-25	\N	Y
+ADR0000462	QQ691409B	177 Windsor Road	\N	Glasgow	Lanarkshire	G3 8EX	2008-08-07	\N	Y
+ADR0000463	QQ551355A	109 Alexandra Road	\N	Glasgow	Lanarkshire	G10 7LA	2020-11-27	\N	Y
+ADR0000464	QQ419929B	8 Beech Drive	Apartment 3	Liverpool	Merseyside	L14 7LP	2002-06-26	\N	Y
+ADR0000465	QQ173457A	142 Springfield Road	\N	Southampton	Hampshire	SO4 0TS	2005-07-06	\N	Y
+ADR0000466	QQ877531D	104 Alexandra Road	Apartment 3	Leicester	Leicestershire	LE8 8TE	2003-05-24	\N	Y
+ADR0000467	QQ150354D	179 New Road	Flat A	Newcastle upon Tyne	Tyne and Wear	NE15 0RD	2006-04-21	\N	Y
+ADR0000468	QQ634294A	110 Station Road	\N	Coventry	West Midlands	CV11 5UG	2016-05-08	\N	Y
+ADR0000469	QQ123363C	38 School Lane	Apartment 3	Cardiff	South Glamorgan	CF19 5AS	2009-12-14	\N	Y
+ADR0000470	QQ252179B	34 Albert Road	\N	Cardiff	South Glamorgan	CF15 7TL	2012-03-16	\N	Y
+ADR0000471	QQ632336B	141 Mill Lane	Flat A	Bristol	Somerset	BS8 4AH	2023-07-12	\N	Y
+ADR0000472	QQ876367A	50 Beech Drive	\N	Reading	Berkshire	RG12 7YW	2005-05-01	\N	Y
+ADR0000473	QQ537237B	86 Alexandra Road	\N	Southampton	Hampshire	SO10 2QW	2023-04-05	\N	Y
+ADR0000474	QQ836589A	67 The Green	The Annexe	Manchester	Greater Manchester	M15 2YU	2004-01-05	\N	Y
+ADR0000475	QQ817880B	68 York Road	The Annexe	Belfast	County Antrim	BT6 7AR	2007-06-28	\N	Y
+ADR0000476	QQ574692A	10 Oak Avenue	Flat A	Hull	East Yorkshire	HU9 5PW	2008-01-17	\N	Y
+ADR0000477	QQ505914D	38 Windsor Road	Flat A	Sheffield	South Yorkshire	S1 0XY	2008-08-28	\N	Y
+ADR0000478	QQ153971A	121 Oak Avenue	Flat A	Hull	East Yorkshire	HU20 4DB	2017-02-27	\N	Y
+ADR0000479	QQ582211B	154 Chapel Street	Flat A	Leeds	West Yorkshire	LS2 6RG	2018-01-13	\N	Y
+ADR0000480	QQ678821D	27 Victoria Road	\N	Reading	Berkshire	RG19 5YA	2003-11-24	\N	Y
+ADR0000481	QQ780436B	64 West Street	The Annexe	Southampton	Hampshire	SO2 9HD	2004-05-26	\N	Y
+ADR0000482	QQ556630B	69 High Street	Flat A	Cardiff	South Glamorgan	CF15 2AE	2018-06-27	\N	Y
+ADR0000483	QQ255534B	1 York Road	Apartment 3	Southampton	Hampshire	SO18 3SE	2018-05-26	\N	Y
+ADR0000484	QQ674341D	43 Grange Road	The Annexe	London	Greater London	SW13 0FA	2006-05-21	\N	Y
+ADR0000485	QQ346297B	18 Meadow View	\N	Coventry	West Midlands	CV2 5SD	2010-09-18	\N	Y
+ADR0000486	QQ400971B	123 Kings Road	\N	Cardiff	South Glamorgan	CF9 0NH	2004-07-29	\N	Y
+ADR0000487	QQ637509D	122 Grange Road	Apartment 3	Southampton	Hampshire	SO17 6JA	2021-02-14	\N	Y
+ADR0000488	QQ829746B	107 Cedar Grove	\N	Reading	Berkshire	RG8 1JP	2012-08-04	\N	Y
+ADR0000489	QQ811941B	156 The Green	Flat A	Birmingham	West Midlands	B20 0ET	2007-01-06	\N	Y
+ADR0000490	QQ547794A	129 Kings Road	\N	Leeds	West Yorkshire	LS16 6LF	2016-05-03	\N	Y
+ADR0000491	QQ332591A	48 Victoria Road	Flat A	Coventry	West Midlands	CV15 6FS	2006-03-19	\N	Y
+ADR0000492	QQ117781C	125 The Green	Apartment 3	Norwich	Norfolk	NR9 2ZN	2005-06-13	\N	Y
+ADR0000493	QQ662005B	172 Victoria Road	The Annexe	Sunderland	Tyne and Wear	SR8 7FY	2011-04-16	\N	Y
+ADR0000494	QQ138514C	92 Kings Road	\N	Preston	Lancashire	PR6 8ZF	2005-05-13	\N	Y
+ADR0000495	QQ392760A	171 Albert Road	\N	Southampton	Hampshire	SO17 7LL	2021-03-03	\N	Y
+ADR0000496	QQ374250A	127 High Street	The Annexe	Sunderland	Tyne and Wear	SR3 3BH	2021-03-23	\N	Y
+ADR0000497	QQ401654D	113 Park Avenue	\N	Leicester	Leicestershire	LE13 4QF	2011-03-30	\N	Y
+ADR0000498	QQ380949D	96 New Road	The Annexe	Norwich	Norfolk	NR16 8AJ	2016-02-28	\N	Y
+ADR0000499	QQ512857C	75 Park Avenue	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE4 8EW	2024-03-24	\N	Y
+ADR0000500	QQ415799B	90 Oak Avenue	\N	Nottingham	Nottinghamshire	NG1 2YR	2021-03-13	\N	Y
+ADR0000501	QQ789590C	126 Cedar Grove	The Annexe	Leeds	West Yorkshire	LS6 5HD	2004-05-31	\N	Y
+ADR0000502	QQ405438A	42 School Lane	\N	Hull	East Yorkshire	HU20 8TA	2007-06-15	\N	Y
+ADR0000503	QQ523318D	90 York Road	Flat A	Belfast	County Antrim	BT14 7RL	2014-04-09	\N	Y
+ADR0000504	QQ695608B	116 Springfield Road	Flat A	Leicester	Leicestershire	LE10 4PS	2006-11-23	\N	Y
+ADR0000505	QQ581330B	172 New Road	\N	Norwich	Norfolk	NR8 8AX	2008-10-16	\N	Y
+ADR0000506	QQ679798D	77 Queens Road	\N	Newcastle upon Tyne	Tyne and Wear	NE8 3EH	2024-08-06	\N	Y
+ADR0000507	QQ409131A	175 Cedar Grove	Flat A	Hull	East Yorkshire	HU7 8FJ	2009-02-14	\N	Y
+ADR0000508	QQ522156A	33 Church Lane	Apartment 3	Sunderland	Tyne and Wear	SR15 9XG	2008-02-13	\N	Y
+ADR0000509	QQ718716C	101 Elm Close	Flat A	Preston	Lancashire	PR2 8LW	2011-11-20	\N	Y
+ADR0000510	QQ216655C	8 Oak Avenue	The Annexe	Glasgow	Lanarkshire	G13 3RF	2011-02-16	\N	Y
+ADR0000511	QQ255094C	53 Meadow View	Flat A	Exeter	Devon	EX4 2QD	2014-03-23	\N	Y
+ADR0000512	QQ512189C	50 Mill Lane	The Annexe	Glasgow	Lanarkshire	G9 3YF	2018-09-02	\N	Y
+ADR0000513	QQ392169A	102 Queens Road	Flat A	Birmingham	West Midlands	B8 8XF	2014-01-21	\N	Y
+ADR0000514	QQ681244B	135 Park Avenue	The Annexe	Southampton	Hampshire	SO17 3YN	2016-08-14	\N	Y
+ADR0000515	QQ840380A	1 Chapel Street	\N	Brighton	East Sussex	BN19 7FW	2023-11-18	\N	Y
+ADR0000516	QQ235847B	134 Church Lane	Apartment 3	Bristol	Somerset	BS4 0GH	2002-07-21	\N	Y
+ADR0000517	QQ469440B	160 Alexandra Road	\N	Southampton	Hampshire	SO4 5RW	2018-05-10	\N	Y
+ADR0000518	QQ893231A	169 Elm Close	\N	Cambridge	Cambridgeshire	CB12 6DT	2015-04-06	\N	Y
+ADR0000519	QQ525134C	155 Mill Lane	Apartment 3	Brighton	East Sussex	BN3 8DP	2013-12-09	\N	Y
+ADR0000520	QQ250737A	4 Chapel Street	\N	Cambridge	Cambridgeshire	CB20 8UA	2023-11-23	\N	Y
+ADR0000521	QQ349556A	1 Beech Drive	Flat A	Norwich	Norfolk	NR9 6AD	2018-08-12	\N	Y
+ADR0000522	QQ875550D	176 Windsor Road	Flat A	Cambridge	Cambridgeshire	CB11 5DB	2006-10-28	\N	Y
+ADR0000523	QQ332328B	8 West Street	\N	Bristol	Somerset	BS3 5WL	2001-12-13	\N	Y
+ADR0000524	QQ889874D	102 York Road	\N	Belfast	County Antrim	BT13 7GF	2009-09-20	\N	Y
+ADR0000525	QQ448096A	112 Station Road	Apartment 3	Manchester	Greater Manchester	M7 5GG	2001-12-13	\N	Y
+ADR0000526	QQ655305C	106 The Green	\N	Birmingham	West Midlands	B4 0AR	2006-01-28	\N	Y
+ADR0000527	QQ627360A	93 Albert Road	Flat A	Southampton	Hampshire	SO13 4HL	2018-05-08	\N	Y
+ADR0000528	QQ419516B	75 Chapel Street	\N	Bristol	Somerset	BS13 9ZJ	2005-02-16	\N	Y
+ADR0000529	QQ794141D	24 Park Avenue	\N	Cardiff	South Glamorgan	CF6 3UD	2018-01-04	\N	Y
+ADR0000530	QQ332082C	178 Grange Road	Flat A	Preston	Lancashire	PR5 2PN	2022-11-14	\N	Y
+ADR0000531	QQ544399C	28 Mill Lane	The Annexe	Leicester	Leicestershire	LE10 4LF	2022-12-04	\N	Y
+ADR0000532	QQ589171C	50 Mill Lane	\N	Hull	East Yorkshire	HU20 0ZW	2020-09-30	\N	Y
+ADR0000533	QQ778865C	50 Alexandra Road	Apartment 3	Exeter	Devon	EX20 3XN	2016-12-28	\N	Y
+ADR0000534	QQ110404B	2 Manor Road	Apartment 3	Sunderland	Tyne and Wear	SR18 5BX	2024-01-27	\N	Y
+ADR0000535	QQ255990B	147 The Green	Flat A	Exeter	Devon	EX8 0SN	2005-09-28	\N	Y
+ADR0000536	QQ552263C	169 Grange Road	Flat A	Brighton	East Sussex	BN19 8PH	2018-02-23	\N	Y
+ADR0000537	QQ864180B	175 High Street	Apartment 3	Sheffield	South Yorkshire	S11 7ET	2003-01-20	\N	Y
+ADR0000538	QQ170181B	55 Queens Road	\N	Newcastle upon Tyne	Tyne and Wear	NE18 6YQ	2013-05-05	\N	Y
+ADR0000539	QQ852430D	70 Church Lane	The Annexe	Birmingham	West Midlands	B7 5GJ	2019-05-03	\N	Y
+ADR0000540	QQ518111C	129 Oak Avenue	\N	Cardiff	South Glamorgan	CF18 7XU	2010-10-27	\N	Y
+ADR0000541	QQ783502C	136 Albert Road	Apartment 3	Coventry	West Midlands	CV17 1TD	2019-04-24	\N	Y
+ADR0000542	QQ453982B	123 West Street	\N	Brighton	East Sussex	BN18 0FF	2010-08-05	\N	Y
+ADR0000543	QQ372216B	80 School Lane	Apartment 3	Leicester	Leicestershire	LE3 7EQ	2007-09-26	\N	Y
+ADR0000544	QQ236174D	53 Station Road	Flat A	Leicester	Leicestershire	LE17 6ED	2010-07-26	\N	Y
+ADR0000545	QQ512130A	28 Springfield Road	Apartment 3	Exeter	Devon	EX6 8DG	2007-11-13	\N	Y
+ADR0000546	QQ825124D	113 Station Road	\N	Southampton	Hampshire	SO1 2JH	2009-01-29	\N	Y
+ADR0000547	QQ327562A	152 Manor Road	\N	Brighton	East Sussex	BN15 5RE	2021-12-02	\N	Y
+ADR0000548	QQ279910C	85 Windsor Road	The Annexe	Cardiff	South Glamorgan	CF8 9AB	2009-03-16	\N	Y
+ADR0000549	QQ567640B	38 Kings Road	\N	Cardiff	South Glamorgan	CF13 3WZ	2018-12-01	\N	Y
+ADR0000550	QQ867187A	164 Oak Avenue	Apartment 3	Preston	Lancashire	PR12 7GQ	2017-05-06	\N	Y
+ADR0000551	QQ278023A	159 School Lane	The Annexe	Leicester	Leicestershire	LE18 2ZN	2007-04-30	\N	Y
+ADR0000552	QQ252105C	13 Chapel Street	Apartment 3	Sheffield	South Yorkshire	S1 6ER	2009-05-01	\N	Y
+ADR0000553	QQ474596D	157 Windsor Road	The Annexe	Glasgow	Lanarkshire	G13 3NT	2006-02-05	\N	Y
+ADR0000554	QQ492735A	22 Oak Avenue	Apartment 3	Sheffield	South Yorkshire	S7 3JQ	2016-06-16	\N	Y
+ADR0000555	QQ298801D	78 School Lane	\N	London	Greater London	SE19 7ZH	2012-01-25	\N	Y
+ADR0000556	QQ391683D	31 West Street	\N	Cambridge	Cambridgeshire	CB10 0WR	2011-02-24	\N	Y
+ADR0000557	QQ710191B	19 Station Road	\N	Swansea	West Glamorgan	SA8 7EL	2002-03-01	\N	Y
+ADR0000558	QQ853688B	131 Mill Lane	\N	Southampton	Hampshire	SO17 2XA	2015-03-05	\N	Y
+ADR0000559	QQ442047B	83 Grange Road	\N	Edinburgh	Midlothian	EH19 0AR	2009-10-02	\N	Y
+ADR0000560	QQ755400B	168 West Street	\N	Swansea	West Glamorgan	SA14 0DU	2014-03-26	\N	Y
+ADR0000561	QQ268442D	1 Victoria Road	\N	Sunderland	Tyne and Wear	SR6 9BN	2017-03-20	\N	Y
+ADR0000562	QQ758903A	102 Victoria Road	Apartment 3	Coventry	West Midlands	CV12 3ZL	2019-10-18	\N	Y
+ADR0000563	QQ584071C	70 Grange Road	Apartment 3	Manchester	Greater Manchester	M7 7JB	2022-12-09	\N	Y
+ADR0000564	QQ780553B	83 High Street	Apartment 3	Glasgow	Lanarkshire	G15 1ZQ	2019-05-02	\N	Y
+ADR0000565	QQ530391C	156 Cedar Grove	\N	Bristol	Somerset	BS7 3WJ	2006-10-20	\N	Y
+ADR0000566	QQ423829C	175 Grange Road	The Annexe	Swansea	West Glamorgan	SA14 4YU	2008-08-31	\N	Y
+ADR0000567	QQ502029A	122 Station Road	The Annexe	Preston	Lancashire	PR12 9RT	2009-03-07	\N	Y
+ADR0000568	QQ609788C	91 Station Road	\N	Belfast	County Antrim	BT12 4ZA	2013-09-21	\N	Y
+ADR0000569	QQ216383A	132 Manor Road	The Annexe	Cambridge	Cambridgeshire	CB20 6PW	2005-06-15	\N	Y
+ADR0000570	QQ247393C	172 Victoria Road	\N	Nottingham	Nottinghamshire	NG2 2LR	2011-02-11	\N	Y
+ADR0000571	QQ104671B	92 Oak Avenue	The Annexe	Sunderland	Tyne and Wear	SR15 3QD	2003-02-13	\N	Y
+ADR0000572	QQ172220C	149 York Road	Flat A	Swansea	West Glamorgan	SA13 8SP	2022-09-04	\N	Y
+ADR0000573	QQ689969A	131 Elm Close	\N	Newcastle upon Tyne	Tyne and Wear	NE19 0NR	2010-10-01	\N	Y
+ADR0000574	QQ654894C	79 Albert Road	Flat A	Edinburgh	Midlothian	EH2 3PF	2008-10-04	\N	Y
+ADR0000575	QQ251566B	151 School Lane	The Annexe	Preston	Lancashire	PR5 3QH	2007-09-16	\N	Y
+ADR0000576	QQ699934A	11 Cedar Grove	The Annexe	Reading	Berkshire	RG17 6GB	2008-06-01	\N	Y
+ADR0000577	QQ492425D	56 Church Lane	Apartment 3	Cardiff	South Glamorgan	CF17 3ZF	2021-01-20	\N	Y
+ADR0000578	QQ441166A	2 High Street	\N	Sunderland	Tyne and Wear	SR10 0QU	2016-07-08	\N	Y
+ADR0000579	QQ174133A	101 Oak Avenue	Flat A	Reading	Berkshire	RG5 9EA	2007-02-18	\N	Y
+ADR0000580	QQ182947D	61 Park Avenue	\N	Sunderland	Tyne and Wear	SR12 6TL	2007-01-26	\N	Y
+ADR0000581	QQ636509C	96 The Green	Apartment 3	Newcastle upon Tyne	Tyne and Wear	NE16 1YA	2005-07-23	\N	Y
+ADR0000582	QQ335664D	101 High Street	\N	Norwich	Norfolk	NR2 7ER	2020-06-20	\N	Y
+ADR0000583	QQ356959A	16 Manor Road	\N	Southampton	Hampshire	SO6 8WU	2019-08-11	\N	Y
+ADR0000584	QQ331453A	117 Alexandra Road	Flat A	Sheffield	South Yorkshire	S10 8QQ	2011-05-01	\N	Y
+ADR0000585	QQ530668B	108 Queens Road	\N	London	Greater London	SW11 8AT	2005-11-23	\N	Y
+ADR0000586	QQ531509B	35 School Lane	\N	Preston	Lancashire	PR17 7FZ	2022-12-15	\N	Y
+ADR0000587	QQ800379B	61 The Green	\N	Swansea	West Glamorgan	SA18 8GY	2014-05-29	\N	Y
+ADR0000588	QQ778329A	131 Kings Road	\N	Norwich	Norfolk	NR19 1WW	2008-03-03	\N	Y
+ADR0000589	QQ605215B	42 High Street	\N	Newcastle upon Tyne	Tyne and Wear	NE4 8RR	2012-10-15	\N	Y
+ADR0000590	QQ733283B	40 Chapel Street	\N	Bristol	Somerset	BS8 9HA	2012-08-28	\N	Y
+ADR0000591	QQ217419A	132 New Road	Apartment 3	Liverpool	Merseyside	L10 1UN	2008-09-20	\N	Y
+ADR0000592	QQ887448C	89 The Green	Flat A	Newcastle upon Tyne	Tyne and Wear	NE8 0WF	2011-12-15	\N	Y
+ADR0000593	QQ880700B	42 Manor Road	\N	Cambridge	Cambridgeshire	CB17 3WB	2016-01-06	\N	Y
+ADR0000594	QQ851117D	29 Park Avenue	\N	Sheffield	South Yorkshire	S5 2RZ	2019-12-26	\N	Y
+ADR0000595	QQ596517C	113 Beech Drive	Apartment 3	Birmingham	West Midlands	B2 2NZ	2011-11-16	\N	Y
+ADR0000596	QQ230258B	110 Grange Road	\N	Hull	East Yorkshire	HU7 4DN	2022-08-06	\N	Y
+ADR0000597	QQ742043A	5 Queens Road	\N	Sunderland	Tyne and Wear	SR19 6BH	2024-10-28	\N	Y
+ADR0000598	QQ687013C	2 School Lane	The Annexe	Glasgow	Lanarkshire	G6 9PP	2021-10-31	\N	Y
+ADR0000599	QQ515348C	68 Alexandra Road	The Annexe	Cardiff	South Glamorgan	CF10 7YU	2008-06-24	\N	Y
+ADR0000600	QQ306802C	39 Beech Drive	\N	Glasgow	Lanarkshire	G8 1EP	2013-03-07	\N	Y
+ADR0000601	QQ822390C	147 Mill Lane	\N	Cambridge	Cambridgeshire	CB3 1JN	2004-09-11	\N	Y
+ADR0000602	QQ455372C	66 High Street	The Annexe	Exeter	Devon	EX17 1GZ	2010-07-18	\N	Y
+ADR0000603	QQ537142D	99 Springfield Road	The Annexe	London	Greater London	SE3 9FB	2002-08-07	\N	Y
+ADR0000604	QQ478356D	101 The Green	\N	Preston	Lancashire	PR3 9ET	2022-07-22	\N	Y
+ADR0000605	QQ779643A	108 Springfield Road	\N	Brighton	East Sussex	BN17 4NR	2002-01-19	\N	Y
+ADR0000606	QQ617762D	16 West Street	\N	Manchester	Greater Manchester	M19 6AL	2016-02-18	\N	Y
+ADR0000607	QQ514875D	180 Beech Drive	\N	Reading	Berkshire	RG16 2UL	2021-01-05	\N	Y
+ADR0000608	QQ306292C	99 Station Road	The Annexe	Southampton	Hampshire	SO2 4FJ	2023-07-26	\N	Y
+ADR0000609	QQ168221C	44 Cedar Grove	Flat A	Brighton	East Sussex	BN7 2LT	2024-10-02	\N	Y
+ADR0000610	QQ554367B	174 Kings Road	\N	Preston	Lancashire	PR2 9PH	2021-10-08	\N	Y
+ADR0000611	QQ130786D	52 Grange Road	The Annexe	Cambridge	Cambridgeshire	CB14 9JY	2025-02-25	\N	Y
+ADR0000612	QQ272201C	162 Mill Lane	Apartment 3	Nottingham	Nottinghamshire	NG20 5PF	2021-04-18	\N	Y
+ADR0000613	QQ209497A	64 Chapel Street	The Annexe	Exeter	Devon	EX15 4AP	2017-01-15	\N	Y
+ADR0000614	QQ415860D	43 School Lane	\N	Belfast	County Antrim	BT5 9AB	2019-08-09	\N	Y
+ADR0000615	QQ424638A	2 York Road	The Annexe	Exeter	Devon	EX7 4TQ	2012-11-23	\N	Y
+ADR0000616	QQ798485C	78 Alexandra Road	\N	Brighton	East Sussex	BN5 6AJ	2024-05-23	\N	Y
+ADR0000617	QQ281729D	168 Station Road	\N	Belfast	County Antrim	BT12 4QP	2015-01-15	\N	Y
+ADR0000618	QQ543765A	57 The Green	The Annexe	Norwich	Norfolk	NR2 9BL	2008-06-21	\N	Y
+ADR0000619	QQ864183B	131 Beech Drive	Flat A	Glasgow	Lanarkshire	G8 0XN	2023-03-19	\N	Y
+ADR0000620	QQ232672B	171 West Street	\N	Birmingham	West Midlands	B1 9XS	2024-10-31	\N	Y
+ADR0000621	QQ532309D	22 Alexandra Road	The Annexe	Belfast	County Antrim	BT16 5UB	2004-12-04	\N	Y
+ADR0000622	QQ237565C	158 Elm Close	Apartment 3	Edinburgh	Midlothian	EH12 3BD	2015-04-10	\N	Y
+ADR0000623	QQ802032A	149 Cedar Grove	Apartment 3	Reading	Berkshire	RG8 6NQ	2008-02-19	\N	Y
+ADR0000624	QQ487039D	56 Windsor Road	\N	Liverpool	Merseyside	L8 2TX	2021-08-21	\N	Y
+ADR0000625	QQ887565D	144 Church Lane	\N	London	Greater London	SW11 3WH	2015-12-06	\N	Y
+ADR0000626	QQ885416A	46 Windsor Road	The Annexe	London	Greater London	SW10 1HZ	2002-12-13	\N	Y
+ADR0000627	QQ880090D	174 Windsor Road	\N	Sunderland	Tyne and Wear	SR2 3ZG	2015-02-13	\N	Y
+ADR0000628	QQ583409A	28 The Green	\N	Southampton	Hampshire	SO10 4ZX	2022-03-21	\N	Y
+ADR0000629	QQ288276A	141 Mill Lane	\N	Exeter	Devon	EX17 0FX	2017-05-10	\N	Y
+ADR0000630	QQ379984A	106 Victoria Road	Apartment 3	Coventry	West Midlands	CV4 4FJ	2012-01-12	\N	Y
+ADR0000631	QQ376456A	17 The Green	\N	Swansea	West Glamorgan	SA17 3PJ	2022-04-13	\N	Y
+ADR0000632	QQ829247D	15 Park Avenue	The Annexe	Cardiff	South Glamorgan	CF9 6AH	2017-04-18	\N	Y
+ADR0000633	QQ832972C	52 Cedar Grove	\N	Cardiff	South Glamorgan	CF5 6UL	2003-08-28	\N	Y
+ADR0000634	QQ401788B	25 Alexandra Road	\N	Newcastle upon Tyne	Tyne and Wear	NE19 9GA	2020-03-12	\N	Y
+ADR0000635	QQ443854D	55 Cedar Grove	\N	Coventry	West Midlands	CV18 5LW	2015-03-14	\N	Y
+ADR0000636	QQ201732D	153 Meadow View	\N	Southampton	Hampshire	SO13 7HY	2015-11-12	\N	Y
+ADR0000637	QQ833930B	180 Springfield Road	\N	Birmingham	West Midlands	B17 0QJ	2008-09-17	\N	Y
+ADR0000638	QQ445897D	88 New Road	\N	Southampton	Hampshire	SO9 2XP	2007-05-21	\N	Y
+ADR0000639	QQ414279C	76 Meadow View	Flat A	Birmingham	West Midlands	B3 4BN	2004-12-10	\N	Y
+ADR0000640	QQ458343C	82 Beech Drive	\N	Plymouth	Devon	PL2 8LL	2007-12-06	\N	Y
+ADR0000641	QQ817984B	54 Cedar Grove	\N	Reading	Berkshire	RG6 1FB	2016-04-17	\N	Y
+ADR0000642	QQ589633B	55 Church Lane	The Annexe	London	Greater London	SE18 3WP	2016-10-24	\N	Y
+ADR0000643	QQ214063B	7 Elm Close	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE1 3XJ	2005-10-04	\N	Y
+ADR0000644	QQ142442D	178 School Lane	\N	Hull	East Yorkshire	HU8 8UH	2001-11-06	\N	Y
+ADR0000645	QQ286859A	69 Meadow View	Flat A	Norwich	Norfolk	NR4 1AF	2010-10-29	\N	Y
+ADR0000646	QQ346813C	106 The Green	\N	Hull	East Yorkshire	HU17 9QQ	2015-05-06	\N	Y
+ADR0000647	QQ706881C	166 Meadow View	The Annexe	Brighton	East Sussex	BN3 6EZ	2021-05-12	\N	Y
+ADR0000648	QQ631648D	147 Queens Road	Flat A	Preston	Lancashire	PR9 0YR	2017-01-22	\N	Y
+ADR0000649	QQ471519C	110 The Green	\N	London	Greater London	SE1 7YZ	2016-08-14	\N	Y
+ADR0000650	QQ563679D	49 Oak Avenue	\N	Brighton	East Sussex	BN4 3SH	2002-06-27	\N	Y
+ADR0000651	QQ385373D	45 Springfield Road	\N	Birmingham	West Midlands	B6 1ED	2005-05-05	\N	Y
+ADR0000652	QQ737739C	147 Chapel Street	\N	Cambridge	Cambridgeshire	CB7 3GW	2006-04-19	\N	Y
+ADR0000653	QQ610496A	84 Oak Avenue	Apartment 3	Hull	East Yorkshire	HU17 6HR	2016-06-09	\N	Y
+ADR0000654	QQ477463C	172 Beech Drive	The Annexe	Exeter	Devon	EX1 3HF	2006-08-29	\N	Y
+ADR0000655	QQ586416A	49 Station Road	The Annexe	Sheffield	South Yorkshire	S11 7ZW	2006-01-16	\N	Y
+ADR0000656	QQ730194D	107 Chapel Street	Apartment 3	Norwich	Norfolk	NR7 5PP	2018-01-21	\N	Y
+ADR0000657	QQ352247B	22 Elm Close	\N	Birmingham	West Midlands	B13 3ZT	2022-04-27	\N	Y
+ADR0000658	QQ544838C	33 Park Avenue	Apartment 3	Cambridge	Cambridgeshire	CB9 0ED	2006-06-04	\N	Y
+ADR0000659	QQ354731A	60 New Road	Flat A	Preston	Lancashire	PR7 2FT	2005-08-15	\N	Y
+ADR0000660	QQ716123C	10 Oak Avenue	The Annexe	Preston	Lancashire	PR9 3RF	2017-01-16	\N	Y
+ADR0000661	QQ743935A	140 School Lane	Apartment 3	Coventry	West Midlands	CV8 3RJ	2021-12-16	\N	Y
+ADR0000662	QQ811225B	107 Oak Avenue	Apartment 3	Norwich	Norfolk	NR2 3FA	2017-03-23	\N	Y
+ADR0000663	QQ264077B	103 Windsor Road	\N	Bristol	Somerset	BS14 6XQ	2019-04-02	\N	Y
+ADR0000664	QQ899902D	107 Albert Road	\N	Plymouth	Devon	PL7 0EA	2005-05-08	\N	Y
+ADR0000665	QQ609986D	68 Cedar Grove	Flat A	Bristol	Somerset	BS8 0WF	2006-07-07	\N	Y
+ADR0000666	QQ347921A	80 Victoria Road	\N	Bristol	Somerset	BS14 0TU	2012-10-25	\N	Y
+ADR0000667	QQ460063A	70 Alexandra Road	\N	Exeter	Devon	EX12 8BN	2013-10-05	\N	Y
+ADR0000668	QQ251312C	109 High Street	\N	Swansea	West Glamorgan	SA5 9LP	2013-04-15	\N	Y
+ADR0000669	QQ249914B	46 High Street	\N	Liverpool	Merseyside	L7 5AU	2024-08-08	\N	Y
+ADR0000670	QQ200384C	127 High Street	\N	Sunderland	Tyne and Wear	SR19 8BY	2016-08-08	\N	Y
+ADR0000671	QQ191899C	99 Oak Avenue	\N	Edinburgh	Midlothian	EH15 8EZ	2006-03-02	\N	Y
+ADR0000672	QQ794871A	114 Windsor Road	\N	Newcastle upon Tyne	Tyne and Wear	NE14 7UA	2023-07-23	\N	Y
+ADR0000673	QQ599722B	116 Cedar Grove	\N	Plymouth	Devon	PL6 8JH	2024-04-28	\N	Y
+ADR0000674	QQ215290D	151 Chapel Street	\N	Cardiff	South Glamorgan	CF2 5QW	2017-03-26	\N	Y
+ADR0000675	QQ402995C	176 Elm Close	The Annexe	Glasgow	Lanarkshire	G9 4FN	2024-11-12	\N	Y
+ADR0000676	QQ887658A	121 High Street	\N	Southampton	Hampshire	SO10 4BY	2012-06-23	\N	Y
+ADR0000677	QQ734390B	5 Victoria Road	\N	Hull	East Yorkshire	HU13 2ZY	2003-06-29	\N	Y
+ADR0000678	QQ516279B	55 Park Avenue	Flat A	Cardiff	South Glamorgan	CF20 0BB	2006-03-13	\N	Y
+ADR0000679	QQ659318C	169 High Street	\N	Manchester	Greater Manchester	M17 6FU	2012-09-16	\N	Y
+ADR0000680	QQ187287A	13 Cedar Grove	Apartment 3	Brighton	East Sussex	BN8 8AU	2022-07-12	\N	Y
+ADR0000681	QQ313434B	97 Mill Lane	\N	Coventry	West Midlands	CV3 4ST	2022-06-30	\N	Y
+ADR0000682	QQ528201D	70 Oak Avenue	Flat A	Manchester	Greater Manchester	M4 4LJ	2023-10-21	\N	Y
+ADR0000683	QQ151344D	117 Springfield Road	\N	Liverpool	Merseyside	L8 6BD	2010-10-23	\N	Y
+ADR0000684	QQ190995D	25 Mill Lane	Apartment 3	Brighton	East Sussex	BN8 9LB	2016-12-23	\N	Y
+ADR0000685	QQ360046A	113 Beech Drive	Apartment 3	Exeter	Devon	EX5 8WX	2008-08-08	\N	Y
+ADR0000686	QQ210294D	13 Station Road	Apartment 3	Norwich	Norfolk	NR4 7ZT	2025-01-19	\N	Y
+ADR0000687	QQ431386C	5 Albert Road	\N	Newcastle upon Tyne	Tyne and Wear	NE14 2UB	2015-11-13	\N	Y
+ADR0000688	QQ187884D	157 Grange Road	Apartment 3	Sunderland	Tyne and Wear	SR13 7LU	2006-12-01	\N	Y
+ADR0000689	QQ319621A	178 West Street	\N	Exeter	Devon	EX19 2YL	2004-05-17	\N	Y
+ADR0000690	QQ394397D	106 Mill Lane	Apartment 3	Exeter	Devon	EX16 9XQ	2010-01-12	\N	Y
+ADR0000691	QQ323452C	119 York Road	The Annexe	Norwich	Norfolk	NR19 7RX	2011-10-03	\N	Y
+ADR0000692	QQ264082C	12 Kings Road	Flat A	Sheffield	South Yorkshire	S3 5AS	2022-08-05	\N	Y
+ADR0000693	QQ287352D	11 Park Avenue	The Annexe	Southampton	Hampshire	SO20 4JQ	2014-06-25	\N	Y
+ADR0000694	QQ529690A	121 West Street	\N	Cambridge	Cambridgeshire	CB14 6RD	2013-01-02	\N	Y
+ADR0000695	QQ463621C	131 Manor Road	\N	Southampton	Hampshire	SO20 5BA	2015-08-04	\N	Y
+ADR0000696	QQ121457C	28 Park Avenue	\N	Cambridge	Cambridgeshire	CB8 3EP	2002-05-12	\N	Y
+ADR0000697	QQ433711B	136 Manor Road	\N	Birmingham	West Midlands	B5 2BH	2003-11-19	\N	Y
+ADR0000698	QQ785602A	9 High Street	\N	Cardiff	South Glamorgan	CF18 6XJ	2018-07-10	\N	Y
+ADR0000699	QQ447619B	28 Manor Road	\N	Sunderland	Tyne and Wear	SR2 7QQ	2008-09-10	\N	Y
+ADR0000700	QQ330028B	44 Beech Drive	\N	Nottingham	Nottinghamshire	NG11 5SR	2013-08-06	\N	Y
+ADR0000701	QQ316726B	119 Mill Lane	Flat A	Birmingham	West Midlands	B2 5YL	2009-01-07	\N	Y
+ADR0000702	QQ359617A	147 The Green	The Annexe	Plymouth	Devon	PL7 1XX	2020-01-20	\N	Y
+ADR0000703	QQ894841B	132 Alexandra Road	\N	Glasgow	Lanarkshire	G17 6RT	2021-12-13	\N	Y
+ADR0000704	QQ651126B	155 Park Avenue	\N	Southampton	Hampshire	SO13 4XZ	2018-06-12	\N	Y
+ADR0000705	QQ870307D	87 Grange Road	\N	Coventry	West Midlands	CV10 3RA	2021-03-15	\N	Y
+ADR0000706	QQ188244C	44 Oak Avenue	Flat A	Plymouth	Devon	PL11 6WZ	2014-02-02	\N	Y
+ADR0000707	QQ799494C	144 New Road	\N	Bristol	Somerset	BS19 1DS	2003-06-26	\N	Y
+ADR0000708	QQ769750C	52 New Road	\N	Belfast	County Antrim	BT13 7YP	2016-10-24	\N	Y
+ADR0000709	QQ181814B	9 Mill Lane	\N	London	Greater London	SE3 5PP	2002-12-07	\N	Y
+ADR0000710	QQ577034B	12 Grange Road	\N	Leeds	West Yorkshire	LS11 5BX	2014-02-10	\N	Y
+ADR0000711	QQ216262C	25 The Green	Apartment 3	London	Greater London	SE19 5DE	2011-08-29	\N	Y
+ADR0000712	QQ671829A	98 Victoria Road	The Annexe	Coventry	West Midlands	CV17 8JR	2017-07-28	\N	Y
+ADR0000713	QQ405262D	23 York Road	Apartment 3	Preston	Lancashire	PR14 1GS	2023-09-12	\N	Y
+ADR0000714	QQ766720D	104 Chapel Street	Flat A	Liverpool	Merseyside	L1 9GW	2005-02-08	\N	Y
+ADR0000715	QQ356220B	116 Alexandra Road	\N	Birmingham	West Midlands	B9 2JF	2004-09-15	\N	Y
+ADR0000716	QQ339092B	176 Cedar Grove	\N	Liverpool	Merseyside	L20 0YZ	2013-11-10	\N	Y
+ADR0000717	QQ836404D	180 Oak Avenue	\N	Exeter	Devon	EX9 9UP	2012-05-07	\N	Y
+ADR0000718	QQ701613C	162 Mill Lane	\N	Sheffield	South Yorkshire	S5 1FF	2010-10-25	\N	Y
+ADR0000719	QQ798965D	31 School Lane	\N	Sunderland	Tyne and Wear	SR5 8YZ	2018-03-12	\N	Y
+ADR0000720	QQ671266A	172 Church Lane	\N	Swansea	West Glamorgan	SA7 3NT	2021-03-17	\N	Y
+ADR0000721	QQ656652B	98 Chapel Street	\N	Cambridge	Cambridgeshire	CB5 4TT	2024-10-05	\N	Y
+ADR0000722	QQ864326D	81 Springfield Road	\N	Sunderland	Tyne and Wear	SR6 2WJ	2017-04-11	\N	Y
+ADR0000723	QQ489118A	31 New Road	Apartment 3	Coventry	West Midlands	CV16 6LJ	2015-04-10	\N	Y
+ADR0000724	QQ241848C	25 Station Road	Flat A	London	Greater London	SE20 3TB	2005-11-18	\N	Y
+ADR0000725	QQ327096B	87 York Road	Apartment 3	London	Greater London	SW13 3GH	2024-08-24	\N	Y
+ADR0000726	QQ228303B	107 New Road	\N	Cambridge	Cambridgeshire	CB17 4GD	2011-06-04	\N	Y
+ADR0000727	QQ807259B	119 Beech Drive	Flat A	Edinburgh	Midlothian	EH15 0GD	2004-06-25	\N	Y
+ADR0000728	QQ673700A	72 Grange Road	\N	Cambridge	Cambridgeshire	CB11 9RH	2022-11-27	\N	Y
+ADR0000729	QQ493120A	135 Kings Road	\N	Southampton	Hampshire	SO16 6GH	2012-10-02	\N	Y
+ADR0000730	QQ362542B	16 Springfield Road	\N	Birmingham	West Midlands	B7 2RH	2004-11-03	\N	Y
+ADR0000731	QQ395758D	46 Oak Avenue	Apartment 3	Glasgow	Lanarkshire	G9 1HW	2017-07-27	\N	Y
+ADR0000732	QQ494514D	102 New Road	\N	Cambridge	Cambridgeshire	CB4 7YF	2019-11-20	\N	Y
+ADR0000733	QQ898247D	163 West Street	Apartment 3	Sunderland	Tyne and Wear	SR13 2LF	2011-04-09	\N	Y
+ADR0000734	QQ897775D	65 Grange Road	\N	Cambridge	Cambridgeshire	CB9 1PY	2008-05-22	\N	Y
+ADR0000735	QQ236361B	98 Oak Avenue	\N	Coventry	West Midlands	CV17 8TF	2012-01-06	\N	Y
+ADR0000736	QQ660000B	90 Station Road	\N	Preston	Lancashire	PR16 9GT	2007-09-19	\N	Y
+ADR0000737	QQ873263A	158 Station Road	\N	Leicester	Leicestershire	LE6 1XH	2017-03-14	\N	Y
+ADR0000738	QQ856126C	175 Grange Road	Flat A	Preston	Lancashire	PR9 0GY	2017-04-17	\N	Y
+ADR0000739	QQ380954D	94 Grange Road	\N	Glasgow	Lanarkshire	G7 3TH	2020-01-31	\N	Y
+ADR0000740	QQ213489B	100 Queens Road	\N	Bristol	Somerset	BS8 3ZG	2013-05-13	\N	Y
+ADR0000741	QQ656140A	70 Manor Road	Apartment 3	Glasgow	Lanarkshire	G13 1TH	2012-12-12	\N	Y
+ADR0000742	QQ431617C	10 Church Lane	Apartment 3	Bristol	Somerset	BS15 7WF	2021-01-23	\N	Y
+ADR0000743	QQ542195A	176 Meadow View	\N	Cambridge	Cambridgeshire	CB6 0PL	2002-12-01	\N	Y
+ADR0000744	QQ762359B	125 York Road	\N	Bristol	Somerset	BS6 9GE	2018-11-02	\N	Y
+ADR0000745	QQ358560C	7 Springfield Road	\N	Plymouth	Devon	PL8 3HF	2022-11-14	\N	Y
+ADR0000746	QQ812103D	32 York Road	Flat A	Preston	Lancashire	PR3 3PU	2018-02-02	\N	Y
+ADR0000747	QQ711143C	160 West Street	Apartment 3	Swansea	West Glamorgan	SA13 0NL	2002-07-16	\N	Y
+ADR0000748	QQ215609A	77 Park Avenue	Apartment 3	Nottingham	Nottinghamshire	NG3 3HA	2007-04-27	\N	Y
+ADR0000749	QQ754535D	104 Church Lane	\N	Coventry	West Midlands	CV15 5BZ	2017-09-19	\N	Y
+ADR0000750	QQ593174C	100 Cedar Grove	\N	Liverpool	Merseyside	L5 4YJ	2011-10-21	\N	Y
+ADR0000751	QQ316019A	46 Kings Road	\N	Birmingham	West Midlands	B6 7JQ	2011-05-12	\N	Y
+ADR0000752	QQ430191B	20 Springfield Road	Flat A	Coventry	West Midlands	CV4 4LX	2018-11-18	\N	Y
+ADR0000753	QQ355752A	155 Beech Drive	Flat A	Nottingham	Nottinghamshire	NG8 5YA	2024-01-12	\N	Y
+ADR0000754	QQ423778C	158 Beech Drive	\N	Coventry	West Midlands	CV18 1PP	2021-06-10	\N	Y
+ADR0000755	QQ594993A	26 Queens Road	\N	Plymouth	Devon	PL20 3HJ	2017-04-12	\N	Y
+ADR0000756	QQ326224B	71 West Street	Apartment 3	Norwich	Norfolk	NR20 3FW	2005-02-28	\N	Y
+ADR0000757	QQ587000B	78 Elm Close	\N	Leeds	West Yorkshire	LS9 0HG	2009-03-29	\N	Y
+ADR0000758	QQ782407A	159 West Street	\N	London	Greater London	SW5 4JE	2014-08-05	\N	Y
+ADR0000759	QQ375912C	125 School Lane	\N	Bristol	Somerset	BS9 3DQ	2004-11-03	\N	Y
+ADR0000760	QQ738124A	41 Station Road	The Annexe	Leeds	West Yorkshire	LS2 8EB	2009-10-14	\N	Y
+ADR0000761	QQ636277A	18 School Lane	The Annexe	Norwich	Norfolk	NR5 3BD	2012-04-29	\N	Y
+ADR0000762	QQ819031C	143 Albert Road	\N	Edinburgh	Midlothian	EH5 7YA	2019-11-22	\N	Y
+ADR0000763	QQ436396A	113 Chapel Street	\N	Exeter	Devon	EX16 0QA	2005-09-30	\N	Y
+ADR0000764	QQ785228D	135 Elm Close	\N	Hull	East Yorkshire	HU1 4DW	2024-05-20	\N	Y
+ADR0000765	QQ417989B	119 High Street	\N	London	Greater London	SE15 4TY	2023-03-07	\N	Y
+ADR0000766	QQ271081C	108 Chapel Street	Apartment 3	Birmingham	West Midlands	B7 1SR	2020-09-01	\N	Y
+ADR0000767	QQ571393B	108 York Road	\N	Bristol	Somerset	BS17 9FT	2023-01-20	\N	Y
+ADR0000768	QQ243914A	110 Springfield Road	\N	Leeds	West Yorkshire	LS19 4LS	2009-06-18	\N	Y
+ADR0000769	QQ373627A	11 Kings Road	\N	London	Greater London	SE1 4LD	2015-12-18	\N	Y
+ADR0000770	QQ224009D	170 Station Road	Flat A	Hull	East Yorkshire	HU16 2XH	2010-08-05	\N	Y
+ADR0000771	QQ447156B	55 Springfield Road	\N	Norwich	Norfolk	NR20 6LE	2016-04-25	\N	Y
+ADR0000772	QQ381989B	116 Station Road	\N	Exeter	Devon	EX3 5NT	2021-06-26	\N	Y
+ADR0000773	QQ242299D	77 Park Avenue	Apartment 3	Sunderland	Tyne and Wear	SR1 1YQ	2008-05-21	\N	Y
+ADR0000774	QQ344882B	21 Meadow View	The Annexe	Belfast	County Antrim	BT13 1TW	2003-03-24	\N	Y
+ADR0000775	QQ282116C	114 Alexandra Road	\N	Cambridge	Cambridgeshire	CB6 5XN	2002-10-07	\N	Y
+ADR0000776	QQ206856A	146 Oak Avenue	Flat A	London	Greater London	SE6 2LR	2014-07-02	\N	Y
+ADR0000777	QQ609022B	18 Springfield Road	\N	Exeter	Devon	EX6 6YS	2012-10-11	\N	Y
+ADR0000778	QQ339383D	74 Queens Road	\N	Edinburgh	Midlothian	EH13 3ZE	2009-08-04	\N	Y
+ADR0000779	QQ498120A	24 Cedar Grove	\N	Leicester	Leicestershire	LE13 7LW	2021-02-09	\N	Y
+ADR0000780	QQ536250C	66 Elm Close	\N	Plymouth	Devon	PL18 0JD	2003-02-19	\N	Y
+ADR0000781	QQ236941B	97 Station Road	Flat A	Nottingham	Nottinghamshire	NG15 5LX	2021-12-29	\N	Y
+ADR0000782	QQ606503D	5 Park Avenue	\N	Norwich	Norfolk	NR14 8GL	2007-07-22	\N	Y
+ADR0000783	QQ302289A	139 Oak Avenue	The Annexe	Glasgow	Lanarkshire	G17 9BG	2008-08-17	\N	Y
+ADR0000784	QQ357154A	74 New Road	The Annexe	Glasgow	Lanarkshire	G2 5FB	2017-04-23	\N	Y
+ADR0000785	QQ746034B	107 Windsor Road	Flat A	Cardiff	South Glamorgan	CF14 3GN	2015-01-21	\N	Y
+ADR0000786	QQ255497B	71 Queens Road	\N	Exeter	Devon	EX15 6QL	2015-03-13	\N	Y
+ADR0000787	QQ677850B	123 Church Lane	Apartment 3	Southampton	Hampshire	SO19 6AS	2012-08-11	\N	Y
+ADR0000788	QQ691361C	153 York Road	\N	Cardiff	South Glamorgan	CF11 4TS	2021-02-20	\N	Y
+ADR0000789	QQ384415C	111 New Road	Flat A	Newcastle upon Tyne	Tyne and Wear	NE5 9WT	2023-01-01	\N	Y
+ADR0000790	QQ510343B	126 Windsor Road	The Annexe	Newcastle upon Tyne	Tyne and Wear	NE7 3PB	2005-09-16	\N	Y
+ADR0000791	QQ226592D	108 Station Road	\N	Reading	Berkshire	RG3 7HP	2019-08-24	\N	Y
+ADR0000792	QQ618102C	104 Oak Avenue	\N	Brighton	East Sussex	BN14 2HN	2011-12-08	\N	Y
+ADR0000793	QQ398837B	107 Queens Road	Apartment 3	Cambridge	Cambridgeshire	CB5 7YE	2024-12-01	\N	Y
+ADR0000794	QQ898535B	4 West Street	Flat A	Newcastle upon Tyne	Tyne and Wear	NE1 8LQ	2002-10-15	\N	Y
+ADR0000795	QQ485034B	163 York Road	\N	Plymouth	Devon	PL17 4AA	2018-10-11	\N	Y
+ADR0000796	QQ282742C	47 West Street	\N	London	Greater London	SW6 4NG	2017-08-06	\N	Y
+ADR0000797	QQ785601A	26 Meadow View	The Annexe	Leeds	West Yorkshire	LS15 8PD	2003-12-11	\N	Y
+ADR0000798	QQ217238B	151 New Road	\N	London	Greater London	SE3 2GW	2012-10-18	\N	Y
+ADR0000799	QQ695591C	113 Oak Avenue	The Annexe	London	Greater London	SE16 7PW	2024-01-23	\N	Y
+ADR0000800	QQ716086A	39 Church Lane	\N	Exeter	Devon	EX3 9QX	2012-03-31	\N	Y
+ADR0000801	QQ805544C	177 York Road	\N	Preston	Lancashire	PR3 2AT	2015-11-24	\N	Y
+ADR0000802	QQ250318D	142 Oak Avenue	\N	Swansea	West Glamorgan	SA14 6PU	2025-01-14	\N	Y
+ADR0000803	QQ636700C	7 Alexandra Road	Apartment 3	Cardiff	South Glamorgan	CF3 1LJ	2013-10-31	\N	Y
+ADR0000804	QQ210038A	55 Oak Avenue	\N	Bristol	Somerset	BS19 1QX	2012-01-21	\N	Y
+ADR0000805	QQ504436D	156 Park Avenue	Flat A	Southampton	Hampshire	SO1 6JW	2007-02-09	\N	Y
+ADR0000806	QQ753550B	125 Meadow View	\N	Brighton	East Sussex	BN3 4UP	2009-06-29	\N	Y
+ADR0000807	QQ746565A	174 Park Avenue	Apartment 3	London	Greater London	SW8 7GN	2012-08-29	\N	Y
+ADR0000808	QQ267102A	110 School Lane	\N	Cardiff	South Glamorgan	CF17 1RD	2017-01-09	\N	Y
+ADR0000809	QQ417480C	50 School Lane	\N	Swansea	West Glamorgan	SA5 2XT	2006-07-18	\N	Y
+ADR0000810	QQ510243C	158 Grange Road	Flat A	London	Greater London	SE5 0YT	2018-04-02	\N	Y
+ADR0000811	QQ486499B	57 Springfield Road	\N	Newcastle upon Tyne	Tyne and Wear	NE4 1ZD	2023-10-07	\N	Y
+ADR0000812	QQ233130A	130 Grange Road	\N	Manchester	Greater Manchester	M10 4FH	2016-01-09	\N	Y
+ADR0000813	QQ238375D	30 High Street	The Annexe	Reading	Berkshire	RG4 9NL	2010-01-04	\N	Y
+ADR0000814	QQ606573A	116 New Road	Apartment 3	Plymouth	Devon	PL8 0QL	2002-08-11	\N	Y
+ADR0000815	QQ107346C	25 Albert Road	\N	Manchester	Greater Manchester	M2 2NZ	2003-06-28	\N	Y
+ADR0000816	QQ761227B	114 Station Road	\N	London	Greater London	SE9 1LZ	2009-09-07	\N	Y
+ADR0000817	QQ262867C	109 Beech Drive	\N	Leeds	West Yorkshire	LS8 3BS	2008-02-15	\N	Y
+ADR0000818	QQ154975A	121 Alexandra Road	\N	Manchester	Greater Manchester	M12 6YE	2009-10-10	\N	Y
+ADR0000819	QQ313170D	78 Church Lane	Flat A	Newcastle upon Tyne	Tyne and Wear	NE5 2DS	2006-12-12	\N	Y
+ADR0000820	QQ722463D	174 Cedar Grove	Flat A	Manchester	Greater Manchester	M4 3DD	2006-04-07	\N	Y
+ADR0000821	QQ196516D	71 Chapel Street	Apartment 3	Swansea	West Glamorgan	SA2 9RS	2017-02-28	\N	Y
+ADR0000822	QQ350360C	24 Victoria Road	\N	Liverpool	Merseyside	L19 1XW	2011-07-03	\N	Y
+ADR0000823	QQ552217B	112 Albert Road	\N	London	Greater London	SW10 2WX	2018-05-23	\N	Y
+ADR0000824	QQ217966D	87 West Street	\N	Hull	East Yorkshire	HU8 0QT	2008-11-06	\N	Y
+ADR0000825	QQ188253B	133 Cedar Grove	The Annexe	London	Greater London	SE18 3EX	2006-06-22	\N	Y
+ADR0000826	QQ806348A	55 New Road	\N	Edinburgh	Midlothian	EH19 4ST	2018-06-29	\N	Y
+ADR0000827	QQ692798D	98 Chapel Street	Flat A	Nottingham	Nottinghamshire	NG9 3JH	2020-08-29	\N	Y
+ADR0000828	QQ761420C	167 High Street	Flat A	London	Greater London	SE17 1HP	2012-03-22	\N	Y
+ADR0000829	QQ670906C	38 Oak Avenue	\N	Plymouth	Devon	PL13 3SY	2017-03-08	\N	Y
+ADR0000830	QQ253371B	153 Manor Road	\N	Birmingham	West Midlands	B6 8LU	2021-04-28	\N	Y
+ADR0000831	QQ845657C	158 New Road	Flat A	London	Greater London	SW19 1YG	2003-11-14	\N	Y
+ADR0000832	QQ525993A	27 Windsor Road	Flat A	Hull	East Yorkshire	HU7 8UQ	2020-02-17	\N	Y
+ADR0000833	QQ572521A	134 Manor Road	\N	Plymouth	Devon	PL13 6QU	2007-05-28	\N	Y
+ADR0000834	QQ757243C	59 Park Avenue	The Annexe	London	Greater London	SW18 8WG	2017-01-21	\N	Y
+ADR0000835	QQ113129D	28 New Road	\N	Liverpool	Merseyside	L5 0JH	2010-01-07	\N	Y
+ADR0000836	QQ125220A	30 York Road	Flat A	Plymouth	Devon	PL3 6QJ	2022-03-28	\N	Y
+ADR0000837	QQ462224D	16 Queens Road	\N	Nottingham	Nottinghamshire	NG13 6FN	2006-04-07	\N	Y
+ADR0000838	QQ376851A	170 Station Road	The Annexe	Coventry	West Midlands	CV16 8YA	2018-05-17	\N	Y
+ADR0000839	QQ440991B	69 Park Avenue	\N	Hull	East Yorkshire	HU7 1SQ	2001-11-22	\N	Y
+ADR0000840	QQ574773D	142 Mill Lane	Apartment 3	Brighton	East Sussex	BN10 1HL	2021-05-29	\N	Y
+ADR0000841	QQ332914B	73 Windsor Road	The Annexe	London	Greater London	SE5 6PA	2019-08-30	\N	Y
+ADR0000842	QQ495879B	25 Park Avenue	\N	Glasgow	Lanarkshire	G12 4JW	2003-08-27	\N	Y
+ADR0000843	QQ535734D	9 High Street	The Annexe	Southampton	Hampshire	SO10 3DG	2021-07-01	\N	Y
+ADR0000844	QQ419434A	13 Grange Road	\N	Newcastle upon Tyne	Tyne and Wear	NE2 8HA	2004-11-07	\N	Y
+ADR0000845	QQ697259A	4 The Green	\N	Swansea	West Glamorgan	SA14 9HH	2020-11-28	\N	Y
+ADR0000846	QQ810995B	44 Alexandra Road	Flat A	Preston	Lancashire	PR13 2QR	2004-02-17	\N	Y
+ADR0000847	QQ422493C	105 Grange Road	The Annexe	Sheffield	South Yorkshire	S1 6GG	2017-04-18	\N	Y
+ADR0000848	QQ465845C	104 Beech Drive	\N	Norwich	Norfolk	NR11 4ZW	2006-01-28	\N	Y
+ADR0000849	QQ872835C	109 Windsor Road	\N	Southampton	Hampshire	SO1 2RL	2017-08-29	\N	Y
+ADR0000850	QQ370889C	160 The Green	Apartment 3	Hull	East Yorkshire	HU18 4TN	2009-12-04	\N	Y
+ADR0000851	QQ727993A	65 The Green	The Annexe	Norwich	Norfolk	NR19 0XP	2019-05-01	\N	Y
+ADR0000852	QQ488975C	26 Alexandra Road	\N	Bristol	Somerset	BS15 9GX	2004-03-03	\N	Y
+ADR0000853	QQ413577D	44 Albert Road	\N	Norwich	Norfolk	NR1 3BF	2019-08-27	\N	Y
+ADR0000854	QQ442188D	56 Albert Road	Apartment 3	Sunderland	Tyne and Wear	SR9 8RZ	2022-05-07	\N	Y
+ADR0000855	QQ244019D	30 Elm Close	The Annexe	Plymouth	Devon	PL5 2YW	2001-11-09	\N	Y
+ADR0000856	QQ785712B	137 Albert Road	\N	Leeds	West Yorkshire	LS13 9YR	2023-08-25	\N	Y
+ADR0000857	QQ848081C	123 Cedar Grove	\N	Cardiff	South Glamorgan	CF1 0ES	2002-01-15	\N	Y
+ADR0000858	QQ801579A	101 Church Lane	\N	Coventry	West Midlands	CV8 0DY	2023-10-11	\N	Y
+ADR0000859	QQ139251D	56 Church Lane	\N	London	Greater London	SW12 7HE	2009-07-08	\N	Y
+ADR0000860	QQ784977D	129 Oak Avenue	\N	Southampton	Hampshire	SO6 7RN	2005-06-09	\N	Y
+ADR0000861	QQ243390A	142 Oak Avenue	\N	Sheffield	South Yorkshire	S12 9BS	2004-08-09	\N	Y
+ADR0000862	QQ552102A	22 Oak Avenue	The Annexe	Reading	Berkshire	RG9 3PQ	2020-12-17	\N	Y
+ADR0000863	QQ578737A	172 Church Lane	\N	Coventry	West Midlands	CV1 4LW	2014-06-30	\N	Y
+ADR0000864	QQ755635D	60 School Lane	\N	Birmingham	West Midlands	B20 5NP	2022-07-09	\N	Y
+ADR0000865	QQ601494A	75 Alexandra Road	Flat A	Plymouth	Devon	PL15 4FA	2005-12-02	\N	Y
+ADR0000866	QQ223269D	130 Beech Drive	Apartment 3	Exeter	Devon	EX16 0BL	2018-04-07	\N	Y
+ADR0000867	QQ605616B	156 The Green	\N	Hull	East Yorkshire	HU1 9GF	2009-06-27	\N	Y
+ADR0000868	QQ263264B	127 Church Lane	The Annexe	Sunderland	Tyne and Wear	SR19 4UF	2014-11-08	\N	Y
+ADR0000869	QQ748984A	122 Park Avenue	\N	Hull	East Yorkshire	HU1 5UP	2009-12-06	\N	Y
+ADR0000870	QQ361364A	18 Meadow View	Flat A	Cardiff	South Glamorgan	CF6 1LY	2020-10-06	\N	Y
+ADR0000871	QQ167602B	135 Springfield Road	The Annexe	Edinburgh	Midlothian	EH9 5QX	2023-12-13	\N	Y
+ADR0000872	QQ504826C	68 Park Avenue	\N	Coventry	West Midlands	CV3 5JE	2016-03-28	\N	Y
+ADR0000873	QQ871570A	68 Grange Road	Apartment 3	Edinburgh	Midlothian	EH2 7RN	2018-10-21	\N	Y
+ADR0000874	QQ175748D	160 Chapel Street	The Annexe	Edinburgh	Midlothian	EH5 3LB	2020-03-29	\N	Y
+ADR0000875	QQ520925D	177 Chapel Street	\N	Swansea	West Glamorgan	SA9 9FX	2005-02-06	\N	Y
+ADR0000876	QQ235215D	105 Queens Road	Flat A	Southampton	Hampshire	SO1 6HP	2015-11-16	\N	Y
+ADR0000877	QQ158367D	117 Manor Road	\N	Glasgow	Lanarkshire	G7 3SL	2003-07-18	\N	Y
+ADR0000878	QQ484082B	66 Albert Road	Flat A	Birmingham	West Midlands	B6 4XS	2004-04-21	\N	Y
+ADR0000879	QQ703538B	29 Windsor Road	The Annexe	London	Greater London	SE7 1BQ	2003-12-08	\N	Y
+ADR0000880	QQ582087C	143 New Road	Flat A	Reading	Berkshire	RG10 5JZ	2012-01-29	\N	Y
+ADR0000881	QQ241955D	35 The Green	Flat A	Manchester	Greater Manchester	M13 3UT	2001-12-16	\N	Y
+ADR0000882	QQ751333D	82 High Street	\N	Liverpool	Merseyside	L4 2BJ	2022-04-21	\N	Y
+ADR0000883	QQ533885B	110 School Lane	\N	Bristol	Somerset	BS7 9ZH	2010-12-20	\N	Y
+ADR0000884	QQ503070B	48 Beech Drive	\N	Cambridge	Cambridgeshire	CB10 5GN	2020-08-03	\N	Y
+ADR0000885	QQ317435B	7 Meadow View	\N	Reading	Berkshire	RG6 0BA	2018-03-16	\N	Y
+ADR0000886	QQ761590B	3 High Street	Apartment 3	Sheffield	South Yorkshire	S19 1QW	2012-08-04	\N	Y
+ADR0000887	QQ566155D	112 Oak Avenue	\N	Sheffield	South Yorkshire	S4 4YJ	2013-01-02	\N	Y
+ADR0000888	QQ682509D	27 Elm Close	Apartment 3	Leeds	West Yorkshire	LS14 8DD	2003-12-24	\N	Y
+ADR0000889	QQ268659A	142 Manor Road	\N	Reading	Berkshire	RG12 7QT	2008-02-24	\N	Y
+ADR0000890	QQ797939C	2 York Road	Flat A	Hull	East Yorkshire	HU10 7PW	2004-11-01	\N	Y
+ADR0000891	QQ816248D	10 Station Road	\N	Nottingham	Nottinghamshire	NG7 9AD	2006-12-10	\N	Y
+ADR0000892	QQ384242A	120 Springfield Road	\N	Sunderland	Tyne and Wear	SR6 4RW	2017-02-10	\N	Y
+ADR0000893	QQ818246C	3 Alexandra Road	\N	Glasgow	Lanarkshire	G5 2AT	2022-11-19	\N	Y
+ADR0000894	QQ445595B	14 High Street	Flat A	Reading	Berkshire	RG15 8SW	2018-08-19	\N	Y
+ADR0000895	QQ316155C	84 School Lane	Flat A	Newcastle upon Tyne	Tyne and Wear	NE6 9QG	2015-10-02	\N	Y
+ADR0000896	QQ135825C	68 Park Avenue	\N	Sheffield	South Yorkshire	S10 9AR	2017-07-02	\N	Y
+ADR0000897	QQ820899A	88 Elm Close	The Annexe	Cardiff	South Glamorgan	CF7 3HQ	2004-09-16	\N	Y
+ADR0000898	QQ849053C	36 Queens Road	Apartment 3	London	Greater London	SE6 6YX	2013-10-06	\N	Y
+ADR0000899	QQ423929A	21 Manor Road	\N	Cambridge	Cambridgeshire	CB9 2BW	2020-11-05	\N	Y
+ADR0000900	QQ710617A	48 High Street	Apartment 3	Plymouth	Devon	PL20 8AG	2022-07-25	\N	Y
+ADR0000901	QQ297918B	56 Albert Road	\N	Southampton	Hampshire	SO9 6YN	2015-10-21	\N	Y
+ADR0000902	QQ635462A	118 Manor Road	The Annexe	Preston	Lancashire	PR5 2XL	2003-07-24	\N	Y
+ADR0000903	QQ541879B	32 West Street	\N	Coventry	West Midlands	CV19 6AB	2014-10-31	\N	Y
+ADR0000904	QQ214107D	24 West Street	Flat A	Hull	East Yorkshire	HU18 7NA	2007-05-09	\N	Y
+ADR0000905	QQ190185A	79 York Road	\N	London	Greater London	SE7 8XA	2012-05-23	\N	Y
+ADR0000906	QQ698234B	178 Albert Road	\N	Cardiff	South Glamorgan	CF6 1GF	2014-01-30	\N	Y
+ADR0000907	QQ223239B	138 Beech Drive	\N	Preston	Lancashire	PR8 7ET	2022-08-12	\N	Y
+ADR0000908	QQ638922D	65 Chapel Street	Flat A	Glasgow	Lanarkshire	G11 4RD	2010-11-15	\N	Y
+ADR0000909	QQ888246D	100 Manor Road	\N	Southampton	Hampshire	SO6 0ET	2004-06-20	\N	Y
+ADR0000910	QQ253969B	136 School Lane	\N	Southampton	Hampshire	SO19 2TL	2007-08-04	\N	Y
+ADR0000911	QQ832873B	52 Queens Road	The Annexe	Leeds	West Yorkshire	LS15 3ZY	2014-10-19	\N	Y
+ADR0000912	QQ247258D	171 Park Avenue	The Annexe	Leicester	Leicestershire	LE4 6RJ	2014-03-30	\N	Y
+ADR0000913	QQ683793D	74 School Lane	Flat A	Brighton	East Sussex	BN14 7BD	2018-02-12	\N	Y
+ADR0000914	QQ543023B	74 Grange Road	The Annexe	Birmingham	West Midlands	B11 4LU	2011-06-21	\N	Y
+ADR0000915	QQ623620D	44 Victoria Road	The Annexe	Leicester	Leicestershire	LE10 2AH	2022-07-14	\N	Y
+ADR0000916	QQ468326A	175 Oak Avenue	Apartment 3	Leeds	West Yorkshire	LS3 5JJ	2014-05-27	\N	Y
+ADR0000917	QQ192984A	92 Station Road	\N	Exeter	Devon	EX9 8PW	2003-08-25	\N	Y
+ADR0000918	QQ432445B	73 Station Road	\N	Preston	Lancashire	PR13 9PD	2024-05-20	\N	Y
+ADR0000919	QQ129463A	103 Grange Road	\N	Cambridge	Cambridgeshire	CB20 4JA	2023-06-30	\N	Y
+ADR0000920	QQ657375A	141 Oak Avenue	Flat A	Bristol	Somerset	BS11 8BD	2008-08-31	\N	Y
+ADR0000921	QQ428467D	154 Meadow View	Flat A	Newcastle upon Tyne	Tyne and Wear	NE17 6HS	2023-06-26	\N	Y
+ADR0000922	QQ393424C	14 New Road	\N	Edinburgh	Midlothian	EH16 2ZY	2022-04-18	\N	Y
+ADR0000923	QQ509734C	6 Beech Drive	\N	Nottingham	Nottinghamshire	NG1 0BU	2009-07-24	\N	Y
+ADR0000924	QQ806303B	71 School Lane	\N	Belfast	County Antrim	BT8 2XN	2003-06-13	\N	Y
+ADR0000925	QQ107085C	65 Mill Lane	Apartment 3	Sunderland	Tyne and Wear	SR14 6XH	2016-08-29	\N	Y
+ADR0000926	QQ433884D	82 Victoria Road	The Annexe	Belfast	County Antrim	BT3 7RY	2013-09-08	\N	Y
+ADR0000927	QQ359135C	143 Cedar Grove	\N	Sunderland	Tyne and Wear	SR1 8UH	2008-06-13	\N	Y
+ADR0000928	QQ362666B	55 High Street	\N	Liverpool	Merseyside	L16 5AN	2024-11-20	\N	Y
+ADR0000929	QQ539324A	116 New Road	The Annexe	Bristol	Somerset	BS15 2AW	2014-11-21	\N	Y
+ADR0000930	QQ284854C	131 Mill Lane	Flat A	Leeds	West Yorkshire	LS3 4UH	2023-01-29	\N	Y
+ADR0000931	QQ727862B	66 West Street	The Annexe	Brighton	East Sussex	BN1 0FA	2015-02-16	\N	Y
+ADR0000932	QQ828481C	103 Elm Close	\N	Newcastle upon Tyne	Tyne and Wear	NE16 1ES	2014-02-28	\N	Y
+ADR0000933	QQ288657D	126 Park Avenue	Flat A	Norwich	Norfolk	NR1 3EE	2016-10-19	\N	Y
+ADR0000934	QQ720151A	133 Springfield Road	\N	Newcastle upon Tyne	Tyne and Wear	NE18 0HD	2006-05-09	\N	Y
+ADR0000935	QQ757716B	143 Windsor Road	\N	Glasgow	Lanarkshire	G1 5XB	2017-10-03	\N	Y
+ADR0000936	QQ685406D	141 Queens Road	\N	Swansea	West Glamorgan	SA17 6PD	2008-07-23	\N	Y
+ADR0000937	QQ854234D	47 Park Avenue	The Annexe	Leeds	West Yorkshire	LS5 5GG	2022-09-23	\N	Y
+ADR0000938	QQ582352B	135 The Green	\N	Sunderland	Tyne and Wear	SR3 2LT	2019-01-19	\N	Y
+ADR0000939	QQ763718B	60 Meadow View	\N	Sheffield	South Yorkshire	S13 2JY	2022-07-04	\N	Y
+ADR0000940	QQ180695D	165 Victoria Road	Flat A	Edinburgh	Midlothian	EH18 7JX	2002-04-30	\N	Y
+ADR0000941	QQ392462B	126 School Lane	Apartment 3	Plymouth	Devon	PL14 9YY	2004-03-08	\N	Y
+ADR0000942	QQ229542B	7 Beech Drive	The Annexe	Preston	Lancashire	PR15 4ZY	2013-02-23	\N	Y
+ADR0000943	QQ445348C	45 Beech Drive	Apartment 3	Reading	Berkshire	RG4 4HL	2012-02-07	\N	Y
+ADR0000944	QQ296544A	96 York Road	Flat A	Coventry	West Midlands	CV6 1WY	2003-02-12	\N	Y
+ADR0000945	QQ396089A	71 Victoria Road	Apartment 3	London	Greater London	SW16 7BN	2011-08-06	\N	Y
+ADR0000946	QQ153830C	54 High Street	\N	Cardiff	South Glamorgan	CF4 4GD	2004-02-28	\N	Y
+ADR0000947	QQ142091D	109 Chapel Street	\N	London	Greater London	SE10 4JW	2004-08-20	\N	Y
+ADR0000948	QQ392232A	33 York Road	\N	Coventry	West Midlands	CV13 4XR	2009-07-29	\N	Y
+ADR0000949	QQ417273B	174 Church Lane	Apartment 3	Manchester	Greater Manchester	M3 0QT	2013-02-19	\N	Y
+ADR0000950	QQ107277A	124 West Street	\N	Nottingham	Nottinghamshire	NG15 7FY	2003-04-11	\N	Y
+ADR0000951	QQ213465B	139 Meadow View	Flat A	London	Greater London	SE1 9ZR	2008-11-03	\N	Y
+ADR0000952	QQ339006C	61 Victoria Road	\N	Plymouth	Devon	PL17 2XF	2016-04-21	\N	Y
+ADR0000953	QQ245906D	41 Springfield Road	\N	Coventry	West Midlands	CV13 9DU	2006-10-20	\N	Y
+ADR0000954	QQ686677A	48 Springfield Road	Flat A	Southampton	Hampshire	SO19 0PS	2017-11-02	\N	Y
+ADR0000955	QQ802805A	15 Mill Lane	Apartment 3	Edinburgh	Midlothian	EH7 6UZ	2017-05-07	\N	Y
+ADR0000956	QQ228450D	147 Albert Road	\N	Newcastle upon Tyne	Tyne and Wear	NE15 5HR	2014-06-02	\N	Y
+ADR0000957	QQ813845D	4 High Street	\N	Birmingham	West Midlands	B8 2GY	2024-07-18	\N	Y
+ADR0000958	QQ588639A	93 Albert Road	\N	London	Greater London	SW20 5NZ	2019-06-16	\N	Y
+ADR0000959	QQ464235A	174 Mill Lane	\N	Bristol	Somerset	BS2 2FR	2005-04-22	\N	Y
+ADR0000960	QQ743397D	97 Oak Avenue	\N	Southampton	Hampshire	SO4 5SD	2002-09-03	\N	Y
+ADR0000961	QQ174704A	79 Springfield Road	\N	Sheffield	South Yorkshire	S2 1PB	2018-04-08	\N	Y
+ADR0000962	QQ133304A	23 Springfield Road	Flat A	Reading	Berkshire	RG18 9GG	2003-07-20	\N	Y
+ADR0000963	QQ648778C	53 Queens Road	Apartment 3	Coventry	West Midlands	CV11 9HH	2023-04-24	\N	Y
+ADR0000964	QQ560041D	153 The Green	\N	Newcastle upon Tyne	Tyne and Wear	NE14 0RQ	2003-11-29	\N	Y
+ADR0000965	QQ311360A	179 Meadow View	Flat A	Swansea	West Glamorgan	SA16 7DR	2015-06-10	\N	Y
+ADR0000966	QQ635278D	153 Albert Road	The Annexe	Edinburgh	Midlothian	EH19 4YW	2003-10-12	\N	Y
+ADR0000967	QQ197898A	168 School Lane	Flat A	Reading	Berkshire	RG16 1WR	2005-07-05	\N	Y
+ADR0000968	QQ490828A	133 Beech Drive	Apartment 3	London	Greater London	SW8 4DB	2011-10-11	\N	Y
+ADR0000969	QQ590816A	180 Mill Lane	\N	Preston	Lancashire	PR6 6FQ	2013-02-15	\N	Y
+ADR0000970	QQ838654C	46 Park Avenue	Apartment 3	Coventry	West Midlands	CV20 1DA	2012-12-05	\N	Y
+ADR0000971	QQ633999B	42 Alexandra Road	The Annexe	Manchester	Greater Manchester	M20 8DP	2006-12-09	\N	Y
+ADR0000972	QQ178036B	73 West Street	Apartment 3	Reading	Berkshire	RG11 4PH	2006-05-28	\N	Y
+ADR0000973	QQ852494C	137 Queens Road	\N	Sheffield	South Yorkshire	S15 8EG	2022-04-07	\N	Y
+ADR0000974	QQ306375B	32 Chapel Street	\N	Plymouth	Devon	PL10 8GB	2012-09-02	\N	Y
+ADR0000975	QQ554421C	25 Elm Close	\N	Leicester	Leicestershire	LE11 0JD	2006-03-09	\N	Y
+ADR0000976	QQ520354C	26 Cedar Grove	The Annexe	Cardiff	South Glamorgan	CF20 9ZJ	2007-08-09	\N	Y
+ADR0000977	QQ888454C	72 Queens Road	\N	Nottingham	Nottinghamshire	NG20 5TB	2004-08-28	\N	Y
+ADR0000978	QQ376516B	55 Church Lane	\N	Cambridge	Cambridgeshire	CB19 5UG	2017-06-23	\N	Y
+ADR0000979	QQ242291A	97 High Street	Apartment 3	Brighton	East Sussex	BN6 7US	2017-07-25	\N	Y
+ADR0000980	QQ639270D	135 Meadow View	Apartment 3	Leicester	Leicestershire	LE9 1RR	2010-03-21	\N	Y
+ADR0000981	QQ887908C	14 Grange Road	\N	Coventry	West Midlands	CV2 9GU	2011-01-08	\N	Y
+ADR0000982	QQ734161C	177 Victoria Road	\N	Leicester	Leicestershire	LE10 5NJ	2020-01-03	\N	Y
+ADR0000983	QQ198896D	77 Albert Road	\N	Swansea	West Glamorgan	SA18 1LG	2009-05-10	\N	Y
+ADR0000984	QQ739956A	24 Queens Road	\N	Hull	East Yorkshire	HU14 9TB	2015-02-10	\N	Y
+ADR0000985	QQ388391B	180 Grange Road	Flat A	London	Greater London	SE16 8ZS	2004-09-23	\N	Y
+ADR0000986	QQ192578D	59 High Street	\N	Hull	East Yorkshire	HU17 7FG	2011-06-10	\N	Y
+ADR0000987	QQ605005A	118 Windsor Road	The Annexe	Cardiff	South Glamorgan	CF1 0WE	2009-05-30	\N	Y
+ADR0000988	QQ510047A	28 Windsor Road	\N	Cardiff	South Glamorgan	CF18 2FS	2018-01-20	\N	Y
+ADR0000989	QQ839150D	41 Queens Road	\N	Glasgow	Lanarkshire	G15 5YU	2002-06-08	\N	Y
+ADR0000990	QQ353105C	160 Queens Road	\N	Liverpool	Merseyside	L8 1SX	2023-03-27	\N	Y
+ADR0000991	QQ448749B	112 West Street	Apartment 3	Bristol	Somerset	BS3 4FT	2019-07-13	\N	Y
+ADR0000992	QQ536678A	15 Windsor Road	Apartment 3	Norwich	Norfolk	NR4 3EL	2023-11-04	\N	Y
+ADR0000993	QQ773110C	141 Church Lane	\N	London	Greater London	SE2 2EH	2024-06-23	\N	Y
+ADR0000994	QQ718621C	53 Victoria Road	Flat A	London	Greater London	SW5 7AF	2002-10-22	\N	Y
+ADR0000995	QQ614751A	74 West Street	Flat A	Edinburgh	Midlothian	EH5 9BP	2024-12-17	\N	Y
+ADR0000996	QQ487260D	158 School Lane	\N	Belfast	County Antrim	BT17 9ZU	2016-04-05	\N	Y
+ADR0000997	QQ452547C	109 Beech Drive	\N	Leeds	West Yorkshire	LS14 5FL	2010-02-09	\N	Y
+ADR0000998	QQ425556A	5 Park Avenue	Flat A	Belfast	County Antrim	BT15 5JQ	2007-02-22	\N	Y
+ADR0000999	QQ470324D	155 Park Avenue	\N	Edinburgh	Midlothian	EH6 3EA	2021-09-09	\N	Y
+ADR0001000	QQ824491A	162 Park Avenue	Flat A	Newcastle upon Tyne	Tyne and Wear	NE8 1JA	2011-09-08	\N	Y
+ADR0001001	QQ811241D	92 Manor Road	\N	Liverpool	Merseyside	L16 1DS	2012-03-06	\N	Y
+ADR0001002	QQ638039B	112 Windsor Road	\N	Exeter	Devon	EX12 6ES	2006-12-06	\N	Y
+ADR0001003	QQ717530B	123 Elm Close	The Annexe	Coventry	West Midlands	CV10 0AD	2016-08-26	\N	Y
+ADR0001004	QQ549145D	118 Station Road	Flat A	Brighton	East Sussex	BN17 6XR	2014-09-28	\N	Y
+ADR0001005	QQ424749A	165 Victoria Road	\N	Plymouth	Devon	PL2 5NH	2004-02-06	\N	Y
+ADR0001006	QQ210246A	122 The Green	The Annexe	Southampton	Hampshire	SO9 1ZX	2017-07-20	\N	Y
+ADR0001007	QQ675247B	167 Springfield Road	\N	Swansea	West Glamorgan	SA16 3TQ	2008-10-29	\N	Y
+ADR0001008	QQ510301A	153 Victoria Road	Flat A	Edinburgh	Midlothian	EH15 3GA	2015-05-06	\N	Y
+ADR0001009	QQ716341A	17 Cedar Grove	\N	Cardiff	South Glamorgan	CF5 6QT	2007-05-04	\N	Y
+ADR0001010	QQ136117A	155 Church Lane	Flat A	Glasgow	Lanarkshire	G10 1HE	2024-07-31	\N	Y
+ADR0001011	QQ210446D	50 Park Avenue	Flat A	Liverpool	Merseyside	L17 7NF	2006-12-26	\N	Y
+ADR0001012	QQ708569B	26 Albert Road	Flat A	Nottingham	Nottinghamshire	NG11 5QB	2004-05-17	\N	Y
+ADR0001013	QQ893237D	23 Park Avenue	The Annexe	Norwich	Norfolk	NR16 8SX	2010-05-18	\N	Y
+ADR0001014	QQ284112D	132 New Road	\N	Nottingham	Nottinghamshire	NG11 1PJ	2019-08-14	\N	Y
+ADR0001015	QQ503407C	71 Springfield Road	\N	Belfast	County Antrim	BT15 6FS	2008-07-19	\N	Y
+ADR0001016	QQ599883C	128 Kings Road	Apartment 3	Glasgow	Lanarkshire	G17 3FX	2016-04-30	\N	Y
+ADR0001017	QQ131704D	3 School Lane	Apartment 3	Preston	Lancashire	PR5 9RX	2009-10-13	\N	Y
+ADR0001018	QQ242146C	72 Queens Road	\N	Edinburgh	Midlothian	EH7 5RH	2010-09-22	\N	Y
+ADR0001019	QQ196051A	115 Station Road	\N	Birmingham	West Midlands	B18 0AR	2018-09-10	\N	Y
+ADR0001020	QQ337008D	146 Victoria Road	\N	Reading	Berkshire	RG15 7TG	2008-10-12	\N	Y
+ADR0001021	QQ834825C	14 Park Avenue	Flat A	Reading	Berkshire	RG3 0NG	2010-06-17	\N	Y
+ADR0001022	QQ334780C	100 Queens Road	\N	Birmingham	West Midlands	B9 4ZX	2003-08-14	\N	Y
+ADR0001023	QQ456069B	158 High Street	\N	London	Greater London	SW16 3DB	2019-02-18	\N	Y
+ADR0001024	QQ529553D	34 Elm Close	\N	Birmingham	West Midlands	B16 7JN	2012-04-09	\N	Y
+ADR0001025	QQ434140D	173 Cedar Grove	Apartment 3	Coventry	West Midlands	CV1 9ZE	2014-09-06	\N	Y
+ADR0001026	QQ600790D	19 Queens Road	Flat A	Newcastle upon Tyne	Tyne and Wear	NE7 2WR	2025-01-18	\N	Y
+ADR0001027	QQ218282A	83 The Green	\N	Preston	Lancashire	PR17 2XQ	2024-10-07	\N	Y
+ADR0001028	QQ101214A	112 Grange Road	Flat A	Plymouth	Devon	PL15 7AQ	2023-02-10	\N	Y
+ADR0001029	QQ551337A	178 Chapel Street	\N	Sheffield	South Yorkshire	S3 9YP	2004-10-27	\N	Y
+ADR0001030	QQ806768C	159 Chapel Street	The Annexe	Nottingham	Nottinghamshire	NG4 1XT	2012-12-25	\N	Y
+ADR0001031	QQ144966B	112 School Lane	The Annexe	Manchester	Greater Manchester	M6 1SQ	2022-02-24	\N	Y
+ADR0001032	QQ846288A	40 Victoria Road	\N	Glasgow	Lanarkshire	G4 4BY	2023-10-01	\N	Y
+ADR0001033	QQ105166C	6 Oak Avenue	\N	Hull	East Yorkshire	HU1 2QG	2012-07-30	\N	Y
+ADR0001034	QQ290569B	28 Mill Lane	Flat A	Exeter	Devon	EX17 6QG	2023-12-04	\N	Y
+ADR0001035	QQ897108A	70 Elm Close	\N	Reading	Berkshire	RG2 2SW	2016-10-11	\N	Y
+ADR0001036	QQ425183A	107 Mill Lane	\N	Plymouth	Devon	PL10 9RD	2012-11-03	\N	Y
+ADR0001037	QQ607911A	78 Station Road	The Annexe	Coventry	West Midlands	CV11 3UN	2014-04-19	\N	Y
+ADR0001038	QQ758028A	134 York Road	Apartment 3	Swansea	West Glamorgan	SA12 3WF	2020-02-27	\N	Y
+ADR0001039	QQ369527A	177 Kings Road	The Annexe	Coventry	West Midlands	CV4 0JZ	2006-06-08	\N	Y
+ADR0001040	QQ132063A	100 Grange Road	\N	Swansea	West Glamorgan	SA16 9LB	2006-07-09	\N	Y
+ADR0001041	QQ566913B	165 Cedar Grove	\N	Edinburgh	Midlothian	EH8 3BT	2007-12-31	\N	Y
+ADR0001042	QQ225741D	125 Elm Close	\N	Coventry	West Midlands	CV19 3YH	2016-07-11	\N	Y
+ADR0001043	QQ804446A	9 Beech Drive	\N	Sunderland	Tyne and Wear	SR6 4XZ	2006-10-16	\N	Y
+ADR0001044	QQ620986D	81 Chapel Street	Flat A	Exeter	Devon	EX11 1LN	2010-08-10	\N	Y
+ADR0001045	QQ226739A	44 Oak Avenue	\N	Edinburgh	Midlothian	EH4 2JT	2016-06-05	\N	Y
+ADR0001046	QQ178221D	44 Albert Road	The Annexe	Plymouth	Devon	PL10 2EZ	2022-11-06	\N	Y
+ADR0001047	QQ610259A	53 High Street	Flat A	Edinburgh	Midlothian	EH2 1PE	2021-05-02	\N	Y
+ADR0001048	QQ427337D	113 High Street	Flat A	Sunderland	Tyne and Wear	SR9 6ZL	2004-06-24	\N	Y
+ADR0001049	QQ618134D	169 High Street	Flat A	Reading	Berkshire	RG2 6HD	2021-10-18	\N	Y
+ADR0001050	QQ162214A	18 Windsor Road	\N	Sheffield	South Yorkshire	S6 0UZ	2017-11-01	\N	Y
+ADR0001051	QQ338776D	156 Victoria Road	\N	Coventry	West Midlands	CV8 2FD	2012-01-09	\N	Y
+ADR0001052	QQ880931A	64 Elm Close	The Annexe	Swansea	West Glamorgan	SA15 8XU	2018-08-03	\N	Y
+ADR0001053	QQ436749D	32 Church Lane	\N	Glasgow	Lanarkshire	G1 6DW	2016-11-14	\N	Y
+ADR0001054	QQ730810B	61 The Green	The Annexe	Liverpool	Merseyside	L12 3YJ	2018-08-25	\N	Y
+ADR0001055	QQ729364A	79 Windsor Road	The Annexe	Edinburgh	Midlothian	EH10 3QF	2015-07-23	\N	Y
+ADR0001056	QQ419243C	44 Cedar Grove	\N	Newcastle upon Tyne	Tyne and Wear	NE7 0NP	2011-03-19	\N	Y
+ADR0001057	QQ104327C	101 West Street	\N	Manchester	Greater Manchester	M8 2TN	2003-09-03	\N	Y
+ADR0001058	QQ601035D	174 Springfield Road	Flat A	Nottingham	Nottinghamshire	NG6 8RS	2024-02-19	\N	Y
+ADR0001059	QQ662080A	7 Elm Close	\N	Manchester	Greater Manchester	M14 5YJ	2015-07-11	\N	Y
+ADR0001060	QQ287336A	136 Church Lane	The Annexe	Leicester	Leicestershire	LE1 6PH	2009-06-19	\N	Y
+ADR0001061	QQ796837D	106 Station Road	The Annexe	Plymouth	Devon	PL12 4AZ	2020-06-03	\N	Y
+ADR0001062	QQ760294D	14 Meadow View	Apartment 3	Cambridge	Cambridgeshire	CB10 0TP	2011-08-13	\N	Y
+ADR0001063	QQ354269C	47 York Road	\N	Glasgow	Lanarkshire	G13 8SU	2022-03-20	\N	Y
+ADR0001064	QQ318966B	171 Windsor Road	\N	Preston	Lancashire	PR12 2RX	2008-11-02	\N	Y
+ADR0001065	QQ103802B	3 Grange Road	The Annexe	Leeds	West Yorkshire	LS2 1DZ	2016-04-02	\N	Y
+ADR0001066	QQ814558C	18 York Road	\N	Southampton	Hampshire	SO14 4AT	2006-06-10	\N	Y
+ADR0001067	QQ154811B	152 West Street	The Annexe	Belfast	County Antrim	BT7 1WD	2007-08-10	\N	Y
+ADR0001068	QQ159090A	81 Meadow View	\N	Cambridge	Cambridgeshire	CB11 5YF	2019-02-13	\N	Y
+ADR0001069	QQ127055C	160 Manor Road	Apartment 3	Cambridge	Cambridgeshire	CB6 4BH	2001-09-08	\N	Y
+ADR0001070	QQ713304D	174 High Street	\N	Southampton	Hampshire	SO7 0XS	2018-12-28	\N	Y
+ADR0001071	QQ559903B	28 West Street	Apartment 3	Exeter	Devon	EX9 3RJ	2023-12-15	\N	Y
+ADR0001072	QQ224524D	123 School Lane	Apartment 3	Manchester	Greater Manchester	M4 2HL	2008-08-25	\N	Y
+ADR0001073	QQ878204A	171 Victoria Road	\N	Leeds	West Yorkshire	LS4 5QF	2013-04-02	\N	Y
+ADR0001074	QQ767718C	27 Chapel Street	\N	Hull	East Yorkshire	HU2 1YD	2016-11-04	\N	Y
+ADR0001075	QQ707272A	34 Oak Avenue	\N	Coventry	West Midlands	CV9 1RJ	2009-08-14	\N	Y
+ADR0001076	QQ154410A	175 Mill Lane	The Annexe	London	Greater London	SW17 8EA	2019-08-12	\N	Y
+ADR0001077	QQ740084C	59 Kings Road	Apartment 3	Belfast	County Antrim	BT18 0ET	2006-03-26	\N	Y
+ADR0001078	QQ247609A	73 Albert Road	Flat A	Leeds	West Yorkshire	LS10 3ET	2007-03-23	\N	Y
+ADR0001079	QQ842455C	80 West Street	Flat A	Cardiff	South Glamorgan	CF8 5AF	2019-02-27	\N	Y
+ADR0001080	QQ772146C	24 York Road	Flat A	Birmingham	West Midlands	B5 6AG	2023-08-30	\N	Y
+ADR0001081	QQ352448A	9 The Green	Apartment 3	Leeds	West Yorkshire	LS4 9WL	2011-10-10	\N	Y
+ADR0001082	QQ602909D	141 Beech Drive	\N	Bristol	Somerset	BS19 3BQ	2012-09-18	\N	Y
+ADR0001083	QQ778922A	75 Elm Close	\N	Plymouth	Devon	PL7 4XT	2007-10-27	\N	Y
+ADR0001084	QQ609315A	45 Oak Avenue	\N	Preston	Lancashire	PR12 7AJ	2004-08-20	\N	Y
+ADR0001085	QQ222002A	114 Kings Road	The Annexe	Edinburgh	Midlothian	EH17 1GD	2007-12-08	\N	Y
+ADR0001086	QQ730258B	5 School Lane	\N	Bristol	Somerset	BS16 1YJ	2019-07-19	\N	Y
+ADR0001087	QQ892221B	131 York Road	Apartment 3	Cardiff	South Glamorgan	CF13 6GT	2015-12-26	\N	Y
+ADR0001088	QQ152115A	171 Windsor Road	Apartment 3	Glasgow	Lanarkshire	G2 7ZL	2005-11-26	\N	Y
+ADR0001089	QQ760417D	83 Albert Road	\N	Edinburgh	Midlothian	EH2 8XS	2015-11-27	\N	Y
+ADR0001090	QQ239564B	121 Beech Drive	\N	Leeds	West Yorkshire	LS9 7EE	2013-10-15	\N	Y
+ADR0001091	QQ173658C	72 Alexandra Road	Apartment 3	Plymouth	Devon	PL4 9JL	2002-11-15	\N	Y
+ADR0001092	QQ702305D	33 Station Road	\N	Leicester	Leicestershire	LE7 5PX	2012-09-13	\N	Y
+ADR0001093	QQ517987B	6 Alexandra Road	\N	Coventry	West Midlands	CV12 4HU	2010-01-12	\N	Y
+ADR0001094	QQ575822A	65 Queens Road	Apartment 3	Reading	Berkshire	RG15 9QD	2012-12-30	\N	Y
+ADR0001095	QQ104571C	8 Station Road	Flat A	Leicester	Leicestershire	LE2 8JA	2021-01-04	\N	Y
+ADR0001096	QQ460120A	68 Manor Road	\N	Bristol	Somerset	BS11 4UU	2004-02-06	\N	Y
+ADR0001097	QQ757236B	103 Cedar Grove	\N	Preston	Lancashire	PR7 4DS	2011-05-05	\N	Y
+ADR0001098	QQ356139B	145 West Street	The Annexe	Reading	Berkshire	RG19 7DA	2014-01-17	\N	Y
+ADR0001099	QQ423116D	69 Station Road	\N	Manchester	Greater Manchester	M4 1DS	2014-05-08	\N	Y
+ADR0001100	QQ179613A	119 The Green	The Annexe	Plymouth	Devon	PL12 2NX	2018-02-11	\N	Y
+ADR0001101	QQ646848C	112 Oak Avenue	\N	Edinburgh	Midlothian	EH19 2NT	2014-02-17	\N	Y
+ADR0001102	QQ406407C	10 Albert Road	The Annexe	Norwich	Norfolk	NR9 3LZ	2017-05-22	\N	Y
+ADR0001103	QQ467973C	151 Victoria Road	\N	Hull	East Yorkshire	HU5 9BH	2023-06-13	\N	Y
+ADR0001104	QQ514502D	133 Oak Avenue	Flat A	Reading	Berkshire	RG19 5JG	2017-06-09	\N	Y
+ADR0001105	QQ723102B	68 High Street	Flat A	Southampton	Hampshire	SO18 2YS	2016-04-21	\N	Y
+ADR0001106	QQ248960D	99 Grange Road	The Annexe	Southampton	Hampshire	SO10 9YF	2014-08-03	\N	Y
+ADR0001107	QQ140172C	3 Mill Lane	\N	Sheffield	South Yorkshire	S14 9NS	2002-11-14	\N	Y
+ADR0001108	QQ801333B	133 Church Lane	\N	Hull	East Yorkshire	HU16 8TJ	2024-09-21	\N	Y
+ADR0001109	QQ561633D	171 Grange Road	\N	Bristol	Somerset	BS3 2QZ	2013-05-18	\N	Y
+ADR0001110	QQ200294B	119 Cedar Grove	The Annexe	Reading	Berkshire	RG9 8YJ	2006-05-31	\N	Y
+ADR0001111	QQ313806A	178 High Street	\N	Leicester	Leicestershire	LE14 7LG	2018-09-24	\N	Y
+ADR0001112	QQ391090C	22 New Road	\N	Hull	East Yorkshire	HU18 4BE	2009-07-02	\N	Y
+ADR0001113	QQ867509C	179 Cedar Grove	The Annexe	Southampton	Hampshire	SO2 8WW	2011-03-22	\N	Y
+ADR0001114	QQ732680D	70 Park Avenue	\N	Cambridge	Cambridgeshire	CB13 3TQ	2002-05-10	\N	Y
+ADR0001115	QQ469037A	170 Church Lane	\N	Norwich	Norfolk	NR3 7YR	2015-10-15	\N	Y
+ADR0001116	QQ593279A	21 Cedar Grove	Flat A	Newcastle upon Tyne	Tyne and Wear	NE1 8NY	2022-05-13	\N	Y
+\.
+
+COPY raw.claim (claim_ref, claimant_ref, claim_status, pension_type, claim_start_date, qualifying_years, weekly_amount, deferral_indicator, deferral_weeks, payment_frequency, last_updated) FROM stdin;
+SP3200001	QQ199245C	ACTIVE	BASIC_STATE_PENSION	23/08/2014	14	88.48	Y	0	WEEKLY	2026-03-01
+SP3200002	QQ267483D	ACTIVE	BASIC_STATE_PENSION	12-Jul-2014	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200003	QQ543160C	ACTIVE	NEW_STATE_PENSION	06/05/2021	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200004	QQ430791B	ACTIVE	NEW_STATE_PENSION	26/06/2025	29	183.28	N	0	QUARTERLY	2026-03-01
+SP3200005	QQ499467D	CLOSED	BASIC_STATE_PENSION	26/08/2000	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200006	QQ680878A	CLOSED	NEW_STATE_PENSION	07/07/2018	25	158.00	N	0	WEEKLY	2026-03-01
+SP3200007	QQ270018B	ACTIVE	NEW_STATE_PENSION	2021-08-31	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200008	QQ867182D	ACTIVE	BASIC_STATE_PENSION	26-Mar-2016	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200009	QQ280013B	ACTIVE	NEW_STATE_PENSION	2023-08-02	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200010	QQ380793A	ACTIVE	NEW_STATE_PENSION	15-Oct-2021	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200011	QQ257892A	ACTIVE	NEW_STATE_PENSION	2018-01-27	19	130.67	N	0	FOUR_WEEKLY	2026-03-01
+SP3200012	QQ737015B	ACTIVE	BASIC_STATE_PENSION	26/04/2008	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200013	QQ175473D	SUSPENDED	NEW_STATE_PENSION	2020-11-04	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200014	QQ111107D	ACTIVE	BASIC_STATE_PENSION	2003-03-10	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200015	QQ191452C	ACTIVE	NEW_STATE_PENSION	2021-04-23	33	214.34	N	0	QUARTERLY	2026-03-01
+SP3200016	QQ190120B	ACTIVE	BASIC_STATE_PENSION	15-Apr-2012	30	169.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200017	QQ717463D	ACTIVE	NEW_STATE_PENSION	20-Dec-2021	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200018	QQ283028D	ACTIVE	BASIC_STATE_PENSION	2010-12-15	26	148.54	N	0	FOUR_WEEKLY	2026-03-01
+SP3200019	QQ326598D	CLOSED	NEW_STATE_PENSION	30-Dec-2024	27	139.21	N	0	WEEKLY	2026-03-01
+SP3200020	QQ243083A	ACTIVE	NEW_STATE_PENSION	08/06/2025	16	101.12	N	0	WEEKLY	2026-03-01
+SP3200021	QQ620869B	ACTIVE	NEW_STATE_PENSION	2018-11-22	19	120.08	N	0	WEEKLY	2026-03-01
+SP3200022	QQ324476C	ACTIVE	BASIC_STATE_PENSION	2010-07-16	23	170.62	N	0	FOUR_WEEKLY	2026-03-01
+SP3200023	QQ169859B	ACTIVE	BASIC_STATE_PENSION	14-Oct-2004	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200024	QQ314116C	ACTIVE	NEW_STATE_PENSION	06/09/2020	27	132.59	N	0	FOUR_WEEKLY	2026-03-01
+SP3200025	QQ559715D	ACTIVE	NEW_STATE_PENSION	20/02/2018	24	166.83	N	0	FOUR_WEEKLY	2026-03-01
+SP3200026	QQ395424D	CLOSED	BASIC_STATE_PENSION	2001-04-23	18	113.76	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200027	QQ355057C	ACTIVE	NEW_STATE_PENSION	27/08/2018	35	221.20	Y	0	WEEKLY	2026-03-01
+SP3200028	QQ161029D	SUSPENDED	BASIC_STATE_PENSION	2010-12-10	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200029	QQ643839C	ACTIVE	NEW_STATE_PENSION	04/02/2019	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200030	QQ657701C	ACTIVE	NEW_STATE_PENSION	2016-10-26	27	160.16	N	0	WEEKLY	2026-03-01
+SP3200031	QQ139064B	ACTIVE	NEW_STATE_PENSION	11/03/2024	14	88.48	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200032	QQ558194A	ACTIVE	BASIC_STATE_PENSION	07/08/2013	30	189.60	N	0	WEEKLY	2026-03-01
+SP3200033	QQ159669B	ACTIVE	NEW_STATE_PENSION	2023-01-08	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200034	QQ456588D	ACTIVE	NEW_STATE_PENSION	2025-06-28	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200035	QQ207316A	ACTIVE	NEW_STATE_PENSION	2023-01-16	18	113.76	N	0	QUARTERLY	2026-03-01
+SP3200036	QQ300612B	ACTIVE	NEW_STATE_PENSION	27/05/2024	26	141.43	N	0	QUARTERLY	2026-03-01
+SP3200037	QQ135260B	ACTIVE	NEW_STATE_PENSION	11-Mar-2021	11	69.52	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200038	QQ137157D	ACTIVE	NEW_STATE_PENSION	16-Jul-2019	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200039	QQ172349D	ACTIVE	BASIC_STATE_PENSION	2011-10-20	30	189.60	N	0	WEEKLY	2026-03-01
+SP3200040	QQ747210C	ACTIVE	NEW_STATE_PENSION	2025-03-13	15	100.81	N	0	FOUR_WEEKLY	2026-03-01
+SP3200041	QQ701769C	ACTIVE	NEW_STATE_PENSION	2020-11-17	28	176.96	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200042	QQ892066C	ACTIVE	BASIC_STATE_PENSION	25-Mar-2014	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200043	QQ348699C	CLOSED	BASIC_STATE_PENSION	09/09/2005	27	179.94	N	0	FOUR_WEEKLY	2026-03-01
+SP3200044	QQ341233A	ACTIVE	NEW_STATE_PENSION	05/03/2023	23	145.36	N	0	QUARTERLY	2026-03-01
+SP3200045	QQ641834B	ACTIVE	NEW_STATE_PENSION	25/04/2020	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200046	QQ343775C	ACTIVE	BASIC_STATE_PENSION	2007-06-25	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200047	QQ700684D	SUSPENDED	BASIC_STATE_PENSION	05/07/2011	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200048	QQ394252B	ACTIVE	NEW_STATE_PENSION	22-Oct-2020	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200049	QQ294971D	ACTIVE	BASIC_STATE_PENSION	05/05/2006	31	195.92	N	0	WEEKLY	2026-03-01
+SP3200050	QQ174420B	ACTIVE	BASIC_STATE_PENSION	2005-10-22	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200051	QQ578355A	CLOSED	NEW_STATE_PENSION	26-Aug-2019	29	151.28	N	0	QUARTERLY	2026-03-01
+SP3200052	QQ693340B	ACTIVE	NEW_STATE_PENSION	2019-12-29	15	101.91	N	0	FOUR_WEEKLY	2026-03-01
+SP3200053	QQ219398A	ACTIVE	NEW_STATE_PENSION	2018-10-15	30	156.60	N	0	WEEKLY	2026-03-01
+SP3200054	QQ256200C	ACTIVE	NEW_STATE_PENSION	2024-07-30	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200055	QQ882199B	ACTIVE	BASIC_STATE_PENSION	22-Oct-2013	26	149.10	N	0	QUARTERLY	2026-03-01
+SP3200056	QQ126065C	ACTIVE	BASIC_STATE_PENSION	2007-11-17	30	198.14	N	0	QUARTERLY	2026-03-01
+SP3200057	QQ288722C	ACTIVE	NEW_STATE_PENSION	2022-12-05	28	176.96	Y	0	WEEKLY	2026-03-01
+SP3200058	QQ855354A	CLOSED	NEW_STATE_PENSION	2020-04-29	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200059	QQ526899A	ACTIVE	BASIC_STATE_PENSION	2000-10-31	32	202.24	N	0	WEEKLY	2026-03-01
+SP3200060	QQ452620D	ACTIVE	BASIC_STATE_PENSION	20/02/2007	32	187.05	N	0	FOUR_WEEKLY	2026-03-01
+SP3200061	QQ844873C	SUSPENDED	BASIC_STATE_PENSION	17-Aug-2000	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200062	QQ139879D	ACTIVE	NEW_STATE_PENSION	05-Feb-2019	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200063	QQ877304C	ACTIVE	BASIC_STATE_PENSION	2013-12-07	26	164.32	Y	0	WEEKLY	2026-03-01
+SP3200064	QQ843608A	ACTIVE	BASIC_STATE_PENSION	31-May-2011	19	125.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200065	QQ456738D	ACTIVE	BASIC_STATE_PENSION	2009-06-14	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200066	QQ340553A	ACTIVE	NEW_STATE_PENSION	23/03/2021	28	166.50	N	0	FOUR_WEEKLY	2026-03-01
+SP3200067	QQ885187D	ACTIVE	BASIC_STATE_PENSION	01-Feb-2013	30	189.60	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200068	QQ247455D	ACTIVE	BASIC_STATE_PENSION	2015-10-10	30	167.58	N	0	FOUR_WEEKLY	2026-03-01
+SP3200069	QQ634912D	ACTIVE	BASIC_STATE_PENSION	14/06/2007	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200070	QQ529791A	ACTIVE	NEW_STATE_PENSION	2016-07-01	31	207.35	Y	0	WEEKLY	2026-03-01
+SP3200071	QQ607795A	ACTIVE	NEW_STATE_PENSION	19-Oct-2019	21	150.94	N	0	WEEKLY	2026-03-01
+SP3200072	QQ692073D	ACTIVE	BASIC_STATE_PENSION	2011-06-15	22	139.04	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200073	QQ743931A	ACTIVE	NEW_STATE_PENSION	2018-10-20	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200074	QQ788446C	ACTIVE	BASIC_STATE_PENSION	22-Jun-2013	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200075	QQ789036C	CLOSED	NEW_STATE_PENSION	2020-03-26	26	164.32	N	0	QUARTERLY	2026-03-01
+SP3200076	QQ771635B	ACTIVE	NEW_STATE_PENSION	09-May-2017	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200077	QQ884008C	ACTIVE	BASIC_STATE_PENSION	04/09/2011	32	202.24	N	0	QUARTERLY	2026-03-01
+SP3200078	QQ202314A	ACTIVE	BASIC_STATE_PENSION	15/12/2013	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200079	QQ108638A	ACTIVE	NEW_STATE_PENSION	2021-10-12	28	176.96	Y	0	WEEKLY	2026-03-01
+SP3200080	QQ661341B	ACTIVE	BASIC_STATE_PENSION	12-Dec-2007	19	120.08	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200081	QQ797791A	ACTIVE	NEW_STATE_PENSION	01/06/2018	18	129.65	N	0	FOUR_WEEKLY	2026-03-01
+SP3200082	QQ667593C	ACTIVE	NEW_STATE_PENSION	30-Aug-2018	32	202.24	N	0	QUARTERLY	2026-03-01
+SP3200083	QQ763287A	ACTIVE	BASIC_STATE_PENSION	24-Mar-2009	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200084	QQ847381B	ACTIVE	NEW_STATE_PENSION	08-Dec-2019	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200085	QQ185353D	ACTIVE	NEW_STATE_PENSION	2023-03-05	28	174.53	N	0	WEEKLY	2026-03-01
+SP3200086	QQ888528D	ACTIVE	NEW_STATE_PENSION	17-Mar-2024	21	132.72	N	0	WEEKLY	2026-03-01
+SP3200087	QQ570386B	ACTIVE	NEW_STATE_PENSION	18/10/2022	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200088	QQ146106B	ACTIVE	NEW_STATE_PENSION	2020-06-27	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200089	QQ529144B	ACTIVE	BASIC_STATE_PENSION	25-May-2013	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200090	QQ692174A	ACTIVE	NEW_STATE_PENSION	2023-08-12	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200091	QQ674320D	ACTIVE	NEW_STATE_PENSION	2025-10-18	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200092	QQ625048B	ACTIVE	NEW_STATE_PENSION	28/02/2024	10	54.74	N	0	FOUR_WEEKLY	2026-03-01
+SP3200093	QQ223344C	ACTIVE	NEW_STATE_PENSION	2021-11-23	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200094	QQ561210A	ACTIVE	NEW_STATE_PENSION	10-Jul-2019	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200095	QQ398517C	ACTIVE	NEW_STATE_PENSION	25-Sep-2020	11	69.52	N	0	QUARTERLY	2026-03-01
+SP3200096	QQ117999B	ACTIVE	BASIC_STATE_PENSION	13/01/2004	11	52.33	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200097	QQ651852D	ACTIVE	BASIC_STATE_PENSION	11/02/2015	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200098	QQ721674B	ACTIVE	BASIC_STATE_PENSION	2007-01-01	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200099	QQ140631B	ACTIVE	BASIC_STATE_PENSION	21/04/2013	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200100	QQ513752D	ACTIVE	BASIC_STATE_PENSION	17-May-2010	24	123.99	N	0	FOUR_WEEKLY	2026-03-01
+SP3200101	QQ233449B	ACTIVE	BASIC_STATE_PENSION	2008-03-12	13	64.95	N	0	FOUR_WEEKLY	2026-03-01
+SP3200102	QQ195096A	ACTIVE	BASIC_STATE_PENSION	2015-03-08	19	118.71	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200103	QQ632437D	ACTIVE	NEW_STATE_PENSION	08-Jan-2024	11	69.52	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200104	QQ408855B	CLOSED	NEW_STATE_PENSION	07-Apr-2023	24	175.63	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200105	QQ707668B	ACTIVE	NEW_STATE_PENSION	2024-05-14	35	191.63	N	0	WEEKLY	2026-03-01
+SP3200106	QQ452373A	ACTIVE	BASIC_STATE_PENSION	2004-03-23	22	139.04	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200107	QQ802984C	ACTIVE	NEW_STATE_PENSION	11/03/2018	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200108	QQ342480B	ACTIVE	NEW_STATE_PENSION	2018-02-17	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200109	QQ479748C	CLOSED	BASIC_STATE_PENSION	2016-02-02	16	101.12	N	0	QUARTERLY	2026-03-01
+SP3200110	QQ534651D	ACTIVE	NEW_STATE_PENSION	2025-09-05	12	88.49	N	0	WEEKLY	2026-03-01
+SP3200111	QQ718182C	ACTIVE	BASIC_STATE_PENSION	20-Sep-2013	17	107.44	N	0	WEEKLY	2026-03-01
+SP3200112	QQ852686B	ACTIVE	BASIC_STATE_PENSION	2013-03-09	15	75.35	N	0	WEEKLY	2026-03-01
+SP3200113	QQ299023D	SUSPENDED	BASIC_STATE_PENSION	05-Sep-2001	28	176.96	N	0	QUARTERLY	2026-03-01
+SP3200114	QQ639285C	CLOSED	NEW_STATE_PENSION	13-Jul-2019	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200115	QQ664783B	ACTIVE	NEW_STATE_PENSION	2023-09-08	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200116	QQ514028B	ACTIVE	NEW_STATE_PENSION	2017-05-17	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200117	QQ513686C	ACTIVE	BASIC_STATE_PENSION	2010-04-12	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200118	QQ775592B	ACTIVE	BASIC_STATE_PENSION	2008-12-17	19	120.08	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200119	QQ588057A	ACTIVE	NEW_STATE_PENSION	2021-07-16	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200120	QQ630799C	ACTIVE	NEW_STATE_PENSION	25/01/2023	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200121	QQ414531B	SUSPENDED	NEW_STATE_PENSION	19/01/2017	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200122	QQ650935B	ACTIVE	NEW_STATE_PENSION	01/02/2018	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200123	QQ558624B	ACTIVE	BASIC_STATE_PENSION	05-Sep-2011	23	145.36	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200124	QQ722748D	ACTIVE	BASIC_STATE_PENSION	28/01/2014	25	158.00	N	0	WEEKLY	2026-03-01
+SP3200125	QQ582409C	ACTIVE	NEW_STATE_PENSION	2022-09-16	16	104.98	N	0	WEEKLY	2026-03-01
+SP3200126	QQ531006C	ACTIVE	NEW_STATE_PENSION	2024-03-06	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200127	QQ844608A	ACTIVE	NEW_STATE_PENSION	2020-08-27	18	116.64	N	0	WEEKLY	2026-03-01
+SP3200128	QQ646841A	ACTIVE	BASIC_STATE_PENSION	2012-10-28	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200129	QQ376041C	ACTIVE	BASIC_STATE_PENSION	2004-12-22	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200130	QQ786892B	ACTIVE	BASIC_STATE_PENSION	2012-10-31	14	88.48	N	0	QUARTERLY	2026-03-01
+SP3200131	QQ333105B	ACTIVE	NEW_STATE_PENSION	03-Aug-2018	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200132	QQ516039D	ACTIVE	BASIC_STATE_PENSION	2011-03-13	21	114.81	N	0	FOUR_WEEKLY	2026-03-01
+SP3200133	QQ828929D	ACTIVE	NEW_STATE_PENSION	21-May-2024	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200134	QQ846742C	ACTIVE	NEW_STATE_PENSION	2025-06-06	34	214.88	N	0	QUARTERLY	2026-03-01
+SP3200135	QQ151122C	ACTIVE	NEW_STATE_PENSION	15-Aug-2020	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200136	QQ799265A	ACTIVE	BASIC_STATE_PENSION	2003-05-11	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200137	QQ271083B	ACTIVE	NEW_STATE_PENSION	2017-07-01	18	117.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200138	QQ834528B	CLOSED	BASIC_STATE_PENSION	09/06/2010	18	112.73	N	0	WEEKLY	2026-03-01
+SP3200139	QQ756438B	ACTIVE	NEW_STATE_PENSION	2019-09-06	25	139.45	Y	0	WEEKLY	2026-03-01
+SP3200140	QQ650307B	ACTIVE	NEW_STATE_PENSION	2016-07-12	22	139.04	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200141	QQ743017D	ACTIVE	NEW_STATE_PENSION	2024-07-30	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200142	QQ764386C	ACTIVE	BASIC_STATE_PENSION	31/10/2011	12	75.84	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200143	QQ632974D	ACTIVE	NEW_STATE_PENSION	08/01/2020	24	152.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200144	QQ213494C	ACTIVE	NEW_STATE_PENSION	2024-09-05	20	126.40	N	0	QUARTERLY	2026-03-01
+SP3200145	QQ733732C	ACTIVE	NEW_STATE_PENSION	20/02/2022	21	129.24	N	0	WEEKLY	2026-03-01
+SP3200146	QQ129972A	CLOSED	NEW_STATE_PENSION	2017-03-07	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200147	QQ183482B	ACTIVE	NEW_STATE_PENSION	11-Oct-2018	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200148	QQ484456A	CLOSED	BASIC_STATE_PENSION	28-May-2012	25	158.00	N	0	WEEKLY	2026-03-01
+SP3200149	QQ541493D	ACTIVE	NEW_STATE_PENSION	23/06/2022	27	170.64	N	0	WEEKLY	2026-03-01
+SP3200150	QQ288800C	CLOSED	BASIC_STATE_PENSION	2002-05-04	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200151	QQ620923B	ACTIVE	NEW_STATE_PENSION	2017-07-07	29	183.28	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200152	QQ653395C	ACTIVE	BASIC_STATE_PENSION	2004-07-29	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200153	QQ114958D	CLOSED	NEW_STATE_PENSION	28-Feb-2019	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200154	QQ217194C	ACTIVE	BASIC_STATE_PENSION	2002-07-16	15	104.54	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200155	QQ452068C	ACTIVE	BASIC_STATE_PENSION	15-Feb-2004	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200156	QQ853299B	ACTIVE	BASIC_STATE_PENSION	07-Jan-2007	19	100.40	N	0	WEEKLY	2026-03-01
+SP3200157	QQ122112D	ACTIVE	BASIC_STATE_PENSION	2015-02-22	20	148.59	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200158	QQ763896B	CLOSED	BASIC_STATE_PENSION	2009-08-06	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200159	QQ187490C	CLOSED	BASIC_STATE_PENSION	2001-08-26	34	214.88	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200160	QQ738739A	ACTIVE	NEW_STATE_PENSION	26-Mar-2024	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200161	QQ102304D	ACTIVE	BASIC_STATE_PENSION	10/10/2014	29	183.28	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200162	QQ318107C	ACTIVE	NEW_STATE_PENSION	2020-09-06	17	81.11	N	0	FOUR_WEEKLY	2026-03-01
+SP3200163	QQ374494C	ACTIVE	NEW_STATE_PENSION	2018-02-10	15	90.41	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200164	QQ250971A	ACTIVE	NEW_STATE_PENSION	2024-08-30	23	164.73	N	0	FOUR_WEEKLY	2026-03-01
+SP3200165	QQ868732B	ACTIVE	BASIC_STATE_PENSION	2003-03-12	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200166	QQ833806C	ACTIVE	NEW_STATE_PENSION	2023-11-15	14	79.87	N	0	WEEKLY	2026-03-01
+SP3200167	QQ641189B	ACTIVE	BASIC_STATE_PENSION	29-Sep-2011	34	215.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200168	QQ266341A	ACTIVE	BASIC_STATE_PENSION	17/01/2008	17	107.44	N	0	WEEKLY	2026-03-01
+SP3200169	QQ815989C	ACTIVE	NEW_STATE_PENSION	2021-07-06	21	132.72	N	0	WEEKLY	2026-03-01
+SP3200170	QQ367962A	CLOSED	NEW_STATE_PENSION	18-Apr-2022	31	195.92	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200171	QQ853479D	CLOSED	BASIC_STATE_PENSION	05-Apr-2015	31	193.98	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200172	QQ575474A	ACTIVE	NEW_STATE_PENSION	2023-02-07	12	88.21	N	0	FOUR_WEEKLY	2026-03-01
+SP3200173	QQ801010C	ACTIVE	BASIC_STATE_PENSION	01/09/2006	22	139.04	Y	0	QUARTERLY	2026-03-01
+SP3200174	QQ464239C	ACTIVE	BASIC_STATE_PENSION	23/10/2006	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200175	QQ479995D	ACTIVE	BASIC_STATE_PENSION	28/07/2014	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200176	QQ879838B	ACTIVE	NEW_STATE_PENSION	2024-09-05	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200177	QQ506511C	ACTIVE	BASIC_STATE_PENSION	2015-11-19	35	224.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200178	QQ401545A	ACTIVE	BASIC_STATE_PENSION	22-Nov-2000	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200179	QQ272396A	ACTIVE	NEW_STATE_PENSION	08-Jan-2018	19	124.39	N	0	FOUR_WEEKLY	2026-03-01
+SP3200180	QQ196537D	SUSPENDED	NEW_STATE_PENSION	07-Jun-2022	15	100.50	N	0	FOUR_WEEKLY	2026-03-01
+SP3200181	QQ753258A	ACTIVE	NEW_STATE_PENSION	01-Dec-2024	25	157.47	N	0	WEEKLY	2026-03-01
+SP3200182	QQ859114A	ACTIVE	BASIC_STATE_PENSION	25/08/2003	25	136.60	N	0	WEEKLY	2026-03-01
+SP3200183	QQ184685C	ACTIVE	BASIC_STATE_PENSION	26/02/2012	18	109.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200184	QQ845427C	ACTIVE	NEW_STATE_PENSION	2019-11-08	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200185	QQ124918D	ACTIVE	NEW_STATE_PENSION	18/02/2025	14	82.73	N	0	FOUR_WEEKLY	2026-03-01
+SP3200186	QQ838412B	ACTIVE	BASIC_STATE_PENSION	12-Dec-2002	29	183.28	N	0	WEEKLY	2026-03-01
+SP3200187	QQ272057D	ACTIVE	BASIC_STATE_PENSION	2010-06-28	15	97.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200188	QQ211161D	ACTIVE	BASIC_STATE_PENSION	05/04/2011	22	139.04	N	0	WEEKLY	2026-03-01
+SP3200189	QQ641179A	CLOSED	NEW_STATE_PENSION	03/05/2023	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200190	QQ274802D	ACTIVE	NEW_STATE_PENSION	07-May-2019	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200191	QQ570037B	ACTIVE	BASIC_STATE_PENSION	30-May-2011	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200192	QQ337200B	ACTIVE	BASIC_STATE_PENSION	17/03/2010	13	67.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200193	QQ428262B	ACTIVE	BASIC_STATE_PENSION	21-Mar-2007	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200194	QQ889210A	ACTIVE	BASIC_STATE_PENSION	30-Nov-2013	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200195	QQ157202C	CLOSED	BASIC_STATE_PENSION	06/01/2011	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200196	QQ834739A	ACTIVE	NEW_STATE_PENSION	2020-04-27	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200197	QQ818043A	CLOSED	BASIC_STATE_PENSION	16/10/2006	21	121.48	N	0	WEEKLY	2026-03-01
+SP3200198	QQ443852B	ACTIVE	BASIC_STATE_PENSION	19/12/2015	21	124.54	N	0	FOUR_WEEKLY	2026-03-01
+SP3200199	QQ836519A	ACTIVE	BASIC_STATE_PENSION	2002-12-15	19	120.08	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200200	QQ498476D	ACTIVE	NEW_STATE_PENSION	2023-06-22	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200201	QQ652782B	ACTIVE	BASIC_STATE_PENSION	04-Sep-2011	11	77.79	N	0	WEEKLY	2026-03-01
+SP3200202	QQ681340D	ACTIVE	NEW_STATE_PENSION	05/03/2020	26	188.42	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200203	QQ324807A	ACTIVE	BASIC_STATE_PENSION	2009-07-04	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200204	QQ446260D	ACTIVE	NEW_STATE_PENSION	25-May-2021	16	94.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200205	QQ873057D	ACTIVE	NEW_STATE_PENSION	12-Mar-2022	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200206	QQ461032B	CLOSED	NEW_STATE_PENSION	2025-03-10	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200207	QQ497164A	CLOSED	NEW_STATE_PENSION	2019-09-29	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200208	QQ853157C	CLOSED	BASIC_STATE_PENSION	31/05/2009	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200209	QQ247395D	ACTIVE	BASIC_STATE_PENSION	24-Apr-2015	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200210	QQ550069C	CLOSED	BASIC_STATE_PENSION	24-Jan-2010	26	171.99	Y	0	WEEKLY	2026-03-01
+SP3200211	QQ763244A	ACTIVE	NEW_STATE_PENSION	2016-11-20	22	139.04	N	0	WEEKLY	2026-03-01
+SP3200212	QQ674147B	ACTIVE	BASIC_STATE_PENSION	04-Jan-2011	29	182.35	N	0	FOUR_WEEKLY	2026-03-01
+SP3200213	QQ764529B	ACTIVE	BASIC_STATE_PENSION	02/02/2011	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200214	QQ805529B	CLOSED	BASIC_STATE_PENSION	2014-08-13	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200215	QQ760812B	ACTIVE	NEW_STATE_PENSION	2019-08-13	13	77.27	N	0	FOUR_WEEKLY	2026-03-01
+SP3200216	QQ107360D	ACTIVE	NEW_STATE_PENSION	13/01/2020	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200217	QQ452280B	ACTIVE	NEW_STATE_PENSION	2023-11-04	23	146.66	N	0	FOUR_WEEKLY	2026-03-01
+SP3200218	QQ269422B	CLOSED	NEW_STATE_PENSION	07-Feb-2026	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200219	QQ342997D	ACTIVE	NEW_STATE_PENSION	2023-06-20	16	101.12	N	0	WEEKLY	2026-03-01
+SP3200220	QQ435353B	ACTIVE	NEW_STATE_PENSION	26/08/2023	13	82.16	Y	0	WEEKLY	2026-03-01
+SP3200221	QQ860153D	ACTIVE	NEW_STATE_PENSION	05-May-2024	29	139.19	N	0	WEEKLY	2026-03-01
+SP3200222	QQ181529C	ACTIVE	NEW_STATE_PENSION	13/09/2023	31	208.32	N	0	QUARTERLY	2026-03-01
+SP3200223	QQ614843A	ACTIVE	NEW_STATE_PENSION	06-Jul-2025	35	221.20	N	0	QUARTERLY	2026-03-01
+SP3200224	QQ807466B	CLOSED	NEW_STATE_PENSION	02-Jan-2020	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200225	QQ443111C	ACTIVE	BASIC_STATE_PENSION	25-May-2010	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200226	QQ457089C	ACTIVE	BASIC_STATE_PENSION	21/06/2011	19	120.08	Y	0	WEEKLY	2026-03-01
+SP3200227	QQ614793B	CLOSED	BASIC_STATE_PENSION	2010-08-31	11	69.52	N	0	QUARTERLY	2026-03-01
+SP3200228	QQ243410B	ACTIVE	NEW_STATE_PENSION	2022-01-15	13	62.15	N	0	WEEKLY	2026-03-01
+SP3200229	QQ468313B	SUSPENDED	BASIC_STATE_PENSION	2015-11-13	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200230	QQ717637A	ACTIVE	BASIC_STATE_PENSION	11/05/2001	13	82.16	Y	0	WEEKLY	2026-03-01
+SP3200231	QQ655961A	ACTIVE	BASIC_STATE_PENSION	2014-10-01	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3200232	QQ459855D	CLOSED	BASIC_STATE_PENSION	03/07/2015	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200233	QQ875422C	ACTIVE	NEW_STATE_PENSION	25-Aug-2017	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200234	QQ635897C	ACTIVE	BASIC_STATE_PENSION	2013-03-11	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200235	QQ422710C	ACTIVE	NEW_STATE_PENSION	2019-12-26	30	189.60	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200236	QQ849740A	ACTIVE	NEW_STATE_PENSION	2023-10-27	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200237	QQ262024C	CLOSED	BASIC_STATE_PENSION	23/12/2006	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200238	QQ814336B	ACTIVE	BASIC_STATE_PENSION	17/06/2007	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200239	QQ234111D	ACTIVE	NEW_STATE_PENSION	2025-01-04	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200240	QQ102626A	ACTIVE	NEW_STATE_PENSION	22/05/2017	30	189.60	N	0	QUARTERLY	2026-03-01
+SP3200241	QQ690932B	ACTIVE	BASIC_STATE_PENSION	05-Jan-2001	21	112.66	N	0	WEEKLY	2026-03-01
+SP3200242	QQ607657A	SUSPENDED	BASIC_STATE_PENSION	2007-08-19	27	192.85	Y	0	WEEKLY	2026-03-01
+SP3200243	QQ319495D	ACTIVE	BASIC_STATE_PENSION	29/04/2014	15	94.42	N	0	WEEKLY	2026-03-01
+SP3200244	QQ296585D	SUSPENDED	NEW_STATE_PENSION	28/10/2021	29	190.98	Y	0	WEEKLY	2026-03-01
+SP3200245	QQ447030D	ACTIVE	NEW_STATE_PENSION	07/07/2020	30	212.00	N	0	WEEKLY	2026-03-01
+SP3200246	QQ412760D	ACTIVE	BASIC_STATE_PENSION	2010-03-29	31	195.92	N	0	WEEKLY	2026-03-01
+SP3200247	QQ738399D	ACTIVE	BASIC_STATE_PENSION	09/02/2009	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200248	QQ271908B	ACTIVE	NEW_STATE_PENSION	10-Oct-2019	21	143.20	N	0	WEEKLY	2026-03-01
+SP3200249	QQ838527C	ACTIVE	NEW_STATE_PENSION	2020-02-07	20	102.01	N	0	FOUR_WEEKLY	2026-03-01
+SP3200250	QQ470949B	ACTIVE	NEW_STATE_PENSION	2021-12-24	17	93.70	N	0	FOUR_WEEKLY	2026-03-01
+SP3200251	QQ849417D	CLOSED	BASIC_STATE_PENSION	2015-05-02	27	200.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200252	QQ562518C	ACTIVE	NEW_STATE_PENSION	2017-11-07	11	52.93	N	0	FOUR_WEEKLY	2026-03-01
+SP3200253	QQ468580C	ACTIVE	NEW_STATE_PENSION	27-Jun-2018	30	189.60	N	0	WEEKLY	2026-03-01
+SP3200254	QQ675225D	ACTIVE	BASIC_STATE_PENSION	18/08/2008	30	189.60	N	0	WEEKLY	2026-03-01
+SP3200255	QQ147986B	ACTIVE	BASIC_STATE_PENSION	18/08/2013	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200256	QQ819980D	ACTIVE	NEW_STATE_PENSION	2023-04-23	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200257	QQ375753B	ACTIVE	BASIC_STATE_PENSION	2015-05-09	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200258	QQ634255D	ACTIVE	BASIC_STATE_PENSION	06/04/2008	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200259	QQ424287D	SUSPENDED	NEW_STATE_PENSION	18/05/2020	26	131.75	N	0	WEEKLY	2026-03-01
+SP3200260	QQ499197D	ACTIVE	NEW_STATE_PENSION	06/06/2016	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200261	QQ826982C	CLOSED	BASIC_STATE_PENSION	2010-05-20	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200262	QQ572888C	ACTIVE	BASIC_STATE_PENSION	04/04/2002	22	109.23	N	0	WEEKLY	2026-03-01
+SP3200263	QQ225600B	ACTIVE	BASIC_STATE_PENSION	20-Apr-2013	10	49.46	N	0	WEEKLY	2026-03-01
+SP3200264	QQ319083D	ACTIVE	NEW_STATE_PENSION	26-Jan-2023	31	171.68	Y	0	WEEKLY	2026-03-01
+SP3200265	QQ682493D	ACTIVE	NEW_STATE_PENSION	17/12/2020	13	69.93	N	0	QUARTERLY	2026-03-01
+SP3200266	QQ386315B	ACTIVE	NEW_STATE_PENSION	2025-07-25	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200267	QQ512325D	CLOSED	NEW_STATE_PENSION	2025-09-23	17	108.53	Y	0	WEEKLY	2026-03-01
+SP3200268	QQ454243B	ACTIVE	BASIC_STATE_PENSION	15/10/2010	17	107.44	N	0	WEEKLY	2026-03-01
+SP3200269	QQ132993C	ACTIVE	NEW_STATE_PENSION	2021-06-27	20	99.31	N	0	WEEKLY	2026-03-01
+SP3200270	QQ652780B	ACTIVE	NEW_STATE_PENSION	2017-07-27	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200271	QQ303302C	ACTIVE	NEW_STATE_PENSION	10-Nov-2022	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200272	QQ361020A	CLOSED	NEW_STATE_PENSION	2024-06-29	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200273	QQ552209C	ACTIVE	NEW_STATE_PENSION	2018-07-10	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200274	QQ751270C	ACTIVE	BASIC_STATE_PENSION	2009-04-15	17	92.54	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200275	QQ889431A	ACTIVE	NEW_STATE_PENSION	2016-06-25	31	203.67	N	0	FOUR_WEEKLY	2026-03-01
+SP3200276	QQ884142A	ACTIVE	BASIC_STATE_PENSION	2014-03-16	35	176.10	N	0	WEEKLY	2026-03-01
+SP3200277	QQ325758A	ACTIVE	NEW_STATE_PENSION	05-Dec-2019	11	69.52	N	0	WEEKLY	2026-03-01
+SP3200278	QQ806973D	ACTIVE	NEW_STATE_PENSION	2016-09-02	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200279	QQ443425B	CLOSED	BASIC_STATE_PENSION	24-Mar-2014	23	141.77	N	0	WEEKLY	2026-03-01
+SP3200280	QQ261527C	ACTIVE	NEW_STATE_PENSION	2018-12-03	16	85.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200281	QQ853552D	SUSPENDED	BASIC_STATE_PENSION	24-Dec-2005	26	184.45	N	0	WEEKLY	2026-03-01
+SP3200282	QQ400579C	ACTIVE	BASIC_STATE_PENSION	18-Aug-2001	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200283	QQ674170C	ACTIVE	NEW_STATE_PENSION	01-Jan-2023	25	152.07	N	0	FOUR_WEEKLY	2026-03-01
+SP3200284	QQ547389A	ACTIVE	BASIC_STATE_PENSION	2003-09-14	14	88.48	N	0	QUARTERLY	2026-03-01
+SP3200285	QQ668030C	ACTIVE	NEW_STATE_PENSION	2023-09-22	32	216.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200286	QQ164559D	ACTIVE	NEW_STATE_PENSION	02/05/2018	35	241.34	N	0	WEEKLY	2026-03-01
+SP3200287	QQ753681C	ACTIVE	NEW_STATE_PENSION	2023-09-02	31	195.92	N	0	QUARTERLY	2026-03-01
+SP3200288	QQ456691B	ACTIVE	NEW_STATE_PENSION	30/12/2025	16	86.97	N	0	QUARTERLY	2026-03-01
+SP3200289	QQ326458C	ACTIVE	NEW_STATE_PENSION	06/12/2024	15	83.06	N	0	FOUR_WEEKLY	2026-03-01
+SP3200290	QQ227487C	ACTIVE	NEW_STATE_PENSION	14/09/2019	35	221.20	N	0	WEEKLY	2026-03-01
+SP3200291	QQ728955A	ACTIVE	NEW_STATE_PENSION	2023-09-30	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200292	QQ611569D	ACTIVE	NEW_STATE_PENSION	04/01/2022	19	120.08	N	0	WEEKLY	2026-03-01
+SP3200293	QQ307059B	ACTIVE	BASIC_STATE_PENSION	15/01/2007	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200294	QQ207053A	ACTIVE	BASIC_STATE_PENSION	28-Jun-2009	32	202.24	N	0	QUARTERLY	2026-03-01
+SP3200295	QQ894310D	ACTIVE	BASIC_STATE_PENSION	19-Apr-2013	35	260.98	N	0	FOUR_WEEKLY	2026-03-01
+SP3200296	QQ524985A	ACTIVE	BASIC_STATE_PENSION	2007-03-07	18	121.94	N	0	WEEKLY	2026-03-01
+SP3200297	QQ503670A	ACTIVE	NEW_STATE_PENSION	2023-10-23	31	199.04	N	0	WEEKLY	2026-03-01
+SP3200298	QQ105525C	ACTIVE	BASIC_STATE_PENSION	06/07/2015	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200299	QQ755853B	ACTIVE	NEW_STATE_PENSION	20-Apr-2021	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200300	QQ583983C	ACTIVE	NEW_STATE_PENSION	26-Dec-2020	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200301	QQ581778A	ACTIVE	NEW_STATE_PENSION	2023-08-26	25	159.30	N	0	WEEKLY	2026-03-01
+SP3200302	QQ359732C	ACTIVE	NEW_STATE_PENSION	2023-07-23	24	147.75	N	0	WEEKLY	2026-03-01
+SP3200303	QQ170668C	ACTIVE	BASIC_STATE_PENSION	11-Apr-2013	18	117.94	N	0	WEEKLY	2026-03-01
+SP3200304	QQ240430A	ACTIVE	BASIC_STATE_PENSION	27-May-2011	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200305	QQ607812B	ACTIVE	BASIC_STATE_PENSION	19/07/2010	20	134.53	N	0	FOUR_WEEKLY	2026-03-01
+SP3200306	QQ862763D	CLOSED	BASIC_STATE_PENSION	09-Feb-2004	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200307	QQ606210D	SUSPENDED	BASIC_STATE_PENSION	16-Mar-2014	34	214.88	N	0	WEEKLY	2026-03-01
+SP3200308	QQ333503C	ACTIVE	NEW_STATE_PENSION	27/01/2024	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200309	QQ845770B	CLOSED	BASIC_STATE_PENSION	01/11/2014	29	204.44	N	0	WEEKLY	2026-03-01
+SP3200310	QQ174088C	ACTIVE	NEW_STATE_PENSION	2023-04-01	31	194.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200311	QQ828636C	ACTIVE	BASIC_STATE_PENSION	14/03/2010	24	128.13	N	0	FOUR_WEEKLY	2026-03-01
+SP3200312	QQ350933C	CLOSED	NEW_STATE_PENSION	31-Mar-2025	31	195.92	N	0	WEEKLY	2026-03-01
+SP3200313	QQ831585C	ACTIVE	BASIC_STATE_PENSION	21-Apr-2009	10	51.25	N	0	FOUR_WEEKLY	2026-03-01
+SP3200314	QQ630599A	ACTIVE	BASIC_STATE_PENSION	2007-11-24	34	229.18	N	0	FOUR_WEEKLY	2026-03-01
+SP3200315	QQ823368C	ACTIVE	NEW_STATE_PENSION	12-Sep-2016	13	82.16	N	0	QUARTERLY	2026-03-01
+SP3200316	QQ666315A	ACTIVE	NEW_STATE_PENSION	03/01/2019	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200317	QQ527756C	ACTIVE	BASIC_STATE_PENSION	2009-04-17	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200318	QQ156328C	ACTIVE	BASIC_STATE_PENSION	2008-06-26	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200319	QQ570889B	SUSPENDED	NEW_STATE_PENSION	20/12/2021	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200320	QQ383466B	ACTIVE	NEW_STATE_PENSION	28/04/2017	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200321	QQ291636C	ACTIVE	BASIC_STATE_PENSION	31-Jul-2010	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200322	QQ612098A	ACTIVE	BASIC_STATE_PENSION	2006-10-12	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200323	QQ209113A	ACTIVE	NEW_STATE_PENSION	30/08/2018	12	74.71	N	0	WEEKLY	2026-03-01
+SP3200324	QQ551694B	ACTIVE	BASIC_STATE_PENSION	15/05/2002	25	154.62	N	0	FOUR_WEEKLY	2026-03-01
+SP3200325	QQ420381B	ACTIVE	BASIC_STATE_PENSION	2014-02-17	13	82.16	N	0	QUARTERLY	2026-03-01
+SP3200326	QQ270414A	ACTIVE	NEW_STATE_PENSION	03/10/2025	35	221.20	N	0	WEEKLY	2026-03-01
+SP3200327	QQ751468B	ACTIVE	NEW_STATE_PENSION	2025-06-15	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200328	QQ716287B	ACTIVE	BASIC_STATE_PENSION	2015-07-20	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200329	QQ530341D	ACTIVE	NEW_STATE_PENSION	2016-04-23	19	120.08	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200330	QQ415990C	ACTIVE	NEW_STATE_PENSION	07/07/2024	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200331	QQ654938A	ACTIVE	BASIC_STATE_PENSION	2001-12-15	28	199.78	N	0	FOUR_WEEKLY	2026-03-01
+SP3200332	QQ413936A	ACTIVE	BASIC_STATE_PENSION	04/09/2004	26	181.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200333	QQ349884B	ACTIVE	NEW_STATE_PENSION	30/09/2023	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200334	QQ377916C	ACTIVE	NEW_STATE_PENSION	2023-09-03	23	162.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200335	QQ767537A	CLOSED	NEW_STATE_PENSION	2020-09-15	12	85.15	N	0	FOUR_WEEKLY	2026-03-01
+SP3200336	QQ348134D	ACTIVE	NEW_STATE_PENSION	16/07/2019	20	109.75	N	0	FOUR_WEEKLY	2026-03-01
+SP3200337	QQ396955D	ACTIVE	NEW_STATE_PENSION	2023-11-13	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200338	QQ616957A	ACTIVE	BASIC_STATE_PENSION	18-Mar-2001	13	85.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200339	QQ209707A	ACTIVE	NEW_STATE_PENSION	2018-12-19	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200340	QQ276987C	ACTIVE	BASIC_STATE_PENSION	23-Mar-2008	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200341	QQ812984D	ACTIVE	BASIC_STATE_PENSION	2009-08-10	21	109.76	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200342	QQ236695D	ACTIVE	BASIC_STATE_PENSION	10/12/2007	11	71.23	N	0	FOUR_WEEKLY	2026-03-01
+SP3200343	QQ250116D	ACTIVE	NEW_STATE_PENSION	2023-04-25	29	212.49	N	0	FOUR_WEEKLY	2026-03-01
+SP3200344	QQ593003D	ACTIVE	NEW_STATE_PENSION	2023-10-28	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200345	QQ369755A	CLOSED	NEW_STATE_PENSION	14/05/2023	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200346	QQ867464D	ACTIVE	BASIC_STATE_PENSION	12-Nov-2008	29	183.28	N	0	WEEKLY	2026-03-01
+SP3200347	QQ753468B	ACTIVE	NEW_STATE_PENSION	2023-01-08	19	120.08	Y	0	WEEKLY	2026-03-01
+SP3200348	QQ229940C	ACTIVE	BASIC_STATE_PENSION	2014-07-23	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200349	QQ692031B	ACTIVE	NEW_STATE_PENSION	21-Jun-2024	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200350	QQ647239D	ACTIVE	NEW_STATE_PENSION	2019-05-10	30	189.60	N	0	QUARTERLY	2026-03-01
+SP3200351	QQ752747D	ACTIVE	BASIC_STATE_PENSION	22/08/2006	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200352	QQ143344B	CLOSED	BASIC_STATE_PENSION	2006-04-21	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200353	QQ574080B	ACTIVE	BASIC_STATE_PENSION	22/02/2014	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3200354	QQ243407B	ACTIVE	BASIC_STATE_PENSION	05/09/2006	32	202.24	N	0	QUARTERLY	2026-03-01
+SP3200355	QQ466344C	CLOSED	NEW_STATE_PENSION	2021-08-13	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200356	QQ759664D	ACTIVE	NEW_STATE_PENSION	2026-01-21	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200357	QQ855000A	ACTIVE	NEW_STATE_PENSION	2017-01-09	34	176.90	N	0	FOUR_WEEKLY	2026-03-01
+SP3200358	QQ805100B	ACTIVE	BASIC_STATE_PENSION	02-Dec-2000	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200359	QQ690714B	ACTIVE	NEW_STATE_PENSION	2020-11-14	19	120.08	N	0	QUARTERLY	2026-03-01
+SP3200360	QQ291495D	CLOSED	NEW_STATE_PENSION	2024-01-19	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200361	QQ577805D	ACTIVE	BASIC_STATE_PENSION	2004-08-14	32	186.78	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200362	QQ615560C	ACTIVE	NEW_STATE_PENSION	16/05/2020	21	133.41	N	0	WEEKLY	2026-03-01
+SP3200363	QQ389638B	ACTIVE	BASIC_STATE_PENSION	2007-02-11	23	163.38	N	0	FOUR_WEEKLY	2026-03-01
+SP3200364	QQ413165B	ACTIVE	NEW_STATE_PENSION	18/08/2022	12	75.84	N	0	WEEKLY	2026-03-01
+SP3200365	QQ130319A	CLOSED	BASIC_STATE_PENSION	2003-01-08	33	203.34	N	0	WEEKLY	2026-03-01
+SP3200366	QQ366475B	SUSPENDED	BASIC_STATE_PENSION	2015-01-30	32	202.24	N	0	WEEKLY	2026-03-01
+SP3200367	QQ630492A	ACTIVE	NEW_STATE_PENSION	14/10/2020	22	139.04	N	0	QUARTERLY	2026-03-01
+SP3200368	QQ409634D	ACTIVE	BASIC_STATE_PENSION	2004-06-09	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200369	QQ880421B	ACTIVE	NEW_STATE_PENSION	2021-07-31	34	183.22	N	0	FOUR_WEEKLY	2026-03-01
+SP3200370	QQ334138B	ACTIVE	NEW_STATE_PENSION	2024-02-03	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200371	QQ368203D	ACTIVE	BASIC_STATE_PENSION	2007-03-31	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200372	QQ585389B	CLOSED	BASIC_STATE_PENSION	18-Feb-2015	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200373	QQ674870D	ACTIVE	BASIC_STATE_PENSION	2009-03-28	10	63.20	N	0	WEEKLY	2026-03-01
+SP3200374	QQ776888D	ACTIVE	BASIC_STATE_PENSION	07/08/2003	32	202.24	N	0	WEEKLY	2026-03-01
+SP3200375	QQ737803A	ACTIVE	NEW_STATE_PENSION	2016-06-20	27	169.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200376	QQ411506C	ACTIVE	NEW_STATE_PENSION	2017-03-13	11	69.52	N	0	WEEKLY	2026-03-01
+SP3200377	QQ351584C	ACTIVE	NEW_STATE_PENSION	2018-01-04	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200378	QQ192193A	ACTIVE	BASIC_STATE_PENSION	25/09/2015	31	195.92	N	0	WEEKLY	2026-03-01
+SP3200379	QQ208016D	ACTIVE	NEW_STATE_PENSION	2025-05-21	18	113.76	N	0	WEEKLY	2026-03-01
+SP3200380	QQ635842C	CLOSED	NEW_STATE_PENSION	09/01/2024	25	176.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200381	QQ402532A	ACTIVE	BASIC_STATE_PENSION	11-Feb-2006	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200382	QQ515341A	ACTIVE	BASIC_STATE_PENSION	2013-05-17	20	95.14	N	0	FOUR_WEEKLY	2026-03-01
+SP3200383	QQ419699A	CLOSED	BASIC_STATE_PENSION	19/06/2014	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200384	QQ129579D	ACTIVE	NEW_STATE_PENSION	03-Sep-2021	19	137.57	N	0	WEEKLY	2026-03-01
+SP3200385	QQ703216C	SUSPENDED	NEW_STATE_PENSION	29/09/2023	35	221.20	N	0	WEEKLY	2026-03-01
+SP3200386	QQ327963A	ACTIVE	NEW_STATE_PENSION	2016-11-09	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200387	QQ339469A	ACTIVE	BASIC_STATE_PENSION	28-May-2006	17	101.22	N	0	WEEKLY	2026-03-01
+SP3200388	QQ584044B	ACTIVE	NEW_STATE_PENSION	2026-02-01	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200389	QQ498224A	ACTIVE	BASIC_STATE_PENSION	04-Aug-2015	11	69.52	N	0	WEEKLY	2026-03-01
+SP3200390	QQ131297D	ACTIVE	NEW_STATE_PENSION	12-May-2018	29	159.95	N	0	FOUR_WEEKLY	2026-03-01
+SP3200391	QQ202958A	SUSPENDED	NEW_STATE_PENSION	15-Jun-2021	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200392	QQ335258C	ACTIVE	NEW_STATE_PENSION	2023-12-25	13	63.33	N	0	FOUR_WEEKLY	2026-03-01
+SP3200393	QQ188100D	ACTIVE	BASIC_STATE_PENSION	2009-05-11	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200394	QQ831294A	ACTIVE	NEW_STATE_PENSION	2023-12-26	19	106.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200395	QQ228356A	ACTIVE	NEW_STATE_PENSION	2020-08-06	19	116.13	N	0	FOUR_WEEKLY	2026-03-01
+SP3200396	QQ751955A	CLOSED	BASIC_STATE_PENSION	03/09/2010	16	77.18	Y	0	QUARTERLY	2026-03-01
+SP3200397	QQ196682A	SUSPENDED	NEW_STATE_PENSION	2018-07-21	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200398	QQ644559C	ACTIVE	BASIC_STATE_PENSION	2015-03-12	25	158.00	N	0	WEEKLY	2026-03-01
+SP3200399	QQ706919D	SUSPENDED	NEW_STATE_PENSION	08/04/2025	32	202.24	N	0	QUARTERLY	2026-03-01
+SP3200400	QQ518843D	ACTIVE	BASIC_STATE_PENSION	22/08/2004	19	120.08	N	0	QUARTERLY	2026-03-01
+SP3200401	QQ827023B	ACTIVE	BASIC_STATE_PENSION	04-Jun-2006	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200402	QQ189514A	ACTIVE	BASIC_STATE_PENSION	2000-08-30	19	120.08	N	0	WEEKLY	2026-03-01
+SP3200403	QQ796327C	ACTIVE	NEW_STATE_PENSION	2025-05-13	23	145.36	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200404	QQ848879C	ACTIVE	BASIC_STATE_PENSION	2013-08-31	15	85.70	N	0	FOUR_WEEKLY	2026-03-01
+SP3200405	QQ841317C	ACTIVE	BASIC_STATE_PENSION	27/09/2012	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200406	QQ681088C	ACTIVE	BASIC_STATE_PENSION	19-Dec-2001	30	175.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200407	QQ544682D	ACTIVE	BASIC_STATE_PENSION	14-Dec-2001	34	190.13	Y	0	WEEKLY	2026-03-01
+SP3200408	QQ688516C	CLOSED	BASIC_STATE_PENSION	21/11/2015	19	103.24	N	0	WEEKLY	2026-03-01
+SP3200409	QQ161964A	ACTIVE	BASIC_STATE_PENSION	2014-02-06	16	101.12	Y	0	WEEKLY	2026-03-01
+SP3200410	QQ276735A	CLOSED	BASIC_STATE_PENSION	2008-04-17	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200411	QQ615258D	ACTIVE	BASIC_STATE_PENSION	2016-02-09	17	118.83	N	0	WEEKLY	2026-03-01
+SP3200412	QQ767074C	ACTIVE	NEW_STATE_PENSION	01-Mar-2018	24	169.71	N	0	FOUR_WEEKLY	2026-03-01
+SP3200413	QQ733100C	CLOSED	NEW_STATE_PENSION	25-Jul-2017	22	139.04	N	0	WEEKLY	2026-03-01
+SP3200414	QQ289204A	ACTIVE	BASIC_STATE_PENSION	2002-07-19	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200415	QQ882855A	ACTIVE	NEW_STATE_PENSION	13/02/2024	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200416	QQ241094C	ACTIVE	NEW_STATE_PENSION	28-Feb-2023	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200417	QQ543949A	ACTIVE	BASIC_STATE_PENSION	14/01/2009	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200418	QQ676823C	CLOSED	BASIC_STATE_PENSION	14/01/2006	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200419	QQ508143C	ACTIVE	NEW_STATE_PENSION	2016-06-24	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200420	QQ487318A	ACTIVE	NEW_STATE_PENSION	2021-12-30	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200421	QQ761096A	ACTIVE	BASIC_STATE_PENSION	2010-07-26	16	101.12	N	0	QUARTERLY	2026-03-01
+SP3200422	QQ672499B	ACTIVE	NEW_STATE_PENSION	2019-04-22	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200423	QQ621180D	CLOSED	BASIC_STATE_PENSION	2006-10-06	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200424	QQ534416B	ACTIVE	BASIC_STATE_PENSION	2014-12-20	19	141.25	N	0	WEEKLY	2026-03-01
+SP3200425	QQ603093C	ACTIVE	NEW_STATE_PENSION	23-Mar-2026	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200426	QQ368188A	ACTIVE	NEW_STATE_PENSION	2021-02-08	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200427	QQ208257B	ACTIVE	BASIC_STATE_PENSION	2010-04-12	26	164.32	N	0	QUARTERLY	2026-03-01
+SP3200428	QQ352206B	ACTIVE	BASIC_STATE_PENSION	01-Feb-2011	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200429	QQ383697A	ACTIVE	BASIC_STATE_PENSION	25/01/2006	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200430	QQ672310C	SUSPENDED	NEW_STATE_PENSION	2024-05-06	22	148.95	N	0	FOUR_WEEKLY	2026-03-01
+SP3200431	QQ402762A	ACTIVE	NEW_STATE_PENSION	19-Aug-2022	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200432	QQ295131B	ACTIVE	BASIC_STATE_PENSION	2013-11-27	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200433	QQ710485A	ACTIVE	BASIC_STATE_PENSION	11-Jan-2016	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200434	QQ579431B	ACTIVE	BASIC_STATE_PENSION	26/04/2003	23	117.58	N	0	FOUR_WEEKLY	2026-03-01
+SP3200435	QQ757079D	ACTIVE	BASIC_STATE_PENSION	18/08/2003	13	82.16	N	0	WEEKLY	2026-03-01
+SP3200436	QQ853109A	ACTIVE	BASIC_STATE_PENSION	29-May-2000	18	99.24	N	0	QUARTERLY	2026-03-01
+SP3200437	QQ530454C	ACTIVE	NEW_STATE_PENSION	14-May-2016	31	168.05	N	0	WEEKLY	2026-03-01
+SP3200438	QQ425884D	SUSPENDED	NEW_STATE_PENSION	15/11/2022	30	181.33	N	0	WEEKLY	2026-03-01
+SP3200439	QQ321521B	ACTIVE	NEW_STATE_PENSION	14/05/2021	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200440	QQ427322D	SUSPENDED	BASIC_STATE_PENSION	22-Dec-2010	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200441	QQ865878D	ACTIVE	NEW_STATE_PENSION	22-Jun-2023	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200442	QQ615540A	ACTIVE	BASIC_STATE_PENSION	2003-08-05	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200443	QQ124780A	ACTIVE	NEW_STATE_PENSION	2025-01-02	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200444	QQ171484C	ACTIVE	BASIC_STATE_PENSION	08/10/2014	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200445	QQ437298D	CLOSED	NEW_STATE_PENSION	2020-07-18	31	178.34	N	0	FOUR_WEEKLY	2026-03-01
+SP3200446	QQ641654C	ACTIVE	NEW_STATE_PENSION	22-Jul-2019	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200447	QQ356868B	ACTIVE	NEW_STATE_PENSION	2017-08-24	35	199.02	N	0	FOUR_WEEKLY	2026-03-01
+SP3200448	QQ401386C	ACTIVE	NEW_STATE_PENSION	25-Oct-2021	32	202.24	N	0	WEEKLY	2026-03-01
+SP3200449	QQ388129B	ACTIVE	BASIC_STATE_PENSION	13/09/2011	18	94.94	Y	0	WEEKLY	2026-03-01
+SP3200450	QQ314262C	CLOSED	BASIC_STATE_PENSION	08-May-2006	17	103.23	N	0	FOUR_WEEKLY	2026-03-01
+SP3200451	QQ698763B	ACTIVE	NEW_STATE_PENSION	25-Jul-2016	20	139.51	N	0	FOUR_WEEKLY	2026-03-01
+SP3200452	QQ177005C	ACTIVE	BASIC_STATE_PENSION	26-Jun-2008	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200453	QQ607172D	ACTIVE	BASIC_STATE_PENSION	05/03/2013	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200454	QQ408260C	ACTIVE	NEW_STATE_PENSION	2023-11-25	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200455	QQ659492A	ACTIVE	NEW_STATE_PENSION	2025-09-22	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200456	QQ228402D	ACTIVE	NEW_STATE_PENSION	10/11/2023	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200457	QQ561748A	SUSPENDED	NEW_STATE_PENSION	16-May-2022	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200458	QQ262391C	ACTIVE	NEW_STATE_PENSION	2019-07-11	11	54.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200459	QQ488320D	ACTIVE	NEW_STATE_PENSION	14-Nov-2022	27	187.38	N	0	WEEKLY	2026-03-01
+SP3200460	QQ350106C	ACTIVE	NEW_STATE_PENSION	04/09/2023	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200461	QQ125443C	ACTIVE	BASIC_STATE_PENSION	04/08/2008	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200462	QQ691409B	CLOSED	BASIC_STATE_PENSION	2003-08-20	35	237.87	N	0	WEEKLY	2026-03-01
+SP3200463	QQ551355A	ACTIVE	BASIC_STATE_PENSION	2011-03-16	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200464	QQ419929B	ACTIVE	NEW_STATE_PENSION	2019-09-20	17	107.44	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200465	QQ173457A	CLOSED	NEW_STATE_PENSION	22/02/2020	26	172.17	N	0	FOUR_WEEKLY	2026-03-01
+SP3200466	QQ877531D	ACTIVE	NEW_STATE_PENSION	02/05/2019	11	69.52	N	0	WEEKLY	2026-03-01
+SP3200467	QQ150354D	ACTIVE	BASIC_STATE_PENSION	19-Apr-2003	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200468	QQ634294A	ACTIVE	NEW_STATE_PENSION	2017-01-07	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200469	QQ123363C	ACTIVE	BASIC_STATE_PENSION	2012-05-14	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200470	QQ252179B	CLOSED	BASIC_STATE_PENSION	20/06/2000	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200471	QQ632336B	ACTIVE	NEW_STATE_PENSION	01/06/2020	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200472	QQ876367A	ACTIVE	NEW_STATE_PENSION	14/03/2024	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200473	QQ537237B	ACTIVE	BASIC_STATE_PENSION	21-May-2013	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200474	QQ836589A	ACTIVE	BASIC_STATE_PENSION	2008-12-02	35	168.09	N	0	WEEKLY	2026-03-01
+SP3200475	QQ817880B	ACTIVE	NEW_STATE_PENSION	2020-11-16	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200476	QQ574692A	CLOSED	BASIC_STATE_PENSION	2016-01-25	23	140.89	N	0	QUARTERLY	2026-03-01
+SP3200477	QQ505914D	ACTIVE	BASIC_STATE_PENSION	25-Aug-2013	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200478	QQ153971A	ACTIVE	BASIC_STATE_PENSION	2006-07-13	22	139.04	N	0	WEEKLY	2026-03-01
+SP3200479	QQ582211B	CLOSED	BASIC_STATE_PENSION	19-Dec-2008	17	107.44	N	0	WEEKLY	2026-03-01
+SP3200480	QQ678821D	CLOSED	NEW_STATE_PENSION	2025-01-13	30	189.60	N	0	QUARTERLY	2026-03-01
+SP3200481	QQ780436B	ACTIVE	NEW_STATE_PENSION	2022-10-13	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200482	QQ556630B	CLOSED	NEW_STATE_PENSION	19-Mar-2021	32	180.31	N	0	FOUR_WEEKLY	2026-03-01
+SP3200483	QQ255534B	ACTIVE	NEW_STATE_PENSION	05-Aug-2018	14	88.48	N	0	QUARTERLY	2026-03-01
+SP3200484	QQ674341D	ACTIVE	BASIC_STATE_PENSION	2012-07-16	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200485	QQ346297B	ACTIVE	NEW_STATE_PENSION	2026-01-10	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200486	QQ400971B	ACTIVE	NEW_STATE_PENSION	2024-11-08	35	223.42	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200487	QQ637509D	ACTIVE	NEW_STATE_PENSION	2021-01-12	24	131.30	Y	0	WEEKLY	2026-03-01
+SP3200488	QQ829746B	ACTIVE	BASIC_STATE_PENSION	2011-09-23	19	139.03	N	0	QUARTERLY	2026-03-01
+SP3200489	QQ811941B	CLOSED	NEW_STATE_PENSION	2025-06-02	26	164.32	N	0	QUARTERLY	2026-03-01
+SP3200490	QQ547794A	CLOSED	NEW_STATE_PENSION	2024-02-13	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200491	QQ332591A	CLOSED	NEW_STATE_PENSION	2024-06-06	28	176.96	N	0	QUARTERLY	2026-03-01
+SP3200492	QQ117781C	ACTIVE	BASIC_STATE_PENSION	16-Feb-2003	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200493	QQ662005B	ACTIVE	NEW_STATE_PENSION	16-Apr-2023	31	195.92	N	0	QUARTERLY	2026-03-01
+SP3200494	QQ138514C	ACTIVE	BASIC_STATE_PENSION	22-Dec-2007	32	202.24	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200495	QQ392760A	CLOSED	NEW_STATE_PENSION	2022-07-09	21	132.72	N	0	QUARTERLY	2026-03-01
+SP3200496	QQ374250A	ACTIVE	BASIC_STATE_PENSION	21/08/2015	33	214.38	N	0	FOUR_WEEKLY	2026-03-01
+SP3200497	QQ401654D	ACTIVE	BASIC_STATE_PENSION	2015-03-13	19	109.73	N	0	QUARTERLY	2026-03-01
+SP3200498	QQ380949D	ACTIVE	BASIC_STATE_PENSION	01/02/2008	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200499	QQ512857C	ACTIVE	NEW_STATE_PENSION	09/06/2022	16	101.12	N	0	WEEKLY	2026-03-01
+SP3200500	QQ415799B	ACTIVE	BASIC_STATE_PENSION	09/11/2014	12	85.19	N	0	WEEKLY	2026-03-01
+SP3200501	QQ789590C	ACTIVE	BASIC_STATE_PENSION	16-Jul-2012	10	60.58	N	0	FOUR_WEEKLY	2026-03-01
+SP3200502	QQ405438A	ACTIVE	BASIC_STATE_PENSION	21-Oct-2010	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200503	QQ523318D	ACTIVE	BASIC_STATE_PENSION	30/04/2005	17	107.44	N	0	WEEKLY	2026-03-01
+SP3200504	QQ695608B	ACTIVE	BASIC_STATE_PENSION	2001-04-04	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200505	QQ581330B	ACTIVE	NEW_STATE_PENSION	2018-08-16	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200506	QQ679798D	ACTIVE	BASIC_STATE_PENSION	2001-08-22	30	189.60	N	0	WEEKLY	2026-03-01
+SP3200507	QQ409131A	ACTIVE	NEW_STATE_PENSION	2023-07-15	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200508	QQ522156A	ACTIVE	NEW_STATE_PENSION	16/12/2021	11	69.52	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200509	QQ718716C	ACTIVE	BASIC_STATE_PENSION	2000-04-18	16	101.12	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200510	QQ216655C	CLOSED	NEW_STATE_PENSION	2016-12-30	11	69.52	N	0	WEEKLY	2026-03-01
+SP3200511	QQ255094C	ACTIVE	NEW_STATE_PENSION	05-Sep-2023	28	157.65	N	0	WEEKLY	2026-03-01
+SP3200512	QQ512189C	ACTIVE	NEW_STATE_PENSION	13-Feb-2017	31	177.77	N	0	WEEKLY	2026-03-01
+SP3200513	QQ392169A	ACTIVE	BASIC_STATE_PENSION	2004-02-23	12	75.84	N	0	WEEKLY	2026-03-01
+SP3200514	QQ681244B	CLOSED	NEW_STATE_PENSION	12/09/2023	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200515	QQ840380A	ACTIVE	BASIC_STATE_PENSION	21/09/2012	27	170.64	N	0	WEEKLY	2026-03-01
+SP3200516	QQ235847B	ACTIVE	NEW_STATE_PENSION	2018-10-13	20	136.10	N	0	WEEKLY	2026-03-01
+SP3200517	QQ469440B	ACTIVE	NEW_STATE_PENSION	09/09/2020	27	170.64	N	0	QUARTERLY	2026-03-01
+SP3200518	QQ893231A	ACTIVE	BASIC_STATE_PENSION	01-Apr-2007	10	63.20	N	0	WEEKLY	2026-03-01
+SP3200519	QQ525134C	ACTIVE	NEW_STATE_PENSION	21/08/2021	22	139.04	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200520	QQ250737A	ACTIVE	NEW_STATE_PENSION	08/09/2016	32	152.85	N	0	WEEKLY	2026-03-01
+SP3200521	QQ349556A	CLOSED	BASIC_STATE_PENSION	2013-04-25	30	223.41	N	0	FOUR_WEEKLY	2026-03-01
+SP3200522	QQ875550D	ACTIVE	NEW_STATE_PENSION	2018-12-15	18	113.76	N	0	WEEKLY	2026-03-01
+SP3200523	QQ332328B	ACTIVE	NEW_STATE_PENSION	17/10/2022	21	137.98	N	0	FOUR_WEEKLY	2026-03-01
+SP3200524	QQ889874D	ACTIVE	BASIC_STATE_PENSION	2010-04-05	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200525	QQ448096A	CLOSED	NEW_STATE_PENSION	2024-02-05	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200526	QQ655305C	ACTIVE	BASIC_STATE_PENSION	28/06/2002	19	125.33	N	0	QUARTERLY	2026-03-01
+SP3200527	QQ627360A	ACTIVE	NEW_STATE_PENSION	25/08/2018	26	164.32	N	0	QUARTERLY	2026-03-01
+SP3200528	QQ419516B	CLOSED	BASIC_STATE_PENSION	2005-04-06	21	132.72	Y	0	WEEKLY	2026-03-01
+SP3200529	QQ794141D	ACTIVE	BASIC_STATE_PENSION	05/05/2013	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200530	QQ332082C	ACTIVE	BASIC_STATE_PENSION	29/04/2013	13	88.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200531	QQ544399C	ACTIVE	BASIC_STATE_PENSION	02/09/2015	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200532	QQ589171C	ACTIVE	BASIC_STATE_PENSION	19-Feb-2005	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200533	QQ778865C	CLOSED	BASIC_STATE_PENSION	2015-12-06	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200534	QQ110404B	SUSPENDED	BASIC_STATE_PENSION	2013-11-07	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200535	QQ255990B	SUSPENDED	NEW_STATE_PENSION	2021-10-31	18	94.33	N	0	WEEKLY	2026-03-01
+SP3200536	QQ552263C	CLOSED	NEW_STATE_PENSION	2019-08-16	28	151.08	N	0	WEEKLY	2026-03-01
+SP3200537	QQ864180B	ACTIVE	NEW_STATE_PENSION	2023-06-25	25	122.03	N	0	QUARTERLY	2026-03-01
+SP3200538	QQ170181B	ACTIVE	NEW_STATE_PENSION	2020-05-17	16	101.12	N	0	WEEKLY	2026-03-01
+SP3200539	QQ852430D	ACTIVE	BASIC_STATE_PENSION	18-Nov-2007	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200540	QQ518111C	ACTIVE	NEW_STATE_PENSION	2024-03-28	31	195.92	Y	0	WEEKLY	2026-03-01
+SP3200541	QQ783502C	ACTIVE	BASIC_STATE_PENSION	06-Feb-2008	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200542	QQ453982B	ACTIVE	BASIC_STATE_PENSION	14/09/2011	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200543	QQ372216B	SUSPENDED	BASIC_STATE_PENSION	30/06/2013	12	71.39	N	0	FOUR_WEEKLY	2026-03-01
+SP3200544	QQ236174D	CLOSED	BASIC_STATE_PENSION	2013-01-04	32	198.22	N	0	WEEKLY	2026-03-01
+SP3200545	QQ512130A	ACTIVE	NEW_STATE_PENSION	2023-12-08	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200546	QQ825124D	ACTIVE	BASIC_STATE_PENSION	25-Jan-2014	16	110.17	Y	0	WEEKLY	2026-03-01
+SP3200547	QQ327562A	ACTIVE	NEW_STATE_PENSION	27/09/2025	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200548	QQ279910C	CLOSED	BASIC_STATE_PENSION	12-Oct-2014	33	227.12	N	0	WEEKLY	2026-03-01
+SP3200549	QQ567640B	ACTIVE	NEW_STATE_PENSION	19-Mar-2017	21	134.40	N	0	WEEKLY	2026-03-01
+SP3200550	QQ867187A	ACTIVE	BASIC_STATE_PENSION	2004-06-02	22	139.04	N	0	WEEKLY	2026-03-01
+SP3200551	QQ278023A	ACTIVE	BASIC_STATE_PENSION	2012-07-23	21	141.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200552	QQ252105C	SUSPENDED	NEW_STATE_PENSION	15/07/2025	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200553	QQ474596D	ACTIVE	NEW_STATE_PENSION	2019-12-21	27	131.45	N	0	FOUR_WEEKLY	2026-03-01
+SP3200554	QQ492735A	ACTIVE	BASIC_STATE_PENSION	2010-06-17	21	111.99	N	0	FOUR_WEEKLY	2026-03-01
+SP3200555	QQ298801D	SUSPENDED	BASIC_STATE_PENSION	26-Oct-2015	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200556	QQ391683D	ACTIVE	BASIC_STATE_PENSION	2014-05-13	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200557	QQ710191B	SUSPENDED	NEW_STATE_PENSION	2021-07-19	20	124.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200558	QQ853688B	ACTIVE	BASIC_STATE_PENSION	06/04/2013	16	103.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200559	QQ442047B	CLOSED	NEW_STATE_PENSION	2020-03-06	15	102.98	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200560	QQ755400B	ACTIVE	NEW_STATE_PENSION	2024-09-05	23	145.36	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200561	QQ268442D	ACTIVE	BASIC_STATE_PENSION	2009-03-04	26	128.35	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200562	QQ758903A	ACTIVE	BASIC_STATE_PENSION	2006-09-26	21	132.72	N	0	WEEKLY	2026-03-01
+SP3200563	QQ584071C	CLOSED	NEW_STATE_PENSION	09-Sep-2024	10	51.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200564	QQ780553B	CLOSED	NEW_STATE_PENSION	25/04/2016	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200565	QQ530391C	CLOSED	BASIC_STATE_PENSION	12/07/2014	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200566	QQ423829C	CLOSED	NEW_STATE_PENSION	2018-04-26	10	61.51	N	0	FOUR_WEEKLY	2026-03-01
+SP3200567	QQ502029A	ACTIVE	BASIC_STATE_PENSION	02-Mar-2009	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200568	QQ609788C	ACTIVE	BASIC_STATE_PENSION	2014-07-20	21	129.30	N	0	FOUR_WEEKLY	2026-03-01
+SP3200569	QQ216383A	ACTIVE	NEW_STATE_PENSION	13/08/2022	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200570	QQ247393C	ACTIVE	NEW_STATE_PENSION	2021-03-14	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200571	QQ104671B	ACTIVE	NEW_STATE_PENSION	18-Jun-2022	34	213.29	N	0	WEEKLY	2026-03-01
+SP3200572	QQ172220C	ACTIVE	BASIC_STATE_PENSION	2001-09-14	19	113.22	N	0	FOUR_WEEKLY	2026-03-01
+SP3200573	QQ689969A	ACTIVE	BASIC_STATE_PENSION	19/09/2013	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200574	QQ654894C	ACTIVE	NEW_STATE_PENSION	2019-02-25	33	208.56	Y	0	WEEKLY	2026-03-01
+SP3200575	QQ251566B	ACTIVE	BASIC_STATE_PENSION	2009-02-26	11	69.52	N	0	QUARTERLY	2026-03-01
+SP3200576	QQ699934A	ACTIVE	BASIC_STATE_PENSION	09-Mar-2009	29	210.78	N	0	QUARTERLY	2026-03-01
+SP3200577	QQ492425D	ACTIVE	NEW_STATE_PENSION	06/05/2024	34	247.01	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200578	QQ441166A	ACTIVE	BASIC_STATE_PENSION	2016-02-02	33	208.56	Y	0	WEEKLY	2026-03-01
+SP3200579	QQ174133A	ACTIVE	NEW_STATE_PENSION	07-Jul-2021	26	172.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3200580	QQ182947D	ACTIVE	BASIC_STATE_PENSION	03-Feb-2006	21	124.50	N	0	FOUR_WEEKLY	2026-03-01
+SP3200581	QQ636509C	ACTIVE	BASIC_STATE_PENSION	13-Dec-2011	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200582	QQ335664D	ACTIVE	NEW_STATE_PENSION	2021-05-15	15	94.80	N	0	QUARTERLY	2026-03-01
+SP3200583	QQ356959A	ACTIVE	NEW_STATE_PENSION	2018-05-02	29	183.28	Y	0	WEEKLY	2026-03-01
+SP3200584	QQ331453A	ACTIVE	BASIC_STATE_PENSION	2013-01-15	22	139.04	N	0	QUARTERLY	2026-03-01
+SP3200585	QQ530668B	ACTIVE	BASIC_STATE_PENSION	2007-01-31	28	207.68	N	0	WEEKLY	2026-03-01
+SP3200586	QQ531509B	ACTIVE	NEW_STATE_PENSION	02/11/2018	14	86.61	N	0	FOUR_WEEKLY	2026-03-01
+SP3200587	QQ800379B	ACTIVE	BASIC_STATE_PENSION	08-Sep-2014	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200588	QQ778329A	ACTIVE	BASIC_STATE_PENSION	09-Jun-2002	10	63.20	N	0	QUARTERLY	2026-03-01
+SP3200589	QQ605215B	ACTIVE	BASIC_STATE_PENSION	2008-06-18	15	94.80	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200590	QQ733283B	ACTIVE	NEW_STATE_PENSION	15-Feb-2024	12	63.63	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200591	QQ217419A	ACTIVE	NEW_STATE_PENSION	21-Apr-2018	24	151.68	N	0	QUARTERLY	2026-03-01
+SP3200592	QQ887448C	CLOSED	NEW_STATE_PENSION	28-Sep-2023	13	82.16	N	0	WEEKLY	2026-03-01
+SP3200593	QQ880700B	ACTIVE	NEW_STATE_PENSION	2024-01-06	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200594	QQ851117D	ACTIVE	BASIC_STATE_PENSION	10-Jun-2013	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200595	QQ596517C	ACTIVE	NEW_STATE_PENSION	01-Oct-2023	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200596	QQ230258B	ACTIVE	NEW_STATE_PENSION	08/03/2018	25	167.88	N	0	WEEKLY	2026-03-01
+SP3200597	QQ742043A	ACTIVE	NEW_STATE_PENSION	2022-09-02	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200598	QQ687013C	ACTIVE	NEW_STATE_PENSION	2023-11-07	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200599	QQ515348C	ACTIVE	NEW_STATE_PENSION	21/01/2026	26	180.23	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200600	QQ306802C	ACTIVE	NEW_STATE_PENSION	2016-10-23	12	69.40	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200601	QQ822390C	CLOSED	BASIC_STATE_PENSION	18/09/2012	31	195.92	N	0	WEEKLY	2026-03-01
+SP3200602	QQ455372C	ACTIVE	BASIC_STATE_PENSION	2010-05-12	19	120.08	N	0	WEEKLY	2026-03-01
+SP3200603	QQ537142D	ACTIVE	NEW_STATE_PENSION	19/06/2018	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200604	QQ478356D	ACTIVE	NEW_STATE_PENSION	2018-03-06	15	111.38	Y	0	QUARTERLY	2026-03-01
+SP3200605	QQ779643A	ACTIVE	NEW_STATE_PENSION	26/10/2025	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200606	QQ617762D	ACTIVE	NEW_STATE_PENSION	2016-10-07	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200607	QQ514875D	ACTIVE	BASIC_STATE_PENSION	19/12/2005	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200608	QQ306292C	ACTIVE	NEW_STATE_PENSION	2017-06-15	18	113.76	N	0	QUARTERLY	2026-03-01
+SP3200609	QQ168221C	ACTIVE	BASIC_STATE_PENSION	2015-10-18	27	147.65	N	0	FOUR_WEEKLY	2026-03-01
+SP3200610	QQ554367B	ACTIVE	BASIC_STATE_PENSION	2015-01-12	29	183.28	N	0	WEEKLY	2026-03-01
+SP3200611	QQ130786D	ACTIVE	BASIC_STATE_PENSION	09/02/2016	16	101.12	N	0	WEEKLY	2026-03-01
+SP3200612	QQ272201C	ACTIVE	NEW_STATE_PENSION	2024-02-15	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200613	QQ209497A	CLOSED	BASIC_STATE_PENSION	17-Nov-2010	28	176.96	Y	0	QUARTERLY	2026-03-01
+SP3200614	QQ415860D	ACTIVE	BASIC_STATE_PENSION	09-Jul-2015	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200615	QQ424638A	ACTIVE	NEW_STATE_PENSION	05-Jun-2025	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200616	QQ798485C	SUSPENDED	BASIC_STATE_PENSION	28-Jul-2011	14	88.48	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200617	QQ281729D	ACTIVE	NEW_STATE_PENSION	10-Jul-2023	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200618	QQ543765A	CLOSED	BASIC_STATE_PENSION	17-May-2008	14	95.55	N	0	FOUR_WEEKLY	2026-03-01
+SP3200619	QQ864183B	ACTIVE	NEW_STATE_PENSION	21/11/2016	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200620	QQ232672B	ACTIVE	BASIC_STATE_PENSION	2004-10-08	30	151.26	N	0	WEEKLY	2026-03-01
+SP3200621	QQ532309D	ACTIVE	NEW_STATE_PENSION	2024-01-26	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200622	QQ237565C	ACTIVE	NEW_STATE_PENSION	11-Jun-2025	15	77.98	N	0	FOUR_WEEKLY	2026-03-01
+SP3200623	QQ802032A	CLOSED	BASIC_STATE_PENSION	20/10/2004	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200624	QQ487039D	CLOSED	BASIC_STATE_PENSION	25-Dec-2009	21	132.72	N	0	WEEKLY	2026-03-01
+SP3200625	QQ887565D	ACTIVE	BASIC_STATE_PENSION	2006-05-24	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200626	QQ885416A	ACTIVE	BASIC_STATE_PENSION	2000-10-31	24	154.04	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200627	QQ880090D	ACTIVE	NEW_STATE_PENSION	2019-02-15	17	97.06	N	0	WEEKLY	2026-03-01
+SP3200628	QQ583409A	CLOSED	NEW_STATE_PENSION	06/07/2022	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200629	QQ288276A	ACTIVE	NEW_STATE_PENSION	04/09/2019	17	107.44	N	0	QUARTERLY	2026-03-01
+SP3200630	QQ379984A	ACTIVE	BASIC_STATE_PENSION	07/03/2003	16	101.12	Y	0	QUARTERLY	2026-03-01
+SP3200631	QQ376456A	ACTIVE	NEW_STATE_PENSION	2023-09-02	14	74.01	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200632	QQ829247D	ACTIVE	BASIC_STATE_PENSION	2012-03-11	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200633	QQ832972C	ACTIVE	NEW_STATE_PENSION	22/11/2023	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200634	QQ401788B	ACTIVE	BASIC_STATE_PENSION	11/10/2012	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200635	QQ443854D	ACTIVE	BASIC_STATE_PENSION	03-Nov-2007	35	221.20	N	0	WEEKLY	2026-03-01
+SP3200636	QQ201732D	ACTIVE	NEW_STATE_PENSION	27-Jun-2023	27	143.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200637	QQ833930B	ACTIVE	NEW_STATE_PENSION	03-Jun-2025	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200638	QQ445897D	ACTIVE	NEW_STATE_PENSION	28-Jul-2022	14	88.48	N	0	QUARTERLY	2026-03-01
+SP3200639	QQ414279C	CLOSED	BASIC_STATE_PENSION	27-Oct-2012	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200640	QQ458343C	ACTIVE	BASIC_STATE_PENSION	13/02/2010	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200641	QQ817984B	ACTIVE	BASIC_STATE_PENSION	21-Apr-2004	28	180.45	N	0	FOUR_WEEKLY	2026-03-01
+SP3200642	QQ589633B	CLOSED	BASIC_STATE_PENSION	30-Mar-2002	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200643	QQ214063B	ACTIVE	BASIC_STATE_PENSION	2009-11-24	34	184.07	N	0	FOUR_WEEKLY	2026-03-01
+SP3200644	QQ142442D	SUSPENDED	BASIC_STATE_PENSION	2014-07-20	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200645	QQ286859A	ACTIVE	BASIC_STATE_PENSION	2009-01-13	14	73.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200646	QQ346813C	ACTIVE	BASIC_STATE_PENSION	07-Jan-2002	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200647	QQ706881C	ACTIVE	NEW_STATE_PENSION	2019-07-16	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200648	QQ631648D	ACTIVE	BASIC_STATE_PENSION	2014-06-28	31	195.92	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200649	QQ471519C	CLOSED	BASIC_STATE_PENSION	2010-07-04	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200650	QQ563679D	ACTIVE	NEW_STATE_PENSION	20/11/2020	25	158.00	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200651	QQ385373D	ACTIVE	NEW_STATE_PENSION	2023-08-25	12	57.91	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200652	QQ737739C	ACTIVE	BASIC_STATE_PENSION	2009-10-21	14	88.48	Y	0	WEEKLY	2026-03-01
+SP3200653	QQ610496A	ACTIVE	NEW_STATE_PENSION	2021-07-26	32	178.37	N	0	FOUR_WEEKLY	2026-03-01
+SP3200654	QQ477463C	ACTIVE	BASIC_STATE_PENSION	22-Dec-2008	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200655	QQ586416A	ACTIVE	NEW_STATE_PENSION	14/10/2022	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200656	QQ730194D	ACTIVE	NEW_STATE_PENSION	08-Dec-2016	22	139.04	N	0	WEEKLY	2026-03-01
+SP3200657	QQ352247B	ACTIVE	BASIC_STATE_PENSION	02-Feb-2015	28	163.17	N	0	FOUR_WEEKLY	2026-03-01
+SP3200658	QQ544838C	ACTIVE	BASIC_STATE_PENSION	09-Apr-2007	17	97.94	Y	0	QUARTERLY	2026-03-01
+SP3200659	QQ354731A	ACTIVE	NEW_STATE_PENSION	2018-03-25	27	170.64	N	0	WEEKLY	2026-03-01
+SP3200660	QQ716123C	ACTIVE	BASIC_STATE_PENSION	15/07/2006	13	81.41	N	0	FOUR_WEEKLY	2026-03-01
+SP3200661	QQ743935A	ACTIVE	BASIC_STATE_PENSION	2004-09-07	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200662	QQ811225B	ACTIVE	NEW_STATE_PENSION	2019-08-27	13	82.16	N	0	WEEKLY	2026-03-01
+SP3200663	QQ264077B	ACTIVE	NEW_STATE_PENSION	25/01/2024	22	139.04	Y	0	QUARTERLY	2026-03-01
+SP3200664	QQ899902D	ACTIVE	NEW_STATE_PENSION	24-Feb-2024	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200665	QQ609986D	ACTIVE	NEW_STATE_PENSION	20/08/2017	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200666	QQ347921A	ACTIVE	NEW_STATE_PENSION	22/02/2022	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200667	QQ460063A	CLOSED	NEW_STATE_PENSION	2025-05-12	12	79.98	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200668	QQ251312C	ACTIVE	BASIC_STATE_PENSION	2013-09-23	16	91.15	N	0	FOUR_WEEKLY	2026-03-01
+SP3200669	QQ249914B	ACTIVE	BASIC_STATE_PENSION	01-Aug-2008	11	68.17	N	0	FOUR_WEEKLY	2026-03-01
+SP3200670	QQ200384C	ACTIVE	NEW_STATE_PENSION	2024-09-16	35	177.34	N	0	FOUR_WEEKLY	2026-03-01
+SP3200671	QQ191899C	ACTIVE	NEW_STATE_PENSION	2021-04-15	14	89.06	N	0	FOUR_WEEKLY	2026-03-01
+SP3200672	QQ794871A	ACTIVE	BASIC_STATE_PENSION	25-Aug-2004	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200673	QQ599722B	ACTIVE	NEW_STATE_PENSION	17/11/2016	26	164.32	N	0	WEEKLY	2026-03-01
+SP3200674	QQ215290D	SUSPENDED	BASIC_STATE_PENSION	20/03/2010	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200675	QQ402995C	CLOSED	NEW_STATE_PENSION	22/07/2018	22	139.04	N	0	QUARTERLY	2026-03-01
+SP3200676	QQ887658A	ACTIVE	NEW_STATE_PENSION	10-Nov-2023	25	158.00	N	0	WEEKLY	2026-03-01
+SP3200677	QQ734390B	ACTIVE	NEW_STATE_PENSION	17/03/2026	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200678	QQ516279B	SUSPENDED	NEW_STATE_PENSION	11/01/2021	12	88.10	Y	0	WEEKLY	2026-03-01
+SP3200679	QQ659318C	ACTIVE	NEW_STATE_PENSION	23-Sep-2023	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200680	QQ187287A	ACTIVE	BASIC_STATE_PENSION	2012-03-08	17	107.44	N	0	QUARTERLY	2026-03-01
+SP3200681	QQ313434B	CLOSED	BASIC_STATE_PENSION	2015-03-26	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200682	QQ528201D	CLOSED	BASIC_STATE_PENSION	2011-01-14	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200683	QQ151344D	ACTIVE	NEW_STATE_PENSION	10/09/2025	21	104.69	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200684	QQ190995D	CLOSED	BASIC_STATE_PENSION	16/07/2014	24	151.68	N	0	QUARTERLY	2026-03-01
+SP3200685	QQ360046A	ACTIVE	BASIC_STATE_PENSION	31/03/2014	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200686	QQ210294D	ACTIVE	BASIC_STATE_PENSION	2014-05-26	26	158.63	N	0	FOUR_WEEKLY	2026-03-01
+SP3200687	QQ431386C	ACTIVE	NEW_STATE_PENSION	13/08/2017	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200688	QQ187884D	ACTIVE	BASIC_STATE_PENSION	08/04/2012	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200689	QQ319621A	ACTIVE	BASIC_STATE_PENSION	2002-07-13	29	183.28	N	0	WEEKLY	2026-03-01
+SP3200690	QQ394397D	ACTIVE	NEW_STATE_PENSION	09/10/2017	11	57.67	N	0	FOUR_WEEKLY	2026-03-01
+SP3200691	QQ323452C	ACTIVE	NEW_STATE_PENSION	16/03/2024	18	90.01	N	0	FOUR_WEEKLY	2026-03-01
+SP3200692	QQ264082C	ACTIVE	BASIC_STATE_PENSION	2007-12-28	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200693	QQ287352D	ACTIVE	BASIC_STATE_PENSION	06/08/2011	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200694	QQ529690A	ACTIVE	NEW_STATE_PENSION	11-May-2017	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200695	QQ463621C	ACTIVE	NEW_STATE_PENSION	16/08/2022	12	84.93	N	0	FOUR_WEEKLY	2026-03-01
+SP3200696	QQ121457C	ACTIVE	NEW_STATE_PENSION	2024-03-09	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200697	QQ433711B	ACTIVE	NEW_STATE_PENSION	2021-03-10	19	114.87	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200698	QQ785602A	ACTIVE	BASIC_STATE_PENSION	21-Oct-2006	34	213.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200699	QQ447619B	ACTIVE	BASIC_STATE_PENSION	2002-01-16	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200700	QQ330028B	ACTIVE	NEW_STATE_PENSION	2021-08-14	23	132.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200701	QQ316726B	CLOSED	NEW_STATE_PENSION	06-Jan-2022	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200702	QQ359617A	ACTIVE	BASIC_STATE_PENSION	13/05/2009	21	129.81	N	0	FOUR_WEEKLY	2026-03-01
+SP3200703	QQ894841B	ACTIVE	NEW_STATE_PENSION	2016-11-15	29	183.28	N	0	QUARTERLY	2026-03-01
+SP3200704	QQ651126B	ACTIVE	NEW_STATE_PENSION	2024-04-17	28	176.96	Y	0	WEEKLY	2026-03-01
+SP3200705	QQ870307D	ACTIVE	NEW_STATE_PENSION	2024-06-01	15	95.12	N	0	QUARTERLY	2026-03-01
+SP3200706	QQ188244C	SUSPENDED	NEW_STATE_PENSION	18/03/2024	29	188.93	N	0	WEEKLY	2026-03-01
+SP3200707	QQ799494C	ACTIVE	NEW_STATE_PENSION	13-Oct-2018	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200708	QQ769750C	ACTIVE	NEW_STATE_PENSION	2020-06-23	16	101.12	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200709	QQ181814B	ACTIVE	NEW_STATE_PENSION	25/11/2024	33	208.56	N	0	QUARTERLY	2026-03-01
+SP3200710	QQ577034B	ACTIVE	BASIC_STATE_PENSION	25-Apr-2005	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200711	QQ216262C	ACTIVE	BASIC_STATE_PENSION	26/02/2008	26	146.05	N	0	FOUR_WEEKLY	2026-03-01
+SP3200712	QQ671829A	ACTIVE	NEW_STATE_PENSION	12/05/2021	26	183.34	N	0	WEEKLY	2026-03-01
+SP3200713	QQ405262D	SUSPENDED	BASIC_STATE_PENSION	2005-12-15	21	111.10	N	0	WEEKLY	2026-03-01
+SP3200714	QQ766720D	ACTIVE	NEW_STATE_PENSION	2023-10-08	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200715	QQ356220B	ACTIVE	BASIC_STATE_PENSION	2012-09-01	14	71.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200716	QQ339092B	ACTIVE	BASIC_STATE_PENSION	07-Apr-2003	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200717	QQ836404D	ACTIVE	NEW_STATE_PENSION	2020-05-30	11	61.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200718	QQ701613C	ACTIVE	NEW_STATE_PENSION	10/10/2023	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200719	QQ798965D	ACTIVE	BASIC_STATE_PENSION	06/06/2006	26	164.32	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200720	QQ671266A	ACTIVE	NEW_STATE_PENSION	09-Nov-2016	17	107.44	Y	0	QUARTERLY	2026-03-01
+SP3200721	QQ656652B	ACTIVE	BASIC_STATE_PENSION	2006-05-31	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200722	QQ864326D	ACTIVE	BASIC_STATE_PENSION	2009-11-04	13	85.91	N	0	FOUR_WEEKLY	2026-03-01
+SP3200723	QQ489118A	ACTIVE	BASIC_STATE_PENSION	04/08/2014	30	172.70	N	0	QUARTERLY	2026-03-01
+SP3200724	QQ241848C	SUSPENDED	NEW_STATE_PENSION	23/11/2025	27	170.64	N	0	WEEKLY	2026-03-01
+SP3200725	QQ327096B	ACTIVE	NEW_STATE_PENSION	2022-04-10	12	68.45	N	0	QUARTERLY	2026-03-01
+SP3200726	QQ228303B	ACTIVE	BASIC_STATE_PENSION	2007-02-22	15	90.47	N	0	WEEKLY	2026-03-01
+SP3200727	QQ807259B	ACTIVE	BASIC_STATE_PENSION	17/06/2011	14	100.54	N	0	FOUR_WEEKLY	2026-03-01
+SP3200728	QQ673700A	ACTIVE	BASIC_STATE_PENSION	22/04/2012	15	92.48	N	0	WEEKLY	2026-03-01
+SP3200729	QQ493120A	ACTIVE	NEW_STATE_PENSION	2022-06-13	30	206.73	N	0	FOUR_WEEKLY	2026-03-01
+SP3200730	QQ362542B	ACTIVE	NEW_STATE_PENSION	12/07/2019	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200731	QQ395758D	ACTIVE	BASIC_STATE_PENSION	2013-10-17	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200732	QQ494514D	ACTIVE	BASIC_STATE_PENSION	2012-09-20	17	124.67	N	0	WEEKLY	2026-03-01
+SP3200733	QQ898247D	ACTIVE	BASIC_STATE_PENSION	03/08/2015	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200734	QQ897775D	ACTIVE	BASIC_STATE_PENSION	2016-02-05	22	110.83	N	0	WEEKLY	2026-03-01
+SP3200735	QQ236361B	ACTIVE	NEW_STATE_PENSION	2018-07-04	16	95.13	N	0	WEEKLY	2026-03-01
+SP3200736	QQ660000B	ACTIVE	BASIC_STATE_PENSION	2013-12-19	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200737	QQ873263A	SUSPENDED	NEW_STATE_PENSION	2023-07-26	15	94.80	N	0	QUARTERLY	2026-03-01
+SP3200738	QQ856126C	ACTIVE	BASIC_STATE_PENSION	2011-11-21	22	106.57	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200739	QQ380954D	ACTIVE	NEW_STATE_PENSION	2019-05-02	31	195.92	N	0	WEEKLY	2026-03-01
+SP3200740	QQ213489B	SUSPENDED	NEW_STATE_PENSION	26/06/2019	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200741	QQ656140A	ACTIVE	BASIC_STATE_PENSION	2006-09-18	14	104.14	N	0	FOUR_WEEKLY	2026-03-01
+SP3200742	QQ431617C	ACTIVE	NEW_STATE_PENSION	06-Dec-2020	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200743	QQ542195A	ACTIVE	NEW_STATE_PENSION	21/07/2023	32	202.24	Y	0	WEEKLY	2026-03-01
+SP3200744	QQ762359B	ACTIVE	BASIC_STATE_PENSION	10-Apr-2013	20	126.12	N	0	WEEKLY	2026-03-01
+SP3200745	QQ358560C	CLOSED	NEW_STATE_PENSION	2025-05-29	14	88.48	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200746	QQ812103D	ACTIVE	BASIC_STATE_PENSION	15-Mar-2009	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200747	QQ711143C	ACTIVE	NEW_STATE_PENSION	16-Feb-2025	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200748	QQ215609A	ACTIVE	NEW_STATE_PENSION	18/02/2021	23	130.86	N	0	WEEKLY	2026-03-01
+SP3200749	QQ754535D	ACTIVE	NEW_STATE_PENSION	14/06/2018	31	174.07	N	0	FOUR_WEEKLY	2026-03-01
+SP3200750	QQ593174C	ACTIVE	NEW_STATE_PENSION	2025-07-21	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200751	QQ316019A	ACTIVE	NEW_STATE_PENSION	02/12/2021	18	89.17	N	0	FOUR_WEEKLY	2026-03-01
+SP3200752	QQ430191B	SUSPENDED	NEW_STATE_PENSION	09/03/2019	28	176.96	N	0	QUARTERLY	2026-03-01
+SP3200753	QQ355752A	ACTIVE	BASIC_STATE_PENSION	01/02/2009	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200754	QQ423778C	ACTIVE	BASIC_STATE_PENSION	2013-09-11	33	208.56	Y	0	WEEKLY	2026-03-01
+SP3200755	QQ594993A	ACTIVE	BASIC_STATE_PENSION	14/01/2016	34	168.10	N	0	WEEKLY	2026-03-01
+SP3200756	QQ326224B	ACTIVE	NEW_STATE_PENSION	04/03/2020	11	80.50	N	0	FOUR_WEEKLY	2026-03-01
+SP3200757	QQ587000B	CLOSED	BASIC_STATE_PENSION	05/05/2009	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200758	QQ782407A	ACTIVE	BASIC_STATE_PENSION	05/05/2007	32	213.38	N	0	WEEKLY	2026-03-01
+SP3200759	QQ375912C	ACTIVE	BASIC_STATE_PENSION	18-Aug-2012	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200760	QQ738124A	ACTIVE	NEW_STATE_PENSION	01/02/2023	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200761	QQ636277A	ACTIVE	NEW_STATE_PENSION	24/04/2019	30	189.60	N	0	WEEKLY	2026-03-01
+SP3200762	QQ819031C	ACTIVE	NEW_STATE_PENSION	2025-12-19	28	176.96	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200763	QQ436396A	ACTIVE	BASIC_STATE_PENSION	2007-12-02	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200764	QQ785228D	ACTIVE	NEW_STATE_PENSION	08-Feb-2024	32	202.24	N	0	QUARTERLY	2026-03-01
+SP3200765	QQ417989B	ACTIVE	BASIC_STATE_PENSION	2000-12-28	17	107.44	N	0	WEEKLY	2026-03-01
+SP3200766	QQ271081C	CLOSED	NEW_STATE_PENSION	2020-07-23	34	190.40	N	0	WEEKLY	2026-03-01
+SP3200767	QQ571393B	ACTIVE	BASIC_STATE_PENSION	03/12/2007	25	174.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200768	QQ243914A	ACTIVE	BASIC_STATE_PENSION	09-Jul-2007	22	146.22	N	0	FOUR_WEEKLY	2026-03-01
+SP3200769	QQ373627A	ACTIVE	BASIC_STATE_PENSION	2013-08-24	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200770	QQ224009D	ACTIVE	BASIC_STATE_PENSION	09/10/2013	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200771	QQ447156B	ACTIVE	NEW_STATE_PENSION	21/01/2025	29	183.28	N	0	WEEKLY	2026-03-01
+SP3200772	QQ381989B	ACTIVE	BASIC_STATE_PENSION	18/07/2010	26	188.41	N	0	QUARTERLY	2026-03-01
+SP3200773	QQ242299D	ACTIVE	NEW_STATE_PENSION	2025-06-24	26	152.91	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200774	QQ344882B	ACTIVE	NEW_STATE_PENSION	20-Nov-2024	27	190.15	N	0	FOUR_WEEKLY	2026-03-01
+SP3200775	QQ282116C	ACTIVE	BASIC_STATE_PENSION	07-Aug-2014	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200776	QQ206856A	ACTIVE	NEW_STATE_PENSION	2023-07-30	33	191.31	N	0	FOUR_WEEKLY	2026-03-01
+SP3200777	QQ609022B	ACTIVE	NEW_STATE_PENSION	04/03/2024	14	85.82	N	0	FOUR_WEEKLY	2026-03-01
+SP3200778	QQ339383D	ACTIVE	BASIC_STATE_PENSION	2007-06-12	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200779	QQ498120A	ACTIVE	NEW_STATE_PENSION	2026-03-30	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200780	QQ536250C	ACTIVE	BASIC_STATE_PENSION	06/04/2014	23	130.65	N	0	WEEKLY	2026-03-01
+SP3200781	QQ236941B	ACTIVE	NEW_STATE_PENSION	2023-08-02	29	183.28	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200782	QQ606503D	CLOSED	NEW_STATE_PENSION	2019-02-24	31	195.92	N	0	QUARTERLY	2026-03-01
+SP3200783	QQ302289A	ACTIVE	NEW_STATE_PENSION	2020-09-14	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200784	QQ357154A	ACTIVE	BASIC_STATE_PENSION	04-Jan-2002	18	99.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200785	QQ746034B	SUSPENDED	BASIC_STATE_PENSION	07/02/2008	23	145.36	Y	0	WEEKLY	2026-03-01
+SP3200786	QQ255497B	ACTIVE	NEW_STATE_PENSION	2025-09-07	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200787	QQ677850B	ACTIVE	NEW_STATE_PENSION	2022-01-28	25	158.00	N	0	QUARTERLY	2026-03-01
+SP3200788	QQ691361C	ACTIVE	NEW_STATE_PENSION	03/04/2017	18	94.48	N	0	QUARTERLY	2026-03-01
+SP3200789	QQ384415C	CLOSED	NEW_STATE_PENSION	16/12/2016	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200790	QQ510343B	ACTIVE	NEW_STATE_PENSION	14/06/2019	35	182.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200791	QQ226592D	ACTIVE	BASIC_STATE_PENSION	06/12/2014	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200792	QQ618102C	ACTIVE	NEW_STATE_PENSION	20/10/2016	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3200793	QQ398837B	ACTIVE	BASIC_STATE_PENSION	2009-07-31	33	245.95	N	0	WEEKLY	2026-03-01
+SP3200794	QQ898535B	ACTIVE	NEW_STATE_PENSION	2023-09-07	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200795	QQ485034B	ACTIVE	NEW_STATE_PENSION	2024-03-22	27	170.64	N	0	WEEKLY	2026-03-01
+SP3200796	QQ282742C	ACTIVE	BASIC_STATE_PENSION	26/07/2007	32	157.74	N	0	WEEKLY	2026-03-01
+SP3200797	QQ785601A	ACTIVE	BASIC_STATE_PENSION	08-Oct-2009	25	158.00	N	0	WEEKLY	2026-03-01
+SP3200798	QQ217238B	ACTIVE	BASIC_STATE_PENSION	26/08/2012	15	108.74	N	0	FOUR_WEEKLY	2026-03-01
+SP3200799	QQ695591C	ACTIVE	BASIC_STATE_PENSION	26/06/2008	12	79.67	N	0	FOUR_WEEKLY	2026-03-01
+SP3200800	QQ716086A	SUSPENDED	NEW_STATE_PENSION	17/10/2023	23	161.50	N	0	WEEKLY	2026-03-01
+SP3200801	QQ805544C	ACTIVE	BASIC_STATE_PENSION	18-May-2005	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200802	QQ250318D	ACTIVE	NEW_STATE_PENSION	17/10/2023	17	117.80	N	0	QUARTERLY	2026-03-01
+SP3200803	QQ636700C	ACTIVE	NEW_STATE_PENSION	2023-05-20	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200804	QQ210038A	ACTIVE	BASIC_STATE_PENSION	2015-06-03	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200805	QQ504436D	ACTIVE	BASIC_STATE_PENSION	2006-10-06	35	221.20	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200806	QQ753550B	ACTIVE	NEW_STATE_PENSION	2023-11-25	35	174.15	N	0	FOUR_WEEKLY	2026-03-01
+SP3200807	QQ746565A	ACTIVE	BASIC_STATE_PENSION	2008-05-28	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200808	QQ267102A	ACTIVE	NEW_STATE_PENSION	2024-03-10	26	148.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200809	QQ417480C	SUSPENDED	NEW_STATE_PENSION	03-Jan-2018	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200810	QQ510243C	ACTIVE	NEW_STATE_PENSION	2021-10-10	27	169.31	N	0	WEEKLY	2026-03-01
+SP3200811	QQ486499B	ACTIVE	NEW_STATE_PENSION	2021-08-05	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200812	QQ233130A	CLOSED	NEW_STATE_PENSION	2023-04-08	12	61.85	N	0	FOUR_WEEKLY	2026-03-01
+SP3200813	QQ238375D	ACTIVE	NEW_STATE_PENSION	09-Feb-2018	12	75.84	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200814	QQ606573A	CLOSED	NEW_STATE_PENSION	2021-10-02	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200815	QQ107346C	ACTIVE	NEW_STATE_PENSION	2022-10-24	10	63.20	N	0	WEEKLY	2026-03-01
+SP3200816	QQ761227B	ACTIVE	NEW_STATE_PENSION	20/02/2024	15	84.18	N	0	FOUR_WEEKLY	2026-03-01
+SP3200817	QQ262867C	ACTIVE	NEW_STATE_PENSION	08/02/2023	19	120.08	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200818	QQ154975A	ACTIVE	NEW_STATE_PENSION	13-Sep-2024	24	161.63	N	0	WEEKLY	2026-03-01
+SP3200819	QQ313170D	ACTIVE	NEW_STATE_PENSION	14-Oct-2023	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200820	QQ722463D	CLOSED	NEW_STATE_PENSION	16-Sep-2025	32	202.24	Y	0	QUARTERLY	2026-03-01
+SP3200821	QQ196516D	ACTIVE	BASIC_STATE_PENSION	23-Apr-2015	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200822	QQ350360C	ACTIVE	NEW_STATE_PENSION	30-Mar-2022	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200823	QQ552217B	ACTIVE	NEW_STATE_PENSION	2021-05-24	35	221.20	N	0	WEEKLY	2026-03-01
+SP3200824	QQ217966D	CLOSED	BASIC_STATE_PENSION	2014-10-29	31	210.83	N	0	WEEKLY	2026-03-01
+SP3200825	QQ188253B	ACTIVE	NEW_STATE_PENSION	29/10/2023	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200826	QQ806348A	ACTIVE	BASIC_STATE_PENSION	2013-01-05	18	92.27	N	0	WEEKLY	2026-03-01
+SP3200827	QQ692798D	ACTIVE	NEW_STATE_PENSION	2021-05-06	27	200.94	N	0	WEEKLY	2026-03-01
+SP3200828	QQ761420C	ACTIVE	BASIC_STATE_PENSION	31/08/2007	28	148.90	N	0	FOUR_WEEKLY	2026-03-01
+SP3200829	QQ670906C	ACTIVE	BASIC_STATE_PENSION	07/10/2014	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200830	QQ253371B	ACTIVE	BASIC_STATE_PENSION	2006-11-17	23	145.36	N	0	WEEKLY	2026-03-01
+SP3200831	QQ845657C	ACTIVE	BASIC_STATE_PENSION	19-Jul-2012	23	153.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200832	QQ525993A	ACTIVE	BASIC_STATE_PENSION	2015-03-08	22	139.04	N	0	WEEKLY	2026-03-01
+SP3200833	QQ572521A	ACTIVE	BASIC_STATE_PENSION	27/10/2009	32	173.92	N	0	WEEKLY	2026-03-01
+SP3200834	QQ757243C	CLOSED	NEW_STATE_PENSION	2025-10-27	19	116.14	N	0	FOUR_WEEKLY	2026-03-01
+SP3200835	QQ113129D	ACTIVE	BASIC_STATE_PENSION	08/01/2016	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3200836	QQ125220A	CLOSED	BASIC_STATE_PENSION	2006-07-14	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200837	QQ462224D	ACTIVE	BASIC_STATE_PENSION	2008-05-27	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3200838	QQ376851A	ACTIVE	BASIC_STATE_PENSION	30/04/2009	16	93.01	N	0	FOUR_WEEKLY	2026-03-01
+SP3200839	QQ440991B	ACTIVE	NEW_STATE_PENSION	05/12/2017	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200840	QQ574773D	ACTIVE	BASIC_STATE_PENSION	02-Apr-2003	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200841	QQ332914B	ACTIVE	BASIC_STATE_PENSION	05/03/2004	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200842	QQ495879B	ACTIVE	BASIC_STATE_PENSION	02/10/2006	33	208.56	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200843	QQ535734D	ACTIVE	BASIC_STATE_PENSION	13/05/2002	19	135.99	N	0	WEEKLY	2026-03-01
+SP3200844	QQ419434A	ACTIVE	NEW_STATE_PENSION	2017-09-16	12	81.50	N	0	QUARTERLY	2026-03-01
+SP3200845	QQ697259A	CLOSED	NEW_STATE_PENSION	2016-04-30	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200846	QQ810995B	ACTIVE	BASIC_STATE_PENSION	03-Feb-2002	18	104.71	N	0	FOUR_WEEKLY	2026-03-01
+SP3200847	QQ422493C	ACTIVE	BASIC_STATE_PENSION	2007-03-15	20	114.06	N	0	FOUR_WEEKLY	2026-03-01
+SP3200848	QQ465845C	ACTIVE	NEW_STATE_PENSION	2021-09-04	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200849	QQ872835C	ACTIVE	NEW_STATE_PENSION	13/02/2021	25	160.02	N	0	WEEKLY	2026-03-01
+SP3200850	QQ370889C	ACTIVE	NEW_STATE_PENSION	2019-08-25	21	132.72	Y	0	WEEKLY	2026-03-01
+SP3200851	QQ727993A	ACTIVE	NEW_STATE_PENSION	11/02/2024	16	101.12	N	0	WEEKLY	2026-03-01
+SP3200852	QQ488975C	CLOSED	BASIC_STATE_PENSION	2007-01-01	11	55.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200853	QQ413577D	ACTIVE	BASIC_STATE_PENSION	2014-11-25	11	77.37	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200854	QQ442188D	CLOSED	NEW_STATE_PENSION	25/02/2020	29	183.28	N	0	QUARTERLY	2026-03-01
+SP3200855	QQ244019D	ACTIVE	NEW_STATE_PENSION	09-Nov-2024	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200856	QQ785712B	ACTIVE	BASIC_STATE_PENSION	01-May-2010	11	69.52	N	0	WEEKLY	2026-03-01
+SP3200857	QQ848081C	ACTIVE	NEW_STATE_PENSION	15/07/2019	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200858	QQ801579A	ACTIVE	NEW_STATE_PENSION	20/07/2025	35	221.20	N	0	WEEKLY	2026-03-01
+SP3200859	QQ139251D	ACTIVE	BASIC_STATE_PENSION	12/02/2013	25	158.00	N	0	WEEKLY	2026-03-01
+SP3200860	QQ784977D	ACTIVE	BASIC_STATE_PENSION	2013-08-05	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200861	QQ243390A	ACTIVE	BASIC_STATE_PENSION	2001-09-12	32	202.24	N	0	WEEKLY	2026-03-01
+SP3200862	QQ552102A	ACTIVE	NEW_STATE_PENSION	2017-01-07	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200863	QQ578737A	ACTIVE	BASIC_STATE_PENSION	21-Aug-2011	16	101.12	N	0	WEEKLY	2026-03-01
+SP3200864	QQ755635D	CLOSED	BASIC_STATE_PENSION	2004-05-07	11	68.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200865	QQ601494A	ACTIVE	NEW_STATE_PENSION	2019-09-25	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200866	QQ223269D	ACTIVE	BASIC_STATE_PENSION	2005-02-11	28	176.96	Y	0	QUARTERLY	2026-03-01
+SP3200867	QQ605616B	ACTIVE	NEW_STATE_PENSION	2020-05-22	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200868	QQ263264B	ACTIVE	NEW_STATE_PENSION	05-Mar-2024	11	69.52	N	0	WEEKLY	2026-03-01
+SP3200869	QQ748984A	CLOSED	BASIC_STATE_PENSION	2002-12-04	26	126.27	N	0	FOUR_WEEKLY	2026-03-01
+SP3200870	QQ361364A	CLOSED	BASIC_STATE_PENSION	2003-02-02	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200871	QQ167602B	ACTIVE	BASIC_STATE_PENSION	2007-07-22	19	137.93	N	0	FOUR_WEEKLY	2026-03-01
+SP3200872	QQ504826C	ACTIVE	BASIC_STATE_PENSION	25/04/2008	29	156.97	N	0	FOUR_WEEKLY	2026-03-01
+SP3200873	QQ871570A	ACTIVE	NEW_STATE_PENSION	2020-06-23	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200874	QQ175748D	ACTIVE	BASIC_STATE_PENSION	2008-11-16	27	171.77	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200875	QQ520925D	ACTIVE	NEW_STATE_PENSION	2021-10-02	32	226.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200876	QQ235215D	ACTIVE	NEW_STATE_PENSION	2024-10-12	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200877	QQ158367D	ACTIVE	NEW_STATE_PENSION	2022-04-07	14	85.91	N	0	WEEKLY	2026-03-01
+SP3200878	QQ484082B	CLOSED	NEW_STATE_PENSION	2026-01-08	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200879	QQ703538B	ACTIVE	BASIC_STATE_PENSION	2013-03-30	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3200880	QQ582087C	ACTIVE	NEW_STATE_PENSION	05-Jan-2022	12	75.84	N	0	QUARTERLY	2026-03-01
+SP3200881	QQ241955D	CLOSED	BASIC_STATE_PENSION	2006-05-29	31	150.15	N	0	QUARTERLY	2026-03-01
+SP3200882	QQ751333D	ACTIVE	BASIC_STATE_PENSION	2015-01-19	21	132.72	N	0	WEEKLY	2026-03-01
+SP3200883	QQ533885B	ACTIVE	NEW_STATE_PENSION	20-May-2018	24	151.68	N	0	FOUR_WEEKLY	2026-03-01
+SP3200884	QQ503070B	CLOSED	NEW_STATE_PENSION	13/06/2023	31	195.92	N	0	FOUR_WEEKLY	2026-03-01
+SP3200885	QQ317435B	ACTIVE	NEW_STATE_PENSION	2018-01-31	17	107.44	N	0	WEEKLY	2026-03-01
+SP3200886	QQ761590B	ACTIVE	BASIC_STATE_PENSION	2009-09-07	12	71.76	N	0	WEEKLY	2026-03-01
+SP3200887	QQ566155D	ACTIVE	BASIC_STATE_PENSION	27/11/2015	31	154.45	N	0	FOUR_WEEKLY	2026-03-01
+SP3200888	QQ682509D	ACTIVE	BASIC_STATE_PENSION	18/07/2015	15	94.80	N	0	WEEKLY	2026-03-01
+SP3200889	QQ268659A	ACTIVE	BASIC_STATE_PENSION	07/05/2009	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200890	QQ797939C	ACTIVE	BASIC_STATE_PENSION	2008-10-22	10	63.20	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200891	QQ816248D	ACTIVE	BASIC_STATE_PENSION	24/11/2003	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200892	QQ384242A	CLOSED	BASIC_STATE_PENSION	2008-10-11	32	216.53	N	0	QUARTERLY	2026-03-01
+SP3200893	QQ818246C	ACTIVE	NEW_STATE_PENSION	13-Dec-2016	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200894	QQ445595B	ACTIVE	BASIC_STATE_PENSION	2006-12-15	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200895	QQ316155C	ACTIVE	BASIC_STATE_PENSION	2005-01-02	34	214.88	N	0	WEEKLY	2026-03-01
+SP3200896	QQ135825C	ACTIVE	NEW_STATE_PENSION	20/02/2024	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200897	QQ820899A	ACTIVE	NEW_STATE_PENSION	2019-12-14	19	120.08	N	0	WEEKLY	2026-03-01
+SP3200898	QQ849053C	ACTIVE	NEW_STATE_PENSION	2022-12-08	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200899	QQ423929A	ACTIVE	BASIC_STATE_PENSION	22/08/2005	32	167.70	N	0	FOUR_WEEKLY	2026-03-01
+SP3200900	QQ710617A	SUSPENDED	BASIC_STATE_PENSION	02-Nov-2002	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200901	QQ297918B	ACTIVE	NEW_STATE_PENSION	22-Dec-2021	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3200902	QQ635462A	ACTIVE	NEW_STATE_PENSION	12/06/2023	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200903	QQ541879B	ACTIVE	NEW_STATE_PENSION	2025-04-09	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3200904	QQ214107D	ACTIVE	NEW_STATE_PENSION	2023-07-11	14	88.48	N	0	WEEKLY	2026-03-01
+SP3200905	QQ190185A	ACTIVE	NEW_STATE_PENSION	2020-09-22	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200906	QQ698234B	ACTIVE	NEW_STATE_PENSION	2021-02-10	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200907	QQ223239B	ACTIVE	NEW_STATE_PENSION	2025-02-22	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200908	QQ638922D	ACTIVE	BASIC_STATE_PENSION	2010-08-29	19	120.08	N	0	QUARTERLY	2026-03-01
+SP3200909	QQ888246D	ACTIVE	BASIC_STATE_PENSION	2011-11-06	18	103.63	N	0	FOUR_WEEKLY	2026-03-01
+SP3200910	QQ253969B	ACTIVE	NEW_STATE_PENSION	2022-08-16	35	251.09	N	0	FOUR_WEEKLY	2026-03-01
+SP3200911	QQ832873B	ACTIVE	NEW_STATE_PENSION	06-Nov-2024	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200912	QQ247258D	ACTIVE	NEW_STATE_PENSION	01/02/2024	32	183.08	N	0	WEEKLY	2026-03-01
+SP3200913	QQ683793D	ACTIVE	BASIC_STATE_PENSION	2005-11-18	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200914	QQ543023B	ACTIVE	BASIC_STATE_PENSION	2006-12-12	10	59.57	N	0	WEEKLY	2026-03-01
+SP3200915	QQ623620D	ACTIVE	BASIC_STATE_PENSION	28/12/2000	21	108.08	N	0	WEEKLY	2026-03-01
+SP3200916	QQ468326A	ACTIVE	BASIC_STATE_PENSION	2015-02-06	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3200917	QQ192984A	ACTIVE	NEW_STATE_PENSION	22-Sep-2017	32	237.21	Y	0	WEEKLY	2026-03-01
+SP3200918	QQ432445B	CLOSED	NEW_STATE_PENSION	28/02/2017	10	63.20	N	0	WEEKLY	2026-03-01
+SP3200919	QQ129463A	ACTIVE	NEW_STATE_PENSION	2020-03-20	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3200920	QQ657375A	ACTIVE	NEW_STATE_PENSION	2023-09-25	21	147.72	N	0	WEEKLY	2026-03-01
+SP3200921	QQ428467D	ACTIVE	NEW_STATE_PENSION	2020-12-26	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200922	QQ393424C	ACTIVE	NEW_STATE_PENSION	04/06/2019	15	94.80	Y	0	WEEKLY	2026-03-01
+SP3200923	QQ509734C	ACTIVE	NEW_STATE_PENSION	2019-03-28	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200924	QQ806303B	CLOSED	BASIC_STATE_PENSION	21/09/2015	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3200925	QQ107085C	ACTIVE	BASIC_STATE_PENSION	2013-01-18	23	138.50	N	0	FOUR_WEEKLY	2026-03-01
+SP3200926	QQ433884D	ACTIVE	NEW_STATE_PENSION	30-Mar-2024	30	197.91	N	0	FOUR_WEEKLY	2026-03-01
+SP3200927	QQ359135C	ACTIVE	NEW_STATE_PENSION	18-Apr-2020	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200928	QQ362666B	ACTIVE	NEW_STATE_PENSION	14-May-2019	12	75.84	N	0	WEEKLY	2026-03-01
+SP3200929	QQ539324A	ACTIVE	NEW_STATE_PENSION	09-Mar-2024	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200930	QQ284854C	ACTIVE	NEW_STATE_PENSION	2026-03-19	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3200931	QQ727862B	ACTIVE	NEW_STATE_PENSION	11-Jun-2021	12	60.64	N	0	QUARTERLY	2026-03-01
+SP3200932	QQ828481C	ACTIVE	BASIC_STATE_PENSION	22/06/2010	14	76.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3200933	QQ288657D	ACTIVE	BASIC_STATE_PENSION	26/03/2016	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200934	QQ720151A	ACTIVE	NEW_STATE_PENSION	12/08/2021	11	78.32	Y	0	WEEKLY	2026-03-01
+SP3200935	QQ757716B	ACTIVE	BASIC_STATE_PENSION	30/12/2013	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200936	QQ685406D	ACTIVE	NEW_STATE_PENSION	19-Jan-2026	23	145.36	N	0	QUARTERLY	2026-03-01
+SP3200937	QQ854234D	ACTIVE	NEW_STATE_PENSION	2024-11-20	29	150.54	N	0	FOUR_WEEKLY	2026-03-01
+SP3200938	QQ582352B	ACTIVE	BASIC_STATE_PENSION	2009-03-13	10	63.20	N	0	WEEKLY	2026-03-01
+SP3200939	QQ763718B	ACTIVE	NEW_STATE_PENSION	24-Mar-2019	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200940	QQ180695D	ACTIVE	NEW_STATE_PENSION	05/11/2020	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200941	QQ392462B	ACTIVE	BASIC_STATE_PENSION	2013-08-11	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200942	QQ229542B	ACTIVE	NEW_STATE_PENSION	2022-03-27	35	219.10	N	0	FOUR_WEEKLY	2026-03-01
+SP3200943	QQ445348C	CLOSED	NEW_STATE_PENSION	17-Nov-2017	33	208.56	N	0	QUARTERLY	2026-03-01
+SP3200944	QQ296544A	ACTIVE	BASIC_STATE_PENSION	2004-11-07	11	60.83	N	0	WEEKLY	2026-03-01
+SP3200945	QQ396089A	ACTIVE	NEW_STATE_PENSION	10-Nov-2025	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200946	QQ153830C	SUSPENDED	NEW_STATE_PENSION	2019-11-01	17	103.31	N	0	FOUR_WEEKLY	2026-03-01
+SP3200947	QQ142091D	ACTIVE	BASIC_STATE_PENSION	14/10/2000	27	165.55	N	0	WEEKLY	2026-03-01
+SP3200948	QQ392232A	CLOSED	NEW_STATE_PENSION	2016-07-02	18	113.76	Y	0	WEEKLY	2026-03-01
+SP3200949	QQ417273B	ACTIVE	BASIC_STATE_PENSION	08/01/2013	26	164.32	N	0	QUARTERLY	2026-03-01
+SP3200950	QQ107277A	ACTIVE	NEW_STATE_PENSION	17/05/2023	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3200951	QQ213465B	ACTIVE	NEW_STATE_PENSION	30-May-2022	13	82.16	N	0	WEEKLY	2026-03-01
+SP3200952	QQ339006C	ACTIVE	BASIC_STATE_PENSION	24-Jun-2014	33	170.26	N	0	QUARTERLY	2026-03-01
+SP3200953	QQ245906D	CLOSED	BASIC_STATE_PENSION	17/05/2012	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3200954	QQ686677A	ACTIVE	BASIC_STATE_PENSION	05/10/2015	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3200955	QQ802805A	CLOSED	NEW_STATE_PENSION	01/04/2022	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200956	QQ228450D	ACTIVE	BASIC_STATE_PENSION	2000-10-07	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200957	QQ813845D	ACTIVE	BASIC_STATE_PENSION	2015-04-25	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3200958	QQ588639A	ACTIVE	NEW_STATE_PENSION	22-Apr-2017	20	126.40	Y	0	WEEKLY	2026-03-01
+SP3200959	QQ464235A	ACTIVE	BASIC_STATE_PENSION	2010-03-22	13	82.27	N	0	QUARTERLY	2026-03-01
+SP3200960	QQ743397D	SUSPENDED	BASIC_STATE_PENSION	21/05/2012	29	183.28	N	0	QUARTERLY	2026-03-01
+SP3200961	QQ174704A	ACTIVE	NEW_STATE_PENSION	2023-12-31	18	113.76	N	0	QUARTERLY	2026-03-01
+SP3200962	QQ133304A	ACTIVE	NEW_STATE_PENSION	2022-09-02	20	145.19	N	0	WEEKLY	2026-03-01
+SP3200963	QQ648778C	ACTIVE	BASIC_STATE_PENSION	06-Mar-2010	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3200964	QQ560041D	ACTIVE	NEW_STATE_PENSION	2022-10-26	12	81.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3200965	QQ311360A	ACTIVE	NEW_STATE_PENSION	2020-11-26	15	78.53	N	0	FOUR_WEEKLY	2026-03-01
+SP3200966	QQ635278D	ACTIVE	NEW_STATE_PENSION	2024-08-28	15	111.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200967	QQ197898A	SUSPENDED	NEW_STATE_PENSION	06/06/2023	15	82.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200968	QQ490828A	CLOSED	NEW_STATE_PENSION	2025-06-06	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3200969	QQ590816A	ACTIVE	BASIC_STATE_PENSION	2013-06-11	21	132.72	N	0	QUARTERLY	2026-03-01
+SP3200970	QQ838654C	ACTIVE	NEW_STATE_PENSION	2022-03-23	22	139.04	Y	0	WEEKLY	2026-03-01
+SP3200971	QQ633999B	ACTIVE	NEW_STATE_PENSION	02-Aug-2020	26	164.32	N	0	QUARTERLY	2026-03-01
+SP3200972	QQ178036B	ACTIVE	NEW_STATE_PENSION	10-Nov-2016	23	145.36	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200973	QQ852494C	CLOSED	BASIC_STATE_PENSION	27/10/2002	33	209.35	N	0	FOUR_WEEKLY	2026-03-01
+SP3200974	QQ306375B	ACTIVE	BASIC_STATE_PENSION	18/07/2013	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3200975	QQ554421C	ACTIVE	NEW_STATE_PENSION	06-Sep-2018	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3200976	QQ520354C	ACTIVE	NEW_STATE_PENSION	2016-12-11	32	180.39	N	0	WEEKLY	2026-03-01
+SP3200977	QQ888454C	CLOSED	NEW_STATE_PENSION	2019-07-04	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3200978	QQ376516B	ACTIVE	NEW_STATE_PENSION	2020-01-14	24	151.68	N	0	WEEKLY	2026-03-01
+SP3200979	QQ242291A	ACTIVE	BASIC_STATE_PENSION	2010-10-18	20	126.40	N	0	WEEKLY	2026-03-01
+SP3200980	QQ639270D	ACTIVE	BASIC_STATE_PENSION	19-Dec-2010	22	161.77	N	0	WEEKLY	2026-03-01
+SP3200981	QQ887908C	CLOSED	BASIC_STATE_PENSION	16/01/2007	25	158.00	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200982	QQ734161C	ACTIVE	NEW_STATE_PENSION	30-Dec-2024	27	170.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3200983	QQ198896D	ACTIVE	BASIC_STATE_PENSION	2012-12-28	33	208.56	N	0	WEEKLY	2026-03-01
+SP3200984	QQ739956A	ACTIVE	BASIC_STATE_PENSION	2015-01-17	19	120.08	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200985	QQ388391B	CLOSED	NEW_STATE_PENSION	2024-02-18	10	63.20	N	0	QUARTERLY	2026-03-01
+SP3200986	QQ192578D	ACTIVE	NEW_STATE_PENSION	07/06/2023	18	124.38	N	0	FOUR_WEEKLY	2026-03-01
+SP3200987	QQ605005A	ACTIVE	BASIC_STATE_PENSION	07-Jan-2016	32	202.24	Y	0	FOUR_WEEKLY	2026-03-01
+SP3200988	QQ510047A	ACTIVE	NEW_STATE_PENSION	2026-03-30	34	214.88	N	0	WEEKLY	2026-03-01
+SP3200989	QQ839150D	ACTIVE	NEW_STATE_PENSION	02/05/2024	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3200990	QQ353105C	ACTIVE	NEW_STATE_PENSION	2016-11-15	28	176.96	N	0	QUARTERLY	2026-03-01
+SP3200991	QQ448749B	ACTIVE	NEW_STATE_PENSION	2018-05-20	34	253.48	N	0	WEEKLY	2026-03-01
+SP3200992	QQ536678A	ACTIVE	NEW_STATE_PENSION	2024-11-01	22	160.81	N	0	FOUR_WEEKLY	2026-03-01
+SP3200993	QQ773110C	SUSPENDED	BASIC_STATE_PENSION	2014-12-14	29	183.28	N	0	WEEKLY	2026-03-01
+SP3200994	QQ718621C	ACTIVE	BASIC_STATE_PENSION	2013-07-23	28	176.96	N	0	WEEKLY	2026-03-01
+SP3200995	QQ614751A	ACTIVE	NEW_STATE_PENSION	2016-10-10	20	117.05	N	0	FOUR_WEEKLY	2026-03-01
+SP3200996	QQ487260D	ACTIVE	NEW_STATE_PENSION	24/07/2025	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3200997	QQ452547C	ACTIVE	NEW_STATE_PENSION	2018-10-07	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3200998	QQ425556A	SUSPENDED	BASIC_STATE_PENSION	09/11/2013	27	181.65	N	0	FOUR_WEEKLY	2026-03-01
+SP3200999	QQ470324D	ACTIVE	BASIC_STATE_PENSION	23/08/2009	25	158.00	N	0	FOUR_WEEKLY	2026-03-01
+SP3201000	QQ824491A	ACTIVE	NEW_STATE_PENSION	2017-08-13	22	139.04	N	0	FOUR_WEEKLY	2026-03-01
+SP3201001	QQ811241D	ACTIVE	NEW_STATE_PENSION	28/03/2024	31	212.11	N	0	FOUR_WEEKLY	2026-03-01
+SP3201002	QQ638039B	CLOSED	BASIC_STATE_PENSION	15/10/2001	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3201003	QQ717530B	ACTIVE	NEW_STATE_PENSION	2020-05-15	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3201004	QQ549145D	ACTIVE	NEW_STATE_PENSION	28/10/2021	23	145.36	N	0	FOUR_WEEKLY	2026-03-01
+SP3201005	QQ424749A	ACTIVE	NEW_STATE_PENSION	23/08/2021	27	142.42	N	0	FOUR_WEEKLY	2026-03-01
+SP3201006	QQ210246A	ACTIVE	BASIC_STATE_PENSION	09/04/2000	32	202.24	N	0	QUARTERLY	2026-03-01
+SP3201007	QQ675247B	ACTIVE	NEW_STATE_PENSION	01-Aug-2022	12	65.80	N	0	WEEKLY	2026-03-01
+SP3201008	QQ510301A	ACTIVE	BASIC_STATE_PENSION	25/06/2000	35	221.20	N	0	WEEKLY	2026-03-01
+SP3201009	QQ716341A	ACTIVE	NEW_STATE_PENSION	2020-08-11	33	205.79	N	0	WEEKLY	2026-03-01
+SP3201010	QQ136117A	SUSPENDED	NEW_STATE_PENSION	11-Mar-2021	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3201011	QQ210446D	ACTIVE	NEW_STATE_PENSION	29/04/2021	20	139.64	N	0	FOUR_WEEKLY	2026-03-01
+SP3201012	QQ708569B	ACTIVE	NEW_STATE_PENSION	04/03/2024	26	164.32	N	0	WEEKLY	2026-03-01
+SP3201013	QQ893237D	ACTIVE	NEW_STATE_PENSION	2024-02-08	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3201014	QQ284112D	SUSPENDED	NEW_STATE_PENSION	25/12/2023	26	164.32	N	0	QUARTERLY	2026-03-01
+SP3201015	QQ503407C	ACTIVE	BASIC_STATE_PENSION	09/10/2015	10	63.20	N	0	WEEKLY	2026-03-01
+SP3201016	QQ599883C	CLOSED	BASIC_STATE_PENSION	2012-08-11	10	63.20	N	0	WEEKLY	2026-03-01
+SP3201017	QQ131704D	ACTIVE	BASIC_STATE_PENSION	2013-05-28	21	123.94	N	0	FOUR_WEEKLY	2026-03-01
+SP3201018	QQ242146C	ACTIVE	BASIC_STATE_PENSION	2008-06-05	10	63.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3201019	QQ196051A	ACTIVE	BASIC_STATE_PENSION	2006-01-04	29	183.28	N	0	FOUR_WEEKLY	2026-03-01
+SP3201020	QQ337008D	ACTIVE	BASIC_STATE_PENSION	30-Aug-2011	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3201021	QQ834825C	ACTIVE	NEW_STATE_PENSION	2016-09-12	30	209.42	N	0	FOUR_WEEKLY	2026-03-01
+SP3201022	QQ334780C	SUSPENDED	NEW_STATE_PENSION	2021-09-25	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3201023	QQ456069B	ACTIVE	NEW_STATE_PENSION	2023-11-25	14	69.69	N	0	WEEKLY	2026-03-01
+SP3201024	QQ529553D	ACTIVE	NEW_STATE_PENSION	2019-04-14	26	182.89	N	0	WEEKLY	2026-03-01
+SP3201025	QQ434140D	SUSPENDED	NEW_STATE_PENSION	2022-05-20	10	63.20	N	0	QUARTERLY	2026-03-01
+SP3201026	QQ600790D	ACTIVE	NEW_STATE_PENSION	02/11/2016	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3201027	QQ218282A	ACTIVE	NEW_STATE_PENSION	07-Aug-2020	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3201028	QQ101214A	ACTIVE	NEW_STATE_PENSION	21/08/2021	34	196.29	N	0	FOUR_WEEKLY	2026-03-01
+SP3201029	QQ551337A	ACTIVE	BASIC_STATE_PENSION	23-Feb-2007	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3201030	QQ806768C	ACTIVE	NEW_STATE_PENSION	2024-07-29	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3201031	QQ144966B	ACTIVE	BASIC_STATE_PENSION	2014-01-22	18	104.65	N	0	FOUR_WEEKLY	2026-03-01
+SP3201032	QQ846288A	ACTIVE	BASIC_STATE_PENSION	27-Oct-2007	12	75.84	N	0	WEEKLY	2026-03-01
+SP3201033	QQ105166C	SUSPENDED	NEW_STATE_PENSION	12/11/2023	30	198.98	N	0	WEEKLY	2026-03-01
+SP3201034	QQ290569B	CLOSED	BASIC_STATE_PENSION	2000-06-08	29	173.63	N	0	WEEKLY	2026-03-01
+SP3201035	QQ897108A	ACTIVE	NEW_STATE_PENSION	22/10/2025	33	245.68	Y	0	FOUR_WEEKLY	2026-03-01
+SP3201036	QQ425183A	ACTIVE	NEW_STATE_PENSION	2024-08-06	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3201037	QQ607911A	SUSPENDED	BASIC_STATE_PENSION	2013-04-27	12	74.58	N	0	WEEKLY	2026-03-01
+SP3201038	QQ758028A	ACTIVE	NEW_STATE_PENSION	10/09/2022	17	107.44	N	0	WEEKLY	2026-03-01
+SP3201039	QQ369527A	ACTIVE	BASIC_STATE_PENSION	03/12/2013	14	88.48	N	0	WEEKLY	2026-03-01
+SP3201040	QQ132063A	ACTIVE	NEW_STATE_PENSION	29-Apr-2018	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3201041	QQ566913B	ACTIVE	NEW_STATE_PENSION	26/05/2017	17	107.44	Y	0	WEEKLY	2026-03-01
+SP3201042	QQ225741D	ACTIVE	NEW_STATE_PENSION	07-Aug-2023	19	120.08	N	0	FOUR_WEEKLY	2026-03-01
+SP3201043	QQ804446A	ACTIVE	NEW_STATE_PENSION	2023-12-30	18	123.73	N	0	FOUR_WEEKLY	2026-03-01
+SP3201044	QQ620986D	ACTIVE	NEW_STATE_PENSION	2025-06-11	28	192.15	N	0	FOUR_WEEKLY	2026-03-01
+SP3201045	QQ226739A	CLOSED	NEW_STATE_PENSION	2023-06-05	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3201046	QQ178221D	ACTIVE	NEW_STATE_PENSION	2023-12-07	30	189.60	N	0	WEEKLY	2026-03-01
+SP3201047	QQ610259A	ACTIVE	NEW_STATE_PENSION	15/10/2019	17	93.95	N	0	FOUR_WEEKLY	2026-03-01
+SP3201048	QQ427337D	ACTIVE	BASIC_STATE_PENSION	20-Jun-2009	25	166.28	N	0	WEEKLY	2026-03-01
+SP3201049	QQ618134D	ACTIVE	BASIC_STATE_PENSION	21/12/2008	14	88.48	N	0	WEEKLY	2026-03-01
+SP3201050	QQ162214A	CLOSED	BASIC_STATE_PENSION	18-Jan-2015	18	127.65	N	0	WEEKLY	2026-03-01
+SP3201051	QQ338776D	ACTIVE	NEW_STATE_PENSION	29/08/2016	30	216.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3201052	QQ880931A	ACTIVE	NEW_STATE_PENSION	01/02/2020	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3201053	QQ436749D	ACTIVE	BASIC_STATE_PENSION	2000-07-17	14	88.48	N	0	QUARTERLY	2026-03-01
+SP3201054	QQ730810B	CLOSED	NEW_STATE_PENSION	25/08/2019	28	197.41	N	0	WEEKLY	2026-03-01
+SP3201055	QQ729364A	CLOSED	NEW_STATE_PENSION	02/12/2018	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3201056	QQ419243C	ACTIVE	BASIC_STATE_PENSION	13/05/2014	31	223.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3201057	QQ104327C	ACTIVE	BASIC_STATE_PENSION	2010-01-11	29	183.28	N	0	WEEKLY	2026-03-01
+SP3201058	QQ601035D	ACTIVE	BASIC_STATE_PENSION	04/01/2012	26	164.32	N	0	FOUR_WEEKLY	2026-03-01
+SP3201059	QQ662080A	ACTIVE	NEW_STATE_PENSION	30/03/2020	16	101.12	N	0	QUARTERLY	2026-03-01
+SP3201060	QQ287336A	CLOSED	NEW_STATE_PENSION	28-Nov-2016	28	176.96	N	0	FOUR_WEEKLY	2026-03-01
+SP3201061	QQ796837D	ACTIVE	NEW_STATE_PENSION	2023-09-22	17	118.78	N	0	WEEKLY	2026-03-01
+SP3201062	QQ760294D	SUSPENDED	NEW_STATE_PENSION	19/12/2017	14	88.48	N	0	FOUR_WEEKLY	2026-03-01
+SP3201063	QQ354269C	ACTIVE	BASIC_STATE_PENSION	18/06/2015	27	170.64	Y	0	FOUR_WEEKLY	2026-03-01
+SP3201064	QQ318966B	SUSPENDED	BASIC_STATE_PENSION	2010-05-19	12	75.84	N	0	FOUR_WEEKLY	2026-03-01
+SP3201065	QQ103802B	ACTIVE	BASIC_STATE_PENSION	2014-08-09	14	88.48	N	0	WEEKLY	2026-03-01
+SP3201066	QQ814558C	ACTIVE	NEW_STATE_PENSION	10-Jan-2017	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3201067	QQ154811B	CLOSED	NEW_STATE_PENSION	29/07/2021	30	163.02	N	0	FOUR_WEEKLY	2026-03-01
+SP3201068	QQ159090A	ACTIVE	NEW_STATE_PENSION	2025-11-19	34	214.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3201069	QQ127055C	ACTIVE	NEW_STATE_PENSION	2018-10-29	10	64.63	N	0	QUARTERLY	2026-03-01
+SP3201070	QQ713304D	ACTIVE	BASIC_STATE_PENSION	13/06/2014	17	107.44	N	0	FOUR_WEEKLY	2026-03-01
+SP3201071	QQ559903B	SUSPENDED	NEW_STATE_PENSION	26/05/2016	14	88.48	N	0	WEEKLY	2026-03-01
+SP3201072	QQ224524D	ACTIVE	BASIC_STATE_PENSION	2004-05-15	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3201073	QQ878204A	ACTIVE	NEW_STATE_PENSION	2019-04-19	14	95.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3201074	QQ767718C	ACTIVE	BASIC_STATE_PENSION	13-Feb-2014	11	69.52	N	0	WEEKLY	2026-03-01
+SP3201075	QQ707272A	ACTIVE	NEW_STATE_PENSION	2017-02-07	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3201076	QQ154410A	ACTIVE	NEW_STATE_PENSION	27-Jun-2018	26	171.89	N	0	FOUR_WEEKLY	2026-03-01
+SP3201077	QQ740084C	ACTIVE	NEW_STATE_PENSION	2017-03-09	18	113.76	N	0	WEEKLY	2026-03-01
+SP3201078	QQ247609A	CLOSED	NEW_STATE_PENSION	2020-07-16	13	78.58	N	0	FOUR_WEEKLY	2026-03-01
+SP3201079	QQ842455C	ACTIVE	BASIC_STATE_PENSION	2011-11-05	27	175.09	N	0	FOUR_WEEKLY	2026-03-01
+SP3201080	QQ772146C	ACTIVE	BASIC_STATE_PENSION	21-May-2006	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3201081	QQ352448A	ACTIVE	BASIC_STATE_PENSION	04-Oct-2004	13	82.16	N	0	QUARTERLY	2026-03-01
+SP3201082	QQ602909D	ACTIVE	NEW_STATE_PENSION	2018-12-17	34	214.88	N	0	WEEKLY	2026-03-01
+SP3201083	QQ778922A	ACTIVE	BASIC_STATE_PENSION	2015-10-04	24	135.88	N	0	FOUR_WEEKLY	2026-03-01
+SP3201084	QQ609315A	ACTIVE	BASIC_STATE_PENSION	20-Aug-2012	20	126.40	N	0	WEEKLY	2026-03-01
+SP3201085	QQ222002A	ACTIVE	BASIC_STATE_PENSION	31-Dec-2001	18	113.76	N	0	FOUR_WEEKLY	2026-03-01
+SP3201086	QQ730258B	ACTIVE	BASIC_STATE_PENSION	22/04/2011	30	189.60	N	0	FOUR_WEEKLY	2026-03-01
+SP3201087	QQ892221B	ACTIVE	NEW_STATE_PENSION	16/05/2019	34	199.80	N	0	QUARTERLY	2026-03-01
+SP3201088	QQ152115A	ACTIVE	NEW_STATE_PENSION	2024-04-26	12	75.84	N	0	WEEKLY	2026-03-01
+SP3201089	QQ760417D	ACTIVE	NEW_STATE_PENSION	02-Feb-2025	30	148.01	N	0	FOUR_WEEKLY	2026-03-01
+SP3201090	QQ239564B	ACTIVE	BASIC_STATE_PENSION	14/02/2013	11	69.52	N	0	FOUR_WEEKLY	2026-03-01
+SP3201091	QQ173658C	CLOSED	BASIC_STATE_PENSION	14-Dec-2008	13	82.16	N	0	FOUR_WEEKLY	2026-03-01
+SP3201092	QQ702305D	ACTIVE	NEW_STATE_PENSION	2017-03-05	31	230.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3201093	QQ517987B	ACTIVE	NEW_STATE_PENSION	06-Sep-2023	34	214.88	N	0	QUARTERLY	2026-03-01
+SP3201094	QQ575822A	ACTIVE	BASIC_STATE_PENSION	2012-03-03	19	120.08	N	0	QUARTERLY	2026-03-01
+SP3201095	QQ104571C	ACTIVE	NEW_STATE_PENSION	22/10/2023	29	183.28	N	0	WEEKLY	2026-03-01
+SP3201096	QQ460120A	ACTIVE	NEW_STATE_PENSION	2024-11-06	28	166.69	N	0	FOUR_WEEKLY	2026-03-01
+SP3201097	QQ757236B	ACTIVE	BASIC_STATE_PENSION	20-Dec-2009	25	167.66	N	0	WEEKLY	2026-03-01
+SP3201098	QQ356139B	CLOSED	BASIC_STATE_PENSION	2013-08-03	32	202.24	N	0	FOUR_WEEKLY	2026-03-01
+SP3201099	QQ423116D	CLOSED	BASIC_STATE_PENSION	15/05/2013	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3201100	QQ179613A	ACTIVE	BASIC_STATE_PENSION	25/02/2015	32	177.94	Y	0	FOUR_WEEKLY	2026-03-01
+SP3201101	QQ646848C	ACTIVE	BASIC_STATE_PENSION	15-Sep-2010	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3201102	QQ406407C	ACTIVE	NEW_STATE_PENSION	27/04/2021	20	126.40	N	0	WEEKLY	2026-03-01
+SP3201103	QQ467973C	ACTIVE	BASIC_STATE_PENSION	2013-01-15	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3201104	QQ514502D	ACTIVE	BASIC_STATE_PENSION	14-Jul-2014	16	101.12	N	0	WEEKLY	2026-03-01
+SP3201105	QQ723102B	ACTIVE	NEW_STATE_PENSION	2023-06-30	22	139.04	N	0	QUARTERLY	2026-03-01
+SP3201106	QQ248960D	ACTIVE	NEW_STATE_PENSION	2025-06-02	23	148.85	N	0	FOUR_WEEKLY	2026-03-01
+SP3201107	QQ140172C	ACTIVE	BASIC_STATE_PENSION	11/09/2012	16	101.12	N	0	FOUR_WEEKLY	2026-03-01
+SP3201108	QQ801333B	ACTIVE	NEW_STATE_PENSION	16/03/2021	21	132.72	N	0	FOUR_WEEKLY	2026-03-01
+SP3201109	QQ561633D	ACTIVE	BASIC_STATE_PENSION	21/09/2011	11	54.82	N	0	WEEKLY	2026-03-01
+SP3201110	QQ200294B	ACTIVE	BASIC_STATE_PENSION	2012-04-19	20	126.40	N	0	FOUR_WEEKLY	2026-03-01
+SP3201111	QQ313806A	ACTIVE	BASIC_STATE_PENSION	2014-07-02	14	88.48	Y	0	QUARTERLY	2026-03-01
+SP3201112	QQ391090C	ACTIVE	NEW_STATE_PENSION	2020-12-19	15	94.80	N	0	FOUR_WEEKLY	2026-03-01
+SP3201113	QQ867509C	ACTIVE	BASIC_STATE_PENSION	23-Mar-2011	33	208.56	N	0	FOUR_WEEKLY	2026-03-01
+SP3201114	QQ732680D	ACTIVE	NEW_STATE_PENSION	2019-12-08	35	221.20	N	0	FOUR_WEEKLY	2026-03-01
+SP3201115	QQ469037A	CLOSED	NEW_STATE_PENSION	02/02/2025	20	126.40	N	0	QUARTERLY	2026-03-01
+SP3201116	QQ593279A	ACTIVE	NEW_STATE_PENSION	09-Jul-2023	14	88.48	N	0	WEEKLY	2026-03-01
+\.
+
+COPY raw.payment (payment_id, claim_ref, payment_date, amount, payment_method, payment_status, created_at) FROM stdin;
+PAY00000001	SP3200001	2026-02-25	88.48	CHEQUE	SETTLED	2026-02-25
+PAY00000002	SP3200001	2026-03-04	88.48	BACS	SETTLED	2026-03-04
+PAY00000003	SP3200001	2026-03-11	88.48	BACS	SETTLED	2026-03-11
+PAY00000004	SP3200001	2026-03-18	88.48	POST_OFFICE	SETTLED	2026-03-18
+PAY00000005	SP3200001	2026-03-25	88.48	POST_OFFICE	SETTLED	2026-03-25
+PAY00000006	SP3200001	2026-04-01	88.48	BACS	SETTLED	2026-04-01
+PAY00000009	SP3200002	2025-11-14	404.48	CHEQUE	SETTLED	2025-11-14
+PAY00000010	SP3200002	2025-12-12	404.48	BACS	SETTLED	2025-12-12
+PAY00000011	SP3200002	2026-01-09	404.48	BACS	SETTLED	2026-01-09
+PAY00000012	SP3200002	2026-02-06	404.48	CHEQUE	SETTLED	2026-02-06
+PAY00000013	SP3200002	2026-03-06	404.48	POST_OFFICE	SETTLED	2026-03-06
+PAY00000014	SP3200002	2026-04-03	404.48	POST_OFFICE	SETTLED	2026-04-03
+PAY00000017	SP3200003	2026-03-08	151.68	BACS	SETTLED	2026-03-08
+PAY00000018	SP3200003	2026-03-15	151.68	BACS	SETTLED	2026-03-15
+PAY00000019	SP3200003	2026-03-22	151.68	POST_OFFICE	SETTLED	2026-03-22
+PAY00000020	SP3200003	2026-03-29	151.68	BACS	SETTLED	2026-03-29
+PAY00000021	SP3200003	2026-04-05	151.68	BACS	SETTLED	2026-04-05
+PAY00000024	SP3200004	2024-04-04	2382.64	BACS	SETTLED	2024-04-04
+PAY00000025	SP3200004	2024-07-04	2382.64	BACS	SETTLED	2024-07-04
+PAY00000026	SP3200004	2024-10-03	2382.64	BACS	SETTLED	2024-10-03
+PAY00000027	SP3200004	2025-01-02	2382.64	POST_OFFICE	SETTLED	2025-01-02
+PAY00000028	SP3200004	2025-04-03	2382.64	BACS	SETTLED	2025-04-03
+PAY00000029	SP3200004	2025-07-03	2382.64	BACS	SETTLED	2025-07-03
+PAY00000030	SP3200004	2025-10-02	2382.64	BACS	SETTLED	2025-10-02
+PAY00000031	SP3200004	2026-01-01	2382.64	BACS	SETTLED	2026-01-01
+PAY00000032	SP3200004	2026-04-02	2382.64	BACS	SETTLED	2026-04-02
+PAY00000035	SP3200005	2026-03-07	126.40	POST_OFFICE	SETTLED	2026-03-07
+PAY00000036	SP3200005	2026-03-14	126.40	BACS	SETTLED	2026-03-14
+PAY00000037	SP3200005	2026-03-21	126.40	BACS	SETTLED	2026-03-21
+PAY00000038	SP3200005	2026-03-28	126.40	POST_OFFICE	SETTLED	2026-03-28
+PAY00000039	SP3200005	2026-04-04	126.40	BACS	SETTLED	2026-04-04
+PAY00000042	SP3200006	2026-02-14	158.00	POST_OFFICE	SETTLED	2026-02-14
+PAY00000043	SP3200006	2026-02-21	158.00	BACS	SETTLED	2026-02-21
+PAY00000044	SP3200006	2026-02-28	158.00	BACS	SETTLED	2026-02-28
+PAY00000045	SP3200006	2026-03-07	158.00	BACS	SETTLED	2026-03-07
+PAY00000046	SP3200006	2026-03-14	158.00	BACS	SETTLED	2026-03-14
+PAY00000047	SP3200006	2026-03-21	158.00	BACS	SETTLED	2026-03-21
+PAY00000048	SP3200006	2026-03-28	158.00	POST_OFFICE	SETTLED	2026-03-28
+PAY00000049	SP3200006	2026-04-04	158.00	POST_OFFICE	SETTLED	2026-04-04
+PAY00000052	SP3200007	2026-02-28	164.32	BACS	SETTLED	2026-02-28
+PAY00000053	SP3200007	2026-03-07	164.32	BACS	SETTLED	2026-03-07
+PAY00000054	SP3200007	2026-03-14	164.32	BACS	SETTLED	2026-03-14
+PAY00000055	SP3200007	2026-03-21	164.32	BACS	SETTLED	2026-03-21
+PAY00000056	SP3200007	2026-03-28	164.32	BACS	SETTLED	2026-03-28
+PAY00000057	SP3200007	2026-04-04	164.32	POST_OFFICE	SETTLED	2026-04-04
+PAY00000060	SP3200008	2026-03-06	176.96	BACS	SETTLED	2026-03-06
+PAY00000061	SP3200008	2026-03-13	176.96	POST_OFFICE	SETTLED	2026-03-13
+PAY00000062	SP3200008	2026-03-20	176.96	BACS	SETTLED	2026-03-20
+PAY00000063	SP3200008	2026-03-27	176.96	POST_OFFICE	SETTLED	2026-03-27
+PAY00000064	SP3200008	2026-04-03	176.96	BACS	SETTLED	2026-04-03
+PAY00000067	SP3200009	2025-11-15	455.04	BACS	SETTLED	2025-11-15
+PAY00000068	SP3200009	2025-12-13	455.04	BACS	SETTLED	2025-12-13
+PAY00000069	SP3200009	2026-01-10	455.04	BACS	SETTLED	2026-01-10
+PAY00000070	SP3200009	2026-02-07	455.04	BACS	SETTLED	2026-02-07
+PAY00000071	SP3200009	2026-03-07	455.04	BACS	SETTLED	2026-03-07
+PAY00000072	SP3200009	2026-04-04	455.04	BACS	SETTLED	2026-04-04
+PAY00000075	SP3200010	2025-09-20	581.44	POST_OFFICE	SETTLED	2025-09-20
+PAY00000076	SP3200010	2025-10-18	581.44	BACS	SETTLED	2025-10-18
+PAY00000077	SP3200010	2025-11-15	581.44	BACS	SETTLED	2025-11-15
+PAY00000078	SP3200010	2025-12-13	581.44	BACS	SETTLED	2025-12-13
+PAY00000079	SP3200010	2026-01-10	581.44	POST_OFFICE	SETTLED	2026-01-10
+PAY00000080	SP3200010	2026-02-07	581.44	BACS	SETTLED	2026-02-07
+PAY00000081	SP3200010	2026-03-07	581.44	POST_OFFICE	SETTLED	2026-03-07
+PAY00000082	SP3200010	2026-04-04	581.44	BACS	SETTLED	2026-04-04
+PAY00000085	SP3200011	2025-08-24	522.68	BACS	SETTLED	2025-08-24
+PAY00000086	SP3200011	2025-09-21	522.68	BACS	SETTLED	2025-09-21
+PAY00000087	SP3200011	2025-10-19	522.68	BACS	SETTLED	2025-10-19
+PAY00000088	SP3200011	2025-11-16	522.68	BACS	SETTLED	2025-11-16
+PAY00000089	SP3200011	2025-12-14	522.68	BACS	SETTLED	2025-12-14
+PAY00000090	SP3200011	2026-01-11	522.68	BACS	SETTLED	2026-01-11
+PAY00000091	SP3200011	2026-02-08	522.68	BACS	SETTLED	2026-02-08
+PAY00000092	SP3200011	2026-03-08	522.68	BACS	SETTLED	2026-03-08
+PAY00000093	SP3200011	2026-04-05	522.68	POST_OFFICE	SETTLED	2026-04-05
+PAY00000096	SP3200012	2025-09-22	480.32	BACS	SETTLED	2025-09-22
+PAY00000097	SP3200012	2025-10-20	480.32	BACS	SETTLED	2025-10-20
+PAY00000098	SP3200012	2025-11-17	480.32	BACS	SETTLED	2025-11-17
+PAY00000099	SP3200012	2025-12-15	480.32	BACS	SETTLED	2025-12-15
+PAY00000100	SP3200012	2026-01-12	480.32	BACS	SETTLED	2026-01-12
+PAY00000101	SP3200012	2026-02-09	480.32	BACS	SETTLED	2026-02-09
+PAY00000102	SP3200012	2026-03-09	480.32	BACS	SETTLED	2026-03-09
+PAY00000105	SP3200013	2025-09-19	632.00	BACS	SETTLED	2025-09-19
+PAY00000106	SP3200013	2025-10-17	632.00	POST_OFFICE	SETTLED	2025-10-17
+PAY00000107	SP3200013	2025-11-14	632.00	BACS	SETTLED	2025-11-14
+PAY00000108	SP3200013	2025-12-12	632.00	BACS	SETTLED	2025-12-12
+PAY00000109	SP3200013	2026-01-09	632.00	POST_OFFICE	SETTLED	2026-01-09
+PAY00000110	SP3200013	2026-02-06	632.00	BACS	SETTLED	2026-02-06
+PAY00000111	SP3200013	2026-03-06	632.00	BACS	SETTLED	2026-03-06
+PAY00000112	SP3200013	2026-04-03	632.00	BACS	SETTLED	2026-04-03
+PAY00000115	SP3200014	2025-09-19	733.12	BACS	SETTLED	2025-09-19
+PAY00000116	SP3200014	2025-10-17	733.12	BACS	SETTLED	2025-10-17
+PAY00000117	SP3200014	2025-11-14	733.12	BACS	SETTLED	2025-11-14
+PAY00000118	SP3200014	2025-12-12	733.12	CHEQUE	SETTLED	2025-12-12
+PAY00000119	SP3200014	2026-01-09	733.12	POST_OFFICE	SETTLED	2026-01-09
+PAY00000120	SP3200014	2026-02-06	733.12	BACS	SETTLED	2026-02-06
+PAY00000121	SP3200014	2026-03-06	733.12	BACS	SETTLED	2026-03-06
+PAY00000122	SP3200014	2026-04-03	733.12	BACS	SETTLED	2026-04-03
+PAY00000125	SP3200015	2025-04-02	2786.42	BACS	SETTLED	2025-04-02
+PAY00000126	SP3200015	2025-07-02	2786.42	BACS	SETTLED	2025-07-02
+PAY00000127	SP3200015	2025-10-01	2786.42	BACS	SETTLED	2025-10-01
+PAY00000128	SP3200015	2025-12-31	2786.42	BACS	SETTLED	2025-12-31
+PAY00000129	SP3200015	2026-04-01	2786.42	BACS	SETTLED	2026-04-01
+PAY00000132	SP3200016	2025-09-20	679.20	BACS	SETTLED	2025-09-20
+PAY00000133	SP3200016	2025-10-18	679.20	BACS	SETTLED	2025-10-18
+PAY00000134	SP3200016	2025-11-15	679.20	BACS	SETTLED	2025-11-15
+PAY00000135	SP3200016	2025-12-13	679.20	BACS	SETTLED	2025-12-13
+PAY00000136	SP3200016	2026-01-10	679.20	CHEQUE	SETTLED	2026-01-10
+PAY00000137	SP3200016	2026-02-07	679.20	BACS	SETTLED	2026-02-07
+PAY00000138	SP3200016	2026-03-07	679.20	BACS	SETTLED	2026-03-07
+PAY00000139	SP3200016	2026-04-04	679.20	BACS	SETTLED	2026-04-04
+PAY00000142	SP3200017	2025-11-12	303.36	POST_OFFICE	SETTLED	2025-11-12
+PAY00000143	SP3200017	2025-12-10	303.36	BACS	SETTLED	2025-12-10
+PAY00000144	SP3200017	2026-01-07	303.36	BACS	SETTLED	2026-01-07
+PAY00000145	SP3200017	2026-02-04	303.36	BACS	SETTLED	2026-02-04
+PAY00000146	SP3200017	2026-03-04	303.36	BACS	SETTLED	2026-03-04
+PAY00000147	SP3200017	2026-04-01	303.36	BACS	SETTLED	2026-04-01
+PAY00000150	SP3200018	2025-08-21	594.16	POST_OFFICE	SETTLED	2025-08-21
+PAY00000151	SP3200018	2025-09-18	594.16	BACS	SETTLED	2025-09-18
+PAY00000152	SP3200018	2025-10-16	594.16	BACS	SETTLED	2025-10-16
+PAY00000153	SP3200018	2025-11-13	594.16	POST_OFFICE	SETTLED	2025-11-13
+PAY00000154	SP3200018	2025-12-11	594.16	BACS	SETTLED	2025-12-11
+PAY00000155	SP3200018	2026-01-08	594.16	BACS	SETTLED	2026-01-08
+PAY00000156	SP3200018	2026-02-05	594.16	POST_OFFICE	SETTLED	2026-02-05
+PAY00000157	SP3200018	2026-03-05	594.16	BACS	SETTLED	2026-03-05
+PAY00000158	SP3200018	2026-04-02	594.16	POST_OFFICE	SETTLED	2026-04-02
+PAY00000161	SP3200019	2026-02-08	139.21	POST_OFFICE	SETTLED	2026-02-08
+PAY00000162	SP3200019	2026-02-15	139.21	BACS	SETTLED	2026-02-15
+PAY00000163	SP3200019	2026-02-22	139.21	BACS	SETTLED	2026-02-22
+PAY00000164	SP3200019	2026-03-01	139.21	BACS	SETTLED	2026-03-01
+PAY00000165	SP3200019	2026-03-08	139.21	BACS	SETTLED	2026-03-08
+PAY00000166	SP3200019	2026-03-15	139.21	BACS	SETTLED	2026-03-15
+PAY00000167	SP3200019	2026-03-22	139.21	POST_OFFICE	SETTLED	2026-03-22
+PAY00000168	SP3200019	2026-03-29	139.21	BACS	SETTLED	2026-03-29
+PAY00000169	SP3200019	2026-04-05	139.21	BACS	SETTLED	2026-04-05
+PAY00000172	SP3200020	2026-02-19	101.12	BACS	SETTLED	2026-02-19
+PAY00000173	SP3200020	2026-02-26	101.12	POST_OFFICE	SETTLED	2026-02-26
+PAY00000174	SP3200020	2026-03-05	101.12	POST_OFFICE	SETTLED	2026-03-05
+PAY00000175	SP3200020	2026-03-12	101.12	BACS	SETTLED	2026-03-12
+PAY00000176	SP3200020	2026-03-19	101.12	BACS	SETTLED	2026-03-19
+PAY00000177	SP3200020	2026-03-26	101.12	POST_OFFICE	SETTLED	2026-03-26
+PAY00000178	SP3200020	2026-04-02	101.12	BACS	SETTLED	2026-04-02
+PAY00000181	SP3200021	2026-02-10	120.08	BACS	SETTLED	2026-02-10
+PAY00000182	SP3200021	2026-02-17	120.08	BACS	SETTLED	2026-02-17
+PAY00000183	SP3200021	2026-02-24	120.08	POST_OFFICE	SETTLED	2026-02-24
+PAY00000184	SP3200021	2026-03-03	120.08	BACS	SETTLED	2026-03-03
+PAY00000185	SP3200021	2026-03-10	120.08	BACS	SETTLED	2026-03-10
+PAY00000186	SP3200021	2026-03-17	120.08	BACS	SETTLED	2026-03-17
+PAY00000187	SP3200021	2026-03-24	120.08	BACS	SETTLED	2026-03-24
+PAY00000188	SP3200021	2026-03-31	120.08	BACS	SETTLED	2026-03-31
+PAY00000191	SP3200022	2025-12-10	682.48	BACS	SETTLED	2025-12-10
+PAY00000192	SP3200022	2026-01-07	682.48	BACS	SETTLED	2026-01-07
+PAY00000193	SP3200022	2026-02-04	682.48	BACS	SETTLED	2026-02-04
+PAY00000194	SP3200022	2026-03-04	682.48	BACS	SETTLED	2026-03-04
+PAY00000195	SP3200022	2026-04-01	682.48	BACS	SETTLED	2026-04-01
+PAY00000198	SP3200023	2026-02-13	176.96	BACS	SETTLED	2026-02-13
+PAY00000199	SP3200023	2026-02-20	176.96	BACS	SETTLED	2026-02-20
+PAY00000200	SP3200023	2026-02-27	176.96	BACS	SETTLED	2026-02-27
+PAY00000201	SP3200023	2026-03-06	176.96	BACS	SETTLED	2026-03-06
+PAY00000202	SP3200023	2026-03-13	176.96	BACS	SETTLED	2026-03-13
+PAY00000203	SP3200023	2026-03-20	176.96	BACS	SETTLED	2026-03-20
+PAY00000204	SP3200023	2026-03-27	176.96	POST_OFFICE	SETTLED	2026-03-27
+PAY00000205	SP3200023	2026-04-03	176.96	BACS	SETTLED	2026-04-03
+PAY00000208	SP3200024	2025-10-19	530.36	BACS	SETTLED	2025-10-19
+PAY00000209	SP3200024	2025-11-16	530.36	CHEQUE	SETTLED	2025-11-16
+PAY00000210	SP3200024	2025-12-14	530.36	BACS	SETTLED	2025-12-14
+PAY00000211	SP3200024	2026-01-11	530.36	BACS	SETTLED	2026-01-11
+PAY00000212	SP3200024	2026-02-08	530.36	BACS	SETTLED	2026-02-08
+PAY00000213	SP3200024	2026-03-08	530.36	BACS	SETTLED	2026-03-08
+PAY00000214	SP3200024	2026-04-05	530.36	BACS	SETTLED	2026-04-05
+PAY00000217	SP3200025	2025-08-22	667.32	BACS	SETTLED	2025-08-22
+PAY00000218	SP3200025	2025-09-19	667.32	BACS	SETTLED	2025-09-19
+PAY00000219	SP3200025	2025-10-17	667.32	BACS	SETTLED	2025-10-17
+PAY00000220	SP3200025	2025-11-14	667.32	POST_OFFICE	SETTLED	2025-11-14
+PAY00000221	SP3200025	2025-12-12	667.32	BACS	SETTLED	2025-12-12
+PAY00000222	SP3200025	2026-01-09	667.32	POST_OFFICE	SETTLED	2026-01-09
+PAY00000223	SP3200025	2026-02-06	667.32	BACS	SETTLED	2026-02-06
+PAY00000224	SP3200025	2026-03-06	667.32	BACS	SETTLED	2026-03-06
+PAY00000225	SP3200025	2026-04-03	667.32	POST_OFFICE	SETTLED	2026-04-03
+PAY00000228	SP3200026	2025-09-19	455.04	BACS	SETTLED	2025-09-19
+PAY00000229	SP3200026	2025-10-17	455.04	BACS	SETTLED	2025-10-17
+PAY00000230	SP3200026	2025-11-14	455.04	BACS	SETTLED	2025-11-14
+PAY00000231	SP3200026	2025-12-12	455.04	BACS	SETTLED	2025-12-12
+PAY00000232	SP3200026	2026-01-09	455.04	BACS	SETTLED	2026-01-09
+PAY00000233	SP3200026	2026-02-06	455.04	POST_OFFICE	SETTLED	2026-02-06
+PAY00000234	SP3200026	2026-03-06	455.04	BACS	SETTLED	2026-03-06
+PAY00000235	SP3200026	2026-04-03	455.04	CHEQUE	SETTLED	2026-04-03
+PAY00000238	SP3200027	2026-02-19	221.20	BACS	SETTLED	2026-02-19
+PAY00000239	SP3200027	2026-02-26	221.20	BACS	SETTLED	2026-02-26
+PAY00000240	SP3200027	2026-03-05	221.20	POST_OFFICE	SETTLED	2026-03-05
+PAY00000241	SP3200027	2026-03-12	221.20	BACS	SETTLED	2026-03-12
+PAY00000242	SP3200027	2026-03-19	221.20	BACS	SETTLED	2026-03-19
+PAY00000243	SP3200027	2026-03-26	221.20	BACS	SETTLED	2026-03-26
+PAY00000244	SP3200027	2026-04-02	221.20	BACS	SETTLED	2026-04-02
+PAY00000247	SP3200028	2026-02-21	88.48	POST_OFFICE	SETTLED	2026-02-21
+PAY00000248	SP3200028	2026-02-28	88.48	POST_OFFICE	SETTLED	2026-02-28
+PAY00000249	SP3200028	2026-03-07	88.48	BACS	SETTLED	2026-03-07
+PAY00000250	SP3200028	2026-03-14	88.48	BACS	SETTLED	2026-03-14
+PAY00000251	SP3200028	2026-03-21	88.48	BACS	SETTLED	2026-03-21
+PAY00000252	SP3200028	2026-03-28	88.48	BACS	SETTLED	2026-03-28
+PAY00000253	SP3200028	2026-04-04	88.48	BACS	SETTLED	2026-04-04
+PAY00000256	SP3200029	2025-09-17	632.00	POST_OFFICE	SETTLED	2025-09-17
+PAY00000257	SP3200029	2025-10-15	632.00	BACS	SETTLED	2025-10-15
+PAY00000258	SP3200029	2025-11-12	632.00	POST_OFFICE	SETTLED	2025-11-12
+PAY00000259	SP3200029	2025-12-10	632.00	BACS	SETTLED	2025-12-10
+PAY00000260	SP3200029	2026-01-07	632.00	BACS	SETTLED	2026-01-07
+PAY00000261	SP3200029	2026-02-04	632.00	BACS	SETTLED	2026-02-04
+PAY00000262	SP3200029	2026-03-04	632.00	CHEQUE	SETTLED	2026-03-04
+PAY00000263	SP3200029	2026-04-01	632.00	BACS	SETTLED	2026-04-01
+PAY00000266	SP3200030	2026-02-23	160.16	POST_OFFICE	SETTLED	2026-02-23
+PAY00000267	SP3200030	2026-03-02	160.16	POST_OFFICE	SETTLED	2026-03-02
+PAY00000268	SP3200030	2026-03-09	160.16	BACS	SETTLED	2026-03-09
+PAY00000269	SP3200030	2026-03-16	160.16	BACS	SETTLED	2026-03-16
+PAY00000270	SP3200030	2026-03-23	160.16	CHEQUE	SETTLED	2026-03-23
+PAY00000271	SP3200030	2026-03-30	160.16	BACS	SETTLED	2026-03-30
+PAY00000274	SP3200031	2025-11-13	353.92	BACS	SETTLED	2025-11-13
+PAY00000275	SP3200031	2025-12-11	353.92	POST_OFFICE	SETTLED	2025-12-11
+PAY00000276	SP3200031	2026-01-08	353.92	BACS	SETTLED	2026-01-08
+PAY00000277	SP3200031	2026-02-05	353.92	BACS	SETTLED	2026-02-05
+PAY00000278	SP3200031	2026-03-05	353.92	CHEQUE	SETTLED	2026-03-05
+PAY00000279	SP3200031	2026-04-02	353.92	BACS	SETTLED	2026-04-02
+PAY00000282	SP3200032	2026-03-01	189.60	BACS	SETTLED	2026-03-01
+PAY00000283	SP3200032	2026-03-08	189.60	BACS	SETTLED	2026-03-08
+PAY00000284	SP3200032	2026-03-15	189.60	POST_OFFICE	SETTLED	2026-03-15
+PAY00000285	SP3200032	2026-03-22	189.60	POST_OFFICE	SETTLED	2026-03-22
+PAY00000286	SP3200032	2026-03-29	189.60	BACS	SETTLED	2026-03-29
+PAY00000287	SP3200032	2026-04-05	189.60	POST_OFFICE	SETTLED	2026-04-05
+PAY00000290	SP3200033	2025-11-15	455.04	BACS	SETTLED	2025-11-15
+PAY00000291	SP3200033	2025-12-13	455.04	BACS	SETTLED	2025-12-13
+PAY00000292	SP3200033	2026-01-10	455.04	POST_OFFICE	SETTLED	2026-01-10
+PAY00000293	SP3200033	2026-02-07	455.04	CHEQUE	SETTLED	2026-02-07
+PAY00000294	SP3200033	2026-03-07	455.04	BACS	SETTLED	2026-03-07
+PAY00000295	SP3200033	2026-04-04	455.04	POST_OFFICE	SETTLED	2026-04-04
+PAY00000298	SP3200034	2025-10-19	657.28	BACS	SETTLED	2025-10-19
+PAY00000299	SP3200034	2025-11-16	657.28	BACS	SETTLED	2025-11-16
+PAY00000300	SP3200034	2025-12-14	657.28	BACS	SETTLED	2025-12-14
+PAY00000301	SP3200034	2026-01-11	657.28	BACS	SETTLED	2026-01-11
+PAY00000302	SP3200034	2026-02-08	657.28	BACS	SETTLED	2026-02-08
+PAY00000303	SP3200034	2026-03-08	657.28	BACS	SETTLED	2026-03-08
+PAY00000304	SP3200034	2026-04-05	657.28	BACS	SETTLED	2026-04-05
+PAY00000307	SP3200035	2025-01-04	1478.88	BACS	SETTLED	2025-01-04
+PAY00000308	SP3200035	2025-04-05	1478.88	BACS	SETTLED	2025-04-05
+PAY00000309	SP3200035	2025-07-05	1478.88	BACS	SETTLED	2025-07-05
+PAY00000310	SP3200035	2025-10-04	1478.88	BACS	SETTLED	2025-10-04
+PAY00000311	SP3200035	2026-01-03	1478.88	CHEQUE	SETTLED	2026-01-03
+PAY00000312	SP3200035	2026-04-04	1478.88	BACS	SETTLED	2026-04-04
+PAY00000315	SP3200036	2024-12-31	1838.59	POST_OFFICE	SETTLED	2024-12-31
+PAY00000316	SP3200036	2025-04-01	1838.59	BACS	SETTLED	2025-04-01
+PAY00000317	SP3200036	2025-07-01	1838.59	BACS	SETTLED	2025-07-01
+PAY00000318	SP3200036	2025-09-30	1838.59	BACS	SETTLED	2025-09-30
+PAY00000319	SP3200036	2025-12-30	1838.59	POST_OFFICE	SETTLED	2025-12-30
+PAY00000320	SP3200036	2026-03-31	1838.59	BACS	SETTLED	2026-03-31
+PAY00000323	SP3200037	2025-12-15	278.08	BACS	SETTLED	2025-12-15
+PAY00000324	SP3200037	2026-01-12	278.08	BACS	SETTLED	2026-01-12
+PAY00000325	SP3200037	2026-02-09	278.08	BACS	SETTLED	2026-02-09
+PAY00000326	SP3200037	2026-03-09	278.08	POST_OFFICE	SETTLED	2026-03-09
+PAY00000329	SP3200038	2025-12-14	606.72	BACS	SETTLED	2025-12-14
+PAY00000330	SP3200038	2026-01-11	606.72	BACS	SETTLED	2026-01-11
+PAY00000331	SP3200038	2026-02-08	606.72	BACS	SETTLED	2026-02-08
+PAY00000332	SP3200038	2026-03-08	606.72	BACS	SETTLED	2026-03-08
+PAY00000333	SP3200038	2026-04-05	606.72	BACS	SETTLED	2026-04-05
+PAY00000336	SP3200039	2026-02-21	189.60	POST_OFFICE	SETTLED	2026-02-21
+PAY00000337	SP3200039	2026-02-28	189.60	BACS	SETTLED	2026-02-28
+PAY00000338	SP3200039	2026-03-07	189.60	POST_OFFICE	SETTLED	2026-03-07
+PAY00000339	SP3200039	2026-03-14	189.60	BACS	SETTLED	2026-03-14
+PAY00000340	SP3200039	2026-03-21	189.60	BACS	SETTLED	2026-03-21
+PAY00000341	SP3200039	2026-03-28	189.60	BACS	SETTLED	2026-03-28
+PAY00000342	SP3200039	2026-04-04	189.60	BACS	SETTLED	2026-04-04
+PAY00000345	SP3200040	2025-10-14	403.24	BACS	SETTLED	2025-10-14
+PAY00000346	SP3200040	2025-11-11	403.24	BACS	SETTLED	2025-11-11
+PAY00000347	SP3200040	2025-12-09	403.24	BACS	SETTLED	2025-12-09
+PAY00000348	SP3200040	2026-01-06	403.24	BACS	SETTLED	2026-01-06
+PAY00000349	SP3200040	2026-02-03	403.24	BACS	SETTLED	2026-02-03
+PAY00000350	SP3200040	2026-03-03	403.24	POST_OFFICE	SETTLED	2026-03-03
+PAY00000351	SP3200040	2026-03-31	403.24	CHEQUE	SETTLED	2026-03-31
+PAY00000354	SP3200041	2025-08-24	707.84	BACS	SETTLED	2025-08-24
+PAY00000355	SP3200041	2025-09-21	707.84	BACS	SETTLED	2025-09-21
+PAY00000356	SP3200041	2025-10-19	707.84	BACS	SETTLED	2025-10-19
+PAY00000357	SP3200041	2025-11-16	707.84	CHEQUE	SETTLED	2025-11-16
+PAY00000358	SP3200041	2025-12-14	707.84	BACS	SETTLED	2025-12-14
+PAY00000359	SP3200041	2026-01-11	707.84	POST_OFFICE	SETTLED	2026-01-11
+PAY00000360	SP3200041	2026-02-08	707.84	POST_OFFICE	SETTLED	2026-02-08
+PAY00000361	SP3200041	2026-03-08	707.84	BACS	SETTLED	2026-03-08
+PAY00000362	SP3200041	2026-04-05	707.84	BACS	SETTLED	2026-04-05
+PAY00000365	SP3200042	2025-09-16	834.24	BACS	SETTLED	2025-09-16
+PAY00000366	SP3200042	2025-10-14	834.24	POST_OFFICE	SETTLED	2025-10-14
+PAY00000367	SP3200042	2025-11-11	834.24	BACS	SETTLED	2025-11-11
+PAY00000368	SP3200042	2025-12-09	834.24	BACS	SETTLED	2025-12-09
+PAY00000369	SP3200042	2026-01-06	834.24	CHEQUE	SETTLED	2026-01-06
+PAY00000370	SP3200042	2026-02-03	834.24	BACS	SETTLED	2026-02-03
+PAY00000371	SP3200042	2026-03-03	834.24	BACS	SETTLED	2026-03-03
+PAY00000372	SP3200042	2026-03-31	834.24	POST_OFFICE	SETTLED	2026-03-31
+PAY00000375	SP3200043	2025-11-11	719.76	BACS	SETTLED	2025-11-11
+PAY00000376	SP3200043	2025-12-09	719.76	BACS	SETTLED	2025-12-09
+PAY00000377	SP3200043	2026-01-06	719.76	POST_OFFICE	SETTLED	2026-01-06
+PAY00000378	SP3200043	2026-02-03	719.76	BACS	SETTLED	2026-02-03
+PAY00000379	SP3200043	2026-03-03	719.76	POST_OFFICE	SETTLED	2026-03-03
+PAY00000380	SP3200043	2026-03-31	719.76	BACS	SETTLED	2026-03-31
+PAY00000383	SP3200044	2025-04-03	1889.68	BACS	SETTLED	2025-04-03
+PAY00000384	SP3200044	2025-07-03	1889.68	POST_OFFICE	SETTLED	2025-07-03
+PAY00000385	SP3200044	2025-10-02	1889.68	BACS	SETTLED	2025-10-02
+PAY00000386	SP3200044	2026-01-01	1889.68	BACS	SETTLED	2026-01-01
+PAY00000387	SP3200044	2026-04-02	1889.68	BACS	SETTLED	2026-04-02
+PAY00000390	SP3200045	2025-08-22	758.40	BACS	SETTLED	2025-08-22
+PAY00000391	SP3200045	2025-09-19	758.40	BACS	SETTLED	2025-09-19
+PAY00000392	SP3200045	2025-10-17	758.40	BACS	SETTLED	2025-10-17
+PAY00000393	SP3200045	2025-11-14	758.40	BACS	SETTLED	2025-11-14
+PAY00000394	SP3200045	2025-12-12	758.40	BACS	SETTLED	2025-12-12
+PAY00000395	SP3200045	2026-01-09	758.40	BACS	SETTLED	2026-01-09
+PAY00000396	SP3200045	2026-02-06	758.40	BACS	SETTLED	2026-02-06
+PAY00000397	SP3200045	2026-03-06	758.40	BACS	SETTLED	2026-03-06
+PAY00000398	SP3200045	2026-04-03	758.40	CHEQUE	SETTLED	2026-04-03
+PAY00000401	SP3200046	2025-09-16	632.00	BACS	SETTLED	2025-09-16
+PAY00000402	SP3200046	2025-10-14	632.00	CHEQUE	SETTLED	2025-10-14
+PAY00000403	SP3200046	2025-11-11	632.00	BACS	SETTLED	2025-11-11
+PAY00000404	SP3200046	2025-12-09	632.00	POST_OFFICE	SETTLED	2025-12-09
+PAY00000405	SP3200046	2026-01-06	632.00	BACS	SETTLED	2026-01-06
+PAY00000406	SP3200046	2026-02-03	632.00	BACS	SETTLED	2026-02-03
+PAY00000407	SP3200046	2026-03-03	632.00	CHEQUE	SETTLED	2026-03-03
+PAY00000408	SP3200046	2026-03-31	632.00	BACS	SETTLED	2026-03-31
+PAY00000411	SP3200047	2025-08-22	707.84	BACS	SETTLED	2025-08-22
+PAY00000412	SP3200047	2025-09-19	707.84	BACS	SETTLED	2025-09-19
+PAY00000413	SP3200047	2025-10-17	707.84	POST_OFFICE	SETTLED	2025-10-17
+PAY00000414	SP3200047	2025-11-14	707.84	BACS	SETTLED	2025-11-14
+PAY00000415	SP3200047	2025-12-12	707.84	BACS	SETTLED	2025-12-12
+PAY00000416	SP3200047	2026-01-09	707.84	BACS	SETTLED	2026-01-09
+PAY00000417	SP3200047	2026-02-06	707.84	BACS	SETTLED	2026-02-06
+PAY00000418	SP3200047	2026-03-06	707.84	POST_OFFICE	SETTLED	2026-03-06
+PAY00000419	SP3200047	2026-04-03	707.84	BACS	SETTLED	2026-04-03
+PAY00000422	SP3200048	2025-11-15	379.20	BACS	SETTLED	2025-11-15
+PAY00000423	SP3200048	2025-12-13	379.20	BACS	SETTLED	2025-12-13
+PAY00000424	SP3200048	2026-01-10	379.20	BACS	SETTLED	2026-01-10
+PAY00000425	SP3200048	2026-02-07	379.20	BACS	SETTLED	2026-02-07
+PAY00000426	SP3200048	2026-03-07	379.20	POST_OFFICE	SETTLED	2026-03-07
+PAY00000427	SP3200048	2026-04-04	379.20	POST_OFFICE	SETTLED	2026-04-04
+PAY00000430	SP3200049	2026-02-12	195.92	BACS	SETTLED	2026-02-12
+PAY00000431	SP3200049	2026-02-19	195.92	BACS	SETTLED	2026-02-19
+PAY00000432	SP3200049	2026-02-26	195.92	BACS	SETTLED	2026-02-26
+PAY00000433	SP3200049	2026-03-05	195.92	BACS	SETTLED	2026-03-05
+PAY00000434	SP3200049	2026-03-12	195.92	POST_OFFICE	SETTLED	2026-03-12
+PAY00000435	SP3200049	2026-03-19	195.92	BACS	SETTLED	2026-03-19
+PAY00000436	SP3200049	2026-03-26	195.92	BACS	SETTLED	2026-03-26
+PAY00000437	SP3200049	2026-04-02	195.92	BACS	SETTLED	2026-04-02
+PAY00000440	SP3200050	2025-10-17	884.80	BACS	SETTLED	2025-10-17
+PAY00000441	SP3200050	2025-11-14	884.80	BACS	SETTLED	2025-11-14
+PAY00000442	SP3200050	2025-12-12	884.80	BACS	SETTLED	2025-12-12
+PAY00000443	SP3200050	2026-01-09	884.80	CHEQUE	SETTLED	2026-01-09
+PAY00000444	SP3200050	2026-02-06	884.80	BACS	SETTLED	2026-02-06
+PAY00000445	SP3200050	2026-03-06	884.80	BACS	SETTLED	2026-03-06
+PAY00000446	SP3200050	2026-04-03	884.80	POST_OFFICE	SETTLED	2026-04-03
+PAY00000449	SP3200051	2025-01-06	1966.64	BACS	SETTLED	2025-01-06
+PAY00000450	SP3200051	2025-04-07	1966.64	BACS	SETTLED	2025-04-07
+PAY00000451	SP3200051	2025-07-07	1966.64	POST_OFFICE	SETTLED	2025-07-07
+PAY00000452	SP3200051	2025-10-06	1966.64	BACS	SETTLED	2025-10-06
+PAY00000453	SP3200051	2026-01-05	1966.64	CHEQUE	SETTLED	2026-01-05
+PAY00000456	SP3200052	2025-11-17	407.64	CHEQUE	SETTLED	2025-11-17
+PAY00000457	SP3200052	2025-12-15	407.64	CHEQUE	SETTLED	2025-12-15
+PAY00000458	SP3200052	2026-01-12	407.64	BACS	SETTLED	2026-01-12
+PAY00000459	SP3200052	2026-02-09	407.64	POST_OFFICE	SETTLED	2026-02-09
+PAY00000460	SP3200052	2026-03-09	407.64	BACS	SETTLED	2026-03-09
+PAY00000463	SP3200053	2026-02-23	156.60	BACS	SETTLED	2026-02-23
+PAY00000464	SP3200053	2026-03-02	156.60	BACS	SETTLED	2026-03-02
+PAY00000465	SP3200053	2026-03-09	156.60	POST_OFFICE	SETTLED	2026-03-09
+PAY00000466	SP3200053	2026-03-16	156.60	BACS	SETTLED	2026-03-16
+PAY00000467	SP3200053	2026-03-23	156.60	POST_OFFICE	SETTLED	2026-03-23
+PAY00000468	SP3200053	2026-03-30	156.60	POST_OFFICE	SETTLED	2026-03-30
+PAY00000471	SP3200054	2026-02-24	145.36	BACS	SETTLED	2026-02-24
+PAY00000472	SP3200054	2026-03-03	145.36	BACS	SETTLED	2026-03-03
+PAY00000473	SP3200054	2026-03-10	145.36	CHEQUE	SETTLED	2026-03-10
+PAY00000474	SP3200054	2026-03-17	145.36	BACS	SETTLED	2026-03-17
+PAY00000475	SP3200054	2026-03-24	145.36	BACS	SETTLED	2026-03-24
+PAY00000476	SP3200054	2026-03-31	145.36	BACS	SETTLED	2026-03-31
+PAY00000479	SP3200055	2024-10-02	1938.30	POST_OFFICE	SETTLED	2024-10-02
+PAY00000480	SP3200055	2025-01-01	1938.30	BACS	SETTLED	2025-01-01
+PAY00000481	SP3200055	2025-04-02	1938.30	BACS	SETTLED	2025-04-02
+PAY00000482	SP3200055	2025-07-02	1938.30	BACS	SETTLED	2025-07-02
+PAY00000483	SP3200055	2025-10-01	1938.30	BACS	SETTLED	2025-10-01
+PAY00000484	SP3200055	2025-12-31	1938.30	BACS	SETTLED	2025-12-31
+PAY00000485	SP3200055	2026-04-01	1938.30	BACS	SETTLED	2026-04-01
+PAY00000488	SP3200056	2024-07-03	2575.82	POST_OFFICE	SETTLED	2024-07-03
+PAY00000489	SP3200056	2024-10-02	2575.82	BACS	SETTLED	2024-10-02
+PAY00000490	SP3200056	2025-01-01	2575.82	BACS	SETTLED	2025-01-01
+PAY00000491	SP3200056	2025-04-02	2575.82	BACS	SETTLED	2025-04-02
+PAY00000492	SP3200056	2025-07-02	2575.82	BACS	SETTLED	2025-07-02
+PAY00000493	SP3200056	2025-10-01	2575.82	BACS	SETTLED	2025-10-01
+PAY00000494	SP3200056	2025-12-31	2575.82	BACS	SETTLED	2025-12-31
+PAY00000495	SP3200056	2026-04-01	2575.82	BACS	SETTLED	2026-04-01
+PAY00000498	SP3200057	2026-03-07	176.96	BACS	SETTLED	2026-03-07
+PAY00000499	SP3200057	2026-03-14	176.96	BACS	SETTLED	2026-03-14
+PAY00000500	SP3200057	2026-03-21	176.96	BACS	SETTLED	2026-03-21
+PAY00000501	SP3200057	2026-03-28	176.96	BACS	SETTLED	2026-03-28
+PAY00000502	SP3200057	2026-04-04	176.96	BACS	SETTLED	2026-04-04
+PAY00000505	SP3200058	2025-10-15	758.40	BACS	SETTLED	2025-10-15
+PAY00000506	SP3200058	2025-11-12	758.40	POST_OFFICE	SETTLED	2025-11-12
+PAY00000507	SP3200058	2025-12-10	758.40	POST_OFFICE	SETTLED	2025-12-10
+PAY00000508	SP3200058	2026-01-07	758.40	POST_OFFICE	SETTLED	2026-01-07
+PAY00000509	SP3200058	2026-02-04	758.40	BACS	SETTLED	2026-02-04
+PAY00000510	SP3200058	2026-03-04	758.40	BACS	SETTLED	2026-03-04
+PAY00000511	SP3200058	2026-04-01	758.40	BACS	SETTLED	2026-04-01
+PAY00000514	SP3200059	2026-02-20	202.24	BACS	SETTLED	2026-02-20
+PAY00000515	SP3200059	2026-02-27	202.24	BACS	SETTLED	2026-02-27
+PAY00000516	SP3200059	2026-03-06	202.24	BACS	SETTLED	2026-03-06
+PAY00000517	SP3200059	2026-03-13	202.24	BACS	SETTLED	2026-03-13
+PAY00000518	SP3200059	2026-03-20	202.24	BACS	SETTLED	2026-03-20
+PAY00000519	SP3200059	2026-03-27	202.24	BACS	SETTLED	2026-03-27
+PAY00000520	SP3200059	2026-04-03	202.24	POST_OFFICE	SETTLED	2026-04-03
+PAY00000523	SP3200060	2025-11-11	748.20	BACS	SETTLED	2025-11-11
+PAY00000524	SP3200060	2025-12-09	748.20	BACS	SETTLED	2025-12-09
+PAY00000525	SP3200060	2026-01-06	748.20	CHEQUE	SETTLED	2026-01-06
+PAY00000526	SP3200060	2026-02-03	748.20	BACS	SETTLED	2026-02-03
+PAY00000527	SP3200060	2026-03-03	748.20	POST_OFFICE	SETTLED	2026-03-03
+PAY00000528	SP3200060	2026-03-31	748.20	BACS	SETTLED	2026-03-31
+PAY00000531	SP3200061	2025-09-18	783.68	BACS	SETTLED	2025-09-18
+PAY00000532	SP3200061	2025-10-16	783.68	BACS	SETTLED	2025-10-16
+PAY00000533	SP3200061	2025-11-13	783.68	BACS	SETTLED	2025-11-13
+PAY00000534	SP3200061	2025-12-11	783.68	BACS	SETTLED	2025-12-11
+PAY00000535	SP3200061	2026-01-08	783.68	POST_OFFICE	SETTLED	2026-01-08
+PAY00000536	SP3200061	2026-02-05	783.68	BACS	SETTLED	2026-02-05
+PAY00000537	SP3200061	2026-03-05	783.68	BACS	SETTLED	2026-03-05
+PAY00000538	SP3200061	2026-04-02	783.68	BACS	SETTLED	2026-04-02
+PAY00000541	SP3200062	2025-10-16	606.72	BACS	SETTLED	2025-10-16
+PAY00000542	SP3200062	2025-11-13	606.72	BACS	SETTLED	2025-11-13
+PAY00000543	SP3200062	2025-12-11	606.72	POST_OFFICE	SETTLED	2025-12-11
+PAY00000544	SP3200062	2026-01-08	606.72	BACS	SETTLED	2026-01-08
+PAY00000545	SP3200062	2026-02-05	606.72	BACS	SETTLED	2026-02-05
+PAY00000546	SP3200062	2026-03-05	606.72	BACS	SETTLED	2026-03-05
+PAY00000547	SP3200062	2026-04-02	606.72	BACS	SETTLED	2026-04-02
+PAY00000550	SP3200063	2026-02-26	164.32	POST_OFFICE	SETTLED	2026-02-26
+PAY00000551	SP3200063	2026-03-05	164.32	POST_OFFICE	SETTLED	2026-03-05
+PAY00000552	SP3200063	2026-03-12	164.32	BACS	SETTLED	2026-03-12
+PAY00000553	SP3200063	2026-03-19	164.32	BACS	SETTLED	2026-03-19
+PAY00000554	SP3200063	2026-03-26	164.32	BACS	SETTLED	2026-03-26
+PAY00000555	SP3200063	2026-04-02	164.32	BACS	SETTLED	2026-04-02
+PAY00000558	SP3200064	2025-11-14	502.40	BACS	SETTLED	2025-11-14
+PAY00000559	SP3200064	2025-12-12	502.40	BACS	SETTLED	2025-12-12
+PAY00000560	SP3200064	2026-01-09	502.40	BACS	SETTLED	2026-01-09
+PAY00000561	SP3200064	2026-02-06	502.40	BACS	SETTLED	2026-02-06
+PAY00000562	SP3200064	2026-03-06	502.40	BACS	SETTLED	2026-03-06
+PAY00000563	SP3200064	2026-04-03	502.40	BACS	SETTLED	2026-04-03
+PAY00000566	SP3200065	2025-11-12	581.44	BACS	SETTLED	2025-11-12
+PAY00000567	SP3200065	2025-12-10	581.44	BACS	SETTLED	2025-12-10
+PAY00000568	SP3200065	2026-01-07	581.44	BACS	SETTLED	2026-01-07
+PAY00000569	SP3200065	2026-02-04	581.44	BACS	SETTLED	2026-02-04
+PAY00000570	SP3200065	2026-03-04	581.44	BACS	SETTLED	2026-03-04
+PAY00000571	SP3200065	2026-04-01	581.44	BACS	SETTLED	2026-04-01
+PAY00000574	SP3200066	2025-11-13	666.00	BACS	SETTLED	2025-11-13
+PAY00000575	SP3200066	2025-12-11	666.00	BACS	SETTLED	2025-12-11
+PAY00000576	SP3200066	2026-01-08	666.00	POST_OFFICE	SETTLED	2026-01-08
+PAY00000577	SP3200066	2026-02-05	666.00	POST_OFFICE	SETTLED	2026-02-05
+PAY00000578	SP3200066	2026-03-05	666.00	BACS	SETTLED	2026-03-05
+PAY00000579	SP3200066	2026-04-02	666.00	BACS	SETTLED	2026-04-02
+PAY00000582	SP3200067	2025-11-14	758.40	BACS	SETTLED	2025-11-14
+PAY00000583	SP3200067	2025-12-12	758.40	BACS	SETTLED	2025-12-12
+PAY00000584	SP3200067	2026-01-09	758.40	BACS	SETTLED	2026-01-09
+PAY00000585	SP3200067	2026-02-06	758.40	BACS	SETTLED	2026-02-06
+PAY00000586	SP3200067	2026-03-06	758.40	BACS	SETTLED	2026-03-06
+PAY00000587	SP3200067	2026-04-03	758.40	POST_OFFICE	SETTLED	2026-04-03
+PAY00000590	SP3200068	2025-12-15	670.32	BACS	SETTLED	2025-12-15
+PAY00000591	SP3200068	2026-01-12	670.32	BACS	SETTLED	2026-01-12
+PAY00000592	SP3200068	2026-02-09	670.32	BACS	SETTLED	2026-02-09
+PAY00000593	SP3200068	2026-03-09	670.32	CHEQUE	SETTLED	2026-03-09
+PAY00000596	SP3200069	2025-10-16	632.00	BACS	SETTLED	2025-10-16
+PAY00000597	SP3200069	2025-11-13	632.00	BACS	SETTLED	2025-11-13
+PAY00000598	SP3200069	2025-12-11	632.00	BACS	SETTLED	2025-12-11
+PAY00000599	SP3200069	2026-01-08	632.00	BACS	SETTLED	2026-01-08
+PAY00000600	SP3200069	2026-02-05	632.00	BACS	SETTLED	2026-02-05
+PAY00000601	SP3200069	2026-03-05	632.00	BACS	SETTLED	2026-03-05
+PAY00000602	SP3200069	2026-04-02	632.00	BACS	SETTLED	2026-04-02
+PAY00000605	SP3200070	2026-02-13	207.35	POST_OFFICE	SETTLED	2026-02-13
+PAY00000606	SP3200070	2026-02-20	207.35	BACS	SETTLED	2026-02-20
+PAY00000607	SP3200070	2026-02-27	207.35	POST_OFFICE	SETTLED	2026-02-27
+PAY00000608	SP3200070	2026-03-06	207.35	BACS	SETTLED	2026-03-06
+PAY00000609	SP3200070	2026-03-13	207.35	BACS	SETTLED	2026-03-13
+PAY00000610	SP3200070	2026-03-20	207.35	BACS	SETTLED	2026-03-20
+PAY00000611	SP3200070	2026-03-27	207.35	BACS	SETTLED	2026-03-27
+PAY00000612	SP3200070	2026-04-03	207.35	BACS	SETTLED	2026-04-03
+PAY00000615	SP3200071	2026-02-12	150.94	BACS	SETTLED	2026-02-12
+PAY00000616	SP3200071	2026-02-19	150.94	POST_OFFICE	SETTLED	2026-02-19
+PAY00000617	SP3200071	2026-02-26	150.94	BACS	SETTLED	2026-02-26
+PAY00000618	SP3200071	2026-03-05	150.94	BACS	SETTLED	2026-03-05
+PAY00000619	SP3200071	2026-03-12	150.94	POST_OFFICE	SETTLED	2026-03-12
+PAY00000620	SP3200071	2026-03-19	150.94	BACS	SETTLED	2026-03-19
+PAY00000621	SP3200071	2026-03-26	150.94	BACS	SETTLED	2026-03-26
+PAY00000622	SP3200071	2026-04-02	150.94	BACS	SETTLED	2026-04-02
+PAY00000625	SP3200072	2025-09-21	556.16	BACS	SETTLED	2025-09-21
+PAY00000626	SP3200072	2025-10-19	556.16	BACS	SETTLED	2025-10-19
+PAY00000627	SP3200072	2025-11-16	556.16	BACS	SETTLED	2025-11-16
+PAY00000628	SP3200072	2025-12-14	556.16	BACS	SETTLED	2025-12-14
+PAY00000629	SP3200072	2026-01-11	556.16	BACS	SETTLED	2026-01-11
+PAY00000630	SP3200072	2026-02-08	556.16	BACS	SETTLED	2026-02-08
+PAY00000631	SP3200072	2026-03-08	556.16	BACS	SETTLED	2026-03-08
+PAY00000632	SP3200072	2026-04-05	556.16	BACS	SETTLED	2026-04-05
+PAY00000635	SP3200073	2026-03-01	94.80	BACS	SETTLED	2026-03-01
+PAY00000636	SP3200073	2026-03-08	94.80	BACS	SETTLED	2026-03-08
+PAY00000637	SP3200073	2026-03-15	94.80	BACS	SETTLED	2026-03-15
+PAY00000638	SP3200073	2026-03-22	94.80	BACS	SETTLED	2026-03-22
+PAY00000639	SP3200073	2026-03-29	94.80	BACS	SETTLED	2026-03-29
+PAY00000640	SP3200073	2026-04-05	94.80	POST_OFFICE	SETTLED	2026-04-05
+PAY00000643	SP3200074	2025-12-09	252.80	BACS	SETTLED	2025-12-09
+PAY00000644	SP3200074	2026-01-06	252.80	BACS	SETTLED	2026-01-06
+PAY00000645	SP3200074	2026-02-03	252.80	BACS	SETTLED	2026-02-03
+PAY00000646	SP3200074	2026-03-03	252.80	BACS	SETTLED	2026-03-03
+PAY00000647	SP3200074	2026-03-31	252.80	BACS	SETTLED	2026-03-31
+PAY00000650	SP3200075	2025-04-03	2136.16	CHEQUE	SETTLED	2025-04-03
+PAY00000651	SP3200075	2025-07-03	2136.16	BACS	SETTLED	2025-07-03
+PAY00000652	SP3200075	2025-10-02	2136.16	BACS	SETTLED	2025-10-02
+PAY00000653	SP3200075	2026-01-01	2136.16	BACS	SETTLED	2026-01-01
+PAY00000654	SP3200075	2026-04-02	2136.16	BACS	SETTLED	2026-04-02
+PAY00000657	SP3200076	2026-02-26	88.48	BACS	SETTLED	2026-02-26
+PAY00000658	SP3200076	2026-03-05	88.48	CHEQUE	SETTLED	2026-03-05
+PAY00000659	SP3200076	2026-03-12	88.48	BACS	SETTLED	2026-03-12
+PAY00000660	SP3200076	2026-03-19	88.48	BACS	SETTLED	2026-03-19
+PAY00000661	SP3200076	2026-03-26	88.48	BACS	SETTLED	2026-03-26
+PAY00000662	SP3200076	2026-04-02	88.48	BACS	SETTLED	2026-04-02
+PAY00000665	SP3200077	2025-04-03	2629.12	BACS	SETTLED	2025-04-03
+PAY00000666	SP3200077	2025-07-03	2629.12	BACS	SETTLED	2025-07-03
+PAY00000667	SP3200077	2025-10-02	2629.12	BACS	SETTLED	2025-10-02
+PAY00000668	SP3200077	2026-01-01	2629.12	POST_OFFICE	SETTLED	2026-01-01
+PAY00000669	SP3200077	2026-04-02	2629.12	BACS	SETTLED	2026-04-02
+PAY00000672	SP3200078	2025-10-16	252.80	BACS	SETTLED	2025-10-16
+PAY00000673	SP3200078	2025-11-13	252.80	BACS	SETTLED	2025-11-13
+PAY00000674	SP3200078	2025-12-11	252.80	CHEQUE	SETTLED	2025-12-11
+PAY00000675	SP3200078	2026-01-08	252.80	BACS	SETTLED	2026-01-08
+PAY00000676	SP3200078	2026-02-05	252.80	POST_OFFICE	SETTLED	2026-02-05
+PAY00000677	SP3200078	2026-03-05	252.80	POST_OFFICE	SETTLED	2026-03-05
+PAY00000678	SP3200078	2026-04-02	252.80	CHEQUE	SETTLED	2026-04-02
+PAY00000681	SP3200079	2026-02-26	176.96	BACS	SETTLED	2026-02-26
+PAY00000682	SP3200079	2026-03-05	176.96	BACS	SETTLED	2026-03-05
+PAY00000683	SP3200079	2026-03-12	176.96	BACS	SETTLED	2026-03-12
+PAY00000684	SP3200079	2026-03-19	176.96	BACS	SETTLED	2026-03-19
+PAY00000685	SP3200079	2026-03-26	176.96	BACS	SETTLED	2026-03-26
+PAY00000686	SP3200079	2026-04-02	176.96	POST_OFFICE	SETTLED	2026-04-02
+PAY00000689	SP3200080	2025-11-13	480.32	POST_OFFICE	SETTLED	2025-11-13
+PAY00000690	SP3200080	2025-12-11	480.32	BACS	SETTLED	2025-12-11
+PAY00000691	SP3200080	2026-01-08	480.32	BACS	SETTLED	2026-01-08
+PAY00000692	SP3200080	2026-02-05	480.32	BACS	SETTLED	2026-02-05
+PAY00000693	SP3200080	2026-03-05	480.32	BACS	SETTLED	2026-03-05
+PAY00000694	SP3200080	2026-04-02	480.32	POST_OFFICE	SETTLED	2026-04-02
+PAY00000697	SP3200081	2025-08-23	518.60	BACS	SETTLED	2025-08-23
+PAY00000698	SP3200081	2025-09-20	518.60	BACS	SETTLED	2025-09-20
+PAY00000699	SP3200081	2025-10-18	518.60	BACS	SETTLED	2025-10-18
+PAY00000700	SP3200081	2025-11-15	518.60	POST_OFFICE	SETTLED	2025-11-15
+PAY00000701	SP3200081	2025-12-13	518.60	BACS	SETTLED	2025-12-13
+PAY00000702	SP3200081	2026-01-10	518.60	BACS	SETTLED	2026-01-10
+PAY00000703	SP3200081	2026-02-07	518.60	CHEQUE	SETTLED	2026-02-07
+PAY00000704	SP3200081	2026-03-07	518.60	BACS	SETTLED	2026-03-07
+PAY00000705	SP3200081	2026-04-04	518.60	CHEQUE	SETTLED	2026-04-04
+PAY00000708	SP3200082	2024-07-08	2629.12	BACS	SETTLED	2024-07-08
+PAY00000709	SP3200082	2024-10-07	2629.12	BACS	SETTLED	2024-10-07
+PAY00000710	SP3200082	2025-01-06	2629.12	POST_OFFICE	SETTLED	2025-01-06
+PAY00000711	SP3200082	2025-04-07	2629.12	BACS	SETTLED	2025-04-07
+PAY00000712	SP3200082	2025-07-07	2629.12	BACS	SETTLED	2025-07-07
+PAY00000713	SP3200082	2025-10-06	2629.12	POST_OFFICE	SETTLED	2025-10-06
+PAY00000714	SP3200082	2026-01-05	2629.12	BACS	SETTLED	2026-01-05
+PAY00000717	SP3200083	2025-10-17	530.88	BACS	SETTLED	2025-10-17
+PAY00000718	SP3200083	2025-11-14	530.88	BACS	SETTLED	2025-11-14
+PAY00000719	SP3200083	2025-12-12	530.88	BACS	SETTLED	2025-12-12
+PAY00000720	SP3200083	2026-01-09	530.88	BACS	SETTLED	2026-01-09
+PAY00000721	SP3200083	2026-02-06	530.88	BACS	SETTLED	2026-02-06
+PAY00000722	SP3200083	2026-03-06	530.88	POST_OFFICE	SETTLED	2026-03-06
+PAY00000723	SP3200083	2026-04-03	530.88	BACS	SETTLED	2026-04-03
+PAY00000726	SP3200084	2025-11-13	530.88	BACS	SETTLED	2025-11-13
+PAY00000727	SP3200084	2025-12-11	530.88	BACS	SETTLED	2025-12-11
+PAY00000728	SP3200084	2026-01-08	530.88	BACS	SETTLED	2026-01-08
+PAY00000729	SP3200084	2026-02-05	530.88	BACS	SETTLED	2026-02-05
+PAY00000730	SP3200084	2026-03-05	530.88	BACS	SETTLED	2026-03-05
+PAY00000731	SP3200084	2026-04-02	530.88	BACS	SETTLED	2026-04-02
+PAY00000734	SP3200085	2026-02-14	174.53	POST_OFFICE	SETTLED	2026-02-14
+PAY00000735	SP3200085	2026-02-21	174.53	BACS	SETTLED	2026-02-21
+PAY00000736	SP3200085	2026-02-28	174.53	BACS	SETTLED	2026-02-28
+PAY00000737	SP3200085	2026-03-07	174.53	BACS	SETTLED	2026-03-07
+PAY00000738	SP3200085	2026-03-14	174.53	BACS	SETTLED	2026-03-14
+PAY00000739	SP3200085	2026-03-21	174.53	POST_OFFICE	SETTLED	2026-03-21
+PAY00000740	SP3200085	2026-03-28	174.53	BACS	SETTLED	2026-03-28
+PAY00000741	SP3200085	2026-04-04	174.53	POST_OFFICE	SETTLED	2026-04-04
+PAY00000744	SP3200086	2026-02-26	132.72	BACS	SETTLED	2026-02-26
+PAY00000745	SP3200086	2026-03-05	132.72	BACS	SETTLED	2026-03-05
+PAY00000746	SP3200086	2026-03-12	132.72	POST_OFFICE	SETTLED	2026-03-12
+PAY00000747	SP3200086	2026-03-19	132.72	BACS	SETTLED	2026-03-19
+PAY00000748	SP3200086	2026-03-26	132.72	POST_OFFICE	SETTLED	2026-03-26
+PAY00000749	SP3200086	2026-04-02	132.72	BACS	SETTLED	2026-04-02
+PAY00000752	SP3200087	2025-10-16	758.40	BACS	SETTLED	2025-10-16
+PAY00000753	SP3200087	2025-11-13	758.40	BACS	SETTLED	2025-11-13
+PAY00000754	SP3200087	2025-12-11	758.40	BACS	SETTLED	2025-12-11
+PAY00000755	SP3200087	2026-01-08	758.40	BACS	SETTLED	2026-01-08
+PAY00000756	SP3200087	2026-02-05	758.40	BACS	SETTLED	2026-02-05
+PAY00000757	SP3200087	2026-03-05	758.40	POST_OFFICE	SETTLED	2026-03-05
+PAY00000758	SP3200087	2026-04-02	758.40	POST_OFFICE	SETTLED	2026-04-02
+PAY00000761	SP3200088	2025-12-12	808.96	CHEQUE	SETTLED	2025-12-12
+PAY00000762	SP3200088	2026-01-09	808.96	BACS	SETTLED	2026-01-09
+PAY00000763	SP3200088	2026-02-06	808.96	POST_OFFICE	SETTLED	2026-02-06
+PAY00000764	SP3200088	2026-03-06	808.96	POST_OFFICE	SETTLED	2026-03-06
+PAY00000765	SP3200088	2026-04-03	808.96	BACS	SETTLED	2026-04-03
+PAY00000768	SP3200089	2025-11-11	783.68	POST_OFFICE	SETTLED	2025-11-11
+PAY00000769	SP3200089	2025-12-09	783.68	BACS	SETTLED	2025-12-09
+PAY00000770	SP3200089	2026-01-06	783.68	CHEQUE	SETTLED	2026-01-06
+PAY00000771	SP3200089	2026-02-03	783.68	BACS	SETTLED	2026-02-03
+PAY00000772	SP3200089	2026-03-03	783.68	BACS	SETTLED	2026-03-03
+PAY00000773	SP3200089	2026-03-31	783.68	BACS	SETTLED	2026-03-31
+PAY00000776	SP3200090	2025-10-19	556.16	POST_OFFICE	SETTLED	2025-10-19
+PAY00000777	SP3200090	2025-11-16	556.16	BACS	SETTLED	2025-11-16
+PAY00000778	SP3200090	2025-12-14	556.16	BACS	SETTLED	2025-12-14
+PAY00000779	SP3200090	2026-01-11	556.16	BACS	SETTLED	2026-01-11
+PAY00000780	SP3200090	2026-02-08	556.16	BACS	SETTLED	2026-02-08
+PAY00000781	SP3200090	2026-03-08	556.16	CHEQUE	SETTLED	2026-03-08
+PAY00000782	SP3200090	2026-04-05	556.16	BACS	SETTLED	2026-04-05
+PAY00000785	SP3200091	2025-08-23	783.68	BACS	SETTLED	2025-08-23
+PAY00000786	SP3200091	2025-09-20	783.68	BACS	SETTLED	2025-09-20
+PAY00000787	SP3200091	2025-10-18	783.68	BACS	SETTLED	2025-10-18
+PAY00000788	SP3200091	2025-11-15	783.68	BACS	SETTLED	2025-11-15
+PAY00000789	SP3200091	2025-12-13	783.68	BACS	SETTLED	2025-12-13
+PAY00000790	SP3200091	2026-01-10	783.68	BACS	SETTLED	2026-01-10
+PAY00000791	SP3200091	2026-02-07	783.68	BACS	SETTLED	2026-02-07
+PAY00000792	SP3200091	2026-03-07	783.68	BACS	SETTLED	2026-03-07
+PAY00000793	SP3200091	2026-04-04	783.68	BACS	SETTLED	2026-04-04
+PAY00000796	SP3200092	2025-10-20	218.96	BACS	SETTLED	2025-10-20
+PAY00000797	SP3200092	2025-11-17	218.96	POST_OFFICE	SETTLED	2025-11-17
+PAY00000798	SP3200092	2025-12-15	218.96	BACS	SETTLED	2025-12-15
+PAY00000799	SP3200092	2026-01-12	218.96	BACS	SETTLED	2026-01-12
+PAY00000800	SP3200092	2026-02-09	218.96	BACS	SETTLED	2026-02-09
+PAY00000801	SP3200092	2026-03-09	218.96	BACS	SETTLED	2026-03-09
+PAY00000804	SP3200093	2025-11-11	606.72	BACS	SETTLED	2025-11-11
+PAY00000805	SP3200093	2025-12-09	606.72	BACS	SETTLED	2025-12-09
+PAY00000806	SP3200093	2026-01-06	606.72	BACS	SETTLED	2026-01-06
+PAY00000807	SP3200093	2026-02-03	606.72	BACS	SETTLED	2026-02-03
+PAY00000808	SP3200093	2026-03-03	606.72	BACS	SETTLED	2026-03-03
+PAY00000809	SP3200093	2026-03-31	606.72	BACS	SETTLED	2026-03-31
+PAY00000812	SP3200094	2025-10-18	657.28	BACS	SETTLED	2025-10-18
+PAY00000813	SP3200094	2025-11-15	657.28	BACS	SETTLED	2025-11-15
+PAY00000814	SP3200094	2025-12-13	657.28	POST_OFFICE	SETTLED	2025-12-13
+PAY00000815	SP3200094	2026-01-10	657.28	BACS	SETTLED	2026-01-10
+PAY00000816	SP3200094	2026-02-07	657.28	BACS	SETTLED	2026-02-07
+PAY00000817	SP3200094	2026-03-07	657.28	BACS	SETTLED	2026-03-07
+PAY00000818	SP3200094	2026-04-04	657.28	BACS	SETTLED	2026-04-04
+PAY00000821	SP3200095	2024-10-06	903.76	BACS	SETTLED	2024-10-06
+PAY00000822	SP3200095	2025-01-05	903.76	CHEQUE	SETTLED	2025-01-05
+PAY00000823	SP3200095	2025-04-06	903.76	BACS	SETTLED	2025-04-06
+PAY00000824	SP3200095	2025-07-06	903.76	BACS	SETTLED	2025-07-06
+PAY00000825	SP3200095	2025-10-05	903.76	BACS	SETTLED	2025-10-05
+PAY00000826	SP3200095	2026-01-04	903.76	BACS	SETTLED	2026-01-04
+PAY00000827	SP3200095	2026-04-05	903.76	POST_OFFICE	SETTLED	2026-04-05
+PAY00000830	SP3200096	2025-12-09	209.32	BACS	SETTLED	2025-12-09
+PAY00000831	SP3200096	2026-01-06	209.32	BACS	SETTLED	2026-01-06
+PAY00000832	SP3200096	2026-02-03	209.32	BACS	SETTLED	2026-02-03
+PAY00000833	SP3200096	2026-03-03	209.32	BACS	SETTLED	2026-03-03
+PAY00000834	SP3200096	2026-03-31	209.32	BACS	SETTLED	2026-03-31
+PAY00000837	SP3200097	2026-03-01	164.32	BACS	SETTLED	2026-03-01
+PAY00000838	SP3200097	2026-03-08	164.32	BACS	SETTLED	2026-03-08
+PAY00000839	SP3200097	2026-03-15	164.32	BACS	SETTLED	2026-03-15
+PAY00000840	SP3200097	2026-03-22	164.32	BACS	SETTLED	2026-03-22
+PAY00000841	SP3200097	2026-03-29	164.32	BACS	SETTLED	2026-03-29
+PAY00000842	SP3200097	2026-04-05	164.32	BACS	SETTLED	2026-04-05
+PAY00000845	SP3200098	2025-11-13	556.16	BACS	SETTLED	2025-11-13
+PAY00000846	SP3200098	2025-12-11	556.16	BACS	SETTLED	2025-12-11
+PAY00000847	SP3200098	2026-01-08	556.16	BACS	SETTLED	2026-01-08
+PAY00000848	SP3200098	2026-02-05	556.16	BACS	SETTLED	2026-02-05
+PAY00000849	SP3200098	2026-03-05	556.16	BACS	SETTLED	2026-03-05
+PAY00000850	SP3200098	2026-04-02	556.16	POST_OFFICE	SETTLED	2026-04-02
+PAY00000853	SP3200099	2025-10-15	328.64	POST_OFFICE	SETTLED	2025-10-15
+PAY00000854	SP3200099	2025-11-12	328.64	BACS	SETTLED	2025-11-12
+PAY00000855	SP3200099	2025-12-10	328.64	BACS	SETTLED	2025-12-10
+PAY00000856	SP3200099	2026-01-07	328.64	BACS	SETTLED	2026-01-07
+PAY00000857	SP3200099	2026-02-04	328.64	BACS	SETTLED	2026-02-04
+PAY00000858	SP3200099	2026-03-04	328.64	BACS	SETTLED	2026-03-04
+PAY00000859	SP3200099	2026-04-01	328.64	BACS	SETTLED	2026-04-01
+PAY00000862	SP3200100	2025-12-13	495.96	POST_OFFICE	SETTLED	2025-12-13
+PAY00000863	SP3200100	2026-01-10	495.96	BACS	SETTLED	2026-01-10
+PAY00000864	SP3200100	2026-02-07	495.96	BACS	SETTLED	2026-02-07
+PAY00000865	SP3200100	2026-03-07	495.96	POST_OFFICE	SETTLED	2026-03-07
+PAY00000866	SP3200100	2026-04-04	495.96	BACS	SETTLED	2026-04-04
+PAY00000869	SP3200101	2025-12-14	259.80	CHEQUE	SETTLED	2025-12-14
+PAY00000870	SP3200101	2026-01-11	259.80	BACS	SETTLED	2026-01-11
+PAY00000871	SP3200101	2026-02-08	259.80	BACS	SETTLED	2026-02-08
+PAY00000872	SP3200101	2026-03-08	259.80	BACS	SETTLED	2026-03-08
+PAY00000873	SP3200101	2026-04-05	259.80	POST_OFFICE	SETTLED	2026-04-05
+PAY00000876	SP3200102	2025-08-20	474.84	BACS	SETTLED	2025-08-20
+PAY00000877	SP3200102	2025-09-17	474.84	POST_OFFICE	SETTLED	2025-09-17
+PAY00000878	SP3200102	2025-10-15	474.84	BACS	SETTLED	2025-10-15
+PAY00000879	SP3200102	2025-11-12	474.84	POST_OFFICE	SETTLED	2025-11-12
+PAY00000880	SP3200102	2025-12-10	474.84	BACS	SETTLED	2025-12-10
+PAY00000881	SP3200102	2026-01-07	474.84	BACS	SETTLED	2026-01-07
+PAY00000882	SP3200102	2026-02-04	474.84	BACS	SETTLED	2026-02-04
+PAY00000883	SP3200102	2026-03-04	474.84	BACS	SETTLED	2026-03-04
+PAY00000884	SP3200102	2026-04-01	474.84	BACS	SETTLED	2026-04-01
+PAY00000887	SP3200103	2025-10-16	278.08	POST_OFFICE	SETTLED	2025-10-16
+PAY00000888	SP3200103	2025-11-13	278.08	POST_OFFICE	SETTLED	2025-11-13
+PAY00000889	SP3200103	2025-12-11	278.08	POST_OFFICE	SETTLED	2025-12-11
+PAY00000890	SP3200103	2026-01-08	278.08	BACS	SETTLED	2026-01-08
+PAY00000891	SP3200103	2026-02-05	278.08	BACS	SETTLED	2026-02-05
+PAY00000892	SP3200103	2026-03-05	278.08	BACS	SETTLED	2026-03-05
+PAY00000893	SP3200103	2026-04-02	278.08	POST_OFFICE	SETTLED	2026-04-02
+PAY00000896	SP3200104	2025-08-19	702.52	BACS	SETTLED	2025-08-19
+PAY00000897	SP3200104	2025-09-16	702.52	BACS	SETTLED	2025-09-16
+PAY00000898	SP3200104	2025-10-14	702.52	BACS	SETTLED	2025-10-14
+PAY00000899	SP3200104	2025-11-11	702.52	BACS	SETTLED	2025-11-11
+PAY00000900	SP3200104	2025-12-09	702.52	POST_OFFICE	SETTLED	2025-12-09
+PAY00000901	SP3200104	2026-01-06	702.52	BACS	SETTLED	2026-01-06
+PAY00000902	SP3200104	2026-02-03	702.52	BACS	SETTLED	2026-02-03
+PAY00000903	SP3200104	2026-03-03	702.52	BACS	SETTLED	2026-03-03
+PAY00000904	SP3200104	2026-03-31	702.52	BACS	SETTLED	2026-03-31
+PAY00000907	SP3200105	2026-03-05	191.63	BACS	SETTLED	2026-03-05
+PAY00000908	SP3200105	2026-03-12	191.63	BACS	SETTLED	2026-03-12
+PAY00000909	SP3200105	2026-03-19	191.63	CHEQUE	SETTLED	2026-03-19
+PAY00000910	SP3200105	2026-03-26	191.63	BACS	SETTLED	2026-03-26
+PAY00000911	SP3200105	2026-04-02	191.63	BACS	SETTLED	2026-04-02
+PAY00000914	SP3200106	2025-10-16	556.16	BACS	SETTLED	2025-10-16
+PAY00000915	SP3200106	2025-11-13	556.16	BACS	SETTLED	2025-11-13
+PAY00000916	SP3200106	2025-12-11	556.16	BACS	SETTLED	2025-12-11
+PAY00000917	SP3200106	2026-01-08	556.16	BACS	SETTLED	2026-01-08
+PAY00000918	SP3200106	2026-02-05	556.16	BACS	SETTLED	2026-02-05
+PAY00000919	SP3200106	2026-03-05	556.16	BACS	SETTLED	2026-03-05
+PAY00000920	SP3200106	2026-04-02	556.16	BACS	SETTLED	2026-04-02
+PAY00000923	SP3200107	2026-02-08	164.32	CHEQUE	SETTLED	2026-02-08
+PAY00000924	SP3200107	2026-02-15	164.32	BACS	SETTLED	2026-02-15
+PAY00000925	SP3200107	2026-02-22	164.32	BACS	SETTLED	2026-02-22
+PAY00000926	SP3200107	2026-03-01	164.32	BACS	SETTLED	2026-03-01
+PAY00000927	SP3200107	2026-03-08	164.32	BACS	SETTLED	2026-03-08
+PAY00000928	SP3200107	2026-03-15	164.32	BACS	SETTLED	2026-03-15
+PAY00000929	SP3200107	2026-03-22	164.32	CHEQUE	SETTLED	2026-03-22
+PAY00000930	SP3200107	2026-03-29	164.32	BACS	SETTLED	2026-03-29
+PAY00000931	SP3200107	2026-04-05	164.32	BACS	SETTLED	2026-04-05
+PAY00000934	SP3200108	2025-08-23	783.68	BACS	SETTLED	2025-08-23
+PAY00000935	SP3200108	2025-09-20	783.68	BACS	SETTLED	2025-09-20
+PAY00000936	SP3200108	2025-10-18	783.68	CHEQUE	SETTLED	2025-10-18
+PAY00000937	SP3200108	2025-11-15	783.68	CHEQUE	SETTLED	2025-11-15
+PAY00000938	SP3200108	2025-12-13	783.68	BACS	SETTLED	2025-12-13
+PAY00000939	SP3200108	2026-01-10	783.68	POST_OFFICE	SETTLED	2026-01-10
+PAY00000940	SP3200108	2026-02-07	783.68	POST_OFFICE	SETTLED	2026-02-07
+PAY00000941	SP3200108	2026-03-07	783.68	BACS	SETTLED	2026-03-07
+PAY00000942	SP3200108	2026-04-04	783.68	BACS	SETTLED	2026-04-04
+PAY00000945	SP3200109	2025-04-05	1314.56	CHEQUE	SETTLED	2025-04-05
+PAY00000946	SP3200109	2025-07-05	1314.56	BACS	SETTLED	2025-07-05
+PAY00000947	SP3200109	2025-10-04	1314.56	BACS	SETTLED	2025-10-04
+PAY00000948	SP3200109	2026-01-03	1314.56	BACS	SETTLED	2026-01-03
+PAY00000949	SP3200109	2026-04-04	1314.56	POST_OFFICE	SETTLED	2026-04-04
+PAY00000952	SP3200110	2026-02-10	88.49	BACS	SETTLED	2026-02-10
+PAY00000953	SP3200110	2026-02-17	88.49	POST_OFFICE	SETTLED	2026-02-17
+PAY00000954	SP3200110	2026-02-24	88.49	BACS	SETTLED	2026-02-24
+PAY00000955	SP3200110	2026-03-03	88.49	BACS	SETTLED	2026-03-03
+PAY00000956	SP3200110	2026-03-10	88.49	BACS	SETTLED	2026-03-10
+PAY00000957	SP3200110	2026-03-17	88.49	BACS	SETTLED	2026-03-17
+PAY00000958	SP3200110	2026-03-24	88.49	BACS	SETTLED	2026-03-24
+PAY00000959	SP3200110	2026-03-31	88.49	BACS	SETTLED	2026-03-31
+PAY00000962	SP3200111	2026-02-18	107.44	BACS	SETTLED	2026-02-18
+PAY00000963	SP3200111	2026-02-25	107.44	BACS	SETTLED	2026-02-25
+PAY00000964	SP3200111	2026-03-04	107.44	BACS	SETTLED	2026-03-04
+PAY00000965	SP3200111	2026-03-11	107.44	BACS	SETTLED	2026-03-11
+PAY00000966	SP3200111	2026-03-18	107.44	POST_OFFICE	SETTLED	2026-03-18
+PAY00000967	SP3200111	2026-03-25	107.44	BACS	SETTLED	2026-03-25
+PAY00000968	SP3200111	2026-04-01	107.44	BACS	SETTLED	2026-04-01
+PAY00000971	SP3200112	2026-02-17	75.35	BACS	SETTLED	2026-02-17
+PAY00000972	SP3200112	2026-02-24	75.35	CHEQUE	SETTLED	2026-02-24
+PAY00000973	SP3200112	2026-03-03	75.35	BACS	SETTLED	2026-03-03
+PAY00000974	SP3200112	2026-03-10	75.35	BACS	SETTLED	2026-03-10
+PAY00000975	SP3200112	2026-03-17	75.35	BACS	SETTLED	2026-03-17
+PAY00000976	SP3200112	2026-03-24	75.35	BACS	SETTLED	2026-03-24
+PAY00000977	SP3200112	2026-03-31	75.35	POST_OFFICE	SETTLED	2026-03-31
+PAY00000980	SP3200113	2024-10-01	2300.48	BACS	SETTLED	2024-10-01
+PAY00000981	SP3200113	2024-12-31	2300.48	BACS	SETTLED	2024-12-31
+PAY00000982	SP3200113	2025-04-01	2300.48	BACS	SETTLED	2025-04-01
+PAY00000983	SP3200113	2025-07-01	2300.48	POST_OFFICE	SETTLED	2025-07-01
+PAY00000984	SP3200113	2025-09-30	2300.48	BACS	SETTLED	2025-09-30
+PAY00000985	SP3200113	2025-12-30	2300.48	BACS	SETTLED	2025-12-30
+PAY00000986	SP3200113	2026-03-31	2300.48	POST_OFFICE	SETTLED	2026-03-31
+PAY00000989	SP3200114	2025-12-10	682.56	BACS	SETTLED	2025-12-10
+PAY00000990	SP3200114	2026-01-07	682.56	POST_OFFICE	SETTLED	2026-01-07
+PAY00000991	SP3200114	2026-02-04	682.56	BACS	SETTLED	2026-02-04
+PAY00000992	SP3200114	2026-03-04	682.56	BACS	SETTLED	2026-03-04
+PAY00000993	SP3200114	2026-04-01	682.56	BACS	SETTLED	2026-04-01
+PAY00000996	SP3200115	2025-12-13	632.00	BACS	SETTLED	2025-12-13
+PAY00000997	SP3200115	2026-01-10	632.00	BACS	SETTLED	2026-01-10
+PAY00000998	SP3200115	2026-02-07	632.00	BACS	SETTLED	2026-02-07
+PAY00000999	SP3200115	2026-03-07	632.00	BACS	SETTLED	2026-03-07
+PAY00001000	SP3200115	2026-04-04	632.00	BACS	SETTLED	2026-04-04
+PAY00001003	SP3200116	2026-02-22	126.40	BACS	SETTLED	2026-02-22
+PAY00001004	SP3200116	2026-03-01	126.40	BACS	SETTLED	2026-03-01
+PAY00001005	SP3200116	2026-03-08	126.40	BACS	SETTLED	2026-03-08
+PAY00001006	SP3200116	2026-03-15	126.40	BACS	SETTLED	2026-03-15
+PAY00001007	SP3200116	2026-03-22	126.40	BACS	SETTLED	2026-03-22
+PAY00001008	SP3200116	2026-03-29	126.40	POST_OFFICE	SETTLED	2026-03-29
+PAY00001009	SP3200116	2026-04-05	126.40	BACS	SETTLED	2026-04-05
+PAY00001012	SP3200117	2025-10-17	379.20	CHEQUE	SETTLED	2025-10-17
+PAY00001013	SP3200117	2025-11-14	379.20	POST_OFFICE	SETTLED	2025-11-14
+PAY00001014	SP3200117	2025-12-12	379.20	BACS	SETTLED	2025-12-12
+PAY00001015	SP3200117	2026-01-09	379.20	CHEQUE	SETTLED	2026-01-09
+PAY00001016	SP3200117	2026-02-06	379.20	BACS	SETTLED	2026-02-06
+PAY00001017	SP3200117	2026-03-06	379.20	BACS	SETTLED	2026-03-06
+PAY00001018	SP3200117	2026-04-03	379.20	POST_OFFICE	SETTLED	2026-04-03
+PAY00001021	SP3200118	2025-12-14	480.32	BACS	SETTLED	2025-12-14
+PAY00001022	SP3200118	2026-01-11	480.32	BACS	SETTLED	2026-01-11
+PAY00001023	SP3200118	2026-02-08	480.32	BACS	SETTLED	2026-02-08
+PAY00001024	SP3200118	2026-03-08	480.32	BACS	SETTLED	2026-03-08
+PAY00001025	SP3200118	2026-04-05	480.32	BACS	SETTLED	2026-04-05
+PAY00001028	SP3200119	2025-12-11	632.00	BACS	SETTLED	2025-12-11
+PAY00001029	SP3200119	2026-01-08	632.00	BACS	SETTLED	2026-01-08
+PAY00001030	SP3200119	2026-02-05	632.00	BACS	SETTLED	2026-02-05
+PAY00001031	SP3200119	2026-03-05	632.00	BACS	SETTLED	2026-03-05
+PAY00001032	SP3200119	2026-04-02	632.00	CHEQUE	SETTLED	2026-04-02
+PAY00001035	SP3200120	2025-09-21	808.96	BACS	SETTLED	2025-09-21
+PAY00001036	SP3200120	2025-10-19	808.96	BACS	SETTLED	2025-10-19
+PAY00001037	SP3200120	2025-11-16	808.96	BACS	SETTLED	2025-11-16
+PAY00001038	SP3200120	2025-12-14	808.96	BACS	SETTLED	2025-12-14
+PAY00001039	SP3200120	2026-01-11	808.96	BACS	SETTLED	2026-01-11
+PAY00001040	SP3200120	2026-02-08	808.96	BACS	SETTLED	2026-02-08
+PAY00001041	SP3200120	2026-03-08	808.96	BACS	SETTLED	2026-03-08
+PAY00001042	SP3200120	2026-04-05	808.96	BACS	SETTLED	2026-04-05
+PAY00001045	SP3200121	2026-02-27	145.36	BACS	SETTLED	2026-02-27
+PAY00001046	SP3200121	2026-03-06	145.36	CHEQUE	SETTLED	2026-03-06
+PAY00001047	SP3200121	2026-03-13	145.36	BACS	SETTLED	2026-03-13
+PAY00001048	SP3200121	2026-03-20	145.36	BACS	SETTLED	2026-03-20
+PAY00001049	SP3200121	2026-03-27	145.36	BACS	SETTLED	2026-03-27
+PAY00001050	SP3200121	2026-04-03	145.36	BACS	SETTLED	2026-04-03
+PAY00001053	SP3200122	2025-09-16	303.36	BACS	SETTLED	2025-09-16
+PAY00001054	SP3200122	2025-10-14	303.36	BACS	SETTLED	2025-10-14
+PAY00001055	SP3200122	2025-11-11	303.36	BACS	SETTLED	2025-11-11
+PAY00001056	SP3200122	2025-12-09	303.36	BACS	SETTLED	2025-12-09
+PAY00001057	SP3200122	2026-01-06	303.36	BACS	SETTLED	2026-01-06
+PAY00001058	SP3200122	2026-02-03	303.36	BACS	SETTLED	2026-02-03
+PAY00001059	SP3200122	2026-03-03	303.36	BACS	SETTLED	2026-03-03
+PAY00001060	SP3200122	2026-03-31	303.36	BACS	SETTLED	2026-03-31
+PAY00001063	SP3200123	2025-09-20	581.44	BACS	SETTLED	2025-09-20
+PAY00001064	SP3200123	2025-10-18	581.44	BACS	SETTLED	2025-10-18
+PAY00001065	SP3200123	2025-11-15	581.44	BACS	SETTLED	2025-11-15
+PAY00001066	SP3200123	2025-12-13	581.44	BACS	SETTLED	2025-12-13
+PAY00001067	SP3200123	2026-01-10	581.44	BACS	SETTLED	2026-01-10
+PAY00001068	SP3200123	2026-02-07	581.44	BACS	SETTLED	2026-02-07
+PAY00001069	SP3200123	2026-03-07	581.44	BACS	SETTLED	2026-03-07
+PAY00001070	SP3200123	2026-04-04	581.44	POST_OFFICE	SETTLED	2026-04-04
+PAY00001073	SP3200124	2026-02-18	158.00	POST_OFFICE	SETTLED	2026-02-18
+PAY00001074	SP3200124	2026-02-25	158.00	BACS	SETTLED	2026-02-25
+PAY00001075	SP3200124	2026-03-04	158.00	BACS	SETTLED	2026-03-04
+PAY00001076	SP3200124	2026-03-11	158.00	POST_OFFICE	SETTLED	2026-03-11
+PAY00001077	SP3200124	2026-03-18	158.00	BACS	SETTLED	2026-03-18
+PAY00001078	SP3200124	2026-03-25	158.00	BACS	SETTLED	2026-03-25
+PAY00001079	SP3200124	2026-04-01	158.00	BACS	SETTLED	2026-04-01
+PAY00001082	SP3200125	2026-02-11	104.98	CHEQUE	SETTLED	2026-02-11
+PAY00001083	SP3200125	2026-02-18	104.98	CHEQUE	SETTLED	2026-02-18
+PAY00001084	SP3200125	2026-02-25	104.98	BACS	SETTLED	2026-02-25
+PAY00001085	SP3200125	2026-03-04	104.98	POST_OFFICE	SETTLED	2026-03-04
+PAY00001086	SP3200125	2026-03-11	104.98	BACS	SETTLED	2026-03-11
+PAY00001087	SP3200125	2026-03-18	104.98	BACS	SETTLED	2026-03-18
+PAY00001088	SP3200125	2026-03-25	104.98	BACS	SETTLED	2026-03-25
+PAY00001089	SP3200125	2026-04-01	104.98	BACS	SETTLED	2026-04-01
+PAY00001092	SP3200126	2025-11-12	783.68	BACS	SETTLED	2025-11-12
+PAY00001093	SP3200126	2025-12-10	783.68	BACS	SETTLED	2025-12-10
+PAY00001094	SP3200126	2026-01-07	783.68	CHEQUE	SETTLED	2026-01-07
+PAY00001095	SP3200126	2026-02-04	783.68	BACS	SETTLED	2026-02-04
+PAY00001096	SP3200126	2026-03-04	783.68	BACS	SETTLED	2026-03-04
+PAY00001097	SP3200126	2026-04-01	783.68	POST_OFFICE	SETTLED	2026-04-01
+PAY00001100	SP3200127	2026-02-06	116.64	POST_OFFICE	SETTLED	2026-02-06
+PAY00001101	SP3200127	2026-02-13	116.64	BACS	SETTLED	2026-02-13
+PAY00001102	SP3200127	2026-02-20	116.64	BACS	SETTLED	2026-02-20
+PAY00001103	SP3200127	2026-02-27	116.64	BACS	SETTLED	2026-02-27
+PAY00001104	SP3200127	2026-03-06	116.64	BACS	SETTLED	2026-03-06
+PAY00001105	SP3200127	2026-03-13	116.64	BACS	SETTLED	2026-03-13
+PAY00001106	SP3200127	2026-03-20	116.64	BACS	SETTLED	2026-03-20
+PAY00001107	SP3200127	2026-03-27	116.64	BACS	SETTLED	2026-03-27
+PAY00001108	SP3200127	2026-04-03	116.64	BACS	SETTLED	2026-04-03
+PAY00001111	SP3200128	2025-12-10	278.08	BACS	SETTLED	2025-12-10
+PAY00001112	SP3200128	2026-01-07	278.08	BACS	SETTLED	2026-01-07
+PAY00001113	SP3200128	2026-02-04	278.08	BACS	SETTLED	2026-02-04
+PAY00001114	SP3200128	2026-03-04	278.08	BACS	SETTLED	2026-03-04
+PAY00001115	SP3200128	2026-04-01	278.08	BACS	SETTLED	2026-04-01
+PAY00001118	SP3200129	2025-11-14	733.12	BACS	SETTLED	2025-11-14
+PAY00001119	SP3200129	2025-12-12	733.12	POST_OFFICE	SETTLED	2025-12-12
+PAY00001120	SP3200129	2026-01-09	733.12	BACS	SETTLED	2026-01-09
+PAY00001121	SP3200129	2026-02-06	733.12	BACS	SETTLED	2026-02-06
+PAY00001122	SP3200129	2026-03-06	733.12	POST_OFFICE	SETTLED	2026-03-06
+PAY00001123	SP3200129	2026-04-03	733.12	BACS	SETTLED	2026-04-03
+PAY00001126	SP3200130	2024-04-05	1150.24	BACS	SETTLED	2024-04-05
+PAY00001127	SP3200130	2024-07-05	1150.24	BACS	SETTLED	2024-07-05
+PAY00001128	SP3200130	2024-10-04	1150.24	POST_OFFICE	SETTLED	2024-10-04
+PAY00001129	SP3200130	2025-01-03	1150.24	BACS	SETTLED	2025-01-03
+PAY00001130	SP3200130	2025-04-04	1150.24	BACS	SETTLED	2025-04-04
+PAY00001131	SP3200130	2025-07-04	1150.24	BACS	SETTLED	2025-07-04
+PAY00001132	SP3200130	2025-10-03	1150.24	BACS	SETTLED	2025-10-03
+PAY00001133	SP3200130	2026-01-02	1150.24	BACS	SETTLED	2026-01-02
+PAY00001134	SP3200130	2026-04-03	1150.24	BACS	SETTLED	2026-04-03
+PAY00001137	SP3200131	2025-09-19	404.48	CHEQUE	SETTLED	2025-09-19
+PAY00001138	SP3200131	2025-10-17	404.48	BACS	SETTLED	2025-10-17
+PAY00001139	SP3200131	2025-11-14	404.48	BACS	SETTLED	2025-11-14
+PAY00001140	SP3200131	2025-12-12	404.48	BACS	SETTLED	2025-12-12
+PAY00001141	SP3200131	2026-01-09	404.48	BACS	SETTLED	2026-01-09
+PAY00001142	SP3200131	2026-02-06	404.48	BACS	SETTLED	2026-02-06
+PAY00001143	SP3200131	2026-03-06	404.48	BACS	SETTLED	2026-03-06
+PAY00001144	SP3200131	2026-04-03	404.48	BACS	SETTLED	2026-04-03
+PAY00001147	SP3200132	2025-12-12	459.24	BACS	SETTLED	2025-12-12
+PAY00001148	SP3200132	2026-01-09	459.24	BACS	SETTLED	2026-01-09
+PAY00001149	SP3200132	2026-02-06	459.24	BACS	SETTLED	2026-02-06
+PAY00001150	SP3200132	2026-03-06	459.24	POST_OFFICE	SETTLED	2026-03-06
+PAY00001151	SP3200132	2026-04-03	459.24	BACS	SETTLED	2026-04-03
+PAY00001154	SP3200133	2025-11-13	632.00	BACS	SETTLED	2025-11-13
+PAY00001155	SP3200133	2025-12-11	632.00	BACS	SETTLED	2025-12-11
+PAY00001156	SP3200133	2026-01-08	632.00	BACS	SETTLED	2026-01-08
+PAY00001157	SP3200133	2026-02-05	632.00	POST_OFFICE	SETTLED	2026-02-05
+PAY00001158	SP3200133	2026-03-05	632.00	POST_OFFICE	SETTLED	2026-03-05
+PAY00001159	SP3200133	2026-04-02	632.00	BACS	SETTLED	2026-04-02
+PAY00001162	SP3200134	2025-01-05	2793.44	BACS	SETTLED	2025-01-05
+PAY00001163	SP3200134	2025-04-06	2793.44	BACS	SETTLED	2025-04-06
+PAY00001164	SP3200134	2025-07-06	2793.44	POST_OFFICE	SETTLED	2025-07-06
+PAY00001165	SP3200134	2025-10-05	2793.44	POST_OFFICE	SETTLED	2025-10-05
+PAY00001166	SP3200134	2026-01-04	2793.44	BACS	SETTLED	2026-01-04
+PAY00001167	SP3200134	2026-04-05	2793.44	BACS	SETTLED	2026-04-05
+PAY00001170	SP3200135	2025-11-13	632.00	BACS	SETTLED	2025-11-13
+PAY00001171	SP3200135	2025-12-11	632.00	BACS	SETTLED	2025-12-11
+PAY00001172	SP3200135	2026-01-08	632.00	POST_OFFICE	SETTLED	2026-01-08
+PAY00001173	SP3200135	2026-02-05	632.00	BACS	SETTLED	2026-02-05
+PAY00001174	SP3200135	2026-03-05	632.00	BACS	SETTLED	2026-03-05
+PAY00001175	SP3200135	2026-04-02	632.00	POST_OFFICE	SETTLED	2026-04-02
+PAY00001178	SP3200136	2025-11-11	429.76	BACS	SETTLED	2025-11-11
+PAY00001179	SP3200136	2025-12-09	429.76	BACS	SETTLED	2025-12-09
+PAY00001180	SP3200136	2026-01-06	429.76	BACS	SETTLED	2026-01-06
+PAY00001181	SP3200136	2026-02-03	429.76	BACS	SETTLED	2026-02-03
+PAY00001182	SP3200136	2026-03-03	429.76	BACS	SETTLED	2026-03-03
+PAY00001183	SP3200136	2026-03-31	429.76	BACS	SETTLED	2026-03-31
+PAY00001186	SP3200137	2025-10-20	468.64	BACS	SETTLED	2025-10-20
+PAY00001187	SP3200137	2025-11-17	468.64	BACS	SETTLED	2025-11-17
+PAY00001188	SP3200137	2025-12-15	468.64	POST_OFFICE	SETTLED	2025-12-15
+PAY00001189	SP3200137	2026-01-12	468.64	POST_OFFICE	SETTLED	2026-01-12
+PAY00001190	SP3200137	2026-02-09	468.64	BACS	SETTLED	2026-02-09
+PAY00001191	SP3200137	2026-03-09	468.64	BACS	SETTLED	2026-03-09
+PAY00001194	SP3200138	2026-02-22	112.73	BACS	SETTLED	2026-02-22
+PAY00001195	SP3200138	2026-03-01	112.73	BACS	SETTLED	2026-03-01
+PAY00001196	SP3200138	2026-03-08	112.73	BACS	SETTLED	2026-03-08
+PAY00001197	SP3200138	2026-03-15	112.73	BACS	SETTLED	2026-03-15
+PAY00001198	SP3200138	2026-03-22	112.73	BACS	SETTLED	2026-03-22
+PAY00001199	SP3200138	2026-03-29	112.73	CHEQUE	SETTLED	2026-03-29
+PAY00001200	SP3200138	2026-04-05	112.73	BACS	SETTLED	2026-04-05
+PAY00001203	SP3200139	2026-02-20	139.45	BACS	SETTLED	2026-02-20
+PAY00001204	SP3200139	2026-02-27	139.45	BACS	SETTLED	2026-02-27
+PAY00001205	SP3200139	2026-03-06	139.45	BACS	SETTLED	2026-03-06
+PAY00001206	SP3200139	2026-03-13	139.45	BACS	SETTLED	2026-03-13
+PAY00001207	SP3200139	2026-03-20	139.45	BACS	SETTLED	2026-03-20
+PAY00001208	SP3200139	2026-03-27	139.45	BACS	SETTLED	2026-03-27
+PAY00001209	SP3200139	2026-04-03	139.45	BACS	SETTLED	2026-04-03
+PAY00001212	SP3200140	2025-12-15	556.16	BACS	SETTLED	2025-12-15
+PAY00001213	SP3200140	2026-01-12	556.16	BACS	SETTLED	2026-01-12
+PAY00001214	SP3200140	2026-02-09	556.16	BACS	SETTLED	2026-02-09
+PAY00001215	SP3200140	2026-03-09	556.16	BACS	SETTLED	2026-03-09
+PAY00001218	SP3200141	2025-10-18	252.80	BACS	SETTLED	2025-10-18
+PAY00001219	SP3200141	2025-11-15	252.80	POST_OFFICE	SETTLED	2025-11-15
+PAY00001220	SP3200141	2025-12-13	252.80	POST_OFFICE	SETTLED	2025-12-13
+PAY00001221	SP3200141	2026-01-10	252.80	BACS	SETTLED	2026-01-10
+PAY00001222	SP3200141	2026-02-07	252.80	BACS	SETTLED	2026-02-07
+PAY00001223	SP3200141	2026-03-07	252.80	CHEQUE	SETTLED	2026-03-07
+PAY00001224	SP3200141	2026-04-04	252.80	BACS	SETTLED	2026-04-04
+PAY00001227	SP3200142	2025-12-11	303.36	POST_OFFICE	SETTLED	2025-12-11
+PAY00001228	SP3200142	2026-01-08	303.36	BACS	SETTLED	2026-01-08
+PAY00001229	SP3200142	2026-02-05	303.36	BACS	SETTLED	2026-02-05
+PAY00001230	SP3200142	2026-03-05	303.36	POST_OFFICE	SETTLED	2026-03-05
+PAY00001231	SP3200142	2026-04-02	303.36	BACS	SETTLED	2026-04-02
+PAY00001234	SP3200143	2025-12-15	608.00	BACS	SETTLED	2025-12-15
+PAY00001235	SP3200143	2026-01-12	608.00	BACS	SETTLED	2026-01-12
+PAY00001236	SP3200143	2026-02-09	608.00	BACS	SETTLED	2026-02-09
+PAY00001237	SP3200143	2026-03-09	608.00	POST_OFFICE	SETTLED	2026-03-09
+PAY00001240	SP3200144	2024-04-04	1643.20	BACS	SETTLED	2024-04-04
+PAY00001241	SP3200144	2024-07-04	1643.20	BACS	SETTLED	2024-07-04
+PAY00001242	SP3200144	2024-10-03	1643.20	BACS	SETTLED	2024-10-03
+PAY00001243	SP3200144	2025-01-02	1643.20	BACS	SETTLED	2025-01-02
+PAY00001244	SP3200144	2025-04-03	1643.20	POST_OFFICE	SETTLED	2025-04-03
+PAY00001245	SP3200144	2025-07-03	1643.20	BACS	SETTLED	2025-07-03
+PAY00001246	SP3200144	2025-10-02	1643.20	BACS	SETTLED	2025-10-02
+PAY00001247	SP3200144	2026-01-01	1643.20	BACS	SETTLED	2026-01-01
+PAY00001248	SP3200144	2026-04-02	1643.20	BACS	SETTLED	2026-04-02
+PAY00001251	SP3200145	2026-03-01	129.24	CHEQUE	SETTLED	2026-03-01
+PAY00001252	SP3200145	2026-03-08	129.24	BACS	SETTLED	2026-03-08
+PAY00001253	SP3200145	2026-03-15	129.24	BACS	SETTLED	2026-03-15
+PAY00001254	SP3200145	2026-03-22	129.24	BACS	SETTLED	2026-03-22
+PAY00001255	SP3200145	2026-03-29	129.24	BACS	SETTLED	2026-03-29
+PAY00001256	SP3200145	2026-04-05	129.24	POST_OFFICE	SETTLED	2026-04-05
+PAY00001259	SP3200146	2025-08-25	303.36	POST_OFFICE	SETTLED	2025-08-25
+PAY00001260	SP3200146	2025-09-22	303.36	POST_OFFICE	SETTLED	2025-09-22
+PAY00001261	SP3200146	2025-10-20	303.36	POST_OFFICE	SETTLED	2025-10-20
+PAY00001262	SP3200146	2025-11-17	303.36	BACS	SETTLED	2025-11-17
+PAY00001263	SP3200146	2025-12-15	303.36	BACS	SETTLED	2025-12-15
+PAY00001264	SP3200146	2026-01-12	303.36	BACS	SETTLED	2026-01-12
+PAY00001265	SP3200146	2026-02-09	303.36	BACS	SETTLED	2026-02-09
+PAY00001266	SP3200146	2026-03-09	303.36	BACS	SETTLED	2026-03-09
+PAY00001269	SP3200147	2025-09-20	581.44	BACS	SETTLED	2025-09-20
+PAY00001270	SP3200147	2025-10-18	581.44	BACS	SETTLED	2025-10-18
+PAY00001271	SP3200147	2025-11-15	581.44	POST_OFFICE	SETTLED	2025-11-15
+PAY00001272	SP3200147	2025-12-13	581.44	BACS	SETTLED	2025-12-13
+PAY00001273	SP3200147	2026-01-10	581.44	BACS	SETTLED	2026-01-10
+PAY00001274	SP3200147	2026-02-07	581.44	CHEQUE	SETTLED	2026-02-07
+PAY00001275	SP3200147	2026-03-07	581.44	POST_OFFICE	SETTLED	2026-03-07
+PAY00001276	SP3200147	2026-04-04	581.44	BACS	SETTLED	2026-04-04
+PAY00001279	SP3200148	2026-02-24	158.00	POST_OFFICE	SETTLED	2026-02-24
+PAY00001280	SP3200148	2026-03-03	158.00	BACS	SETTLED	2026-03-03
+PAY00001281	SP3200148	2026-03-10	158.00	BACS	SETTLED	2026-03-10
+PAY00001282	SP3200148	2026-03-17	158.00	BACS	SETTLED	2026-03-17
+PAY00001283	SP3200148	2026-03-24	158.00	BACS	SETTLED	2026-03-24
+PAY00001284	SP3200148	2026-03-31	158.00	BACS	SETTLED	2026-03-31
+PAY00001287	SP3200149	2026-03-09	170.64	POST_OFFICE	SETTLED	2026-03-09
+PAY00001288	SP3200149	2026-03-16	170.64	BACS	SETTLED	2026-03-16
+PAY00001289	SP3200149	2026-03-23	170.64	BACS	SETTLED	2026-03-23
+PAY00001290	SP3200149	2026-03-30	170.64	BACS	SETTLED	2026-03-30
+PAY00001293	SP3200150	2025-09-22	707.84	BACS	SETTLED	2025-09-22
+PAY00001294	SP3200150	2025-10-20	707.84	BACS	SETTLED	2025-10-20
+PAY00001295	SP3200150	2025-11-17	707.84	BACS	SETTLED	2025-11-17
+PAY00001296	SP3200150	2025-12-15	707.84	BACS	SETTLED	2025-12-15
+PAY00001297	SP3200150	2026-01-12	707.84	BACS	SETTLED	2026-01-12
+PAY00001298	SP3200150	2026-02-09	707.84	BACS	SETTLED	2026-02-09
+PAY00001299	SP3200150	2026-03-09	707.84	POST_OFFICE	SETTLED	2026-03-09
+PAY00001302	SP3200151	2025-10-19	733.12	BACS	SETTLED	2025-10-19
+PAY00001303	SP3200151	2025-11-16	733.12	BACS	SETTLED	2025-11-16
+PAY00001304	SP3200151	2025-12-14	733.12	BACS	SETTLED	2025-12-14
+PAY00001305	SP3200151	2026-01-11	733.12	BACS	SETTLED	2026-01-11
+PAY00001306	SP3200151	2026-02-08	733.12	BACS	SETTLED	2026-02-08
+PAY00001307	SP3200151	2026-03-08	733.12	POST_OFFICE	SETTLED	2026-03-08
+PAY00001308	SP3200151	2026-04-05	733.12	POST_OFFICE	SETTLED	2026-04-05
+PAY00001311	SP3200152	2025-09-17	758.40	BACS	SETTLED	2025-09-17
+PAY00001312	SP3200152	2025-10-15	758.40	BACS	SETTLED	2025-10-15
+PAY00001313	SP3200152	2025-11-12	758.40	BACS	SETTLED	2025-11-12
+PAY00001314	SP3200152	2025-12-10	758.40	BACS	SETTLED	2025-12-10
+PAY00001315	SP3200152	2026-01-07	758.40	BACS	SETTLED	2026-01-07
+PAY00001316	SP3200152	2026-02-04	758.40	BACS	SETTLED	2026-02-04
+PAY00001317	SP3200152	2026-03-04	758.40	BACS	SETTLED	2026-03-04
+PAY00001318	SP3200152	2026-04-01	758.40	BACS	SETTLED	2026-04-01
+PAY00001321	SP3200153	2025-10-20	733.12	BACS	SETTLED	2025-10-20
+PAY00001322	SP3200153	2025-11-17	733.12	POST_OFFICE	SETTLED	2025-11-17
+PAY00001323	SP3200153	2025-12-15	733.12	BACS	SETTLED	2025-12-15
+PAY00001324	SP3200153	2026-01-12	733.12	BACS	SETTLED	2026-01-12
+PAY00001325	SP3200153	2026-02-09	733.12	BACS	SETTLED	2026-02-09
+PAY00001326	SP3200153	2026-03-09	733.12	BACS	SETTLED	2026-03-09
+PAY00001329	SP3200154	2025-09-17	418.16	BACS	SETTLED	2025-09-17
+PAY00001330	SP3200154	2025-10-15	418.16	POST_OFFICE	SETTLED	2025-10-15
+PAY00001331	SP3200154	2025-11-12	418.16	BACS	SETTLED	2025-11-12
+PAY00001332	SP3200154	2025-12-10	418.16	BACS	SETTLED	2025-12-10
+PAY00001333	SP3200154	2026-01-07	418.16	CHEQUE	SETTLED	2026-01-07
+PAY00001334	SP3200154	2026-02-04	418.16	BACS	SETTLED	2026-02-04
+PAY00001335	SP3200154	2026-03-04	418.16	BACS	SETTLED	2026-03-04
+PAY00001336	SP3200154	2026-04-01	418.16	BACS	SETTLED	2026-04-01
+PAY00001339	SP3200155	2025-10-15	606.72	BACS	SETTLED	2025-10-15
+PAY00001340	SP3200155	2025-11-12	606.72	POST_OFFICE	SETTLED	2025-11-12
+PAY00001341	SP3200155	2025-12-10	606.72	BACS	SETTLED	2025-12-10
+PAY00001342	SP3200155	2026-01-07	606.72	BACS	SETTLED	2026-01-07
+PAY00001343	SP3200155	2026-02-04	606.72	BACS	SETTLED	2026-02-04
+PAY00001344	SP3200155	2026-03-04	606.72	BACS	SETTLED	2026-03-04
+PAY00001345	SP3200155	2026-04-01	606.72	BACS	SETTLED	2026-04-01
+PAY00001348	SP3200156	2026-02-16	100.40	BACS	SETTLED	2026-02-16
+PAY00001349	SP3200156	2026-02-23	100.40	BACS	SETTLED	2026-02-23
+PAY00001350	SP3200156	2026-03-02	100.40	BACS	SETTLED	2026-03-02
+PAY00001351	SP3200156	2026-03-09	100.40	BACS	SETTLED	2026-03-09
+PAY00001352	SP3200156	2026-03-16	100.40	BACS	SETTLED	2026-03-16
+PAY00001353	SP3200156	2026-03-23	100.40	BACS	SETTLED	2026-03-23
+PAY00001354	SP3200156	2026-03-30	100.40	BACS	SETTLED	2026-03-30
+PAY00001357	SP3200157	2025-10-18	594.36	POST_OFFICE	SETTLED	2025-10-18
+PAY00001358	SP3200157	2025-11-15	594.36	POST_OFFICE	SETTLED	2025-11-15
+PAY00001359	SP3200157	2025-12-13	594.36	BACS	SETTLED	2025-12-13
+PAY00001360	SP3200157	2026-01-10	594.36	BACS	SETTLED	2026-01-10
+PAY00001361	SP3200157	2026-02-07	594.36	BACS	SETTLED	2026-02-07
+PAY00001362	SP3200157	2026-03-07	594.36	POST_OFFICE	SETTLED	2026-03-07
+PAY00001363	SP3200157	2026-04-04	594.36	BACS	SETTLED	2026-04-04
+PAY00001366	SP3200158	2025-12-14	455.04	BACS	SETTLED	2025-12-14
+PAY00001367	SP3200158	2026-01-11	455.04	BACS	SETTLED	2026-01-11
+PAY00001368	SP3200158	2026-02-08	455.04	BACS	SETTLED	2026-02-08
+PAY00001369	SP3200158	2026-03-08	455.04	BACS	SETTLED	2026-03-08
+PAY00001370	SP3200158	2026-04-05	455.04	POST_OFFICE	SETTLED	2026-04-05
+PAY00001373	SP3200159	2025-12-11	859.52	POST_OFFICE	SETTLED	2025-12-11
+PAY00001374	SP3200159	2026-01-08	859.52	CHEQUE	SETTLED	2026-01-08
+PAY00001375	SP3200159	2026-02-05	859.52	BACS	SETTLED	2026-02-05
+PAY00001376	SP3200159	2026-03-05	859.52	BACS	SETTLED	2026-03-05
+PAY00001377	SP3200159	2026-04-02	859.52	CHEQUE	SETTLED	2026-04-02
+PAY00001380	SP3200160	2025-11-11	682.56	BACS	SETTLED	2025-11-11
+PAY00001381	SP3200160	2025-12-09	682.56	POST_OFFICE	SETTLED	2025-12-09
+PAY00001382	SP3200160	2026-01-06	682.56	BACS	SETTLED	2026-01-06
+PAY00001383	SP3200160	2026-02-03	682.56	POST_OFFICE	SETTLED	2026-02-03
+PAY00001384	SP3200160	2026-03-03	682.56	BACS	SETTLED	2026-03-03
+PAY00001385	SP3200160	2026-03-31	682.56	BACS	SETTLED	2026-03-31
+PAY00001388	SP3200161	2025-12-12	733.12	BACS	SETTLED	2025-12-12
+PAY00001389	SP3200161	2026-01-09	733.12	BACS	SETTLED	2026-01-09
+PAY00001390	SP3200161	2026-02-06	733.12	BACS	SETTLED	2026-02-06
+PAY00001391	SP3200161	2026-03-06	733.12	BACS	SETTLED	2026-03-06
+PAY00001392	SP3200161	2026-04-03	733.12	BACS	SETTLED	2026-04-03
+PAY00001395	SP3200162	2025-12-12	324.44	BACS	SETTLED	2025-12-12
+PAY00001396	SP3200162	2026-01-09	324.44	BACS	SETTLED	2026-01-09
+PAY00001397	SP3200162	2026-02-06	324.44	BACS	SETTLED	2026-02-06
+PAY00001398	SP3200162	2026-03-06	324.44	BACS	SETTLED	2026-03-06
+PAY00001399	SP3200162	2026-04-03	324.44	BACS	SETTLED	2026-04-03
+PAY00001402	SP3200163	2025-12-11	361.64	POST_OFFICE	SETTLED	2025-12-11
+PAY00001403	SP3200163	2026-01-08	361.64	BACS	SETTLED	2026-01-08
+PAY00001404	SP3200163	2026-02-05	361.64	BACS	SETTLED	2026-02-05
+PAY00001405	SP3200163	2026-03-05	361.64	POST_OFFICE	SETTLED	2026-03-05
+PAY00001406	SP3200163	2026-04-02	361.64	POST_OFFICE	SETTLED	2026-04-02
+PAY00001409	SP3200164	2025-12-10	658.92	BACS	SETTLED	2025-12-10
+PAY00001410	SP3200164	2026-01-07	658.92	BACS	SETTLED	2026-01-07
+PAY00001411	SP3200164	2026-02-04	658.92	POST_OFFICE	SETTLED	2026-02-04
+PAY00001412	SP3200164	2026-03-04	658.92	BACS	SETTLED	2026-03-04
+PAY00001413	SP3200164	2026-04-01	658.92	BACS	SETTLED	2026-04-01
+PAY00001416	SP3200165	2026-03-07	208.56	BACS	SETTLED	2026-03-07
+PAY00001417	SP3200165	2026-03-14	208.56	BACS	SETTLED	2026-03-14
+PAY00001418	SP3200165	2026-03-21	208.56	BACS	SETTLED	2026-03-21
+PAY00001419	SP3200165	2026-03-28	208.56	POST_OFFICE	SETTLED	2026-03-28
+PAY00001420	SP3200165	2026-04-04	208.56	POST_OFFICE	SETTLED	2026-04-04
+PAY00001423	SP3200166	2026-03-03	79.87	BACS	SETTLED	2026-03-03
+PAY00001424	SP3200166	2026-03-10	79.87	BACS	SETTLED	2026-03-10
+PAY00001425	SP3200166	2026-03-17	79.87	BACS	SETTLED	2026-03-17
+PAY00001426	SP3200166	2026-03-24	79.87	BACS	SETTLED	2026-03-24
+PAY00001427	SP3200166	2026-03-31	79.87	BACS	SETTLED	2026-03-31
+PAY00001430	SP3200167	2025-09-20	861.44	BACS	SETTLED	2025-09-20
+PAY00001431	SP3200167	2025-10-18	861.44	BACS	SETTLED	2025-10-18
+PAY00001432	SP3200167	2025-11-15	861.44	BACS	SETTLED	2025-11-15
+PAY00001433	SP3200167	2025-12-13	861.44	BACS	SETTLED	2025-12-13
+PAY00001434	SP3200167	2026-01-10	861.44	BACS	SETTLED	2026-01-10
+PAY00001435	SP3200167	2026-02-07	861.44	BACS	SETTLED	2026-02-07
+PAY00001436	SP3200167	2026-03-07	861.44	BACS	SETTLED	2026-03-07
+PAY00001437	SP3200167	2026-04-04	861.44	BACS	SETTLED	2026-04-04
+PAY00001440	SP3200168	2026-02-13	107.44	BACS	SETTLED	2026-02-13
+PAY00001441	SP3200168	2026-02-20	107.44	BACS	SETTLED	2026-02-20
+PAY00001442	SP3200168	2026-02-27	107.44	BACS	SETTLED	2026-02-27
+PAY00001443	SP3200168	2026-03-06	107.44	POST_OFFICE	SETTLED	2026-03-06
+PAY00001444	SP3200168	2026-03-13	107.44	BACS	SETTLED	2026-03-13
+PAY00001445	SP3200168	2026-03-20	107.44	BACS	SETTLED	2026-03-20
+PAY00001446	SP3200168	2026-03-27	107.44	BACS	SETTLED	2026-03-27
+PAY00001447	SP3200168	2026-04-03	107.44	BACS	SETTLED	2026-04-03
+PAY00001450	SP3200169	2026-02-04	132.72	POST_OFFICE	SETTLED	2026-02-04
+PAY00001451	SP3200169	2026-02-11	132.72	BACS	SETTLED	2026-02-11
+PAY00001452	SP3200169	2026-02-18	132.72	BACS	SETTLED	2026-02-18
+PAY00001453	SP3200169	2026-02-25	132.72	BACS	SETTLED	2026-02-25
+PAY00001454	SP3200169	2026-03-04	132.72	BACS	SETTLED	2026-03-04
+PAY00001455	SP3200169	2026-03-11	132.72	BACS	SETTLED	2026-03-11
+PAY00001456	SP3200169	2026-03-18	132.72	BACS	SETTLED	2026-03-18
+PAY00001457	SP3200169	2026-03-25	132.72	BACS	SETTLED	2026-03-25
+PAY00001458	SP3200169	2026-04-01	132.72	BACS	SETTLED	2026-04-01
+PAY00001461	SP3200170	2025-08-19	783.68	BACS	SETTLED	2025-08-19
+PAY00001462	SP3200170	2025-09-16	783.68	BACS	SETTLED	2025-09-16
+PAY00001463	SP3200170	2025-10-14	783.68	BACS	SETTLED	2025-10-14
+PAY00001464	SP3200170	2025-11-11	783.68	BACS	SETTLED	2025-11-11
+PAY00001465	SP3200170	2025-12-09	783.68	BACS	SETTLED	2025-12-09
+PAY00001466	SP3200170	2026-01-06	783.68	BACS	SETTLED	2026-01-06
+PAY00001467	SP3200170	2026-02-03	783.68	BACS	SETTLED	2026-02-03
+PAY00001468	SP3200170	2026-03-03	783.68	BACS	SETTLED	2026-03-03
+PAY00001469	SP3200170	2026-03-31	783.68	BACS	SETTLED	2026-03-31
+PAY00001472	SP3200171	2025-11-15	775.92	BACS	SETTLED	2025-11-15
+PAY00001473	SP3200171	2025-12-13	775.92	BACS	SETTLED	2025-12-13
+PAY00001474	SP3200171	2026-01-10	775.92	POST_OFFICE	SETTLED	2026-01-10
+PAY00001475	SP3200171	2026-02-07	775.92	BACS	SETTLED	2026-02-07
+PAY00001476	SP3200171	2026-03-07	775.92	CHEQUE	SETTLED	2026-03-07
+PAY00001477	SP3200171	2026-04-04	775.92	BACS	SETTLED	2026-04-04
+PAY00001480	SP3200172	2025-08-19	352.84	BACS	SETTLED	2025-08-19
+PAY00001481	SP3200172	2025-09-16	352.84	BACS	SETTLED	2025-09-16
+PAY00001482	SP3200172	2025-10-14	352.84	BACS	SETTLED	2025-10-14
+PAY00001483	SP3200172	2025-11-11	352.84	BACS	SETTLED	2025-11-11
+PAY00001484	SP3200172	2025-12-09	352.84	CHEQUE	SETTLED	2025-12-09
+PAY00001485	SP3200172	2026-01-06	352.84	BACS	SETTLED	2026-01-06
+PAY00001486	SP3200172	2026-02-03	352.84	BACS	SETTLED	2026-02-03
+PAY00001487	SP3200172	2026-03-03	352.84	BACS	SETTLED	2026-03-03
+PAY00001488	SP3200172	2026-03-31	352.84	BACS	SETTLED	2026-03-31
+PAY00001491	SP3200173	2024-07-05	1807.52	BACS	SETTLED	2024-07-05
+PAY00001492	SP3200173	2024-10-04	1807.52	POST_OFFICE	SETTLED	2024-10-04
+PAY00001493	SP3200173	2025-01-03	1807.52	BACS	SETTLED	2025-01-03
+PAY00001494	SP3200173	2025-04-04	1807.52	POST_OFFICE	SETTLED	2025-04-04
+PAY00001495	SP3200173	2025-07-04	1807.52	BACS	SETTLED	2025-07-04
+PAY00001496	SP3200173	2025-10-03	1807.52	BACS	SETTLED	2025-10-03
+PAY00001497	SP3200173	2026-01-02	1807.52	BACS	SETTLED	2026-01-02
+PAY00001498	SP3200173	2026-04-03	1807.52	BACS	SETTLED	2026-04-03
+PAY00001501	SP3200174	2025-12-12	379.20	CHEQUE	SETTLED	2025-12-12
+PAY00001502	SP3200174	2026-01-09	379.20	BACS	SETTLED	2026-01-09
+PAY00001503	SP3200174	2026-02-06	379.20	BACS	SETTLED	2026-02-06
+PAY00001504	SP3200174	2026-03-06	379.20	BACS	SETTLED	2026-03-06
+PAY00001505	SP3200174	2026-04-03	379.20	BACS	SETTLED	2026-04-03
+PAY00001508	SP3200175	2025-12-11	808.96	BACS	SETTLED	2025-12-11
+PAY00001509	SP3200175	2026-01-08	808.96	BACS	SETTLED	2026-01-08
+PAY00001510	SP3200175	2026-02-05	808.96	BACS	SETTLED	2026-02-05
+PAY00001511	SP3200175	2026-03-05	808.96	BACS	SETTLED	2026-03-05
+PAY00001512	SP3200175	2026-04-02	808.96	BACS	SETTLED	2026-04-02
+PAY00001515	SP3200176	2025-12-09	252.80	POST_OFFICE	SETTLED	2025-12-09
+PAY00001516	SP3200176	2026-01-06	252.80	BACS	SETTLED	2026-01-06
+PAY00001517	SP3200176	2026-02-03	252.80	POST_OFFICE	SETTLED	2026-02-03
+PAY00001518	SP3200176	2026-03-03	252.80	POST_OFFICE	SETTLED	2026-03-03
+PAY00001519	SP3200176	2026-03-31	252.80	POST_OFFICE	SETTLED	2026-03-31
+PAY00001522	SP3200177	2025-10-19	896.48	BACS	SETTLED	2025-10-19
+PAY00001523	SP3200177	2025-11-16	896.48	BACS	SETTLED	2025-11-16
+PAY00001524	SP3200177	2025-12-14	896.48	POST_OFFICE	SETTLED	2025-12-14
+PAY00001525	SP3200177	2026-01-11	896.48	POST_OFFICE	SETTLED	2026-01-11
+PAY00001526	SP3200177	2026-02-08	896.48	BACS	SETTLED	2026-02-08
+PAY00001527	SP3200177	2026-03-08	896.48	BACS	SETTLED	2026-03-08
+PAY00001528	SP3200177	2026-04-05	896.48	BACS	SETTLED	2026-04-05
+PAY00001531	SP3200178	2026-02-12	151.68	BACS	SETTLED	2026-02-12
+PAY00001532	SP3200178	2026-02-19	151.68	BACS	SETTLED	2026-02-19
+PAY00001533	SP3200178	2026-02-26	151.68	BACS	SETTLED	2026-02-26
+PAY00001534	SP3200178	2026-03-05	151.68	BACS	SETTLED	2026-03-05
+PAY00001535	SP3200178	2026-03-12	151.68	BACS	SETTLED	2026-03-12
+PAY00001536	SP3200178	2026-03-19	151.68	BACS	SETTLED	2026-03-19
+PAY00001537	SP3200178	2026-03-26	151.68	BACS	SETTLED	2026-03-26
+PAY00001538	SP3200178	2026-04-02	151.68	BACS	SETTLED	2026-04-02
+PAY00001541	SP3200179	2025-09-19	497.56	BACS	SETTLED	2025-09-19
+PAY00001542	SP3200179	2025-10-17	497.56	BACS	SETTLED	2025-10-17
+PAY00001543	SP3200179	2025-11-14	497.56	POST_OFFICE	SETTLED	2025-11-14
+PAY00001544	SP3200179	2025-12-12	497.56	BACS	SETTLED	2025-12-12
+PAY00001545	SP3200179	2026-01-09	497.56	BACS	SETTLED	2026-01-09
+PAY00001546	SP3200179	2026-02-06	497.56	BACS	SETTLED	2026-02-06
+PAY00001547	SP3200179	2026-03-06	497.56	BACS	SETTLED	2026-03-06
+PAY00001548	SP3200179	2026-04-03	497.56	BACS	SETTLED	2026-04-03
+PAY00001551	SP3200180	2025-08-22	402.00	BACS	SETTLED	2025-08-22
+PAY00001552	SP3200180	2025-09-19	402.00	CHEQUE	SETTLED	2025-09-19
+PAY00001553	SP3200180	2025-10-17	402.00	BACS	SETTLED	2025-10-17
+PAY00001554	SP3200180	2025-11-14	402.00	BACS	SETTLED	2025-11-14
+PAY00001555	SP3200180	2025-12-12	402.00	BACS	SETTLED	2025-12-12
+PAY00001556	SP3200180	2026-01-09	402.00	BACS	SETTLED	2026-01-09
+PAY00001557	SP3200180	2026-02-06	402.00	BACS	SETTLED	2026-02-06
+PAY00001558	SP3200180	2026-03-06	402.00	BACS	SETTLED	2026-03-06
+PAY00001559	SP3200180	2026-04-03	402.00	BACS	SETTLED	2026-04-03
+PAY00001562	SP3200181	2026-02-09	157.47	BACS	SETTLED	2026-02-09
+PAY00001563	SP3200181	2026-02-16	157.47	POST_OFFICE	SETTLED	2026-02-16
+PAY00001564	SP3200181	2026-02-23	157.47	BACS	SETTLED	2026-02-23
+PAY00001565	SP3200181	2026-03-02	157.47	BACS	SETTLED	2026-03-02
+PAY00001566	SP3200181	2026-03-09	157.47	BACS	SETTLED	2026-03-09
+PAY00001567	SP3200181	2026-03-16	157.47	BACS	SETTLED	2026-03-16
+PAY00001568	SP3200181	2026-03-23	157.47	BACS	SETTLED	2026-03-23
+PAY00001569	SP3200181	2026-03-30	157.47	BACS	SETTLED	2026-03-30
+PAY00001572	SP3200182	2026-02-06	136.60	BACS	SETTLED	2026-02-06
+PAY00001573	SP3200182	2026-02-13	136.60	BACS	SETTLED	2026-02-13
+PAY00001574	SP3200182	2026-02-20	136.60	BACS	SETTLED	2026-02-20
+PAY00001575	SP3200182	2026-02-27	136.60	BACS	SETTLED	2026-02-27
+PAY00001576	SP3200182	2026-03-06	136.60	CHEQUE	SETTLED	2026-03-06
+PAY00001577	SP3200182	2026-03-13	136.60	POST_OFFICE	SETTLED	2026-03-13
+PAY00001578	SP3200182	2026-03-20	136.60	BACS	SETTLED	2026-03-20
+PAY00001579	SP3200182	2026-03-27	136.60	BACS	SETTLED	2026-03-27
+PAY00001580	SP3200182	2026-04-03	136.60	BACS	SETTLED	2026-04-03
+PAY00001583	SP3200183	2025-09-17	436.32	POST_OFFICE	SETTLED	2025-09-17
+PAY00001584	SP3200183	2025-10-15	436.32	BACS	SETTLED	2025-10-15
+PAY00001585	SP3200183	2025-11-12	436.32	BACS	SETTLED	2025-11-12
+PAY00001586	SP3200183	2025-12-10	436.32	POST_OFFICE	SETTLED	2025-12-10
+PAY00001587	SP3200183	2026-01-07	436.32	BACS	SETTLED	2026-01-07
+PAY00001588	SP3200183	2026-02-04	436.32	BACS	SETTLED	2026-02-04
+PAY00001589	SP3200183	2026-03-04	436.32	BACS	SETTLED	2026-03-04
+PAY00001590	SP3200183	2026-04-01	436.32	BACS	SETTLED	2026-04-01
+PAY00001593	SP3200184	2025-08-22	455.04	BACS	SETTLED	2025-08-22
+PAY00001594	SP3200184	2025-09-19	455.04	BACS	SETTLED	2025-09-19
+PAY00001595	SP3200184	2025-10-17	455.04	BACS	SETTLED	2025-10-17
+PAY00001596	SP3200184	2025-11-14	455.04	POST_OFFICE	SETTLED	2025-11-14
+PAY00001597	SP3200184	2025-12-12	455.04	BACS	SETTLED	2025-12-12
+PAY00001598	SP3200184	2026-01-09	455.04	POST_OFFICE	SETTLED	2026-01-09
+PAY00001599	SP3200184	2026-02-06	455.04	BACS	SETTLED	2026-02-06
+PAY00001600	SP3200184	2026-03-06	455.04	POST_OFFICE	SETTLED	2026-03-06
+PAY00001601	SP3200184	2026-04-03	455.04	BACS	SETTLED	2026-04-03
+PAY00001604	SP3200185	2025-10-18	330.92	BACS	SETTLED	2025-10-18
+PAY00001605	SP3200185	2025-11-15	330.92	POST_OFFICE	SETTLED	2025-11-15
+PAY00001606	SP3200185	2025-12-13	330.92	BACS	SETTLED	2025-12-13
+PAY00001607	SP3200185	2026-01-10	330.92	BACS	SETTLED	2026-01-10
+PAY00001608	SP3200185	2026-02-07	330.92	BACS	SETTLED	2026-02-07
+PAY00001609	SP3200185	2026-03-07	330.92	BACS	SETTLED	2026-03-07
+PAY00001610	SP3200185	2026-04-04	330.92	CHEQUE	SETTLED	2026-04-04
+PAY00001613	SP3200186	2026-03-06	183.28	BACS	SETTLED	2026-03-06
+PAY00001614	SP3200186	2026-03-13	183.28	BACS	SETTLED	2026-03-13
+PAY00001615	SP3200186	2026-03-20	183.28	BACS	SETTLED	2026-03-20
+PAY00001616	SP3200186	2026-03-27	183.28	BACS	SETTLED	2026-03-27
+PAY00001617	SP3200186	2026-04-03	183.28	BACS	SETTLED	2026-04-03
+PAY00001620	SP3200187	2025-10-19	390.24	BACS	SETTLED	2025-10-19
+PAY00001621	SP3200187	2025-11-16	390.24	BACS	SETTLED	2025-11-16
+PAY00001622	SP3200187	2025-12-14	390.24	POST_OFFICE	SETTLED	2025-12-14
+PAY00001623	SP3200187	2026-01-11	390.24	BACS	SETTLED	2026-01-11
+PAY00001624	SP3200187	2026-02-08	390.24	POST_OFFICE	SETTLED	2026-02-08
+PAY00001625	SP3200187	2026-03-08	390.24	BACS	SETTLED	2026-03-08
+PAY00001626	SP3200187	2026-04-05	390.24	BACS	SETTLED	2026-04-05
+PAY00001629	SP3200188	2026-03-05	139.04	BACS	SETTLED	2026-03-05
+PAY00001630	SP3200188	2026-03-12	139.04	CHEQUE	SETTLED	2026-03-12
+PAY00001631	SP3200188	2026-03-19	139.04	BACS	SETTLED	2026-03-19
+PAY00001632	SP3200188	2026-03-26	139.04	POST_OFFICE	SETTLED	2026-03-26
+PAY00001633	SP3200188	2026-04-02	139.04	POST_OFFICE	SETTLED	2026-04-02
+PAY00001636	SP3200189	2026-02-21	176.96	BACS	SETTLED	2026-02-21
+PAY00001637	SP3200189	2026-02-28	176.96	BACS	SETTLED	2026-02-28
+PAY00001638	SP3200189	2026-03-07	176.96	POST_OFFICE	SETTLED	2026-03-07
+PAY00001639	SP3200189	2026-03-14	176.96	BACS	SETTLED	2026-03-14
+PAY00001640	SP3200189	2026-03-21	176.96	BACS	SETTLED	2026-03-21
+PAY00001641	SP3200189	2026-03-28	176.96	BACS	SETTLED	2026-03-28
+PAY00001642	SP3200189	2026-04-04	176.96	BACS	SETTLED	2026-04-04
+PAY00001645	SP3200190	2026-03-09	208.56	BACS	SETTLED	2026-03-09
+PAY00001646	SP3200190	2026-03-16	208.56	BACS	SETTLED	2026-03-16
+PAY00001647	SP3200190	2026-03-23	208.56	BACS	SETTLED	2026-03-23
+PAY00001648	SP3200190	2026-03-30	208.56	POST_OFFICE	SETTLED	2026-03-30
+PAY00001651	SP3200191	2025-10-14	303.36	CHEQUE	SETTLED	2025-10-14
+PAY00001652	SP3200191	2025-11-11	303.36	CHEQUE	SETTLED	2025-11-11
+PAY00001653	SP3200191	2025-12-09	303.36	BACS	SETTLED	2025-12-09
+PAY00001654	SP3200191	2026-01-06	303.36	BACS	SETTLED	2026-01-06
+PAY00001655	SP3200191	2026-02-03	303.36	BACS	SETTLED	2026-02-03
+PAY00001656	SP3200191	2026-03-03	303.36	BACS	SETTLED	2026-03-03
+PAY00001657	SP3200191	2026-03-31	303.36	BACS	SETTLED	2026-03-31
+PAY00001660	SP3200192	2025-09-22	268.00	POST_OFFICE	SETTLED	2025-09-22
+PAY00001661	SP3200192	2025-10-20	268.00	BACS	SETTLED	2025-10-20
+PAY00001662	SP3200192	2025-11-17	268.00	BACS	SETTLED	2025-11-17
+PAY00001663	SP3200192	2025-12-15	268.00	BACS	SETTLED	2025-12-15
+PAY00001664	SP3200192	2026-01-12	268.00	CHEQUE	SETTLED	2026-01-12
+PAY00001665	SP3200192	2026-02-09	268.00	BACS	SETTLED	2026-02-09
+PAY00001666	SP3200192	2026-03-09	268.00	BACS	SETTLED	2026-03-09
+PAY00001669	SP3200193	2025-11-11	480.32	BACS	SETTLED	2025-11-11
+PAY00001670	SP3200193	2025-12-09	480.32	BACS	SETTLED	2025-12-09
+PAY00001671	SP3200193	2026-01-06	480.32	BACS	SETTLED	2026-01-06
+PAY00001672	SP3200193	2026-02-03	480.32	BACS	SETTLED	2026-02-03
+PAY00001673	SP3200193	2026-03-03	480.32	BACS	SETTLED	2026-03-03
+PAY00001674	SP3200193	2026-03-31	480.32	BACS	SETTLED	2026-03-31
+PAY00001677	SP3200194	2025-11-15	707.84	BACS	SETTLED	2025-11-15
+PAY00001678	SP3200194	2025-12-13	707.84	BACS	SETTLED	2025-12-13
+PAY00001679	SP3200194	2026-01-10	707.84	BACS	SETTLED	2026-01-10
+PAY00001680	SP3200194	2026-02-07	707.84	BACS	SETTLED	2026-02-07
+PAY00001681	SP3200194	2026-03-07	707.84	BACS	SETTLED	2026-03-07
+PAY00001682	SP3200194	2026-04-04	707.84	BACS	SETTLED	2026-04-04
+PAY00001685	SP3200195	2026-02-25	145.36	BACS	SETTLED	2026-02-25
+PAY00001686	SP3200195	2026-03-04	145.36	POST_OFFICE	SETTLED	2026-03-04
+PAY00001687	SP3200195	2026-03-11	145.36	BACS	SETTLED	2026-03-11
+PAY00001688	SP3200195	2026-03-18	145.36	BACS	SETTLED	2026-03-18
+PAY00001689	SP3200195	2026-03-25	145.36	BACS	SETTLED	2026-03-25
+PAY00001690	SP3200195	2026-04-01	145.36	BACS	SETTLED	2026-04-01
+PAY00001693	SP3200196	2025-10-20	682.56	POST_OFFICE	SETTLED	2025-10-20
+PAY00001694	SP3200196	2025-11-17	682.56	POST_OFFICE	SETTLED	2025-11-17
+PAY00001695	SP3200196	2025-12-15	682.56	BACS	SETTLED	2025-12-15
+PAY00001696	SP3200196	2026-01-12	682.56	POST_OFFICE	SETTLED	2026-01-12
+PAY00001697	SP3200196	2026-02-09	682.56	BACS	SETTLED	2026-02-09
+PAY00001698	SP3200196	2026-03-09	682.56	BACS	SETTLED	2026-03-09
+PAY00001701	SP3200197	2026-03-04	121.48	BACS	SETTLED	2026-03-04
+PAY00001702	SP3200197	2026-03-11	121.48	BACS	SETTLED	2026-03-11
+PAY00001703	SP3200197	2026-03-18	121.48	BACS	SETTLED	2026-03-18
+PAY00001704	SP3200197	2026-03-25	121.48	BACS	SETTLED	2026-03-25
+PAY00001705	SP3200197	2026-04-01	121.48	BACS	SETTLED	2026-04-01
+PAY00001708	SP3200198	2025-10-19	498.16	BACS	SETTLED	2025-10-19
+PAY00001709	SP3200198	2025-11-16	498.16	POST_OFFICE	SETTLED	2025-11-16
+PAY00001710	SP3200198	2025-12-14	498.16	BACS	SETTLED	2025-12-14
+PAY00001711	SP3200198	2026-01-11	498.16	BACS	SETTLED	2026-01-11
+PAY00001712	SP3200198	2026-02-08	498.16	BACS	SETTLED	2026-02-08
+PAY00001713	SP3200198	2026-03-08	498.16	BACS	SETTLED	2026-03-08
+PAY00001714	SP3200198	2026-04-05	498.16	BACS	SETTLED	2026-04-05
+PAY00001717	SP3200199	2025-12-13	480.32	BACS	SETTLED	2025-12-13
+PAY00001718	SP3200199	2026-01-10	480.32	BACS	SETTLED	2026-01-10
+PAY00001719	SP3200199	2026-02-07	480.32	BACS	SETTLED	2026-02-07
+PAY00001720	SP3200199	2026-03-07	480.32	POST_OFFICE	SETTLED	2026-03-07
+PAY00001721	SP3200199	2026-04-04	480.32	POST_OFFICE	SETTLED	2026-04-04
+PAY00001724	SP3200200	2026-02-19	208.56	POST_OFFICE	SETTLED	2026-02-19
+PAY00001725	SP3200200	2026-02-26	208.56	BACS	SETTLED	2026-02-26
+PAY00001726	SP3200200	2026-03-05	208.56	BACS	SETTLED	2026-03-05
+PAY00001727	SP3200200	2026-03-12	208.56	BACS	SETTLED	2026-03-12
+PAY00001728	SP3200200	2026-03-19	208.56	POST_OFFICE	SETTLED	2026-03-19
+PAY00001729	SP3200200	2026-03-26	208.56	BACS	SETTLED	2026-03-26
+PAY00001730	SP3200200	2026-04-02	208.56	BACS	SETTLED	2026-04-02
+PAY00001733	SP3200201	2026-02-03	77.79	BACS	SETTLED	2026-02-03
+PAY00001734	SP3200201	2026-02-10	77.79	BACS	SETTLED	2026-02-10
+PAY00001735	SP3200201	2026-02-17	77.79	BACS	SETTLED	2026-02-17
+PAY00001736	SP3200201	2026-02-24	77.79	BACS	SETTLED	2026-02-24
+PAY00001737	SP3200201	2026-03-03	77.79	BACS	SETTLED	2026-03-03
+PAY00001738	SP3200201	2026-03-10	77.79	BACS	SETTLED	2026-03-10
+PAY00001739	SP3200201	2026-03-17	77.79	BACS	SETTLED	2026-03-17
+PAY00001740	SP3200201	2026-03-24	77.79	POST_OFFICE	SETTLED	2026-03-24
+PAY00001741	SP3200201	2026-03-31	77.79	BACS	SETTLED	2026-03-31
+PAY00001744	SP3200202	2025-09-20	753.68	BACS	SETTLED	2025-09-20
+PAY00001745	SP3200202	2025-10-18	753.68	POST_OFFICE	SETTLED	2025-10-18
+PAY00001746	SP3200202	2025-11-15	753.68	BACS	SETTLED	2025-11-15
+PAY00001747	SP3200202	2025-12-13	753.68	BACS	SETTLED	2025-12-13
+PAY00001748	SP3200202	2026-01-10	753.68	BACS	SETTLED	2026-01-10
+PAY00001749	SP3200202	2026-02-07	753.68	BACS	SETTLED	2026-02-07
+PAY00001750	SP3200202	2026-03-07	753.68	BACS	SETTLED	2026-03-07
+PAY00001751	SP3200202	2026-04-04	753.68	BACS	SETTLED	2026-04-04
+PAY00001754	SP3200203	2025-10-16	379.20	BACS	SETTLED	2025-10-16
+PAY00001755	SP3200203	2025-11-13	379.20	BACS	SETTLED	2025-11-13
+PAY00001756	SP3200203	2025-12-11	379.20	BACS	SETTLED	2025-12-11
+PAY00001757	SP3200203	2026-01-08	379.20	BACS	SETTLED	2026-01-08
+PAY00001758	SP3200203	2026-02-05	379.20	BACS	SETTLED	2026-02-05
+PAY00001759	SP3200203	2026-03-05	379.20	BACS	SETTLED	2026-03-05
+PAY00001760	SP3200203	2026-04-02	379.20	BACS	SETTLED	2026-04-02
+PAY00001763	SP3200204	2025-11-12	376.32	BACS	SETTLED	2025-11-12
+PAY00001764	SP3200204	2025-12-10	376.32	BACS	SETTLED	2025-12-10
+PAY00001765	SP3200204	2026-01-07	376.32	BACS	SETTLED	2026-01-07
+PAY00001766	SP3200204	2026-02-04	376.32	BACS	SETTLED	2026-02-04
+PAY00001767	SP3200204	2026-03-04	376.32	BACS	SETTLED	2026-03-04
+PAY00001768	SP3200204	2026-04-01	376.32	BACS	SETTLED	2026-04-01
+PAY00001771	SP3200205	2025-08-24	556.16	BACS	SETTLED	2025-08-24
+PAY00001772	SP3200205	2025-09-21	556.16	BACS	SETTLED	2025-09-21
+PAY00001773	SP3200205	2025-10-19	556.16	BACS	SETTLED	2025-10-19
+PAY00001774	SP3200205	2025-11-16	556.16	BACS	SETTLED	2025-11-16
+PAY00001775	SP3200205	2025-12-14	556.16	POST_OFFICE	SETTLED	2025-12-14
+PAY00001776	SP3200205	2026-01-11	556.16	BACS	SETTLED	2026-01-11
+PAY00001777	SP3200205	2026-02-08	556.16	BACS	SETTLED	2026-02-08
+PAY00001778	SP3200205	2026-03-08	556.16	BACS	SETTLED	2026-03-08
+PAY00001779	SP3200205	2026-04-05	556.16	BACS	SETTLED	2026-04-05
+PAY00001782	SP3200206	2025-08-21	278.08	BACS	SETTLED	2025-08-21
+PAY00001783	SP3200206	2025-09-18	278.08	BACS	SETTLED	2025-09-18
+PAY00001784	SP3200206	2025-10-16	278.08	BACS	SETTLED	2025-10-16
+PAY00001785	SP3200206	2025-11-13	278.08	BACS	SETTLED	2025-11-13
+PAY00001786	SP3200206	2025-12-11	278.08	BACS	SETTLED	2025-12-11
+PAY00001787	SP3200206	2026-01-08	278.08	POST_OFFICE	SETTLED	2026-01-08
+PAY00001788	SP3200206	2026-02-05	278.08	BACS	SETTLED	2026-02-05
+PAY00001789	SP3200206	2026-03-05	278.08	BACS	SETTLED	2026-03-05
+PAY00001790	SP3200206	2026-04-02	278.08	BACS	SETTLED	2026-04-02
+PAY00001793	SP3200207	2025-10-18	556.16	BACS	SETTLED	2025-10-18
+PAY00001794	SP3200207	2025-11-15	556.16	POST_OFFICE	SETTLED	2025-11-15
+PAY00001795	SP3200207	2025-12-13	556.16	BACS	SETTLED	2025-12-13
+PAY00001796	SP3200207	2026-01-10	556.16	BACS	SETTLED	2026-01-10
+PAY00001797	SP3200207	2026-02-07	556.16	BACS	SETTLED	2026-02-07
+PAY00001798	SP3200207	2026-03-07	556.16	BACS	SETTLED	2026-03-07
+PAY00001799	SP3200207	2026-04-04	556.16	BACS	SETTLED	2026-04-04
+PAY00001802	SP3200208	2025-10-17	429.76	BACS	SETTLED	2025-10-17
+PAY00001803	SP3200208	2025-11-14	429.76	BACS	SETTLED	2025-11-14
+PAY00001804	SP3200208	2025-12-12	429.76	POST_OFFICE	SETTLED	2025-12-12
+PAY00001805	SP3200208	2026-01-09	429.76	BACS	SETTLED	2026-01-09
+PAY00001806	SP3200208	2026-02-06	429.76	BACS	SETTLED	2026-02-06
+PAY00001807	SP3200208	2026-03-06	429.76	BACS	SETTLED	2026-03-06
+PAY00001808	SP3200208	2026-04-03	429.76	BACS	SETTLED	2026-04-03
+PAY00001811	SP3200209	2025-11-11	505.60	BACS	SETTLED	2025-11-11
+PAY00001812	SP3200209	2025-12-09	505.60	BACS	SETTLED	2025-12-09
+PAY00001813	SP3200209	2026-01-06	505.60	BACS	SETTLED	2026-01-06
+PAY00001814	SP3200209	2026-02-03	505.60	BACS	SETTLED	2026-02-03
+PAY00001815	SP3200209	2026-03-03	505.60	POST_OFFICE	SETTLED	2026-03-03
+PAY00001816	SP3200209	2026-03-31	505.60	BACS	SETTLED	2026-03-31
+PAY00001819	SP3200210	2026-02-25	171.99	POST_OFFICE	SETTLED	2026-02-25
+PAY00001820	SP3200210	2026-03-04	171.99	BACS	SETTLED	2026-03-04
+PAY00001821	SP3200210	2026-03-11	171.99	BACS	SETTLED	2026-03-11
+PAY00001822	SP3200210	2026-03-18	171.99	BACS	SETTLED	2026-03-18
+PAY00001823	SP3200210	2026-03-25	171.99	CHEQUE	SETTLED	2026-03-25
+PAY00001824	SP3200210	2026-04-01	171.99	BACS	SETTLED	2026-04-01
+PAY00001827	SP3200211	2026-03-02	139.04	BACS	SETTLED	2026-03-02
+PAY00001828	SP3200211	2026-03-09	139.04	BACS	SETTLED	2026-03-09
+PAY00001829	SP3200211	2026-03-16	139.04	BACS	SETTLED	2026-03-16
+PAY00001830	SP3200211	2026-03-23	139.04	BACS	SETTLED	2026-03-23
+PAY00001831	SP3200211	2026-03-30	139.04	CHEQUE	SETTLED	2026-03-30
+PAY00001834	SP3200212	2025-09-21	729.40	BACS	SETTLED	2025-09-21
+PAY00001835	SP3200212	2025-10-19	729.40	POST_OFFICE	SETTLED	2025-10-19
+PAY00001836	SP3200212	2025-11-16	729.40	BACS	SETTLED	2025-11-16
+PAY00001837	SP3200212	2025-12-14	729.40	POST_OFFICE	SETTLED	2025-12-14
+PAY00001838	SP3200212	2026-01-11	729.40	BACS	SETTLED	2026-01-11
+PAY00001839	SP3200212	2026-02-08	729.40	BACS	SETTLED	2026-02-08
+PAY00001840	SP3200212	2026-03-08	729.40	BACS	SETTLED	2026-03-08
+PAY00001841	SP3200212	2026-04-05	729.40	BACS	SETTLED	2026-04-05
+PAY00001844	SP3200213	2025-09-17	252.80	BACS	SETTLED	2025-09-17
+PAY00001845	SP3200213	2025-10-15	252.80	BACS	SETTLED	2025-10-15
+PAY00001846	SP3200213	2025-11-12	252.80	BACS	SETTLED	2025-11-12
+PAY00001847	SP3200213	2025-12-10	252.80	BACS	SETTLED	2025-12-10
+PAY00001848	SP3200213	2026-01-07	252.80	POST_OFFICE	SETTLED	2026-01-07
+PAY00001849	SP3200213	2026-02-04	252.80	BACS	SETTLED	2026-02-04
+PAY00001850	SP3200213	2026-03-04	252.80	CHEQUE	SETTLED	2026-03-04
+PAY00001851	SP3200213	2026-04-01	252.80	POST_OFFICE	SETTLED	2026-04-01
+PAY00001854	SP3200214	2025-10-19	632.00	BACS	SETTLED	2025-10-19
+PAY00001855	SP3200214	2025-11-16	632.00	BACS	SETTLED	2025-11-16
+PAY00001856	SP3200214	2025-12-14	632.00	BACS	SETTLED	2025-12-14
+PAY00001857	SP3200214	2026-01-11	632.00	POST_OFFICE	SETTLED	2026-01-11
+PAY00001858	SP3200214	2026-02-08	632.00	CHEQUE	SETTLED	2026-02-08
+PAY00001859	SP3200214	2026-03-08	632.00	BACS	SETTLED	2026-03-08
+PAY00001860	SP3200214	2026-04-05	632.00	BACS	SETTLED	2026-04-05
+PAY00001863	SP3200215	2025-10-14	309.08	BACS	SETTLED	2025-10-14
+PAY00001864	SP3200215	2025-11-11	309.08	BACS	SETTLED	2025-11-11
+PAY00001865	SP3200215	2025-12-09	309.08	BACS	SETTLED	2025-12-09
+PAY00001866	SP3200215	2026-01-06	309.08	BACS	SETTLED	2026-01-06
+PAY00001867	SP3200215	2026-02-03	309.08	BACS	SETTLED	2026-02-03
+PAY00001868	SP3200215	2026-03-03	309.08	BACS	SETTLED	2026-03-03
+PAY00001869	SP3200215	2026-03-31	309.08	BACS	SETTLED	2026-03-31
+PAY00001872	SP3200216	2026-03-02	94.80	BACS	SETTLED	2026-03-02
+PAY00001873	SP3200216	2026-03-09	94.80	POST_OFFICE	SETTLED	2026-03-09
+PAY00001874	SP3200216	2026-03-16	94.80	BACS	SETTLED	2026-03-16
+PAY00001875	SP3200216	2026-03-23	94.80	BACS	SETTLED	2026-03-23
+PAY00001876	SP3200216	2026-03-30	94.80	BACS	SETTLED	2026-03-30
+PAY00001879	SP3200217	2025-09-22	586.64	BACS	SETTLED	2025-09-22
+PAY00001880	SP3200217	2025-10-20	586.64	BACS	SETTLED	2025-10-20
+PAY00001881	SP3200217	2025-11-17	586.64	BACS	SETTLED	2025-11-17
+PAY00001882	SP3200217	2025-12-15	586.64	BACS	SETTLED	2025-12-15
+PAY00001883	SP3200217	2026-01-12	586.64	BACS	SETTLED	2026-01-12
+PAY00001884	SP3200217	2026-02-09	586.64	BACS	SETTLED	2026-02-09
+PAY00001885	SP3200217	2026-03-09	586.64	BACS	SETTLED	2026-03-09
+PAY00001888	SP3200218	2025-11-16	733.12	BACS	SETTLED	2025-11-16
+PAY00001889	SP3200218	2025-12-14	733.12	BACS	SETTLED	2025-12-14
+PAY00001890	SP3200218	2026-01-11	733.12	BACS	SETTLED	2026-01-11
+PAY00001891	SP3200218	2026-02-08	733.12	POST_OFFICE	SETTLED	2026-02-08
+PAY00001892	SP3200218	2026-03-08	733.12	BACS	SETTLED	2026-03-08
+PAY00001893	SP3200218	2026-04-05	733.12	BACS	SETTLED	2026-04-05
+PAY00001896	SP3200219	2026-03-07	101.12	BACS	SETTLED	2026-03-07
+PAY00001897	SP3200219	2026-03-14	101.12	BACS	SETTLED	2026-03-14
+PAY00001898	SP3200219	2026-03-21	101.12	BACS	SETTLED	2026-03-21
+PAY00001899	SP3200219	2026-03-28	101.12	BACS	SETTLED	2026-03-28
+PAY00001900	SP3200219	2026-04-04	101.12	BACS	SETTLED	2026-04-04
+PAY00001903	SP3200220	2026-02-21	82.16	POST_OFFICE	SETTLED	2026-02-21
+PAY00001904	SP3200220	2026-02-28	82.16	BACS	SETTLED	2026-02-28
+PAY00001905	SP3200220	2026-03-07	82.16	BACS	SETTLED	2026-03-07
+PAY00001906	SP3200220	2026-03-14	82.16	BACS	SETTLED	2026-03-14
+PAY00001907	SP3200220	2026-03-21	82.16	BACS	SETTLED	2026-03-21
+PAY00001908	SP3200220	2026-03-28	82.16	POST_OFFICE	SETTLED	2026-03-28
+PAY00001909	SP3200220	2026-04-04	82.16	BACS	SETTLED	2026-04-04
+PAY00001912	SP3200221	2026-02-14	139.19	BACS	SETTLED	2026-02-14
+PAY00001913	SP3200221	2026-02-21	139.19	BACS	SETTLED	2026-02-21
+PAY00001914	SP3200221	2026-02-28	139.19	BACS	SETTLED	2026-02-28
+PAY00001915	SP3200221	2026-03-07	139.19	POST_OFFICE	SETTLED	2026-03-07
+PAY00001916	SP3200221	2026-03-14	139.19	BACS	SETTLED	2026-03-14
+PAY00001917	SP3200221	2026-03-21	139.19	POST_OFFICE	SETTLED	2026-03-21
+PAY00001918	SP3200221	2026-03-28	139.19	BACS	SETTLED	2026-03-28
+PAY00001919	SP3200221	2026-04-04	139.19	BACS	SETTLED	2026-04-04
+PAY00001922	SP3200222	2024-04-07	2708.16	BACS	SETTLED	2024-04-07
+PAY00001923	SP3200222	2024-07-07	2708.16	CHEQUE	SETTLED	2024-07-07
+PAY00001924	SP3200222	2024-10-06	2708.16	BACS	SETTLED	2024-10-06
+PAY00001925	SP3200222	2025-01-05	2708.16	BACS	SETTLED	2025-01-05
+PAY00001926	SP3200222	2025-04-06	2708.16	BACS	SETTLED	2025-04-06
+PAY00001927	SP3200222	2025-07-06	2708.16	BACS	SETTLED	2025-07-06
+PAY00001928	SP3200222	2025-10-05	2708.16	CHEQUE	SETTLED	2025-10-05
+PAY00001929	SP3200222	2026-01-04	2708.16	BACS	SETTLED	2026-01-04
+PAY00001930	SP3200222	2026-04-05	2708.16	BACS	SETTLED	2026-04-05
+PAY00001933	SP3200223	2024-07-06	2875.60	BACS	SETTLED	2024-07-06
+PAY00001934	SP3200223	2024-10-05	2875.60	BACS	SETTLED	2024-10-05
+PAY00001935	SP3200223	2025-01-04	2875.60	POST_OFFICE	SETTLED	2025-01-04
+PAY00001936	SP3200223	2025-04-05	2875.60	BACS	SETTLED	2025-04-05
+PAY00001937	SP3200223	2025-07-05	2875.60	POST_OFFICE	SETTLED	2025-07-05
+PAY00001938	SP3200223	2025-10-04	2875.60	BACS	SETTLED	2025-10-04
+PAY00001939	SP3200223	2026-01-03	2875.60	BACS	SETTLED	2026-01-03
+PAY00001940	SP3200223	2026-04-04	2875.60	BACS	SETTLED	2026-04-04
+PAY00001943	SP3200224	2025-10-20	808.96	BACS	SETTLED	2025-10-20
+PAY00001944	SP3200224	2025-11-17	808.96	BACS	SETTLED	2025-11-17
+PAY00001945	SP3200224	2025-12-15	808.96	BACS	SETTLED	2025-12-15
+PAY00001946	SP3200224	2026-01-12	808.96	BACS	SETTLED	2026-01-12
+PAY00001947	SP3200224	2026-02-09	808.96	BACS	SETTLED	2026-02-09
+PAY00001948	SP3200224	2026-03-09	808.96	POST_OFFICE	SETTLED	2026-03-09
+PAY00001951	SP3200225	2025-12-12	707.84	BACS	SETTLED	2025-12-12
+PAY00001952	SP3200225	2026-01-09	707.84	BACS	SETTLED	2026-01-09
+PAY00001953	SP3200225	2026-02-06	707.84	BACS	SETTLED	2026-02-06
+PAY00001954	SP3200225	2026-03-06	707.84	BACS	SETTLED	2026-03-06
+PAY00001955	SP3200225	2026-04-03	707.84	BACS	SETTLED	2026-04-03
+PAY00001958	SP3200226	2026-02-03	120.08	BACS	SETTLED	2026-02-03
+PAY00001959	SP3200226	2026-02-10	120.08	BACS	SETTLED	2026-02-10
+PAY00001960	SP3200226	2026-02-17	120.08	BACS	SETTLED	2026-02-17
+PAY00001961	SP3200226	2026-02-24	120.08	BACS	SETTLED	2026-02-24
+PAY00001962	SP3200226	2026-03-03	120.08	POST_OFFICE	SETTLED	2026-03-03
+PAY00001963	SP3200226	2026-03-10	120.08	BACS	SETTLED	2026-03-10
+PAY00001964	SP3200226	2026-03-17	120.08	BACS	SETTLED	2026-03-17
+PAY00001965	SP3200226	2026-03-24	120.08	BACS	SETTLED	2026-03-24
+PAY00001966	SP3200226	2026-03-31	120.08	POST_OFFICE	SETTLED	2026-03-31
+PAY00001969	SP3200227	2025-04-03	903.76	BACS	SETTLED	2025-04-03
+PAY00001970	SP3200227	2025-07-03	903.76	BACS	SETTLED	2025-07-03
+PAY00001971	SP3200227	2025-10-02	903.76	BACS	SETTLED	2025-10-02
+PAY00001972	SP3200227	2026-01-01	903.76	BACS	SETTLED	2026-01-01
+PAY00001973	SP3200227	2026-04-02	903.76	BACS	SETTLED	2026-04-02
+PAY00001976	SP3200228	2026-03-03	62.15	BACS	SETTLED	2026-03-03
+PAY00001977	SP3200228	2026-03-10	62.15	BACS	SETTLED	2026-03-10
+PAY00001978	SP3200228	2026-03-17	62.15	BACS	SETTLED	2026-03-17
+PAY00001979	SP3200228	2026-03-24	62.15	BACS	SETTLED	2026-03-24
+PAY00001980	SP3200228	2026-03-31	62.15	BACS	SETTLED	2026-03-31
+PAY00001983	SP3200229	2025-08-22	303.36	BACS	SETTLED	2025-08-22
+PAY00001984	SP3200229	2025-09-19	303.36	POST_OFFICE	SETTLED	2025-09-19
+PAY00001985	SP3200229	2025-10-17	303.36	BACS	SETTLED	2025-10-17
+PAY00001986	SP3200229	2025-11-14	303.36	CHEQUE	SETTLED	2025-11-14
+PAY00001987	SP3200229	2025-12-12	303.36	BACS	SETTLED	2025-12-12
+PAY00001988	SP3200229	2026-01-09	303.36	POST_OFFICE	SETTLED	2026-01-09
+PAY00001989	SP3200229	2026-02-06	303.36	POST_OFFICE	SETTLED	2026-02-06
+PAY00001990	SP3200229	2026-03-06	303.36	BACS	SETTLED	2026-03-06
+PAY00001991	SP3200229	2026-04-03	303.36	BACS	SETTLED	2026-04-03
+PAY00001994	SP3200230	2026-02-14	82.16	BACS	SETTLED	2026-02-14
+PAY00001995	SP3200230	2026-02-21	82.16	BACS	SETTLED	2026-02-21
+PAY00001996	SP3200230	2026-02-28	82.16	BACS	SETTLED	2026-02-28
+PAY00001997	SP3200230	2026-03-07	82.16	BACS	SETTLED	2026-03-07
+PAY00001998	SP3200230	2026-03-14	82.16	BACS	SETTLED	2026-03-14
+PAY00001999	SP3200230	2026-03-21	82.16	BACS	SETTLED	2026-03-21
+PAY00002000	SP3200230	2026-03-28	82.16	BACS	SETTLED	2026-03-28
+PAY00002001	SP3200230	2026-04-04	82.16	BACS	SETTLED	2026-04-04
+PAY00002004	SP3200231	2025-08-21	353.92	BACS	SETTLED	2025-08-21
+PAY00002005	SP3200231	2025-09-18	353.92	BACS	SETTLED	2025-09-18
+PAY00002006	SP3200231	2025-10-16	353.92	BACS	SETTLED	2025-10-16
+PAY00002007	SP3200231	2025-11-13	353.92	BACS	SETTLED	2025-11-13
+PAY00002008	SP3200231	2025-12-11	353.92	BACS	SETTLED	2025-12-11
+PAY00002009	SP3200231	2026-01-08	353.92	POST_OFFICE	SETTLED	2026-01-08
+PAY00002010	SP3200231	2026-02-05	353.92	POST_OFFICE	SETTLED	2026-02-05
+PAY00002011	SP3200231	2026-03-05	353.92	BACS	SETTLED	2026-03-05
+PAY00002012	SP3200231	2026-04-02	353.92	BACS	SETTLED	2026-04-02
+PAY00002015	SP3200232	2025-09-16	379.20	BACS	SETTLED	2025-09-16
+PAY00002016	SP3200232	2025-10-14	379.20	BACS	SETTLED	2025-10-14
+PAY00002017	SP3200232	2025-11-11	379.20	BACS	SETTLED	2025-11-11
+PAY00002018	SP3200232	2025-12-09	379.20	POST_OFFICE	SETTLED	2025-12-09
+PAY00002019	SP3200232	2026-01-06	379.20	BACS	SETTLED	2026-01-06
+PAY00002020	SP3200232	2026-02-03	379.20	BACS	SETTLED	2026-02-03
+PAY00002021	SP3200232	2026-03-03	379.20	BACS	SETTLED	2026-03-03
+PAY00002022	SP3200232	2026-03-31	379.20	BACS	SETTLED	2026-03-31
+PAY00002025	SP3200233	2025-09-19	632.00	BACS	SETTLED	2025-09-19
+PAY00002026	SP3200233	2025-10-17	632.00	BACS	SETTLED	2025-10-17
+PAY00002027	SP3200233	2025-11-14	632.00	BACS	SETTLED	2025-11-14
+PAY00002028	SP3200233	2025-12-12	632.00	BACS	SETTLED	2025-12-12
+PAY00002029	SP3200233	2026-01-09	632.00	BACS	SETTLED	2026-01-09
+PAY00002030	SP3200233	2026-02-06	632.00	BACS	SETTLED	2026-02-06
+PAY00002031	SP3200233	2026-03-06	632.00	BACS	SETTLED	2026-03-06
+PAY00002032	SP3200233	2026-04-03	632.00	BACS	SETTLED	2026-04-03
+PAY00002035	SP3200234	2025-08-20	505.60	BACS	SETTLED	2025-08-20
+PAY00002036	SP3200234	2025-09-17	505.60	BACS	SETTLED	2025-09-17
+PAY00002037	SP3200234	2025-10-15	505.60	BACS	SETTLED	2025-10-15
+PAY00002038	SP3200234	2025-11-12	505.60	BACS	SETTLED	2025-11-12
+PAY00002039	SP3200234	2025-12-10	505.60	BACS	SETTLED	2025-12-10
+PAY00002040	SP3200234	2026-01-07	505.60	BACS	SETTLED	2026-01-07
+PAY00002041	SP3200234	2026-02-04	505.60	POST_OFFICE	SETTLED	2026-02-04
+PAY00002042	SP3200234	2026-03-04	505.60	BACS	SETTLED	2026-03-04
+PAY00002043	SP3200234	2026-04-01	505.60	BACS	SETTLED	2026-04-01
+PAY00002046	SP3200235	2025-09-20	758.40	BACS	SETTLED	2025-09-20
+PAY00002047	SP3200235	2025-10-18	758.40	BACS	SETTLED	2025-10-18
+PAY00002048	SP3200235	2025-11-15	758.40	POST_OFFICE	SETTLED	2025-11-15
+PAY00002049	SP3200235	2025-12-13	758.40	BACS	SETTLED	2025-12-13
+PAY00002050	SP3200235	2026-01-10	758.40	BACS	SETTLED	2026-01-10
+PAY00002051	SP3200235	2026-02-07	758.40	BACS	SETTLED	2026-02-07
+PAY00002052	SP3200235	2026-03-07	758.40	POST_OFFICE	SETTLED	2026-03-07
+PAY00002053	SP3200235	2026-04-04	758.40	BACS	SETTLED	2026-04-04
+PAY00002056	SP3200236	2025-11-15	455.04	BACS	SETTLED	2025-11-15
+PAY00002057	SP3200236	2025-12-13	455.04	BACS	SETTLED	2025-12-13
+PAY00002058	SP3200236	2026-01-10	455.04	BACS	SETTLED	2026-01-10
+PAY00002059	SP3200236	2026-02-07	455.04	BACS	SETTLED	2026-02-07
+PAY00002060	SP3200236	2026-03-07	455.04	BACS	SETTLED	2026-03-07
+PAY00002061	SP3200236	2026-04-04	455.04	BACS	SETTLED	2026-04-04
+PAY00002064	SP3200237	2025-12-13	581.44	BACS	SETTLED	2025-12-13
+PAY00002065	SP3200237	2026-01-10	581.44	BACS	SETTLED	2026-01-10
+PAY00002066	SP3200237	2026-02-07	581.44	BACS	SETTLED	2026-02-07
+PAY00002067	SP3200237	2026-03-07	581.44	BACS	SETTLED	2026-03-07
+PAY00002068	SP3200237	2026-04-04	581.44	BACS	SETTLED	2026-04-04
+PAY00002071	SP3200238	2025-08-22	530.88	BACS	SETTLED	2025-08-22
+PAY00002072	SP3200238	2025-09-19	530.88	BACS	SETTLED	2025-09-19
+PAY00002073	SP3200238	2025-10-17	530.88	BACS	SETTLED	2025-10-17
+PAY00002074	SP3200238	2025-11-14	530.88	BACS	SETTLED	2025-11-14
+PAY00002075	SP3200238	2025-12-12	530.88	BACS	SETTLED	2025-12-12
+PAY00002076	SP3200238	2026-01-09	530.88	BACS	SETTLED	2026-01-09
+PAY00002077	SP3200238	2026-02-06	530.88	BACS	SETTLED	2026-02-06
+PAY00002078	SP3200238	2026-03-06	530.88	POST_OFFICE	SETTLED	2026-03-06
+PAY00002079	SP3200238	2026-04-03	530.88	BACS	SETTLED	2026-04-03
+PAY00002082	SP3200239	2025-10-14	379.20	POST_OFFICE	SETTLED	2025-10-14
+PAY00002083	SP3200239	2025-11-11	379.20	BACS	SETTLED	2025-11-11
+PAY00002084	SP3200239	2025-12-09	379.20	BACS	SETTLED	2025-12-09
+PAY00002085	SP3200239	2026-01-06	379.20	BACS	SETTLED	2026-01-06
+PAY00002086	SP3200239	2026-02-03	379.20	BACS	SETTLED	2026-02-03
+PAY00002087	SP3200239	2026-03-03	379.20	BACS	SETTLED	2026-03-03
+PAY00002088	SP3200239	2026-03-31	379.20	BACS	SETTLED	2026-03-31
+PAY00002091	SP3200240	2025-04-04	2464.80	BACS	SETTLED	2025-04-04
+PAY00002092	SP3200240	2025-07-04	2464.80	BACS	SETTLED	2025-07-04
+PAY00002093	SP3200240	2025-10-03	2464.80	BACS	SETTLED	2025-10-03
+PAY00002094	SP3200240	2026-01-02	2464.80	BACS	SETTLED	2026-01-02
+PAY00002095	SP3200240	2026-04-03	2464.80	BACS	SETTLED	2026-04-03
+PAY00002098	SP3200241	2026-03-04	112.66	BACS	SETTLED	2026-03-04
+PAY00002099	SP3200241	2026-03-11	112.66	POST_OFFICE	SETTLED	2026-03-11
+PAY00002100	SP3200241	2026-03-18	112.66	BACS	SETTLED	2026-03-18
+PAY00002101	SP3200241	2026-03-25	112.66	BACS	SETTLED	2026-03-25
+PAY00002102	SP3200241	2026-04-01	112.66	BACS	SETTLED	2026-04-01
+PAY00002105	SP3200242	2026-02-07	192.85	BACS	SETTLED	2026-02-07
+PAY00002106	SP3200242	2026-02-14	192.85	BACS	SETTLED	2026-02-14
+PAY00002107	SP3200242	2026-02-21	192.85	BACS	SETTLED	2026-02-21
+PAY00002108	SP3200242	2026-02-28	192.85	BACS	SETTLED	2026-02-28
+PAY00002109	SP3200242	2026-03-07	192.85	BACS	SETTLED	2026-03-07
+PAY00002110	SP3200242	2026-03-14	192.85	BACS	SETTLED	2026-03-14
+PAY00002111	SP3200242	2026-03-21	192.85	BACS	SETTLED	2026-03-21
+PAY00002112	SP3200242	2026-03-28	192.85	BACS	SETTLED	2026-03-28
+PAY00002113	SP3200242	2026-04-04	192.85	BACS	SETTLED	2026-04-04
+PAY00002116	SP3200243	2026-02-24	94.42	BACS	SETTLED	2026-02-24
+PAY00002117	SP3200243	2026-03-03	94.42	BACS	SETTLED	2026-03-03
+PAY00002118	SP3200243	2026-03-10	94.42	BACS	SETTLED	2026-03-10
+PAY00002119	SP3200243	2026-03-17	94.42	BACS	SETTLED	2026-03-17
+PAY00002120	SP3200243	2026-03-24	94.42	BACS	SETTLED	2026-03-24
+PAY00002121	SP3200243	2026-03-31	94.42	BACS	SETTLED	2026-03-31
+PAY00002124	SP3200244	2026-02-03	190.98	BACS	SETTLED	2026-02-03
+PAY00002125	SP3200244	2026-02-10	190.98	BACS	SETTLED	2026-02-10
+PAY00002126	SP3200244	2026-02-17	190.98	BACS	SETTLED	2026-02-17
+PAY00002127	SP3200244	2026-02-24	190.98	CHEQUE	SETTLED	2026-02-24
+PAY00002128	SP3200244	2026-03-03	190.98	BACS	SETTLED	2026-03-03
+PAY00002129	SP3200244	2026-03-10	190.98	CHEQUE	SETTLED	2026-03-10
+PAY00002130	SP3200244	2026-03-17	190.98	POST_OFFICE	SETTLED	2026-03-17
+PAY00002131	SP3200244	2026-03-24	190.98	BACS	SETTLED	2026-03-24
+PAY00002132	SP3200244	2026-03-31	190.98	BACS	SETTLED	2026-03-31
+PAY00002135	SP3200245	2026-02-05	212.00	BACS	SETTLED	2026-02-05
+PAY00002136	SP3200245	2026-02-12	212.00	BACS	SETTLED	2026-02-12
+PAY00002137	SP3200245	2026-02-19	212.00	BACS	SETTLED	2026-02-19
+PAY00002138	SP3200245	2026-02-26	212.00	BACS	SETTLED	2026-02-26
+PAY00002139	SP3200245	2026-03-05	212.00	BACS	SETTLED	2026-03-05
+PAY00002140	SP3200245	2026-03-12	212.00	BACS	SETTLED	2026-03-12
+PAY00002141	SP3200245	2026-03-19	212.00	BACS	SETTLED	2026-03-19
+PAY00002142	SP3200245	2026-03-26	212.00	BACS	SETTLED	2026-03-26
+PAY00002143	SP3200245	2026-04-02	212.00	BACS	SETTLED	2026-04-02
+PAY00002146	SP3200246	2026-03-06	195.92	BACS	SETTLED	2026-03-06
+PAY00002147	SP3200246	2026-03-13	195.92	BACS	SETTLED	2026-03-13
+PAY00002148	SP3200246	2026-03-20	195.92	BACS	SETTLED	2026-03-20
+PAY00002149	SP3200246	2026-03-27	195.92	BACS	SETTLED	2026-03-27
+PAY00002150	SP3200246	2026-04-03	195.92	BACS	SETTLED	2026-04-03
+PAY00002153	SP3200247	2026-02-21	145.36	BACS	SETTLED	2026-02-21
+PAY00002154	SP3200247	2026-02-28	145.36	POST_OFFICE	SETTLED	2026-02-28
+PAY00002155	SP3200247	2026-03-07	145.36	BACS	SETTLED	2026-03-07
+PAY00002156	SP3200247	2026-03-14	145.36	CHEQUE	SETTLED	2026-03-14
+PAY00002157	SP3200247	2026-03-21	145.36	BACS	SETTLED	2026-03-21
+PAY00002158	SP3200247	2026-03-28	145.36	BACS	SETTLED	2026-03-28
+PAY00002159	SP3200247	2026-04-04	145.36	BACS	SETTLED	2026-04-04
+PAY00002162	SP3200248	2026-02-07	143.20	BACS	SETTLED	2026-02-07
+PAY00002163	SP3200248	2026-02-14	143.20	POST_OFFICE	SETTLED	2026-02-14
+PAY00002164	SP3200248	2026-02-21	143.20	BACS	SETTLED	2026-02-21
+PAY00002165	SP3200248	2026-02-28	143.20	BACS	SETTLED	2026-02-28
+PAY00002166	SP3200248	2026-03-07	143.20	BACS	SETTLED	2026-03-07
+PAY00002167	SP3200248	2026-03-14	143.20	CHEQUE	SETTLED	2026-03-14
+PAY00002168	SP3200248	2026-03-21	143.20	BACS	SETTLED	2026-03-21
+PAY00002169	SP3200248	2026-03-28	143.20	BACS	SETTLED	2026-03-28
+PAY00002170	SP3200248	2026-04-04	143.20	BACS	SETTLED	2026-04-04
+PAY00002173	SP3200249	2025-11-15	408.04	BACS	SETTLED	2025-11-15
+PAY00002174	SP3200249	2025-12-13	408.04	POST_OFFICE	SETTLED	2025-12-13
+PAY00002175	SP3200249	2026-01-10	408.04	BACS	SETTLED	2026-01-10
+PAY00002176	SP3200249	2026-02-07	408.04	BACS	SETTLED	2026-02-07
+PAY00002177	SP3200249	2026-03-07	408.04	BACS	SETTLED	2026-03-07
+PAY00002178	SP3200249	2026-04-04	408.04	BACS	SETTLED	2026-04-04
+PAY00002181	SP3200250	2025-10-20	374.80	POST_OFFICE	SETTLED	2025-10-20
+PAY00002182	SP3200250	2025-11-17	374.80	CHEQUE	SETTLED	2025-11-17
+PAY00002183	SP3200250	2025-12-15	374.80	BACS	SETTLED	2025-12-15
+PAY00002184	SP3200250	2026-01-12	374.80	POST_OFFICE	SETTLED	2026-01-12
+PAY00002185	SP3200250	2026-02-09	374.80	POST_OFFICE	SETTLED	2026-02-09
+PAY00002186	SP3200250	2026-03-09	374.80	BACS	SETTLED	2026-03-09
+PAY00002189	SP3200251	2025-12-12	800.32	BACS	SETTLED	2025-12-12
+PAY00002190	SP3200251	2026-01-09	800.32	BACS	SETTLED	2026-01-09
+PAY00002191	SP3200251	2026-02-06	800.32	BACS	SETTLED	2026-02-06
+PAY00002192	SP3200251	2026-03-06	800.32	POST_OFFICE	SETTLED	2026-03-06
+PAY00002193	SP3200251	2026-04-03	800.32	BACS	SETTLED	2026-04-03
+PAY00002196	SP3200252	2025-08-24	211.72	BACS	SETTLED	2025-08-24
+PAY00002197	SP3200252	2025-09-21	211.72	BACS	SETTLED	2025-09-21
+PAY00002198	SP3200252	2025-10-19	211.72	BACS	SETTLED	2025-10-19
+PAY00002199	SP3200252	2025-11-16	211.72	BACS	SETTLED	2025-11-16
+PAY00002200	SP3200252	2025-12-14	211.72	BACS	SETTLED	2025-12-14
+PAY00002201	SP3200252	2026-01-11	211.72	BACS	SETTLED	2026-01-11
+PAY00002202	SP3200252	2026-02-08	211.72	POST_OFFICE	SETTLED	2026-02-08
+PAY00002203	SP3200252	2026-03-08	211.72	BACS	SETTLED	2026-03-08
+PAY00002204	SP3200252	2026-04-05	211.72	BACS	SETTLED	2026-04-05
+PAY00002207	SP3200253	2026-03-08	189.60	CHEQUE	SETTLED	2026-03-08
+PAY00002208	SP3200253	2026-03-15	189.60	BACS	SETTLED	2026-03-15
+PAY00002209	SP3200253	2026-03-22	189.60	BACS	SETTLED	2026-03-22
+PAY00002210	SP3200253	2026-03-29	189.60	BACS	SETTLED	2026-03-29
+PAY00002211	SP3200253	2026-04-05	189.60	BACS	SETTLED	2026-04-05
+PAY00002214	SP3200254	2026-03-02	189.60	BACS	SETTLED	2026-03-02
+PAY00002215	SP3200254	2026-03-09	189.60	BACS	SETTLED	2026-03-09
+PAY00002216	SP3200254	2026-03-16	189.60	POST_OFFICE	SETTLED	2026-03-16
+PAY00002217	SP3200254	2026-03-23	189.60	BACS	SETTLED	2026-03-23
+PAY00002218	SP3200254	2026-03-30	189.60	POST_OFFICE	SETTLED	2026-03-30
+PAY00002221	SP3200255	2025-09-17	808.96	BACS	SETTLED	2025-09-17
+PAY00002222	SP3200255	2025-10-15	808.96	BACS	SETTLED	2025-10-15
+PAY00002223	SP3200255	2025-11-12	808.96	CHEQUE	SETTLED	2025-11-12
+PAY00002224	SP3200255	2025-12-10	808.96	BACS	SETTLED	2025-12-10
+PAY00002225	SP3200255	2026-01-07	808.96	BACS	SETTLED	2026-01-07
+PAY00002226	SP3200255	2026-02-04	808.96	BACS	SETTLED	2026-02-04
+PAY00002227	SP3200255	2026-03-04	808.96	BACS	SETTLED	2026-03-04
+PAY00002228	SP3200255	2026-04-01	808.96	POST_OFFICE	SETTLED	2026-04-01
+PAY00002231	SP3200256	2026-02-28	208.56	CHEQUE	SETTLED	2026-02-28
+PAY00002232	SP3200256	2026-03-07	208.56	BACS	SETTLED	2026-03-07
+PAY00002233	SP3200256	2026-03-14	208.56	BACS	SETTLED	2026-03-14
+PAY00002234	SP3200256	2026-03-21	208.56	BACS	SETTLED	2026-03-21
+PAY00002235	SP3200256	2026-03-28	208.56	BACS	SETTLED	2026-03-28
+PAY00002236	SP3200256	2026-04-04	208.56	BACS	SETTLED	2026-04-04
+PAY00002239	SP3200257	2025-10-14	682.56	BACS	SETTLED	2025-10-14
+PAY00002240	SP3200257	2025-11-11	682.56	BACS	SETTLED	2025-11-11
+PAY00002241	SP3200257	2025-12-09	682.56	POST_OFFICE	SETTLED	2025-12-09
+PAY00002242	SP3200257	2026-01-06	682.56	BACS	SETTLED	2026-01-06
+PAY00002243	SP3200257	2026-02-03	682.56	BACS	SETTLED	2026-02-03
+PAY00002244	SP3200257	2026-03-03	682.56	BACS	SETTLED	2026-03-03
+PAY00002245	SP3200257	2026-03-31	682.56	BACS	SETTLED	2026-03-31
+PAY00002248	SP3200258	2025-08-19	455.04	BACS	SETTLED	2025-08-19
+PAY00002249	SP3200258	2025-09-16	455.04	POST_OFFICE	SETTLED	2025-09-16
+PAY00002250	SP3200258	2025-10-14	455.04	BACS	SETTLED	2025-10-14
+PAY00002251	SP3200258	2025-11-11	455.04	BACS	SETTLED	2025-11-11
+PAY00002252	SP3200258	2025-12-09	455.04	POST_OFFICE	SETTLED	2025-12-09
+PAY00002253	SP3200258	2026-01-06	455.04	BACS	SETTLED	2026-01-06
+PAY00002254	SP3200258	2026-02-03	455.04	BACS	SETTLED	2026-02-03
+PAY00002255	SP3200258	2026-03-03	455.04	BACS	SETTLED	2026-03-03
+PAY00002256	SP3200258	2026-03-31	455.04	POST_OFFICE	SETTLED	2026-03-31
+PAY00002259	SP3200259	2026-02-05	131.75	BACS	SETTLED	2026-02-05
+PAY00002260	SP3200259	2026-02-12	131.75	POST_OFFICE	SETTLED	2026-02-12
+PAY00002261	SP3200259	2026-02-19	131.75	BACS	SETTLED	2026-02-19
+PAY00002262	SP3200259	2026-02-26	131.75	BACS	SETTLED	2026-02-26
+PAY00002263	SP3200259	2026-03-05	131.75	POST_OFFICE	SETTLED	2026-03-05
+PAY00002264	SP3200259	2026-03-12	131.75	POST_OFFICE	SETTLED	2026-03-12
+PAY00002265	SP3200259	2026-03-19	131.75	BACS	SETTLED	2026-03-19
+PAY00002266	SP3200259	2026-03-26	131.75	POST_OFFICE	SETTLED	2026-03-26
+PAY00002267	SP3200259	2026-04-02	131.75	BACS	SETTLED	2026-04-02
+PAY00002270	SP3200260	2025-10-20	480.32	BACS	SETTLED	2025-10-20
+PAY00002271	SP3200260	2025-11-17	480.32	BACS	SETTLED	2025-11-17
+PAY00002272	SP3200260	2025-12-15	480.32	POST_OFFICE	SETTLED	2025-12-15
+PAY00002273	SP3200260	2026-01-12	480.32	BACS	SETTLED	2026-01-12
+PAY00002274	SP3200260	2026-02-09	480.32	BACS	SETTLED	2026-02-09
+PAY00002275	SP3200260	2026-03-09	480.32	BACS	SETTLED	2026-03-09
+PAY00002278	SP3200261	2025-09-21	404.48	BACS	SETTLED	2025-09-21
+PAY00002279	SP3200261	2025-10-19	404.48	BACS	SETTLED	2025-10-19
+PAY00002280	SP3200261	2025-11-16	404.48	BACS	SETTLED	2025-11-16
+PAY00002281	SP3200261	2025-12-14	404.48	BACS	SETTLED	2025-12-14
+PAY00002282	SP3200261	2026-01-11	404.48	BACS	SETTLED	2026-01-11
+PAY00002283	SP3200261	2026-02-08	404.48	BACS	SETTLED	2026-02-08
+PAY00002284	SP3200261	2026-03-08	404.48	POST_OFFICE	SETTLED	2026-03-08
+PAY00002285	SP3200261	2026-04-05	404.48	BACS	SETTLED	2026-04-05
+PAY00002288	SP3200262	2026-02-14	109.23	CHEQUE	SETTLED	2026-02-14
+PAY00002289	SP3200262	2026-02-21	109.23	BACS	SETTLED	2026-02-21
+PAY00002290	SP3200262	2026-02-28	109.23	POST_OFFICE	SETTLED	2026-02-28
+PAY00002291	SP3200262	2026-03-07	109.23	BACS	SETTLED	2026-03-07
+PAY00002292	SP3200262	2026-03-14	109.23	BACS	SETTLED	2026-03-14
+PAY00002293	SP3200262	2026-03-21	109.23	CHEQUE	SETTLED	2026-03-21
+PAY00002294	SP3200262	2026-03-28	109.23	BACS	SETTLED	2026-03-28
+PAY00002295	SP3200262	2026-04-04	109.23	BACS	SETTLED	2026-04-04
+PAY00002298	SP3200263	2026-02-07	49.46	BACS	SETTLED	2026-02-07
+PAY00002299	SP3200263	2026-02-14	49.46	BACS	SETTLED	2026-02-14
+PAY00002300	SP3200263	2026-02-21	49.46	BACS	SETTLED	2026-02-21
+PAY00002301	SP3200263	2026-02-28	49.46	POST_OFFICE	SETTLED	2026-02-28
+PAY00002302	SP3200263	2026-03-07	49.46	POST_OFFICE	SETTLED	2026-03-07
+PAY00002303	SP3200263	2026-03-14	49.46	BACS	SETTLED	2026-03-14
+PAY00002304	SP3200263	2026-03-21	49.46	BACS	SETTLED	2026-03-21
+PAY00002305	SP3200263	2026-03-28	49.46	BACS	SETTLED	2026-03-28
+PAY00002306	SP3200263	2026-04-04	49.46	BACS	SETTLED	2026-04-04
+PAY00002309	SP3200264	2026-02-27	171.68	BACS	SETTLED	2026-02-27
+PAY00002310	SP3200264	2026-03-06	171.68	CHEQUE	SETTLED	2026-03-06
+PAY00002311	SP3200264	2026-03-13	171.68	BACS	SETTLED	2026-03-13
+PAY00002312	SP3200264	2026-03-20	171.68	BACS	SETTLED	2026-03-20
+PAY00002313	SP3200264	2026-03-27	171.68	BACS	SETTLED	2026-03-27
+PAY00002314	SP3200264	2026-04-03	171.68	BACS	SETTLED	2026-04-03
+PAY00002317	SP3200265	2024-04-05	909.09	BACS	SETTLED	2024-04-05
+PAY00002318	SP3200265	2024-07-05	909.09	BACS	SETTLED	2024-07-05
+PAY00002319	SP3200265	2024-10-04	909.09	BACS	SETTLED	2024-10-04
+PAY00002320	SP3200265	2025-01-03	909.09	POST_OFFICE	SETTLED	2025-01-03
+PAY00002321	SP3200265	2025-04-04	909.09	BACS	SETTLED	2025-04-04
+PAY00002322	SP3200265	2025-07-04	909.09	BACS	SETTLED	2025-07-04
+PAY00002323	SP3200265	2025-10-03	909.09	BACS	SETTLED	2025-10-03
+PAY00002324	SP3200265	2026-01-02	909.09	BACS	SETTLED	2026-01-02
+PAY00002325	SP3200265	2026-04-03	909.09	BACS	SETTLED	2026-04-03
+PAY00002328	SP3200266	2025-11-13	682.56	BACS	SETTLED	2025-11-13
+PAY00002329	SP3200266	2025-12-11	682.56	BACS	SETTLED	2025-12-11
+PAY00002330	SP3200266	2026-01-08	682.56	BACS	SETTLED	2026-01-08
+PAY00002331	SP3200266	2026-02-05	682.56	CHEQUE	SETTLED	2026-02-05
+PAY00002332	SP3200266	2026-03-05	682.56	BACS	SETTLED	2026-03-05
+PAY00002333	SP3200266	2026-04-02	682.56	BACS	SETTLED	2026-04-02
+PAY00002336	SP3200267	2026-03-08	108.53	BACS	SETTLED	2026-03-08
+PAY00002337	SP3200267	2026-03-15	108.53	BACS	SETTLED	2026-03-15
+PAY00002338	SP3200267	2026-03-22	108.53	BACS	SETTLED	2026-03-22
+PAY00002339	SP3200267	2026-03-29	108.53	BACS	SETTLED	2026-03-29
+PAY00002340	SP3200267	2026-04-05	108.53	BACS	SETTLED	2026-04-05
+PAY00002343	SP3200268	2026-03-08	107.44	BACS	SETTLED	2026-03-08
+PAY00002344	SP3200268	2026-03-15	107.44	BACS	SETTLED	2026-03-15
+PAY00002345	SP3200268	2026-03-22	107.44	POST_OFFICE	SETTLED	2026-03-22
+PAY00002346	SP3200268	2026-03-29	107.44	BACS	SETTLED	2026-03-29
+PAY00002347	SP3200268	2026-04-05	107.44	BACS	SETTLED	2026-04-05
+PAY00002350	SP3200269	2026-03-07	99.31	BACS	SETTLED	2026-03-07
+PAY00002351	SP3200269	2026-03-14	99.31	BACS	SETTLED	2026-03-14
+PAY00002352	SP3200269	2026-03-21	99.31	BACS	SETTLED	2026-03-21
+PAY00002353	SP3200269	2026-03-28	99.31	BACS	SETTLED	2026-03-28
+PAY00002354	SP3200269	2026-04-04	99.31	BACS	SETTLED	2026-04-04
+PAY00002357	SP3200270	2025-10-14	733.12	BACS	SETTLED	2025-10-14
+PAY00002358	SP3200270	2025-11-11	733.12	BACS	SETTLED	2025-11-11
+PAY00002359	SP3200270	2025-12-09	733.12	BACS	SETTLED	2025-12-09
+PAY00002360	SP3200270	2026-01-06	733.12	BACS	SETTLED	2026-01-06
+PAY00002361	SP3200270	2026-02-03	733.12	POST_OFFICE	SETTLED	2026-02-03
+PAY00002362	SP3200270	2026-03-03	733.12	BACS	SETTLED	2026-03-03
+PAY00002363	SP3200270	2026-03-31	733.12	BACS	SETTLED	2026-03-31
+PAY00002366	SP3200271	2025-12-10	556.16	BACS	SETTLED	2025-12-10
+PAY00002367	SP3200271	2026-01-07	556.16	CHEQUE	SETTLED	2026-01-07
+PAY00002368	SP3200271	2026-02-04	556.16	BACS	SETTLED	2026-02-04
+PAY00002369	SP3200271	2026-03-04	556.16	CHEQUE	SETTLED	2026-03-04
+PAY00002370	SP3200271	2026-04-01	556.16	BACS	SETTLED	2026-04-01
+PAY00002373	SP3200272	2025-12-15	505.60	BACS	SETTLED	2025-12-15
+PAY00002374	SP3200272	2026-01-12	505.60	BACS	SETTLED	2026-01-12
+PAY00002375	SP3200272	2026-02-09	505.60	BACS	SETTLED	2026-02-09
+PAY00002376	SP3200272	2026-03-09	505.60	BACS	SETTLED	2026-03-09
+PAY00002379	SP3200273	2025-08-23	252.80	BACS	SETTLED	2025-08-23
+PAY00002380	SP3200273	2025-09-20	252.80	BACS	SETTLED	2025-09-20
+PAY00002381	SP3200273	2025-10-18	252.80	CHEQUE	SETTLED	2025-10-18
+PAY00002382	SP3200273	2025-11-15	252.80	BACS	SETTLED	2025-11-15
+PAY00002383	SP3200273	2025-12-13	252.80	BACS	SETTLED	2025-12-13
+PAY00002384	SP3200273	2026-01-10	252.80	BACS	SETTLED	2026-01-10
+PAY00002385	SP3200273	2026-02-07	252.80	BACS	SETTLED	2026-02-07
+PAY00002386	SP3200273	2026-03-07	252.80	BACS	SETTLED	2026-03-07
+PAY00002387	SP3200273	2026-04-04	252.80	POST_OFFICE	SETTLED	2026-04-04
+PAY00002390	SP3200274	2025-09-22	370.16	BACS	SETTLED	2025-09-22
+PAY00002391	SP3200274	2025-10-20	370.16	BACS	SETTLED	2025-10-20
+PAY00002392	SP3200274	2025-11-17	370.16	BACS	SETTLED	2025-11-17
+PAY00002393	SP3200274	2025-12-15	370.16	BACS	SETTLED	2025-12-15
+PAY00002394	SP3200274	2026-01-12	370.16	BACS	SETTLED	2026-01-12
+PAY00002395	SP3200274	2026-02-09	370.16	POST_OFFICE	SETTLED	2026-02-09
+PAY00002396	SP3200274	2026-03-09	370.16	BACS	SETTLED	2026-03-09
+PAY00002399	SP3200275	2025-09-22	814.68	BACS	SETTLED	2025-09-22
+PAY00002400	SP3200275	2025-10-20	814.68	BACS	SETTLED	2025-10-20
+PAY00002401	SP3200275	2025-11-17	814.68	BACS	SETTLED	2025-11-17
+PAY00002402	SP3200275	2025-12-15	814.68	BACS	SETTLED	2025-12-15
+PAY00002403	SP3200275	2026-01-12	814.68	BACS	SETTLED	2026-01-12
+PAY00002404	SP3200275	2026-02-09	814.68	BACS	SETTLED	2026-02-09
+PAY00002405	SP3200275	2026-03-09	814.68	BACS	SETTLED	2026-03-09
+PAY00002408	SP3200276	2026-02-08	176.10	BACS	SETTLED	2026-02-08
+PAY00002409	SP3200276	2026-02-15	176.10	BACS	SETTLED	2026-02-15
+PAY00002410	SP3200276	2026-02-22	176.10	BACS	SETTLED	2026-02-22
+PAY00002411	SP3200276	2026-03-01	176.10	BACS	SETTLED	2026-03-01
+PAY00002412	SP3200276	2026-03-08	176.10	BACS	SETTLED	2026-03-08
+PAY00002413	SP3200276	2026-03-15	176.10	BACS	SETTLED	2026-03-15
+PAY00002414	SP3200276	2026-03-22	176.10	BACS	SETTLED	2026-03-22
+PAY00002415	SP3200276	2026-03-29	176.10	CHEQUE	SETTLED	2026-03-29
+PAY00002416	SP3200276	2026-04-05	176.10	BACS	SETTLED	2026-04-05
+PAY00002419	SP3200277	2026-03-04	69.52	BACS	SETTLED	2026-03-04
+PAY00002420	SP3200277	2026-03-11	69.52	BACS	SETTLED	2026-03-11
+PAY00002421	SP3200277	2026-03-18	69.52	CHEQUE	SETTLED	2026-03-18
+PAY00002422	SP3200277	2026-03-25	69.52	BACS	SETTLED	2026-03-25
+PAY00002423	SP3200277	2026-04-01	69.52	BACS	SETTLED	2026-04-01
+PAY00002426	SP3200278	2025-09-16	758.40	BACS	SETTLED	2025-09-16
+PAY00002427	SP3200278	2025-10-14	758.40	BACS	SETTLED	2025-10-14
+PAY00002428	SP3200278	2025-11-11	758.40	BACS	SETTLED	2025-11-11
+PAY00002429	SP3200278	2025-12-09	758.40	BACS	SETTLED	2025-12-09
+PAY00002430	SP3200278	2026-01-06	758.40	BACS	SETTLED	2026-01-06
+PAY00002431	SP3200278	2026-02-03	758.40	BACS	SETTLED	2026-02-03
+PAY00002432	SP3200278	2026-03-03	758.40	BACS	SETTLED	2026-03-03
+PAY00002433	SP3200278	2026-03-31	758.40	BACS	SETTLED	2026-03-31
+PAY00002436	SP3200279	2026-02-16	141.77	BACS	SETTLED	2026-02-16
+PAY00002437	SP3200279	2026-02-23	141.77	BACS	SETTLED	2026-02-23
+PAY00002438	SP3200279	2026-03-02	141.77	BACS	SETTLED	2026-03-02
+PAY00002439	SP3200279	2026-03-09	141.77	BACS	SETTLED	2026-03-09
+PAY00002440	SP3200279	2026-03-16	141.77	BACS	SETTLED	2026-03-16
+PAY00002441	SP3200279	2026-03-23	141.77	BACS	SETTLED	2026-03-23
+PAY00002442	SP3200279	2026-03-30	141.77	BACS	SETTLED	2026-03-30
+PAY00002445	SP3200280	2025-09-19	340.48	BACS	SETTLED	2025-09-19
+PAY00002446	SP3200280	2025-10-17	340.48	BACS	SETTLED	2025-10-17
+PAY00002447	SP3200280	2025-11-14	340.48	BACS	SETTLED	2025-11-14
+PAY00002448	SP3200280	2025-12-12	340.48	BACS	SETTLED	2025-12-12
+PAY00002449	SP3200280	2026-01-09	340.48	BACS	SETTLED	2026-01-09
+PAY00002450	SP3200280	2026-02-06	340.48	POST_OFFICE	SETTLED	2026-02-06
+PAY00002451	SP3200280	2026-03-06	340.48	BACS	SETTLED	2026-03-06
+PAY00002452	SP3200280	2026-04-03	340.48	BACS	SETTLED	2026-04-03
+PAY00002455	SP3200281	2026-02-15	184.45	BACS	SETTLED	2026-02-15
+PAY00002456	SP3200281	2026-02-22	184.45	BACS	SETTLED	2026-02-22
+PAY00002457	SP3200281	2026-03-01	184.45	POST_OFFICE	SETTLED	2026-03-01
+PAY00002458	SP3200281	2026-03-08	184.45	BACS	SETTLED	2026-03-08
+PAY00002459	SP3200281	2026-03-15	184.45	CHEQUE	SETTLED	2026-03-15
+PAY00002460	SP3200281	2026-03-22	184.45	BACS	SETTLED	2026-03-22
+PAY00002461	SP3200281	2026-03-29	184.45	BACS	SETTLED	2026-03-29
+PAY00002462	SP3200281	2026-04-05	184.45	BACS	SETTLED	2026-04-05
+PAY00002465	SP3200282	2025-10-17	682.56	BACS	SETTLED	2025-10-17
+PAY00002466	SP3200282	2025-11-14	682.56	CHEQUE	SETTLED	2025-11-14
+PAY00002467	SP3200282	2025-12-12	682.56	BACS	SETTLED	2025-12-12
+PAY00002468	SP3200282	2026-01-09	682.56	BACS	SETTLED	2026-01-09
+PAY00002469	SP3200282	2026-02-06	682.56	BACS	SETTLED	2026-02-06
+PAY00002470	SP3200282	2026-03-06	682.56	BACS	SETTLED	2026-03-06
+PAY00002471	SP3200282	2026-04-03	682.56	BACS	SETTLED	2026-04-03
+PAY00002474	SP3200283	2025-11-12	608.28	BACS	SETTLED	2025-11-12
+PAY00002475	SP3200283	2025-12-10	608.28	BACS	SETTLED	2025-12-10
+PAY00002476	SP3200283	2026-01-07	608.28	BACS	SETTLED	2026-01-07
+PAY00002477	SP3200283	2026-02-04	608.28	BACS	SETTLED	2026-02-04
+PAY00002478	SP3200283	2026-03-04	608.28	BACS	SETTLED	2026-03-04
+PAY00002479	SP3200283	2026-04-01	608.28	POST_OFFICE	SETTLED	2026-04-01
+PAY00002482	SP3200284	2024-07-08	1150.24	BACS	SETTLED	2024-07-08
+PAY00002483	SP3200284	2024-10-07	1150.24	POST_OFFICE	SETTLED	2024-10-07
+PAY00002484	SP3200284	2025-01-06	1150.24	BACS	SETTLED	2025-01-06
+PAY00002485	SP3200284	2025-04-07	1150.24	BACS	SETTLED	2025-04-07
+PAY00002486	SP3200284	2025-07-07	1150.24	BACS	SETTLED	2025-07-07
+PAY00002487	SP3200284	2025-10-06	1150.24	BACS	SETTLED	2025-10-06
+PAY00002488	SP3200284	2026-01-05	1150.24	BACS	SETTLED	2026-01-05
+PAY00002491	SP3200285	2025-10-19	864.48	BACS	SETTLED	2025-10-19
+PAY00002492	SP3200285	2025-11-16	864.48	CHEQUE	SETTLED	2025-11-16
+PAY00002493	SP3200285	2025-12-14	864.48	BACS	SETTLED	2025-12-14
+PAY00002494	SP3200285	2026-01-11	864.48	CHEQUE	SETTLED	2026-01-11
+PAY00002495	SP3200285	2026-02-08	864.48	BACS	SETTLED	2026-02-08
+PAY00002496	SP3200285	2026-03-08	864.48	POST_OFFICE	SETTLED	2026-03-08
+PAY00002497	SP3200285	2026-04-05	864.48	POST_OFFICE	SETTLED	2026-04-05
+PAY00002500	SP3200286	2026-02-11	241.34	POST_OFFICE	SETTLED	2026-02-11
+PAY00002501	SP3200286	2026-02-18	241.34	BACS	SETTLED	2026-02-18
+PAY00002502	SP3200286	2026-02-25	241.34	BACS	SETTLED	2026-02-25
+PAY00002503	SP3200286	2026-03-04	241.34	BACS	SETTLED	2026-03-04
+PAY00002504	SP3200286	2026-03-11	241.34	BACS	SETTLED	2026-03-11
+PAY00002505	SP3200286	2026-03-18	241.34	BACS	SETTLED	2026-03-18
+PAY00002506	SP3200286	2026-03-25	241.34	BACS	SETTLED	2026-03-25
+PAY00002507	SP3200286	2026-04-01	241.34	POST_OFFICE	SETTLED	2026-04-01
+PAY00002510	SP3200287	2024-10-06	2546.96	BACS	SETTLED	2024-10-06
+PAY00002511	SP3200287	2025-01-05	2546.96	BACS	SETTLED	2025-01-05
+PAY00002512	SP3200287	2025-04-06	2546.96	BACS	SETTLED	2025-04-06
+PAY00002513	SP3200287	2025-07-06	2546.96	BACS	SETTLED	2025-07-06
+PAY00002514	SP3200287	2025-10-05	2546.96	BACS	SETTLED	2025-10-05
+PAY00002515	SP3200287	2026-01-04	2546.96	CHEQUE	SETTLED	2026-01-04
+PAY00002516	SP3200287	2026-04-05	2546.96	BACS	SETTLED	2026-04-05
+PAY00002519	SP3200288	2025-01-03	1130.61	BACS	SETTLED	2025-01-03
+PAY00002520	SP3200288	2025-04-04	1130.61	BACS	SETTLED	2025-04-04
+PAY00002521	SP3200288	2025-07-04	1130.61	BACS	SETTLED	2025-07-04
+PAY00002522	SP3200288	2025-10-03	1130.61	POST_OFFICE	SETTLED	2025-10-03
+PAY00002523	SP3200288	2026-01-02	1130.61	CHEQUE	SETTLED	2026-01-02
+PAY00002524	SP3200288	2026-04-03	1130.61	POST_OFFICE	SETTLED	2026-04-03
+PAY00002527	SP3200289	2025-08-24	332.24	BACS	SETTLED	2025-08-24
+PAY00002528	SP3200289	2025-09-21	332.24	BACS	SETTLED	2025-09-21
+PAY00002529	SP3200289	2025-10-19	332.24	BACS	SETTLED	2025-10-19
+PAY00002530	SP3200289	2025-11-16	332.24	BACS	SETTLED	2025-11-16
+PAY00002531	SP3200289	2025-12-14	332.24	CHEQUE	SETTLED	2025-12-14
+PAY00002532	SP3200289	2026-01-11	332.24	BACS	SETTLED	2026-01-11
+PAY00002533	SP3200289	2026-02-08	332.24	BACS	SETTLED	2026-02-08
+PAY00002534	SP3200289	2026-03-08	332.24	POST_OFFICE	SETTLED	2026-03-08
+PAY00002535	SP3200289	2026-04-05	332.24	BACS	SETTLED	2026-04-05
+PAY00002538	SP3200290	2026-02-08	221.20	BACS	SETTLED	2026-02-08
+PAY00002539	SP3200290	2026-02-15	221.20	BACS	SETTLED	2026-02-15
+PAY00002540	SP3200290	2026-02-22	221.20	BACS	SETTLED	2026-02-22
+PAY00002541	SP3200290	2026-03-01	221.20	POST_OFFICE	SETTLED	2026-03-01
+PAY00002542	SP3200290	2026-03-08	221.20	BACS	SETTLED	2026-03-08
+PAY00002543	SP3200290	2026-03-15	221.20	BACS	SETTLED	2026-03-15
+PAY00002544	SP3200290	2026-03-22	221.20	BACS	SETTLED	2026-03-22
+PAY00002545	SP3200290	2026-03-29	221.20	POST_OFFICE	SETTLED	2026-03-29
+PAY00002546	SP3200290	2026-04-05	221.20	BACS	SETTLED	2026-04-05
+PAY00002549	SP3200291	2025-12-10	783.68	POST_OFFICE	SETTLED	2025-12-10
+PAY00002550	SP3200291	2026-01-07	783.68	BACS	SETTLED	2026-01-07
+PAY00002551	SP3200291	2026-02-04	783.68	POST_OFFICE	SETTLED	2026-02-04
+PAY00002552	SP3200291	2026-03-04	783.68	BACS	SETTLED	2026-03-04
+PAY00002553	SP3200291	2026-04-01	783.68	CHEQUE	SETTLED	2026-04-01
+PAY00002556	SP3200292	2026-02-09	120.08	BACS	SETTLED	2026-02-09
+PAY00002557	SP3200292	2026-02-16	120.08	BACS	SETTLED	2026-02-16
+PAY00002558	SP3200292	2026-02-23	120.08	BACS	SETTLED	2026-02-23
+PAY00002559	SP3200292	2026-03-02	120.08	BACS	SETTLED	2026-03-02
+PAY00002560	SP3200292	2026-03-09	120.08	CHEQUE	SETTLED	2026-03-09
+PAY00002561	SP3200292	2026-03-16	120.08	BACS	SETTLED	2026-03-16
+PAY00002562	SP3200292	2026-03-23	120.08	BACS	SETTLED	2026-03-23
+PAY00002563	SP3200292	2026-03-30	120.08	BACS	SETTLED	2026-03-30
+PAY00002566	SP3200293	2025-11-15	455.04	CHEQUE	SETTLED	2025-11-15
+PAY00002567	SP3200293	2025-12-13	455.04	BACS	SETTLED	2025-12-13
+PAY00002568	SP3200293	2026-01-10	455.04	BACS	SETTLED	2026-01-10
+PAY00002569	SP3200293	2026-02-07	455.04	BACS	SETTLED	2026-02-07
+PAY00002570	SP3200293	2026-03-07	455.04	BACS	SETTLED	2026-03-07
+PAY00002571	SP3200293	2026-04-04	455.04	BACS	SETTLED	2026-04-04
+PAY00002574	SP3200294	2024-07-03	2629.12	BACS	SETTLED	2024-07-03
+PAY00002575	SP3200294	2024-10-02	2629.12	BACS	SETTLED	2024-10-02
+PAY00002576	SP3200294	2025-01-01	2629.12	BACS	SETTLED	2025-01-01
+PAY00002577	SP3200294	2025-04-02	2629.12	BACS	SETTLED	2025-04-02
+PAY00002578	SP3200294	2025-07-02	2629.12	BACS	SETTLED	2025-07-02
+PAY00002579	SP3200294	2025-10-01	2629.12	POST_OFFICE	SETTLED	2025-10-01
+PAY00002580	SP3200294	2025-12-31	2629.12	BACS	SETTLED	2025-12-31
+PAY00002581	SP3200294	2026-04-01	2629.12	BACS	SETTLED	2026-04-01
+PAY00002584	SP3200295	2025-11-15	1043.92	POST_OFFICE	SETTLED	2025-11-15
+PAY00002585	SP3200295	2025-12-13	1043.92	BACS	SETTLED	2025-12-13
+PAY00002586	SP3200295	2026-01-10	1043.92	BACS	SETTLED	2026-01-10
+PAY00002587	SP3200295	2026-02-07	1043.92	BACS	SETTLED	2026-02-07
+PAY00002588	SP3200295	2026-03-07	1043.92	BACS	SETTLED	2026-03-07
+PAY00002589	SP3200295	2026-04-04	1043.92	BACS	SETTLED	2026-04-04
+PAY00002592	SP3200296	2026-03-08	121.94	POST_OFFICE	SETTLED	2026-03-08
+PAY00002593	SP3200296	2026-03-15	121.94	BACS	SETTLED	2026-03-15
+PAY00002594	SP3200296	2026-03-22	121.94	POST_OFFICE	SETTLED	2026-03-22
+PAY00002595	SP3200296	2026-03-29	121.94	BACS	SETTLED	2026-03-29
+PAY00002596	SP3200296	2026-04-05	121.94	BACS	SETTLED	2026-04-05
+PAY00002599	SP3200297	2026-02-15	199.04	BACS	SETTLED	2026-02-15
+PAY00002600	SP3200297	2026-02-22	199.04	BACS	SETTLED	2026-02-22
+PAY00002601	SP3200297	2026-03-01	199.04	BACS	SETTLED	2026-03-01
+PAY00002602	SP3200297	2026-03-08	199.04	BACS	SETTLED	2026-03-08
+PAY00002603	SP3200297	2026-03-15	199.04	BACS	SETTLED	2026-03-15
+PAY00002604	SP3200297	2026-03-22	199.04	BACS	SETTLED	2026-03-22
+PAY00002605	SP3200297	2026-03-29	199.04	CHEQUE	SETTLED	2026-03-29
+PAY00002606	SP3200297	2026-04-05	199.04	BACS	SETTLED	2026-04-05
+PAY00002609	SP3200298	2025-09-18	556.16	BACS	SETTLED	2025-09-18
+PAY00002610	SP3200298	2025-10-16	556.16	POST_OFFICE	SETTLED	2025-10-16
+PAY00002611	SP3200298	2025-11-13	556.16	BACS	SETTLED	2025-11-13
+PAY00002612	SP3200298	2025-12-11	556.16	POST_OFFICE	SETTLED	2025-12-11
+PAY00002613	SP3200298	2026-01-08	556.16	BACS	SETTLED	2026-01-08
+PAY00002614	SP3200298	2026-02-05	556.16	BACS	SETTLED	2026-02-05
+PAY00002615	SP3200298	2026-03-05	556.16	CHEQUE	SETTLED	2026-03-05
+PAY00002616	SP3200298	2026-04-02	556.16	BACS	SETTLED	2026-04-02
+PAY00002619	SP3200299	2025-09-22	632.00	BACS	SETTLED	2025-09-22
+PAY00002620	SP3200299	2025-10-20	632.00	BACS	SETTLED	2025-10-20
+PAY00002621	SP3200299	2025-11-17	632.00	BACS	SETTLED	2025-11-17
+PAY00002622	SP3200299	2025-12-15	632.00	POST_OFFICE	SETTLED	2025-12-15
+PAY00002623	SP3200299	2026-01-12	632.00	BACS	SETTLED	2026-01-12
+PAY00002624	SP3200299	2026-02-09	632.00	BACS	SETTLED	2026-02-09
+PAY00002625	SP3200299	2026-03-09	632.00	BACS	SETTLED	2026-03-09
+PAY00002628	SP3200300	2025-09-17	278.08	BACS	SETTLED	2025-09-17
+PAY00002629	SP3200300	2025-10-15	278.08	BACS	SETTLED	2025-10-15
+PAY00002630	SP3200300	2025-11-12	278.08	BACS	SETTLED	2025-11-12
+PAY00002631	SP3200300	2025-12-10	278.08	BACS	SETTLED	2025-12-10
+PAY00002632	SP3200300	2026-01-07	278.08	BACS	SETTLED	2026-01-07
+PAY00002633	SP3200300	2026-02-04	278.08	BACS	SETTLED	2026-02-04
+PAY00002634	SP3200300	2026-03-04	278.08	BACS	SETTLED	2026-03-04
+PAY00002635	SP3200300	2026-04-01	278.08	BACS	SETTLED	2026-04-01
+PAY00002638	SP3200301	2026-02-28	159.30	BACS	SETTLED	2026-02-28
+PAY00002639	SP3200301	2026-03-07	159.30	BACS	SETTLED	2026-03-07
+PAY00002640	SP3200301	2026-03-14	159.30	BACS	SETTLED	2026-03-14
+PAY00002641	SP3200301	2026-03-21	159.30	BACS	SETTLED	2026-03-21
+PAY00002642	SP3200301	2026-03-28	159.30	BACS	SETTLED	2026-03-28
+PAY00002643	SP3200301	2026-04-04	159.30	BACS	SETTLED	2026-04-04
+PAY00002646	SP3200302	2026-03-09	147.75	BACS	SETTLED	2026-03-09
+PAY00002647	SP3200302	2026-03-16	147.75	BACS	SETTLED	2026-03-16
+PAY00002648	SP3200302	2026-03-23	147.75	BACS	SETTLED	2026-03-23
+PAY00002649	SP3200302	2026-03-30	147.75	BACS	SETTLED	2026-03-30
+PAY00002652	SP3200303	2026-02-14	117.94	BACS	SETTLED	2026-02-14
+PAY00002653	SP3200303	2026-02-21	117.94	POST_OFFICE	SETTLED	2026-02-21
+PAY00002654	SP3200303	2026-02-28	117.94	BACS	SETTLED	2026-02-28
+PAY00002655	SP3200303	2026-03-07	117.94	BACS	SETTLED	2026-03-07
+PAY00002656	SP3200303	2026-03-14	117.94	BACS	SETTLED	2026-03-14
+PAY00002657	SP3200303	2026-03-21	117.94	CHEQUE	SETTLED	2026-03-21
+PAY00002658	SP3200303	2026-03-28	117.94	BACS	SETTLED	2026-03-28
+PAY00002659	SP3200303	2026-04-04	117.94	POST_OFFICE	SETTLED	2026-04-04
+PAY00002662	SP3200304	2025-09-16	404.48	BACS	SETTLED	2025-09-16
+PAY00002663	SP3200304	2025-10-14	404.48	CHEQUE	SETTLED	2025-10-14
+PAY00002664	SP3200304	2025-11-11	404.48	POST_OFFICE	SETTLED	2025-11-11
+PAY00002665	SP3200304	2025-12-09	404.48	BACS	SETTLED	2025-12-09
+PAY00002666	SP3200304	2026-01-06	404.48	BACS	SETTLED	2026-01-06
+PAY00002667	SP3200304	2026-02-03	404.48	CHEQUE	SETTLED	2026-02-03
+PAY00002668	SP3200304	2026-03-03	404.48	POST_OFFICE	SETTLED	2026-03-03
+PAY00002669	SP3200304	2026-03-31	404.48	POST_OFFICE	SETTLED	2026-03-31
+PAY00002672	SP3200305	2025-10-14	538.12	BACS	SETTLED	2025-10-14
+PAY00002673	SP3200305	2025-11-11	538.12	BACS	SETTLED	2025-11-11
+PAY00002674	SP3200305	2025-12-09	538.12	CHEQUE	SETTLED	2025-12-09
+PAY00002675	SP3200305	2026-01-06	538.12	POST_OFFICE	SETTLED	2026-01-06
+PAY00002676	SP3200305	2026-02-03	538.12	POST_OFFICE	SETTLED	2026-02-03
+PAY00002677	SP3200305	2026-03-03	538.12	BACS	SETTLED	2026-03-03
+PAY00002678	SP3200305	2026-03-31	538.12	BACS	SETTLED	2026-03-31
+PAY00002681	SP3200306	2025-08-22	379.20	BACS	SETTLED	2025-08-22
+PAY00002682	SP3200306	2025-09-19	379.20	CHEQUE	SETTLED	2025-09-19
+PAY00002683	SP3200306	2025-10-17	379.20	CHEQUE	SETTLED	2025-10-17
+PAY00002684	SP3200306	2025-11-14	379.20	BACS	SETTLED	2025-11-14
+PAY00002685	SP3200306	2025-12-12	379.20	BACS	SETTLED	2025-12-12
+PAY00002686	SP3200306	2026-01-09	379.20	BACS	SETTLED	2026-01-09
+PAY00002687	SP3200306	2026-02-06	379.20	BACS	SETTLED	2026-02-06
+PAY00002688	SP3200306	2026-03-06	379.20	BACS	SETTLED	2026-03-06
+PAY00002689	SP3200306	2026-04-03	379.20	BACS	SETTLED	2026-04-03
+PAY00002692	SP3200307	2026-03-03	214.88	BACS	SETTLED	2026-03-03
+PAY00002693	SP3200307	2026-03-10	214.88	BACS	SETTLED	2026-03-10
+PAY00002694	SP3200307	2026-03-17	214.88	BACS	SETTLED	2026-03-17
+PAY00002695	SP3200307	2026-03-24	214.88	BACS	SETTLED	2026-03-24
+PAY00002696	SP3200307	2026-03-31	214.88	BACS	SETTLED	2026-03-31
+PAY00002699	SP3200308	2025-12-15	733.12	BACS	SETTLED	2025-12-15
+PAY00002700	SP3200308	2026-01-12	733.12	BACS	SETTLED	2026-01-12
+PAY00002701	SP3200308	2026-02-09	733.12	POST_OFFICE	SETTLED	2026-02-09
+PAY00002702	SP3200308	2026-03-09	733.12	BACS	SETTLED	2026-03-09
+PAY00002705	SP3200309	2026-02-20	204.44	BACS	SETTLED	2026-02-20
+PAY00002706	SP3200309	2026-02-27	204.44	BACS	SETTLED	2026-02-27
+PAY00002707	SP3200309	2026-03-06	204.44	POST_OFFICE	SETTLED	2026-03-06
+PAY00002708	SP3200309	2026-03-13	204.44	BACS	SETTLED	2026-03-13
+PAY00002709	SP3200309	2026-03-20	204.44	BACS	SETTLED	2026-03-20
+PAY00002710	SP3200309	2026-03-27	204.44	POST_OFFICE	SETTLED	2026-03-27
+PAY00002711	SP3200309	2026-04-03	204.44	POST_OFFICE	SETTLED	2026-04-03
+PAY00002714	SP3200310	2025-11-13	776.00	BACS	SETTLED	2025-11-13
+PAY00002715	SP3200310	2025-12-11	776.00	POST_OFFICE	SETTLED	2025-12-11
+PAY00002716	SP3200310	2026-01-08	776.00	BACS	SETTLED	2026-01-08
+PAY00002717	SP3200310	2026-02-05	776.00	BACS	SETTLED	2026-02-05
+PAY00002718	SP3200310	2026-03-05	776.00	BACS	SETTLED	2026-03-05
+PAY00002719	SP3200310	2026-04-02	776.00	POST_OFFICE	SETTLED	2026-04-02
+PAY00002722	SP3200311	2025-11-14	512.52	BACS	SETTLED	2025-11-14
+PAY00002723	SP3200311	2025-12-12	512.52	BACS	SETTLED	2025-12-12
+PAY00002724	SP3200311	2026-01-09	512.52	POST_OFFICE	SETTLED	2026-01-09
+PAY00002725	SP3200311	2026-02-06	512.52	CHEQUE	SETTLED	2026-02-06
+PAY00002726	SP3200311	2026-03-06	512.52	BACS	SETTLED	2026-03-06
+PAY00002727	SP3200311	2026-04-03	512.52	BACS	SETTLED	2026-04-03
+PAY00002730	SP3200312	2026-02-13	195.92	BACS	SETTLED	2026-02-13
+PAY00002731	SP3200312	2026-02-20	195.92	BACS	SETTLED	2026-02-20
+PAY00002732	SP3200312	2026-02-27	195.92	BACS	SETTLED	2026-02-27
+PAY00002733	SP3200312	2026-03-06	195.92	BACS	SETTLED	2026-03-06
+PAY00002734	SP3200312	2026-03-13	195.92	BACS	SETTLED	2026-03-13
+PAY00002735	SP3200312	2026-03-20	195.92	BACS	SETTLED	2026-03-20
+PAY00002736	SP3200312	2026-03-27	195.92	BACS	SETTLED	2026-03-27
+PAY00002737	SP3200312	2026-04-03	195.92	POST_OFFICE	SETTLED	2026-04-03
+PAY00002740	SP3200313	2025-08-24	205.00	BACS	SETTLED	2025-08-24
+PAY00002741	SP3200313	2025-09-21	205.00	BACS	SETTLED	2025-09-21
+PAY00002742	SP3200313	2025-10-19	205.00	POST_OFFICE	SETTLED	2025-10-19
+PAY00002743	SP3200313	2025-11-16	205.00	BACS	SETTLED	2025-11-16
+PAY00002744	SP3200313	2025-12-14	205.00	POST_OFFICE	SETTLED	2025-12-14
+PAY00002745	SP3200313	2026-01-11	205.00	BACS	SETTLED	2026-01-11
+PAY00002746	SP3200313	2026-02-08	205.00	BACS	SETTLED	2026-02-08
+PAY00002747	SP3200313	2026-03-08	205.00	CHEQUE	SETTLED	2026-03-08
+PAY00002748	SP3200313	2026-04-05	205.00	BACS	SETTLED	2026-04-05
+PAY00002751	SP3200314	2025-08-21	916.72	POST_OFFICE	SETTLED	2025-08-21
+PAY00002752	SP3200314	2025-09-18	916.72	BACS	SETTLED	2025-09-18
+PAY00002753	SP3200314	2025-10-16	916.72	POST_OFFICE	SETTLED	2025-10-16
+PAY00002754	SP3200314	2025-11-13	916.72	POST_OFFICE	SETTLED	2025-11-13
+PAY00002755	SP3200314	2025-12-11	916.72	BACS	SETTLED	2025-12-11
+PAY00002756	SP3200314	2026-01-08	916.72	BACS	SETTLED	2026-01-08
+PAY00002757	SP3200314	2026-02-05	916.72	BACS	SETTLED	2026-02-05
+PAY00002758	SP3200314	2026-03-05	916.72	CHEQUE	SETTLED	2026-03-05
+PAY00002759	SP3200314	2026-04-02	916.72	BACS	SETTLED	2026-04-02
+PAY00002762	SP3200315	2024-10-03	1068.08	BACS	SETTLED	2024-10-03
+PAY00002763	SP3200315	2025-01-02	1068.08	BACS	SETTLED	2025-01-02
+PAY00002764	SP3200315	2025-04-03	1068.08	BACS	SETTLED	2025-04-03
+PAY00002765	SP3200315	2025-07-03	1068.08	BACS	SETTLED	2025-07-03
+PAY00002766	SP3200315	2025-10-02	1068.08	POST_OFFICE	SETTLED	2025-10-02
+PAY00002767	SP3200315	2026-01-01	1068.08	BACS	SETTLED	2026-01-01
+PAY00002768	SP3200315	2026-04-02	1068.08	BACS	SETTLED	2026-04-02
+PAY00002771	SP3200316	2025-11-13	834.24	BACS	SETTLED	2025-11-13
+PAY00002772	SP3200316	2025-12-11	834.24	BACS	SETTLED	2025-12-11
+PAY00002773	SP3200316	2026-01-08	834.24	BACS	SETTLED	2026-01-08
+PAY00002774	SP3200316	2026-02-05	834.24	BACS	SETTLED	2026-02-05
+PAY00002775	SP3200316	2026-03-05	834.24	BACS	SETTLED	2026-03-05
+PAY00002776	SP3200316	2026-04-02	834.24	BACS	SETTLED	2026-04-02
+PAY00002779	SP3200317	2025-08-19	404.48	BACS	SETTLED	2025-08-19
+PAY00002780	SP3200317	2025-09-16	404.48	POST_OFFICE	SETTLED	2025-09-16
+PAY00002781	SP3200317	2025-10-14	404.48	BACS	SETTLED	2025-10-14
+PAY00002782	SP3200317	2025-11-11	404.48	BACS	SETTLED	2025-11-11
+PAY00002783	SP3200317	2025-12-09	404.48	BACS	SETTLED	2025-12-09
+PAY00002784	SP3200317	2026-01-06	404.48	BACS	SETTLED	2026-01-06
+PAY00002785	SP3200317	2026-02-03	404.48	BACS	SETTLED	2026-02-03
+PAY00002786	SP3200317	2026-03-03	404.48	BACS	SETTLED	2026-03-03
+PAY00002787	SP3200317	2026-03-31	404.48	POST_OFFICE	SETTLED	2026-03-31
+PAY00002790	SP3200318	2025-10-20	404.48	CHEQUE	SETTLED	2025-10-20
+PAY00002791	SP3200318	2025-11-17	404.48	BACS	SETTLED	2025-11-17
+PAY00002792	SP3200318	2025-12-15	404.48	BACS	SETTLED	2025-12-15
+PAY00002793	SP3200318	2026-01-12	404.48	POST_OFFICE	SETTLED	2026-01-12
+PAY00002794	SP3200318	2026-02-09	404.48	BACS	SETTLED	2026-02-09
+PAY00002795	SP3200318	2026-03-09	404.48	BACS	SETTLED	2026-03-09
+PAY00002798	SP3200319	2025-09-22	505.60	BACS	SETTLED	2025-09-22
+PAY00002799	SP3200319	2025-10-20	505.60	BACS	SETTLED	2025-10-20
+PAY00002800	SP3200319	2025-11-17	505.60	BACS	SETTLED	2025-11-17
+PAY00002801	SP3200319	2025-12-15	505.60	POST_OFFICE	SETTLED	2025-12-15
+PAY00002802	SP3200319	2026-01-12	505.60	BACS	SETTLED	2026-01-12
+PAY00002803	SP3200319	2026-02-09	505.60	BACS	SETTLED	2026-02-09
+PAY00002804	SP3200319	2026-03-09	505.60	BACS	SETTLED	2026-03-09
+PAY00002807	SP3200320	2025-10-19	379.20	POST_OFFICE	SETTLED	2025-10-19
+PAY00002808	SP3200320	2025-11-16	379.20	BACS	SETTLED	2025-11-16
+PAY00002809	SP3200320	2025-12-14	379.20	POST_OFFICE	SETTLED	2025-12-14
+PAY00002810	SP3200320	2026-01-11	379.20	BACS	SETTLED	2026-01-11
+PAY00002811	SP3200320	2026-02-08	379.20	BACS	SETTLED	2026-02-08
+PAY00002812	SP3200320	2026-03-08	379.20	BACS	SETTLED	2026-03-08
+PAY00002813	SP3200320	2026-04-05	379.20	BACS	SETTLED	2026-04-05
+PAY00002816	SP3200321	2025-09-22	480.32	POST_OFFICE	SETTLED	2025-09-22
+PAY00002817	SP3200321	2025-10-20	480.32	BACS	SETTLED	2025-10-20
+PAY00002818	SP3200321	2025-11-17	480.32	BACS	SETTLED	2025-11-17
+PAY00002819	SP3200321	2025-12-15	480.32	BACS	SETTLED	2025-12-15
+PAY00002820	SP3200321	2026-01-12	480.32	BACS	SETTLED	2026-01-12
+PAY00002821	SP3200321	2026-02-09	480.32	BACS	SETTLED	2026-02-09
+PAY00002822	SP3200321	2026-03-09	480.32	BACS	SETTLED	2026-03-09
+PAY00002825	SP3200322	2026-02-21	88.48	BACS	SETTLED	2026-02-21
+PAY00002826	SP3200322	2026-02-28	88.48	BACS	SETTLED	2026-02-28
+PAY00002827	SP3200322	2026-03-07	88.48	CHEQUE	SETTLED	2026-03-07
+PAY00002828	SP3200322	2026-03-14	88.48	POST_OFFICE	SETTLED	2026-03-14
+PAY00002829	SP3200322	2026-03-21	88.48	POST_OFFICE	SETTLED	2026-03-21
+PAY00002830	SP3200322	2026-03-28	88.48	POST_OFFICE	SETTLED	2026-03-28
+PAY00002831	SP3200322	2026-04-04	88.48	BACS	SETTLED	2026-04-04
+PAY00002834	SP3200323	2026-03-03	74.71	BACS	SETTLED	2026-03-03
+PAY00002835	SP3200323	2026-03-10	74.71	BACS	SETTLED	2026-03-10
+PAY00002836	SP3200323	2026-03-17	74.71	BACS	SETTLED	2026-03-17
+PAY00002837	SP3200323	2026-03-24	74.71	BACS	SETTLED	2026-03-24
+PAY00002838	SP3200323	2026-03-31	74.71	BACS	SETTLED	2026-03-31
+PAY00002841	SP3200324	2025-10-16	618.48	BACS	SETTLED	2025-10-16
+PAY00002842	SP3200324	2025-11-13	618.48	BACS	SETTLED	2025-11-13
+PAY00002843	SP3200324	2025-12-11	618.48	BACS	SETTLED	2025-12-11
+PAY00002844	SP3200324	2026-01-08	618.48	BACS	SETTLED	2026-01-08
+PAY00002845	SP3200324	2026-02-05	618.48	BACS	SETTLED	2026-02-05
+PAY00002846	SP3200324	2026-03-05	618.48	BACS	SETTLED	2026-03-05
+PAY00002847	SP3200324	2026-04-02	618.48	BACS	SETTLED	2026-04-02
+PAY00002850	SP3200325	2024-10-05	1068.08	BACS	SETTLED	2024-10-05
+PAY00002851	SP3200325	2025-01-04	1068.08	BACS	SETTLED	2025-01-04
+PAY00002852	SP3200325	2025-04-05	1068.08	BACS	SETTLED	2025-04-05
+PAY00002853	SP3200325	2025-07-05	1068.08	BACS	SETTLED	2025-07-05
+PAY00002854	SP3200325	2025-10-04	1068.08	POST_OFFICE	SETTLED	2025-10-04
+PAY00002855	SP3200325	2026-01-03	1068.08	BACS	SETTLED	2026-01-03
+PAY00002856	SP3200325	2026-04-04	1068.08	BACS	SETTLED	2026-04-04
+PAY00002859	SP3200326	2026-02-28	221.20	BACS	SETTLED	2026-02-28
+PAY00002860	SP3200326	2026-03-07	221.20	POST_OFFICE	SETTLED	2026-03-07
+PAY00002861	SP3200326	2026-03-14	221.20	BACS	SETTLED	2026-03-14
+PAY00002862	SP3200326	2026-03-21	221.20	BACS	SETTLED	2026-03-21
+PAY00002863	SP3200326	2026-03-28	221.20	BACS	SETTLED	2026-03-28
+PAY00002864	SP3200326	2026-04-04	221.20	BACS	SETTLED	2026-04-04
+PAY00002867	SP3200327	2025-12-15	505.60	BACS	SETTLED	2025-12-15
+PAY00002868	SP3200327	2026-01-12	505.60	BACS	SETTLED	2026-01-12
+PAY00002869	SP3200327	2026-02-09	505.60	BACS	SETTLED	2026-02-09
+PAY00002870	SP3200327	2026-03-09	505.60	BACS	SETTLED	2026-03-09
+PAY00002873	SP3200328	2025-11-11	328.64	BACS	SETTLED	2025-11-11
+PAY00002874	SP3200328	2025-12-09	328.64	BACS	SETTLED	2025-12-09
+PAY00002875	SP3200328	2026-01-06	328.64	BACS	SETTLED	2026-01-06
+PAY00002876	SP3200328	2026-02-03	328.64	POST_OFFICE	SETTLED	2026-02-03
+PAY00002877	SP3200328	2026-03-03	328.64	BACS	SETTLED	2026-03-03
+PAY00002878	SP3200328	2026-03-31	328.64	BACS	SETTLED	2026-03-31
+PAY00002881	SP3200329	2025-12-11	480.32	BACS	SETTLED	2025-12-11
+PAY00002882	SP3200329	2026-01-08	480.32	BACS	SETTLED	2026-01-08
+PAY00002883	SP3200329	2026-02-05	480.32	BACS	SETTLED	2026-02-05
+PAY00002884	SP3200329	2026-03-05	480.32	BACS	SETTLED	2026-03-05
+PAY00002885	SP3200329	2026-04-02	480.32	BACS	SETTLED	2026-04-02
+PAY00002888	SP3200330	2026-02-20	176.96	CHEQUE	SETTLED	2026-02-20
+PAY00002889	SP3200330	2026-02-27	176.96	BACS	SETTLED	2026-02-27
+PAY00002890	SP3200330	2026-03-06	176.96	BACS	SETTLED	2026-03-06
+PAY00002891	SP3200330	2026-03-13	176.96	POST_OFFICE	SETTLED	2026-03-13
+PAY00002892	SP3200330	2026-03-20	176.96	BACS	SETTLED	2026-03-20
+PAY00002893	SP3200330	2026-03-27	176.96	BACS	SETTLED	2026-03-27
+PAY00002894	SP3200330	2026-04-03	176.96	BACS	SETTLED	2026-04-03
+PAY00002897	SP3200331	2025-12-10	799.12	BACS	SETTLED	2025-12-10
+PAY00002898	SP3200331	2026-01-07	799.12	BACS	SETTLED	2026-01-07
+PAY00002899	SP3200331	2026-02-04	799.12	BACS	SETTLED	2026-02-04
+PAY00002900	SP3200331	2026-03-04	799.12	BACS	SETTLED	2026-03-04
+PAY00002901	SP3200331	2026-04-01	799.12	BACS	SETTLED	2026-04-01
+PAY00002904	SP3200332	2025-08-21	726.24	BACS	SETTLED	2025-08-21
+PAY00002905	SP3200332	2025-09-18	726.24	BACS	SETTLED	2025-09-18
+PAY00002906	SP3200332	2025-10-16	726.24	POST_OFFICE	SETTLED	2025-10-16
+PAY00002907	SP3200332	2025-11-13	726.24	BACS	SETTLED	2025-11-13
+PAY00002908	SP3200332	2025-12-11	726.24	BACS	SETTLED	2025-12-11
+PAY00002909	SP3200332	2026-01-08	726.24	BACS	SETTLED	2026-01-08
+PAY00002910	SP3200332	2026-02-05	726.24	BACS	SETTLED	2026-02-05
+PAY00002911	SP3200332	2026-03-05	726.24	BACS	SETTLED	2026-03-05
+PAY00002912	SP3200332	2026-04-02	726.24	BACS	SETTLED	2026-04-02
+PAY00002915	SP3200333	2026-03-04	126.40	BACS	SETTLED	2026-03-04
+PAY00002916	SP3200333	2026-03-11	126.40	POST_OFFICE	SETTLED	2026-03-11
+PAY00002917	SP3200333	2026-03-18	126.40	POST_OFFICE	SETTLED	2026-03-18
+PAY00002918	SP3200333	2026-03-25	126.40	BACS	SETTLED	2026-03-25
+PAY00002919	SP3200333	2026-04-01	126.40	BACS	SETTLED	2026-04-01
+PAY00002922	SP3200334	2025-09-17	649.60	BACS	SETTLED	2025-09-17
+PAY00002923	SP3200334	2025-10-15	649.60	BACS	SETTLED	2025-10-15
+PAY00002924	SP3200334	2025-11-12	649.60	CHEQUE	SETTLED	2025-11-12
+PAY00002925	SP3200334	2025-12-10	649.60	BACS	SETTLED	2025-12-10
+PAY00002926	SP3200334	2026-01-07	649.60	BACS	SETTLED	2026-01-07
+PAY00002927	SP3200334	2026-02-04	649.60	BACS	SETTLED	2026-02-04
+PAY00002928	SP3200334	2026-03-04	649.60	BACS	SETTLED	2026-03-04
+PAY00002929	SP3200334	2026-04-01	649.60	BACS	SETTLED	2026-04-01
+PAY00002932	SP3200335	2025-10-15	340.60	BACS	SETTLED	2025-10-15
+PAY00002933	SP3200335	2025-11-12	340.60	CHEQUE	SETTLED	2025-11-12
+PAY00002934	SP3200335	2025-12-10	340.60	BACS	SETTLED	2025-12-10
+PAY00002935	SP3200335	2026-01-07	340.60	BACS	SETTLED	2026-01-07
+PAY00002936	SP3200335	2026-02-04	340.60	BACS	SETTLED	2026-02-04
+PAY00002937	SP3200335	2026-03-04	340.60	BACS	SETTLED	2026-03-04
+PAY00002938	SP3200335	2026-04-01	340.60	POST_OFFICE	SETTLED	2026-04-01
+PAY00002941	SP3200336	2025-11-11	439.00	POST_OFFICE	SETTLED	2025-11-11
+PAY00002942	SP3200336	2025-12-09	439.00	BACS	SETTLED	2025-12-09
+PAY00002943	SP3200336	2026-01-06	439.00	POST_OFFICE	SETTLED	2026-01-06
+PAY00002944	SP3200336	2026-02-03	439.00	BACS	SETTLED	2026-02-03
+PAY00002945	SP3200336	2026-03-03	439.00	BACS	SETTLED	2026-03-03
+PAY00002946	SP3200336	2026-03-31	439.00	BACS	SETTLED	2026-03-31
+PAY00002949	SP3200337	2025-11-14	808.96	BACS	SETTLED	2025-11-14
+PAY00002950	SP3200337	2025-12-12	808.96	BACS	SETTLED	2025-12-12
+PAY00002951	SP3200337	2026-01-09	808.96	BACS	SETTLED	2026-01-09
+PAY00002952	SP3200337	2026-02-06	808.96	BACS	SETTLED	2026-02-06
+PAY00002953	SP3200337	2026-03-06	808.96	BACS	SETTLED	2026-03-06
+PAY00002954	SP3200337	2026-04-03	808.96	BACS	SETTLED	2026-04-03
+PAY00002957	SP3200338	2025-08-21	343.20	BACS	SETTLED	2025-08-21
+PAY00002958	SP3200338	2025-09-18	343.20	BACS	SETTLED	2025-09-18
+PAY00002959	SP3200338	2025-10-16	343.20	BACS	SETTLED	2025-10-16
+PAY00002960	SP3200338	2025-11-13	343.20	BACS	SETTLED	2025-11-13
+PAY00002961	SP3200338	2025-12-11	343.20	BACS	SETTLED	2025-12-11
+PAY00002962	SP3200338	2026-01-08	343.20	BACS	SETTLED	2026-01-08
+PAY00002963	SP3200338	2026-02-05	343.20	BACS	SETTLED	2026-02-05
+PAY00002964	SP3200338	2026-03-05	343.20	BACS	SETTLED	2026-03-05
+PAY00002965	SP3200338	2026-04-02	343.20	BACS	SETTLED	2026-04-02
+PAY00002968	SP3200339	2025-10-16	455.04	POST_OFFICE	SETTLED	2025-10-16
+PAY00002969	SP3200339	2025-11-13	455.04	BACS	SETTLED	2025-11-13
+PAY00002970	SP3200339	2025-12-11	455.04	BACS	SETTLED	2025-12-11
+PAY00002971	SP3200339	2026-01-08	455.04	CHEQUE	SETTLED	2026-01-08
+PAY00002972	SP3200339	2026-02-05	455.04	BACS	SETTLED	2026-02-05
+PAY00002973	SP3200339	2026-03-05	455.04	BACS	SETTLED	2026-03-05
+PAY00002974	SP3200339	2026-04-02	455.04	BACS	SETTLED	2026-04-02
+PAY00002977	SP3200340	2026-02-07	94.80	BACS	SETTLED	2026-02-07
+PAY00002978	SP3200340	2026-02-14	94.80	BACS	SETTLED	2026-02-14
+PAY00002979	SP3200340	2026-02-21	94.80	BACS	SETTLED	2026-02-21
+PAY00002980	SP3200340	2026-02-28	94.80	BACS	SETTLED	2026-02-28
+PAY00002981	SP3200340	2026-03-07	94.80	BACS	SETTLED	2026-03-07
+PAY00002982	SP3200340	2026-03-14	94.80	BACS	SETTLED	2026-03-14
+PAY00002983	SP3200340	2026-03-21	94.80	BACS	SETTLED	2026-03-21
+PAY00002984	SP3200340	2026-03-28	94.80	BACS	SETTLED	2026-03-28
+PAY00002985	SP3200340	2026-04-04	94.80	BACS	SETTLED	2026-04-04
+PAY00002988	SP3200341	2025-09-22	439.04	BACS	SETTLED	2025-09-22
+PAY00002989	SP3200341	2025-10-20	439.04	BACS	SETTLED	2025-10-20
+PAY00002990	SP3200341	2025-11-17	439.04	BACS	SETTLED	2025-11-17
+PAY00002991	SP3200341	2025-12-15	439.04	BACS	SETTLED	2025-12-15
+PAY00002992	SP3200341	2026-01-12	439.04	BACS	SETTLED	2026-01-12
+PAY00002993	SP3200341	2026-02-09	439.04	BACS	SETTLED	2026-02-09
+PAY00002994	SP3200341	2026-03-09	439.04	BACS	SETTLED	2026-03-09
+PAY00002997	SP3200342	2025-10-19	284.92	POST_OFFICE	SETTLED	2025-10-19
+PAY00002998	SP3200342	2025-11-16	284.92	POST_OFFICE	SETTLED	2025-11-16
+PAY00002999	SP3200342	2025-12-14	284.92	BACS	SETTLED	2025-12-14
+PAY00003000	SP3200342	2026-01-11	284.92	BACS	SETTLED	2026-01-11
+PAY00003001	SP3200342	2026-02-08	284.92	BACS	SETTLED	2026-02-08
+PAY00003002	SP3200342	2026-03-08	284.92	POST_OFFICE	SETTLED	2026-03-08
+PAY00003003	SP3200342	2026-04-05	284.92	POST_OFFICE	SETTLED	2026-04-05
+PAY00003006	SP3200343	2025-09-18	849.96	BACS	SETTLED	2025-09-18
+PAY00003007	SP3200343	2025-10-16	849.96	BACS	SETTLED	2025-10-16
+PAY00003008	SP3200343	2025-11-13	849.96	BACS	SETTLED	2025-11-13
+PAY00003009	SP3200343	2025-12-11	849.96	BACS	SETTLED	2025-12-11
+PAY00003010	SP3200343	2026-01-08	849.96	BACS	SETTLED	2026-01-08
+PAY00003011	SP3200343	2026-02-05	849.96	BACS	SETTLED	2026-02-05
+PAY00003012	SP3200343	2026-03-05	849.96	POST_OFFICE	SETTLED	2026-03-05
+PAY00003013	SP3200343	2026-04-02	849.96	POST_OFFICE	SETTLED	2026-04-02
+PAY00003016	SP3200344	2026-02-25	88.48	BACS	SETTLED	2026-02-25
+PAY00003017	SP3200344	2026-03-04	88.48	BACS	SETTLED	2026-03-04
+PAY00003018	SP3200344	2026-03-11	88.48	BACS	SETTLED	2026-03-11
+PAY00003019	SP3200344	2026-03-18	88.48	BACS	SETTLED	2026-03-18
+PAY00003020	SP3200344	2026-03-25	88.48	BACS	SETTLED	2026-03-25
+PAY00003021	SP3200344	2026-04-01	88.48	BACS	SETTLED	2026-04-01
+PAY00003024	SP3200345	2025-08-21	884.80	BACS	SETTLED	2025-08-21
+PAY00003025	SP3200345	2025-09-18	884.80	BACS	SETTLED	2025-09-18
+PAY00003026	SP3200345	2025-10-16	884.80	BACS	SETTLED	2025-10-16
+PAY00003027	SP3200345	2025-11-13	884.80	BACS	SETTLED	2025-11-13
+PAY00003028	SP3200345	2025-12-11	884.80	POST_OFFICE	SETTLED	2025-12-11
+PAY00003029	SP3200345	2026-01-08	884.80	BACS	SETTLED	2026-01-08
+PAY00003030	SP3200345	2026-02-05	884.80	BACS	SETTLED	2026-02-05
+PAY00003031	SP3200345	2026-03-05	884.80	BACS	SETTLED	2026-03-05
+PAY00003032	SP3200345	2026-04-02	884.80	BACS	SETTLED	2026-04-02
+PAY00003035	SP3200346	2026-02-24	183.28	BACS	SETTLED	2026-02-24
+PAY00003036	SP3200346	2026-03-03	183.28	BACS	SETTLED	2026-03-03
+PAY00003037	SP3200346	2026-03-10	183.28	BACS	SETTLED	2026-03-10
+PAY00003038	SP3200346	2026-03-17	183.28	BACS	SETTLED	2026-03-17
+PAY00003039	SP3200346	2026-03-24	183.28	BACS	SETTLED	2026-03-24
+PAY00003040	SP3200346	2026-03-31	183.28	BACS	SETTLED	2026-03-31
+PAY00003043	SP3200347	2026-02-09	120.08	POST_OFFICE	SETTLED	2026-02-09
+PAY00003044	SP3200347	2026-02-16	120.08	BACS	SETTLED	2026-02-16
+PAY00003045	SP3200347	2026-02-23	120.08	BACS	SETTLED	2026-02-23
+PAY00003046	SP3200347	2026-03-02	120.08	BACS	SETTLED	2026-03-02
+PAY00003047	SP3200347	2026-03-09	120.08	BACS	SETTLED	2026-03-09
+PAY00003048	SP3200347	2026-03-16	120.08	BACS	SETTLED	2026-03-16
+PAY00003049	SP3200347	2026-03-23	120.08	BACS	SETTLED	2026-03-23
+PAY00003050	SP3200347	2026-03-30	120.08	BACS	SETTLED	2026-03-30
+PAY00003053	SP3200348	2025-10-19	859.52	POST_OFFICE	SETTLED	2025-10-19
+PAY00003054	SP3200348	2025-11-16	859.52	BACS	SETTLED	2025-11-16
+PAY00003055	SP3200348	2025-12-14	859.52	BACS	SETTLED	2025-12-14
+PAY00003056	SP3200348	2026-01-11	859.52	BACS	SETTLED	2026-01-11
+PAY00003057	SP3200348	2026-02-08	859.52	BACS	SETTLED	2026-02-08
+PAY00003058	SP3200348	2026-03-08	859.52	BACS	SETTLED	2026-03-08
+PAY00003059	SP3200348	2026-04-05	859.52	POST_OFFICE	SETTLED	2026-04-05
+PAY00003062	SP3200349	2025-09-17	632.00	BACS	SETTLED	2025-09-17
+PAY00003063	SP3200349	2025-10-15	632.00	BACS	SETTLED	2025-10-15
+PAY00003064	SP3200349	2025-11-12	632.00	BACS	SETTLED	2025-11-12
+PAY00003065	SP3200349	2025-12-10	632.00	BACS	SETTLED	2025-12-10
+PAY00003066	SP3200349	2026-01-07	632.00	BACS	SETTLED	2026-01-07
+PAY00003067	SP3200349	2026-02-04	632.00	BACS	SETTLED	2026-02-04
+PAY00003068	SP3200349	2026-03-04	632.00	BACS	SETTLED	2026-03-04
+PAY00003069	SP3200349	2026-04-01	632.00	BACS	SETTLED	2026-04-01
+PAY00003072	SP3200350	2025-04-01	2464.80	BACS	SETTLED	2025-04-01
+PAY00003073	SP3200350	2025-07-01	2464.80	BACS	SETTLED	2025-07-01
+PAY00003074	SP3200350	2025-09-30	2464.80	BACS	SETTLED	2025-09-30
+PAY00003075	SP3200350	2025-12-30	2464.80	BACS	SETTLED	2025-12-30
+PAY00003076	SP3200350	2026-03-31	2464.80	BACS	SETTLED	2026-03-31
+PAY00003079	SP3200351	2025-10-19	278.08	BACS	SETTLED	2025-10-19
+PAY00003080	SP3200351	2025-11-16	278.08	BACS	SETTLED	2025-11-16
+PAY00003081	SP3200351	2025-12-14	278.08	CHEQUE	SETTLED	2025-12-14
+PAY00003082	SP3200351	2026-01-11	278.08	POST_OFFICE	SETTLED	2026-01-11
+PAY00003083	SP3200351	2026-02-08	278.08	BACS	SETTLED	2026-02-08
+PAY00003084	SP3200351	2026-03-08	278.08	POST_OFFICE	SETTLED	2026-03-08
+PAY00003085	SP3200351	2026-04-05	278.08	BACS	SETTLED	2026-04-05
+PAY00003088	SP3200352	2025-12-10	480.32	BACS	SETTLED	2025-12-10
+PAY00003089	SP3200352	2026-01-07	480.32	BACS	SETTLED	2026-01-07
+PAY00003090	SP3200352	2026-02-04	480.32	BACS	SETTLED	2026-02-04
+PAY00003091	SP3200352	2026-03-04	480.32	BACS	SETTLED	2026-03-04
+PAY00003092	SP3200352	2026-04-01	480.32	BACS	SETTLED	2026-04-01
+PAY00003095	SP3200353	2025-11-17	353.92	BACS	SETTLED	2025-11-17
+PAY00003096	SP3200353	2025-12-15	353.92	CHEQUE	SETTLED	2025-12-15
+PAY00003097	SP3200353	2026-01-12	353.92	BACS	SETTLED	2026-01-12
+PAY00003098	SP3200353	2026-02-09	353.92	BACS	SETTLED	2026-02-09
+PAY00003099	SP3200353	2026-03-09	353.92	BACS	SETTLED	2026-03-09
+PAY00003102	SP3200354	2024-10-03	2629.12	BACS	SETTLED	2024-10-03
+PAY00003103	SP3200354	2025-01-02	2629.12	BACS	SETTLED	2025-01-02
+PAY00003104	SP3200354	2025-04-03	2629.12	BACS	SETTLED	2025-04-03
+PAY00003105	SP3200354	2025-07-03	2629.12	BACS	SETTLED	2025-07-03
+PAY00003106	SP3200354	2025-10-02	2629.12	POST_OFFICE	SETTLED	2025-10-02
+PAY00003107	SP3200354	2026-01-01	2629.12	BACS	SETTLED	2026-01-01
+PAY00003108	SP3200354	2026-04-02	2629.12	BACS	SETTLED	2026-04-02
+PAY00003111	SP3200355	2025-08-21	884.80	BACS	SETTLED	2025-08-21
+PAY00003112	SP3200355	2025-09-18	884.80	POST_OFFICE	SETTLED	2025-09-18
+PAY00003113	SP3200355	2025-10-16	884.80	BACS	SETTLED	2025-10-16
+PAY00003114	SP3200355	2025-11-13	884.80	BACS	SETTLED	2025-11-13
+PAY00003115	SP3200355	2025-12-11	884.80	BACS	SETTLED	2025-12-11
+PAY00003116	SP3200355	2026-01-08	884.80	BACS	SETTLED	2026-01-08
+PAY00003117	SP3200355	2026-02-05	884.80	BACS	SETTLED	2026-02-05
+PAY00003118	SP3200355	2026-03-05	884.80	BACS	SETTLED	2026-03-05
+PAY00003119	SP3200355	2026-04-02	884.80	BACS	SETTLED	2026-04-02
+PAY00003122	SP3200356	2025-09-22	808.96	BACS	SETTLED	2025-09-22
+PAY00003123	SP3200356	2025-10-20	808.96	BACS	SETTLED	2025-10-20
+PAY00003124	SP3200356	2025-11-17	808.96	CHEQUE	SETTLED	2025-11-17
+PAY00003125	SP3200356	2025-12-15	808.96	BACS	SETTLED	2025-12-15
+PAY00003126	SP3200356	2026-01-12	808.96	BACS	SETTLED	2026-01-12
+PAY00003127	SP3200356	2026-02-09	808.96	CHEQUE	SETTLED	2026-02-09
+PAY00003128	SP3200356	2026-03-09	808.96	BACS	SETTLED	2026-03-09
+PAY00003131	SP3200357	2025-10-15	707.60	BACS	SETTLED	2025-10-15
+PAY00003132	SP3200357	2025-11-12	707.60	BACS	SETTLED	2025-11-12
+PAY00003133	SP3200357	2025-12-10	707.60	BACS	SETTLED	2025-12-10
+PAY00003134	SP3200357	2026-01-07	707.60	BACS	SETTLED	2026-01-07
+PAY00003135	SP3200357	2026-02-04	707.60	POST_OFFICE	SETTLED	2026-02-04
+PAY00003136	SP3200357	2026-03-04	707.60	BACS	SETTLED	2026-03-04
+PAY00003137	SP3200357	2026-04-01	707.60	BACS	SETTLED	2026-04-01
+PAY00003140	SP3200358	2025-11-15	556.16	BACS	SETTLED	2025-11-15
+PAY00003141	SP3200358	2025-12-13	556.16	BACS	SETTLED	2025-12-13
+PAY00003142	SP3200358	2026-01-10	556.16	BACS	SETTLED	2026-01-10
+PAY00003143	SP3200358	2026-02-07	556.16	BACS	SETTLED	2026-02-07
+PAY00003144	SP3200358	2026-03-07	556.16	BACS	SETTLED	2026-03-07
+PAY00003145	SP3200358	2026-04-04	556.16	BACS	SETTLED	2026-04-04
+PAY00003148	SP3200359	2024-10-03	1561.04	BACS	SETTLED	2024-10-03
+PAY00003149	SP3200359	2025-01-02	1561.04	CHEQUE	SETTLED	2025-01-02
+PAY00003150	SP3200359	2025-04-03	1561.04	BACS	SETTLED	2025-04-03
+PAY00003151	SP3200359	2025-07-03	1561.04	BACS	SETTLED	2025-07-03
+PAY00003152	SP3200359	2025-10-02	1561.04	BACS	SETTLED	2025-10-02
+PAY00003153	SP3200359	2026-01-01	1561.04	BACS	SETTLED	2026-01-01
+PAY00003154	SP3200359	2026-04-02	1561.04	BACS	SETTLED	2026-04-02
+PAY00003157	SP3200360	2025-10-18	455.04	BACS	SETTLED	2025-10-18
+PAY00003158	SP3200360	2025-11-15	455.04	BACS	SETTLED	2025-11-15
+PAY00003159	SP3200360	2025-12-13	455.04	BACS	SETTLED	2025-12-13
+PAY00003160	SP3200360	2026-01-10	455.04	BACS	SETTLED	2026-01-10
+PAY00003161	SP3200360	2026-02-07	455.04	BACS	SETTLED	2026-02-07
+PAY00003162	SP3200360	2026-03-07	455.04	BACS	SETTLED	2026-03-07
+PAY00003163	SP3200360	2026-04-04	455.04	BACS	SETTLED	2026-04-04
+PAY00003166	SP3200361	2025-11-16	747.12	BACS	SETTLED	2025-11-16
+PAY00003167	SP3200361	2025-12-14	747.12	BACS	SETTLED	2025-12-14
+PAY00003168	SP3200361	2026-01-11	747.12	BACS	SETTLED	2026-01-11
+PAY00003169	SP3200361	2026-02-08	747.12	BACS	SETTLED	2026-02-08
+PAY00003170	SP3200361	2026-03-08	747.12	BACS	SETTLED	2026-03-08
+PAY00003171	SP3200361	2026-04-05	747.12	BACS	SETTLED	2026-04-05
+PAY00003174	SP3200362	2026-02-05	133.41	BACS	SETTLED	2026-02-05
+PAY00003175	SP3200362	2026-02-12	133.41	BACS	SETTLED	2026-02-12
+PAY00003176	SP3200362	2026-02-19	133.41	BACS	SETTLED	2026-02-19
+PAY00003177	SP3200362	2026-02-26	133.41	POST_OFFICE	SETTLED	2026-02-26
+PAY00003178	SP3200362	2026-03-05	133.41	BACS	SETTLED	2026-03-05
+PAY00003179	SP3200362	2026-03-12	133.41	BACS	SETTLED	2026-03-12
+PAY00003180	SP3200362	2026-03-19	133.41	CHEQUE	SETTLED	2026-03-19
+PAY00003181	SP3200362	2026-03-26	133.41	BACS	SETTLED	2026-03-26
+PAY00003182	SP3200362	2026-04-02	133.41	BACS	SETTLED	2026-04-02
+PAY00003185	SP3200363	2025-10-17	653.52	BACS	SETTLED	2025-10-17
+PAY00003186	SP3200363	2025-11-14	653.52	BACS	SETTLED	2025-11-14
+PAY00003187	SP3200363	2025-12-12	653.52	BACS	SETTLED	2025-12-12
+PAY00003188	SP3200363	2026-01-09	653.52	BACS	SETTLED	2026-01-09
+PAY00003189	SP3200363	2026-02-06	653.52	BACS	SETTLED	2026-02-06
+PAY00003190	SP3200363	2026-03-06	653.52	CHEQUE	SETTLED	2026-03-06
+PAY00003191	SP3200363	2026-04-03	653.52	BACS	SETTLED	2026-04-03
+PAY00003194	SP3200364	2026-02-22	75.84	BACS	SETTLED	2026-02-22
+PAY00003195	SP3200364	2026-03-01	75.84	BACS	SETTLED	2026-03-01
+PAY00003196	SP3200364	2026-03-08	75.84	BACS	SETTLED	2026-03-08
+PAY00003197	SP3200364	2026-03-15	75.84	BACS	SETTLED	2026-03-15
+PAY00003198	SP3200364	2026-03-22	75.84	BACS	SETTLED	2026-03-22
+PAY00003199	SP3200364	2026-03-29	75.84	BACS	SETTLED	2026-03-29
+PAY00003200	SP3200364	2026-04-05	75.84	BACS	SETTLED	2026-04-05
+PAY00003203	SP3200365	2026-02-14	203.34	BACS	SETTLED	2026-02-14
+PAY00003204	SP3200365	2026-02-21	203.34	POST_OFFICE	SETTLED	2026-02-21
+PAY00003205	SP3200365	2026-02-28	203.34	BACS	SETTLED	2026-02-28
+PAY00003206	SP3200365	2026-03-07	203.34	BACS	SETTLED	2026-03-07
+PAY00003207	SP3200365	2026-03-14	203.34	BACS	SETTLED	2026-03-14
+PAY00003208	SP3200365	2026-03-21	203.34	BACS	SETTLED	2026-03-21
+PAY00003209	SP3200365	2026-03-28	203.34	POST_OFFICE	SETTLED	2026-03-28
+PAY00003210	SP3200365	2026-04-04	203.34	POST_OFFICE	SETTLED	2026-04-04
+PAY00003213	SP3200366	2026-03-03	202.24	BACS	SETTLED	2026-03-03
+PAY00003214	SP3200366	2026-03-10	202.24	BACS	SETTLED	2026-03-10
+PAY00003215	SP3200366	2026-03-17	202.24	BACS	SETTLED	2026-03-17
+PAY00003216	SP3200366	2026-03-24	202.24	BACS	SETTLED	2026-03-24
+PAY00003217	SP3200366	2026-03-31	202.24	BACS	SETTLED	2026-03-31
+PAY00003220	SP3200367	2024-10-06	1807.52	BACS	SETTLED	2024-10-06
+PAY00003221	SP3200367	2025-01-05	1807.52	BACS	SETTLED	2025-01-05
+PAY00003222	SP3200367	2025-04-06	1807.52	BACS	SETTLED	2025-04-06
+PAY00003223	SP3200367	2025-07-06	1807.52	BACS	SETTLED	2025-07-06
+PAY00003224	SP3200367	2025-10-05	1807.52	BACS	SETTLED	2025-10-05
+PAY00003225	SP3200367	2026-01-04	1807.52	POST_OFFICE	SETTLED	2026-01-04
+PAY00003226	SP3200367	2026-04-05	1807.52	BACS	SETTLED	2026-04-05
+PAY00003229	SP3200368	2025-09-17	606.72	BACS	SETTLED	2025-09-17
+PAY00003230	SP3200368	2025-10-15	606.72	BACS	SETTLED	2025-10-15
+PAY00003231	SP3200368	2025-11-12	606.72	BACS	SETTLED	2025-11-12
+PAY00003232	SP3200368	2025-12-10	606.72	CHEQUE	SETTLED	2025-12-10
+PAY00003233	SP3200368	2026-01-07	606.72	BACS	SETTLED	2026-01-07
+PAY00003234	SP3200368	2026-02-04	606.72	BACS	SETTLED	2026-02-04
+PAY00003235	SP3200368	2026-03-04	606.72	POST_OFFICE	SETTLED	2026-03-04
+PAY00003236	SP3200368	2026-04-01	606.72	POST_OFFICE	SETTLED	2026-04-01
+PAY00003239	SP3200369	2025-10-18	732.88	BACS	SETTLED	2025-10-18
+PAY00003240	SP3200369	2025-11-15	732.88	BACS	SETTLED	2025-11-15
+PAY00003241	SP3200369	2025-12-13	732.88	BACS	SETTLED	2025-12-13
+PAY00003242	SP3200369	2026-01-10	732.88	BACS	SETTLED	2026-01-10
+PAY00003243	SP3200369	2026-02-07	732.88	BACS	SETTLED	2026-02-07
+PAY00003244	SP3200369	2026-03-07	732.88	POST_OFFICE	SETTLED	2026-03-07
+PAY00003245	SP3200369	2026-04-04	732.88	BACS	SETTLED	2026-04-04
+PAY00003248	SP3200370	2025-08-22	252.80	BACS	SETTLED	2025-08-22
+PAY00003249	SP3200370	2025-09-19	252.80	CHEQUE	SETTLED	2025-09-19
+PAY00003250	SP3200370	2025-10-17	252.80	BACS	SETTLED	2025-10-17
+PAY00003251	SP3200370	2025-11-14	252.80	BACS	SETTLED	2025-11-14
+PAY00003252	SP3200370	2025-12-12	252.80	BACS	SETTLED	2025-12-12
+PAY00003253	SP3200370	2026-01-09	252.80	BACS	SETTLED	2026-01-09
+PAY00003254	SP3200370	2026-02-06	252.80	BACS	SETTLED	2026-02-06
+PAY00003255	SP3200370	2026-03-06	252.80	BACS	SETTLED	2026-03-06
+PAY00003256	SP3200370	2026-04-03	252.80	BACS	SETTLED	2026-04-03
+PAY00003259	SP3200371	2025-11-17	733.12	BACS	SETTLED	2025-11-17
+PAY00003260	SP3200371	2025-12-15	733.12	BACS	SETTLED	2025-12-15
+PAY00003261	SP3200371	2026-01-12	733.12	BACS	SETTLED	2026-01-12
+PAY00003262	SP3200371	2026-02-09	733.12	BACS	SETTLED	2026-02-09
+PAY00003263	SP3200371	2026-03-09	733.12	BACS	SETTLED	2026-03-09
+PAY00003266	SP3200372	2025-11-17	707.84	BACS	SETTLED	2025-11-17
+PAY00003267	SP3200372	2025-12-15	707.84	BACS	SETTLED	2025-12-15
+PAY00003268	SP3200372	2026-01-12	707.84	BACS	SETTLED	2026-01-12
+PAY00003269	SP3200372	2026-02-09	707.84	BACS	SETTLED	2026-02-09
+PAY00003270	SP3200372	2026-03-09	707.84	BACS	SETTLED	2026-03-09
+PAY00003273	SP3200373	2026-02-19	63.20	BACS	SETTLED	2026-02-19
+PAY00003274	SP3200373	2026-02-26	63.20	POST_OFFICE	SETTLED	2026-02-26
+PAY00003275	SP3200373	2026-03-05	63.20	BACS	SETTLED	2026-03-05
+PAY00003276	SP3200373	2026-03-12	63.20	BACS	SETTLED	2026-03-12
+PAY00003277	SP3200373	2026-03-19	63.20	BACS	SETTLED	2026-03-19
+PAY00003278	SP3200373	2026-03-26	63.20	BACS	SETTLED	2026-03-26
+PAY00003279	SP3200373	2026-04-02	63.20	POST_OFFICE	SETTLED	2026-04-02
+PAY00003282	SP3200374	2026-02-16	202.24	BACS	SETTLED	2026-02-16
+PAY00003283	SP3200374	2026-02-23	202.24	BACS	SETTLED	2026-02-23
+PAY00003284	SP3200374	2026-03-02	202.24	BACS	SETTLED	2026-03-02
+PAY00003285	SP3200374	2026-03-09	202.24	BACS	SETTLED	2026-03-09
+PAY00003286	SP3200374	2026-03-16	202.24	POST_OFFICE	SETTLED	2026-03-16
+PAY00003287	SP3200374	2026-03-23	202.24	BACS	SETTLED	2026-03-23
+PAY00003288	SP3200374	2026-03-30	202.24	BACS	SETTLED	2026-03-30
+PAY00003291	SP3200375	2025-09-20	678.88	BACS	SETTLED	2025-09-20
+PAY00003292	SP3200375	2025-10-18	678.88	BACS	SETTLED	2025-10-18
+PAY00003293	SP3200375	2025-11-15	678.88	BACS	SETTLED	2025-11-15
+PAY00003294	SP3200375	2025-12-13	678.88	POST_OFFICE	SETTLED	2025-12-13
+PAY00003295	SP3200375	2026-01-10	678.88	BACS	SETTLED	2026-01-10
+PAY00003296	SP3200375	2026-02-07	678.88	CHEQUE	SETTLED	2026-02-07
+PAY00003297	SP3200375	2026-03-07	678.88	POST_OFFICE	SETTLED	2026-03-07
+PAY00003298	SP3200375	2026-04-04	678.88	BACS	SETTLED	2026-04-04
+PAY00003301	SP3200376	2026-02-10	69.52	BACS	SETTLED	2026-02-10
+PAY00003302	SP3200376	2026-02-17	69.52	BACS	SETTLED	2026-02-17
+PAY00003303	SP3200376	2026-02-24	69.52	BACS	SETTLED	2026-02-24
+PAY00003304	SP3200376	2026-03-03	69.52	POST_OFFICE	SETTLED	2026-03-03
+PAY00003305	SP3200376	2026-03-10	69.52	BACS	SETTLED	2026-03-10
+PAY00003306	SP3200376	2026-03-17	69.52	BACS	SETTLED	2026-03-17
+PAY00003307	SP3200376	2026-03-24	69.52	BACS	SETTLED	2026-03-24
+PAY00003308	SP3200376	2026-03-31	69.52	BACS	SETTLED	2026-03-31
+PAY00003311	SP3200377	2025-08-25	632.00	BACS	SETTLED	2025-08-25
+PAY00003312	SP3200377	2025-09-22	632.00	BACS	SETTLED	2025-09-22
+PAY00003313	SP3200377	2025-10-20	632.00	POST_OFFICE	SETTLED	2025-10-20
+PAY00003314	SP3200377	2025-11-17	632.00	BACS	SETTLED	2025-11-17
+PAY00003315	SP3200377	2025-12-15	632.00	BACS	SETTLED	2025-12-15
+PAY00003316	SP3200377	2026-01-12	632.00	BACS	SETTLED	2026-01-12
+PAY00003317	SP3200377	2026-02-09	632.00	BACS	SETTLED	2026-02-09
+PAY00003318	SP3200377	2026-03-09	632.00	BACS	SETTLED	2026-03-09
+PAY00003321	SP3200378	2026-02-20	195.92	POST_OFFICE	SETTLED	2026-02-20
+PAY00003322	SP3200378	2026-02-27	195.92	POST_OFFICE	SETTLED	2026-02-27
+PAY00003323	SP3200378	2026-03-06	195.92	BACS	SETTLED	2026-03-06
+PAY00003324	SP3200378	2026-03-13	195.92	BACS	SETTLED	2026-03-13
+PAY00003325	SP3200378	2026-03-20	195.92	BACS	SETTLED	2026-03-20
+PAY00003326	SP3200378	2026-03-27	195.92	BACS	SETTLED	2026-03-27
+PAY00003327	SP3200378	2026-04-03	195.92	BACS	SETTLED	2026-04-03
+PAY00003330	SP3200379	2026-02-28	113.76	POST_OFFICE	SETTLED	2026-02-28
+PAY00003331	SP3200379	2026-03-07	113.76	POST_OFFICE	SETTLED	2026-03-07
+PAY00003332	SP3200379	2026-03-14	113.76	BACS	SETTLED	2026-03-14
+PAY00003333	SP3200379	2026-03-21	113.76	BACS	SETTLED	2026-03-21
+PAY00003334	SP3200379	2026-03-28	113.76	BACS	SETTLED	2026-03-28
+PAY00003335	SP3200379	2026-04-04	113.76	BACS	SETTLED	2026-04-04
+PAY00003338	SP3200380	2025-10-19	706.08	BACS	SETTLED	2025-10-19
+PAY00003339	SP3200380	2025-11-16	706.08	BACS	SETTLED	2025-11-16
+PAY00003340	SP3200380	2025-12-14	706.08	BACS	SETTLED	2025-12-14
+PAY00003341	SP3200380	2026-01-11	706.08	BACS	SETTLED	2026-01-11
+PAY00003342	SP3200380	2026-02-08	706.08	BACS	SETTLED	2026-02-08
+PAY00003343	SP3200380	2026-03-08	706.08	BACS	SETTLED	2026-03-08
+PAY00003344	SP3200380	2026-04-05	706.08	BACS	SETTLED	2026-04-05
+PAY00003347	SP3200381	2025-10-16	252.80	BACS	SETTLED	2025-10-16
+PAY00003348	SP3200381	2025-11-13	252.80	CHEQUE	SETTLED	2025-11-13
+PAY00003349	SP3200381	2025-12-11	252.80	BACS	SETTLED	2025-12-11
+PAY00003350	SP3200381	2026-01-08	252.80	POST_OFFICE	SETTLED	2026-01-08
+PAY00003351	SP3200381	2026-02-05	252.80	BACS	SETTLED	2026-02-05
+PAY00003352	SP3200381	2026-03-05	252.80	POST_OFFICE	SETTLED	2026-03-05
+PAY00003353	SP3200381	2026-04-02	252.80	BACS	SETTLED	2026-04-02
+PAY00003356	SP3200382	2025-11-15	380.56	CHEQUE	SETTLED	2025-11-15
+PAY00003357	SP3200382	2025-12-13	380.56	BACS	SETTLED	2025-12-13
+PAY00003358	SP3200382	2026-01-10	380.56	POST_OFFICE	SETTLED	2026-01-10
+PAY00003359	SP3200382	2026-02-07	380.56	BACS	SETTLED	2026-02-07
+PAY00003360	SP3200382	2026-03-07	380.56	CHEQUE	SETTLED	2026-03-07
+PAY00003361	SP3200382	2026-04-04	380.56	BACS	SETTLED	2026-04-04
+PAY00003364	SP3200383	2026-02-06	94.80	BACS	SETTLED	2026-02-06
+PAY00003365	SP3200383	2026-02-13	94.80	BACS	SETTLED	2026-02-13
+PAY00003366	SP3200383	2026-02-20	94.80	BACS	SETTLED	2026-02-20
+PAY00003367	SP3200383	2026-02-27	94.80	BACS	SETTLED	2026-02-27
+PAY00003368	SP3200383	2026-03-06	94.80	BACS	SETTLED	2026-03-06
+PAY00003369	SP3200383	2026-03-13	94.80	BACS	SETTLED	2026-03-13
+PAY00003370	SP3200383	2026-03-20	94.80	BACS	SETTLED	2026-03-20
+PAY00003371	SP3200383	2026-03-27	94.80	BACS	SETTLED	2026-03-27
+PAY00003372	SP3200383	2026-04-03	94.80	BACS	SETTLED	2026-04-03
+PAY00003375	SP3200384	2026-02-06	137.57	BACS	SETTLED	2026-02-06
+PAY00003376	SP3200384	2026-02-13	137.57	BACS	SETTLED	2026-02-13
+PAY00003377	SP3200384	2026-02-20	137.57	BACS	SETTLED	2026-02-20
+PAY00003378	SP3200384	2026-02-27	137.57	BACS	SETTLED	2026-02-27
+PAY00003379	SP3200384	2026-03-06	137.57	BACS	SETTLED	2026-03-06
+PAY00003380	SP3200384	2026-03-13	137.57	BACS	SETTLED	2026-03-13
+PAY00003381	SP3200384	2026-03-20	137.57	BACS	SETTLED	2026-03-20
+PAY00003382	SP3200384	2026-03-27	137.57	BACS	SETTLED	2026-03-27
+PAY00003383	SP3200384	2026-04-03	137.57	BACS	SETTLED	2026-04-03
+PAY00003386	SP3200385	2026-02-10	221.20	BACS	SETTLED	2026-02-10
+PAY00003387	SP3200385	2026-02-17	221.20	BACS	SETTLED	2026-02-17
+PAY00003388	SP3200385	2026-02-24	221.20	BACS	SETTLED	2026-02-24
+PAY00003389	SP3200385	2026-03-03	221.20	BACS	SETTLED	2026-03-03
+PAY00003390	SP3200385	2026-03-10	221.20	BACS	SETTLED	2026-03-10
+PAY00003391	SP3200385	2026-03-17	221.20	BACS	SETTLED	2026-03-17
+PAY00003392	SP3200385	2026-03-24	221.20	POST_OFFICE	SETTLED	2026-03-24
+PAY00003393	SP3200385	2026-03-31	221.20	BACS	SETTLED	2026-03-31
+PAY00003396	SP3200386	2025-10-15	278.08	BACS	SETTLED	2025-10-15
+PAY00003397	SP3200386	2025-11-12	278.08	BACS	SETTLED	2025-11-12
+PAY00003398	SP3200386	2025-12-10	278.08	BACS	SETTLED	2025-12-10
+PAY00003399	SP3200386	2026-01-07	278.08	BACS	SETTLED	2026-01-07
+PAY00003400	SP3200386	2026-02-04	278.08	BACS	SETTLED	2026-02-04
+PAY00003401	SP3200386	2026-03-04	278.08	BACS	SETTLED	2026-03-04
+PAY00003402	SP3200386	2026-04-01	278.08	BACS	SETTLED	2026-04-01
+PAY00003405	SP3200387	2026-02-11	101.22	BACS	SETTLED	2026-02-11
+PAY00003406	SP3200387	2026-02-18	101.22	BACS	SETTLED	2026-02-18
+PAY00003407	SP3200387	2026-02-25	101.22	BACS	SETTLED	2026-02-25
+PAY00003408	SP3200387	2026-03-04	101.22	BACS	SETTLED	2026-03-04
+PAY00003409	SP3200387	2026-03-11	101.22	BACS	SETTLED	2026-03-11
+PAY00003410	SP3200387	2026-03-18	101.22	BACS	SETTLED	2026-03-18
+PAY00003411	SP3200387	2026-03-25	101.22	BACS	SETTLED	2026-03-25
+PAY00003412	SP3200387	2026-04-01	101.22	BACS	SETTLED	2026-04-01
+PAY00003415	SP3200388	2025-12-15	783.68	BACS	SETTLED	2025-12-15
+PAY00003416	SP3200388	2026-01-12	783.68	BACS	SETTLED	2026-01-12
+PAY00003417	SP3200388	2026-02-09	783.68	BACS	SETTLED	2026-02-09
+PAY00003418	SP3200388	2026-03-09	783.68	BACS	SETTLED	2026-03-09
+PAY00003421	SP3200389	2026-02-07	69.52	BACS	SETTLED	2026-02-07
+PAY00003422	SP3200389	2026-02-14	69.52	BACS	SETTLED	2026-02-14
+PAY00003423	SP3200389	2026-02-21	69.52	BACS	SETTLED	2026-02-21
+PAY00003424	SP3200389	2026-02-28	69.52	POST_OFFICE	SETTLED	2026-02-28
+PAY00003425	SP3200389	2026-03-07	69.52	BACS	SETTLED	2026-03-07
+PAY00003426	SP3200389	2026-03-14	69.52	BACS	SETTLED	2026-03-14
+PAY00003427	SP3200389	2026-03-21	69.52	BACS	SETTLED	2026-03-21
+PAY00003428	SP3200389	2026-03-28	69.52	BACS	SETTLED	2026-03-28
+PAY00003429	SP3200389	2026-04-04	69.52	BACS	SETTLED	2026-04-04
+PAY00003432	SP3200390	2025-11-16	639.80	BACS	SETTLED	2025-11-16
+PAY00003433	SP3200390	2025-12-14	639.80	POST_OFFICE	SETTLED	2025-12-14
+PAY00003434	SP3200390	2026-01-11	639.80	BACS	SETTLED	2026-01-11
+PAY00003435	SP3200390	2026-02-08	639.80	BACS	SETTLED	2026-02-08
+PAY00003436	SP3200390	2026-03-08	639.80	BACS	SETTLED	2026-03-08
+PAY00003437	SP3200390	2026-04-05	639.80	BACS	SETTLED	2026-04-05
+PAY00003440	SP3200391	2025-11-15	480.32	BACS	SETTLED	2025-11-15
+PAY00003441	SP3200391	2025-12-13	480.32	BACS	SETTLED	2025-12-13
+PAY00003442	SP3200391	2026-01-10	480.32	POST_OFFICE	SETTLED	2026-01-10
+PAY00003443	SP3200391	2026-02-07	480.32	BACS	SETTLED	2026-02-07
+PAY00003444	SP3200391	2026-03-07	480.32	BACS	SETTLED	2026-03-07
+PAY00003445	SP3200391	2026-04-04	480.32	BACS	SETTLED	2026-04-04
+PAY00003448	SP3200392	2025-11-11	253.32	BACS	SETTLED	2025-11-11
+PAY00003449	SP3200392	2025-12-09	253.32	BACS	SETTLED	2025-12-09
+PAY00003450	SP3200392	2026-01-06	253.32	BACS	SETTLED	2026-01-06
+PAY00003451	SP3200392	2026-02-03	253.32	BACS	SETTLED	2026-02-03
+PAY00003452	SP3200392	2026-03-03	253.32	BACS	SETTLED	2026-03-03
+PAY00003453	SP3200392	2026-03-31	253.32	CHEQUE	SETTLED	2026-03-31
+PAY00003456	SP3200393	2025-10-18	783.68	CHEQUE	SETTLED	2025-10-18
+PAY00003457	SP3200393	2025-11-15	783.68	BACS	SETTLED	2025-11-15
+PAY00003458	SP3200393	2025-12-13	783.68	BACS	SETTLED	2025-12-13
+PAY00003459	SP3200393	2026-01-10	783.68	BACS	SETTLED	2026-01-10
+PAY00003460	SP3200393	2026-02-07	783.68	BACS	SETTLED	2026-02-07
+PAY00003461	SP3200393	2026-03-07	783.68	BACS	SETTLED	2026-03-07
+PAY00003462	SP3200393	2026-04-04	783.68	BACS	SETTLED	2026-04-04
+PAY00003465	SP3200394	2025-11-11	427.20	POST_OFFICE	SETTLED	2025-11-11
+PAY00003466	SP3200394	2025-12-09	427.20	BACS	SETTLED	2025-12-09
+PAY00003467	SP3200394	2026-01-06	427.20	BACS	SETTLED	2026-01-06
+PAY00003468	SP3200394	2026-02-03	427.20	CHEQUE	SETTLED	2026-02-03
+PAY00003469	SP3200394	2026-03-03	427.20	BACS	SETTLED	2026-03-03
+PAY00003470	SP3200394	2026-03-31	427.20	BACS	SETTLED	2026-03-31
+PAY00003473	SP3200395	2025-11-17	464.52	BACS	SETTLED	2025-11-17
+PAY00003474	SP3200395	2025-12-15	464.52	BACS	SETTLED	2025-12-15
+PAY00003475	SP3200395	2026-01-12	464.52	BACS	SETTLED	2026-01-12
+PAY00003476	SP3200395	2026-02-09	464.52	BACS	SETTLED	2026-02-09
+PAY00003477	SP3200395	2026-03-09	464.52	BACS	SETTLED	2026-03-09
+PAY00003480	SP3200396	2024-07-07	1003.34	BACS	SETTLED	2024-07-07
+PAY00003481	SP3200396	2024-10-06	1003.34	BACS	SETTLED	2024-10-06
+PAY00003482	SP3200396	2025-01-05	1003.34	BACS	SETTLED	2025-01-05
+PAY00003483	SP3200396	2025-04-06	1003.34	BACS	SETTLED	2025-04-06
+PAY00003484	SP3200396	2025-07-06	1003.34	BACS	SETTLED	2025-07-06
+PAY00003485	SP3200396	2025-10-05	1003.34	BACS	SETTLED	2025-10-05
+PAY00003486	SP3200396	2026-01-04	1003.34	BACS	SETTLED	2026-01-04
+PAY00003487	SP3200396	2026-04-05	1003.34	BACS	SETTLED	2026-04-05
+PAY00003490	SP3200397	2026-02-04	164.32	BACS	SETTLED	2026-02-04
+PAY00003491	SP3200397	2026-02-11	164.32	BACS	SETTLED	2026-02-11
+PAY00003492	SP3200397	2026-02-18	164.32	POST_OFFICE	SETTLED	2026-02-18
+PAY00003493	SP3200397	2026-02-25	164.32	BACS	SETTLED	2026-02-25
+PAY00003494	SP3200397	2026-03-04	164.32	BACS	SETTLED	2026-03-04
+PAY00003495	SP3200397	2026-03-11	164.32	BACS	SETTLED	2026-03-11
+PAY00003496	SP3200397	2026-03-18	164.32	BACS	SETTLED	2026-03-18
+PAY00003497	SP3200397	2026-03-25	164.32	BACS	SETTLED	2026-03-25
+PAY00003498	SP3200397	2026-04-01	164.32	POST_OFFICE	SETTLED	2026-04-01
+PAY00003501	SP3200398	2026-02-21	158.00	BACS	SETTLED	2026-02-21
+PAY00003502	SP3200398	2026-02-28	158.00	BACS	SETTLED	2026-02-28
+PAY00003503	SP3200398	2026-03-07	158.00	BACS	SETTLED	2026-03-07
+PAY00003504	SP3200398	2026-03-14	158.00	BACS	SETTLED	2026-03-14
+PAY00003505	SP3200398	2026-03-21	158.00	BACS	SETTLED	2026-03-21
+PAY00003506	SP3200398	2026-03-28	158.00	BACS	SETTLED	2026-03-28
+PAY00003507	SP3200398	2026-04-04	158.00	CHEQUE	SETTLED	2026-04-04
+PAY00003510	SP3200399	2025-01-01	2629.12	CHEQUE	SETTLED	2025-01-01
+PAY00003511	SP3200399	2025-04-02	2629.12	BACS	SETTLED	2025-04-02
+PAY00003512	SP3200399	2025-07-02	2629.12	BACS	SETTLED	2025-07-02
+PAY00003513	SP3200399	2025-10-01	2629.12	BACS	SETTLED	2025-10-01
+PAY00003514	SP3200399	2025-12-31	2629.12	BACS	SETTLED	2025-12-31
+PAY00003515	SP3200399	2026-04-01	2629.12	BACS	SETTLED	2026-04-01
+PAY00003518	SP3200400	2025-04-02	1561.04	BACS	SETTLED	2025-04-02
+PAY00003519	SP3200400	2025-07-02	1561.04	POST_OFFICE	SETTLED	2025-07-02
+PAY00003520	SP3200400	2025-10-01	1561.04	BACS	SETTLED	2025-10-01
+PAY00003521	SP3200400	2025-12-31	1561.04	BACS	SETTLED	2025-12-31
+PAY00003522	SP3200400	2026-04-01	1561.04	BACS	SETTLED	2026-04-01
+PAY00003525	SP3200401	2026-02-19	145.36	CHEQUE	SETTLED	2026-02-19
+PAY00003526	SP3200401	2026-02-26	145.36	BACS	SETTLED	2026-02-26
+PAY00003527	SP3200401	2026-03-05	145.36	BACS	SETTLED	2026-03-05
+PAY00003528	SP3200401	2026-03-12	145.36	BACS	SETTLED	2026-03-12
+PAY00003529	SP3200401	2026-03-19	145.36	CHEQUE	SETTLED	2026-03-19
+PAY00003530	SP3200401	2026-03-26	145.36	BACS	SETTLED	2026-03-26
+PAY00003531	SP3200401	2026-04-02	145.36	POST_OFFICE	SETTLED	2026-04-02
+PAY00003534	SP3200402	2026-03-02	120.08	BACS	SETTLED	2026-03-02
+PAY00003535	SP3200402	2026-03-09	120.08	BACS	SETTLED	2026-03-09
+PAY00003536	SP3200402	2026-03-16	120.08	BACS	SETTLED	2026-03-16
+PAY00003537	SP3200402	2026-03-23	120.08	POST_OFFICE	SETTLED	2026-03-23
+PAY00003538	SP3200402	2026-03-30	120.08	CHEQUE	SETTLED	2026-03-30
+PAY00003541	SP3200403	2025-09-19	581.44	POST_OFFICE	SETTLED	2025-09-19
+PAY00003542	SP3200403	2025-10-17	581.44	BACS	SETTLED	2025-10-17
+PAY00003543	SP3200403	2025-11-14	581.44	POST_OFFICE	SETTLED	2025-11-14
+PAY00003544	SP3200403	2025-12-12	581.44	POST_OFFICE	SETTLED	2025-12-12
+PAY00003545	SP3200403	2026-01-09	581.44	BACS	SETTLED	2026-01-09
+PAY00003546	SP3200403	2026-02-06	581.44	BACS	SETTLED	2026-02-06
+PAY00003547	SP3200403	2026-03-06	581.44	BACS	SETTLED	2026-03-06
+PAY00003548	SP3200403	2026-04-03	581.44	BACS	SETTLED	2026-04-03
+PAY00003551	SP3200404	2025-11-15	342.80	BACS	SETTLED	2025-11-15
+PAY00003552	SP3200404	2025-12-13	342.80	BACS	SETTLED	2025-12-13
+PAY00003553	SP3200404	2026-01-10	342.80	BACS	SETTLED	2026-01-10
+PAY00003554	SP3200404	2026-02-07	342.80	BACS	SETTLED	2026-02-07
+PAY00003555	SP3200404	2026-03-07	342.80	POST_OFFICE	SETTLED	2026-03-07
+PAY00003556	SP3200404	2026-04-04	342.80	BACS	SETTLED	2026-04-04
+PAY00003559	SP3200405	2025-08-20	632.00	BACS	SETTLED	2025-08-20
+PAY00003560	SP3200405	2025-09-17	632.00	BACS	SETTLED	2025-09-17
+PAY00003561	SP3200405	2025-10-15	632.00	BACS	SETTLED	2025-10-15
+PAY00003562	SP3200405	2025-11-12	632.00	POST_OFFICE	SETTLED	2025-11-12
+PAY00003563	SP3200405	2025-12-10	632.00	BACS	SETTLED	2025-12-10
+PAY00003564	SP3200405	2026-01-07	632.00	BACS	SETTLED	2026-01-07
+PAY00003565	SP3200405	2026-02-04	632.00	BACS	SETTLED	2026-02-04
+PAY00003566	SP3200405	2026-03-04	632.00	BACS	SETTLED	2026-03-04
+PAY00003567	SP3200405	2026-04-01	632.00	BACS	SETTLED	2026-04-01
+PAY00003570	SP3200406	2025-09-17	702.88	BACS	SETTLED	2025-09-17
+PAY00003571	SP3200406	2025-10-15	702.88	BACS	SETTLED	2025-10-15
+PAY00003572	SP3200406	2025-11-12	702.88	POST_OFFICE	SETTLED	2025-11-12
+PAY00003573	SP3200406	2025-12-10	702.88	BACS	SETTLED	2025-12-10
+PAY00003574	SP3200406	2026-01-07	702.88	BACS	SETTLED	2026-01-07
+PAY00003575	SP3200406	2026-02-04	702.88	BACS	SETTLED	2026-02-04
+PAY00003576	SP3200406	2026-03-04	702.88	POST_OFFICE	SETTLED	2026-03-04
+PAY00003577	SP3200406	2026-04-01	702.88	BACS	SETTLED	2026-04-01
+PAY00003580	SP3200407	2026-03-01	190.13	BACS	SETTLED	2026-03-01
+PAY00003581	SP3200407	2026-03-08	190.13	BACS	SETTLED	2026-03-08
+PAY00003582	SP3200407	2026-03-15	190.13	BACS	SETTLED	2026-03-15
+PAY00003583	SP3200407	2026-03-22	190.13	BACS	SETTLED	2026-03-22
+PAY00003584	SP3200407	2026-03-29	190.13	BACS	SETTLED	2026-03-29
+PAY00003585	SP3200407	2026-04-05	190.13	BACS	SETTLED	2026-04-05
+PAY00003588	SP3200408	2026-02-19	103.24	BACS	SETTLED	2026-02-19
+PAY00003589	SP3200408	2026-02-26	103.24	BACS	SETTLED	2026-02-26
+PAY00003590	SP3200408	2026-03-05	103.24	BACS	SETTLED	2026-03-05
+PAY00003591	SP3200408	2026-03-12	103.24	BACS	SETTLED	2026-03-12
+PAY00003592	SP3200408	2026-03-19	103.24	BACS	SETTLED	2026-03-19
+PAY00003593	SP3200408	2026-03-26	103.24	BACS	SETTLED	2026-03-26
+PAY00003594	SP3200408	2026-04-02	103.24	BACS	SETTLED	2026-04-02
+PAY00003597	SP3200409	2026-02-23	101.12	BACS	SETTLED	2026-02-23
+PAY00003598	SP3200409	2026-03-02	101.12	BACS	SETTLED	2026-03-02
+PAY00003599	SP3200409	2026-03-09	101.12	POST_OFFICE	SETTLED	2026-03-09
+PAY00003600	SP3200409	2026-03-16	101.12	BACS	SETTLED	2026-03-16
+PAY00003601	SP3200409	2026-03-23	101.12	BACS	SETTLED	2026-03-23
+PAY00003602	SP3200409	2026-03-30	101.12	BACS	SETTLED	2026-03-30
+PAY00003605	SP3200410	2025-09-17	758.40	BACS	SETTLED	2025-09-17
+PAY00003606	SP3200410	2025-10-15	758.40	POST_OFFICE	SETTLED	2025-10-15
+PAY00003607	SP3200410	2025-11-12	758.40	POST_OFFICE	SETTLED	2025-11-12
+PAY00003608	SP3200410	2025-12-10	758.40	BACS	SETTLED	2025-12-10
+PAY00003609	SP3200410	2026-01-07	758.40	BACS	SETTLED	2026-01-07
+PAY00003610	SP3200410	2026-02-04	758.40	CHEQUE	SETTLED	2026-02-04
+PAY00003611	SP3200410	2026-03-04	758.40	BACS	SETTLED	2026-03-04
+PAY00003612	SP3200410	2026-04-01	758.40	POST_OFFICE	SETTLED	2026-04-01
+PAY00003615	SP3200411	2026-02-23	118.83	POST_OFFICE	SETTLED	2026-02-23
+PAY00003616	SP3200411	2026-03-02	118.83	POST_OFFICE	SETTLED	2026-03-02
+PAY00003617	SP3200411	2026-03-09	118.83	BACS	SETTLED	2026-03-09
+PAY00003618	SP3200411	2026-03-16	118.83	POST_OFFICE	SETTLED	2026-03-16
+PAY00003619	SP3200411	2026-03-23	118.83	BACS	SETTLED	2026-03-23
+PAY00003620	SP3200411	2026-03-30	118.83	BACS	SETTLED	2026-03-30
+PAY00003623	SP3200412	2025-08-19	678.84	BACS	SETTLED	2025-08-19
+PAY00003624	SP3200412	2025-09-16	678.84	POST_OFFICE	SETTLED	2025-09-16
+PAY00003625	SP3200412	2025-10-14	678.84	POST_OFFICE	SETTLED	2025-10-14
+PAY00003626	SP3200412	2025-11-11	678.84	BACS	SETTLED	2025-11-11
+PAY00003627	SP3200412	2025-12-09	678.84	CHEQUE	SETTLED	2025-12-09
+PAY00003628	SP3200412	2026-01-06	678.84	BACS	SETTLED	2026-01-06
+PAY00003629	SP3200412	2026-02-03	678.84	BACS	SETTLED	2026-02-03
+PAY00003630	SP3200412	2026-03-03	678.84	BACS	SETTLED	2026-03-03
+PAY00003631	SP3200412	2026-03-31	678.84	BACS	SETTLED	2026-03-31
+PAY00003634	SP3200413	2026-02-09	139.04	BACS	SETTLED	2026-02-09
+PAY00003635	SP3200413	2026-02-16	139.04	BACS	SETTLED	2026-02-16
+PAY00003636	SP3200413	2026-02-23	139.04	BACS	SETTLED	2026-02-23
+PAY00003637	SP3200413	2026-03-02	139.04	BACS	SETTLED	2026-03-02
+PAY00003638	SP3200413	2026-03-09	139.04	BACS	SETTLED	2026-03-09
+PAY00003639	SP3200413	2026-03-16	139.04	BACS	SETTLED	2026-03-16
+PAY00003640	SP3200413	2026-03-23	139.04	POST_OFFICE	SETTLED	2026-03-23
+PAY00003641	SP3200413	2026-03-30	139.04	BACS	SETTLED	2026-03-30
+PAY00003644	SP3200414	2025-10-14	682.56	BACS	SETTLED	2025-10-14
+PAY00003645	SP3200414	2025-11-11	682.56	BACS	SETTLED	2025-11-11
+PAY00003646	SP3200414	2025-12-09	682.56	BACS	SETTLED	2025-12-09
+PAY00003647	SP3200414	2026-01-06	682.56	BACS	SETTLED	2026-01-06
+PAY00003648	SP3200414	2026-02-03	682.56	BACS	SETTLED	2026-02-03
+PAY00003649	SP3200414	2026-03-03	682.56	BACS	SETTLED	2026-03-03
+PAY00003650	SP3200414	2026-03-31	682.56	BACS	SETTLED	2026-03-31
+PAY00003653	SP3200415	2025-09-22	758.40	BACS	SETTLED	2025-09-22
+PAY00003654	SP3200415	2025-10-20	758.40	BACS	SETTLED	2025-10-20
+PAY00003655	SP3200415	2025-11-17	758.40	BACS	SETTLED	2025-11-17
+PAY00003656	SP3200415	2025-12-15	758.40	BACS	SETTLED	2025-12-15
+PAY00003657	SP3200415	2026-01-12	758.40	BACS	SETTLED	2026-01-12
+PAY00003658	SP3200415	2026-02-09	758.40	BACS	SETTLED	2026-02-09
+PAY00003659	SP3200415	2026-03-09	758.40	BACS	SETTLED	2026-03-09
+PAY00003662	SP3200416	2025-11-17	480.32	BACS	SETTLED	2025-11-17
+PAY00003663	SP3200416	2025-12-15	480.32	BACS	SETTLED	2025-12-15
+PAY00003664	SP3200416	2026-01-12	480.32	BACS	SETTLED	2026-01-12
+PAY00003665	SP3200416	2026-02-09	480.32	BACS	SETTLED	2026-02-09
+PAY00003666	SP3200416	2026-03-09	480.32	BACS	SETTLED	2026-03-09
+PAY00003669	SP3200417	2025-12-13	328.64	BACS	SETTLED	2025-12-13
+PAY00003670	SP3200417	2026-01-10	328.64	BACS	SETTLED	2026-01-10
+PAY00003671	SP3200417	2026-02-07	328.64	BACS	SETTLED	2026-02-07
+PAY00003672	SP3200417	2026-03-07	328.64	BACS	SETTLED	2026-03-07
+PAY00003673	SP3200417	2026-04-04	328.64	BACS	SETTLED	2026-04-04
+PAY00003676	SP3200418	2026-02-18	151.68	BACS	SETTLED	2026-02-18
+PAY00003677	SP3200418	2026-02-25	151.68	BACS	SETTLED	2026-02-25
+PAY00003678	SP3200418	2026-03-04	151.68	POST_OFFICE	SETTLED	2026-03-04
+PAY00003679	SP3200418	2026-03-11	151.68	BACS	SETTLED	2026-03-11
+PAY00003680	SP3200418	2026-03-18	151.68	BACS	SETTLED	2026-03-18
+PAY00003681	SP3200418	2026-03-25	151.68	BACS	SETTLED	2026-03-25
+PAY00003682	SP3200418	2026-04-01	151.68	BACS	SETTLED	2026-04-01
+PAY00003685	SP3200419	2025-08-19	278.08	BACS	SETTLED	2025-08-19
+PAY00003686	SP3200419	2025-09-16	278.08	BACS	SETTLED	2025-09-16
+PAY00003687	SP3200419	2025-10-14	278.08	CHEQUE	SETTLED	2025-10-14
+PAY00003688	SP3200419	2025-11-11	278.08	BACS	SETTLED	2025-11-11
+PAY00003689	SP3200419	2025-12-09	278.08	POST_OFFICE	SETTLED	2025-12-09
+PAY00003690	SP3200419	2026-01-06	278.08	BACS	SETTLED	2026-01-06
+PAY00003691	SP3200419	2026-02-03	278.08	BACS	SETTLED	2026-02-03
+PAY00003692	SP3200419	2026-03-03	278.08	CHEQUE	SETTLED	2026-03-03
+PAY00003693	SP3200419	2026-03-31	278.08	POST_OFFICE	SETTLED	2026-03-31
+PAY00003696	SP3200420	2025-10-17	581.44	BACS	SETTLED	2025-10-17
+PAY00003697	SP3200420	2025-11-14	581.44	BACS	SETTLED	2025-11-14
+PAY00003698	SP3200420	2025-12-12	581.44	BACS	SETTLED	2025-12-12
+PAY00003699	SP3200420	2026-01-09	581.44	BACS	SETTLED	2026-01-09
+PAY00003700	SP3200420	2026-02-06	581.44	BACS	SETTLED	2026-02-06
+PAY00003701	SP3200420	2026-03-06	581.44	BACS	SETTLED	2026-03-06
+PAY00003702	SP3200420	2026-04-03	581.44	BACS	SETTLED	2026-04-03
+PAY00003705	SP3200421	2025-04-03	1314.56	BACS	SETTLED	2025-04-03
+PAY00003706	SP3200421	2025-07-03	1314.56	POST_OFFICE	SETTLED	2025-07-03
+PAY00003707	SP3200421	2025-10-02	1314.56	BACS	SETTLED	2025-10-02
+PAY00003708	SP3200421	2026-01-01	1314.56	POST_OFFICE	SETTLED	2026-01-01
+PAY00003709	SP3200421	2026-04-02	1314.56	BACS	SETTLED	2026-04-02
+PAY00003712	SP3200422	2025-11-13	252.80	POST_OFFICE	SETTLED	2025-11-13
+PAY00003713	SP3200422	2025-12-11	252.80	BACS	SETTLED	2025-12-11
+PAY00003714	SP3200422	2026-01-08	252.80	CHEQUE	SETTLED	2026-01-08
+PAY00003715	SP3200422	2026-02-05	252.80	BACS	SETTLED	2026-02-05
+PAY00003716	SP3200422	2026-03-05	252.80	BACS	SETTLED	2026-03-05
+PAY00003717	SP3200422	2026-04-02	252.80	BACS	SETTLED	2026-04-02
+PAY00003720	SP3200423	2026-02-28	208.56	CHEQUE	SETTLED	2026-02-28
+PAY00003721	SP3200423	2026-03-07	208.56	BACS	SETTLED	2026-03-07
+PAY00003722	SP3200423	2026-03-14	208.56	POST_OFFICE	SETTLED	2026-03-14
+PAY00003723	SP3200423	2026-03-21	208.56	BACS	SETTLED	2026-03-21
+PAY00003724	SP3200423	2026-03-28	208.56	POST_OFFICE	SETTLED	2026-03-28
+PAY00003725	SP3200423	2026-04-04	208.56	POST_OFFICE	SETTLED	2026-04-04
+PAY00003728	SP3200424	2026-02-21	141.25	BACS	SETTLED	2026-02-21
+PAY00003729	SP3200424	2026-02-28	141.25	BACS	SETTLED	2026-02-28
+PAY00003730	SP3200424	2026-03-07	141.25	BACS	SETTLED	2026-03-07
+PAY00003731	SP3200424	2026-03-14	141.25	BACS	SETTLED	2026-03-14
+PAY00003732	SP3200424	2026-03-21	141.25	BACS	SETTLED	2026-03-21
+PAY00003733	SP3200424	2026-03-28	141.25	BACS	SETTLED	2026-03-28
+PAY00003734	SP3200424	2026-04-04	141.25	BACS	SETTLED	2026-04-04
+PAY00003737	SP3200425	2025-11-14	632.00	POST_OFFICE	SETTLED	2025-11-14
+PAY00003738	SP3200425	2025-12-12	632.00	CHEQUE	SETTLED	2025-12-12
+PAY00003739	SP3200425	2026-01-09	632.00	BACS	SETTLED	2026-01-09
+PAY00003740	SP3200425	2026-02-06	632.00	BACS	SETTLED	2026-02-06
+PAY00003741	SP3200425	2026-03-06	632.00	POST_OFFICE	SETTLED	2026-03-06
+PAY00003742	SP3200425	2026-04-03	632.00	POST_OFFICE	SETTLED	2026-04-03
+PAY00003745	SP3200426	2025-09-16	632.00	CHEQUE	SETTLED	2025-09-16
+PAY00003746	SP3200426	2025-10-14	632.00	BACS	SETTLED	2025-10-14
+PAY00003747	SP3200426	2025-11-11	632.00	BACS	SETTLED	2025-11-11
+PAY00003748	SP3200426	2025-12-09	632.00	BACS	SETTLED	2025-12-09
+PAY00003749	SP3200426	2026-01-06	632.00	BACS	SETTLED	2026-01-06
+PAY00003750	SP3200426	2026-02-03	632.00	BACS	SETTLED	2026-02-03
+PAY00003751	SP3200426	2026-03-03	632.00	CHEQUE	SETTLED	2026-03-03
+PAY00003752	SP3200426	2026-03-31	632.00	BACS	SETTLED	2026-03-31
+PAY00003755	SP3200427	2024-04-07	2136.16	BACS	SETTLED	2024-04-07
+PAY00003756	SP3200427	2024-07-07	2136.16	BACS	SETTLED	2024-07-07
+PAY00003757	SP3200427	2024-10-06	2136.16	POST_OFFICE	SETTLED	2024-10-06
+PAY00003758	SP3200427	2025-01-05	2136.16	BACS	SETTLED	2025-01-05
+PAY00003759	SP3200427	2025-04-06	2136.16	BACS	SETTLED	2025-04-06
+PAY00003760	SP3200427	2025-07-06	2136.16	BACS	SETTLED	2025-07-06
+PAY00003761	SP3200427	2025-10-05	2136.16	CHEQUE	SETTLED	2025-10-05
+PAY00003762	SP3200427	2026-01-04	2136.16	BACS	SETTLED	2026-01-04
+PAY00003763	SP3200427	2026-04-05	2136.16	BACS	SETTLED	2026-04-05
+PAY00003766	SP3200428	2025-10-16	707.84	BACS	SETTLED	2025-10-16
+PAY00003767	SP3200428	2025-11-13	707.84	BACS	SETTLED	2025-11-13
+PAY00003768	SP3200428	2025-12-11	707.84	POST_OFFICE	SETTLED	2025-12-11
+PAY00003769	SP3200428	2026-01-08	707.84	BACS	SETTLED	2026-01-08
+PAY00003770	SP3200428	2026-02-05	707.84	BACS	SETTLED	2026-02-05
+PAY00003771	SP3200428	2026-03-05	707.84	BACS	SETTLED	2026-03-05
+PAY00003772	SP3200428	2026-04-02	707.84	BACS	SETTLED	2026-04-02
+PAY00003775	SP3200429	2025-08-22	429.76	BACS	SETTLED	2025-08-22
+PAY00003776	SP3200429	2025-09-19	429.76	BACS	SETTLED	2025-09-19
+PAY00003777	SP3200429	2025-10-17	429.76	BACS	SETTLED	2025-10-17
+PAY00003778	SP3200429	2025-11-14	429.76	BACS	SETTLED	2025-11-14
+PAY00003779	SP3200429	2025-12-12	429.76	POST_OFFICE	SETTLED	2025-12-12
+PAY00003780	SP3200429	2026-01-09	429.76	BACS	SETTLED	2026-01-09
+PAY00003781	SP3200429	2026-02-06	429.76	CHEQUE	SETTLED	2026-02-06
+PAY00003782	SP3200429	2026-03-06	429.76	POST_OFFICE	SETTLED	2026-03-06
+PAY00003783	SP3200429	2026-04-03	429.76	BACS	SETTLED	2026-04-03
+PAY00003786	SP3200430	2025-08-21	595.80	BACS	SETTLED	2025-08-21
+PAY00003787	SP3200430	2025-09-18	595.80	BACS	SETTLED	2025-09-18
+PAY00003788	SP3200430	2025-10-16	595.80	BACS	SETTLED	2025-10-16
+PAY00003789	SP3200430	2025-11-13	595.80	POST_OFFICE	SETTLED	2025-11-13
+PAY00003790	SP3200430	2025-12-11	595.80	BACS	SETTLED	2025-12-11
+PAY00003791	SP3200430	2026-01-08	595.80	BACS	SETTLED	2026-01-08
+PAY00003792	SP3200430	2026-02-05	595.80	BACS	SETTLED	2026-02-05
+PAY00003793	SP3200430	2026-03-05	595.80	BACS	SETTLED	2026-03-05
+PAY00003794	SP3200430	2026-04-02	595.80	BACS	SETTLED	2026-04-02
+PAY00003797	SP3200431	2025-09-19	404.48	POST_OFFICE	SETTLED	2025-09-19
+PAY00003798	SP3200431	2025-10-17	404.48	BACS	SETTLED	2025-10-17
+PAY00003799	SP3200431	2025-11-14	404.48	BACS	SETTLED	2025-11-14
+PAY00003800	SP3200431	2025-12-12	404.48	CHEQUE	SETTLED	2025-12-12
+PAY00003801	SP3200431	2026-01-09	404.48	BACS	SETTLED	2026-01-09
+PAY00003802	SP3200431	2026-02-06	404.48	BACS	SETTLED	2026-02-06
+PAY00003803	SP3200431	2026-03-06	404.48	POST_OFFICE	SETTLED	2026-03-06
+PAY00003804	SP3200431	2026-04-03	404.48	BACS	SETTLED	2026-04-03
+PAY00003807	SP3200432	2025-10-20	455.04	BACS	SETTLED	2025-10-20
+PAY00003808	SP3200432	2025-11-17	455.04	BACS	SETTLED	2025-11-17
+PAY00003809	SP3200432	2025-12-15	455.04	BACS	SETTLED	2025-12-15
+PAY00003810	SP3200432	2026-01-12	455.04	BACS	SETTLED	2026-01-12
+PAY00003811	SP3200432	2026-02-09	455.04	BACS	SETTLED	2026-02-09
+PAY00003812	SP3200432	2026-03-09	455.04	BACS	SETTLED	2026-03-09
+PAY00003815	SP3200433	2025-08-25	606.72	BACS	SETTLED	2025-08-25
+PAY00003816	SP3200433	2025-09-22	606.72	BACS	SETTLED	2025-09-22
+PAY00003817	SP3200433	2025-10-20	606.72	POST_OFFICE	SETTLED	2025-10-20
+PAY00003818	SP3200433	2025-11-17	606.72	CHEQUE	SETTLED	2025-11-17
+PAY00003819	SP3200433	2025-12-15	606.72	BACS	SETTLED	2025-12-15
+PAY00003820	SP3200433	2026-01-12	606.72	BACS	SETTLED	2026-01-12
+PAY00003821	SP3200433	2026-02-09	606.72	BACS	SETTLED	2026-02-09
+PAY00003822	SP3200433	2026-03-09	606.72	BACS	SETTLED	2026-03-09
+PAY00003825	SP3200434	2025-10-18	470.32	POST_OFFICE	SETTLED	2025-10-18
+PAY00003826	SP3200434	2025-11-15	470.32	BACS	SETTLED	2025-11-15
+PAY00003827	SP3200434	2025-12-13	470.32	POST_OFFICE	SETTLED	2025-12-13
+PAY00003828	SP3200434	2026-01-10	470.32	BACS	SETTLED	2026-01-10
+PAY00003829	SP3200434	2026-02-07	470.32	BACS	SETTLED	2026-02-07
+PAY00003830	SP3200434	2026-03-07	470.32	BACS	SETTLED	2026-03-07
+PAY00003831	SP3200434	2026-04-04	470.32	BACS	SETTLED	2026-04-04
+PAY00003834	SP3200435	2026-02-07	82.16	BACS	SETTLED	2026-02-07
+PAY00003835	SP3200435	2026-02-14	82.16	BACS	SETTLED	2026-02-14
+PAY00003836	SP3200435	2026-02-21	82.16	BACS	SETTLED	2026-02-21
+PAY00003837	SP3200435	2026-02-28	82.16	BACS	SETTLED	2026-02-28
+PAY00003838	SP3200435	2026-03-07	82.16	CHEQUE	SETTLED	2026-03-07
+PAY00003839	SP3200435	2026-03-14	82.16	POST_OFFICE	SETTLED	2026-03-14
+PAY00003840	SP3200435	2026-03-21	82.16	BACS	SETTLED	2026-03-21
+PAY00003841	SP3200435	2026-03-28	82.16	BACS	SETTLED	2026-03-28
+PAY00003842	SP3200435	2026-04-04	82.16	BACS	SETTLED	2026-04-04
+PAY00003845	SP3200436	2025-04-06	1290.12	POST_OFFICE	SETTLED	2025-04-06
+PAY00003846	SP3200436	2025-07-06	1290.12	BACS	SETTLED	2025-07-06
+PAY00003847	SP3200436	2025-10-05	1290.12	CHEQUE	SETTLED	2025-10-05
+PAY00003848	SP3200436	2026-01-04	1290.12	POST_OFFICE	SETTLED	2026-01-04
+PAY00003849	SP3200436	2026-04-05	1290.12	BACS	SETTLED	2026-04-05
+PAY00003852	SP3200437	2026-02-11	168.05	BACS	SETTLED	2026-02-11
+PAY00003853	SP3200437	2026-02-18	168.05	BACS	SETTLED	2026-02-18
+PAY00003854	SP3200437	2026-02-25	168.05	BACS	SETTLED	2026-02-25
+PAY00003855	SP3200437	2026-03-04	168.05	BACS	SETTLED	2026-03-04
+PAY00003856	SP3200437	2026-03-11	168.05	BACS	SETTLED	2026-03-11
+PAY00003857	SP3200437	2026-03-18	168.05	BACS	SETTLED	2026-03-18
+PAY00003858	SP3200437	2026-03-25	168.05	POST_OFFICE	SETTLED	2026-03-25
+PAY00003859	SP3200437	2026-04-01	168.05	BACS	SETTLED	2026-04-01
+PAY00003862	SP3200438	2026-02-03	181.33	BACS	SETTLED	2026-02-03
+PAY00003863	SP3200438	2026-02-10	181.33	BACS	SETTLED	2026-02-10
+PAY00003864	SP3200438	2026-02-17	181.33	BACS	SETTLED	2026-02-17
+PAY00003865	SP3200438	2026-02-24	181.33	BACS	SETTLED	2026-02-24
+PAY00003866	SP3200438	2026-03-03	181.33	BACS	SETTLED	2026-03-03
+PAY00003867	SP3200438	2026-03-10	181.33	BACS	SETTLED	2026-03-10
+PAY00003868	SP3200438	2026-03-17	181.33	BACS	SETTLED	2026-03-17
+PAY00003869	SP3200438	2026-03-24	181.33	BACS	SETTLED	2026-03-24
+PAY00003870	SP3200438	2026-03-31	181.33	BACS	SETTLED	2026-03-31
+PAY00003873	SP3200439	2025-11-11	455.04	BACS	SETTLED	2025-11-11
+PAY00003874	SP3200439	2025-12-09	455.04	BACS	SETTLED	2025-12-09
+PAY00003875	SP3200439	2026-01-06	455.04	BACS	SETTLED	2026-01-06
+PAY00003876	SP3200439	2026-02-03	455.04	BACS	SETTLED	2026-02-03
+PAY00003877	SP3200439	2026-03-03	455.04	POST_OFFICE	SETTLED	2026-03-03
+PAY00003878	SP3200439	2026-03-31	455.04	BACS	SETTLED	2026-03-31
+PAY00003881	SP3200440	2025-10-20	530.88	BACS	SETTLED	2025-10-20
+PAY00003882	SP3200440	2025-11-17	530.88	POST_OFFICE	SETTLED	2025-11-17
+PAY00003883	SP3200440	2025-12-15	530.88	CHEQUE	SETTLED	2025-12-15
+PAY00003884	SP3200440	2026-01-12	530.88	BACS	SETTLED	2026-01-12
+PAY00003885	SP3200440	2026-02-09	530.88	BACS	SETTLED	2026-02-09
+PAY00003886	SP3200440	2026-03-09	530.88	BACS	SETTLED	2026-03-09
+PAY00003889	SP3200441	2025-11-12	758.40	BACS	SETTLED	2025-11-12
+PAY00003890	SP3200441	2025-12-10	758.40	BACS	SETTLED	2025-12-10
+PAY00003891	SP3200441	2026-01-07	758.40	BACS	SETTLED	2026-01-07
+PAY00003892	SP3200441	2026-02-04	758.40	POST_OFFICE	SETTLED	2026-02-04
+PAY00003893	SP3200441	2026-03-04	758.40	BACS	SETTLED	2026-03-04
+PAY00003894	SP3200441	2026-04-01	758.40	BACS	SETTLED	2026-04-01
+PAY00003897	SP3200442	2025-08-23	606.72	BACS	SETTLED	2025-08-23
+PAY00003898	SP3200442	2025-09-20	606.72	BACS	SETTLED	2025-09-20
+PAY00003899	SP3200442	2025-10-18	606.72	CHEQUE	SETTLED	2025-10-18
+PAY00003900	SP3200442	2025-11-15	606.72	BACS	SETTLED	2025-11-15
+PAY00003901	SP3200442	2025-12-13	606.72	BACS	SETTLED	2025-12-13
+PAY00003902	SP3200442	2026-01-10	606.72	BACS	SETTLED	2026-01-10
+PAY00003903	SP3200442	2026-02-07	606.72	BACS	SETTLED	2026-02-07
+PAY00003904	SP3200442	2026-03-07	606.72	BACS	SETTLED	2026-03-07
+PAY00003905	SP3200442	2026-04-04	606.72	BACS	SETTLED	2026-04-04
+PAY00003908	SP3200443	2025-09-22	707.84	POST_OFFICE	SETTLED	2025-09-22
+PAY00003909	SP3200443	2025-10-20	707.84	CHEQUE	SETTLED	2025-10-20
+PAY00003910	SP3200443	2025-11-17	707.84	BACS	SETTLED	2025-11-17
+PAY00003911	SP3200443	2025-12-15	707.84	BACS	SETTLED	2025-12-15
+PAY00003912	SP3200443	2026-01-12	707.84	BACS	SETTLED	2026-01-12
+PAY00003913	SP3200443	2026-02-09	707.84	POST_OFFICE	SETTLED	2026-02-09
+PAY00003914	SP3200443	2026-03-09	707.84	BACS	SETTLED	2026-03-09
+PAY00003917	SP3200444	2025-10-19	581.44	BACS	SETTLED	2025-10-19
+PAY00003918	SP3200444	2025-11-16	581.44	BACS	SETTLED	2025-11-16
+PAY00003919	SP3200444	2025-12-14	581.44	BACS	SETTLED	2025-12-14
+PAY00003920	SP3200444	2026-01-11	581.44	POST_OFFICE	SETTLED	2026-01-11
+PAY00003921	SP3200444	2026-02-08	581.44	CHEQUE	SETTLED	2026-02-08
+PAY00003922	SP3200444	2026-03-08	581.44	CHEQUE	SETTLED	2026-03-08
+PAY00003923	SP3200444	2026-04-05	581.44	POST_OFFICE	SETTLED	2026-04-05
+PAY00003926	SP3200445	2025-08-21	713.36	POST_OFFICE	SETTLED	2025-08-21
+PAY00003927	SP3200445	2025-09-18	713.36	BACS	SETTLED	2025-09-18
+PAY00003928	SP3200445	2025-10-16	713.36	BACS	SETTLED	2025-10-16
+PAY00003929	SP3200445	2025-11-13	713.36	CHEQUE	SETTLED	2025-11-13
+PAY00003930	SP3200445	2025-12-11	713.36	BACS	SETTLED	2025-12-11
+PAY00003931	SP3200445	2026-01-08	713.36	BACS	SETTLED	2026-01-08
+PAY00003932	SP3200445	2026-02-05	713.36	BACS	SETTLED	2026-02-05
+PAY00003933	SP3200445	2026-03-05	713.36	BACS	SETTLED	2026-03-05
+PAY00003934	SP3200445	2026-04-02	713.36	CHEQUE	SETTLED	2026-04-02
+PAY00003937	SP3200446	2025-08-24	758.40	BACS	SETTLED	2025-08-24
+PAY00003938	SP3200446	2025-09-21	758.40	BACS	SETTLED	2025-09-21
+PAY00003939	SP3200446	2025-10-19	758.40	BACS	SETTLED	2025-10-19
+PAY00003940	SP3200446	2025-11-16	758.40	BACS	SETTLED	2025-11-16
+PAY00003941	SP3200446	2025-12-14	758.40	BACS	SETTLED	2025-12-14
+PAY00003942	SP3200446	2026-01-11	758.40	BACS	SETTLED	2026-01-11
+PAY00003943	SP3200446	2026-02-08	758.40	BACS	SETTLED	2026-02-08
+PAY00003944	SP3200446	2026-03-08	758.40	BACS	SETTLED	2026-03-08
+PAY00003945	SP3200446	2026-04-05	758.40	BACS	SETTLED	2026-04-05
+PAY00003948	SP3200447	2025-09-16	796.08	BACS	SETTLED	2025-09-16
+PAY00003949	SP3200447	2025-10-14	796.08	POST_OFFICE	SETTLED	2025-10-14
+PAY00003950	SP3200447	2025-11-11	796.08	BACS	SETTLED	2025-11-11
+PAY00003951	SP3200447	2025-12-09	796.08	BACS	SETTLED	2025-12-09
+PAY00003952	SP3200447	2026-01-06	796.08	BACS	SETTLED	2026-01-06
+PAY00003953	SP3200447	2026-02-03	796.08	BACS	SETTLED	2026-02-03
+PAY00003954	SP3200447	2026-03-03	796.08	BACS	SETTLED	2026-03-03
+PAY00003955	SP3200447	2026-03-31	796.08	BACS	SETTLED	2026-03-31
+PAY00003958	SP3200448	2026-03-09	202.24	BACS	SETTLED	2026-03-09
+PAY00003959	SP3200448	2026-03-16	202.24	BACS	SETTLED	2026-03-16
+PAY00003960	SP3200448	2026-03-23	202.24	BACS	SETTLED	2026-03-23
+PAY00003961	SP3200448	2026-03-30	202.24	BACS	SETTLED	2026-03-30
+PAY00003964	SP3200449	2026-02-20	94.94	POST_OFFICE	SETTLED	2026-02-20
+PAY00003965	SP3200449	2026-02-27	94.94	CHEQUE	SETTLED	2026-02-27
+PAY00003966	SP3200449	2026-03-06	94.94	BACS	SETTLED	2026-03-06
+PAY00003967	SP3200449	2026-03-13	94.94	BACS	SETTLED	2026-03-13
+PAY00003968	SP3200449	2026-03-20	94.94	POST_OFFICE	SETTLED	2026-03-20
+PAY00003969	SP3200449	2026-03-27	94.94	BACS	SETTLED	2026-03-27
+PAY00003970	SP3200449	2026-04-03	94.94	BACS	SETTLED	2026-04-03
+PAY00003973	SP3200450	2025-12-09	412.92	POST_OFFICE	SETTLED	2025-12-09
+PAY00003974	SP3200450	2026-01-06	412.92	BACS	SETTLED	2026-01-06
+PAY00003975	SP3200450	2026-02-03	412.92	CHEQUE	SETTLED	2026-02-03
+PAY00003976	SP3200450	2026-03-03	412.92	POST_OFFICE	SETTLED	2026-03-03
+PAY00003977	SP3200450	2026-03-31	412.92	BACS	SETTLED	2026-03-31
+PAY00003980	SP3200451	2025-10-17	558.04	BACS	SETTLED	2025-10-17
+PAY00003981	SP3200451	2025-11-14	558.04	BACS	SETTLED	2025-11-14
+PAY00003982	SP3200451	2025-12-12	558.04	BACS	SETTLED	2025-12-12
+PAY00003983	SP3200451	2026-01-09	558.04	BACS	SETTLED	2026-01-09
+PAY00003984	SP3200451	2026-02-06	558.04	BACS	SETTLED	2026-02-06
+PAY00003985	SP3200451	2026-03-06	558.04	BACS	SETTLED	2026-03-06
+PAY00003986	SP3200451	2026-04-03	558.04	CHEQUE	SETTLED	2026-04-03
+PAY00003989	SP3200452	2026-02-22	88.48	BACS	SETTLED	2026-02-22
+PAY00003990	SP3200452	2026-03-01	88.48	BACS	SETTLED	2026-03-01
+PAY00003991	SP3200452	2026-03-08	88.48	BACS	SETTLED	2026-03-08
+PAY00003992	SP3200452	2026-03-15	88.48	CHEQUE	SETTLED	2026-03-15
+PAY00003993	SP3200452	2026-03-22	88.48	BACS	SETTLED	2026-03-22
+PAY00003994	SP3200452	2026-03-29	88.48	BACS	SETTLED	2026-03-29
+PAY00003995	SP3200452	2026-04-05	88.48	CHEQUE	SETTLED	2026-04-05
+PAY00003998	SP3200453	2025-09-22	429.76	POST_OFFICE	SETTLED	2025-09-22
+PAY00003999	SP3200453	2025-10-20	429.76	BACS	SETTLED	2025-10-20
+PAY00004000	SP3200453	2025-11-17	429.76	BACS	SETTLED	2025-11-17
+PAY00004001	SP3200453	2025-12-15	429.76	BACS	SETTLED	2025-12-15
+PAY00004002	SP3200453	2026-01-12	429.76	BACS	SETTLED	2026-01-12
+PAY00004003	SP3200453	2026-02-09	429.76	BACS	SETTLED	2026-02-09
+PAY00004004	SP3200453	2026-03-09	429.76	BACS	SETTLED	2026-03-09
+PAY00004007	SP3200454	2025-12-11	455.04	BACS	SETTLED	2025-12-11
+PAY00004008	SP3200454	2026-01-08	455.04	POST_OFFICE	SETTLED	2026-01-08
+PAY00004009	SP3200454	2026-02-05	455.04	BACS	SETTLED	2026-02-05
+PAY00004010	SP3200454	2026-03-05	455.04	BACS	SETTLED	2026-03-05
+PAY00004011	SP3200454	2026-04-02	455.04	BACS	SETTLED	2026-04-02
+PAY00004014	SP3200455	2025-08-22	859.52	BACS	SETTLED	2025-08-22
+PAY00004015	SP3200455	2025-09-19	859.52	BACS	SETTLED	2025-09-19
+PAY00004016	SP3200455	2025-10-17	859.52	BACS	SETTLED	2025-10-17
+PAY00004017	SP3200455	2025-11-14	859.52	BACS	SETTLED	2025-11-14
+PAY00004018	SP3200455	2025-12-12	859.52	BACS	SETTLED	2025-12-12
+PAY00004019	SP3200455	2026-01-09	859.52	POST_OFFICE	SETTLED	2026-01-09
+PAY00004020	SP3200455	2026-02-06	859.52	BACS	SETTLED	2026-02-06
+PAY00004021	SP3200455	2026-03-06	859.52	BACS	SETTLED	2026-03-06
+PAY00004022	SP3200455	2026-04-03	859.52	CHEQUE	SETTLED	2026-04-03
+PAY00004025	SP3200456	2025-11-16	733.12	POST_OFFICE	SETTLED	2025-11-16
+PAY00004026	SP3200456	2025-12-14	733.12	BACS	SETTLED	2025-12-14
+PAY00004027	SP3200456	2026-01-11	733.12	BACS	SETTLED	2026-01-11
+PAY00004028	SP3200456	2026-02-08	733.12	BACS	SETTLED	2026-02-08
+PAY00004029	SP3200456	2026-03-08	733.12	BACS	SETTLED	2026-03-08
+PAY00004030	SP3200456	2026-04-05	733.12	BACS	SETTLED	2026-04-05
+PAY00004033	SP3200457	2025-08-19	480.32	BACS	SETTLED	2025-08-19
+PAY00004034	SP3200457	2025-09-16	480.32	BACS	SETTLED	2025-09-16
+PAY00004035	SP3200457	2025-10-14	480.32	BACS	SETTLED	2025-10-14
+PAY00004036	SP3200457	2025-11-11	480.32	BACS	SETTLED	2025-11-11
+PAY00004037	SP3200457	2025-12-09	480.32	BACS	SETTLED	2025-12-09
+PAY00004038	SP3200457	2026-01-06	480.32	BACS	SETTLED	2026-01-06
+PAY00004039	SP3200457	2026-02-03	480.32	BACS	SETTLED	2026-02-03
+PAY00004040	SP3200457	2026-03-03	480.32	BACS	SETTLED	2026-03-03
+PAY00004041	SP3200457	2026-03-31	480.32	BACS	SETTLED	2026-03-31
+PAY00004044	SP3200458	2025-09-16	216.48	BACS	SETTLED	2025-09-16
+PAY00004045	SP3200458	2025-10-14	216.48	BACS	SETTLED	2025-10-14
+PAY00004046	SP3200458	2025-11-11	216.48	POST_OFFICE	SETTLED	2025-11-11
+PAY00004047	SP3200458	2025-12-09	216.48	BACS	SETTLED	2025-12-09
+PAY00004048	SP3200458	2026-01-06	216.48	BACS	SETTLED	2026-01-06
+PAY00004049	SP3200458	2026-02-03	216.48	BACS	SETTLED	2026-02-03
+PAY00004050	SP3200458	2026-03-03	216.48	BACS	SETTLED	2026-03-03
+PAY00004051	SP3200458	2026-03-31	216.48	POST_OFFICE	SETTLED	2026-03-31
+PAY00004054	SP3200459	2026-03-03	187.38	BACS	SETTLED	2026-03-03
+PAY00004055	SP3200459	2026-03-10	187.38	BACS	SETTLED	2026-03-10
+PAY00004056	SP3200459	2026-03-17	187.38	CHEQUE	SETTLED	2026-03-17
+PAY00004057	SP3200459	2026-03-24	187.38	BACS	SETTLED	2026-03-24
+PAY00004058	SP3200459	2026-03-31	187.38	BACS	SETTLED	2026-03-31
+PAY00004061	SP3200460	2025-10-19	379.20	BACS	SETTLED	2025-10-19
+PAY00004062	SP3200460	2025-11-16	379.20	BACS	SETTLED	2025-11-16
+PAY00004063	SP3200460	2025-12-14	379.20	BACS	SETTLED	2025-12-14
+PAY00004064	SP3200460	2026-01-11	379.20	BACS	SETTLED	2026-01-11
+PAY00004065	SP3200460	2026-02-08	379.20	BACS	SETTLED	2026-02-08
+PAY00004066	SP3200460	2026-03-08	379.20	BACS	SETTLED	2026-03-08
+PAY00004067	SP3200460	2026-04-05	379.20	BACS	SETTLED	2026-04-05
+PAY00004070	SP3200461	2025-11-12	783.68	BACS	SETTLED	2025-11-12
+PAY00004071	SP3200461	2025-12-10	783.68	BACS	SETTLED	2025-12-10
+PAY00004072	SP3200461	2026-01-07	783.68	BACS	SETTLED	2026-01-07
+PAY00004073	SP3200461	2026-02-04	783.68	CHEQUE	SETTLED	2026-02-04
+PAY00004074	SP3200461	2026-03-04	783.68	BACS	SETTLED	2026-03-04
+PAY00004075	SP3200461	2026-04-01	783.68	BACS	SETTLED	2026-04-01
+PAY00004078	SP3200462	2026-02-03	237.87	BACS	SETTLED	2026-02-03
+PAY00004079	SP3200462	2026-02-10	237.87	BACS	SETTLED	2026-02-10
+PAY00004080	SP3200462	2026-02-17	237.87	BACS	SETTLED	2026-02-17
+PAY00004081	SP3200462	2026-02-24	237.87	BACS	SETTLED	2026-02-24
+PAY00004082	SP3200462	2026-03-03	237.87	BACS	SETTLED	2026-03-03
+PAY00004083	SP3200462	2026-03-10	237.87	BACS	SETTLED	2026-03-10
+PAY00004084	SP3200462	2026-03-17	237.87	BACS	SETTLED	2026-03-17
+PAY00004085	SP3200462	2026-03-24	237.87	BACS	SETTLED	2026-03-24
+PAY00004086	SP3200462	2026-03-31	237.87	BACS	SETTLED	2026-03-31
+PAY00004089	SP3200463	2025-09-17	758.40	BACS	SETTLED	2025-09-17
+PAY00004090	SP3200463	2025-10-15	758.40	BACS	SETTLED	2025-10-15
+PAY00004091	SP3200463	2025-11-12	758.40	BACS	SETTLED	2025-11-12
+PAY00004092	SP3200463	2025-12-10	758.40	POST_OFFICE	SETTLED	2025-12-10
+PAY00004093	SP3200463	2026-01-07	758.40	BACS	SETTLED	2026-01-07
+PAY00004094	SP3200463	2026-02-04	758.40	BACS	SETTLED	2026-02-04
+PAY00004095	SP3200463	2026-03-04	758.40	BACS	SETTLED	2026-03-04
+PAY00004096	SP3200463	2026-04-01	758.40	POST_OFFICE	SETTLED	2026-04-01
+PAY00004099	SP3200464	2025-10-19	429.76	BACS	SETTLED	2025-10-19
+PAY00004100	SP3200464	2025-11-16	429.76	BACS	SETTLED	2025-11-16
+PAY00004101	SP3200464	2025-12-14	429.76	BACS	SETTLED	2025-12-14
+PAY00004102	SP3200464	2026-01-11	429.76	BACS	SETTLED	2026-01-11
+PAY00004103	SP3200464	2026-02-08	429.76	BACS	SETTLED	2026-02-08
+PAY00004104	SP3200464	2026-03-08	429.76	BACS	SETTLED	2026-03-08
+PAY00004105	SP3200464	2026-04-05	429.76	BACS	SETTLED	2026-04-05
+PAY00004108	SP3200465	2025-12-15	688.68	BACS	SETTLED	2025-12-15
+PAY00004109	SP3200465	2026-01-12	688.68	BACS	SETTLED	2026-01-12
+PAY00004110	SP3200465	2026-02-09	688.68	BACS	SETTLED	2026-02-09
+PAY00004111	SP3200465	2026-03-09	688.68	BACS	SETTLED	2026-03-09
+PAY00004114	SP3200466	2026-02-26	69.52	BACS	SETTLED	2026-02-26
+PAY00004115	SP3200466	2026-03-05	69.52	BACS	SETTLED	2026-03-05
+PAY00004116	SP3200466	2026-03-12	69.52	BACS	SETTLED	2026-03-12
+PAY00004117	SP3200466	2026-03-19	69.52	BACS	SETTLED	2026-03-19
+PAY00004118	SP3200466	2026-03-26	69.52	BACS	SETTLED	2026-03-26
+PAY00004119	SP3200466	2026-04-02	69.52	BACS	SETTLED	2026-04-02
+PAY00004122	SP3200467	2025-08-22	252.80	BACS	SETTLED	2025-08-22
+PAY00004123	SP3200467	2025-09-19	252.80	BACS	SETTLED	2025-09-19
+PAY00004124	SP3200467	2025-10-17	252.80	BACS	SETTLED	2025-10-17
+PAY00004125	SP3200467	2025-11-14	252.80	BACS	SETTLED	2025-11-14
+PAY00004126	SP3200467	2025-12-12	252.80	POST_OFFICE	SETTLED	2025-12-12
+PAY00004127	SP3200467	2026-01-09	252.80	BACS	SETTLED	2026-01-09
+PAY00004128	SP3200467	2026-02-06	252.80	BACS	SETTLED	2026-02-06
+PAY00004129	SP3200467	2026-03-06	252.80	BACS	SETTLED	2026-03-06
+PAY00004130	SP3200467	2026-04-03	252.80	BACS	SETTLED	2026-04-03
+PAY00004133	SP3200468	2025-09-20	429.76	CHEQUE	SETTLED	2025-09-20
+PAY00004134	SP3200468	2025-10-18	429.76	BACS	SETTLED	2025-10-18
+PAY00004135	SP3200468	2025-11-15	429.76	CHEQUE	SETTLED	2025-11-15
+PAY00004136	SP3200468	2025-12-13	429.76	BACS	SETTLED	2025-12-13
+PAY00004137	SP3200468	2026-01-10	429.76	BACS	SETTLED	2026-01-10
+PAY00004138	SP3200468	2026-02-07	429.76	BACS	SETTLED	2026-02-07
+PAY00004139	SP3200468	2026-03-07	429.76	BACS	SETTLED	2026-03-07
+PAY00004140	SP3200468	2026-04-04	429.76	BACS	SETTLED	2026-04-04
+PAY00004143	SP3200469	2026-02-07	126.40	BACS	SETTLED	2026-02-07
+PAY00004144	SP3200469	2026-02-14	126.40	POST_OFFICE	SETTLED	2026-02-14
+PAY00004145	SP3200469	2026-02-21	126.40	BACS	SETTLED	2026-02-21
+PAY00004146	SP3200469	2026-02-28	126.40	BACS	SETTLED	2026-02-28
+PAY00004147	SP3200469	2026-03-07	126.40	BACS	SETTLED	2026-03-07
+PAY00004148	SP3200469	2026-03-14	126.40	BACS	SETTLED	2026-03-14
+PAY00004149	SP3200469	2026-03-21	126.40	POST_OFFICE	SETTLED	2026-03-21
+PAY00004150	SP3200469	2026-03-28	126.40	POST_OFFICE	SETTLED	2026-03-28
+PAY00004151	SP3200469	2026-04-04	126.40	BACS	SETTLED	2026-04-04
+PAY00004154	SP3200470	2025-09-19	707.84	BACS	SETTLED	2025-09-19
+PAY00004155	SP3200470	2025-10-17	707.84	BACS	SETTLED	2025-10-17
+PAY00004156	SP3200470	2025-11-14	707.84	BACS	SETTLED	2025-11-14
+PAY00004157	SP3200470	2025-12-12	707.84	BACS	SETTLED	2025-12-12
+PAY00004158	SP3200470	2026-01-09	707.84	POST_OFFICE	SETTLED	2026-01-09
+PAY00004159	SP3200470	2026-02-06	707.84	BACS	SETTLED	2026-02-06
+PAY00004160	SP3200470	2026-03-06	707.84	BACS	SETTLED	2026-03-06
+PAY00004161	SP3200470	2026-04-03	707.84	BACS	SETTLED	2026-04-03
+PAY00004164	SP3200471	2025-12-15	783.68	BACS	SETTLED	2025-12-15
+PAY00004165	SP3200471	2026-01-12	783.68	BACS	SETTLED	2026-01-12
+PAY00004166	SP3200471	2026-02-09	783.68	BACS	SETTLED	2026-02-09
+PAY00004167	SP3200471	2026-03-09	783.68	BACS	SETTLED	2026-03-09
+PAY00004170	SP3200472	2026-02-18	126.40	POST_OFFICE	SETTLED	2026-02-18
+PAY00004171	SP3200472	2026-02-25	126.40	BACS	SETTLED	2026-02-25
+PAY00004172	SP3200472	2026-03-04	126.40	BACS	SETTLED	2026-03-04
+PAY00004173	SP3200472	2026-03-11	126.40	BACS	SETTLED	2026-03-11
+PAY00004174	SP3200472	2026-03-18	126.40	BACS	SETTLED	2026-03-18
+PAY00004175	SP3200472	2026-03-25	126.40	POST_OFFICE	SETTLED	2026-03-25
+PAY00004176	SP3200472	2026-04-01	126.40	POST_OFFICE	SETTLED	2026-04-01
+PAY00004179	SP3200473	2026-02-13	208.56	BACS	SETTLED	2026-02-13
+PAY00004180	SP3200473	2026-02-20	208.56	BACS	SETTLED	2026-02-20
+PAY00004181	SP3200473	2026-02-27	208.56	POST_OFFICE	SETTLED	2026-02-27
+PAY00004182	SP3200473	2026-03-06	208.56	BACS	SETTLED	2026-03-06
+PAY00004183	SP3200473	2026-03-13	208.56	BACS	SETTLED	2026-03-13
+PAY00004184	SP3200473	2026-03-20	208.56	BACS	SETTLED	2026-03-20
+PAY00004185	SP3200473	2026-03-27	208.56	POST_OFFICE	SETTLED	2026-03-27
+PAY00004186	SP3200473	2026-04-03	208.56	BACS	SETTLED	2026-04-03
+PAY00004189	SP3200474	2026-02-11	168.09	BACS	SETTLED	2026-02-11
+PAY00004190	SP3200474	2026-02-18	168.09	POST_OFFICE	SETTLED	2026-02-18
+PAY00004191	SP3200474	2026-02-25	168.09	BACS	SETTLED	2026-02-25
+PAY00004192	SP3200474	2026-03-04	168.09	BACS	SETTLED	2026-03-04
+PAY00004193	SP3200474	2026-03-11	168.09	BACS	SETTLED	2026-03-11
+PAY00004194	SP3200474	2026-03-18	168.09	BACS	SETTLED	2026-03-18
+PAY00004195	SP3200474	2026-03-25	168.09	BACS	SETTLED	2026-03-25
+PAY00004196	SP3200474	2026-04-01	168.09	POST_OFFICE	SETTLED	2026-04-01
+PAY00004199	SP3200475	2025-09-16	657.28	BACS	SETTLED	2025-09-16
+PAY00004200	SP3200475	2025-10-14	657.28	BACS	SETTLED	2025-10-14
+PAY00004201	SP3200475	2025-11-11	657.28	BACS	SETTLED	2025-11-11
+PAY00004202	SP3200475	2025-12-09	657.28	BACS	SETTLED	2025-12-09
+PAY00004203	SP3200475	2026-01-06	657.28	BACS	SETTLED	2026-01-06
+PAY00004204	SP3200475	2026-02-03	657.28	BACS	SETTLED	2026-02-03
+PAY00004205	SP3200475	2026-03-03	657.28	CHEQUE	SETTLED	2026-03-03
+PAY00004206	SP3200475	2026-03-31	657.28	BACS	SETTLED	2026-03-31
+PAY00004209	SP3200476	2025-04-07	1831.57	BACS	SETTLED	2025-04-07
+PAY00004210	SP3200476	2025-07-07	1831.57	BACS	SETTLED	2025-07-07
+PAY00004211	SP3200476	2025-10-06	1831.57	BACS	SETTLED	2025-10-06
+PAY00004212	SP3200476	2026-01-05	1831.57	BACS	SETTLED	2026-01-05
+PAY00004215	SP3200477	2026-03-04	145.36	BACS	SETTLED	2026-03-04
+PAY00004216	SP3200477	2026-03-11	145.36	BACS	SETTLED	2026-03-11
+PAY00004217	SP3200477	2026-03-18	145.36	BACS	SETTLED	2026-03-18
+PAY00004218	SP3200477	2026-03-25	145.36	BACS	SETTLED	2026-03-25
+PAY00004219	SP3200477	2026-04-01	145.36	BACS	SETTLED	2026-04-01
+PAY00004222	SP3200478	2026-02-25	139.04	POST_OFFICE	SETTLED	2026-02-25
+PAY00004223	SP3200478	2026-03-04	139.04	BACS	SETTLED	2026-03-04
+PAY00004224	SP3200478	2026-03-11	139.04	BACS	SETTLED	2026-03-11
+PAY00004225	SP3200478	2026-03-18	139.04	POST_OFFICE	SETTLED	2026-03-18
+PAY00004226	SP3200478	2026-03-25	139.04	BACS	SETTLED	2026-03-25
+PAY00004227	SP3200478	2026-04-01	139.04	BACS	SETTLED	2026-04-01
+PAY00004230	SP3200479	2026-02-15	107.44	BACS	SETTLED	2026-02-15
+PAY00004231	SP3200479	2026-02-22	107.44	BACS	SETTLED	2026-02-22
+PAY00004232	SP3200479	2026-03-01	107.44	BACS	SETTLED	2026-03-01
+PAY00004233	SP3200479	2026-03-08	107.44	POST_OFFICE	SETTLED	2026-03-08
+PAY00004234	SP3200479	2026-03-15	107.44	BACS	SETTLED	2026-03-15
+PAY00004235	SP3200479	2026-03-22	107.44	POST_OFFICE	SETTLED	2026-03-22
+PAY00004236	SP3200479	2026-03-29	107.44	BACS	SETTLED	2026-03-29
+PAY00004237	SP3200479	2026-04-05	107.44	BACS	SETTLED	2026-04-05
+PAY00004240	SP3200480	2024-04-08	2464.80	BACS	SETTLED	2024-04-08
+PAY00004241	SP3200480	2024-07-08	2464.80	BACS	SETTLED	2024-07-08
+PAY00004242	SP3200480	2024-10-07	2464.80	BACS	SETTLED	2024-10-07
+PAY00004243	SP3200480	2025-01-06	2464.80	BACS	SETTLED	2025-01-06
+PAY00004244	SP3200480	2025-04-07	2464.80	BACS	SETTLED	2025-04-07
+PAY00004245	SP3200480	2025-07-07	2464.80	BACS	SETTLED	2025-07-07
+PAY00004246	SP3200480	2025-10-06	2464.80	BACS	SETTLED	2025-10-06
+PAY00004247	SP3200480	2026-01-05	2464.80	BACS	SETTLED	2026-01-05
+PAY00004250	SP3200481	2025-12-11	581.44	BACS	SETTLED	2025-12-11
+PAY00004251	SP3200481	2026-01-08	581.44	BACS	SETTLED	2026-01-08
+PAY00004252	SP3200481	2026-02-05	581.44	BACS	SETTLED	2026-02-05
+PAY00004253	SP3200481	2026-03-05	581.44	BACS	SETTLED	2026-03-05
+PAY00004254	SP3200481	2026-04-02	581.44	BACS	SETTLED	2026-04-02
+PAY00004257	SP3200482	2025-12-14	721.24	POST_OFFICE	SETTLED	2025-12-14
+PAY00004258	SP3200482	2026-01-11	721.24	BACS	SETTLED	2026-01-11
+PAY00004259	SP3200482	2026-02-08	721.24	POST_OFFICE	SETTLED	2026-02-08
+PAY00004260	SP3200482	2026-03-08	721.24	POST_OFFICE	SETTLED	2026-03-08
+PAY00004261	SP3200482	2026-04-05	721.24	BACS	SETTLED	2026-04-05
+PAY00004264	SP3200483	2024-10-03	1150.24	BACS	SETTLED	2024-10-03
+PAY00004265	SP3200483	2025-01-02	1150.24	BACS	SETTLED	2025-01-02
+PAY00004266	SP3200483	2025-04-03	1150.24	BACS	SETTLED	2025-04-03
+PAY00004267	SP3200483	2025-07-03	1150.24	BACS	SETTLED	2025-07-03
+PAY00004268	SP3200483	2025-10-02	1150.24	BACS	SETTLED	2025-10-02
+PAY00004269	SP3200483	2026-01-01	1150.24	BACS	SETTLED	2026-01-01
+PAY00004270	SP3200483	2026-04-02	1150.24	BACS	SETTLED	2026-04-02
+PAY00004273	SP3200484	2025-09-16	581.44	BACS	SETTLED	2025-09-16
+PAY00004274	SP3200484	2025-10-14	581.44	BACS	SETTLED	2025-10-14
+PAY00004275	SP3200484	2025-11-11	581.44	POST_OFFICE	SETTLED	2025-11-11
+PAY00004276	SP3200484	2025-12-09	581.44	BACS	SETTLED	2025-12-09
+PAY00004277	SP3200484	2026-01-06	581.44	BACS	SETTLED	2026-01-06
+PAY00004278	SP3200484	2026-02-03	581.44	BACS	SETTLED	2026-02-03
+PAY00004279	SP3200484	2026-03-03	581.44	BACS	SETTLED	2026-03-03
+PAY00004280	SP3200484	2026-03-31	581.44	BACS	SETTLED	2026-03-31
+PAY00004283	SP3200485	2025-08-20	606.72	BACS	SETTLED	2025-08-20
+PAY00004284	SP3200485	2025-09-17	606.72	BACS	SETTLED	2025-09-17
+PAY00004285	SP3200485	2025-10-15	606.72	BACS	SETTLED	2025-10-15
+PAY00004286	SP3200485	2025-11-12	606.72	BACS	SETTLED	2025-11-12
+PAY00004287	SP3200485	2025-12-10	606.72	BACS	SETTLED	2025-12-10
+PAY00004288	SP3200485	2026-01-07	606.72	BACS	SETTLED	2026-01-07
+PAY00004289	SP3200485	2026-02-04	606.72	BACS	SETTLED	2026-02-04
+PAY00004290	SP3200485	2026-03-04	606.72	CHEQUE	SETTLED	2026-03-04
+PAY00004291	SP3200485	2026-04-01	606.72	BACS	SETTLED	2026-04-01
+PAY00004294	SP3200486	2025-10-16	893.68	BACS	SETTLED	2025-10-16
+PAY00004295	SP3200486	2025-11-13	893.68	POST_OFFICE	SETTLED	2025-11-13
+PAY00004296	SP3200486	2025-12-11	893.68	BACS	SETTLED	2025-12-11
+PAY00004297	SP3200486	2026-01-08	893.68	POST_OFFICE	SETTLED	2026-01-08
+PAY00004298	SP3200486	2026-02-05	893.68	BACS	SETTLED	2026-02-05
+PAY00004299	SP3200486	2026-03-05	893.68	BACS	SETTLED	2026-03-05
+PAY00004300	SP3200486	2026-04-02	893.68	BACS	SETTLED	2026-04-02
+PAY00004303	SP3200487	2026-02-24	131.30	BACS	SETTLED	2026-02-24
+PAY00004304	SP3200487	2026-03-03	131.30	BACS	SETTLED	2026-03-03
+PAY00004305	SP3200487	2026-03-10	131.30	BACS	SETTLED	2026-03-10
+PAY00004306	SP3200487	2026-03-17	131.30	POST_OFFICE	SETTLED	2026-03-17
+PAY00004307	SP3200487	2026-03-24	131.30	BACS	SETTLED	2026-03-24
+PAY00004308	SP3200487	2026-03-31	131.30	BACS	SETTLED	2026-03-31
+PAY00004311	SP3200488	2024-07-08	1807.39	BACS	SETTLED	2024-07-08
+PAY00004312	SP3200488	2024-10-07	1807.39	BACS	SETTLED	2024-10-07
+PAY00004313	SP3200488	2025-01-06	1807.39	BACS	SETTLED	2025-01-06
+PAY00004314	SP3200488	2025-04-07	1807.39	BACS	SETTLED	2025-04-07
+PAY00004315	SP3200488	2025-07-07	1807.39	CHEQUE	SETTLED	2025-07-07
+PAY00004316	SP3200488	2025-10-06	1807.39	BACS	SETTLED	2025-10-06
+PAY00004317	SP3200488	2026-01-05	1807.39	CHEQUE	SETTLED	2026-01-05
+PAY00004320	SP3200489	2024-10-05	2136.16	BACS	SETTLED	2024-10-05
+PAY00004321	SP3200489	2025-01-04	2136.16	BACS	SETTLED	2025-01-04
+PAY00004322	SP3200489	2025-04-05	2136.16	BACS	SETTLED	2025-04-05
+PAY00004323	SP3200489	2025-07-05	2136.16	BACS	SETTLED	2025-07-05
+PAY00004324	SP3200489	2025-10-04	2136.16	BACS	SETTLED	2025-10-04
+PAY00004325	SP3200489	2026-01-03	2136.16	BACS	SETTLED	2026-01-03
+PAY00004326	SP3200489	2026-04-04	2136.16	BACS	SETTLED	2026-04-04
+PAY00004329	SP3200490	2025-09-17	328.64	BACS	SETTLED	2025-09-17
+PAY00004330	SP3200490	2025-10-15	328.64	BACS	SETTLED	2025-10-15
+PAY00004331	SP3200490	2025-11-12	328.64	POST_OFFICE	SETTLED	2025-11-12
+PAY00004332	SP3200490	2025-12-10	328.64	BACS	SETTLED	2025-12-10
+PAY00004333	SP3200490	2026-01-07	328.64	BACS	SETTLED	2026-01-07
+PAY00004334	SP3200490	2026-02-04	328.64	BACS	SETTLED	2026-02-04
+PAY00004335	SP3200490	2026-03-04	328.64	POST_OFFICE	SETTLED	2026-03-04
+PAY00004336	SP3200490	2026-04-01	328.64	BACS	SETTLED	2026-04-01
+PAY00004339	SP3200491	2024-04-04	2300.48	BACS	SETTLED	2024-04-04
+PAY00004340	SP3200491	2024-07-04	2300.48	BACS	SETTLED	2024-07-04
+PAY00004341	SP3200491	2024-10-03	2300.48	BACS	SETTLED	2024-10-03
+PAY00004342	SP3200491	2025-01-02	2300.48	CHEQUE	SETTLED	2025-01-02
+PAY00004343	SP3200491	2025-04-03	2300.48	POST_OFFICE	SETTLED	2025-04-03
+PAY00004344	SP3200491	2025-07-03	2300.48	BACS	SETTLED	2025-07-03
+PAY00004345	SP3200491	2025-10-02	2300.48	BACS	SETTLED	2025-10-02
+PAY00004346	SP3200491	2026-01-01	2300.48	POST_OFFICE	SETTLED	2026-01-01
+PAY00004347	SP3200491	2026-04-02	2300.48	BACS	SETTLED	2026-04-02
+PAY00004350	SP3200492	2025-12-13	455.04	BACS	SETTLED	2025-12-13
+PAY00004351	SP3200492	2026-01-10	455.04	BACS	SETTLED	2026-01-10
+PAY00004352	SP3200492	2026-02-07	455.04	BACS	SETTLED	2026-02-07
+PAY00004353	SP3200492	2026-03-07	455.04	BACS	SETTLED	2026-03-07
+PAY00004354	SP3200492	2026-04-04	455.04	POST_OFFICE	SETTLED	2026-04-04
+PAY00004357	SP3200493	2024-10-04	2546.96	BACS	SETTLED	2024-10-04
+PAY00004358	SP3200493	2025-01-03	2546.96	BACS	SETTLED	2025-01-03
+PAY00004359	SP3200493	2025-04-04	2546.96	POST_OFFICE	SETTLED	2025-04-04
+PAY00004360	SP3200493	2025-07-04	2546.96	BACS	SETTLED	2025-07-04
+PAY00004361	SP3200493	2025-10-03	2546.96	BACS	SETTLED	2025-10-03
+PAY00004362	SP3200493	2026-01-02	2546.96	BACS	SETTLED	2026-01-02
+PAY00004363	SP3200493	2026-04-03	2546.96	BACS	SETTLED	2026-04-03
+PAY00004366	SP3200494	2025-11-13	808.96	BACS	SETTLED	2025-11-13
+PAY00004367	SP3200494	2025-12-11	808.96	BACS	SETTLED	2025-12-11
+PAY00004368	SP3200494	2026-01-08	808.96	BACS	SETTLED	2026-01-08
+PAY00004369	SP3200494	2026-02-05	808.96	POST_OFFICE	SETTLED	2026-02-05
+PAY00004370	SP3200494	2026-03-05	808.96	POST_OFFICE	SETTLED	2026-03-05
+PAY00004371	SP3200494	2026-04-02	808.96	POST_OFFICE	SETTLED	2026-04-02
+PAY00004374	SP3200495	2025-01-04	1725.36	BACS	SETTLED	2025-01-04
+PAY00004375	SP3200495	2025-04-05	1725.36	POST_OFFICE	SETTLED	2025-04-05
+PAY00004376	SP3200495	2025-07-05	1725.36	BACS	SETTLED	2025-07-05
+PAY00004377	SP3200495	2025-10-04	1725.36	BACS	SETTLED	2025-10-04
+PAY00004378	SP3200495	2026-01-03	1725.36	BACS	SETTLED	2026-01-03
+PAY00004379	SP3200495	2026-04-04	1725.36	BACS	SETTLED	2026-04-04
+PAY00004382	SP3200496	2025-10-17	857.52	BACS	SETTLED	2025-10-17
+PAY00004383	SP3200496	2025-11-14	857.52	BACS	SETTLED	2025-11-14
+PAY00004384	SP3200496	2025-12-12	857.52	BACS	SETTLED	2025-12-12
+PAY00004385	SP3200496	2026-01-09	857.52	BACS	SETTLED	2026-01-09
+PAY00004386	SP3200496	2026-02-06	857.52	BACS	SETTLED	2026-02-06
+PAY00004387	SP3200496	2026-03-06	857.52	BACS	SETTLED	2026-03-06
+PAY00004388	SP3200496	2026-04-03	857.52	BACS	SETTLED	2026-04-03
+PAY00004391	SP3200497	2024-10-03	1426.49	POST_OFFICE	SETTLED	2024-10-03
+PAY00004392	SP3200497	2025-01-02	1426.49	BACS	SETTLED	2025-01-02
+PAY00004393	SP3200497	2025-04-03	1426.49	BACS	SETTLED	2025-04-03
+PAY00004394	SP3200497	2025-07-03	1426.49	BACS	SETTLED	2025-07-03
+PAY00004395	SP3200497	2025-10-02	1426.49	BACS	SETTLED	2025-10-02
+PAY00004396	SP3200497	2026-01-01	1426.49	POST_OFFICE	SETTLED	2026-01-01
+PAY00004397	SP3200497	2026-04-02	1426.49	BACS	SETTLED	2026-04-02
+PAY00004400	SP3200498	2025-08-25	455.04	BACS	SETTLED	2025-08-25
+PAY00004401	SP3200498	2025-09-22	455.04	POST_OFFICE	SETTLED	2025-09-22
+PAY00004402	SP3200498	2025-10-20	455.04	BACS	SETTLED	2025-10-20
+PAY00004403	SP3200498	2025-11-17	455.04	BACS	SETTLED	2025-11-17
+PAY00004404	SP3200498	2025-12-15	455.04	BACS	SETTLED	2025-12-15
+PAY00004405	SP3200498	2026-01-12	455.04	POST_OFFICE	SETTLED	2026-01-12
+PAY00004406	SP3200498	2026-02-09	455.04	BACS	SETTLED	2026-02-09
+PAY00004407	SP3200498	2026-03-09	455.04	BACS	SETTLED	2026-03-09
+PAY00004410	SP3200499	2026-02-18	101.12	BACS	SETTLED	2026-02-18
+PAY00004411	SP3200499	2026-02-25	101.12	BACS	SETTLED	2026-02-25
+PAY00004412	SP3200499	2026-03-04	101.12	BACS	SETTLED	2026-03-04
+PAY00004413	SP3200499	2026-03-11	101.12	BACS	SETTLED	2026-03-11
+PAY00004414	SP3200499	2026-03-18	101.12	BACS	SETTLED	2026-03-18
+PAY00004415	SP3200499	2026-03-25	101.12	BACS	SETTLED	2026-03-25
+PAY00004416	SP3200499	2026-04-01	101.12	BACS	SETTLED	2026-04-01
+PAY00004419	SP3200500	2026-03-03	85.19	BACS	SETTLED	2026-03-03
+PAY00004420	SP3200500	2026-03-10	85.19	BACS	SETTLED	2026-03-10
+PAY00004421	SP3200500	2026-03-17	85.19	BACS	SETTLED	2026-03-17
+PAY00004422	SP3200500	2026-03-24	85.19	BACS	SETTLED	2026-03-24
+PAY00004423	SP3200500	2026-03-31	85.19	BACS	SETTLED	2026-03-31
+PAY00004426	SP3200501	2025-11-16	242.32	BACS	SETTLED	2025-11-16
+PAY00004427	SP3200501	2025-12-14	242.32	POST_OFFICE	SETTLED	2025-12-14
+PAY00004428	SP3200501	2026-01-11	242.32	CHEQUE	SETTLED	2026-01-11
+PAY00004429	SP3200501	2026-02-08	242.32	POST_OFFICE	SETTLED	2026-02-08
+PAY00004430	SP3200501	2026-03-08	242.32	BACS	SETTLED	2026-03-08
+PAY00004431	SP3200501	2026-04-05	242.32	BACS	SETTLED	2026-04-05
+PAY00004434	SP3200502	2025-11-14	455.04	POST_OFFICE	SETTLED	2025-11-14
+PAY00004435	SP3200502	2025-12-12	455.04	POST_OFFICE	SETTLED	2025-12-12
+PAY00004436	SP3200502	2026-01-09	455.04	BACS	SETTLED	2026-01-09
+PAY00004437	SP3200502	2026-02-06	455.04	POST_OFFICE	SETTLED	2026-02-06
+PAY00004438	SP3200502	2026-03-06	455.04	POST_OFFICE	SETTLED	2026-03-06
+PAY00004439	SP3200502	2026-04-03	455.04	BACS	SETTLED	2026-04-03
+PAY00004442	SP3200503	2026-03-05	107.44	CHEQUE	SETTLED	2026-03-05
+PAY00004443	SP3200503	2026-03-12	107.44	BACS	SETTLED	2026-03-12
+PAY00004444	SP3200503	2026-03-19	107.44	CHEQUE	SETTLED	2026-03-19
+PAY00004445	SP3200503	2026-03-26	107.44	CHEQUE	SETTLED	2026-03-26
+PAY00004446	SP3200503	2026-04-02	107.44	BACS	SETTLED	2026-04-02
+PAY00004449	SP3200504	2025-09-20	632.00	BACS	SETTLED	2025-09-20
+PAY00004450	SP3200504	2025-10-18	632.00	BACS	SETTLED	2025-10-18
+PAY00004451	SP3200504	2025-11-15	632.00	BACS	SETTLED	2025-11-15
+PAY00004452	SP3200504	2025-12-13	632.00	BACS	SETTLED	2025-12-13
+PAY00004453	SP3200504	2026-01-10	632.00	BACS	SETTLED	2026-01-10
+PAY00004454	SP3200504	2026-02-07	632.00	BACS	SETTLED	2026-02-07
+PAY00004455	SP3200504	2026-03-07	632.00	POST_OFFICE	SETTLED	2026-03-07
+PAY00004456	SP3200504	2026-04-04	632.00	BACS	SETTLED	2026-04-04
+PAY00004459	SP3200505	2025-11-16	859.52	BACS	SETTLED	2025-11-16
+PAY00004460	SP3200505	2025-12-14	859.52	BACS	SETTLED	2025-12-14
+PAY00004461	SP3200505	2026-01-11	859.52	BACS	SETTLED	2026-01-11
+PAY00004462	SP3200505	2026-02-08	859.52	BACS	SETTLED	2026-02-08
+PAY00004463	SP3200505	2026-03-08	859.52	BACS	SETTLED	2026-03-08
+PAY00004464	SP3200505	2026-04-05	859.52	BACS	SETTLED	2026-04-05
+PAY00004467	SP3200506	2026-03-05	189.60	BACS	SETTLED	2026-03-05
+PAY00004468	SP3200506	2026-03-12	189.60	POST_OFFICE	SETTLED	2026-03-12
+PAY00004469	SP3200506	2026-03-19	189.60	BACS	SETTLED	2026-03-19
+PAY00004470	SP3200506	2026-03-26	189.60	BACS	SETTLED	2026-03-26
+PAY00004471	SP3200506	2026-04-02	189.60	BACS	SETTLED	2026-04-02
+PAY00004474	SP3200507	2025-10-17	303.36	BACS	SETTLED	2025-10-17
+PAY00004475	SP3200507	2025-11-14	303.36	POST_OFFICE	SETTLED	2025-11-14
+PAY00004476	SP3200507	2025-12-12	303.36	BACS	SETTLED	2025-12-12
+PAY00004477	SP3200507	2026-01-09	303.36	POST_OFFICE	SETTLED	2026-01-09
+PAY00004478	SP3200507	2026-02-06	303.36	BACS	SETTLED	2026-02-06
+PAY00004479	SP3200507	2026-03-06	303.36	BACS	SETTLED	2026-03-06
+PAY00004480	SP3200507	2026-04-03	303.36	BACS	SETTLED	2026-04-03
+PAY00004483	SP3200508	2025-11-16	278.08	BACS	SETTLED	2025-11-16
+PAY00004484	SP3200508	2025-12-14	278.08	BACS	SETTLED	2025-12-14
+PAY00004485	SP3200508	2026-01-11	278.08	BACS	SETTLED	2026-01-11
+PAY00004486	SP3200508	2026-02-08	278.08	BACS	SETTLED	2026-02-08
+PAY00004487	SP3200508	2026-03-08	278.08	BACS	SETTLED	2026-03-08
+PAY00004488	SP3200508	2026-04-05	278.08	POST_OFFICE	SETTLED	2026-04-05
+PAY00004491	SP3200509	2025-11-15	404.48	BACS	SETTLED	2025-11-15
+PAY00004492	SP3200509	2025-12-13	404.48	POST_OFFICE	SETTLED	2025-12-13
+PAY00004493	SP3200509	2026-01-10	404.48	POST_OFFICE	SETTLED	2026-01-10
+PAY00004494	SP3200509	2026-02-07	404.48	BACS	SETTLED	2026-02-07
+PAY00004495	SP3200509	2026-03-07	404.48	BACS	SETTLED	2026-03-07
+PAY00004496	SP3200509	2026-04-04	404.48	BACS	SETTLED	2026-04-04
+PAY00004499	SP3200510	2026-03-08	69.52	BACS	SETTLED	2026-03-08
+PAY00004500	SP3200510	2026-03-15	69.52	BACS	SETTLED	2026-03-15
+PAY00004501	SP3200510	2026-03-22	69.52	BACS	SETTLED	2026-03-22
+PAY00004502	SP3200510	2026-03-29	69.52	BACS	SETTLED	2026-03-29
+PAY00004503	SP3200510	2026-04-05	69.52	BACS	SETTLED	2026-04-05
+PAY00004506	SP3200511	2026-02-12	157.65	BACS	SETTLED	2026-02-12
+PAY00004507	SP3200511	2026-02-19	157.65	BACS	SETTLED	2026-02-19
+PAY00004508	SP3200511	2026-02-26	157.65	BACS	SETTLED	2026-02-26
+PAY00004509	SP3200511	2026-03-05	157.65	BACS	SETTLED	2026-03-05
+PAY00004510	SP3200511	2026-03-12	157.65	BACS	SETTLED	2026-03-12
+PAY00004511	SP3200511	2026-03-19	157.65	POST_OFFICE	SETTLED	2026-03-19
+PAY00004512	SP3200511	2026-03-26	157.65	BACS	SETTLED	2026-03-26
+PAY00004513	SP3200511	2026-04-02	157.65	BACS	SETTLED	2026-04-02
+PAY00004516	SP3200512	2026-02-08	177.77	BACS	SETTLED	2026-02-08
+PAY00004517	SP3200512	2026-02-15	177.77	BACS	SETTLED	2026-02-15
+PAY00004518	SP3200512	2026-02-22	177.77	POST_OFFICE	SETTLED	2026-02-22
+PAY00004519	SP3200512	2026-03-01	177.77	BACS	SETTLED	2026-03-01
+PAY00004520	SP3200512	2026-03-08	177.77	BACS	SETTLED	2026-03-08
+PAY00004521	SP3200512	2026-03-15	177.77	BACS	SETTLED	2026-03-15
+PAY00004522	SP3200512	2026-03-22	177.77	BACS	SETTLED	2026-03-22
+PAY00004523	SP3200512	2026-03-29	177.77	BACS	SETTLED	2026-03-29
+PAY00004524	SP3200512	2026-04-05	177.77	POST_OFFICE	SETTLED	2026-04-05
+PAY00004527	SP3200513	2026-02-11	75.84	BACS	SETTLED	2026-02-11
+PAY00004528	SP3200513	2026-02-18	75.84	BACS	SETTLED	2026-02-18
+PAY00004529	SP3200513	2026-02-25	75.84	POST_OFFICE	SETTLED	2026-02-25
+PAY00004530	SP3200513	2026-03-04	75.84	BACS	SETTLED	2026-03-04
+PAY00004531	SP3200513	2026-03-11	75.84	BACS	SETTLED	2026-03-11
+PAY00004532	SP3200513	2026-03-18	75.84	BACS	SETTLED	2026-03-18
+PAY00004533	SP3200513	2026-03-25	75.84	BACS	SETTLED	2026-03-25
+PAY00004534	SP3200513	2026-04-01	75.84	BACS	SETTLED	2026-04-01
+PAY00004537	SP3200514	2025-11-13	581.44	POST_OFFICE	SETTLED	2025-11-13
+PAY00004538	SP3200514	2025-12-11	581.44	POST_OFFICE	SETTLED	2025-12-11
+PAY00004539	SP3200514	2026-01-08	581.44	BACS	SETTLED	2026-01-08
+PAY00004540	SP3200514	2026-02-05	581.44	BACS	SETTLED	2026-02-05
+PAY00004541	SP3200514	2026-03-05	581.44	BACS	SETTLED	2026-03-05
+PAY00004542	SP3200514	2026-04-02	581.44	CHEQUE	SETTLED	2026-04-02
+PAY00004545	SP3200515	2026-03-04	170.64	BACS	SETTLED	2026-03-04
+PAY00004546	SP3200515	2026-03-11	170.64	BACS	SETTLED	2026-03-11
+PAY00004547	SP3200515	2026-03-18	170.64	BACS	SETTLED	2026-03-18
+PAY00004548	SP3200515	2026-03-25	170.64	BACS	SETTLED	2026-03-25
+PAY00004549	SP3200515	2026-04-01	170.64	BACS	SETTLED	2026-04-01
+PAY00004552	SP3200516	2026-03-04	136.10	BACS	SETTLED	2026-03-04
+PAY00004553	SP3200516	2026-03-11	136.10	CHEQUE	SETTLED	2026-03-11
+PAY00004554	SP3200516	2026-03-18	136.10	BACS	SETTLED	2026-03-18
+PAY00004555	SP3200516	2026-03-25	136.10	BACS	SETTLED	2026-03-25
+PAY00004556	SP3200516	2026-04-01	136.10	BACS	SETTLED	2026-04-01
+PAY00004559	SP3200517	2024-07-02	2218.32	BACS	SETTLED	2024-07-02
+PAY00004560	SP3200517	2024-10-01	2218.32	BACS	SETTLED	2024-10-01
+PAY00004561	SP3200517	2024-12-31	2218.32	BACS	SETTLED	2024-12-31
+PAY00004562	SP3200517	2025-04-01	2218.32	BACS	SETTLED	2025-04-01
+PAY00004563	SP3200517	2025-07-01	2218.32	BACS	SETTLED	2025-07-01
+PAY00004564	SP3200517	2025-09-30	2218.32	BACS	SETTLED	2025-09-30
+PAY00004565	SP3200517	2025-12-30	2218.32	BACS	SETTLED	2025-12-30
+PAY00004566	SP3200517	2026-03-31	2218.32	BACS	SETTLED	2026-03-31
+PAY00004569	SP3200518	2026-02-27	63.20	BACS	SETTLED	2026-02-27
+PAY00004570	SP3200518	2026-03-06	63.20	POST_OFFICE	SETTLED	2026-03-06
+PAY00004571	SP3200518	2026-03-13	63.20	BACS	SETTLED	2026-03-13
+PAY00004572	SP3200518	2026-03-20	63.20	BACS	SETTLED	2026-03-20
+PAY00004573	SP3200518	2026-03-27	63.20	BACS	SETTLED	2026-03-27
+PAY00004574	SP3200518	2026-04-03	63.20	BACS	SETTLED	2026-04-03
+PAY00004577	SP3200519	2025-11-16	556.16	BACS	SETTLED	2025-11-16
+PAY00004578	SP3200519	2025-12-14	556.16	POST_OFFICE	SETTLED	2025-12-14
+PAY00004579	SP3200519	2026-01-11	556.16	BACS	SETTLED	2026-01-11
+PAY00004580	SP3200519	2026-02-08	556.16	BACS	SETTLED	2026-02-08
+PAY00004581	SP3200519	2026-03-08	556.16	BACS	SETTLED	2026-03-08
+PAY00004582	SP3200519	2026-04-05	556.16	BACS	SETTLED	2026-04-05
+PAY00004585	SP3200520	2026-02-19	152.85	BACS	SETTLED	2026-02-19
+PAY00004586	SP3200520	2026-02-26	152.85	BACS	SETTLED	2026-02-26
+PAY00004587	SP3200520	2026-03-05	152.85	BACS	SETTLED	2026-03-05
+PAY00004588	SP3200520	2026-03-12	152.85	CHEQUE	SETTLED	2026-03-12
+PAY00004589	SP3200520	2026-03-19	152.85	BACS	SETTLED	2026-03-19
+PAY00004590	SP3200520	2026-03-26	152.85	BACS	SETTLED	2026-03-26
+PAY00004591	SP3200520	2026-04-02	152.85	BACS	SETTLED	2026-04-02
+PAY00004594	SP3200521	2025-11-14	893.64	POST_OFFICE	SETTLED	2025-11-14
+PAY00004595	SP3200521	2025-12-12	893.64	BACS	SETTLED	2025-12-12
+PAY00004596	SP3200521	2026-01-09	893.64	BACS	SETTLED	2026-01-09
+PAY00004597	SP3200521	2026-02-06	893.64	BACS	SETTLED	2026-02-06
+PAY00004598	SP3200521	2026-03-06	893.64	BACS	SETTLED	2026-03-06
+PAY00004599	SP3200521	2026-04-03	893.64	BACS	SETTLED	2026-04-03
+PAY00004602	SP3200522	2026-02-17	113.76	POST_OFFICE	SETTLED	2026-02-17
+PAY00004603	SP3200522	2026-02-24	113.76	BACS	SETTLED	2026-02-24
+PAY00004604	SP3200522	2026-03-03	113.76	BACS	SETTLED	2026-03-03
+PAY00004605	SP3200522	2026-03-10	113.76	BACS	SETTLED	2026-03-10
+PAY00004606	SP3200522	2026-03-17	113.76	BACS	SETTLED	2026-03-17
+PAY00004607	SP3200522	2026-03-24	113.76	POST_OFFICE	SETTLED	2026-03-24
+PAY00004608	SP3200522	2026-03-31	113.76	BACS	SETTLED	2026-03-31
+PAY00004611	SP3200523	2025-12-13	551.92	BACS	SETTLED	2025-12-13
+PAY00004612	SP3200523	2026-01-10	551.92	BACS	SETTLED	2026-01-10
+PAY00004613	SP3200523	2026-02-07	551.92	CHEQUE	SETTLED	2026-02-07
+PAY00004614	SP3200523	2026-03-07	551.92	BACS	SETTLED	2026-03-07
+PAY00004615	SP3200523	2026-04-04	551.92	POST_OFFICE	SETTLED	2026-04-04
+PAY00004618	SP3200524	2026-02-05	151.68	BACS	SETTLED	2026-02-05
+PAY00004619	SP3200524	2026-02-12	151.68	BACS	SETTLED	2026-02-12
+PAY00004620	SP3200524	2026-02-19	151.68	BACS	SETTLED	2026-02-19
+PAY00004621	SP3200524	2026-02-26	151.68	CHEQUE	SETTLED	2026-02-26
+PAY00004622	SP3200524	2026-03-05	151.68	BACS	SETTLED	2026-03-05
+PAY00004623	SP3200524	2026-03-12	151.68	BACS	SETTLED	2026-03-12
+PAY00004624	SP3200524	2026-03-19	151.68	POST_OFFICE	SETTLED	2026-03-19
+PAY00004625	SP3200524	2026-03-26	151.68	BACS	SETTLED	2026-03-26
+PAY00004626	SP3200524	2026-04-02	151.68	BACS	SETTLED	2026-04-02
+PAY00004629	SP3200525	2025-09-16	733.12	BACS	SETTLED	2025-09-16
+PAY00004630	SP3200525	2025-10-14	733.12	CHEQUE	SETTLED	2025-10-14
+PAY00004631	SP3200525	2025-11-11	733.12	BACS	SETTLED	2025-11-11
+PAY00004632	SP3200525	2025-12-09	733.12	BACS	SETTLED	2025-12-09
+PAY00004633	SP3200525	2026-01-06	733.12	BACS	SETTLED	2026-01-06
+PAY00004634	SP3200525	2026-02-03	733.12	BACS	SETTLED	2026-02-03
+PAY00004635	SP3200525	2026-03-03	733.12	BACS	SETTLED	2026-03-03
+PAY00004636	SP3200525	2026-03-31	733.12	BACS	SETTLED	2026-03-31
+PAY00004639	SP3200526	2025-04-06	1629.29	BACS	SETTLED	2025-04-06
+PAY00004640	SP3200526	2025-07-06	1629.29	BACS	SETTLED	2025-07-06
+PAY00004641	SP3200526	2025-10-05	1629.29	BACS	SETTLED	2025-10-05
+PAY00004642	SP3200526	2026-01-04	1629.29	POST_OFFICE	SETTLED	2026-01-04
+PAY00004643	SP3200526	2026-04-05	1629.29	POST_OFFICE	SETTLED	2026-04-05
+PAY00004646	SP3200527	2024-04-03	2136.16	BACS	SETTLED	2024-04-03
+PAY00004647	SP3200527	2024-07-03	2136.16	POST_OFFICE	SETTLED	2024-07-03
+PAY00004648	SP3200527	2024-10-02	2136.16	POST_OFFICE	SETTLED	2024-10-02
+PAY00004649	SP3200527	2025-01-01	2136.16	BACS	SETTLED	2025-01-01
+PAY00004650	SP3200527	2025-04-02	2136.16	POST_OFFICE	SETTLED	2025-04-02
+PAY00004651	SP3200527	2025-07-02	2136.16	POST_OFFICE	SETTLED	2025-07-02
+PAY00004652	SP3200527	2025-10-01	2136.16	BACS	SETTLED	2025-10-01
+PAY00004653	SP3200527	2025-12-31	2136.16	BACS	SETTLED	2025-12-31
+PAY00004654	SP3200527	2026-04-01	2136.16	BACS	SETTLED	2026-04-01
+PAY00004657	SP3200528	2026-02-20	132.72	BACS	SETTLED	2026-02-20
+PAY00004658	SP3200528	2026-02-27	132.72	BACS	SETTLED	2026-02-27
+PAY00004659	SP3200528	2026-03-06	132.72	BACS	SETTLED	2026-03-06
+PAY00004660	SP3200528	2026-03-13	132.72	BACS	SETTLED	2026-03-13
+PAY00004661	SP3200528	2026-03-20	132.72	BACS	SETTLED	2026-03-20
+PAY00004662	SP3200528	2026-03-27	132.72	BACS	SETTLED	2026-03-27
+PAY00004663	SP3200528	2026-04-03	132.72	BACS	SETTLED	2026-04-03
+PAY00004666	SP3200529	2025-10-18	758.40	POST_OFFICE	SETTLED	2025-10-18
+PAY00004667	SP3200529	2025-11-15	758.40	POST_OFFICE	SETTLED	2025-11-15
+PAY00004668	SP3200529	2025-12-13	758.40	BACS	SETTLED	2025-12-13
+PAY00004669	SP3200529	2026-01-10	758.40	BACS	SETTLED	2026-01-10
+PAY00004670	SP3200529	2026-02-07	758.40	BACS	SETTLED	2026-02-07
+PAY00004671	SP3200529	2026-03-07	758.40	BACS	SETTLED	2026-03-07
+PAY00004672	SP3200529	2026-04-04	758.40	BACS	SETTLED	2026-04-04
+PAY00004675	SP3200530	2025-11-15	352.16	BACS	SETTLED	2025-11-15
+PAY00004676	SP3200530	2025-12-13	352.16	BACS	SETTLED	2025-12-13
+PAY00004677	SP3200530	2026-01-10	352.16	BACS	SETTLED	2026-01-10
+PAY00004678	SP3200530	2026-02-07	352.16	BACS	SETTLED	2026-02-07
+PAY00004679	SP3200530	2026-03-07	352.16	BACS	SETTLED	2026-03-07
+PAY00004680	SP3200530	2026-04-04	352.16	BACS	SETTLED	2026-04-04
+PAY00004683	SP3200531	2025-08-20	252.80	BACS	SETTLED	2025-08-20
+PAY00004684	SP3200531	2025-09-17	252.80	BACS	SETTLED	2025-09-17
+PAY00004685	SP3200531	2025-10-15	252.80	BACS	SETTLED	2025-10-15
+PAY00004686	SP3200531	2025-11-12	252.80	POST_OFFICE	SETTLED	2025-11-12
+PAY00004687	SP3200531	2025-12-10	252.80	BACS	SETTLED	2025-12-10
+PAY00004688	SP3200531	2026-01-07	252.80	BACS	SETTLED	2026-01-07
+PAY00004689	SP3200531	2026-02-04	252.80	BACS	SETTLED	2026-02-04
+PAY00004690	SP3200531	2026-03-04	252.80	BACS	SETTLED	2026-03-04
+PAY00004691	SP3200531	2026-04-01	252.80	CHEQUE	SETTLED	2026-04-01
+PAY00004694	SP3200532	2026-02-05	126.40	BACS	SETTLED	2026-02-05
+PAY00004695	SP3200532	2026-02-12	126.40	BACS	SETTLED	2026-02-12
+PAY00004696	SP3200532	2026-02-19	126.40	CHEQUE	SETTLED	2026-02-19
+PAY00004697	SP3200532	2026-02-26	126.40	POST_OFFICE	SETTLED	2026-02-26
+PAY00004698	SP3200532	2026-03-05	126.40	BACS	SETTLED	2026-03-05
+PAY00004699	SP3200532	2026-03-12	126.40	CHEQUE	SETTLED	2026-03-12
+PAY00004700	SP3200532	2026-03-19	126.40	BACS	SETTLED	2026-03-19
+PAY00004701	SP3200532	2026-03-26	126.40	BACS	SETTLED	2026-03-26
+PAY00004702	SP3200532	2026-04-02	126.40	POST_OFFICE	SETTLED	2026-04-02
+PAY00004705	SP3200533	2025-12-11	480.32	BACS	SETTLED	2025-12-11
+PAY00004706	SP3200533	2026-01-08	480.32	BACS	SETTLED	2026-01-08
+PAY00004707	SP3200533	2026-02-05	480.32	BACS	SETTLED	2026-02-05
+PAY00004708	SP3200533	2026-03-05	480.32	BACS	SETTLED	2026-03-05
+PAY00004709	SP3200533	2026-04-02	480.32	POST_OFFICE	SETTLED	2026-04-02
+PAY00004712	SP3200534	2025-10-20	733.12	POST_OFFICE	SETTLED	2025-10-20
+PAY00004713	SP3200534	2025-11-17	733.12	POST_OFFICE	SETTLED	2025-11-17
+PAY00004714	SP3200534	2025-12-15	733.12	BACS	SETTLED	2025-12-15
+PAY00004715	SP3200534	2026-01-12	733.12	BACS	SETTLED	2026-01-12
+PAY00004716	SP3200534	2026-02-09	733.12	BACS	SETTLED	2026-02-09
+PAY00004717	SP3200534	2026-03-09	733.12	POST_OFFICE	SETTLED	2026-03-09
+PAY00004720	SP3200535	2026-02-18	94.33	BACS	SETTLED	2026-02-18
+PAY00004721	SP3200535	2026-02-25	94.33	BACS	SETTLED	2026-02-25
+PAY00004722	SP3200535	2026-03-04	94.33	BACS	SETTLED	2026-03-04
+PAY00004723	SP3200535	2026-03-11	94.33	BACS	SETTLED	2026-03-11
+PAY00004724	SP3200535	2026-03-18	94.33	BACS	SETTLED	2026-03-18
+PAY00004725	SP3200535	2026-03-25	94.33	BACS	SETTLED	2026-03-25
+PAY00004726	SP3200535	2026-04-01	94.33	BACS	SETTLED	2026-04-01
+PAY00004729	SP3200536	2026-02-04	151.08	BACS	SETTLED	2026-02-04
+PAY00004730	SP3200536	2026-02-11	151.08	BACS	SETTLED	2026-02-11
+PAY00004731	SP3200536	2026-02-18	151.08	POST_OFFICE	SETTLED	2026-02-18
+PAY00004732	SP3200536	2026-02-25	151.08	BACS	SETTLED	2026-02-25
+PAY00004733	SP3200536	2026-03-04	151.08	BACS	SETTLED	2026-03-04
+PAY00004734	SP3200536	2026-03-11	151.08	BACS	SETTLED	2026-03-11
+PAY00004735	SP3200536	2026-03-18	151.08	BACS	SETTLED	2026-03-18
+PAY00004736	SP3200536	2026-03-25	151.08	BACS	SETTLED	2026-03-25
+PAY00004737	SP3200536	2026-04-01	151.08	BACS	SETTLED	2026-04-01
+PAY00004740	SP3200537	2025-04-06	1586.39	POST_OFFICE	SETTLED	2025-04-06
+PAY00004741	SP3200537	2025-07-06	1586.39	POST_OFFICE	SETTLED	2025-07-06
+PAY00004742	SP3200537	2025-10-05	1586.39	BACS	SETTLED	2025-10-05
+PAY00004743	SP3200537	2026-01-04	1586.39	BACS	SETTLED	2026-01-04
+PAY00004744	SP3200537	2026-04-05	1586.39	BACS	SETTLED	2026-04-05
+PAY00004747	SP3200538	2026-02-05	101.12	BACS	SETTLED	2026-02-05
+PAY00004748	SP3200538	2026-02-12	101.12	POST_OFFICE	SETTLED	2026-02-12
+PAY00004749	SP3200538	2026-02-19	101.12	BACS	SETTLED	2026-02-19
+PAY00004750	SP3200538	2026-02-26	101.12	POST_OFFICE	SETTLED	2026-02-26
+PAY00004751	SP3200538	2026-03-05	101.12	POST_OFFICE	SETTLED	2026-03-05
+PAY00004752	SP3200538	2026-03-12	101.12	BACS	SETTLED	2026-03-12
+PAY00004753	SP3200538	2026-03-19	101.12	BACS	SETTLED	2026-03-19
+PAY00004754	SP3200538	2026-03-26	101.12	BACS	SETTLED	2026-03-26
+PAY00004755	SP3200538	2026-04-02	101.12	POST_OFFICE	SETTLED	2026-04-02
+PAY00004758	SP3200539	2025-08-25	834.24	POST_OFFICE	SETTLED	2025-08-25
+PAY00004759	SP3200539	2025-09-22	834.24	BACS	SETTLED	2025-09-22
+PAY00004760	SP3200539	2025-10-20	834.24	BACS	SETTLED	2025-10-20
+PAY00004761	SP3200539	2025-11-17	834.24	BACS	SETTLED	2025-11-17
+PAY00004762	SP3200539	2025-12-15	834.24	BACS	SETTLED	2025-12-15
+PAY00004763	SP3200539	2026-01-12	834.24	BACS	SETTLED	2026-01-12
+PAY00004764	SP3200539	2026-02-09	834.24	BACS	SETTLED	2026-02-09
+PAY00004765	SP3200539	2026-03-09	834.24	POST_OFFICE	SETTLED	2026-03-09
+PAY00004768	SP3200540	2026-02-14	195.92	BACS	SETTLED	2026-02-14
+PAY00004769	SP3200540	2026-02-21	195.92	BACS	SETTLED	2026-02-21
+PAY00004770	SP3200540	2026-02-28	195.92	BACS	SETTLED	2026-02-28
+PAY00004771	SP3200540	2026-03-07	195.92	BACS	SETTLED	2026-03-07
+PAY00004772	SP3200540	2026-03-14	195.92	BACS	SETTLED	2026-03-14
+PAY00004773	SP3200540	2026-03-21	195.92	POST_OFFICE	SETTLED	2026-03-21
+PAY00004774	SP3200540	2026-03-28	195.92	BACS	SETTLED	2026-03-28
+PAY00004775	SP3200540	2026-04-04	195.92	BACS	SETTLED	2026-04-04
+PAY00004778	SP3200541	2025-08-22	632.00	POST_OFFICE	SETTLED	2025-08-22
+PAY00004779	SP3200541	2025-09-19	632.00	BACS	SETTLED	2025-09-19
+PAY00004780	SP3200541	2025-10-17	632.00	BACS	SETTLED	2025-10-17
+PAY00004781	SP3200541	2025-11-14	632.00	BACS	SETTLED	2025-11-14
+PAY00004782	SP3200541	2025-12-12	632.00	BACS	SETTLED	2025-12-12
+PAY00004783	SP3200541	2026-01-09	632.00	POST_OFFICE	SETTLED	2026-01-09
+PAY00004784	SP3200541	2026-02-06	632.00	POST_OFFICE	SETTLED	2026-02-06
+PAY00004785	SP3200541	2026-03-06	632.00	BACS	SETTLED	2026-03-06
+PAY00004786	SP3200541	2026-04-03	632.00	POST_OFFICE	SETTLED	2026-04-03
+PAY00004789	SP3200542	2025-10-14	808.96	BACS	SETTLED	2025-10-14
+PAY00004790	SP3200542	2025-11-11	808.96	BACS	SETTLED	2025-11-11
+PAY00004791	SP3200542	2025-12-09	808.96	BACS	SETTLED	2025-12-09
+PAY00004792	SP3200542	2026-01-06	808.96	BACS	SETTLED	2026-01-06
+PAY00004793	SP3200542	2026-02-03	808.96	BACS	SETTLED	2026-02-03
+PAY00004794	SP3200542	2026-03-03	808.96	BACS	SETTLED	2026-03-03
+PAY00004795	SP3200542	2026-03-31	808.96	BACS	SETTLED	2026-03-31
+PAY00004798	SP3200543	2025-12-11	285.56	BACS	SETTLED	2025-12-11
+PAY00004799	SP3200543	2026-01-08	285.56	BACS	SETTLED	2026-01-08
+PAY00004800	SP3200543	2026-02-05	285.56	BACS	SETTLED	2026-02-05
+PAY00004801	SP3200543	2026-03-05	285.56	BACS	SETTLED	2026-03-05
+PAY00004802	SP3200543	2026-04-02	285.56	POST_OFFICE	SETTLED	2026-04-02
+PAY00004805	SP3200544	2026-02-22	198.22	POST_OFFICE	SETTLED	2026-02-22
+PAY00004806	SP3200544	2026-03-01	198.22	BACS	SETTLED	2026-03-01
+PAY00004807	SP3200544	2026-03-08	198.22	BACS	SETTLED	2026-03-08
+PAY00004808	SP3200544	2026-03-15	198.22	BACS	SETTLED	2026-03-15
+PAY00004809	SP3200544	2026-03-22	198.22	BACS	SETTLED	2026-03-22
+PAY00004810	SP3200544	2026-03-29	198.22	POST_OFFICE	SETTLED	2026-03-29
+PAY00004811	SP3200544	2026-04-05	198.22	BACS	SETTLED	2026-04-05
+PAY00004814	SP3200545	2026-03-04	208.56	BACS	SETTLED	2026-03-04
+PAY00004815	SP3200545	2026-03-11	208.56	BACS	SETTLED	2026-03-11
+PAY00004816	SP3200545	2026-03-18	208.56	CHEQUE	SETTLED	2026-03-18
+PAY00004817	SP3200545	2026-03-25	208.56	BACS	SETTLED	2026-03-25
+PAY00004818	SP3200545	2026-04-01	208.56	BACS	SETTLED	2026-04-01
+PAY00004821	SP3200546	2026-02-16	110.17	BACS	SETTLED	2026-02-16
+PAY00004822	SP3200546	2026-02-23	110.17	BACS	SETTLED	2026-02-23
+PAY00004823	SP3200546	2026-03-02	110.17	BACS	SETTLED	2026-03-02
+PAY00004824	SP3200546	2026-03-09	110.17	BACS	SETTLED	2026-03-09
+PAY00004825	SP3200546	2026-03-16	110.17	BACS	SETTLED	2026-03-16
+PAY00004826	SP3200546	2026-03-23	110.17	BACS	SETTLED	2026-03-23
+PAY00004827	SP3200546	2026-03-30	110.17	BACS	SETTLED	2026-03-30
+PAY00004830	SP3200547	2025-09-18	783.68	BACS	SETTLED	2025-09-18
+PAY00004831	SP3200547	2025-10-16	783.68	BACS	SETTLED	2025-10-16
+PAY00004832	SP3200547	2025-11-13	783.68	BACS	SETTLED	2025-11-13
+PAY00004833	SP3200547	2025-12-11	783.68	BACS	SETTLED	2025-12-11
+PAY00004834	SP3200547	2026-01-08	783.68	BACS	SETTLED	2026-01-08
+PAY00004835	SP3200547	2026-02-05	783.68	BACS	SETTLED	2026-02-05
+PAY00004836	SP3200547	2026-03-05	783.68	BACS	SETTLED	2026-03-05
+PAY00004837	SP3200547	2026-04-02	783.68	BACS	SETTLED	2026-04-02
+PAY00004840	SP3200548	2026-03-01	227.12	BACS	SETTLED	2026-03-01
+PAY00004841	SP3200548	2026-03-08	227.12	BACS	SETTLED	2026-03-08
+PAY00004842	SP3200548	2026-03-15	227.12	BACS	SETTLED	2026-03-15
+PAY00004843	SP3200548	2026-03-22	227.12	BACS	SETTLED	2026-03-22
+PAY00004844	SP3200548	2026-03-29	227.12	BACS	SETTLED	2026-03-29
+PAY00004845	SP3200548	2026-04-05	227.12	POST_OFFICE	SETTLED	2026-04-05
+PAY00004848	SP3200549	2026-02-21	134.40	BACS	SETTLED	2026-02-21
+PAY00004849	SP3200549	2026-02-28	134.40	POST_OFFICE	SETTLED	2026-02-28
+PAY00004850	SP3200549	2026-03-07	134.40	BACS	SETTLED	2026-03-07
+PAY00004851	SP3200549	2026-03-14	134.40	POST_OFFICE	SETTLED	2026-03-14
+PAY00004852	SP3200549	2026-03-21	134.40	BACS	SETTLED	2026-03-21
+PAY00004853	SP3200549	2026-03-28	134.40	BACS	SETTLED	2026-03-28
+PAY00004854	SP3200549	2026-04-04	134.40	BACS	SETTLED	2026-04-04
+PAY00004857	SP3200550	2026-02-22	139.04	BACS	SETTLED	2026-02-22
+PAY00004858	SP3200550	2026-03-01	139.04	BACS	SETTLED	2026-03-01
+PAY00004859	SP3200550	2026-03-08	139.04	BACS	SETTLED	2026-03-08
+PAY00004860	SP3200550	2026-03-15	139.04	BACS	SETTLED	2026-03-15
+PAY00004861	SP3200550	2026-03-22	139.04	BACS	SETTLED	2026-03-22
+PAY00004862	SP3200550	2026-03-29	139.04	POST_OFFICE	SETTLED	2026-03-29
+PAY00004863	SP3200550	2026-04-05	139.04	BACS	SETTLED	2026-04-05
+PAY00004866	SP3200551	2025-11-11	567.84	POST_OFFICE	SETTLED	2025-11-11
+PAY00004867	SP3200551	2025-12-09	567.84	POST_OFFICE	SETTLED	2025-12-09
+PAY00004868	SP3200551	2026-01-06	567.84	CHEQUE	SETTLED	2026-01-06
+PAY00004869	SP3200551	2026-02-03	567.84	BACS	SETTLED	2026-02-03
+PAY00004870	SP3200551	2026-03-03	567.84	POST_OFFICE	SETTLED	2026-03-03
+PAY00004871	SP3200551	2026-03-31	567.84	BACS	SETTLED	2026-03-31
+PAY00004874	SP3200552	2026-02-18	164.32	POST_OFFICE	SETTLED	2026-02-18
+PAY00004875	SP3200552	2026-02-25	164.32	BACS	SETTLED	2026-02-25
+PAY00004876	SP3200552	2026-03-04	164.32	BACS	SETTLED	2026-03-04
+PAY00004877	SP3200552	2026-03-11	164.32	POST_OFFICE	SETTLED	2026-03-11
+PAY00004878	SP3200552	2026-03-18	164.32	BACS	SETTLED	2026-03-18
+PAY00004879	SP3200552	2026-03-25	164.32	BACS	SETTLED	2026-03-25
+PAY00004880	SP3200552	2026-04-01	164.32	BACS	SETTLED	2026-04-01
+PAY00004883	SP3200553	2025-08-24	525.80	BACS	SETTLED	2025-08-24
+PAY00004884	SP3200553	2025-09-21	525.80	BACS	SETTLED	2025-09-21
+PAY00004885	SP3200553	2025-10-19	525.80	BACS	SETTLED	2025-10-19
+PAY00004886	SP3200553	2025-11-16	525.80	BACS	SETTLED	2025-11-16
+PAY00004887	SP3200553	2025-12-14	525.80	BACS	SETTLED	2025-12-14
+PAY00004888	SP3200553	2026-01-11	525.80	CHEQUE	SETTLED	2026-01-11
+PAY00004889	SP3200553	2026-02-08	525.80	CHEQUE	SETTLED	2026-02-08
+PAY00004890	SP3200553	2026-03-08	525.80	BACS	SETTLED	2026-03-08
+PAY00004891	SP3200553	2026-04-05	525.80	BACS	SETTLED	2026-04-05
+PAY00004894	SP3200554	2025-09-20	447.96	CHEQUE	SETTLED	2025-09-20
+PAY00004895	SP3200554	2025-10-18	447.96	BACS	SETTLED	2025-10-18
+PAY00004896	SP3200554	2025-11-15	447.96	POST_OFFICE	SETTLED	2025-11-15
+PAY00004897	SP3200554	2025-12-13	447.96	BACS	SETTLED	2025-12-13
+PAY00004898	SP3200554	2026-01-10	447.96	BACS	SETTLED	2026-01-10
+PAY00004899	SP3200554	2026-02-07	447.96	BACS	SETTLED	2026-02-07
+PAY00004900	SP3200554	2026-03-07	447.96	BACS	SETTLED	2026-03-07
+PAY00004901	SP3200554	2026-04-04	447.96	BACS	SETTLED	2026-04-04
+PAY00004904	SP3200555	2025-10-20	859.52	BACS	SETTLED	2025-10-20
+PAY00004905	SP3200555	2025-11-17	859.52	BACS	SETTLED	2025-11-17
+PAY00004906	SP3200555	2025-12-15	859.52	BACS	SETTLED	2025-12-15
+PAY00004907	SP3200555	2026-01-12	859.52	BACS	SETTLED	2026-01-12
+PAY00004908	SP3200555	2026-02-09	859.52	BACS	SETTLED	2026-02-09
+PAY00004909	SP3200555	2026-03-09	859.52	BACS	SETTLED	2026-03-09
+PAY00004912	SP3200556	2025-09-16	429.76	BACS	SETTLED	2025-09-16
+PAY00004913	SP3200556	2025-10-14	429.76	BACS	SETTLED	2025-10-14
+PAY00004914	SP3200556	2025-11-11	429.76	BACS	SETTLED	2025-11-11
+PAY00004915	SP3200556	2025-12-09	429.76	BACS	SETTLED	2025-12-09
+PAY00004916	SP3200556	2026-01-06	429.76	BACS	SETTLED	2026-01-06
+PAY00004917	SP3200556	2026-02-03	429.76	BACS	SETTLED	2026-02-03
+PAY00004918	SP3200556	2026-03-03	429.76	POST_OFFICE	SETTLED	2026-03-03
+PAY00004919	SP3200556	2026-03-31	429.76	BACS	SETTLED	2026-03-31
+PAY00004922	SP3200557	2025-09-19	499.04	POST_OFFICE	SETTLED	2025-09-19
+PAY00004923	SP3200557	2025-10-17	499.04	BACS	SETTLED	2025-10-17
+PAY00004924	SP3200557	2025-11-14	499.04	POST_OFFICE	SETTLED	2025-11-14
+PAY00004925	SP3200557	2025-12-12	499.04	BACS	SETTLED	2025-12-12
+PAY00004926	SP3200557	2026-01-09	499.04	BACS	SETTLED	2026-01-09
+PAY00004927	SP3200557	2026-02-06	499.04	BACS	SETTLED	2026-02-06
+PAY00004928	SP3200557	2026-03-06	499.04	BACS	SETTLED	2026-03-06
+PAY00004929	SP3200557	2026-04-03	499.04	BACS	SETTLED	2026-04-03
+PAY00004932	SP3200558	2025-11-14	413.12	BACS	SETTLED	2025-11-14
+PAY00004933	SP3200558	2025-12-12	413.12	BACS	SETTLED	2025-12-12
+PAY00004934	SP3200558	2026-01-09	413.12	BACS	SETTLED	2026-01-09
+PAY00004935	SP3200558	2026-02-06	413.12	BACS	SETTLED	2026-02-06
+PAY00004936	SP3200558	2026-03-06	413.12	BACS	SETTLED	2026-03-06
+PAY00004937	SP3200558	2026-04-03	413.12	BACS	SETTLED	2026-04-03
+PAY00004940	SP3200559	2025-09-17	411.92	BACS	SETTLED	2025-09-17
+PAY00004941	SP3200559	2025-10-15	411.92	BACS	SETTLED	2025-10-15
+PAY00004942	SP3200559	2025-11-12	411.92	POST_OFFICE	SETTLED	2025-11-12
+PAY00004943	SP3200559	2025-12-10	411.92	BACS	SETTLED	2025-12-10
+PAY00004944	SP3200559	2026-01-07	411.92	BACS	SETTLED	2026-01-07
+PAY00004945	SP3200559	2026-02-04	411.92	BACS	SETTLED	2026-02-04
+PAY00004946	SP3200559	2026-03-04	411.92	BACS	SETTLED	2026-03-04
+PAY00004947	SP3200559	2026-04-01	411.92	BACS	SETTLED	2026-04-01
+PAY00004950	SP3200560	2025-08-23	581.44	BACS	SETTLED	2025-08-23
+PAY00004951	SP3200560	2025-09-20	581.44	BACS	SETTLED	2025-09-20
+PAY00004952	SP3200560	2025-10-18	581.44	BACS	SETTLED	2025-10-18
+PAY00004953	SP3200560	2025-11-15	581.44	BACS	SETTLED	2025-11-15
+PAY00004954	SP3200560	2025-12-13	581.44	BACS	SETTLED	2025-12-13
+PAY00004955	SP3200560	2026-01-10	581.44	BACS	SETTLED	2026-01-10
+PAY00004956	SP3200560	2026-02-07	581.44	POST_OFFICE	SETTLED	2026-02-07
+PAY00004957	SP3200560	2026-03-07	581.44	POST_OFFICE	SETTLED	2026-03-07
+PAY00004958	SP3200560	2026-04-04	581.44	BACS	SETTLED	2026-04-04
+PAY00004961	SP3200561	2025-08-23	513.40	POST_OFFICE	SETTLED	2025-08-23
+PAY00004962	SP3200561	2025-09-20	513.40	BACS	SETTLED	2025-09-20
+PAY00004963	SP3200561	2025-10-18	513.40	BACS	SETTLED	2025-10-18
+PAY00004964	SP3200561	2025-11-15	513.40	BACS	SETTLED	2025-11-15
+PAY00004965	SP3200561	2025-12-13	513.40	POST_OFFICE	SETTLED	2025-12-13
+PAY00004966	SP3200561	2026-01-10	513.40	BACS	SETTLED	2026-01-10
+PAY00004967	SP3200561	2026-02-07	513.40	BACS	SETTLED	2026-02-07
+PAY00004968	SP3200561	2026-03-07	513.40	BACS	SETTLED	2026-03-07
+PAY00004969	SP3200561	2026-04-04	513.40	BACS	SETTLED	2026-04-04
+PAY00004972	SP3200562	2026-02-13	132.72	BACS	SETTLED	2026-02-13
+PAY00004973	SP3200562	2026-02-20	132.72	BACS	SETTLED	2026-02-20
+PAY00004974	SP3200562	2026-02-27	132.72	BACS	SETTLED	2026-02-27
+PAY00004975	SP3200562	2026-03-06	132.72	BACS	SETTLED	2026-03-06
+PAY00004976	SP3200562	2026-03-13	132.72	CHEQUE	SETTLED	2026-03-13
+PAY00004977	SP3200562	2026-03-20	132.72	BACS	SETTLED	2026-03-20
+PAY00004978	SP3200562	2026-03-27	132.72	BACS	SETTLED	2026-03-27
+PAY00004979	SP3200562	2026-04-03	132.72	BACS	SETTLED	2026-04-03
+PAY00004982	SP3200563	2025-12-13	207.36	BACS	SETTLED	2025-12-13
+PAY00004983	SP3200563	2026-01-10	207.36	BACS	SETTLED	2026-01-10
+PAY00004984	SP3200563	2026-02-07	207.36	BACS	SETTLED	2026-02-07
+PAY00004985	SP3200563	2026-03-07	207.36	BACS	SETTLED	2026-03-07
+PAY00004986	SP3200563	2026-04-04	207.36	BACS	SETTLED	2026-04-04
+PAY00004989	SP3200564	2025-11-14	505.60	BACS	SETTLED	2025-11-14
+PAY00004990	SP3200564	2025-12-12	505.60	POST_OFFICE	SETTLED	2025-12-12
+PAY00004991	SP3200564	2026-01-09	505.60	BACS	SETTLED	2026-01-09
+PAY00004992	SP3200564	2026-02-06	505.60	BACS	SETTLED	2026-02-06
+PAY00004993	SP3200564	2026-03-06	505.60	POST_OFFICE	SETTLED	2026-03-06
+PAY00004994	SP3200564	2026-04-03	505.60	BACS	SETTLED	2026-04-03
+PAY00004997	SP3200565	2025-11-15	884.80	CHEQUE	SETTLED	2025-11-15
+PAY00004998	SP3200565	2025-12-13	884.80	POST_OFFICE	SETTLED	2025-12-13
+PAY00004999	SP3200565	2026-01-10	884.80	BACS	SETTLED	2026-01-10
+PAY00005000	SP3200565	2026-02-07	884.80	BACS	SETTLED	2026-02-07
+PAY00005001	SP3200565	2026-03-07	884.80	BACS	SETTLED	2026-03-07
+PAY00005002	SP3200565	2026-04-04	884.80	POST_OFFICE	SETTLED	2026-04-04
+PAY00005005	SP3200566	2025-10-20	246.04	BACS	SETTLED	2025-10-20
+PAY00005006	SP3200566	2025-11-17	246.04	BACS	SETTLED	2025-11-17
+PAY00005007	SP3200566	2025-12-15	246.04	POST_OFFICE	SETTLED	2025-12-15
+PAY00005008	SP3200566	2026-01-12	246.04	BACS	SETTLED	2026-01-12
+PAY00005009	SP3200566	2026-02-09	246.04	POST_OFFICE	SETTLED	2026-02-09
+PAY00005010	SP3200566	2026-03-09	246.04	BACS	SETTLED	2026-03-09
+PAY00005013	SP3200567	2025-08-22	556.16	BACS	SETTLED	2025-08-22
+PAY00005014	SP3200567	2025-09-19	556.16	BACS	SETTLED	2025-09-19
+PAY00005015	SP3200567	2025-10-17	556.16	BACS	SETTLED	2025-10-17
+PAY00005016	SP3200567	2025-11-14	556.16	BACS	SETTLED	2025-11-14
+PAY00005017	SP3200567	2025-12-12	556.16	BACS	SETTLED	2025-12-12
+PAY00005018	SP3200567	2026-01-09	556.16	BACS	SETTLED	2026-01-09
+PAY00005019	SP3200567	2026-02-06	556.16	BACS	SETTLED	2026-02-06
+PAY00005020	SP3200567	2026-03-06	556.16	BACS	SETTLED	2026-03-06
+PAY00005021	SP3200567	2026-04-03	556.16	BACS	SETTLED	2026-04-03
+PAY00005024	SP3200568	2025-12-12	517.20	BACS	SETTLED	2025-12-12
+PAY00005025	SP3200568	2026-01-09	517.20	BACS	SETTLED	2026-01-09
+PAY00005026	SP3200568	2026-02-06	517.20	BACS	SETTLED	2026-02-06
+PAY00005027	SP3200568	2026-03-06	517.20	CHEQUE	SETTLED	2026-03-06
+PAY00005028	SP3200568	2026-04-03	517.20	BACS	SETTLED	2026-04-03
+PAY00005031	SP3200569	2025-12-10	581.44	POST_OFFICE	SETTLED	2025-12-10
+PAY00005032	SP3200569	2026-01-07	581.44	POST_OFFICE	SETTLED	2026-01-07
+PAY00005033	SP3200569	2026-02-04	581.44	BACS	SETTLED	2026-02-04
+PAY00005034	SP3200569	2026-03-04	581.44	BACS	SETTLED	2026-03-04
+PAY00005035	SP3200569	2026-04-01	581.44	BACS	SETTLED	2026-04-01
+PAY00005038	SP3200570	2025-12-12	808.96	BACS	SETTLED	2025-12-12
+PAY00005039	SP3200570	2026-01-09	808.96	BACS	SETTLED	2026-01-09
+PAY00005040	SP3200570	2026-02-06	808.96	BACS	SETTLED	2026-02-06
+PAY00005041	SP3200570	2026-03-06	808.96	BACS	SETTLED	2026-03-06
+PAY00005042	SP3200570	2026-04-03	808.96	POST_OFFICE	SETTLED	2026-04-03
+PAY00005045	SP3200571	2026-02-11	213.29	POST_OFFICE	SETTLED	2026-02-11
+PAY00005046	SP3200571	2026-02-18	213.29	CHEQUE	SETTLED	2026-02-18
+PAY00005047	SP3200571	2026-02-25	213.29	BACS	SETTLED	2026-02-25
+PAY00005048	SP3200571	2026-03-04	213.29	BACS	SETTLED	2026-03-04
+PAY00005049	SP3200571	2026-03-11	213.29	BACS	SETTLED	2026-03-11
+PAY00005050	SP3200571	2026-03-18	213.29	BACS	SETTLED	2026-03-18
+PAY00005051	SP3200571	2026-03-25	213.29	BACS	SETTLED	2026-03-25
+PAY00005052	SP3200571	2026-04-01	213.29	BACS	SETTLED	2026-04-01
+PAY00005055	SP3200572	2025-10-17	452.88	BACS	SETTLED	2025-10-17
+PAY00005056	SP3200572	2025-11-14	452.88	BACS	SETTLED	2025-11-14
+PAY00005057	SP3200572	2025-12-12	452.88	BACS	SETTLED	2025-12-12
+PAY00005058	SP3200572	2026-01-09	452.88	BACS	SETTLED	2026-01-09
+PAY00005059	SP3200572	2026-02-06	452.88	CHEQUE	SETTLED	2026-02-06
+PAY00005060	SP3200572	2026-03-06	452.88	BACS	SETTLED	2026-03-06
+PAY00005061	SP3200572	2026-04-03	452.88	POST_OFFICE	SETTLED	2026-04-03
+PAY00005064	SP3200573	2026-02-16	208.56	BACS	SETTLED	2026-02-16
+PAY00005065	SP3200573	2026-02-23	208.56	CHEQUE	SETTLED	2026-02-23
+PAY00005066	SP3200573	2026-03-02	208.56	BACS	SETTLED	2026-03-02
+PAY00005067	SP3200573	2026-03-09	208.56	BACS	SETTLED	2026-03-09
+PAY00005068	SP3200573	2026-03-16	208.56	BACS	SETTLED	2026-03-16
+PAY00005069	SP3200573	2026-03-23	208.56	BACS	SETTLED	2026-03-23
+PAY00005070	SP3200573	2026-03-30	208.56	BACS	SETTLED	2026-03-30
+PAY00005073	SP3200574	2026-02-18	208.56	BACS	SETTLED	2026-02-18
+PAY00005074	SP3200574	2026-02-25	208.56	POST_OFFICE	SETTLED	2026-02-25
+PAY00005075	SP3200574	2026-03-04	208.56	BACS	SETTLED	2026-03-04
+PAY00005076	SP3200574	2026-03-11	208.56	BACS	SETTLED	2026-03-11
+PAY00005077	SP3200574	2026-03-18	208.56	BACS	SETTLED	2026-03-18
+PAY00005078	SP3200574	2026-03-25	208.56	BACS	SETTLED	2026-03-25
+PAY00005079	SP3200574	2026-04-01	208.56	BACS	SETTLED	2026-04-01
+PAY00005082	SP3200575	2025-04-04	903.76	BACS	SETTLED	2025-04-04
+PAY00005083	SP3200575	2025-07-04	903.76	BACS	SETTLED	2025-07-04
+PAY00005084	SP3200575	2025-10-03	903.76	BACS	SETTLED	2025-10-03
+PAY00005085	SP3200575	2026-01-02	903.76	BACS	SETTLED	2026-01-02
+PAY00005086	SP3200575	2026-04-03	903.76	BACS	SETTLED	2026-04-03
+PAY00005089	SP3200576	2025-01-05	2740.14	BACS	SETTLED	2025-01-05
+PAY00005090	SP3200576	2025-04-06	2740.14	BACS	SETTLED	2025-04-06
+PAY00005091	SP3200576	2025-07-06	2740.14	BACS	SETTLED	2025-07-06
+PAY00005092	SP3200576	2025-10-05	2740.14	BACS	SETTLED	2025-10-05
+PAY00005093	SP3200576	2026-01-04	2740.14	BACS	SETTLED	2026-01-04
+PAY00005094	SP3200576	2026-04-05	2740.14	BACS	SETTLED	2026-04-05
+PAY00005097	SP3200577	2025-08-21	988.04	BACS	SETTLED	2025-08-21
+PAY00005098	SP3200577	2025-09-18	988.04	BACS	SETTLED	2025-09-18
+PAY00005099	SP3200577	2025-10-16	988.04	BACS	SETTLED	2025-10-16
+PAY00005100	SP3200577	2025-11-13	988.04	BACS	SETTLED	2025-11-13
+PAY00005101	SP3200577	2025-12-11	988.04	BACS	SETTLED	2025-12-11
+PAY00005102	SP3200577	2026-01-08	988.04	BACS	SETTLED	2026-01-08
+PAY00005103	SP3200577	2026-02-05	988.04	CHEQUE	SETTLED	2026-02-05
+PAY00005104	SP3200577	2026-03-05	988.04	BACS	SETTLED	2026-03-05
+PAY00005105	SP3200577	2026-04-02	988.04	BACS	SETTLED	2026-04-02
+PAY00005108	SP3200578	2026-02-14	208.56	BACS	SETTLED	2026-02-14
+PAY00005109	SP3200578	2026-02-21	208.56	BACS	SETTLED	2026-02-21
+PAY00005110	SP3200578	2026-02-28	208.56	BACS	SETTLED	2026-02-28
+PAY00005111	SP3200578	2026-03-07	208.56	BACS	SETTLED	2026-03-07
+PAY00005112	SP3200578	2026-03-14	208.56	BACS	SETTLED	2026-03-14
+PAY00005113	SP3200578	2026-03-21	208.56	BACS	SETTLED	2026-03-21
+PAY00005114	SP3200578	2026-03-28	208.56	BACS	SETTLED	2026-03-28
+PAY00005115	SP3200578	2026-04-04	208.56	POST_OFFICE	SETTLED	2026-04-04
+PAY00005118	SP3200579	2025-08-19	689.92	CHEQUE	SETTLED	2025-08-19
+PAY00005119	SP3200579	2025-09-16	689.92	POST_OFFICE	SETTLED	2025-09-16
+PAY00005120	SP3200579	2025-10-14	689.92	BACS	SETTLED	2025-10-14
+PAY00005121	SP3200579	2025-11-11	689.92	CHEQUE	SETTLED	2025-11-11
+PAY00005122	SP3200579	2025-12-09	689.92	BACS	SETTLED	2025-12-09
+PAY00005123	SP3200579	2026-01-06	689.92	BACS	SETTLED	2026-01-06
+PAY00005124	SP3200579	2026-02-03	689.92	BACS	SETTLED	2026-02-03
+PAY00005125	SP3200579	2026-03-03	689.92	BACS	SETTLED	2026-03-03
+PAY00005126	SP3200579	2026-03-31	689.92	BACS	SETTLED	2026-03-31
+PAY00005129	SP3200580	2025-10-14	498.00	BACS	SETTLED	2025-10-14
+PAY00005130	SP3200580	2025-11-11	498.00	BACS	SETTLED	2025-11-11
+PAY00005131	SP3200580	2025-12-09	498.00	BACS	SETTLED	2025-12-09
+PAY00005132	SP3200580	2026-01-06	498.00	BACS	SETTLED	2026-01-06
+PAY00005133	SP3200580	2026-02-03	498.00	BACS	SETTLED	2026-02-03
+PAY00005134	SP3200580	2026-03-03	498.00	CHEQUE	SETTLED	2026-03-03
+PAY00005135	SP3200580	2026-03-31	498.00	POST_OFFICE	SETTLED	2026-03-31
+PAY00005138	SP3200581	2025-10-17	632.00	BACS	SETTLED	2025-10-17
+PAY00005139	SP3200581	2025-11-14	632.00	BACS	SETTLED	2025-11-14
+PAY00005140	SP3200581	2025-12-12	632.00	BACS	SETTLED	2025-12-12
+PAY00005141	SP3200581	2026-01-09	632.00	CHEQUE	SETTLED	2026-01-09
+PAY00005142	SP3200581	2026-02-06	632.00	POST_OFFICE	SETTLED	2026-02-06
+PAY00005143	SP3200581	2026-03-06	632.00	BACS	SETTLED	2026-03-06
+PAY00005144	SP3200581	2026-04-03	632.00	POST_OFFICE	SETTLED	2026-04-03
+PAY00005147	SP3200582	2024-04-05	1232.40	POST_OFFICE	SETTLED	2024-04-05
+PAY00005148	SP3200582	2024-07-05	1232.40	POST_OFFICE	SETTLED	2024-07-05
+PAY00005149	SP3200582	2024-10-04	1232.40	BACS	SETTLED	2024-10-04
+PAY00005150	SP3200582	2025-01-03	1232.40	BACS	SETTLED	2025-01-03
+PAY00005151	SP3200582	2025-04-04	1232.40	BACS	SETTLED	2025-04-04
+PAY00005152	SP3200582	2025-07-04	1232.40	BACS	SETTLED	2025-07-04
+PAY00005153	SP3200582	2025-10-03	1232.40	BACS	SETTLED	2025-10-03
+PAY00005154	SP3200582	2026-01-02	1232.40	BACS	SETTLED	2026-01-02
+PAY00005155	SP3200582	2026-04-03	1232.40	BACS	SETTLED	2026-04-03
+PAY00005158	SP3200583	2026-02-14	183.28	BACS	SETTLED	2026-02-14
+PAY00005159	SP3200583	2026-02-21	183.28	BACS	SETTLED	2026-02-21
+PAY00005160	SP3200583	2026-02-28	183.28	BACS	SETTLED	2026-02-28
+PAY00005161	SP3200583	2026-03-07	183.28	BACS	SETTLED	2026-03-07
+PAY00005162	SP3200583	2026-03-14	183.28	BACS	SETTLED	2026-03-14
+PAY00005163	SP3200583	2026-03-21	183.28	BACS	SETTLED	2026-03-21
+PAY00005164	SP3200583	2026-03-28	183.28	BACS	SETTLED	2026-03-28
+PAY00005165	SP3200583	2026-04-04	183.28	POST_OFFICE	SETTLED	2026-04-04
+PAY00005168	SP3200584	2024-04-06	1807.52	CHEQUE	SETTLED	2024-04-06
+PAY00005169	SP3200584	2024-07-06	1807.52	BACS	SETTLED	2024-07-06
+PAY00005170	SP3200584	2024-10-05	1807.52	POST_OFFICE	SETTLED	2024-10-05
+PAY00005171	SP3200584	2025-01-04	1807.52	POST_OFFICE	SETTLED	2025-01-04
+PAY00005172	SP3200584	2025-04-05	1807.52	BACS	SETTLED	2025-04-05
+PAY00005173	SP3200584	2025-07-05	1807.52	BACS	SETTLED	2025-07-05
+PAY00005174	SP3200584	2025-10-04	1807.52	BACS	SETTLED	2025-10-04
+PAY00005175	SP3200584	2026-01-03	1807.52	BACS	SETTLED	2026-01-03
+PAY00005176	SP3200584	2026-04-04	1807.52	BACS	SETTLED	2026-04-04
+PAY00005179	SP3200585	2026-02-14	207.68	BACS	SETTLED	2026-02-14
+PAY00005180	SP3200585	2026-02-21	207.68	BACS	SETTLED	2026-02-21
+PAY00005181	SP3200585	2026-02-28	207.68	POST_OFFICE	SETTLED	2026-02-28
+PAY00005182	SP3200585	2026-03-07	207.68	BACS	SETTLED	2026-03-07
+PAY00005183	SP3200585	2026-03-14	207.68	BACS	SETTLED	2026-03-14
+PAY00005184	SP3200585	2026-03-21	207.68	BACS	SETTLED	2026-03-21
+PAY00005185	SP3200585	2026-03-28	207.68	BACS	SETTLED	2026-03-28
+PAY00005186	SP3200585	2026-04-04	207.68	BACS	SETTLED	2026-04-04
+PAY00005189	SP3200586	2025-10-14	346.44	BACS	SETTLED	2025-10-14
+PAY00005190	SP3200586	2025-11-11	346.44	POST_OFFICE	SETTLED	2025-11-11
+PAY00005191	SP3200586	2025-12-09	346.44	BACS	SETTLED	2025-12-09
+PAY00005192	SP3200586	2026-01-06	346.44	BACS	SETTLED	2026-01-06
+PAY00005193	SP3200586	2026-02-03	346.44	BACS	SETTLED	2026-02-03
+PAY00005194	SP3200586	2026-03-03	346.44	BACS	SETTLED	2026-03-03
+PAY00005195	SP3200586	2026-03-31	346.44	BACS	SETTLED	2026-03-31
+PAY00005198	SP3200587	2025-09-19	808.96	BACS	SETTLED	2025-09-19
+PAY00005199	SP3200587	2025-10-17	808.96	BACS	SETTLED	2025-10-17
+PAY00005200	SP3200587	2025-11-14	808.96	BACS	SETTLED	2025-11-14
+PAY00005201	SP3200587	2025-12-12	808.96	BACS	SETTLED	2025-12-12
+PAY00005202	SP3200587	2026-01-09	808.96	CHEQUE	SETTLED	2026-01-09
+PAY00005203	SP3200587	2026-02-06	808.96	BACS	SETTLED	2026-02-06
+PAY00005204	SP3200587	2026-03-06	808.96	BACS	SETTLED	2026-03-06
+PAY00005205	SP3200587	2026-04-03	808.96	BACS	SETTLED	2026-04-03
+PAY00005208	SP3200588	2024-04-03	821.60	BACS	SETTLED	2024-04-03
+PAY00005209	SP3200588	2024-07-03	821.60	BACS	SETTLED	2024-07-03
+PAY00005210	SP3200588	2024-10-02	821.60	BACS	SETTLED	2024-10-02
+PAY00005211	SP3200588	2025-01-01	821.60	BACS	SETTLED	2025-01-01
+PAY00005212	SP3200588	2025-04-02	821.60	BACS	SETTLED	2025-04-02
+PAY00005213	SP3200588	2025-07-02	821.60	BACS	SETTLED	2025-07-02
+PAY00005214	SP3200588	2025-10-01	821.60	BACS	SETTLED	2025-10-01
+PAY00005215	SP3200588	2025-12-31	821.60	BACS	SETTLED	2025-12-31
+PAY00005216	SP3200588	2026-04-01	821.60	BACS	SETTLED	2026-04-01
+PAY00005219	SP3200589	2025-08-20	379.20	BACS	SETTLED	2025-08-20
+PAY00005220	SP3200589	2025-09-17	379.20	BACS	SETTLED	2025-09-17
+PAY00005221	SP3200589	2025-10-15	379.20	BACS	SETTLED	2025-10-15
+PAY00005222	SP3200589	2025-11-12	379.20	BACS	SETTLED	2025-11-12
+PAY00005223	SP3200589	2025-12-10	379.20	BACS	SETTLED	2025-12-10
+PAY00005224	SP3200589	2026-01-07	379.20	BACS	SETTLED	2026-01-07
+PAY00005225	SP3200589	2026-02-04	379.20	BACS	SETTLED	2026-02-04
+PAY00005226	SP3200589	2026-03-04	379.20	BACS	SETTLED	2026-03-04
+PAY00005227	SP3200589	2026-04-01	379.20	BACS	SETTLED	2026-04-01
+PAY00005230	SP3200590	2025-12-15	254.52	BACS	SETTLED	2025-12-15
+PAY00005231	SP3200590	2026-01-12	254.52	POST_OFFICE	SETTLED	2026-01-12
+PAY00005232	SP3200590	2026-02-09	254.52	BACS	SETTLED	2026-02-09
+PAY00005233	SP3200590	2026-03-09	254.52	BACS	SETTLED	2026-03-09
+PAY00005236	SP3200591	2025-04-06	1971.84	BACS	SETTLED	2025-04-06
+PAY00005237	SP3200591	2025-07-06	1971.84	BACS	SETTLED	2025-07-06
+PAY00005238	SP3200591	2025-10-05	1971.84	BACS	SETTLED	2025-10-05
+PAY00005239	SP3200591	2026-01-04	1971.84	BACS	SETTLED	2026-01-04
+PAY00005240	SP3200591	2026-04-05	1971.84	BACS	SETTLED	2026-04-05
+PAY00005243	SP3200592	2026-03-02	82.16	BACS	SETTLED	2026-03-02
+PAY00005244	SP3200592	2026-03-09	82.16	BACS	SETTLED	2026-03-09
+PAY00005245	SP3200592	2026-03-16	82.16	BACS	SETTLED	2026-03-16
+PAY00005246	SP3200592	2026-03-23	82.16	POST_OFFICE	SETTLED	2026-03-23
+PAY00005247	SP3200592	2026-03-30	82.16	BACS	SETTLED	2026-03-30
+PAY00005250	SP3200593	2025-12-09	758.40	BACS	SETTLED	2025-12-09
+PAY00005251	SP3200593	2026-01-06	758.40	POST_OFFICE	SETTLED	2026-01-06
+PAY00005252	SP3200593	2026-02-03	758.40	BACS	SETTLED	2026-02-03
+PAY00005253	SP3200593	2026-03-03	758.40	BACS	SETTLED	2026-03-03
+PAY00005254	SP3200593	2026-03-31	758.40	CHEQUE	SETTLED	2026-03-31
+PAY00005257	SP3200594	2025-12-11	606.72	BACS	SETTLED	2025-12-11
+PAY00005258	SP3200594	2026-01-08	606.72	CHEQUE	SETTLED	2026-01-08
+PAY00005259	SP3200594	2026-02-05	606.72	BACS	SETTLED	2026-02-05
+PAY00005260	SP3200594	2026-03-05	606.72	BACS	SETTLED	2026-03-05
+PAY00005261	SP3200594	2026-04-02	606.72	BACS	SETTLED	2026-04-02
+PAY00005264	SP3200595	2025-11-16	808.96	BACS	SETTLED	2025-11-16
+PAY00005265	SP3200595	2025-12-14	808.96	BACS	SETTLED	2025-12-14
+PAY00005266	SP3200595	2026-01-11	808.96	CHEQUE	SETTLED	2026-01-11
+PAY00005267	SP3200595	2026-02-08	808.96	BACS	SETTLED	2026-02-08
+PAY00005268	SP3200595	2026-03-08	808.96	BACS	SETTLED	2026-03-08
+PAY00005269	SP3200595	2026-04-05	808.96	BACS	SETTLED	2026-04-05
+PAY00005272	SP3200596	2026-02-12	167.88	BACS	SETTLED	2026-02-12
+PAY00005273	SP3200596	2026-02-19	167.88	CHEQUE	SETTLED	2026-02-19
+PAY00005274	SP3200596	2026-02-26	167.88	BACS	SETTLED	2026-02-26
+PAY00005275	SP3200596	2026-03-05	167.88	BACS	SETTLED	2026-03-05
+PAY00005276	SP3200596	2026-03-12	167.88	POST_OFFICE	SETTLED	2026-03-12
+PAY00005277	SP3200596	2026-03-19	167.88	POST_OFFICE	SETTLED	2026-03-19
+PAY00005278	SP3200596	2026-03-26	167.88	BACS	SETTLED	2026-03-26
+PAY00005279	SP3200596	2026-04-02	167.88	BACS	SETTLED	2026-04-02
+PAY00005282	SP3200597	2025-11-13	632.00	BACS	SETTLED	2025-11-13
+PAY00005283	SP3200597	2025-12-11	632.00	BACS	SETTLED	2025-12-11
+PAY00005284	SP3200597	2026-01-08	632.00	POST_OFFICE	SETTLED	2026-01-08
+PAY00005285	SP3200597	2026-02-05	632.00	BACS	SETTLED	2026-02-05
+PAY00005286	SP3200597	2026-03-05	632.00	BACS	SETTLED	2026-03-05
+PAY00005287	SP3200597	2026-04-02	632.00	BACS	SETTLED	2026-04-02
+PAY00005290	SP3200598	2025-08-22	455.04	BACS	SETTLED	2025-08-22
+PAY00005291	SP3200598	2025-09-19	455.04	BACS	SETTLED	2025-09-19
+PAY00005292	SP3200598	2025-10-17	455.04	BACS	SETTLED	2025-10-17
+PAY00005293	SP3200598	2025-11-14	455.04	BACS	SETTLED	2025-11-14
+PAY00005294	SP3200598	2025-12-12	455.04	POST_OFFICE	SETTLED	2025-12-12
+PAY00005295	SP3200598	2026-01-09	455.04	BACS	SETTLED	2026-01-09
+PAY00005296	SP3200598	2026-02-06	455.04	BACS	SETTLED	2026-02-06
+PAY00005297	SP3200598	2026-03-06	455.04	BACS	SETTLED	2026-03-06
+PAY00005298	SP3200598	2026-04-03	455.04	BACS	SETTLED	2026-04-03
+PAY00005301	SP3200599	2025-11-13	720.92	BACS	SETTLED	2025-11-13
+PAY00005302	SP3200599	2025-12-11	720.92	BACS	SETTLED	2025-12-11
+PAY00005303	SP3200599	2026-01-08	720.92	BACS	SETTLED	2026-01-08
+PAY00005304	SP3200599	2026-02-05	720.92	POST_OFFICE	SETTLED	2026-02-05
+PAY00005305	SP3200599	2026-03-05	720.92	BACS	SETTLED	2026-03-05
+PAY00005306	SP3200599	2026-04-02	720.92	BACS	SETTLED	2026-04-02
+PAY00005309	SP3200600	2025-12-12	277.60	BACS	SETTLED	2025-12-12
+PAY00005310	SP3200600	2026-01-09	277.60	BACS	SETTLED	2026-01-09
+PAY00005311	SP3200600	2026-02-06	277.60	BACS	SETTLED	2026-02-06
+PAY00005312	SP3200600	2026-03-06	277.60	BACS	SETTLED	2026-03-06
+PAY00005313	SP3200600	2026-04-03	277.60	BACS	SETTLED	2026-04-03
+PAY00005316	SP3200601	2026-02-20	195.92	BACS	SETTLED	2026-02-20
+PAY00005317	SP3200601	2026-02-27	195.92	BACS	SETTLED	2026-02-27
+PAY00005318	SP3200601	2026-03-06	195.92	BACS	SETTLED	2026-03-06
+PAY00005319	SP3200601	2026-03-13	195.92	BACS	SETTLED	2026-03-13
+PAY00005320	SP3200601	2026-03-20	195.92	BACS	SETTLED	2026-03-20
+PAY00005321	SP3200601	2026-03-27	195.92	BACS	SETTLED	2026-03-27
+PAY00005322	SP3200601	2026-04-03	195.92	BACS	SETTLED	2026-04-03
+PAY00005325	SP3200602	2026-02-28	120.08	POST_OFFICE	SETTLED	2026-02-28
+PAY00005326	SP3200602	2026-03-07	120.08	BACS	SETTLED	2026-03-07
+PAY00005327	SP3200602	2026-03-14	120.08	BACS	SETTLED	2026-03-14
+PAY00005328	SP3200602	2026-03-21	120.08	BACS	SETTLED	2026-03-21
+PAY00005329	SP3200602	2026-03-28	120.08	BACS	SETTLED	2026-03-28
+PAY00005330	SP3200602	2026-04-04	120.08	POST_OFFICE	SETTLED	2026-04-04
+PAY00005333	SP3200603	2025-08-20	303.36	BACS	SETTLED	2025-08-20
+PAY00005334	SP3200603	2025-09-17	303.36	BACS	SETTLED	2025-09-17
+PAY00005335	SP3200603	2025-10-15	303.36	BACS	SETTLED	2025-10-15
+PAY00005336	SP3200603	2025-11-12	303.36	BACS	SETTLED	2025-11-12
+PAY00005337	SP3200603	2025-12-10	303.36	BACS	SETTLED	2025-12-10
+PAY00005338	SP3200603	2026-01-07	303.36	BACS	SETTLED	2026-01-07
+PAY00005339	SP3200603	2026-02-04	303.36	BACS	SETTLED	2026-02-04
+PAY00005340	SP3200603	2026-03-04	303.36	BACS	SETTLED	2026-03-04
+PAY00005341	SP3200603	2026-04-01	303.36	POST_OFFICE	SETTLED	2026-04-01
+PAY00005344	SP3200604	2024-04-02	1447.94	BACS	SETTLED	2024-04-02
+PAY00005345	SP3200604	2024-07-02	1447.94	POST_OFFICE	SETTLED	2024-07-02
+PAY00005346	SP3200604	2024-10-01	1447.94	BACS	SETTLED	2024-10-01
+PAY00005347	SP3200604	2024-12-31	1447.94	POST_OFFICE	SETTLED	2024-12-31
+PAY00005348	SP3200604	2025-04-01	1447.94	BACS	SETTLED	2025-04-01
+PAY00005349	SP3200604	2025-07-01	1447.94	POST_OFFICE	SETTLED	2025-07-01
+PAY00005350	SP3200604	2025-09-30	1447.94	BACS	SETTLED	2025-09-30
+PAY00005351	SP3200604	2025-12-30	1447.94	BACS	SETTLED	2025-12-30
+PAY00005352	SP3200604	2026-03-31	1447.94	BACS	SETTLED	2026-03-31
+PAY00005355	SP3200605	2025-08-19	303.36	BACS	SETTLED	2025-08-19
+PAY00005356	SP3200605	2025-09-16	303.36	BACS	SETTLED	2025-09-16
+PAY00005357	SP3200605	2025-10-14	303.36	BACS	SETTLED	2025-10-14
+PAY00005358	SP3200605	2025-11-11	303.36	BACS	SETTLED	2025-11-11
+PAY00005359	SP3200605	2025-12-09	303.36	BACS	SETTLED	2025-12-09
+PAY00005360	SP3200605	2026-01-06	303.36	BACS	SETTLED	2026-01-06
+PAY00005361	SP3200605	2026-02-03	303.36	BACS	SETTLED	2026-02-03
+PAY00005362	SP3200605	2026-03-03	303.36	BACS	SETTLED	2026-03-03
+PAY00005363	SP3200605	2026-03-31	303.36	BACS	SETTLED	2026-03-31
+PAY00005366	SP3200606	2025-09-17	505.60	BACS	SETTLED	2025-09-17
+PAY00005367	SP3200606	2025-10-15	505.60	BACS	SETTLED	2025-10-15
+PAY00005368	SP3200606	2025-11-12	505.60	CHEQUE	SETTLED	2025-11-12
+PAY00005369	SP3200606	2025-12-10	505.60	BACS	SETTLED	2025-12-10
+PAY00005370	SP3200606	2026-01-07	505.60	BACS	SETTLED	2026-01-07
+PAY00005371	SP3200606	2026-02-04	505.60	BACS	SETTLED	2026-02-04
+PAY00005372	SP3200606	2026-03-04	505.60	POST_OFFICE	SETTLED	2026-03-04
+PAY00005373	SP3200606	2026-04-01	505.60	BACS	SETTLED	2026-04-01
+PAY00005376	SP3200607	2026-02-27	164.32	BACS	SETTLED	2026-02-27
+PAY00005377	SP3200607	2026-03-06	164.32	CHEQUE	SETTLED	2026-03-06
+PAY00005378	SP3200607	2026-03-13	164.32	BACS	SETTLED	2026-03-13
+PAY00005379	SP3200607	2026-03-20	164.32	CHEQUE	SETTLED	2026-03-20
+PAY00005380	SP3200607	2026-03-27	164.32	BACS	SETTLED	2026-03-27
+PAY00005381	SP3200607	2026-04-03	164.32	BACS	SETTLED	2026-04-03
+PAY00005384	SP3200608	2024-10-01	1478.88	BACS	SETTLED	2024-10-01
+PAY00005385	SP3200608	2024-12-31	1478.88	POST_OFFICE	SETTLED	2024-12-31
+PAY00005386	SP3200608	2025-04-01	1478.88	BACS	SETTLED	2025-04-01
+PAY00005387	SP3200608	2025-07-01	1478.88	BACS	SETTLED	2025-07-01
+PAY00005388	SP3200608	2025-09-30	1478.88	BACS	SETTLED	2025-09-30
+PAY00005389	SP3200608	2025-12-30	1478.88	BACS	SETTLED	2025-12-30
+PAY00005390	SP3200608	2026-03-31	1478.88	POST_OFFICE	SETTLED	2026-03-31
+PAY00005393	SP3200609	2025-11-14	590.60	BACS	SETTLED	2025-11-14
+PAY00005394	SP3200609	2025-12-12	590.60	BACS	SETTLED	2025-12-12
+PAY00005395	SP3200609	2026-01-09	590.60	BACS	SETTLED	2026-01-09
+PAY00005396	SP3200609	2026-02-06	590.60	POST_OFFICE	SETTLED	2026-02-06
+PAY00005397	SP3200609	2026-03-06	590.60	BACS	SETTLED	2026-03-06
+PAY00005398	SP3200609	2026-04-03	590.60	BACS	SETTLED	2026-04-03
+PAY00005401	SP3200610	2026-03-01	183.28	POST_OFFICE	SETTLED	2026-03-01
+PAY00005402	SP3200610	2026-03-08	183.28	BACS	SETTLED	2026-03-08
+PAY00005403	SP3200610	2026-03-15	183.28	POST_OFFICE	SETTLED	2026-03-15
+PAY00005404	SP3200610	2026-03-22	183.28	BACS	SETTLED	2026-03-22
+PAY00005405	SP3200610	2026-03-29	183.28	CHEQUE	SETTLED	2026-03-29
+PAY00005406	SP3200610	2026-04-05	183.28	BACS	SETTLED	2026-04-05
+PAY00005409	SP3200611	2026-02-18	101.12	BACS	SETTLED	2026-02-18
+PAY00005410	SP3200611	2026-02-25	101.12	CHEQUE	SETTLED	2026-02-25
+PAY00005411	SP3200611	2026-03-04	101.12	BACS	SETTLED	2026-03-04
+PAY00005412	SP3200611	2026-03-11	101.12	BACS	SETTLED	2026-03-11
+PAY00005413	SP3200611	2026-03-18	101.12	POST_OFFICE	SETTLED	2026-03-18
+PAY00005414	SP3200611	2026-03-25	101.12	BACS	SETTLED	2026-03-25
+PAY00005415	SP3200611	2026-04-01	101.12	BACS	SETTLED	2026-04-01
+PAY00005418	SP3200612	2026-03-07	88.48	BACS	SETTLED	2026-03-07
+PAY00005419	SP3200612	2026-03-14	88.48	BACS	SETTLED	2026-03-14
+PAY00005420	SP3200612	2026-03-21	88.48	BACS	SETTLED	2026-03-21
+PAY00005421	SP3200612	2026-03-28	88.48	BACS	SETTLED	2026-03-28
+PAY00005422	SP3200612	2026-04-04	88.48	BACS	SETTLED	2026-04-04
+PAY00005425	SP3200613	2025-01-03	2300.48	BACS	SETTLED	2025-01-03
+PAY00005426	SP3200613	2025-04-04	2300.48	BACS	SETTLED	2025-04-04
+PAY00005427	SP3200613	2025-07-04	2300.48	BACS	SETTLED	2025-07-04
+PAY00005428	SP3200613	2025-10-03	2300.48	BACS	SETTLED	2025-10-03
+PAY00005429	SP3200613	2026-01-02	2300.48	BACS	SETTLED	2026-01-02
+PAY00005430	SP3200613	2026-04-03	2300.48	POST_OFFICE	SETTLED	2026-04-03
+PAY00005433	SP3200614	2025-11-12	278.08	BACS	SETTLED	2025-11-12
+PAY00005434	SP3200614	2025-12-10	278.08	POST_OFFICE	SETTLED	2025-12-10
+PAY00005435	SP3200614	2026-01-07	278.08	BACS	SETTLED	2026-01-07
+PAY00005436	SP3200614	2026-02-04	278.08	BACS	SETTLED	2026-02-04
+PAY00005437	SP3200614	2026-03-04	278.08	BACS	SETTLED	2026-03-04
+PAY00005438	SP3200614	2026-04-01	278.08	POST_OFFICE	SETTLED	2026-04-01
+PAY00005441	SP3200615	2025-10-14	859.52	POST_OFFICE	SETTLED	2025-10-14
+PAY00005442	SP3200615	2025-11-11	859.52	POST_OFFICE	SETTLED	2025-11-11
+PAY00005443	SP3200615	2025-12-09	859.52	BACS	SETTLED	2025-12-09
+PAY00005444	SP3200615	2026-01-06	859.52	BACS	SETTLED	2026-01-06
+PAY00005445	SP3200615	2026-02-03	859.52	BACS	SETTLED	2026-02-03
+PAY00005446	SP3200615	2026-03-03	859.52	POST_OFFICE	SETTLED	2026-03-03
+PAY00005447	SP3200615	2026-03-31	859.52	BACS	SETTLED	2026-03-31
+PAY00005450	SP3200616	2025-11-13	353.92	BACS	SETTLED	2025-11-13
+PAY00005451	SP3200616	2025-12-11	353.92	BACS	SETTLED	2025-12-11
+PAY00005452	SP3200616	2026-01-08	353.92	BACS	SETTLED	2026-01-08
+PAY00005453	SP3200616	2026-02-05	353.92	BACS	SETTLED	2026-02-05
+PAY00005454	SP3200616	2026-03-05	353.92	BACS	SETTLED	2026-03-05
+PAY00005455	SP3200616	2026-04-02	353.92	POST_OFFICE	SETTLED	2026-04-02
+PAY00005458	SP3200617	2025-11-16	429.76	BACS	SETTLED	2025-11-16
+PAY00005459	SP3200617	2025-12-14	429.76	POST_OFFICE	SETTLED	2025-12-14
+PAY00005460	SP3200617	2026-01-11	429.76	BACS	SETTLED	2026-01-11
+PAY00005461	SP3200617	2026-02-08	429.76	BACS	SETTLED	2026-02-08
+PAY00005462	SP3200617	2026-03-08	429.76	BACS	SETTLED	2026-03-08
+PAY00005463	SP3200617	2026-04-05	429.76	BACS	SETTLED	2026-04-05
+PAY00005466	SP3200618	2025-12-11	382.20	POST_OFFICE	SETTLED	2025-12-11
+PAY00005467	SP3200618	2026-01-08	382.20	BACS	SETTLED	2026-01-08
+PAY00005468	SP3200618	2026-02-05	382.20	BACS	SETTLED	2026-02-05
+PAY00005469	SP3200618	2026-03-05	382.20	BACS	SETTLED	2026-03-05
+PAY00005470	SP3200618	2026-04-02	382.20	BACS	SETTLED	2026-04-02
+PAY00005473	SP3200619	2025-12-12	859.52	BACS	SETTLED	2025-12-12
+PAY00005474	SP3200619	2026-01-09	859.52	BACS	SETTLED	2026-01-09
+PAY00005475	SP3200619	2026-02-06	859.52	BACS	SETTLED	2026-02-06
+PAY00005476	SP3200619	2026-03-06	859.52	BACS	SETTLED	2026-03-06
+PAY00005477	SP3200619	2026-04-03	859.52	BACS	SETTLED	2026-04-03
+PAY00005480	SP3200620	2026-03-02	151.26	POST_OFFICE	SETTLED	2026-03-02
+PAY00005481	SP3200620	2026-03-09	151.26	BACS	SETTLED	2026-03-09
+PAY00005482	SP3200620	2026-03-16	151.26	BACS	SETTLED	2026-03-16
+PAY00005483	SP3200620	2026-03-23	151.26	CHEQUE	SETTLED	2026-03-23
+PAY00005484	SP3200620	2026-03-30	151.26	CHEQUE	SETTLED	2026-03-30
+PAY00005487	SP3200621	2025-08-20	834.24	BACS	SETTLED	2025-08-20
+PAY00005488	SP3200621	2025-09-17	834.24	BACS	SETTLED	2025-09-17
+PAY00005489	SP3200621	2025-10-15	834.24	POST_OFFICE	SETTLED	2025-10-15
+PAY00005490	SP3200621	2025-11-12	834.24	BACS	SETTLED	2025-11-12
+PAY00005491	SP3200621	2025-12-10	834.24	POST_OFFICE	SETTLED	2025-12-10
+PAY00005492	SP3200621	2026-01-07	834.24	BACS	SETTLED	2026-01-07
+PAY00005493	SP3200621	2026-02-04	834.24	BACS	SETTLED	2026-02-04
+PAY00005494	SP3200621	2026-03-04	834.24	CHEQUE	SETTLED	2026-03-04
+PAY00005495	SP3200621	2026-04-01	834.24	POST_OFFICE	SETTLED	2026-04-01
+PAY00005498	SP3200622	2025-10-15	311.92	BACS	SETTLED	2025-10-15
+PAY00005499	SP3200622	2025-11-12	311.92	BACS	SETTLED	2025-11-12
+PAY00005500	SP3200622	2025-12-10	311.92	POST_OFFICE	SETTLED	2025-12-10
+PAY00005501	SP3200622	2026-01-07	311.92	BACS	SETTLED	2026-01-07
+PAY00005502	SP3200622	2026-02-04	311.92	BACS	SETTLED	2026-02-04
+PAY00005503	SP3200622	2026-03-04	311.92	BACS	SETTLED	2026-03-04
+PAY00005504	SP3200622	2026-04-01	311.92	POST_OFFICE	SETTLED	2026-04-01
+PAY00005507	SP3200623	2025-10-16	682.56	BACS	SETTLED	2025-10-16
+PAY00005508	SP3200623	2025-11-13	682.56	BACS	SETTLED	2025-11-13
+PAY00005509	SP3200623	2025-12-11	682.56	BACS	SETTLED	2025-12-11
+PAY00005510	SP3200623	2026-01-08	682.56	BACS	SETTLED	2026-01-08
+PAY00005511	SP3200623	2026-02-05	682.56	BACS	SETTLED	2026-02-05
+PAY00005512	SP3200623	2026-03-05	682.56	BACS	SETTLED	2026-03-05
+PAY00005513	SP3200623	2026-04-02	682.56	POST_OFFICE	SETTLED	2026-04-02
+PAY00005516	SP3200624	2026-02-06	132.72	CHEQUE	SETTLED	2026-02-06
+PAY00005517	SP3200624	2026-02-13	132.72	BACS	SETTLED	2026-02-13
+PAY00005518	SP3200624	2026-02-20	132.72	BACS	SETTLED	2026-02-20
+PAY00005519	SP3200624	2026-02-27	132.72	BACS	SETTLED	2026-02-27
+PAY00005520	SP3200624	2026-03-06	132.72	POST_OFFICE	SETTLED	2026-03-06
+PAY00005521	SP3200624	2026-03-13	132.72	BACS	SETTLED	2026-03-13
+PAY00005522	SP3200624	2026-03-20	132.72	POST_OFFICE	SETTLED	2026-03-20
+PAY00005523	SP3200624	2026-03-27	132.72	POST_OFFICE	SETTLED	2026-03-27
+PAY00005524	SP3200624	2026-04-03	132.72	BACS	SETTLED	2026-04-03
+PAY00005527	SP3200625	2025-12-10	278.08	POST_OFFICE	SETTLED	2025-12-10
+PAY00005528	SP3200625	2026-01-07	278.08	BACS	SETTLED	2026-01-07
+PAY00005529	SP3200625	2026-02-04	278.08	CHEQUE	SETTLED	2026-02-04
+PAY00005530	SP3200625	2026-03-04	278.08	POST_OFFICE	SETTLED	2026-03-04
+PAY00005531	SP3200625	2026-04-01	278.08	BACS	SETTLED	2026-04-01
+PAY00005534	SP3200626	2025-08-25	616.16	BACS	SETTLED	2025-08-25
+PAY00005535	SP3200626	2025-09-22	616.16	POST_OFFICE	SETTLED	2025-09-22
+PAY00005536	SP3200626	2025-10-20	616.16	BACS	SETTLED	2025-10-20
+PAY00005537	SP3200626	2025-11-17	616.16	BACS	SETTLED	2025-11-17
+PAY00005538	SP3200626	2025-12-15	616.16	BACS	SETTLED	2025-12-15
+PAY00005539	SP3200626	2026-01-12	616.16	BACS	SETTLED	2026-01-12
+PAY00005540	SP3200626	2026-02-09	616.16	CHEQUE	SETTLED	2026-02-09
+PAY00005541	SP3200626	2026-03-09	616.16	BACS	SETTLED	2026-03-09
+PAY00005544	SP3200627	2026-03-06	97.06	BACS	SETTLED	2026-03-06
+PAY00005545	SP3200627	2026-03-13	97.06	BACS	SETTLED	2026-03-13
+PAY00005546	SP3200627	2026-03-20	97.06	BACS	SETTLED	2026-03-20
+PAY00005547	SP3200627	2026-03-27	97.06	BACS	SETTLED	2026-03-27
+PAY00005548	SP3200627	2026-04-03	97.06	POST_OFFICE	SETTLED	2026-04-03
+PAY00005551	SP3200628	2025-08-20	252.80	POST_OFFICE	SETTLED	2025-08-20
+PAY00005552	SP3200628	2025-09-17	252.80	BACS	SETTLED	2025-09-17
+PAY00005553	SP3200628	2025-10-15	252.80	BACS	SETTLED	2025-10-15
+PAY00005554	SP3200628	2025-11-12	252.80	BACS	SETTLED	2025-11-12
+PAY00005555	SP3200628	2025-12-10	252.80	BACS	SETTLED	2025-12-10
+PAY00005556	SP3200628	2026-01-07	252.80	BACS	SETTLED	2026-01-07
+PAY00005557	SP3200628	2026-02-04	252.80	BACS	SETTLED	2026-02-04
+PAY00005558	SP3200628	2026-03-04	252.80	BACS	SETTLED	2026-03-04
+PAY00005559	SP3200628	2026-04-01	252.80	BACS	SETTLED	2026-04-01
+PAY00005562	SP3200629	2025-04-05	1396.72	BACS	SETTLED	2025-04-05
+PAY00005563	SP3200629	2025-07-05	1396.72	BACS	SETTLED	2025-07-05
+PAY00005564	SP3200629	2025-10-04	1396.72	BACS	SETTLED	2025-10-04
+PAY00005565	SP3200629	2026-01-03	1396.72	BACS	SETTLED	2026-01-03
+PAY00005566	SP3200629	2026-04-04	1396.72	POST_OFFICE	SETTLED	2026-04-04
+PAY00005569	SP3200630	2025-01-06	1314.56	BACS	SETTLED	2025-01-06
+PAY00005570	SP3200630	2025-04-07	1314.56	BACS	SETTLED	2025-04-07
+PAY00005571	SP3200630	2025-07-07	1314.56	BACS	SETTLED	2025-07-07
+PAY00005572	SP3200630	2025-10-06	1314.56	BACS	SETTLED	2025-10-06
+PAY00005573	SP3200630	2026-01-05	1314.56	BACS	SETTLED	2026-01-05
+PAY00005576	SP3200631	2025-10-19	296.04	BACS	SETTLED	2025-10-19
+PAY00005577	SP3200631	2025-11-16	296.04	BACS	SETTLED	2025-11-16
+PAY00005578	SP3200631	2025-12-14	296.04	BACS	SETTLED	2025-12-14
+PAY00005579	SP3200631	2026-01-11	296.04	POST_OFFICE	SETTLED	2026-01-11
+PAY00005580	SP3200631	2026-02-08	296.04	POST_OFFICE	SETTLED	2026-02-08
+PAY00005581	SP3200631	2026-03-08	296.04	BACS	SETTLED	2026-03-08
+PAY00005582	SP3200631	2026-04-05	296.04	CHEQUE	SETTLED	2026-04-05
+PAY00005585	SP3200632	2025-09-20	480.32	CHEQUE	SETTLED	2025-09-20
+PAY00005586	SP3200632	2025-10-18	480.32	BACS	SETTLED	2025-10-18
+PAY00005587	SP3200632	2025-11-15	480.32	BACS	SETTLED	2025-11-15
+PAY00005588	SP3200632	2025-12-13	480.32	BACS	SETTLED	2025-12-13
+PAY00005589	SP3200632	2026-01-10	480.32	POST_OFFICE	SETTLED	2026-01-10
+PAY00005590	SP3200632	2026-02-07	480.32	BACS	SETTLED	2026-02-07
+PAY00005591	SP3200632	2026-03-07	480.32	BACS	SETTLED	2026-03-07
+PAY00005592	SP3200632	2026-04-04	480.32	CHEQUE	SETTLED	2026-04-04
+PAY00005595	SP3200633	2025-12-15	379.20	POST_OFFICE	SETTLED	2025-12-15
+PAY00005596	SP3200633	2026-01-12	379.20	BACS	SETTLED	2026-01-12
+PAY00005597	SP3200633	2026-02-09	379.20	BACS	SETTLED	2026-02-09
+PAY00005598	SP3200633	2026-03-09	379.20	BACS	SETTLED	2026-03-09
+PAY00005601	SP3200634	2025-10-14	328.64	BACS	SETTLED	2025-10-14
+PAY00005602	SP3200634	2025-11-11	328.64	POST_OFFICE	SETTLED	2025-11-11
+PAY00005603	SP3200634	2025-12-09	328.64	BACS	SETTLED	2025-12-09
+PAY00005604	SP3200634	2026-01-06	328.64	POST_OFFICE	SETTLED	2026-01-06
+PAY00005605	SP3200634	2026-02-03	328.64	BACS	SETTLED	2026-02-03
+PAY00005606	SP3200634	2026-03-03	328.64	BACS	SETTLED	2026-03-03
+PAY00005607	SP3200634	2026-03-31	328.64	BACS	SETTLED	2026-03-31
+PAY00005610	SP3200635	2026-02-11	221.20	BACS	SETTLED	2026-02-11
+PAY00005611	SP3200635	2026-02-18	221.20	BACS	SETTLED	2026-02-18
+PAY00005612	SP3200635	2026-02-25	221.20	BACS	SETTLED	2026-02-25
+PAY00005613	SP3200635	2026-03-04	221.20	BACS	SETTLED	2026-03-04
+PAY00005614	SP3200635	2026-03-11	221.20	BACS	SETTLED	2026-03-11
+PAY00005615	SP3200635	2026-03-18	221.20	BACS	SETTLED	2026-03-18
+PAY00005616	SP3200635	2026-03-25	221.20	BACS	SETTLED	2026-03-25
+PAY00005617	SP3200635	2026-04-01	221.20	BACS	SETTLED	2026-04-01
+PAY00005620	SP3200636	2025-08-20	574.24	BACS	SETTLED	2025-08-20
+PAY00005621	SP3200636	2025-09-17	574.24	BACS	SETTLED	2025-09-17
+PAY00005622	SP3200636	2025-10-15	574.24	POST_OFFICE	SETTLED	2025-10-15
+PAY00005623	SP3200636	2025-11-12	574.24	BACS	SETTLED	2025-11-12
+PAY00005624	SP3200636	2025-12-10	574.24	BACS	SETTLED	2025-12-10
+PAY00005625	SP3200636	2026-01-07	574.24	CHEQUE	SETTLED	2026-01-07
+PAY00005626	SP3200636	2026-02-04	574.24	BACS	SETTLED	2026-02-04
+PAY00005627	SP3200636	2026-03-04	574.24	POST_OFFICE	SETTLED	2026-03-04
+PAY00005628	SP3200636	2026-04-01	574.24	POST_OFFICE	SETTLED	2026-04-01
+PAY00005631	SP3200637	2026-02-28	145.36	BACS	SETTLED	2026-02-28
+PAY00005632	SP3200637	2026-03-07	145.36	BACS	SETTLED	2026-03-07
+PAY00005633	SP3200637	2026-03-14	145.36	BACS	SETTLED	2026-03-14
+PAY00005634	SP3200637	2026-03-21	145.36	BACS	SETTLED	2026-03-21
+PAY00005635	SP3200637	2026-03-28	145.36	BACS	SETTLED	2026-03-28
+PAY00005636	SP3200637	2026-04-04	145.36	BACS	SETTLED	2026-04-04
+PAY00005639	SP3200638	2025-01-01	1150.24	BACS	SETTLED	2025-01-01
+PAY00005640	SP3200638	2025-04-02	1150.24	BACS	SETTLED	2025-04-02
+PAY00005641	SP3200638	2025-07-02	1150.24	BACS	SETTLED	2025-07-02
+PAY00005642	SP3200638	2025-10-01	1150.24	BACS	SETTLED	2025-10-01
+PAY00005643	SP3200638	2025-12-31	1150.24	BACS	SETTLED	2025-12-31
+PAY00005644	SP3200638	2026-04-01	1150.24	BACS	SETTLED	2026-04-01
+PAY00005647	SP3200639	2025-11-12	834.24	BACS	SETTLED	2025-11-12
+PAY00005648	SP3200639	2025-12-10	834.24	BACS	SETTLED	2025-12-10
+PAY00005649	SP3200639	2026-01-07	834.24	BACS	SETTLED	2026-01-07
+PAY00005650	SP3200639	2026-02-04	834.24	BACS	SETTLED	2026-02-04
+PAY00005651	SP3200639	2026-03-04	834.24	BACS	SETTLED	2026-03-04
+PAY00005652	SP3200639	2026-04-01	834.24	BACS	SETTLED	2026-04-01
+PAY00005655	SP3200640	2026-02-14	94.80	BACS	SETTLED	2026-02-14
+PAY00005656	SP3200640	2026-02-21	94.80	BACS	SETTLED	2026-02-21
+PAY00005657	SP3200640	2026-02-28	94.80	BACS	SETTLED	2026-02-28
+PAY00005658	SP3200640	2026-03-07	94.80	POST_OFFICE	SETTLED	2026-03-07
+PAY00005659	SP3200640	2026-03-14	94.80	CHEQUE	SETTLED	2026-03-14
+PAY00005660	SP3200640	2026-03-21	94.80	BACS	SETTLED	2026-03-21
+PAY00005661	SP3200640	2026-03-28	94.80	BACS	SETTLED	2026-03-28
+PAY00005662	SP3200640	2026-04-04	94.80	BACS	SETTLED	2026-04-04
+PAY00005665	SP3200641	2025-08-22	721.80	BACS	SETTLED	2025-08-22
+PAY00005666	SP3200641	2025-09-19	721.80	BACS	SETTLED	2025-09-19
+PAY00005667	SP3200641	2025-10-17	721.80	BACS	SETTLED	2025-10-17
+PAY00005668	SP3200641	2025-11-14	721.80	POST_OFFICE	SETTLED	2025-11-14
+PAY00005669	SP3200641	2025-12-12	721.80	BACS	SETTLED	2025-12-12
+PAY00005670	SP3200641	2026-01-09	721.80	BACS	SETTLED	2026-01-09
+PAY00005671	SP3200641	2026-02-06	721.80	BACS	SETTLED	2026-02-06
+PAY00005672	SP3200641	2026-03-06	721.80	BACS	SETTLED	2026-03-06
+PAY00005673	SP3200641	2026-04-03	721.80	BACS	SETTLED	2026-04-03
+PAY00005676	SP3200642	2025-09-18	758.40	BACS	SETTLED	2025-09-18
+PAY00005677	SP3200642	2025-10-16	758.40	BACS	SETTLED	2025-10-16
+PAY00005678	SP3200642	2025-11-13	758.40	BACS	SETTLED	2025-11-13
+PAY00005679	SP3200642	2025-12-11	758.40	BACS	SETTLED	2025-12-11
+PAY00005680	SP3200642	2026-01-08	758.40	POST_OFFICE	SETTLED	2026-01-08
+PAY00005681	SP3200642	2026-02-05	758.40	BACS	SETTLED	2026-02-05
+PAY00005682	SP3200642	2026-03-05	758.40	BACS	SETTLED	2026-03-05
+PAY00005683	SP3200642	2026-04-02	758.40	POST_OFFICE	SETTLED	2026-04-02
+PAY00005686	SP3200643	2025-10-18	736.28	POST_OFFICE	SETTLED	2025-10-18
+PAY00005687	SP3200643	2025-11-15	736.28	BACS	SETTLED	2025-11-15
+PAY00005688	SP3200643	2025-12-13	736.28	BACS	SETTLED	2025-12-13
+PAY00005689	SP3200643	2026-01-10	736.28	BACS	SETTLED	2026-01-10
+PAY00005690	SP3200643	2026-02-07	736.28	BACS	SETTLED	2026-02-07
+PAY00005691	SP3200643	2026-03-07	736.28	BACS	SETTLED	2026-03-07
+PAY00005692	SP3200643	2026-04-04	736.28	BACS	SETTLED	2026-04-04
+PAY00005695	SP3200644	2025-11-16	303.36	BACS	SETTLED	2025-11-16
+PAY00005696	SP3200644	2025-12-14	303.36	BACS	SETTLED	2025-12-14
+PAY00005697	SP3200644	2026-01-11	303.36	BACS	SETTLED	2026-01-11
+PAY00005698	SP3200644	2026-02-08	303.36	BACS	SETTLED	2026-02-08
+PAY00005699	SP3200644	2026-03-08	303.36	POST_OFFICE	SETTLED	2026-03-08
+PAY00005700	SP3200644	2026-04-05	303.36	BACS	SETTLED	2026-04-05
+PAY00005703	SP3200645	2025-11-12	295.68	BACS	SETTLED	2025-11-12
+PAY00005704	SP3200645	2025-12-10	295.68	BACS	SETTLED	2025-12-10
+PAY00005705	SP3200645	2026-01-07	295.68	BACS	SETTLED	2026-01-07
+PAY00005706	SP3200645	2026-02-04	295.68	BACS	SETTLED	2026-02-04
+PAY00005707	SP3200645	2026-03-04	295.68	BACS	SETTLED	2026-03-04
+PAY00005708	SP3200645	2026-04-01	295.68	POST_OFFICE	SETTLED	2026-04-01
+PAY00005711	SP3200646	2025-08-22	278.08	POST_OFFICE	SETTLED	2025-08-22
+PAY00005712	SP3200646	2025-09-19	278.08	BACS	SETTLED	2025-09-19
+PAY00005713	SP3200646	2025-10-17	278.08	BACS	SETTLED	2025-10-17
+PAY00005714	SP3200646	2025-11-14	278.08	BACS	SETTLED	2025-11-14
+PAY00005715	SP3200646	2025-12-12	278.08	BACS	SETTLED	2025-12-12
+PAY00005716	SP3200646	2026-01-09	278.08	BACS	SETTLED	2026-01-09
+PAY00005717	SP3200646	2026-02-06	278.08	BACS	SETTLED	2026-02-06
+PAY00005718	SP3200646	2026-03-06	278.08	BACS	SETTLED	2026-03-06
+PAY00005719	SP3200646	2026-04-03	278.08	BACS	SETTLED	2026-04-03
+PAY00005722	SP3200647	2025-12-14	733.12	BACS	SETTLED	2025-12-14
+PAY00005723	SP3200647	2026-01-11	733.12	BACS	SETTLED	2026-01-11
+PAY00005724	SP3200647	2026-02-08	733.12	BACS	SETTLED	2026-02-08
+PAY00005725	SP3200647	2026-03-08	733.12	CHEQUE	SETTLED	2026-03-08
+PAY00005726	SP3200647	2026-04-05	733.12	BACS	SETTLED	2026-04-05
+PAY00005729	SP3200648	2025-10-16	783.68	BACS	SETTLED	2025-10-16
+PAY00005730	SP3200648	2025-11-13	783.68	BACS	SETTLED	2025-11-13
+PAY00005731	SP3200648	2025-12-11	783.68	BACS	SETTLED	2025-12-11
+PAY00005732	SP3200648	2026-01-08	783.68	BACS	SETTLED	2026-01-08
+PAY00005733	SP3200648	2026-02-05	783.68	BACS	SETTLED	2026-02-05
+PAY00005734	SP3200648	2026-03-05	783.68	BACS	SETTLED	2026-03-05
+PAY00005735	SP3200648	2026-04-02	783.68	POST_OFFICE	SETTLED	2026-04-02
+PAY00005738	SP3200649	2026-03-01	164.32	POST_OFFICE	SETTLED	2026-03-01
+PAY00005739	SP3200649	2026-03-08	164.32	BACS	SETTLED	2026-03-08
+PAY00005740	SP3200649	2026-03-15	164.32	BACS	SETTLED	2026-03-15
+PAY00005741	SP3200649	2026-03-22	164.32	BACS	SETTLED	2026-03-22
+PAY00005742	SP3200649	2026-03-29	164.32	BACS	SETTLED	2026-03-29
+PAY00005743	SP3200649	2026-04-05	164.32	BACS	SETTLED	2026-04-05
+PAY00005746	SP3200650	2025-11-14	632.00	BACS	SETTLED	2025-11-14
+PAY00005747	SP3200650	2025-12-12	632.00	CHEQUE	SETTLED	2025-12-12
+PAY00005748	SP3200650	2026-01-09	632.00	BACS	SETTLED	2026-01-09
+PAY00005749	SP3200650	2026-02-06	632.00	BACS	SETTLED	2026-02-06
+PAY00005750	SP3200650	2026-03-06	632.00	CHEQUE	SETTLED	2026-03-06
+PAY00005751	SP3200650	2026-04-03	632.00	BACS	SETTLED	2026-04-03
+PAY00005754	SP3200651	2025-12-12	231.64	BACS	SETTLED	2025-12-12
+PAY00005755	SP3200651	2026-01-09	231.64	BACS	SETTLED	2026-01-09
+PAY00005756	SP3200651	2026-02-06	231.64	BACS	SETTLED	2026-02-06
+PAY00005757	SP3200651	2026-03-06	231.64	BACS	SETTLED	2026-03-06
+PAY00005758	SP3200651	2026-04-03	231.64	BACS	SETTLED	2026-04-03
+PAY00005761	SP3200652	2026-02-14	88.48	BACS	SETTLED	2026-02-14
+PAY00005762	SP3200652	2026-02-21	88.48	CHEQUE	SETTLED	2026-02-21
+PAY00005763	SP3200652	2026-02-28	88.48	BACS	SETTLED	2026-02-28
+PAY00005764	SP3200652	2026-03-07	88.48	BACS	SETTLED	2026-03-07
+PAY00005765	SP3200652	2026-03-14	88.48	BACS	SETTLED	2026-03-14
+PAY00005766	SP3200652	2026-03-21	88.48	BACS	SETTLED	2026-03-21
+PAY00005767	SP3200652	2026-03-28	88.48	BACS	SETTLED	2026-03-28
+PAY00005768	SP3200652	2026-04-04	88.48	BACS	SETTLED	2026-04-04
+PAY00005771	SP3200653	2025-12-12	713.48	BACS	SETTLED	2025-12-12
+PAY00005772	SP3200653	2026-01-09	713.48	POST_OFFICE	SETTLED	2026-01-09
+PAY00005773	SP3200653	2026-02-06	713.48	BACS	SETTLED	2026-02-06
+PAY00005774	SP3200653	2026-03-06	713.48	CHEQUE	SETTLED	2026-03-06
+PAY00005775	SP3200653	2026-04-03	713.48	BACS	SETTLED	2026-04-03
+PAY00005778	SP3200654	2025-09-17	429.76	BACS	SETTLED	2025-09-17
+PAY00005779	SP3200654	2025-10-15	429.76	BACS	SETTLED	2025-10-15
+PAY00005780	SP3200654	2025-11-12	429.76	BACS	SETTLED	2025-11-12
+PAY00005781	SP3200654	2025-12-10	429.76	BACS	SETTLED	2025-12-10
+PAY00005782	SP3200654	2026-01-07	429.76	CHEQUE	SETTLED	2026-01-07
+PAY00005783	SP3200654	2026-02-04	429.76	BACS	SETTLED	2026-02-04
+PAY00005784	SP3200654	2026-03-04	429.76	BACS	SETTLED	2026-03-04
+PAY00005785	SP3200654	2026-04-01	429.76	CHEQUE	SETTLED	2026-04-01
+PAY00005788	SP3200655	2025-12-10	556.16	POST_OFFICE	SETTLED	2025-12-10
+PAY00005789	SP3200655	2026-01-07	556.16	BACS	SETTLED	2026-01-07
+PAY00005790	SP3200655	2026-02-04	556.16	CHEQUE	SETTLED	2026-02-04
+PAY00005791	SP3200655	2026-03-04	556.16	POST_OFFICE	SETTLED	2026-03-04
+PAY00005792	SP3200655	2026-04-01	556.16	POST_OFFICE	SETTLED	2026-04-01
+PAY00005795	SP3200656	2026-02-22	139.04	BACS	SETTLED	2026-02-22
+PAY00005796	SP3200656	2026-03-01	139.04	BACS	SETTLED	2026-03-01
+PAY00005797	SP3200656	2026-03-08	139.04	BACS	SETTLED	2026-03-08
+PAY00005798	SP3200656	2026-03-15	139.04	BACS	SETTLED	2026-03-15
+PAY00005799	SP3200656	2026-03-22	139.04	POST_OFFICE	SETTLED	2026-03-22
+PAY00005800	SP3200656	2026-03-29	139.04	BACS	SETTLED	2026-03-29
+PAY00005801	SP3200656	2026-04-05	139.04	BACS	SETTLED	2026-04-05
+PAY00005804	SP3200657	2025-08-19	652.68	BACS	SETTLED	2025-08-19
+PAY00005805	SP3200657	2025-09-16	652.68	BACS	SETTLED	2025-09-16
+PAY00005806	SP3200657	2025-10-14	652.68	BACS	SETTLED	2025-10-14
+PAY00005807	SP3200657	2025-11-11	652.68	BACS	SETTLED	2025-11-11
+PAY00005808	SP3200657	2025-12-09	652.68	BACS	SETTLED	2025-12-09
+PAY00005809	SP3200657	2026-01-06	652.68	BACS	SETTLED	2026-01-06
+PAY00005810	SP3200657	2026-02-03	652.68	BACS	SETTLED	2026-02-03
+PAY00005811	SP3200657	2026-03-03	652.68	CHEQUE	SETTLED	2026-03-03
+PAY00005812	SP3200657	2026-03-31	652.68	BACS	SETTLED	2026-03-31
+PAY00005815	SP3200658	2024-07-06	1273.22	BACS	SETTLED	2024-07-06
+PAY00005816	SP3200658	2024-10-05	1273.22	BACS	SETTLED	2024-10-05
+PAY00005817	SP3200658	2025-01-04	1273.22	BACS	SETTLED	2025-01-04
+PAY00005818	SP3200658	2025-04-05	1273.22	BACS	SETTLED	2025-04-05
+PAY00005819	SP3200658	2025-07-05	1273.22	POST_OFFICE	SETTLED	2025-07-05
+PAY00005820	SP3200658	2025-10-04	1273.22	BACS	SETTLED	2025-10-04
+PAY00005821	SP3200658	2026-01-03	1273.22	BACS	SETTLED	2026-01-03
+PAY00005822	SP3200658	2026-04-04	1273.22	BACS	SETTLED	2026-04-04
+PAY00005825	SP3200659	2026-03-06	170.64	POST_OFFICE	SETTLED	2026-03-06
+PAY00005826	SP3200659	2026-03-13	170.64	BACS	SETTLED	2026-03-13
+PAY00005827	SP3200659	2026-03-20	170.64	CHEQUE	SETTLED	2026-03-20
+PAY00005828	SP3200659	2026-03-27	170.64	BACS	SETTLED	2026-03-27
+PAY00005829	SP3200659	2026-04-03	170.64	BACS	SETTLED	2026-04-03
+PAY00005832	SP3200660	2025-12-13	325.64	BACS	SETTLED	2025-12-13
+PAY00005833	SP3200660	2026-01-10	325.64	BACS	SETTLED	2026-01-10
+PAY00005834	SP3200660	2026-02-07	325.64	BACS	SETTLED	2026-02-07
+PAY00005835	SP3200660	2026-03-07	325.64	BACS	SETTLED	2026-03-07
+PAY00005836	SP3200660	2026-04-04	325.64	BACS	SETTLED	2026-04-04
+PAY00005839	SP3200661	2026-02-03	164.32	BACS	SETTLED	2026-02-03
+PAY00005840	SP3200661	2026-02-10	164.32	BACS	SETTLED	2026-02-10
+PAY00005841	SP3200661	2026-02-17	164.32	BACS	SETTLED	2026-02-17
+PAY00005842	SP3200661	2026-02-24	164.32	BACS	SETTLED	2026-02-24
+PAY00005843	SP3200661	2026-03-03	164.32	BACS	SETTLED	2026-03-03
+PAY00005844	SP3200661	2026-03-10	164.32	BACS	SETTLED	2026-03-10
+PAY00005845	SP3200661	2026-03-17	164.32	BACS	SETTLED	2026-03-17
+PAY00005846	SP3200661	2026-03-24	164.32	BACS	SETTLED	2026-03-24
+PAY00005847	SP3200661	2026-03-31	164.32	POST_OFFICE	SETTLED	2026-03-31
+PAY00005850	SP3200662	2026-03-04	82.16	BACS	SETTLED	2026-03-04
+PAY00005851	SP3200662	2026-03-11	82.16	BACS	SETTLED	2026-03-11
+PAY00005852	SP3200662	2026-03-18	82.16	BACS	SETTLED	2026-03-18
+PAY00005853	SP3200662	2026-03-25	82.16	BACS	SETTLED	2026-03-25
+PAY00005854	SP3200662	2026-04-01	82.16	BACS	SETTLED	2026-04-01
+PAY00005857	SP3200663	2024-07-08	1807.52	BACS	SETTLED	2024-07-08
+PAY00005858	SP3200663	2024-10-07	1807.52	BACS	SETTLED	2024-10-07
+PAY00005859	SP3200663	2025-01-06	1807.52	BACS	SETTLED	2025-01-06
+PAY00005860	SP3200663	2025-04-07	1807.52	POST_OFFICE	SETTLED	2025-04-07
+PAY00005861	SP3200663	2025-07-07	1807.52	BACS	SETTLED	2025-07-07
+PAY00005862	SP3200663	2025-10-06	1807.52	BACS	SETTLED	2025-10-06
+PAY00005863	SP3200663	2026-01-05	1807.52	BACS	SETTLED	2026-01-05
+PAY00005866	SP3200664	2025-11-13	328.64	BACS	SETTLED	2025-11-13
+PAY00005867	SP3200664	2025-12-11	328.64	BACS	SETTLED	2025-12-11
+PAY00005868	SP3200664	2026-01-08	328.64	BACS	SETTLED	2026-01-08
+PAY00005869	SP3200664	2026-02-05	328.64	POST_OFFICE	SETTLED	2026-02-05
+PAY00005870	SP3200664	2026-03-05	328.64	POST_OFFICE	SETTLED	2026-03-05
+PAY00005871	SP3200664	2026-04-02	328.64	BACS	SETTLED	2026-04-02
+PAY00005874	SP3200665	2025-08-24	834.24	POST_OFFICE	SETTLED	2025-08-24
+PAY00005875	SP3200665	2025-09-21	834.24	POST_OFFICE	SETTLED	2025-09-21
+PAY00005876	SP3200665	2025-10-19	834.24	BACS	SETTLED	2025-10-19
+PAY00005877	SP3200665	2025-11-16	834.24	BACS	SETTLED	2025-11-16
+PAY00005878	SP3200665	2025-12-14	834.24	BACS	SETTLED	2025-12-14
+PAY00005879	SP3200665	2026-01-11	834.24	BACS	SETTLED	2026-01-11
+PAY00005880	SP3200665	2026-02-08	834.24	BACS	SETTLED	2026-02-08
+PAY00005881	SP3200665	2026-03-08	834.24	BACS	SETTLED	2026-03-08
+PAY00005882	SP3200665	2026-04-05	834.24	BACS	SETTLED	2026-04-05
+PAY00005885	SP3200666	2025-12-14	530.88	BACS	SETTLED	2025-12-14
+PAY00005886	SP3200666	2026-01-11	530.88	BACS	SETTLED	2026-01-11
+PAY00005887	SP3200666	2026-02-08	530.88	BACS	SETTLED	2026-02-08
+PAY00005888	SP3200666	2026-03-08	530.88	BACS	SETTLED	2026-03-08
+PAY00005889	SP3200666	2026-04-05	530.88	POST_OFFICE	SETTLED	2026-04-05
+PAY00005892	SP3200667	2025-12-14	319.92	CHEQUE	SETTLED	2025-12-14
+PAY00005893	SP3200667	2026-01-11	319.92	BACS	SETTLED	2026-01-11
+PAY00005894	SP3200667	2026-02-08	319.92	BACS	SETTLED	2026-02-08
+PAY00005895	SP3200667	2026-03-08	319.92	POST_OFFICE	SETTLED	2026-03-08
+PAY00005896	SP3200667	2026-04-05	319.92	BACS	SETTLED	2026-04-05
+PAY00005899	SP3200668	2025-11-14	364.60	BACS	SETTLED	2025-11-14
+PAY00005900	SP3200668	2025-12-12	364.60	BACS	SETTLED	2025-12-12
+PAY00005901	SP3200668	2026-01-09	364.60	POST_OFFICE	SETTLED	2026-01-09
+PAY00005902	SP3200668	2026-02-06	364.60	BACS	SETTLED	2026-02-06
+PAY00005903	SP3200668	2026-03-06	364.60	BACS	SETTLED	2026-03-06
+PAY00005904	SP3200668	2026-04-03	364.60	POST_OFFICE	SETTLED	2026-04-03
+PAY00005907	SP3200669	2025-10-16	272.68	BACS	SETTLED	2025-10-16
+PAY00005908	SP3200669	2025-11-13	272.68	BACS	SETTLED	2025-11-13
+PAY00005909	SP3200669	2025-12-11	272.68	CHEQUE	SETTLED	2025-12-11
+PAY00005910	SP3200669	2026-01-08	272.68	POST_OFFICE	SETTLED	2026-01-08
+PAY00005911	SP3200669	2026-02-05	272.68	BACS	SETTLED	2026-02-05
+PAY00005912	SP3200669	2026-03-05	272.68	BACS	SETTLED	2026-03-05
+PAY00005913	SP3200669	2026-04-02	272.68	BACS	SETTLED	2026-04-02
+PAY00005916	SP3200670	2025-12-15	709.36	BACS	SETTLED	2025-12-15
+PAY00005917	SP3200670	2026-01-12	709.36	BACS	SETTLED	2026-01-12
+PAY00005918	SP3200670	2026-02-09	709.36	BACS	SETTLED	2026-02-09
+PAY00005919	SP3200670	2026-03-09	709.36	BACS	SETTLED	2026-03-09
+PAY00005922	SP3200671	2025-08-25	356.24	BACS	SETTLED	2025-08-25
+PAY00005923	SP3200671	2025-09-22	356.24	POST_OFFICE	SETTLED	2025-09-22
+PAY00005924	SP3200671	2025-10-20	356.24	BACS	SETTLED	2025-10-20
+PAY00005925	SP3200671	2025-11-17	356.24	POST_OFFICE	SETTLED	2025-11-17
+PAY00005926	SP3200671	2025-12-15	356.24	BACS	SETTLED	2025-12-15
+PAY00005927	SP3200671	2026-01-12	356.24	BACS	SETTLED	2026-01-12
+PAY00005928	SP3200671	2026-02-09	356.24	BACS	SETTLED	2026-02-09
+PAY00005929	SP3200671	2026-03-09	356.24	BACS	SETTLED	2026-03-09
+PAY00005932	SP3200672	2025-11-17	783.68	BACS	SETTLED	2025-11-17
+PAY00005933	SP3200672	2025-12-15	783.68	BACS	SETTLED	2025-12-15
+PAY00005934	SP3200672	2026-01-12	783.68	POST_OFFICE	SETTLED	2026-01-12
+PAY00005935	SP3200672	2026-02-09	783.68	BACS	SETTLED	2026-02-09
+PAY00005936	SP3200672	2026-03-09	783.68	POST_OFFICE	SETTLED	2026-03-09
+PAY00005939	SP3200673	2026-02-26	164.32	BACS	SETTLED	2026-02-26
+PAY00005940	SP3200673	2026-03-05	164.32	BACS	SETTLED	2026-03-05
+PAY00005941	SP3200673	2026-03-12	164.32	BACS	SETTLED	2026-03-12
+PAY00005942	SP3200673	2026-03-19	164.32	POST_OFFICE	SETTLED	2026-03-19
+PAY00005943	SP3200673	2026-03-26	164.32	BACS	SETTLED	2026-03-26
+PAY00005944	SP3200673	2026-04-02	164.32	BACS	SETTLED	2026-04-02
+PAY00005947	SP3200674	2025-09-20	252.80	BACS	SETTLED	2025-09-20
+PAY00005948	SP3200674	2025-10-18	252.80	BACS	SETTLED	2025-10-18
+PAY00005949	SP3200674	2025-11-15	252.80	BACS	SETTLED	2025-11-15
+PAY00005950	SP3200674	2025-12-13	252.80	POST_OFFICE	SETTLED	2025-12-13
+PAY00005951	SP3200674	2026-01-10	252.80	BACS	SETTLED	2026-01-10
+PAY00005952	SP3200674	2026-02-07	252.80	BACS	SETTLED	2026-02-07
+PAY00005953	SP3200674	2026-03-07	252.80	BACS	SETTLED	2026-03-07
+PAY00005954	SP3200674	2026-04-04	252.80	BACS	SETTLED	2026-04-04
+PAY00005957	SP3200675	2024-07-03	1807.52	BACS	SETTLED	2024-07-03
+PAY00005958	SP3200675	2024-10-02	1807.52	BACS	SETTLED	2024-10-02
+PAY00005959	SP3200675	2025-01-01	1807.52	BACS	SETTLED	2025-01-01
+PAY00005960	SP3200675	2025-04-02	1807.52	BACS	SETTLED	2025-04-02
+PAY00005961	SP3200675	2025-07-02	1807.52	BACS	SETTLED	2025-07-02
+PAY00005962	SP3200675	2025-10-01	1807.52	BACS	SETTLED	2025-10-01
+PAY00005963	SP3200675	2025-12-31	1807.52	BACS	SETTLED	2025-12-31
+PAY00005964	SP3200675	2026-04-01	1807.52	BACS	SETTLED	2026-04-01
+PAY00005967	SP3200676	2026-03-03	158.00	BACS	SETTLED	2026-03-03
+PAY00005968	SP3200676	2026-03-10	158.00	BACS	SETTLED	2026-03-10
+PAY00005969	SP3200676	2026-03-17	158.00	BACS	SETTLED	2026-03-17
+PAY00005970	SP3200676	2026-03-24	158.00	BACS	SETTLED	2026-03-24
+PAY00005971	SP3200676	2026-03-31	158.00	BACS	SETTLED	2026-03-31
+PAY00005974	SP3200677	2026-02-28	176.96	BACS	SETTLED	2026-02-28
+PAY00005975	SP3200677	2026-03-07	176.96	BACS	SETTLED	2026-03-07
+PAY00005976	SP3200677	2026-03-14	176.96	BACS	SETTLED	2026-03-14
+PAY00005977	SP3200677	2026-03-21	176.96	BACS	SETTLED	2026-03-21
+PAY00005978	SP3200677	2026-03-28	176.96	CHEQUE	SETTLED	2026-03-28
+PAY00005979	SP3200677	2026-04-04	176.96	BACS	SETTLED	2026-04-04
+PAY00005982	SP3200678	2026-03-03	88.10	BACS	SETTLED	2026-03-03
+PAY00005983	SP3200678	2026-03-10	88.10	BACS	SETTLED	2026-03-10
+PAY00005984	SP3200678	2026-03-17	88.10	BACS	SETTLED	2026-03-17
+PAY00005985	SP3200678	2026-03-24	88.10	POST_OFFICE	SETTLED	2026-03-24
+PAY00005986	SP3200678	2026-03-31	88.10	BACS	SETTLED	2026-03-31
+PAY00005989	SP3200679	2025-10-15	733.12	BACS	SETTLED	2025-10-15
+PAY00005990	SP3200679	2025-11-12	733.12	POST_OFFICE	SETTLED	2025-11-12
+PAY00005991	SP3200679	2025-12-10	733.12	BACS	SETTLED	2025-12-10
+PAY00005992	SP3200679	2026-01-07	733.12	BACS	SETTLED	2026-01-07
+PAY00005993	SP3200679	2026-02-04	733.12	BACS	SETTLED	2026-02-04
+PAY00005994	SP3200679	2026-03-04	733.12	POST_OFFICE	SETTLED	2026-03-04
+PAY00005995	SP3200679	2026-04-01	733.12	BACS	SETTLED	2026-04-01
+PAY00005998	SP3200680	2025-01-01	1396.72	BACS	SETTLED	2025-01-01
+PAY00005999	SP3200680	2025-04-02	1396.72	BACS	SETTLED	2025-04-02
+PAY00006000	SP3200680	2025-07-02	1396.72	BACS	SETTLED	2025-07-02
+PAY00006001	SP3200680	2025-10-01	1396.72	POST_OFFICE	SETTLED	2025-10-01
+PAY00006002	SP3200680	2025-12-31	1396.72	BACS	SETTLED	2025-12-31
+PAY00006003	SP3200680	2026-04-01	1396.72	BACS	SETTLED	2026-04-01
+PAY00006006	SP3200681	2025-08-19	404.48	BACS	SETTLED	2025-08-19
+PAY00006007	SP3200681	2025-09-16	404.48	BACS	SETTLED	2025-09-16
+PAY00006008	SP3200681	2025-10-14	404.48	POST_OFFICE	SETTLED	2025-10-14
+PAY00006009	SP3200681	2025-11-11	404.48	BACS	SETTLED	2025-11-11
+PAY00006010	SP3200681	2025-12-09	404.48	BACS	SETTLED	2025-12-09
+PAY00006011	SP3200681	2026-01-06	404.48	BACS	SETTLED	2026-01-06
+PAY00006012	SP3200681	2026-02-03	404.48	POST_OFFICE	SETTLED	2026-02-03
+PAY00006013	SP3200681	2026-03-03	404.48	BACS	SETTLED	2026-03-03
+PAY00006014	SP3200681	2026-03-31	404.48	POST_OFFICE	SETTLED	2026-03-31
+PAY00006017	SP3200682	2025-09-21	884.80	BACS	SETTLED	2025-09-21
+PAY00006018	SP3200682	2025-10-19	884.80	BACS	SETTLED	2025-10-19
+PAY00006019	SP3200682	2025-11-16	884.80	BACS	SETTLED	2025-11-16
+PAY00006020	SP3200682	2025-12-14	884.80	POST_OFFICE	SETTLED	2025-12-14
+PAY00006021	SP3200682	2026-01-11	884.80	BACS	SETTLED	2026-01-11
+PAY00006022	SP3200682	2026-02-08	884.80	BACS	SETTLED	2026-02-08
+PAY00006023	SP3200682	2026-03-08	884.80	BACS	SETTLED	2026-03-08
+PAY00006024	SP3200682	2026-04-05	884.80	BACS	SETTLED	2026-04-05
+PAY00006027	SP3200683	2025-11-15	418.76	BACS	SETTLED	2025-11-15
+PAY00006028	SP3200683	2025-12-13	418.76	POST_OFFICE	SETTLED	2025-12-13
+PAY00006029	SP3200683	2026-01-10	418.76	POST_OFFICE	SETTLED	2026-01-10
+PAY00006030	SP3200683	2026-02-07	418.76	CHEQUE	SETTLED	2026-02-07
+PAY00006031	SP3200683	2026-03-07	418.76	CHEQUE	SETTLED	2026-03-07
+PAY00006032	SP3200683	2026-04-04	418.76	BACS	SETTLED	2026-04-04
+PAY00006035	SP3200684	2024-04-04	1971.84	BACS	SETTLED	2024-04-04
+PAY00006036	SP3200684	2024-07-04	1971.84	BACS	SETTLED	2024-07-04
+PAY00006037	SP3200684	2024-10-03	1971.84	BACS	SETTLED	2024-10-03
+PAY00006038	SP3200684	2025-01-02	1971.84	BACS	SETTLED	2025-01-02
+PAY00006039	SP3200684	2025-04-03	1971.84	BACS	SETTLED	2025-04-03
+PAY00006040	SP3200684	2025-07-03	1971.84	BACS	SETTLED	2025-07-03
+PAY00006041	SP3200684	2025-10-02	1971.84	POST_OFFICE	SETTLED	2025-10-02
+PAY00006042	SP3200684	2026-01-01	1971.84	BACS	SETTLED	2026-01-01
+PAY00006043	SP3200684	2026-04-02	1971.84	BACS	SETTLED	2026-04-02
+PAY00006046	SP3200685	2025-11-14	455.04	BACS	SETTLED	2025-11-14
+PAY00006047	SP3200685	2025-12-12	455.04	BACS	SETTLED	2025-12-12
+PAY00006048	SP3200685	2026-01-09	455.04	BACS	SETTLED	2026-01-09
+PAY00006049	SP3200685	2026-02-06	455.04	BACS	SETTLED	2026-02-06
+PAY00006050	SP3200685	2026-03-06	455.04	BACS	SETTLED	2026-03-06
+PAY00006051	SP3200685	2026-04-03	455.04	BACS	SETTLED	2026-04-03
+PAY00006054	SP3200686	2025-08-20	634.52	BACS	SETTLED	2025-08-20
+PAY00006055	SP3200686	2025-09-17	634.52	BACS	SETTLED	2025-09-17
+PAY00006056	SP3200686	2025-10-15	634.52	POST_OFFICE	SETTLED	2025-10-15
+PAY00006057	SP3200686	2025-11-12	634.52	BACS	SETTLED	2025-11-12
+PAY00006058	SP3200686	2025-12-10	634.52	BACS	SETTLED	2025-12-10
+PAY00006059	SP3200686	2026-01-07	634.52	BACS	SETTLED	2026-01-07
+PAY00006060	SP3200686	2026-02-04	634.52	BACS	SETTLED	2026-02-04
+PAY00006061	SP3200686	2026-03-04	634.52	BACS	SETTLED	2026-03-04
+PAY00006062	SP3200686	2026-04-01	634.52	CHEQUE	SETTLED	2026-04-01
+PAY00006065	SP3200687	2026-02-22	151.68	BACS	SETTLED	2026-02-22
+PAY00006066	SP3200687	2026-03-01	151.68	BACS	SETTLED	2026-03-01
+PAY00006067	SP3200687	2026-03-08	151.68	BACS	SETTLED	2026-03-08
+PAY00006068	SP3200687	2026-03-15	151.68	BACS	SETTLED	2026-03-15
+PAY00006069	SP3200687	2026-03-22	151.68	BACS	SETTLED	2026-03-22
+PAY00006070	SP3200687	2026-03-29	151.68	BACS	SETTLED	2026-03-29
+PAY00006071	SP3200687	2026-04-05	151.68	BACS	SETTLED	2026-04-05
+PAY00006074	SP3200688	2025-12-11	328.64	BACS	SETTLED	2025-12-11
+PAY00006075	SP3200688	2026-01-08	328.64	BACS	SETTLED	2026-01-08
+PAY00006076	SP3200688	2026-02-05	328.64	BACS	SETTLED	2026-02-05
+PAY00006077	SP3200688	2026-03-05	328.64	BACS	SETTLED	2026-03-05
+PAY00006078	SP3200688	2026-04-02	328.64	BACS	SETTLED	2026-04-02
+PAY00006081	SP3200689	2026-02-21	183.28	BACS	SETTLED	2026-02-21
+PAY00006082	SP3200689	2026-02-28	183.28	CHEQUE	SETTLED	2026-02-28
+PAY00006083	SP3200689	2026-03-07	183.28	BACS	SETTLED	2026-03-07
+PAY00006084	SP3200689	2026-03-14	183.28	BACS	SETTLED	2026-03-14
+PAY00006085	SP3200689	2026-03-21	183.28	BACS	SETTLED	2026-03-21
+PAY00006086	SP3200689	2026-03-28	183.28	POST_OFFICE	SETTLED	2026-03-28
+PAY00006087	SP3200689	2026-04-04	183.28	POST_OFFICE	SETTLED	2026-04-04
+PAY00006090	SP3200690	2025-09-17	230.68	BACS	SETTLED	2025-09-17
+PAY00006091	SP3200690	2025-10-15	230.68	BACS	SETTLED	2025-10-15
+PAY00006092	SP3200690	2025-11-12	230.68	BACS	SETTLED	2025-11-12
+PAY00006093	SP3200690	2025-12-10	230.68	BACS	SETTLED	2025-12-10
+PAY00006094	SP3200690	2026-01-07	230.68	BACS	SETTLED	2026-01-07
+PAY00006095	SP3200690	2026-02-04	230.68	BACS	SETTLED	2026-02-04
+PAY00006096	SP3200690	2026-03-04	230.68	BACS	SETTLED	2026-03-04
+PAY00006097	SP3200690	2026-04-01	230.68	CHEQUE	SETTLED	2026-04-01
+PAY00006100	SP3200691	2025-10-14	360.04	BACS	SETTLED	2025-10-14
+PAY00006101	SP3200691	2025-11-11	360.04	BACS	SETTLED	2025-11-11
+PAY00006102	SP3200691	2025-12-09	360.04	BACS	SETTLED	2025-12-09
+PAY00006103	SP3200691	2026-01-06	360.04	BACS	SETTLED	2026-01-06
+PAY00006104	SP3200691	2026-02-03	360.04	BACS	SETTLED	2026-02-03
+PAY00006105	SP3200691	2026-03-03	360.04	BACS	SETTLED	2026-03-03
+PAY00006106	SP3200691	2026-03-31	360.04	POST_OFFICE	SETTLED	2026-03-31
+PAY00006109	SP3200692	2025-11-15	328.64	BACS	SETTLED	2025-11-15
+PAY00006110	SP3200692	2025-12-13	328.64	BACS	SETTLED	2025-12-13
+PAY00006111	SP3200692	2026-01-10	328.64	BACS	SETTLED	2026-01-10
+PAY00006112	SP3200692	2026-02-07	328.64	BACS	SETTLED	2026-02-07
+PAY00006113	SP3200692	2026-03-07	328.64	BACS	SETTLED	2026-03-07
+PAY00006114	SP3200692	2026-04-04	328.64	CHEQUE	SETTLED	2026-04-04
+PAY00006117	SP3200693	2025-12-12	530.88	BACS	SETTLED	2025-12-12
+PAY00006118	SP3200693	2026-01-09	530.88	BACS	SETTLED	2026-01-09
+PAY00006119	SP3200693	2026-02-06	530.88	BACS	SETTLED	2026-02-06
+PAY00006120	SP3200693	2026-03-06	530.88	BACS	SETTLED	2026-03-06
+PAY00006121	SP3200693	2026-04-03	530.88	BACS	SETTLED	2026-04-03
+PAY00006124	SP3200694	2025-12-15	530.88	BACS	SETTLED	2025-12-15
+PAY00006125	SP3200694	2026-01-12	530.88	POST_OFFICE	SETTLED	2026-01-12
+PAY00006126	SP3200694	2026-02-09	530.88	BACS	SETTLED	2026-02-09
+PAY00006127	SP3200694	2026-03-09	530.88	BACS	SETTLED	2026-03-09
+PAY00006130	SP3200695	2025-09-17	339.72	BACS	SETTLED	2025-09-17
+PAY00006131	SP3200695	2025-10-15	339.72	BACS	SETTLED	2025-10-15
+PAY00006132	SP3200695	2025-11-12	339.72	BACS	SETTLED	2025-11-12
+PAY00006133	SP3200695	2025-12-10	339.72	BACS	SETTLED	2025-12-10
+PAY00006134	SP3200695	2026-01-07	339.72	BACS	SETTLED	2026-01-07
+PAY00006135	SP3200695	2026-02-04	339.72	BACS	SETTLED	2026-02-04
+PAY00006136	SP3200695	2026-03-04	339.72	BACS	SETTLED	2026-03-04
+PAY00006137	SP3200695	2026-04-01	339.72	BACS	SETTLED	2026-04-01
+PAY00006140	SP3200696	2025-08-20	278.08	BACS	SETTLED	2025-08-20
+PAY00006141	SP3200696	2025-09-17	278.08	POST_OFFICE	SETTLED	2025-09-17
+PAY00006142	SP3200696	2025-10-15	278.08	BACS	SETTLED	2025-10-15
+PAY00006143	SP3200696	2025-11-12	278.08	BACS	SETTLED	2025-11-12
+PAY00006144	SP3200696	2025-12-10	278.08	POST_OFFICE	SETTLED	2025-12-10
+PAY00006145	SP3200696	2026-01-07	278.08	POST_OFFICE	SETTLED	2026-01-07
+PAY00006146	SP3200696	2026-02-04	278.08	BACS	SETTLED	2026-02-04
+PAY00006147	SP3200696	2026-03-04	278.08	BACS	SETTLED	2026-03-04
+PAY00006148	SP3200696	2026-04-01	278.08	POST_OFFICE	SETTLED	2026-04-01
+PAY00006151	SP3200697	2025-09-22	459.48	BACS	SETTLED	2025-09-22
+PAY00006152	SP3200697	2025-10-20	459.48	BACS	SETTLED	2025-10-20
+PAY00006153	SP3200697	2025-11-17	459.48	BACS	SETTLED	2025-11-17
+PAY00006154	SP3200697	2025-12-15	459.48	BACS	SETTLED	2025-12-15
+PAY00006155	SP3200697	2026-01-12	459.48	BACS	SETTLED	2026-01-12
+PAY00006156	SP3200697	2026-02-09	459.48	BACS	SETTLED	2026-02-09
+PAY00006157	SP3200697	2026-03-09	459.48	CHEQUE	SETTLED	2026-03-09
+PAY00006160	SP3200698	2025-11-17	852.64	BACS	SETTLED	2025-11-17
+PAY00006161	SP3200698	2025-12-15	852.64	BACS	SETTLED	2025-12-15
+PAY00006162	SP3200698	2026-01-12	852.64	BACS	SETTLED	2026-01-12
+PAY00006163	SP3200698	2026-02-09	852.64	BACS	SETTLED	2026-02-09
+PAY00006164	SP3200698	2026-03-09	852.64	BACS	SETTLED	2026-03-09
+PAY00006167	SP3200699	2025-11-14	278.08	BACS	SETTLED	2025-11-14
+PAY00006168	SP3200699	2025-12-12	278.08	POST_OFFICE	SETTLED	2025-12-12
+PAY00006169	SP3200699	2026-01-09	278.08	BACS	SETTLED	2026-01-09
+PAY00006170	SP3200699	2026-02-06	278.08	BACS	SETTLED	2026-02-06
+PAY00006171	SP3200699	2026-03-06	278.08	BACS	SETTLED	2026-03-06
+PAY00006172	SP3200699	2026-04-03	278.08	BACS	SETTLED	2026-04-03
+PAY00006175	SP3200700	2025-11-17	529.76	BACS	SETTLED	2025-11-17
+PAY00006176	SP3200700	2025-12-15	529.76	CHEQUE	SETTLED	2025-12-15
+PAY00006177	SP3200700	2026-01-12	529.76	BACS	SETTLED	2026-01-12
+PAY00006178	SP3200700	2026-02-09	529.76	BACS	SETTLED	2026-02-09
+PAY00006179	SP3200700	2026-03-09	529.76	BACS	SETTLED	2026-03-09
+PAY00006182	SP3200701	2025-10-15	429.76	BACS	SETTLED	2025-10-15
+PAY00006183	SP3200701	2025-11-12	429.76	BACS	SETTLED	2025-11-12
+PAY00006184	SP3200701	2025-12-10	429.76	POST_OFFICE	SETTLED	2025-12-10
+PAY00006185	SP3200701	2026-01-07	429.76	BACS	SETTLED	2026-01-07
+PAY00006186	SP3200701	2026-02-04	429.76	BACS	SETTLED	2026-02-04
+PAY00006187	SP3200701	2026-03-04	429.76	POST_OFFICE	SETTLED	2026-03-04
+PAY00006188	SP3200701	2026-04-01	429.76	BACS	SETTLED	2026-04-01
+PAY00006191	SP3200702	2025-11-14	519.24	BACS	SETTLED	2025-11-14
+PAY00006192	SP3200702	2025-12-12	519.24	BACS	SETTLED	2025-12-12
+PAY00006193	SP3200702	2026-01-09	519.24	POST_OFFICE	SETTLED	2026-01-09
+PAY00006194	SP3200702	2026-02-06	519.24	BACS	SETTLED	2026-02-06
+PAY00006195	SP3200702	2026-03-06	519.24	POST_OFFICE	SETTLED	2026-03-06
+PAY00006196	SP3200702	2026-04-03	519.24	BACS	SETTLED	2026-04-03
+PAY00006199	SP3200703	2024-07-07	2382.64	BACS	SETTLED	2024-07-07
+PAY00006200	SP3200703	2024-10-06	2382.64	BACS	SETTLED	2024-10-06
+PAY00006201	SP3200703	2025-01-05	2382.64	BACS	SETTLED	2025-01-05
+PAY00006202	SP3200703	2025-04-06	2382.64	BACS	SETTLED	2025-04-06
+PAY00006203	SP3200703	2025-07-06	2382.64	BACS	SETTLED	2025-07-06
+PAY00006204	SP3200703	2025-10-05	2382.64	BACS	SETTLED	2025-10-05
+PAY00006205	SP3200703	2026-01-04	2382.64	BACS	SETTLED	2026-01-04
+PAY00006206	SP3200703	2026-04-05	2382.64	BACS	SETTLED	2026-04-05
+PAY00006209	SP3200704	2026-02-10	176.96	BACS	SETTLED	2026-02-10
+PAY00006210	SP3200704	2026-02-17	176.96	BACS	SETTLED	2026-02-17
+PAY00006211	SP3200704	2026-02-24	176.96	BACS	SETTLED	2026-02-24
+PAY00006212	SP3200704	2026-03-03	176.96	BACS	SETTLED	2026-03-03
+PAY00006213	SP3200704	2026-03-10	176.96	BACS	SETTLED	2026-03-10
+PAY00006214	SP3200704	2026-03-17	176.96	BACS	SETTLED	2026-03-17
+PAY00006215	SP3200704	2026-03-24	176.96	BACS	SETTLED	2026-03-24
+PAY00006216	SP3200704	2026-03-31	176.96	BACS	SETTLED	2026-03-31
+PAY00006219	SP3200705	2024-04-08	1236.56	BACS	SETTLED	2024-04-08
+PAY00006220	SP3200705	2024-07-08	1236.56	BACS	SETTLED	2024-07-08
+PAY00006221	SP3200705	2024-10-07	1236.56	BACS	SETTLED	2024-10-07
+PAY00006222	SP3200705	2025-01-06	1236.56	POST_OFFICE	SETTLED	2025-01-06
+PAY00006223	SP3200705	2025-04-07	1236.56	POST_OFFICE	SETTLED	2025-04-07
+PAY00006224	SP3200705	2025-07-07	1236.56	BACS	SETTLED	2025-07-07
+PAY00006225	SP3200705	2025-10-06	1236.56	BACS	SETTLED	2025-10-06
+PAY00006226	SP3200705	2026-01-05	1236.56	BACS	SETTLED	2026-01-05
+PAY00006229	SP3200706	2026-02-16	188.93	BACS	SETTLED	2026-02-16
+PAY00006230	SP3200706	2026-02-23	188.93	BACS	SETTLED	2026-02-23
+PAY00006231	SP3200706	2026-03-02	188.93	BACS	SETTLED	2026-03-02
+PAY00006232	SP3200706	2026-03-09	188.93	BACS	SETTLED	2026-03-09
+PAY00006233	SP3200706	2026-03-16	188.93	CHEQUE	SETTLED	2026-03-16
+PAY00006234	SP3200706	2026-03-23	188.93	BACS	SETTLED	2026-03-23
+PAY00006235	SP3200706	2026-03-30	188.93	BACS	SETTLED	2026-03-30
+PAY00006238	SP3200707	2025-12-15	834.24	BACS	SETTLED	2025-12-15
+PAY00006239	SP3200707	2026-01-12	834.24	BACS	SETTLED	2026-01-12
+PAY00006240	SP3200707	2026-02-09	834.24	BACS	SETTLED	2026-02-09
+PAY00006241	SP3200707	2026-03-09	834.24	BACS	SETTLED	2026-03-09
+PAY00006244	SP3200708	2025-08-21	404.48	BACS	SETTLED	2025-08-21
+PAY00006245	SP3200708	2025-09-18	404.48	BACS	SETTLED	2025-09-18
+PAY00006246	SP3200708	2025-10-16	404.48	BACS	SETTLED	2025-10-16
+PAY00006247	SP3200708	2025-11-13	404.48	BACS	SETTLED	2025-11-13
+PAY00006248	SP3200708	2025-12-11	404.48	CHEQUE	SETTLED	2025-12-11
+PAY00006249	SP3200708	2026-01-08	404.48	BACS	SETTLED	2026-01-08
+PAY00006250	SP3200708	2026-02-05	404.48	BACS	SETTLED	2026-02-05
+PAY00006251	SP3200708	2026-03-05	404.48	BACS	SETTLED	2026-03-05
+PAY00006252	SP3200708	2026-04-02	404.48	BACS	SETTLED	2026-04-02
+PAY00006255	SP3200709	2024-10-01	2711.28	CHEQUE	SETTLED	2024-10-01
+PAY00006256	SP3200709	2024-12-31	2711.28	BACS	SETTLED	2024-12-31
+PAY00006257	SP3200709	2025-04-01	2711.28	BACS	SETTLED	2025-04-01
+PAY00006258	SP3200709	2025-07-01	2711.28	BACS	SETTLED	2025-07-01
+PAY00006259	SP3200709	2025-09-30	2711.28	CHEQUE	SETTLED	2025-09-30
+PAY00006260	SP3200709	2025-12-30	2711.28	BACS	SETTLED	2025-12-30
+PAY00006261	SP3200709	2026-03-31	2711.28	BACS	SETTLED	2026-03-31
+PAY00006264	SP3200710	2025-10-20	455.04	BACS	SETTLED	2025-10-20
+PAY00006265	SP3200710	2025-11-17	455.04	BACS	SETTLED	2025-11-17
+PAY00006266	SP3200710	2025-12-15	455.04	BACS	SETTLED	2025-12-15
+PAY00006267	SP3200710	2026-01-12	455.04	BACS	SETTLED	2026-01-12
+PAY00006268	SP3200710	2026-02-09	455.04	BACS	SETTLED	2026-02-09
+PAY00006269	SP3200710	2026-03-09	455.04	BACS	SETTLED	2026-03-09
+PAY00006272	SP3200711	2025-09-22	584.20	POST_OFFICE	SETTLED	2025-09-22
+PAY00006273	SP3200711	2025-10-20	584.20	POST_OFFICE	SETTLED	2025-10-20
+PAY00006274	SP3200711	2025-11-17	584.20	BACS	SETTLED	2025-11-17
+PAY00006275	SP3200711	2025-12-15	584.20	BACS	SETTLED	2025-12-15
+PAY00006276	SP3200711	2026-01-12	584.20	BACS	SETTLED	2026-01-12
+PAY00006277	SP3200711	2026-02-09	584.20	BACS	SETTLED	2026-02-09
+PAY00006278	SP3200711	2026-03-09	584.20	BACS	SETTLED	2026-03-09
+PAY00006281	SP3200712	2026-03-04	183.34	BACS	SETTLED	2026-03-04
+PAY00006282	SP3200712	2026-03-11	183.34	BACS	SETTLED	2026-03-11
+PAY00006283	SP3200712	2026-03-18	183.34	POST_OFFICE	SETTLED	2026-03-18
+PAY00006284	SP3200712	2026-03-25	183.34	BACS	SETTLED	2026-03-25
+PAY00006285	SP3200712	2026-04-01	183.34	BACS	SETTLED	2026-04-01
+PAY00006288	SP3200713	2026-02-09	111.10	BACS	SETTLED	2026-02-09
+PAY00006289	SP3200713	2026-02-16	111.10	BACS	SETTLED	2026-02-16
+PAY00006290	SP3200713	2026-02-23	111.10	BACS	SETTLED	2026-02-23
+PAY00006291	SP3200713	2026-03-02	111.10	BACS	SETTLED	2026-03-02
+PAY00006292	SP3200713	2026-03-09	111.10	BACS	SETTLED	2026-03-09
+PAY00006293	SP3200713	2026-03-16	111.10	BACS	SETTLED	2026-03-16
+PAY00006294	SP3200713	2026-03-23	111.10	BACS	SETTLED	2026-03-23
+PAY00006295	SP3200713	2026-03-30	111.10	BACS	SETTLED	2026-03-30
+PAY00006298	SP3200714	2025-09-21	606.72	BACS	SETTLED	2025-09-21
+PAY00006299	SP3200714	2025-10-19	606.72	BACS	SETTLED	2025-10-19
+PAY00006300	SP3200714	2025-11-16	606.72	CHEQUE	SETTLED	2025-11-16
+PAY00006301	SP3200714	2025-12-14	606.72	POST_OFFICE	SETTLED	2025-12-14
+PAY00006302	SP3200714	2026-01-11	606.72	BACS	SETTLED	2026-01-11
+PAY00006303	SP3200714	2026-02-08	606.72	BACS	SETTLED	2026-02-08
+PAY00006304	SP3200714	2026-03-08	606.72	BACS	SETTLED	2026-03-08
+PAY00006305	SP3200714	2026-04-05	606.72	BACS	SETTLED	2026-04-05
+PAY00006308	SP3200715	2025-11-17	287.04	BACS	SETTLED	2025-11-17
+PAY00006309	SP3200715	2025-12-15	287.04	POST_OFFICE	SETTLED	2025-12-15
+PAY00006310	SP3200715	2026-01-12	287.04	CHEQUE	SETTLED	2026-01-12
+PAY00006311	SP3200715	2026-02-09	287.04	BACS	SETTLED	2026-02-09
+PAY00006312	SP3200715	2026-03-09	287.04	BACS	SETTLED	2026-03-09
+PAY00006315	SP3200716	2025-10-18	252.80	BACS	SETTLED	2025-10-18
+PAY00006316	SP3200716	2025-11-15	252.80	CHEQUE	SETTLED	2025-11-15
+PAY00006317	SP3200716	2025-12-13	252.80	BACS	SETTLED	2025-12-13
+PAY00006318	SP3200716	2026-01-10	252.80	BACS	SETTLED	2026-01-10
+PAY00006319	SP3200716	2026-02-07	252.80	BACS	SETTLED	2026-02-07
+PAY00006320	SP3200716	2026-03-07	252.80	BACS	SETTLED	2026-03-07
+PAY00006321	SP3200716	2026-04-04	252.80	BACS	SETTLED	2026-04-04
+PAY00006324	SP3200717	2025-10-18	244.80	BACS	SETTLED	2025-10-18
+PAY00006325	SP3200717	2025-11-15	244.80	BACS	SETTLED	2025-11-15
+PAY00006326	SP3200717	2025-12-13	244.80	BACS	SETTLED	2025-12-13
+PAY00006327	SP3200717	2026-01-10	244.80	POST_OFFICE	SETTLED	2026-01-10
+PAY00006328	SP3200717	2026-02-07	244.80	CHEQUE	SETTLED	2026-02-07
+PAY00006329	SP3200717	2026-03-07	244.80	POST_OFFICE	SETTLED	2026-03-07
+PAY00006330	SP3200717	2026-04-04	244.80	POST_OFFICE	SETTLED	2026-04-04
+PAY00006333	SP3200718	2025-09-17	530.88	BACS	SETTLED	2025-09-17
+PAY00006334	SP3200718	2025-10-15	530.88	BACS	SETTLED	2025-10-15
+PAY00006335	SP3200718	2025-11-12	530.88	BACS	SETTLED	2025-11-12
+PAY00006336	SP3200718	2025-12-10	530.88	BACS	SETTLED	2025-12-10
+PAY00006337	SP3200718	2026-01-07	530.88	BACS	SETTLED	2026-01-07
+PAY00006338	SP3200718	2026-02-04	530.88	POST_OFFICE	SETTLED	2026-02-04
+PAY00006339	SP3200718	2026-03-04	530.88	BACS	SETTLED	2026-03-04
+PAY00006340	SP3200718	2026-04-01	530.88	BACS	SETTLED	2026-04-01
+PAY00006343	SP3200719	2025-08-24	657.28	BACS	SETTLED	2025-08-24
+PAY00006344	SP3200719	2025-09-21	657.28	POST_OFFICE	SETTLED	2025-09-21
+PAY00006345	SP3200719	2025-10-19	657.28	BACS	SETTLED	2025-10-19
+PAY00006346	SP3200719	2025-11-16	657.28	BACS	SETTLED	2025-11-16
+PAY00006347	SP3200719	2025-12-14	657.28	BACS	SETTLED	2025-12-14
+PAY00006348	SP3200719	2026-01-11	657.28	BACS	SETTLED	2026-01-11
+PAY00006349	SP3200719	2026-02-08	657.28	BACS	SETTLED	2026-02-08
+PAY00006350	SP3200719	2026-03-08	657.28	BACS	SETTLED	2026-03-08
+PAY00006351	SP3200719	2026-04-05	657.28	BACS	SETTLED	2026-04-05
+PAY00006354	SP3200720	2025-04-05	1396.72	BACS	SETTLED	2025-04-05
+PAY00006355	SP3200720	2025-07-05	1396.72	BACS	SETTLED	2025-07-05
+PAY00006356	SP3200720	2025-10-04	1396.72	BACS	SETTLED	2025-10-04
+PAY00006357	SP3200720	2026-01-03	1396.72	POST_OFFICE	SETTLED	2026-01-03
+PAY00006358	SP3200720	2026-04-04	1396.72	BACS	SETTLED	2026-04-04
+PAY00006361	SP3200721	2025-12-15	707.84	BACS	SETTLED	2025-12-15
+PAY00006362	SP3200721	2026-01-12	707.84	BACS	SETTLED	2026-01-12
+PAY00006363	SP3200721	2026-02-09	707.84	BACS	SETTLED	2026-02-09
+PAY00006364	SP3200721	2026-03-09	707.84	CHEQUE	SETTLED	2026-03-09
+PAY00006367	SP3200722	2025-12-13	343.64	BACS	SETTLED	2025-12-13
+PAY00006368	SP3200722	2026-01-10	343.64	BACS	SETTLED	2026-01-10
+PAY00006369	SP3200722	2026-02-07	343.64	BACS	SETTLED	2026-02-07
+PAY00006370	SP3200722	2026-03-07	343.64	POST_OFFICE	SETTLED	2026-03-07
+PAY00006371	SP3200722	2026-04-04	343.64	BACS	SETTLED	2026-04-04
+PAY00006374	SP3200723	2025-01-05	2245.10	BACS	SETTLED	2025-01-05
+PAY00006375	SP3200723	2025-04-06	2245.10	BACS	SETTLED	2025-04-06
+PAY00006376	SP3200723	2025-07-06	2245.10	BACS	SETTLED	2025-07-06
+PAY00006377	SP3200723	2025-10-05	2245.10	BACS	SETTLED	2025-10-05
+PAY00006378	SP3200723	2026-01-04	2245.10	BACS	SETTLED	2026-01-04
+PAY00006379	SP3200723	2026-04-05	2245.10	POST_OFFICE	SETTLED	2026-04-05
+PAY00006382	SP3200724	2026-02-23	170.64	BACS	SETTLED	2026-02-23
+PAY00006383	SP3200724	2026-03-02	170.64	BACS	SETTLED	2026-03-02
+PAY00006384	SP3200724	2026-03-09	170.64	POST_OFFICE	SETTLED	2026-03-09
+PAY00006385	SP3200724	2026-03-16	170.64	BACS	SETTLED	2026-03-16
+PAY00006386	SP3200724	2026-03-23	170.64	BACS	SETTLED	2026-03-23
+PAY00006387	SP3200724	2026-03-30	170.64	BACS	SETTLED	2026-03-30
+PAY00006390	SP3200725	2025-04-07	889.85	BACS	SETTLED	2025-04-07
+PAY00006391	SP3200725	2025-07-07	889.85	BACS	SETTLED	2025-07-07
+PAY00006392	SP3200725	2025-10-06	889.85	BACS	SETTLED	2025-10-06
+PAY00006393	SP3200725	2026-01-05	889.85	BACS	SETTLED	2026-01-05
+PAY00006396	SP3200726	2026-02-15	90.47	BACS	SETTLED	2026-02-15
+PAY00006397	SP3200726	2026-02-22	90.47	BACS	SETTLED	2026-02-22
+PAY00006398	SP3200726	2026-03-01	90.47	BACS	SETTLED	2026-03-01
+PAY00006399	SP3200726	2026-03-08	90.47	BACS	SETTLED	2026-03-08
+PAY00006400	SP3200726	2026-03-15	90.47	BACS	SETTLED	2026-03-15
+PAY00006401	SP3200726	2026-03-22	90.47	BACS	SETTLED	2026-03-22
+PAY00006402	SP3200726	2026-03-29	90.47	BACS	SETTLED	2026-03-29
+PAY00006403	SP3200726	2026-04-05	90.47	BACS	SETTLED	2026-04-05
+PAY00006406	SP3200727	2025-12-09	402.16	BACS	SETTLED	2025-12-09
+PAY00006407	SP3200727	2026-01-06	402.16	BACS	SETTLED	2026-01-06
+PAY00006408	SP3200727	2026-02-03	402.16	BACS	SETTLED	2026-02-03
+PAY00006409	SP3200727	2026-03-03	402.16	BACS	SETTLED	2026-03-03
+PAY00006410	SP3200727	2026-03-31	402.16	CHEQUE	SETTLED	2026-03-31
+PAY00006413	SP3200728	2026-02-09	92.48	BACS	SETTLED	2026-02-09
+PAY00006414	SP3200728	2026-02-16	92.48	BACS	SETTLED	2026-02-16
+PAY00006415	SP3200728	2026-02-23	92.48	BACS	SETTLED	2026-02-23
+PAY00006416	SP3200728	2026-03-02	92.48	BACS	SETTLED	2026-03-02
+PAY00006417	SP3200728	2026-03-09	92.48	BACS	SETTLED	2026-03-09
+PAY00006418	SP3200728	2026-03-16	92.48	BACS	SETTLED	2026-03-16
+PAY00006419	SP3200728	2026-03-23	92.48	BACS	SETTLED	2026-03-23
+PAY00006420	SP3200728	2026-03-30	92.48	BACS	SETTLED	2026-03-30
+PAY00006423	SP3200729	2025-08-22	826.92	BACS	SETTLED	2025-08-22
+PAY00006424	SP3200729	2025-09-19	826.92	BACS	SETTLED	2025-09-19
+PAY00006425	SP3200729	2025-10-17	826.92	BACS	SETTLED	2025-10-17
+PAY00006426	SP3200729	2025-11-14	826.92	BACS	SETTLED	2025-11-14
+PAY00006427	SP3200729	2025-12-12	826.92	POST_OFFICE	SETTLED	2025-12-12
+PAY00006428	SP3200729	2026-01-09	826.92	BACS	SETTLED	2026-01-09
+PAY00006429	SP3200729	2026-02-06	826.92	BACS	SETTLED	2026-02-06
+PAY00006430	SP3200729	2026-03-06	826.92	POST_OFFICE	SETTLED	2026-03-06
+PAY00006431	SP3200729	2026-04-03	826.92	BACS	SETTLED	2026-04-03
+PAY00006434	SP3200730	2025-09-19	530.88	BACS	SETTLED	2025-09-19
+PAY00006435	SP3200730	2025-10-17	530.88	BACS	SETTLED	2025-10-17
+PAY00006436	SP3200730	2025-11-14	530.88	BACS	SETTLED	2025-11-14
+PAY00006437	SP3200730	2025-12-12	530.88	POST_OFFICE	SETTLED	2025-12-12
+PAY00006438	SP3200730	2026-01-09	530.88	BACS	SETTLED	2026-01-09
+PAY00006439	SP3200730	2026-02-06	530.88	BACS	SETTLED	2026-02-06
+PAY00006440	SP3200730	2026-03-06	530.88	BACS	SETTLED	2026-03-06
+PAY00006441	SP3200730	2026-04-03	530.88	POST_OFFICE	SETTLED	2026-04-03
+PAY00006444	SP3200731	2025-09-21	632.00	BACS	SETTLED	2025-09-21
+PAY00006445	SP3200731	2025-10-19	632.00	BACS	SETTLED	2025-10-19
+PAY00006446	SP3200731	2025-11-16	632.00	BACS	SETTLED	2025-11-16
+PAY00006447	SP3200731	2025-12-14	632.00	BACS	SETTLED	2025-12-14
+PAY00006448	SP3200731	2026-01-11	632.00	BACS	SETTLED	2026-01-11
+PAY00006449	SP3200731	2026-02-08	632.00	BACS	SETTLED	2026-02-08
+PAY00006450	SP3200731	2026-03-08	632.00	BACS	SETTLED	2026-03-08
+PAY00006451	SP3200731	2026-04-05	632.00	BACS	SETTLED	2026-04-05
+PAY00006454	SP3200732	2026-02-20	124.67	BACS	SETTLED	2026-02-20
+PAY00006455	SP3200732	2026-02-27	124.67	BACS	SETTLED	2026-02-27
+PAY00006456	SP3200732	2026-03-06	124.67	BACS	SETTLED	2026-03-06
+PAY00006457	SP3200732	2026-03-13	124.67	BACS	SETTLED	2026-03-13
+PAY00006458	SP3200732	2026-03-20	124.67	BACS	SETTLED	2026-03-20
+PAY00006459	SP3200732	2026-03-27	124.67	BACS	SETTLED	2026-03-27
+PAY00006460	SP3200732	2026-04-03	124.67	BACS	SETTLED	2026-04-03
+PAY00006463	SP3200733	2025-12-12	758.40	POST_OFFICE	SETTLED	2025-12-12
+PAY00006464	SP3200733	2026-01-09	758.40	BACS	SETTLED	2026-01-09
+PAY00006465	SP3200733	2026-02-06	758.40	BACS	SETTLED	2026-02-06
+PAY00006466	SP3200733	2026-03-06	758.40	BACS	SETTLED	2026-03-06
+PAY00006467	SP3200733	2026-04-03	758.40	CHEQUE	SETTLED	2026-04-03
+PAY00006470	SP3200734	2026-02-14	110.83	BACS	SETTLED	2026-02-14
+PAY00006471	SP3200734	2026-02-21	110.83	BACS	SETTLED	2026-02-21
+PAY00006472	SP3200734	2026-02-28	110.83	BACS	SETTLED	2026-02-28
+PAY00006473	SP3200734	2026-03-07	110.83	BACS	SETTLED	2026-03-07
+PAY00006474	SP3200734	2026-03-14	110.83	POST_OFFICE	SETTLED	2026-03-14
+PAY00006475	SP3200734	2026-03-21	110.83	BACS	SETTLED	2026-03-21
+PAY00006476	SP3200734	2026-03-28	110.83	BACS	SETTLED	2026-03-28
+PAY00006477	SP3200734	2026-04-04	110.83	POST_OFFICE	SETTLED	2026-04-04
+PAY00006480	SP3200735	2026-03-04	95.13	POST_OFFICE	SETTLED	2026-03-04
+PAY00006481	SP3200735	2026-03-11	95.13	BACS	SETTLED	2026-03-11
+PAY00006482	SP3200735	2026-03-18	95.13	BACS	SETTLED	2026-03-18
+PAY00006483	SP3200735	2026-03-25	95.13	BACS	SETTLED	2026-03-25
+PAY00006484	SP3200735	2026-04-01	95.13	POST_OFFICE	SETTLED	2026-04-01
+PAY00006487	SP3200736	2025-12-15	834.24	BACS	SETTLED	2025-12-15
+PAY00006488	SP3200736	2026-01-12	834.24	CHEQUE	SETTLED	2026-01-12
+PAY00006489	SP3200736	2026-02-09	834.24	POST_OFFICE	SETTLED	2026-02-09
+PAY00006490	SP3200736	2026-03-09	834.24	BACS	SETTLED	2026-03-09
+PAY00006493	SP3200737	2024-12-31	1232.40	BACS	SETTLED	2024-12-31
+PAY00006494	SP3200737	2025-04-01	1232.40	BACS	SETTLED	2025-04-01
+PAY00006495	SP3200737	2025-07-01	1232.40	BACS	SETTLED	2025-07-01
+PAY00006496	SP3200737	2025-09-30	1232.40	BACS	SETTLED	2025-09-30
+PAY00006497	SP3200737	2025-12-30	1232.40	BACS	SETTLED	2025-12-30
+PAY00006498	SP3200737	2026-03-31	1232.40	BACS	SETTLED	2026-03-31
+PAY00006501	SP3200738	2025-12-15	426.28	BACS	SETTLED	2025-12-15
+PAY00006502	SP3200738	2026-01-12	426.28	POST_OFFICE	SETTLED	2026-01-12
+PAY00006503	SP3200738	2026-02-09	426.28	POST_OFFICE	SETTLED	2026-02-09
+PAY00006504	SP3200738	2026-03-09	426.28	BACS	SETTLED	2026-03-09
+PAY00006507	SP3200739	2026-02-10	195.92	BACS	SETTLED	2026-02-10
+PAY00006508	SP3200739	2026-02-17	195.92	POST_OFFICE	SETTLED	2026-02-17
+PAY00006509	SP3200739	2026-02-24	195.92	BACS	SETTLED	2026-02-24
+PAY00006510	SP3200739	2026-03-03	195.92	BACS	SETTLED	2026-03-03
+PAY00006511	SP3200739	2026-03-10	195.92	BACS	SETTLED	2026-03-10
+PAY00006512	SP3200739	2026-03-17	195.92	BACS	SETTLED	2026-03-17
+PAY00006513	SP3200739	2026-03-24	195.92	BACS	SETTLED	2026-03-24
+PAY00006514	SP3200739	2026-03-31	195.92	BACS	SETTLED	2026-03-31
+PAY00006517	SP3200740	2026-02-16	176.96	POST_OFFICE	SETTLED	2026-02-16
+PAY00006518	SP3200740	2026-02-23	176.96	BACS	SETTLED	2026-02-23
+PAY00006519	SP3200740	2026-03-02	176.96	BACS	SETTLED	2026-03-02
+PAY00006520	SP3200740	2026-03-09	176.96	BACS	SETTLED	2026-03-09
+PAY00006521	SP3200740	2026-03-16	176.96	BACS	SETTLED	2026-03-16
+PAY00006522	SP3200740	2026-03-23	176.96	BACS	SETTLED	2026-03-23
+PAY00006523	SP3200740	2026-03-30	176.96	CHEQUE	SETTLED	2026-03-30
+PAY00006526	SP3200741	2025-08-25	416.56	POST_OFFICE	SETTLED	2025-08-25
+PAY00006527	SP3200741	2025-09-22	416.56	POST_OFFICE	SETTLED	2025-09-22
+PAY00006528	SP3200741	2025-10-20	416.56	BACS	SETTLED	2025-10-20
+PAY00006529	SP3200741	2025-11-17	416.56	BACS	SETTLED	2025-11-17
+PAY00006530	SP3200741	2025-12-15	416.56	POST_OFFICE	SETTLED	2025-12-15
+PAY00006531	SP3200741	2026-01-12	416.56	BACS	SETTLED	2026-01-12
+PAY00006532	SP3200741	2026-02-09	416.56	BACS	SETTLED	2026-02-09
+PAY00006533	SP3200741	2026-03-09	416.56	BACS	SETTLED	2026-03-09
+PAY00006536	SP3200742	2026-02-14	145.36	BACS	SETTLED	2026-02-14
+PAY00006537	SP3200742	2026-02-21	145.36	CHEQUE	SETTLED	2026-02-21
+PAY00006538	SP3200742	2026-02-28	145.36	BACS	SETTLED	2026-02-28
+PAY00006539	SP3200742	2026-03-07	145.36	BACS	SETTLED	2026-03-07
+PAY00006540	SP3200742	2026-03-14	145.36	BACS	SETTLED	2026-03-14
+PAY00006541	SP3200742	2026-03-21	145.36	BACS	SETTLED	2026-03-21
+PAY00006542	SP3200742	2026-03-28	145.36	BACS	SETTLED	2026-03-28
+PAY00006543	SP3200742	2026-04-04	145.36	BACS	SETTLED	2026-04-04
+PAY00006546	SP3200743	2026-02-06	202.24	BACS	SETTLED	2026-02-06
+PAY00006547	SP3200743	2026-02-13	202.24	BACS	SETTLED	2026-02-13
+PAY00006548	SP3200743	2026-02-20	202.24	BACS	SETTLED	2026-02-20
+PAY00006549	SP3200743	2026-02-27	202.24	CHEQUE	SETTLED	2026-02-27
+PAY00006550	SP3200743	2026-03-06	202.24	BACS	SETTLED	2026-03-06
+PAY00006551	SP3200743	2026-03-13	202.24	BACS	SETTLED	2026-03-13
+PAY00006552	SP3200743	2026-03-20	202.24	POST_OFFICE	SETTLED	2026-03-20
+PAY00006553	SP3200743	2026-03-27	202.24	BACS	SETTLED	2026-03-27
+PAY00006554	SP3200743	2026-04-03	202.24	BACS	SETTLED	2026-04-03
+PAY00006557	SP3200744	2026-03-05	126.12	BACS	SETTLED	2026-03-05
+PAY00006558	SP3200744	2026-03-12	126.12	BACS	SETTLED	2026-03-12
+PAY00006559	SP3200744	2026-03-19	126.12	BACS	SETTLED	2026-03-19
+PAY00006560	SP3200744	2026-03-26	126.12	BACS	SETTLED	2026-03-26
+PAY00006561	SP3200744	2026-04-02	126.12	BACS	SETTLED	2026-04-02
+PAY00006564	SP3200745	2025-09-22	353.92	BACS	SETTLED	2025-09-22
+PAY00006565	SP3200745	2025-10-20	353.92	BACS	SETTLED	2025-10-20
+PAY00006566	SP3200745	2025-11-17	353.92	BACS	SETTLED	2025-11-17
+PAY00006567	SP3200745	2025-12-15	353.92	BACS	SETTLED	2025-12-15
+PAY00006568	SP3200745	2026-01-12	353.92	BACS	SETTLED	2026-01-12
+PAY00006569	SP3200745	2026-02-09	353.92	BACS	SETTLED	2026-02-09
+PAY00006570	SP3200745	2026-03-09	353.92	BACS	SETTLED	2026-03-09
+PAY00006573	SP3200746	2026-03-03	176.96	BACS	SETTLED	2026-03-03
+PAY00006574	SP3200746	2026-03-10	176.96	POST_OFFICE	SETTLED	2026-03-10
+PAY00006575	SP3200746	2026-03-17	176.96	BACS	SETTLED	2026-03-17
+PAY00006576	SP3200746	2026-03-24	176.96	BACS	SETTLED	2026-03-24
+PAY00006577	SP3200746	2026-03-31	176.96	BACS	SETTLED	2026-03-31
+PAY00006580	SP3200747	2025-08-19	556.16	POST_OFFICE	SETTLED	2025-08-19
+PAY00006581	SP3200747	2025-09-16	556.16	BACS	SETTLED	2025-09-16
+PAY00006582	SP3200747	2025-10-14	556.16	BACS	SETTLED	2025-10-14
+PAY00006583	SP3200747	2025-11-11	556.16	BACS	SETTLED	2025-11-11
+PAY00006584	SP3200747	2025-12-09	556.16	BACS	SETTLED	2025-12-09
+PAY00006585	SP3200747	2026-01-06	556.16	POST_OFFICE	SETTLED	2026-01-06
+PAY00006586	SP3200747	2026-02-03	556.16	BACS	SETTLED	2026-02-03
+PAY00006587	SP3200747	2026-03-03	556.16	BACS	SETTLED	2026-03-03
+PAY00006588	SP3200747	2026-03-31	556.16	CHEQUE	SETTLED	2026-03-31
+PAY00006591	SP3200748	2026-02-19	130.86	BACS	SETTLED	2026-02-19
+PAY00006592	SP3200748	2026-02-26	130.86	BACS	SETTLED	2026-02-26
+PAY00006593	SP3200748	2026-03-05	130.86	BACS	SETTLED	2026-03-05
+PAY00006594	SP3200748	2026-03-12	130.86	BACS	SETTLED	2026-03-12
+PAY00006595	SP3200748	2026-03-19	130.86	POST_OFFICE	SETTLED	2026-03-19
+PAY00006596	SP3200748	2026-03-26	130.86	BACS	SETTLED	2026-03-26
+PAY00006597	SP3200748	2026-04-02	130.86	BACS	SETTLED	2026-04-02
+PAY00006600	SP3200749	2025-09-22	696.28	BACS	SETTLED	2025-09-22
+PAY00006601	SP3200749	2025-10-20	696.28	BACS	SETTLED	2025-10-20
+PAY00006602	SP3200749	2025-11-17	696.28	BACS	SETTLED	2025-11-17
+PAY00006603	SP3200749	2025-12-15	696.28	BACS	SETTLED	2025-12-15
+PAY00006604	SP3200749	2026-01-12	696.28	BACS	SETTLED	2026-01-12
+PAY00006605	SP3200749	2026-02-09	696.28	POST_OFFICE	SETTLED	2026-02-09
+PAY00006606	SP3200749	2026-03-09	696.28	BACS	SETTLED	2026-03-09
+PAY00006609	SP3200750	2025-10-17	404.48	BACS	SETTLED	2025-10-17
+PAY00006610	SP3200750	2025-11-14	404.48	BACS	SETTLED	2025-11-14
+PAY00006611	SP3200750	2025-12-12	404.48	BACS	SETTLED	2025-12-12
+PAY00006612	SP3200750	2026-01-09	404.48	POST_OFFICE	SETTLED	2026-01-09
+PAY00006613	SP3200750	2026-02-06	404.48	BACS	SETTLED	2026-02-06
+PAY00006614	SP3200750	2026-03-06	404.48	CHEQUE	SETTLED	2026-03-06
+PAY00006615	SP3200750	2026-04-03	404.48	POST_OFFICE	SETTLED	2026-04-03
+PAY00006618	SP3200751	2025-10-15	356.68	BACS	SETTLED	2025-10-15
+PAY00006619	SP3200751	2025-11-12	356.68	BACS	SETTLED	2025-11-12
+PAY00006620	SP3200751	2025-12-10	356.68	BACS	SETTLED	2025-12-10
+PAY00006621	SP3200751	2026-01-07	356.68	POST_OFFICE	SETTLED	2026-01-07
+PAY00006622	SP3200751	2026-02-04	356.68	BACS	SETTLED	2026-02-04
+PAY00006623	SP3200751	2026-03-04	356.68	BACS	SETTLED	2026-03-04
+PAY00006624	SP3200751	2026-04-01	356.68	POST_OFFICE	SETTLED	2026-04-01
+PAY00006627	SP3200752	2024-04-07	2300.48	BACS	SETTLED	2024-04-07
+PAY00006628	SP3200752	2024-07-07	2300.48	BACS	SETTLED	2024-07-07
+PAY00006629	SP3200752	2024-10-06	2300.48	BACS	SETTLED	2024-10-06
+PAY00006630	SP3200752	2025-01-05	2300.48	BACS	SETTLED	2025-01-05
+PAY00006631	SP3200752	2025-04-06	2300.48	BACS	SETTLED	2025-04-06
+PAY00006632	SP3200752	2025-07-06	2300.48	BACS	SETTLED	2025-07-06
+PAY00006633	SP3200752	2025-10-05	2300.48	BACS	SETTLED	2025-10-05
+PAY00006634	SP3200752	2026-01-04	2300.48	BACS	SETTLED	2026-01-04
+PAY00006635	SP3200752	2026-04-05	2300.48	BACS	SETTLED	2026-04-05
+PAY00006638	SP3200753	2025-08-22	581.44	BACS	SETTLED	2025-08-22
+PAY00006639	SP3200753	2025-09-19	581.44	BACS	SETTLED	2025-09-19
+PAY00006640	SP3200753	2025-10-17	581.44	BACS	SETTLED	2025-10-17
+PAY00006641	SP3200753	2025-11-14	581.44	POST_OFFICE	SETTLED	2025-11-14
+PAY00006642	SP3200753	2025-12-12	581.44	BACS	SETTLED	2025-12-12
+PAY00006643	SP3200753	2026-01-09	581.44	BACS	SETTLED	2026-01-09
+PAY00006644	SP3200753	2026-02-06	581.44	BACS	SETTLED	2026-02-06
+PAY00006645	SP3200753	2026-03-06	581.44	BACS	SETTLED	2026-03-06
+PAY00006646	SP3200753	2026-04-03	581.44	BACS	SETTLED	2026-04-03
+PAY00006649	SP3200754	2026-02-03	208.56	BACS	SETTLED	2026-02-03
+PAY00006650	SP3200754	2026-02-10	208.56	BACS	SETTLED	2026-02-10
+PAY00006651	SP3200754	2026-02-17	208.56	BACS	SETTLED	2026-02-17
+PAY00006652	SP3200754	2026-02-24	208.56	POST_OFFICE	SETTLED	2026-02-24
+PAY00006653	SP3200754	2026-03-03	208.56	BACS	SETTLED	2026-03-03
+PAY00006654	SP3200754	2026-03-10	208.56	BACS	SETTLED	2026-03-10
+PAY00006655	SP3200754	2026-03-17	208.56	BACS	SETTLED	2026-03-17
+PAY00006656	SP3200754	2026-03-24	208.56	BACS	SETTLED	2026-03-24
+PAY00006657	SP3200754	2026-03-31	208.56	BACS	SETTLED	2026-03-31
+PAY00006660	SP3200755	2026-03-07	168.10	BACS	SETTLED	2026-03-07
+PAY00006661	SP3200755	2026-03-14	168.10	BACS	SETTLED	2026-03-14
+PAY00006662	SP3200755	2026-03-21	168.10	POST_OFFICE	SETTLED	2026-03-21
+PAY00006663	SP3200755	2026-03-28	168.10	BACS	SETTLED	2026-03-28
+PAY00006664	SP3200755	2026-04-04	168.10	BACS	SETTLED	2026-04-04
+PAY00006667	SP3200756	2025-10-19	322.00	BACS	SETTLED	2025-10-19
+PAY00006668	SP3200756	2025-11-16	322.00	BACS	SETTLED	2025-11-16
+PAY00006669	SP3200756	2025-12-14	322.00	BACS	SETTLED	2025-12-14
+PAY00006670	SP3200756	2026-01-11	322.00	BACS	SETTLED	2026-01-11
+PAY00006671	SP3200756	2026-02-08	322.00	POST_OFFICE	SETTLED	2026-02-08
+PAY00006672	SP3200756	2026-03-08	322.00	CHEQUE	SETTLED	2026-03-08
+PAY00006673	SP3200756	2026-04-05	322.00	BACS	SETTLED	2026-04-05
+PAY00006676	SP3200757	2025-08-21	480.32	BACS	SETTLED	2025-08-21
+PAY00006677	SP3200757	2025-09-18	480.32	BACS	SETTLED	2025-09-18
+PAY00006678	SP3200757	2025-10-16	480.32	BACS	SETTLED	2025-10-16
+PAY00006679	SP3200757	2025-11-13	480.32	BACS	SETTLED	2025-11-13
+PAY00006680	SP3200757	2025-12-11	480.32	BACS	SETTLED	2025-12-11
+PAY00006681	SP3200757	2026-01-08	480.32	BACS	SETTLED	2026-01-08
+PAY00006682	SP3200757	2026-02-05	480.32	BACS	SETTLED	2026-02-05
+PAY00006683	SP3200757	2026-03-05	480.32	BACS	SETTLED	2026-03-05
+PAY00006684	SP3200757	2026-04-02	480.32	POST_OFFICE	SETTLED	2026-04-02
+PAY00006687	SP3200758	2026-02-17	213.38	POST_OFFICE	SETTLED	2026-02-17
+PAY00006688	SP3200758	2026-02-24	213.38	BACS	SETTLED	2026-02-24
+PAY00006689	SP3200758	2026-03-03	213.38	BACS	SETTLED	2026-03-03
+PAY00006690	SP3200758	2026-03-10	213.38	BACS	SETTLED	2026-03-10
+PAY00006691	SP3200758	2026-03-17	213.38	BACS	SETTLED	2026-03-17
+PAY00006692	SP3200758	2026-03-24	213.38	BACS	SETTLED	2026-03-24
+PAY00006693	SP3200758	2026-03-31	213.38	POST_OFFICE	SETTLED	2026-03-31
+PAY00006696	SP3200759	2026-03-06	126.40	BACS	SETTLED	2026-03-06
+PAY00006697	SP3200759	2026-03-13	126.40	BACS	SETTLED	2026-03-13
+PAY00006698	SP3200759	2026-03-20	126.40	BACS	SETTLED	2026-03-20
+PAY00006699	SP3200759	2026-03-27	126.40	BACS	SETTLED	2026-03-27
+PAY00006700	SP3200759	2026-04-03	126.40	BACS	SETTLED	2026-04-03
+PAY00006703	SP3200760	2025-12-14	632.00	POST_OFFICE	SETTLED	2025-12-14
+PAY00006704	SP3200760	2026-01-11	632.00	BACS	SETTLED	2026-01-11
+PAY00006705	SP3200760	2026-02-08	632.00	BACS	SETTLED	2026-02-08
+PAY00006706	SP3200760	2026-03-08	632.00	BACS	SETTLED	2026-03-08
+PAY00006707	SP3200760	2026-04-05	632.00	CHEQUE	SETTLED	2026-04-05
+PAY00006710	SP3200761	2026-02-17	189.60	POST_OFFICE	SETTLED	2026-02-17
+PAY00006711	SP3200761	2026-02-24	189.60	BACS	SETTLED	2026-02-24
+PAY00006712	SP3200761	2026-03-03	189.60	POST_OFFICE	SETTLED	2026-03-03
+PAY00006713	SP3200761	2026-03-10	189.60	BACS	SETTLED	2026-03-10
+PAY00006714	SP3200761	2026-03-17	189.60	POST_OFFICE	SETTLED	2026-03-17
+PAY00006715	SP3200761	2026-03-24	189.60	POST_OFFICE	SETTLED	2026-03-24
+PAY00006716	SP3200761	2026-03-31	189.60	BACS	SETTLED	2026-03-31
+PAY00006719	SP3200762	2025-11-14	707.84	BACS	SETTLED	2025-11-14
+PAY00006720	SP3200762	2025-12-12	707.84	BACS	SETTLED	2025-12-12
+PAY00006721	SP3200762	2026-01-09	707.84	BACS	SETTLED	2026-01-09
+PAY00006722	SP3200762	2026-02-06	707.84	BACS	SETTLED	2026-02-06
+PAY00006723	SP3200762	2026-03-06	707.84	BACS	SETTLED	2026-03-06
+PAY00006724	SP3200762	2026-04-03	707.84	BACS	SETTLED	2026-04-03
+PAY00006727	SP3200763	2026-02-13	94.80	POST_OFFICE	SETTLED	2026-02-13
+PAY00006728	SP3200763	2026-02-20	94.80	BACS	SETTLED	2026-02-20
+PAY00006729	SP3200763	2026-02-27	94.80	CHEQUE	SETTLED	2026-02-27
+PAY00006730	SP3200763	2026-03-06	94.80	POST_OFFICE	SETTLED	2026-03-06
+PAY00006731	SP3200763	2026-03-13	94.80	BACS	SETTLED	2026-03-13
+PAY00006732	SP3200763	2026-03-20	94.80	BACS	SETTLED	2026-03-20
+PAY00006733	SP3200763	2026-03-27	94.80	BACS	SETTLED	2026-03-27
+PAY00006734	SP3200763	2026-04-03	94.80	BACS	SETTLED	2026-04-03
+PAY00006737	SP3200764	2024-10-02	2629.12	POST_OFFICE	SETTLED	2024-10-02
+PAY00006738	SP3200764	2025-01-01	2629.12	BACS	SETTLED	2025-01-01
+PAY00006739	SP3200764	2025-04-02	2629.12	BACS	SETTLED	2025-04-02
+PAY00006740	SP3200764	2025-07-02	2629.12	BACS	SETTLED	2025-07-02
+PAY00006741	SP3200764	2025-10-01	2629.12	BACS	SETTLED	2025-10-01
+PAY00006742	SP3200764	2025-12-31	2629.12	BACS	SETTLED	2025-12-31
+PAY00006743	SP3200764	2026-04-01	2629.12	BACS	SETTLED	2026-04-01
+PAY00006746	SP3200765	2026-02-22	107.44	BACS	SETTLED	2026-02-22
+PAY00006747	SP3200765	2026-03-01	107.44	CHEQUE	SETTLED	2026-03-01
+PAY00006748	SP3200765	2026-03-08	107.44	CHEQUE	SETTLED	2026-03-08
+PAY00006749	SP3200765	2026-03-15	107.44	BACS	SETTLED	2026-03-15
+PAY00006750	SP3200765	2026-03-22	107.44	BACS	SETTLED	2026-03-22
+PAY00006751	SP3200765	2026-03-29	107.44	BACS	SETTLED	2026-03-29
+PAY00006752	SP3200765	2026-04-05	107.44	BACS	SETTLED	2026-04-05
+PAY00006755	SP3200766	2026-03-02	190.40	BACS	SETTLED	2026-03-02
+PAY00006756	SP3200766	2026-03-09	190.40	BACS	SETTLED	2026-03-09
+PAY00006757	SP3200766	2026-03-16	190.40	BACS	SETTLED	2026-03-16
+PAY00006758	SP3200766	2026-03-23	190.40	CHEQUE	SETTLED	2026-03-23
+PAY00006759	SP3200766	2026-03-30	190.40	BACS	SETTLED	2026-03-30
+PAY00006762	SP3200767	2025-11-15	697.76	BACS	SETTLED	2025-11-15
+PAY00006763	SP3200767	2025-12-13	697.76	BACS	SETTLED	2025-12-13
+PAY00006764	SP3200767	2026-01-10	697.76	BACS	SETTLED	2026-01-10
+PAY00006765	SP3200767	2026-02-07	697.76	CHEQUE	SETTLED	2026-02-07
+PAY00006766	SP3200767	2026-03-07	697.76	BACS	SETTLED	2026-03-07
+PAY00006767	SP3200767	2026-04-04	697.76	BACS	SETTLED	2026-04-04
+PAY00006770	SP3200768	2025-11-17	584.88	BACS	SETTLED	2025-11-17
+PAY00006771	SP3200768	2025-12-15	584.88	BACS	SETTLED	2025-12-15
+PAY00006772	SP3200768	2026-01-12	584.88	BACS	SETTLED	2026-01-12
+PAY00006773	SP3200768	2026-02-09	584.88	POST_OFFICE	SETTLED	2026-02-09
+PAY00006774	SP3200768	2026-03-09	584.88	POST_OFFICE	SETTLED	2026-03-09
+PAY00006777	SP3200769	2026-03-04	176.96	CHEQUE	SETTLED	2026-03-04
+PAY00006778	SP3200769	2026-03-11	176.96	BACS	SETTLED	2026-03-11
+PAY00006779	SP3200769	2026-03-18	176.96	CHEQUE	SETTLED	2026-03-18
+PAY00006780	SP3200769	2026-03-25	176.96	BACS	SETTLED	2026-03-25
+PAY00006781	SP3200769	2026-04-01	176.96	BACS	SETTLED	2026-04-01
+PAY00006784	SP3200770	2025-08-23	632.00	BACS	SETTLED	2025-08-23
+PAY00006785	SP3200770	2025-09-20	632.00	BACS	SETTLED	2025-09-20
+PAY00006786	SP3200770	2025-10-18	632.00	BACS	SETTLED	2025-10-18
+PAY00006787	SP3200770	2025-11-15	632.00	BACS	SETTLED	2025-11-15
+PAY00006788	SP3200770	2025-12-13	632.00	BACS	SETTLED	2025-12-13
+PAY00006789	SP3200770	2026-01-10	632.00	BACS	SETTLED	2026-01-10
+PAY00006790	SP3200770	2026-02-07	632.00	BACS	SETTLED	2026-02-07
+PAY00006791	SP3200770	2026-03-07	632.00	BACS	SETTLED	2026-03-07
+PAY00006792	SP3200770	2026-04-04	632.00	BACS	SETTLED	2026-04-04
+PAY00006795	SP3200771	2026-02-19	183.28	BACS	SETTLED	2026-02-19
+PAY00006796	SP3200771	2026-02-26	183.28	BACS	SETTLED	2026-02-26
+PAY00006797	SP3200771	2026-03-05	183.28	BACS	SETTLED	2026-03-05
+PAY00006798	SP3200771	2026-03-12	183.28	BACS	SETTLED	2026-03-12
+PAY00006799	SP3200771	2026-03-19	183.28	POST_OFFICE	SETTLED	2026-03-19
+PAY00006800	SP3200771	2026-03-26	183.28	BACS	SETTLED	2026-03-26
+PAY00006801	SP3200771	2026-04-02	183.28	POST_OFFICE	SETTLED	2026-04-02
+PAY00006804	SP3200772	2025-04-04	2449.33	BACS	SETTLED	2025-04-04
+PAY00006805	SP3200772	2025-07-04	2449.33	BACS	SETTLED	2025-07-04
+PAY00006806	SP3200772	2025-10-03	2449.33	BACS	SETTLED	2025-10-03
+PAY00006807	SP3200772	2026-01-02	2449.33	BACS	SETTLED	2026-01-02
+PAY00006808	SP3200772	2026-04-03	2449.33	BACS	SETTLED	2026-04-03
+PAY00006811	SP3200773	2025-08-22	611.64	BACS	SETTLED	2025-08-22
+PAY00006812	SP3200773	2025-09-19	611.64	BACS	SETTLED	2025-09-19
+PAY00006813	SP3200773	2025-10-17	611.64	BACS	SETTLED	2025-10-17
+PAY00006814	SP3200773	2025-11-14	611.64	BACS	SETTLED	2025-11-14
+PAY00006815	SP3200773	2025-12-12	611.64	BACS	SETTLED	2025-12-12
+PAY00006816	SP3200773	2026-01-09	611.64	BACS	SETTLED	2026-01-09
+PAY00006817	SP3200773	2026-02-06	611.64	BACS	SETTLED	2026-02-06
+PAY00006818	SP3200773	2026-03-06	611.64	BACS	SETTLED	2026-03-06
+PAY00006819	SP3200773	2026-04-03	611.64	BACS	SETTLED	2026-04-03
+PAY00006822	SP3200774	2025-11-12	760.60	BACS	SETTLED	2025-11-12
+PAY00006823	SP3200774	2025-12-10	760.60	BACS	SETTLED	2025-12-10
+PAY00006824	SP3200774	2026-01-07	760.60	POST_OFFICE	SETTLED	2026-01-07
+PAY00006825	SP3200774	2026-02-04	760.60	BACS	SETTLED	2026-02-04
+PAY00006826	SP3200774	2026-03-04	760.60	BACS	SETTLED	2026-03-04
+PAY00006827	SP3200774	2026-04-01	760.60	BACS	SETTLED	2026-04-01
+PAY00006830	SP3200775	2025-11-14	632.00	BACS	SETTLED	2025-11-14
+PAY00006831	SP3200775	2025-12-12	632.00	BACS	SETTLED	2025-12-12
+PAY00006832	SP3200775	2026-01-09	632.00	BACS	SETTLED	2026-01-09
+PAY00006833	SP3200775	2026-02-06	632.00	BACS	SETTLED	2026-02-06
+PAY00006834	SP3200775	2026-03-06	632.00	POST_OFFICE	SETTLED	2026-03-06
+PAY00006835	SP3200775	2026-04-03	632.00	BACS	SETTLED	2026-04-03
+PAY00006838	SP3200776	2025-10-17	765.24	BACS	SETTLED	2025-10-17
+PAY00006839	SP3200776	2025-11-14	765.24	BACS	SETTLED	2025-11-14
+PAY00006840	SP3200776	2025-12-12	765.24	POST_OFFICE	SETTLED	2025-12-12
+PAY00006841	SP3200776	2026-01-09	765.24	BACS	SETTLED	2026-01-09
+PAY00006842	SP3200776	2026-02-06	765.24	POST_OFFICE	SETTLED	2026-02-06
+PAY00006843	SP3200776	2026-03-06	765.24	POST_OFFICE	SETTLED	2026-03-06
+PAY00006844	SP3200776	2026-04-03	765.24	POST_OFFICE	SETTLED	2026-04-03
+PAY00006847	SP3200777	2025-08-23	343.28	BACS	SETTLED	2025-08-23
+PAY00006848	SP3200777	2025-09-20	343.28	BACS	SETTLED	2025-09-20
+PAY00006849	SP3200777	2025-10-18	343.28	BACS	SETTLED	2025-10-18
+PAY00006850	SP3200777	2025-11-15	343.28	BACS	SETTLED	2025-11-15
+PAY00006851	SP3200777	2025-12-13	343.28	POST_OFFICE	SETTLED	2025-12-13
+PAY00006852	SP3200777	2026-01-10	343.28	BACS	SETTLED	2026-01-10
+PAY00006853	SP3200777	2026-02-07	343.28	POST_OFFICE	SETTLED	2026-02-07
+PAY00006854	SP3200777	2026-03-07	343.28	BACS	SETTLED	2026-03-07
+PAY00006855	SP3200777	2026-04-04	343.28	BACS	SETTLED	2026-04-04
+PAY00006858	SP3200778	2025-09-17	328.64	BACS	SETTLED	2025-09-17
+PAY00006859	SP3200778	2025-10-15	328.64	BACS	SETTLED	2025-10-15
+PAY00006860	SP3200778	2025-11-12	328.64	BACS	SETTLED	2025-11-12
+PAY00006861	SP3200778	2025-12-10	328.64	BACS	SETTLED	2025-12-10
+PAY00006862	SP3200778	2026-01-07	328.64	BACS	SETTLED	2026-01-07
+PAY00006863	SP3200778	2026-02-04	328.64	BACS	SETTLED	2026-02-04
+PAY00006864	SP3200778	2026-03-04	328.64	BACS	SETTLED	2026-03-04
+PAY00006865	SP3200778	2026-04-01	328.64	BACS	SETTLED	2026-04-01
+PAY00006868	SP3200779	2026-02-28	151.68	CHEQUE	SETTLED	2026-02-28
+PAY00006869	SP3200779	2026-03-07	151.68	BACS	SETTLED	2026-03-07
+PAY00006870	SP3200779	2026-03-14	151.68	BACS	SETTLED	2026-03-14
+PAY00006871	SP3200779	2026-03-21	151.68	BACS	SETTLED	2026-03-21
+PAY00006872	SP3200779	2026-03-28	151.68	CHEQUE	SETTLED	2026-03-28
+PAY00006873	SP3200779	2026-04-04	151.68	BACS	SETTLED	2026-04-04
+PAY00006876	SP3200780	2026-02-28	130.65	BACS	SETTLED	2026-02-28
+PAY00006877	SP3200780	2026-03-07	130.65	BACS	SETTLED	2026-03-07
+PAY00006878	SP3200780	2026-03-14	130.65	CHEQUE	SETTLED	2026-03-14
+PAY00006879	SP3200780	2026-03-21	130.65	BACS	SETTLED	2026-03-21
+PAY00006880	SP3200780	2026-03-28	130.65	BACS	SETTLED	2026-03-28
+PAY00006881	SP3200780	2026-04-04	130.65	BACS	SETTLED	2026-04-04
+PAY00006884	SP3200781	2025-09-17	733.12	BACS	SETTLED	2025-09-17
+PAY00006885	SP3200781	2025-10-15	733.12	BACS	SETTLED	2025-10-15
+PAY00006886	SP3200781	2025-11-12	733.12	BACS	SETTLED	2025-11-12
+PAY00006887	SP3200781	2025-12-10	733.12	POST_OFFICE	SETTLED	2025-12-10
+PAY00006888	SP3200781	2026-01-07	733.12	POST_OFFICE	SETTLED	2026-01-07
+PAY00006889	SP3200781	2026-02-04	733.12	BACS	SETTLED	2026-02-04
+PAY00006890	SP3200781	2026-03-04	733.12	BACS	SETTLED	2026-03-04
+PAY00006891	SP3200781	2026-04-01	733.12	BACS	SETTLED	2026-04-01
+PAY00006894	SP3200782	2024-10-03	2546.96	BACS	SETTLED	2024-10-03
+PAY00006895	SP3200782	2025-01-02	2546.96	BACS	SETTLED	2025-01-02
+PAY00006896	SP3200782	2025-04-03	2546.96	BACS	SETTLED	2025-04-03
+PAY00006897	SP3200782	2025-07-03	2546.96	BACS	SETTLED	2025-07-03
+PAY00006898	SP3200782	2025-10-02	2546.96	BACS	SETTLED	2025-10-02
+PAY00006899	SP3200782	2026-01-01	2546.96	BACS	SETTLED	2026-01-01
+PAY00006900	SP3200782	2026-04-02	2546.96	BACS	SETTLED	2026-04-02
+PAY00006903	SP3200783	2025-12-12	252.80	CHEQUE	SETTLED	2025-12-12
+PAY00006904	SP3200783	2026-01-09	252.80	BACS	SETTLED	2026-01-09
+PAY00006905	SP3200783	2026-02-06	252.80	BACS	SETTLED	2026-02-06
+PAY00006906	SP3200783	2026-03-06	252.80	BACS	SETTLED	2026-03-06
+PAY00006907	SP3200783	2026-04-03	252.80	BACS	SETTLED	2026-04-03
+PAY00006910	SP3200784	2025-09-19	399.04	POST_OFFICE	SETTLED	2025-09-19
+PAY00006911	SP3200784	2025-10-17	399.04	BACS	SETTLED	2025-10-17
+PAY00006912	SP3200784	2025-11-14	399.04	BACS	SETTLED	2025-11-14
+PAY00006913	SP3200784	2025-12-12	399.04	BACS	SETTLED	2025-12-12
+PAY00006914	SP3200784	2026-01-09	399.04	CHEQUE	SETTLED	2026-01-09
+PAY00006915	SP3200784	2026-02-06	399.04	BACS	SETTLED	2026-02-06
+PAY00006916	SP3200784	2026-03-06	399.04	BACS	SETTLED	2026-03-06
+PAY00006917	SP3200784	2026-04-03	399.04	BACS	SETTLED	2026-04-03
+PAY00006920	SP3200785	2026-02-21	145.36	BACS	SETTLED	2026-02-21
+PAY00006921	SP3200785	2026-02-28	145.36	POST_OFFICE	SETTLED	2026-02-28
+PAY00006922	SP3200785	2026-03-07	145.36	BACS	SETTLED	2026-03-07
+PAY00006923	SP3200785	2026-03-14	145.36	BACS	SETTLED	2026-03-14
+PAY00006924	SP3200785	2026-03-21	145.36	BACS	SETTLED	2026-03-21
+PAY00006925	SP3200785	2026-03-28	145.36	BACS	SETTLED	2026-03-28
+PAY00006926	SP3200785	2026-04-04	145.36	POST_OFFICE	SETTLED	2026-04-04
+PAY00006929	SP3200786	2026-03-03	88.48	BACS	SETTLED	2026-03-03
+PAY00006930	SP3200786	2026-03-10	88.48	BACS	SETTLED	2026-03-10
+PAY00006931	SP3200786	2026-03-17	88.48	BACS	SETTLED	2026-03-17
+PAY00006932	SP3200786	2026-03-24	88.48	BACS	SETTLED	2026-03-24
+PAY00006933	SP3200786	2026-03-31	88.48	BACS	SETTLED	2026-03-31
+PAY00006936	SP3200787	2024-04-08	2054.00	BACS	SETTLED	2024-04-08
+PAY00006937	SP3200787	2024-07-08	2054.00	BACS	SETTLED	2024-07-08
+PAY00006938	SP3200787	2024-10-07	2054.00	BACS	SETTLED	2024-10-07
+PAY00006939	SP3200787	2025-01-06	2054.00	BACS	SETTLED	2025-01-06
+PAY00006940	SP3200787	2025-04-07	2054.00	BACS	SETTLED	2025-04-07
+PAY00006941	SP3200787	2025-07-07	2054.00	BACS	SETTLED	2025-07-07
+PAY00006942	SP3200787	2025-10-06	2054.00	BACS	SETTLED	2025-10-06
+PAY00006943	SP3200787	2026-01-05	2054.00	BACS	SETTLED	2026-01-05
+PAY00006946	SP3200788	2025-01-01	1228.24	BACS	SETTLED	2025-01-01
+PAY00006947	SP3200788	2025-04-02	1228.24	BACS	SETTLED	2025-04-02
+PAY00006948	SP3200788	2025-07-02	1228.24	BACS	SETTLED	2025-07-02
+PAY00006949	SP3200788	2025-10-01	1228.24	BACS	SETTLED	2025-10-01
+PAY00006950	SP3200788	2025-12-31	1228.24	BACS	SETTLED	2025-12-31
+PAY00006951	SP3200788	2026-04-01	1228.24	BACS	SETTLED	2026-04-01
+PAY00006954	SP3200789	2025-11-13	252.80	BACS	SETTLED	2025-11-13
+PAY00006955	SP3200789	2025-12-11	252.80	BACS	SETTLED	2025-12-11
+PAY00006956	SP3200789	2026-01-08	252.80	BACS	SETTLED	2026-01-08
+PAY00006957	SP3200789	2026-02-05	252.80	POST_OFFICE	SETTLED	2026-02-05
+PAY00006958	SP3200789	2026-03-05	252.80	BACS	SETTLED	2026-03-05
+PAY00006959	SP3200789	2026-04-02	252.80	BACS	SETTLED	2026-04-02
+PAY00006962	SP3200790	2025-08-25	728.64	BACS	SETTLED	2025-08-25
+PAY00006963	SP3200790	2025-09-22	728.64	BACS	SETTLED	2025-09-22
+PAY00006964	SP3200790	2025-10-20	728.64	BACS	SETTLED	2025-10-20
+PAY00006965	SP3200790	2025-11-17	728.64	POST_OFFICE	SETTLED	2025-11-17
+PAY00006966	SP3200790	2025-12-15	728.64	BACS	SETTLED	2025-12-15
+PAY00006967	SP3200790	2026-01-12	728.64	BACS	SETTLED	2026-01-12
+PAY00006968	SP3200790	2026-02-09	728.64	BACS	SETTLED	2026-02-09
+PAY00006969	SP3200790	2026-03-09	728.64	BACS	SETTLED	2026-03-09
+PAY00006972	SP3200791	2026-02-25	126.40	BACS	SETTLED	2026-02-25
+PAY00006973	SP3200791	2026-03-04	126.40	BACS	SETTLED	2026-03-04
+PAY00006974	SP3200791	2026-03-11	126.40	BACS	SETTLED	2026-03-11
+PAY00006975	SP3200791	2026-03-18	126.40	POST_OFFICE	SETTLED	2026-03-18
+PAY00006976	SP3200791	2026-03-25	126.40	BACS	SETTLED	2026-03-25
+PAY00006977	SP3200791	2026-04-01	126.40	BACS	SETTLED	2026-04-01
+PAY00006980	SP3200792	2025-08-22	707.84	BACS	SETTLED	2025-08-22
+PAY00006981	SP3200792	2025-09-19	707.84	BACS	SETTLED	2025-09-19
+PAY00006982	SP3200792	2025-10-17	707.84	BACS	SETTLED	2025-10-17
+PAY00006983	SP3200792	2025-11-14	707.84	BACS	SETTLED	2025-11-14
+PAY00006984	SP3200792	2025-12-12	707.84	BACS	SETTLED	2025-12-12
+PAY00006985	SP3200792	2026-01-09	707.84	BACS	SETTLED	2026-01-09
+PAY00006986	SP3200792	2026-02-06	707.84	CHEQUE	SETTLED	2026-02-06
+PAY00006987	SP3200792	2026-03-06	707.84	BACS	SETTLED	2026-03-06
+PAY00006988	SP3200792	2026-04-03	707.84	BACS	SETTLED	2026-04-03
+PAY00006991	SP3200793	2026-02-10	245.95	CHEQUE	SETTLED	2026-02-10
+PAY00006992	SP3200793	2026-02-17	245.95	BACS	SETTLED	2026-02-17
+PAY00006993	SP3200793	2026-02-24	245.95	CHEQUE	SETTLED	2026-02-24
+PAY00006994	SP3200793	2026-03-03	245.95	CHEQUE	SETTLED	2026-03-03
+PAY00006995	SP3200793	2026-03-10	245.95	BACS	SETTLED	2026-03-10
+PAY00006996	SP3200793	2026-03-17	245.95	BACS	SETTLED	2026-03-17
+PAY00006997	SP3200793	2026-03-24	245.95	BACS	SETTLED	2026-03-24
+PAY00006998	SP3200793	2026-03-31	245.95	BACS	SETTLED	2026-03-31
+PAY00007001	SP3200794	2025-10-15	278.08	POST_OFFICE	SETTLED	2025-10-15
+PAY00007002	SP3200794	2025-11-12	278.08	BACS	SETTLED	2025-11-12
+PAY00007003	SP3200794	2025-12-10	278.08	POST_OFFICE	SETTLED	2025-12-10
+PAY00007004	SP3200794	2026-01-07	278.08	BACS	SETTLED	2026-01-07
+PAY00007005	SP3200794	2026-02-04	278.08	BACS	SETTLED	2026-02-04
+PAY00007006	SP3200794	2026-03-04	278.08	BACS	SETTLED	2026-03-04
+PAY00007007	SP3200794	2026-04-01	278.08	BACS	SETTLED	2026-04-01
+PAY00007010	SP3200795	2026-02-10	170.64	POST_OFFICE	SETTLED	2026-02-10
+PAY00007011	SP3200795	2026-02-17	170.64	POST_OFFICE	SETTLED	2026-02-17
+PAY00007012	SP3200795	2026-02-24	170.64	BACS	SETTLED	2026-02-24
+PAY00007013	SP3200795	2026-03-03	170.64	BACS	SETTLED	2026-03-03
+PAY00007014	SP3200795	2026-03-10	170.64	BACS	SETTLED	2026-03-10
+PAY00007015	SP3200795	2026-03-17	170.64	BACS	SETTLED	2026-03-17
+PAY00007016	SP3200795	2026-03-24	170.64	BACS	SETTLED	2026-03-24
+PAY00007017	SP3200795	2026-03-31	170.64	BACS	SETTLED	2026-03-31
+PAY00007020	SP3200796	2026-02-04	157.74	POST_OFFICE	SETTLED	2026-02-04
+PAY00007021	SP3200796	2026-02-11	157.74	POST_OFFICE	SETTLED	2026-02-11
+PAY00007022	SP3200796	2026-02-18	157.74	BACS	SETTLED	2026-02-18
+PAY00007023	SP3200796	2026-02-25	157.74	BACS	SETTLED	2026-02-25
+PAY00007024	SP3200796	2026-03-04	157.74	CHEQUE	SETTLED	2026-03-04
+PAY00007025	SP3200796	2026-03-11	157.74	BACS	SETTLED	2026-03-11
+PAY00007026	SP3200796	2026-03-18	157.74	BACS	SETTLED	2026-03-18
+PAY00007027	SP3200796	2026-03-25	157.74	BACS	SETTLED	2026-03-25
+PAY00007028	SP3200796	2026-04-01	157.74	BACS	SETTLED	2026-04-01
+PAY00007031	SP3200797	2026-02-09	158.00	CHEQUE	SETTLED	2026-02-09
+PAY00007032	SP3200797	2026-02-16	158.00	BACS	SETTLED	2026-02-16
+PAY00007033	SP3200797	2026-02-23	158.00	BACS	SETTLED	2026-02-23
+PAY00007034	SP3200797	2026-03-02	158.00	BACS	SETTLED	2026-03-02
+PAY00007035	SP3200797	2026-03-09	158.00	BACS	SETTLED	2026-03-09
+PAY00007036	SP3200797	2026-03-16	158.00	BACS	SETTLED	2026-03-16
+PAY00007037	SP3200797	2026-03-23	158.00	BACS	SETTLED	2026-03-23
+PAY00007038	SP3200797	2026-03-30	158.00	BACS	SETTLED	2026-03-30
+PAY00007041	SP3200798	2025-11-11	434.96	CHEQUE	SETTLED	2025-11-11
+PAY00007042	SP3200798	2025-12-09	434.96	BACS	SETTLED	2025-12-09
+PAY00007043	SP3200798	2026-01-06	434.96	BACS	SETTLED	2026-01-06
+PAY00007044	SP3200798	2026-02-03	434.96	BACS	SETTLED	2026-02-03
+PAY00007045	SP3200798	2026-03-03	434.96	POST_OFFICE	SETTLED	2026-03-03
+PAY00007046	SP3200798	2026-03-31	434.96	BACS	SETTLED	2026-03-31
+PAY00007049	SP3200799	2025-11-16	318.68	BACS	SETTLED	2025-11-16
+PAY00007050	SP3200799	2025-12-14	318.68	BACS	SETTLED	2025-12-14
+PAY00007051	SP3200799	2026-01-11	318.68	BACS	SETTLED	2026-01-11
+PAY00007052	SP3200799	2026-02-08	318.68	BACS	SETTLED	2026-02-08
+PAY00007053	SP3200799	2026-03-08	318.68	BACS	SETTLED	2026-03-08
+PAY00007054	SP3200799	2026-04-05	318.68	BACS	SETTLED	2026-04-05
+PAY00007057	SP3200800	2026-02-26	161.50	BACS	SETTLED	2026-02-26
+PAY00007058	SP3200800	2026-03-05	161.50	BACS	SETTLED	2026-03-05
+PAY00007059	SP3200800	2026-03-12	161.50	CHEQUE	SETTLED	2026-03-12
+PAY00007060	SP3200800	2026-03-19	161.50	POST_OFFICE	SETTLED	2026-03-19
+PAY00007061	SP3200800	2026-03-26	161.50	BACS	SETTLED	2026-03-26
+PAY00007062	SP3200800	2026-04-02	161.50	BACS	SETTLED	2026-04-02
+PAY00007065	SP3200801	2025-09-16	581.44	BACS	SETTLED	2025-09-16
+PAY00007066	SP3200801	2025-10-14	581.44	BACS	SETTLED	2025-10-14
+PAY00007067	SP3200801	2025-11-11	581.44	POST_OFFICE	SETTLED	2025-11-11
+PAY00007068	SP3200801	2025-12-09	581.44	BACS	SETTLED	2025-12-09
+PAY00007069	SP3200801	2026-01-06	581.44	BACS	SETTLED	2026-01-06
+PAY00007070	SP3200801	2026-02-03	581.44	POST_OFFICE	SETTLED	2026-02-03
+PAY00007071	SP3200801	2026-03-03	581.44	BACS	SETTLED	2026-03-03
+PAY00007072	SP3200801	2026-03-31	581.44	BACS	SETTLED	2026-03-31
+PAY00007075	SP3200802	2024-10-05	1531.40	BACS	SETTLED	2024-10-05
+PAY00007076	SP3200802	2025-01-04	1531.40	BACS	SETTLED	2025-01-04
+PAY00007077	SP3200802	2025-04-05	1531.40	BACS	SETTLED	2025-04-05
+PAY00007078	SP3200802	2025-07-05	1531.40	POST_OFFICE	SETTLED	2025-07-05
+PAY00007079	SP3200802	2025-10-04	1531.40	BACS	SETTLED	2025-10-04
+PAY00007080	SP3200802	2026-01-03	1531.40	BACS	SETTLED	2026-01-03
+PAY00007081	SP3200802	2026-04-04	1531.40	BACS	SETTLED	2026-04-04
+PAY00007084	SP3200803	2025-10-16	682.56	BACS	SETTLED	2025-10-16
+PAY00007085	SP3200803	2025-11-13	682.56	BACS	SETTLED	2025-11-13
+PAY00007086	SP3200803	2025-12-11	682.56	BACS	SETTLED	2025-12-11
+PAY00007087	SP3200803	2026-01-08	682.56	BACS	SETTLED	2026-01-08
+PAY00007088	SP3200803	2026-02-05	682.56	BACS	SETTLED	2026-02-05
+PAY00007089	SP3200803	2026-03-05	682.56	BACS	SETTLED	2026-03-05
+PAY00007090	SP3200803	2026-04-02	682.56	BACS	SETTLED	2026-04-02
+PAY00007093	SP3200804	2025-10-16	682.56	CHEQUE	SETTLED	2025-10-16
+PAY00007094	SP3200804	2025-11-13	682.56	BACS	SETTLED	2025-11-13
+PAY00007095	SP3200804	2025-12-11	682.56	BACS	SETTLED	2025-12-11
+PAY00007096	SP3200804	2026-01-08	682.56	BACS	SETTLED	2026-01-08
+PAY00007097	SP3200804	2026-02-05	682.56	BACS	SETTLED	2026-02-05
+PAY00007098	SP3200804	2026-03-05	682.56	BACS	SETTLED	2026-03-05
+PAY00007099	SP3200804	2026-04-02	682.56	BACS	SETTLED	2026-04-02
+PAY00007102	SP3200805	2025-10-15	884.80	BACS	SETTLED	2025-10-15
+PAY00007103	SP3200805	2025-11-12	884.80	BACS	SETTLED	2025-11-12
+PAY00007104	SP3200805	2025-12-10	884.80	BACS	SETTLED	2025-12-10
+PAY00007105	SP3200805	2026-01-07	884.80	BACS	SETTLED	2026-01-07
+PAY00007106	SP3200805	2026-02-04	884.80	BACS	SETTLED	2026-02-04
+PAY00007107	SP3200805	2026-03-04	884.80	BACS	SETTLED	2026-03-04
+PAY00007108	SP3200805	2026-04-01	884.80	POST_OFFICE	SETTLED	2026-04-01
+PAY00007111	SP3200806	2025-12-11	696.60	CHEQUE	SETTLED	2025-12-11
+PAY00007112	SP3200806	2026-01-08	696.60	BACS	SETTLED	2026-01-08
+PAY00007113	SP3200806	2026-02-05	696.60	BACS	SETTLED	2026-02-05
+PAY00007114	SP3200806	2026-03-05	696.60	POST_OFFICE	SETTLED	2026-03-05
+PAY00007115	SP3200806	2026-04-02	696.60	BACS	SETTLED	2026-04-02
+PAY00007118	SP3200807	2025-09-19	480.32	BACS	SETTLED	2025-09-19
+PAY00007119	SP3200807	2025-10-17	480.32	BACS	SETTLED	2025-10-17
+PAY00007120	SP3200807	2025-11-14	480.32	BACS	SETTLED	2025-11-14
+PAY00007121	SP3200807	2025-12-12	480.32	BACS	SETTLED	2025-12-12
+PAY00007122	SP3200807	2026-01-09	480.32	CHEQUE	SETTLED	2026-01-09
+PAY00007123	SP3200807	2026-02-06	480.32	BACS	SETTLED	2026-02-06
+PAY00007124	SP3200807	2026-03-06	480.32	POST_OFFICE	SETTLED	2026-03-06
+PAY00007125	SP3200807	2026-04-03	480.32	BACS	SETTLED	2026-04-03
+PAY00007128	SP3200808	2025-08-25	592.64	BACS	SETTLED	2025-08-25
+PAY00007129	SP3200808	2025-09-22	592.64	BACS	SETTLED	2025-09-22
+PAY00007130	SP3200808	2025-10-20	592.64	BACS	SETTLED	2025-10-20
+PAY00007131	SP3200808	2025-11-17	592.64	BACS	SETTLED	2025-11-17
+PAY00007132	SP3200808	2025-12-15	592.64	BACS	SETTLED	2025-12-15
+PAY00007133	SP3200808	2026-01-12	592.64	BACS	SETTLED	2026-01-12
+PAY00007134	SP3200808	2026-02-09	592.64	BACS	SETTLED	2026-02-09
+PAY00007135	SP3200808	2026-03-09	592.64	BACS	SETTLED	2026-03-09
+PAY00007138	SP3200809	2025-10-14	404.48	BACS	SETTLED	2025-10-14
+PAY00007139	SP3200809	2025-11-11	404.48	BACS	SETTLED	2025-11-11
+PAY00007140	SP3200809	2025-12-09	404.48	CHEQUE	SETTLED	2025-12-09
+PAY00007141	SP3200809	2026-01-06	404.48	BACS	SETTLED	2026-01-06
+PAY00007142	SP3200809	2026-02-03	404.48	BACS	SETTLED	2026-02-03
+PAY00007143	SP3200809	2026-03-03	404.48	BACS	SETTLED	2026-03-03
+PAY00007144	SP3200809	2026-03-31	404.48	BACS	SETTLED	2026-03-31
+PAY00007147	SP3200810	2026-03-06	169.31	CHEQUE	SETTLED	2026-03-06
+PAY00007148	SP3200810	2026-03-13	169.31	BACS	SETTLED	2026-03-13
+PAY00007149	SP3200810	2026-03-20	169.31	BACS	SETTLED	2026-03-20
+PAY00007150	SP3200810	2026-03-27	169.31	BACS	SETTLED	2026-03-27
+PAY00007151	SP3200810	2026-04-03	169.31	BACS	SETTLED	2026-04-03
+PAY00007154	SP3200811	2025-09-21	505.60	CHEQUE	SETTLED	2025-09-21
+PAY00007155	SP3200811	2025-10-19	505.60	BACS	SETTLED	2025-10-19
+PAY00007156	SP3200811	2025-11-16	505.60	BACS	SETTLED	2025-11-16
+PAY00007157	SP3200811	2025-12-14	505.60	BACS	SETTLED	2025-12-14
+PAY00007158	SP3200811	2026-01-11	505.60	BACS	SETTLED	2026-01-11
+PAY00007159	SP3200811	2026-02-08	505.60	BACS	SETTLED	2026-02-08
+PAY00007160	SP3200811	2026-03-08	505.60	BACS	SETTLED	2026-03-08
+PAY00007161	SP3200811	2026-04-05	505.60	POST_OFFICE	SETTLED	2026-04-05
+PAY00007164	SP3200812	2025-10-15	247.40	CHEQUE	SETTLED	2025-10-15
+PAY00007165	SP3200812	2025-11-12	247.40	BACS	SETTLED	2025-11-12
+PAY00007166	SP3200812	2025-12-10	247.40	BACS	SETTLED	2025-12-10
+PAY00007167	SP3200812	2026-01-07	247.40	BACS	SETTLED	2026-01-07
+PAY00007168	SP3200812	2026-02-04	247.40	BACS	SETTLED	2026-02-04
+PAY00007169	SP3200812	2026-03-04	247.40	CHEQUE	SETTLED	2026-03-04
+PAY00007170	SP3200812	2026-04-01	247.40	BACS	SETTLED	2026-04-01
+PAY00007173	SP3200813	2025-09-20	303.36	BACS	SETTLED	2025-09-20
+PAY00007174	SP3200813	2025-10-18	303.36	BACS	SETTLED	2025-10-18
+PAY00007175	SP3200813	2025-11-15	303.36	BACS	SETTLED	2025-11-15
+PAY00007176	SP3200813	2025-12-13	303.36	CHEQUE	SETTLED	2025-12-13
+PAY00007177	SP3200813	2026-01-10	303.36	BACS	SETTLED	2026-01-10
+PAY00007178	SP3200813	2026-02-07	303.36	POST_OFFICE	SETTLED	2026-02-07
+PAY00007179	SP3200813	2026-03-07	303.36	BACS	SETTLED	2026-03-07
+PAY00007180	SP3200813	2026-04-04	303.36	BACS	SETTLED	2026-04-04
+PAY00007183	SP3200814	2025-09-21	278.08	BACS	SETTLED	2025-09-21
+PAY00007184	SP3200814	2025-10-19	278.08	BACS	SETTLED	2025-10-19
+PAY00007185	SP3200814	2025-11-16	278.08	BACS	SETTLED	2025-11-16
+PAY00007186	SP3200814	2025-12-14	278.08	BACS	SETTLED	2025-12-14
+PAY00007187	SP3200814	2026-01-11	278.08	CHEQUE	SETTLED	2026-01-11
+PAY00007188	SP3200814	2026-02-08	278.08	BACS	SETTLED	2026-02-08
+PAY00007189	SP3200814	2026-03-08	278.08	BACS	SETTLED	2026-03-08
+PAY00007190	SP3200814	2026-04-05	278.08	BACS	SETTLED	2026-04-05
+PAY00007193	SP3200815	2026-02-20	63.20	BACS	SETTLED	2026-02-20
+PAY00007194	SP3200815	2026-02-27	63.20	BACS	SETTLED	2026-02-27
+PAY00007195	SP3200815	2026-03-06	63.20	CHEQUE	SETTLED	2026-03-06
+PAY00007196	SP3200815	2026-03-13	63.20	BACS	SETTLED	2026-03-13
+PAY00007197	SP3200815	2026-03-20	63.20	BACS	SETTLED	2026-03-20
+PAY00007198	SP3200815	2026-03-27	63.20	BACS	SETTLED	2026-03-27
+PAY00007199	SP3200815	2026-04-03	63.20	BACS	SETTLED	2026-04-03
+PAY00007202	SP3200816	2025-10-18	336.72	BACS	SETTLED	2025-10-18
+PAY00007203	SP3200816	2025-11-15	336.72	BACS	SETTLED	2025-11-15
+PAY00007204	SP3200816	2025-12-13	336.72	POST_OFFICE	SETTLED	2025-12-13
+PAY00007205	SP3200816	2026-01-10	336.72	BACS	SETTLED	2026-01-10
+PAY00007206	SP3200816	2026-02-07	336.72	BACS	SETTLED	2026-02-07
+PAY00007207	SP3200816	2026-03-07	336.72	POST_OFFICE	SETTLED	2026-03-07
+PAY00007208	SP3200816	2026-04-04	336.72	BACS	SETTLED	2026-04-04
+PAY00007211	SP3200817	2025-08-19	480.32	BACS	SETTLED	2025-08-19
+PAY00007212	SP3200817	2025-09-16	480.32	BACS	SETTLED	2025-09-16
+PAY00007213	SP3200817	2025-10-14	480.32	POST_OFFICE	SETTLED	2025-10-14
+PAY00007214	SP3200817	2025-11-11	480.32	BACS	SETTLED	2025-11-11
+PAY00007215	SP3200817	2025-12-09	480.32	BACS	SETTLED	2025-12-09
+PAY00007216	SP3200817	2026-01-06	480.32	BACS	SETTLED	2026-01-06
+PAY00007217	SP3200817	2026-02-03	480.32	BACS	SETTLED	2026-02-03
+PAY00007218	SP3200817	2026-03-03	480.32	BACS	SETTLED	2026-03-03
+PAY00007219	SP3200817	2026-03-31	480.32	BACS	SETTLED	2026-03-31
+PAY00007222	SP3200818	2026-03-04	161.63	POST_OFFICE	SETTLED	2026-03-04
+PAY00007223	SP3200818	2026-03-11	161.63	BACS	SETTLED	2026-03-11
+PAY00007224	SP3200818	2026-03-18	161.63	BACS	SETTLED	2026-03-18
+PAY00007225	SP3200818	2026-03-25	161.63	BACS	SETTLED	2026-03-25
+PAY00007226	SP3200818	2026-04-01	161.63	BACS	SETTLED	2026-04-01
+PAY00007229	SP3200819	2025-08-20	758.40	BACS	SETTLED	2025-08-20
+PAY00007230	SP3200819	2025-09-17	758.40	BACS	SETTLED	2025-09-17
+PAY00007231	SP3200819	2025-10-15	758.40	POST_OFFICE	SETTLED	2025-10-15
+PAY00007232	SP3200819	2025-11-12	758.40	BACS	SETTLED	2025-11-12
+PAY00007233	SP3200819	2025-12-10	758.40	POST_OFFICE	SETTLED	2025-12-10
+PAY00007234	SP3200819	2026-01-07	758.40	BACS	SETTLED	2026-01-07
+PAY00007235	SP3200819	2026-02-04	758.40	BACS	SETTLED	2026-02-04
+PAY00007236	SP3200819	2026-03-04	758.40	BACS	SETTLED	2026-03-04
+PAY00007237	SP3200819	2026-04-01	758.40	CHEQUE	SETTLED	2026-04-01
+PAY00007240	SP3200820	2024-10-05	2629.12	POST_OFFICE	SETTLED	2024-10-05
+PAY00007241	SP3200820	2025-01-04	2629.12	BACS	SETTLED	2025-01-04
+PAY00007242	SP3200820	2025-04-05	2629.12	BACS	SETTLED	2025-04-05
+PAY00007243	SP3200820	2025-07-05	2629.12	BACS	SETTLED	2025-07-05
+PAY00007244	SP3200820	2025-10-04	2629.12	BACS	SETTLED	2025-10-04
+PAY00007245	SP3200820	2026-01-03	2629.12	POST_OFFICE	SETTLED	2026-01-03
+PAY00007246	SP3200820	2026-04-04	2629.12	BACS	SETTLED	2026-04-04
+PAY00007249	SP3200821	2025-08-20	632.00	BACS	SETTLED	2025-08-20
+PAY00007250	SP3200821	2025-09-17	632.00	BACS	SETTLED	2025-09-17
+PAY00007251	SP3200821	2025-10-15	632.00	BACS	SETTLED	2025-10-15
+PAY00007252	SP3200821	2025-11-12	632.00	BACS	SETTLED	2025-11-12
+PAY00007253	SP3200821	2025-12-10	632.00	BACS	SETTLED	2025-12-10
+PAY00007254	SP3200821	2026-01-07	632.00	POST_OFFICE	SETTLED	2026-01-07
+PAY00007255	SP3200821	2026-02-04	632.00	BACS	SETTLED	2026-02-04
+PAY00007256	SP3200821	2026-03-04	632.00	BACS	SETTLED	2026-03-04
+PAY00007257	SP3200821	2026-04-01	632.00	BACS	SETTLED	2026-04-01
+PAY00007260	SP3200822	2025-11-12	783.68	BACS	SETTLED	2025-11-12
+PAY00007261	SP3200822	2025-12-10	783.68	CHEQUE	SETTLED	2025-12-10
+PAY00007262	SP3200822	2026-01-07	783.68	BACS	SETTLED	2026-01-07
+PAY00007263	SP3200822	2026-02-04	783.68	CHEQUE	SETTLED	2026-02-04
+PAY00007264	SP3200822	2026-03-04	783.68	BACS	SETTLED	2026-03-04
+PAY00007265	SP3200822	2026-04-01	783.68	BACS	SETTLED	2026-04-01
+PAY00007268	SP3200823	2026-02-11	221.20	BACS	SETTLED	2026-02-11
+PAY00007269	SP3200823	2026-02-18	221.20	BACS	SETTLED	2026-02-18
+PAY00007270	SP3200823	2026-02-25	221.20	BACS	SETTLED	2026-02-25
+PAY00007271	SP3200823	2026-03-04	221.20	BACS	SETTLED	2026-03-04
+PAY00007272	SP3200823	2026-03-11	221.20	BACS	SETTLED	2026-03-11
+PAY00007273	SP3200823	2026-03-18	221.20	BACS	SETTLED	2026-03-18
+PAY00007274	SP3200823	2026-03-25	221.20	BACS	SETTLED	2026-03-25
+PAY00007275	SP3200823	2026-04-01	221.20	POST_OFFICE	SETTLED	2026-04-01
+PAY00007278	SP3200824	2026-02-18	210.83	BACS	SETTLED	2026-02-18
+PAY00007279	SP3200824	2026-02-25	210.83	BACS	SETTLED	2026-02-25
+PAY00007280	SP3200824	2026-03-04	210.83	BACS	SETTLED	2026-03-04
+PAY00007281	SP3200824	2026-03-11	210.83	POST_OFFICE	SETTLED	2026-03-11
+PAY00007282	SP3200824	2026-03-18	210.83	BACS	SETTLED	2026-03-18
+PAY00007283	SP3200824	2026-03-25	210.83	BACS	SETTLED	2026-03-25
+PAY00007284	SP3200824	2026-04-01	210.83	BACS	SETTLED	2026-04-01
+PAY00007287	SP3200825	2025-09-22	859.52	BACS	SETTLED	2025-09-22
+PAY00007288	SP3200825	2025-10-20	859.52	BACS	SETTLED	2025-10-20
+PAY00007289	SP3200825	2025-11-17	859.52	BACS	SETTLED	2025-11-17
+PAY00007290	SP3200825	2025-12-15	859.52	BACS	SETTLED	2025-12-15
+PAY00007291	SP3200825	2026-01-12	859.52	POST_OFFICE	SETTLED	2026-01-12
+PAY00007292	SP3200825	2026-02-09	859.52	BACS	SETTLED	2026-02-09
+PAY00007293	SP3200825	2026-03-09	859.52	BACS	SETTLED	2026-03-09
+PAY00007296	SP3200826	2026-03-06	92.27	POST_OFFICE	SETTLED	2026-03-06
+PAY00007297	SP3200826	2026-03-13	92.27	BACS	SETTLED	2026-03-13
+PAY00007298	SP3200826	2026-03-20	92.27	BACS	SETTLED	2026-03-20
+PAY00007299	SP3200826	2026-03-27	92.27	BACS	SETTLED	2026-03-27
+PAY00007300	SP3200826	2026-04-03	92.27	POST_OFFICE	SETTLED	2026-04-03
+PAY00007303	SP3200827	2026-02-08	200.94	BACS	SETTLED	2026-02-08
+PAY00007304	SP3200827	2026-02-15	200.94	BACS	SETTLED	2026-02-15
+PAY00007305	SP3200827	2026-02-22	200.94	BACS	SETTLED	2026-02-22
+PAY00007306	SP3200827	2026-03-01	200.94	BACS	SETTLED	2026-03-01
+PAY00007307	SP3200827	2026-03-08	200.94	BACS	SETTLED	2026-03-08
+PAY00007308	SP3200827	2026-03-15	200.94	BACS	SETTLED	2026-03-15
+PAY00007309	SP3200827	2026-03-22	200.94	BACS	SETTLED	2026-03-22
+PAY00007310	SP3200827	2026-03-29	200.94	BACS	SETTLED	2026-03-29
+PAY00007311	SP3200827	2026-04-05	200.94	BACS	SETTLED	2026-04-05
+PAY00007314	SP3200828	2025-08-19	595.60	BACS	SETTLED	2025-08-19
+PAY00007315	SP3200828	2025-09-16	595.60	POST_OFFICE	SETTLED	2025-09-16
+PAY00007316	SP3200828	2025-10-14	595.60	POST_OFFICE	SETTLED	2025-10-14
+PAY00007317	SP3200828	2025-11-11	595.60	BACS	SETTLED	2025-11-11
+PAY00007318	SP3200828	2025-12-09	595.60	BACS	SETTLED	2025-12-09
+PAY00007319	SP3200828	2026-01-06	595.60	POST_OFFICE	SETTLED	2026-01-06
+PAY00007320	SP3200828	2026-02-03	595.60	BACS	SETTLED	2026-02-03
+PAY00007321	SP3200828	2026-03-03	595.60	POST_OFFICE	SETTLED	2026-03-03
+PAY00007322	SP3200828	2026-03-31	595.60	BACS	SETTLED	2026-03-31
+PAY00007325	SP3200829	2025-11-17	303.36	BACS	SETTLED	2025-11-17
+PAY00007326	SP3200829	2025-12-15	303.36	BACS	SETTLED	2025-12-15
+PAY00007327	SP3200829	2026-01-12	303.36	BACS	SETTLED	2026-01-12
+PAY00007328	SP3200829	2026-02-09	303.36	POST_OFFICE	SETTLED	2026-02-09
+PAY00007329	SP3200829	2026-03-09	303.36	BACS	SETTLED	2026-03-09
+PAY00007332	SP3200830	2026-02-27	145.36	BACS	SETTLED	2026-02-27
+PAY00007333	SP3200830	2026-03-06	145.36	BACS	SETTLED	2026-03-06
+PAY00007334	SP3200830	2026-03-13	145.36	BACS	SETTLED	2026-03-13
+PAY00007335	SP3200830	2026-03-20	145.36	BACS	SETTLED	2026-03-20
+PAY00007336	SP3200830	2026-03-27	145.36	BACS	SETTLED	2026-03-27
+PAY00007337	SP3200830	2026-04-03	145.36	BACS	SETTLED	2026-04-03
+PAY00007340	SP3200831	2025-09-17	612.16	BACS	SETTLED	2025-09-17
+PAY00007341	SP3200831	2025-10-15	612.16	POST_OFFICE	SETTLED	2025-10-15
+PAY00007342	SP3200831	2025-11-12	612.16	BACS	SETTLED	2025-11-12
+PAY00007343	SP3200831	2025-12-10	612.16	BACS	SETTLED	2025-12-10
+PAY00007344	SP3200831	2026-01-07	612.16	BACS	SETTLED	2026-01-07
+PAY00007345	SP3200831	2026-02-04	612.16	BACS	SETTLED	2026-02-04
+PAY00007346	SP3200831	2026-03-04	612.16	BACS	SETTLED	2026-03-04
+PAY00007347	SP3200831	2026-04-01	612.16	BACS	SETTLED	2026-04-01
+PAY00007350	SP3200832	2026-02-23	139.04	BACS	SETTLED	2026-02-23
+PAY00007351	SP3200832	2026-03-02	139.04	BACS	SETTLED	2026-03-02
+PAY00007352	SP3200832	2026-03-09	139.04	BACS	SETTLED	2026-03-09
+PAY00007353	SP3200832	2026-03-16	139.04	BACS	SETTLED	2026-03-16
+PAY00007354	SP3200832	2026-03-23	139.04	BACS	SETTLED	2026-03-23
+PAY00007355	SP3200832	2026-03-30	139.04	BACS	SETTLED	2026-03-30
+PAY00007358	SP3200833	2026-02-06	173.92	BACS	SETTLED	2026-02-06
+PAY00007359	SP3200833	2026-02-13	173.92	BACS	SETTLED	2026-02-13
+PAY00007360	SP3200833	2026-02-20	173.92	BACS	SETTLED	2026-02-20
+PAY00007361	SP3200833	2026-02-27	173.92	BACS	SETTLED	2026-02-27
+PAY00007362	SP3200833	2026-03-06	173.92	BACS	SETTLED	2026-03-06
+PAY00007363	SP3200833	2026-03-13	173.92	POST_OFFICE	SETTLED	2026-03-13
+PAY00007364	SP3200833	2026-03-20	173.92	BACS	SETTLED	2026-03-20
+PAY00007365	SP3200833	2026-03-27	173.92	BACS	SETTLED	2026-03-27
+PAY00007366	SP3200833	2026-04-03	173.92	BACS	SETTLED	2026-04-03
+PAY00007369	SP3200834	2025-12-15	464.56	BACS	SETTLED	2025-12-15
+PAY00007370	SP3200834	2026-01-12	464.56	BACS	SETTLED	2026-01-12
+PAY00007371	SP3200834	2026-02-09	464.56	BACS	SETTLED	2026-02-09
+PAY00007372	SP3200834	2026-03-09	464.56	BACS	SETTLED	2026-03-09
+PAY00007375	SP3200835	2025-11-15	353.92	BACS	SETTLED	2025-11-15
+PAY00007376	SP3200835	2025-12-13	353.92	BACS	SETTLED	2025-12-13
+PAY00007377	SP3200835	2026-01-10	353.92	BACS	SETTLED	2026-01-10
+PAY00007378	SP3200835	2026-02-07	353.92	BACS	SETTLED	2026-02-07
+PAY00007379	SP3200835	2026-03-07	353.92	CHEQUE	SETTLED	2026-03-07
+PAY00007380	SP3200835	2026-04-04	353.92	BACS	SETTLED	2026-04-04
+PAY00007383	SP3200836	2025-10-16	556.16	POST_OFFICE	SETTLED	2025-10-16
+PAY00007384	SP3200836	2025-11-13	556.16	BACS	SETTLED	2025-11-13
+PAY00007385	SP3200836	2025-12-11	556.16	BACS	SETTLED	2025-12-11
+PAY00007386	SP3200836	2026-01-08	556.16	BACS	SETTLED	2026-01-08
+PAY00007387	SP3200836	2026-02-05	556.16	BACS	SETTLED	2026-02-05
+PAY00007388	SP3200836	2026-03-05	556.16	BACS	SETTLED	2026-03-05
+PAY00007389	SP3200836	2026-04-02	556.16	BACS	SETTLED	2026-04-02
+PAY00007392	SP3200837	2025-08-21	455.04	BACS	SETTLED	2025-08-21
+PAY00007393	SP3200837	2025-09-18	455.04	BACS	SETTLED	2025-09-18
+PAY00007394	SP3200837	2025-10-16	455.04	POST_OFFICE	SETTLED	2025-10-16
+PAY00007395	SP3200837	2025-11-13	455.04	BACS	SETTLED	2025-11-13
+PAY00007396	SP3200837	2025-12-11	455.04	BACS	SETTLED	2025-12-11
+PAY00007397	SP3200837	2026-01-08	455.04	BACS	SETTLED	2026-01-08
+PAY00007398	SP3200837	2026-02-05	455.04	BACS	SETTLED	2026-02-05
+PAY00007399	SP3200837	2026-03-05	455.04	BACS	SETTLED	2026-03-05
+PAY00007400	SP3200837	2026-04-02	455.04	BACS	SETTLED	2026-04-02
+PAY00007403	SP3200838	2025-10-17	372.04	BACS	SETTLED	2025-10-17
+PAY00007404	SP3200838	2025-11-14	372.04	BACS	SETTLED	2025-11-14
+PAY00007405	SP3200838	2025-12-12	372.04	BACS	SETTLED	2025-12-12
+PAY00007406	SP3200838	2026-01-09	372.04	BACS	SETTLED	2026-01-09
+PAY00007407	SP3200838	2026-02-06	372.04	CHEQUE	SETTLED	2026-02-06
+PAY00007408	SP3200838	2026-03-06	372.04	BACS	SETTLED	2026-03-06
+PAY00007409	SP3200838	2026-04-03	372.04	CHEQUE	SETTLED	2026-04-03
+PAY00007412	SP3200839	2025-10-14	733.12	BACS	SETTLED	2025-10-14
+PAY00007413	SP3200839	2025-11-11	733.12	BACS	SETTLED	2025-11-11
+PAY00007414	SP3200839	2025-12-09	733.12	CHEQUE	SETTLED	2025-12-09
+PAY00007415	SP3200839	2026-01-06	733.12	BACS	SETTLED	2026-01-06
+PAY00007416	SP3200839	2026-02-03	733.12	BACS	SETTLED	2026-02-03
+PAY00007417	SP3200839	2026-03-03	733.12	BACS	SETTLED	2026-03-03
+PAY00007418	SP3200839	2026-03-31	733.12	BACS	SETTLED	2026-03-31
+PAY00007421	SP3200840	2025-12-09	303.36	BACS	SETTLED	2025-12-09
+PAY00007422	SP3200840	2026-01-06	303.36	BACS	SETTLED	2026-01-06
+PAY00007423	SP3200840	2026-02-03	303.36	BACS	SETTLED	2026-02-03
+PAY00007424	SP3200840	2026-03-03	303.36	BACS	SETTLED	2026-03-03
+PAY00007425	SP3200840	2026-03-31	303.36	BACS	SETTLED	2026-03-31
+PAY00007428	SP3200841	2025-11-12	632.00	BACS	SETTLED	2025-11-12
+PAY00007429	SP3200841	2025-12-10	632.00	POST_OFFICE	SETTLED	2025-12-10
+PAY00007430	SP3200841	2026-01-07	632.00	BACS	SETTLED	2026-01-07
+PAY00007431	SP3200841	2026-02-04	632.00	POST_OFFICE	SETTLED	2026-02-04
+PAY00007432	SP3200841	2026-03-04	632.00	POST_OFFICE	SETTLED	2026-03-04
+PAY00007433	SP3200841	2026-04-01	632.00	BACS	SETTLED	2026-04-01
+PAY00007436	SP3200842	2025-08-20	834.24	BACS	SETTLED	2025-08-20
+PAY00007437	SP3200842	2025-09-17	834.24	BACS	SETTLED	2025-09-17
+PAY00007438	SP3200842	2025-10-15	834.24	BACS	SETTLED	2025-10-15
+PAY00007439	SP3200842	2025-11-12	834.24	BACS	SETTLED	2025-11-12
+PAY00007440	SP3200842	2025-12-10	834.24	POST_OFFICE	SETTLED	2025-12-10
+PAY00007441	SP3200842	2026-01-07	834.24	BACS	SETTLED	2026-01-07
+PAY00007442	SP3200842	2026-02-04	834.24	POST_OFFICE	SETTLED	2026-02-04
+PAY00007443	SP3200842	2026-03-04	834.24	BACS	SETTLED	2026-03-04
+PAY00007444	SP3200842	2026-04-01	834.24	CHEQUE	SETTLED	2026-04-01
+PAY00007447	SP3200843	2026-03-02	135.99	BACS	SETTLED	2026-03-02
+PAY00007448	SP3200843	2026-03-09	135.99	BACS	SETTLED	2026-03-09
+PAY00007449	SP3200843	2026-03-16	135.99	BACS	SETTLED	2026-03-16
+PAY00007450	SP3200843	2026-03-23	135.99	BACS	SETTLED	2026-03-23
+PAY00007451	SP3200843	2026-03-30	135.99	BACS	SETTLED	2026-03-30
+PAY00007454	SP3200844	2025-01-02	1059.50	CHEQUE	SETTLED	2025-01-02
+PAY00007455	SP3200844	2025-04-03	1059.50	BACS	SETTLED	2025-04-03
+PAY00007456	SP3200844	2025-07-03	1059.50	BACS	SETTLED	2025-07-03
+PAY00007457	SP3200844	2025-10-02	1059.50	BACS	SETTLED	2025-10-02
+PAY00007458	SP3200844	2026-01-01	1059.50	CHEQUE	SETTLED	2026-01-01
+PAY00007459	SP3200844	2026-04-02	1059.50	CHEQUE	SETTLED	2026-04-02
+PAY00007462	SP3200845	2025-08-25	581.44	BACS	SETTLED	2025-08-25
+PAY00007463	SP3200845	2025-09-22	581.44	BACS	SETTLED	2025-09-22
+PAY00007464	SP3200845	2025-10-20	581.44	POST_OFFICE	SETTLED	2025-10-20
+PAY00007465	SP3200845	2025-11-17	581.44	CHEQUE	SETTLED	2025-11-17
+PAY00007466	SP3200845	2025-12-15	581.44	BACS	SETTLED	2025-12-15
+PAY00007467	SP3200845	2026-01-12	581.44	BACS	SETTLED	2026-01-12
+PAY00007468	SP3200845	2026-02-09	581.44	BACS	SETTLED	2026-02-09
+PAY00007469	SP3200845	2026-03-09	581.44	BACS	SETTLED	2026-03-09
+PAY00007472	SP3200846	2025-08-21	418.84	CHEQUE	SETTLED	2025-08-21
+PAY00007473	SP3200846	2025-09-18	418.84	BACS	SETTLED	2025-09-18
+PAY00007474	SP3200846	2025-10-16	418.84	BACS	SETTLED	2025-10-16
+PAY00007475	SP3200846	2025-11-13	418.84	BACS	SETTLED	2025-11-13
+PAY00007476	SP3200846	2025-12-11	418.84	POST_OFFICE	SETTLED	2025-12-11
+PAY00007477	SP3200846	2026-01-08	418.84	BACS	SETTLED	2026-01-08
+PAY00007478	SP3200846	2026-02-05	418.84	BACS	SETTLED	2026-02-05
+PAY00007479	SP3200846	2026-03-05	418.84	BACS	SETTLED	2026-03-05
+PAY00007480	SP3200846	2026-04-02	418.84	BACS	SETTLED	2026-04-02
+PAY00007483	SP3200847	2025-12-10	456.24	BACS	SETTLED	2025-12-10
+PAY00007484	SP3200847	2026-01-07	456.24	BACS	SETTLED	2026-01-07
+PAY00007485	SP3200847	2026-02-04	456.24	BACS	SETTLED	2026-02-04
+PAY00007486	SP3200847	2026-03-04	456.24	BACS	SETTLED	2026-03-04
+PAY00007487	SP3200847	2026-04-01	456.24	BACS	SETTLED	2026-04-01
+PAY00007490	SP3200848	2025-11-17	682.56	BACS	SETTLED	2025-11-17
+PAY00007491	SP3200848	2025-12-15	682.56	BACS	SETTLED	2025-12-15
+PAY00007492	SP3200848	2026-01-12	682.56	BACS	SETTLED	2026-01-12
+PAY00007493	SP3200848	2026-02-09	682.56	BACS	SETTLED	2026-02-09
+PAY00007494	SP3200848	2026-03-09	682.56	BACS	SETTLED	2026-03-09
+PAY00007497	SP3200849	2026-02-17	160.02	POST_OFFICE	SETTLED	2026-02-17
+PAY00007498	SP3200849	2026-02-24	160.02	BACS	SETTLED	2026-02-24
+PAY00007499	SP3200849	2026-03-03	160.02	BACS	SETTLED	2026-03-03
+PAY00007500	SP3200849	2026-03-10	160.02	BACS	SETTLED	2026-03-10
+PAY00007501	SP3200849	2026-03-17	160.02	BACS	SETTLED	2026-03-17
+PAY00007502	SP3200849	2026-03-24	160.02	BACS	SETTLED	2026-03-24
+PAY00007503	SP3200849	2026-03-31	160.02	BACS	SETTLED	2026-03-31
+PAY00007506	SP3200850	2026-03-09	132.72	BACS	SETTLED	2026-03-09
+PAY00007507	SP3200850	2026-03-16	132.72	POST_OFFICE	SETTLED	2026-03-16
+PAY00007508	SP3200850	2026-03-23	132.72	BACS	SETTLED	2026-03-23
+PAY00007509	SP3200850	2026-03-30	132.72	BACS	SETTLED	2026-03-30
+PAY00007512	SP3200851	2026-02-27	101.12	POST_OFFICE	SETTLED	2026-02-27
+PAY00007513	SP3200851	2026-03-06	101.12	POST_OFFICE	SETTLED	2026-03-06
+PAY00007514	SP3200851	2026-03-13	101.12	BACS	SETTLED	2026-03-13
+PAY00007515	SP3200851	2026-03-20	101.12	BACS	SETTLED	2026-03-20
+PAY00007516	SP3200851	2026-03-27	101.12	BACS	SETTLED	2026-03-27
+PAY00007517	SP3200851	2026-04-03	101.12	BACS	SETTLED	2026-04-03
+PAY00007520	SP3200852	2025-12-14	220.00	BACS	SETTLED	2025-12-14
+PAY00007521	SP3200852	2026-01-11	220.00	BACS	SETTLED	2026-01-11
+PAY00007522	SP3200852	2026-02-08	220.00	BACS	SETTLED	2026-02-08
+PAY00007523	SP3200852	2026-03-08	220.00	BACS	SETTLED	2026-03-08
+PAY00007524	SP3200852	2026-04-05	220.00	BACS	SETTLED	2026-04-05
+PAY00007527	SP3200853	2025-12-09	309.48	BACS	SETTLED	2025-12-09
+PAY00007528	SP3200853	2026-01-06	309.48	BACS	SETTLED	2026-01-06
+PAY00007529	SP3200853	2026-02-03	309.48	BACS	SETTLED	2026-02-03
+PAY00007530	SP3200853	2026-03-03	309.48	BACS	SETTLED	2026-03-03
+PAY00007531	SP3200853	2026-03-31	309.48	BACS	SETTLED	2026-03-31
+PAY00007534	SP3200854	2024-10-05	2382.64	BACS	SETTLED	2024-10-05
+PAY00007535	SP3200854	2025-01-04	2382.64	BACS	SETTLED	2025-01-04
+PAY00007536	SP3200854	2025-04-05	2382.64	BACS	SETTLED	2025-04-05
+PAY00007537	SP3200854	2025-07-05	2382.64	CHEQUE	SETTLED	2025-07-05
+PAY00007538	SP3200854	2025-10-04	2382.64	BACS	SETTLED	2025-10-04
+PAY00007539	SP3200854	2026-01-03	2382.64	CHEQUE	SETTLED	2026-01-03
+PAY00007540	SP3200854	2026-04-04	2382.64	BACS	SETTLED	2026-04-04
+PAY00007543	SP3200855	2025-10-16	429.76	BACS	SETTLED	2025-10-16
+PAY00007544	SP3200855	2025-11-13	429.76	BACS	SETTLED	2025-11-13
+PAY00007545	SP3200855	2025-12-11	429.76	BACS	SETTLED	2025-12-11
+PAY00007546	SP3200855	2026-01-08	429.76	BACS	SETTLED	2026-01-08
+PAY00007547	SP3200855	2026-02-05	429.76	BACS	SETTLED	2026-02-05
+PAY00007548	SP3200855	2026-03-05	429.76	BACS	SETTLED	2026-03-05
+PAY00007549	SP3200855	2026-04-02	429.76	BACS	SETTLED	2026-04-02
+PAY00007552	SP3200856	2026-03-03	69.52	POST_OFFICE	SETTLED	2026-03-03
+PAY00007553	SP3200856	2026-03-10	69.52	BACS	SETTLED	2026-03-10
+PAY00007554	SP3200856	2026-03-17	69.52	BACS	SETTLED	2026-03-17
+PAY00007555	SP3200856	2026-03-24	69.52	POST_OFFICE	SETTLED	2026-03-24
+PAY00007556	SP3200856	2026-03-31	69.52	BACS	SETTLED	2026-03-31
+PAY00007559	SP3200857	2025-09-21	733.12	CHEQUE	SETTLED	2025-09-21
+PAY00007560	SP3200857	2025-10-19	733.12	BACS	SETTLED	2025-10-19
+PAY00007561	SP3200857	2025-11-16	733.12	BACS	SETTLED	2025-11-16
+PAY00007562	SP3200857	2025-12-14	733.12	BACS	SETTLED	2025-12-14
+PAY00007563	SP3200857	2026-01-11	733.12	CHEQUE	SETTLED	2026-01-11
+PAY00007564	SP3200857	2026-02-08	733.12	BACS	SETTLED	2026-02-08
+PAY00007565	SP3200857	2026-03-08	733.12	BACS	SETTLED	2026-03-08
+PAY00007566	SP3200857	2026-04-05	733.12	POST_OFFICE	SETTLED	2026-04-05
+PAY00007569	SP3200858	2026-03-06	221.20	BACS	SETTLED	2026-03-06
+PAY00007570	SP3200858	2026-03-13	221.20	BACS	SETTLED	2026-03-13
+PAY00007571	SP3200858	2026-03-20	221.20	POST_OFFICE	SETTLED	2026-03-20
+PAY00007572	SP3200858	2026-03-27	221.20	POST_OFFICE	SETTLED	2026-03-27
+PAY00007573	SP3200858	2026-04-03	221.20	BACS	SETTLED	2026-04-03
+PAY00007576	SP3200859	2026-02-18	158.00	BACS	SETTLED	2026-02-18
+PAY00007577	SP3200859	2026-02-25	158.00	BACS	SETTLED	2026-02-25
+PAY00007578	SP3200859	2026-03-04	158.00	BACS	SETTLED	2026-03-04
+PAY00007579	SP3200859	2026-03-11	158.00	BACS	SETTLED	2026-03-11
+PAY00007580	SP3200859	2026-03-18	158.00	BACS	SETTLED	2026-03-18
+PAY00007581	SP3200859	2026-03-25	158.00	BACS	SETTLED	2026-03-25
+PAY00007582	SP3200859	2026-04-01	158.00	BACS	SETTLED	2026-04-01
+PAY00007585	SP3200860	2025-08-23	303.36	BACS	SETTLED	2025-08-23
+PAY00007586	SP3200860	2025-09-20	303.36	BACS	SETTLED	2025-09-20
+PAY00007587	SP3200860	2025-10-18	303.36	BACS	SETTLED	2025-10-18
+PAY00007588	SP3200860	2025-11-15	303.36	BACS	SETTLED	2025-11-15
+PAY00007589	SP3200860	2025-12-13	303.36	BACS	SETTLED	2025-12-13
+PAY00007590	SP3200860	2026-01-10	303.36	BACS	SETTLED	2026-01-10
+PAY00007591	SP3200860	2026-02-07	303.36	BACS	SETTLED	2026-02-07
+PAY00007592	SP3200860	2026-03-07	303.36	BACS	SETTLED	2026-03-07
+PAY00007593	SP3200860	2026-04-04	303.36	BACS	SETTLED	2026-04-04
+PAY00007596	SP3200861	2026-03-08	202.24	BACS	SETTLED	2026-03-08
+PAY00007597	SP3200861	2026-03-15	202.24	BACS	SETTLED	2026-03-15
+PAY00007598	SP3200861	2026-03-22	202.24	POST_OFFICE	SETTLED	2026-03-22
+PAY00007599	SP3200861	2026-03-29	202.24	CHEQUE	SETTLED	2026-03-29
+PAY00007600	SP3200861	2026-04-05	202.24	CHEQUE	SETTLED	2026-04-05
+PAY00007603	SP3200862	2026-03-02	94.80	BACS	SETTLED	2026-03-02
+PAY00007604	SP3200862	2026-03-09	94.80	BACS	SETTLED	2026-03-09
+PAY00007605	SP3200862	2026-03-16	94.80	BACS	SETTLED	2026-03-16
+PAY00007606	SP3200862	2026-03-23	94.80	BACS	SETTLED	2026-03-23
+PAY00007607	SP3200862	2026-03-30	94.80	BACS	SETTLED	2026-03-30
+PAY00007610	SP3200863	2026-02-17	101.12	CHEQUE	SETTLED	2026-02-17
+PAY00007611	SP3200863	2026-02-24	101.12	POST_OFFICE	SETTLED	2026-02-24
+PAY00007612	SP3200863	2026-03-03	101.12	BACS	SETTLED	2026-03-03
+PAY00007613	SP3200863	2026-03-10	101.12	BACS	SETTLED	2026-03-10
+PAY00007614	SP3200863	2026-03-17	101.12	BACS	SETTLED	2026-03-17
+PAY00007615	SP3200863	2026-03-24	101.12	BACS	SETTLED	2026-03-24
+PAY00007616	SP3200863	2026-03-31	101.12	CHEQUE	SETTLED	2026-03-31
+PAY00007619	SP3200864	2025-10-20	273.44	BACS	SETTLED	2025-10-20
+PAY00007620	SP3200864	2025-11-17	273.44	BACS	SETTLED	2025-11-17
+PAY00007621	SP3200864	2025-12-15	273.44	BACS	SETTLED	2025-12-15
+PAY00007622	SP3200864	2026-01-12	273.44	POST_OFFICE	SETTLED	2026-01-12
+PAY00007623	SP3200864	2026-02-09	273.44	BACS	SETTLED	2026-02-09
+PAY00007624	SP3200864	2026-03-09	273.44	BACS	SETTLED	2026-03-09
+PAY00007627	SP3200865	2025-12-09	252.80	BACS	SETTLED	2025-12-09
+PAY00007628	SP3200865	2026-01-06	252.80	BACS	SETTLED	2026-01-06
+PAY00007629	SP3200865	2026-02-03	252.80	BACS	SETTLED	2026-02-03
+PAY00007630	SP3200865	2026-03-03	252.80	POST_OFFICE	SETTLED	2026-03-03
+PAY00007631	SP3200865	2026-03-31	252.80	BACS	SETTLED	2026-03-31
+PAY00007634	SP3200866	2024-07-06	2300.48	CHEQUE	SETTLED	2024-07-06
+PAY00007635	SP3200866	2024-10-05	2300.48	BACS	SETTLED	2024-10-05
+PAY00007636	SP3200866	2025-01-04	2300.48	BACS	SETTLED	2025-01-04
+PAY00007637	SP3200866	2025-04-05	2300.48	BACS	SETTLED	2025-04-05
+PAY00007638	SP3200866	2025-07-05	2300.48	BACS	SETTLED	2025-07-05
+PAY00007639	SP3200866	2025-10-04	2300.48	BACS	SETTLED	2025-10-04
+PAY00007640	SP3200866	2026-01-03	2300.48	BACS	SETTLED	2026-01-03
+PAY00007641	SP3200866	2026-04-04	2300.48	BACS	SETTLED	2026-04-04
+PAY00007644	SP3200867	2025-12-10	581.44	CHEQUE	SETTLED	2025-12-10
+PAY00007645	SP3200867	2026-01-07	581.44	BACS	SETTLED	2026-01-07
+PAY00007646	SP3200867	2026-02-04	581.44	BACS	SETTLED	2026-02-04
+PAY00007647	SP3200867	2026-03-04	581.44	BACS	SETTLED	2026-03-04
+PAY00007648	SP3200867	2026-04-01	581.44	BACS	SETTLED	2026-04-01
+PAY00007651	SP3200868	2026-02-05	69.52	BACS	SETTLED	2026-02-05
+PAY00007652	SP3200868	2026-02-12	69.52	POST_OFFICE	SETTLED	2026-02-12
+PAY00007653	SP3200868	2026-02-19	69.52	BACS	SETTLED	2026-02-19
+PAY00007654	SP3200868	2026-02-26	69.52	POST_OFFICE	SETTLED	2026-02-26
+PAY00007655	SP3200868	2026-03-05	69.52	BACS	SETTLED	2026-03-05
+PAY00007656	SP3200868	2026-03-12	69.52	POST_OFFICE	SETTLED	2026-03-12
+PAY00007657	SP3200868	2026-03-19	69.52	BACS	SETTLED	2026-03-19
+PAY00007658	SP3200868	2026-03-26	69.52	BACS	SETTLED	2026-03-26
+PAY00007659	SP3200868	2026-04-02	69.52	BACS	SETTLED	2026-04-02
+PAY00007662	SP3200869	2025-10-20	505.08	POST_OFFICE	SETTLED	2025-10-20
+PAY00007663	SP3200869	2025-11-17	505.08	BACS	SETTLED	2025-11-17
+PAY00007664	SP3200869	2025-12-15	505.08	BACS	SETTLED	2025-12-15
+PAY00007665	SP3200869	2026-01-12	505.08	BACS	SETTLED	2026-01-12
+PAY00007666	SP3200869	2026-02-09	505.08	BACS	SETTLED	2026-02-09
+PAY00007667	SP3200869	2026-03-09	505.08	BACS	SETTLED	2026-03-09
+PAY00007670	SP3200870	2025-10-15	556.16	BACS	SETTLED	2025-10-15
+PAY00007671	SP3200870	2025-11-12	556.16	BACS	SETTLED	2025-11-12
+PAY00007672	SP3200870	2025-12-10	556.16	BACS	SETTLED	2025-12-10
+PAY00007673	SP3200870	2026-01-07	556.16	BACS	SETTLED	2026-01-07
+PAY00007674	SP3200870	2026-02-04	556.16	BACS	SETTLED	2026-02-04
+PAY00007675	SP3200870	2026-03-04	556.16	BACS	SETTLED	2026-03-04
+PAY00007676	SP3200870	2026-04-01	556.16	BACS	SETTLED	2026-04-01
+PAY00007679	SP3200871	2025-09-16	551.72	POST_OFFICE	SETTLED	2025-09-16
+PAY00007680	SP3200871	2025-10-14	551.72	BACS	SETTLED	2025-10-14
+PAY00007681	SP3200871	2025-11-11	551.72	BACS	SETTLED	2025-11-11
+PAY00007682	SP3200871	2025-12-09	551.72	POST_OFFICE	SETTLED	2025-12-09
+PAY00007683	SP3200871	2026-01-06	551.72	POST_OFFICE	SETTLED	2026-01-06
+PAY00007684	SP3200871	2026-02-03	551.72	BACS	SETTLED	2026-02-03
+PAY00007685	SP3200871	2026-03-03	551.72	CHEQUE	SETTLED	2026-03-03
+PAY00007686	SP3200871	2026-03-31	551.72	BACS	SETTLED	2026-03-31
+PAY00007689	SP3200872	2025-10-16	627.88	BACS	SETTLED	2025-10-16
+PAY00007690	SP3200872	2025-11-13	627.88	CHEQUE	SETTLED	2025-11-13
+PAY00007691	SP3200872	2025-12-11	627.88	POST_OFFICE	SETTLED	2025-12-11
+PAY00007692	SP3200872	2026-01-08	627.88	BACS	SETTLED	2026-01-08
+PAY00007693	SP3200872	2026-02-05	627.88	BACS	SETTLED	2026-02-05
+PAY00007694	SP3200872	2026-03-05	627.88	BACS	SETTLED	2026-03-05
+PAY00007695	SP3200872	2026-04-02	627.88	BACS	SETTLED	2026-04-02
+PAY00007698	SP3200873	2025-09-16	657.28	BACS	SETTLED	2025-09-16
+PAY00007699	SP3200873	2025-10-14	657.28	BACS	SETTLED	2025-10-14
+PAY00007700	SP3200873	2025-11-11	657.28	POST_OFFICE	SETTLED	2025-11-11
+PAY00007701	SP3200873	2025-12-09	657.28	BACS	SETTLED	2025-12-09
+PAY00007702	SP3200873	2026-01-06	657.28	POST_OFFICE	SETTLED	2026-01-06
+PAY00007703	SP3200873	2026-02-03	657.28	BACS	SETTLED	2026-02-03
+PAY00007704	SP3200873	2026-03-03	657.28	BACS	SETTLED	2026-03-03
+PAY00007705	SP3200873	2026-03-31	657.28	BACS	SETTLED	2026-03-31
+PAY00007708	SP3200874	2025-11-17	687.08	BACS	SETTLED	2025-11-17
+PAY00007709	SP3200874	2025-12-15	687.08	BACS	SETTLED	2025-12-15
+PAY00007710	SP3200874	2026-01-12	687.08	BACS	SETTLED	2026-01-12
+PAY00007711	SP3200874	2026-02-09	687.08	POST_OFFICE	SETTLED	2026-02-09
+PAY00007712	SP3200874	2026-03-09	687.08	BACS	SETTLED	2026-03-09
+PAY00007715	SP3200875	2025-12-11	907.20	BACS	SETTLED	2025-12-11
+PAY00007716	SP3200875	2026-01-08	907.20	POST_OFFICE	SETTLED	2026-01-08
+PAY00007717	SP3200875	2026-02-05	907.20	BACS	SETTLED	2026-02-05
+PAY00007718	SP3200875	2026-03-05	907.20	BACS	SETTLED	2026-03-05
+PAY00007719	SP3200875	2026-04-02	907.20	BACS	SETTLED	2026-04-02
+PAY00007722	SP3200876	2025-11-17	505.60	BACS	SETTLED	2025-11-17
+PAY00007723	SP3200876	2025-12-15	505.60	CHEQUE	SETTLED	2025-12-15
+PAY00007724	SP3200876	2026-01-12	505.60	CHEQUE	SETTLED	2026-01-12
+PAY00007725	SP3200876	2026-02-09	505.60	BACS	SETTLED	2026-02-09
+PAY00007726	SP3200876	2026-03-09	505.60	BACS	SETTLED	2026-03-09
+PAY00007729	SP3200877	2026-02-23	85.91	BACS	SETTLED	2026-02-23
+PAY00007730	SP3200877	2026-03-02	85.91	POST_OFFICE	SETTLED	2026-03-02
+PAY00007731	SP3200877	2026-03-09	85.91	BACS	SETTLED	2026-03-09
+PAY00007732	SP3200877	2026-03-16	85.91	POST_OFFICE	SETTLED	2026-03-16
+PAY00007733	SP3200877	2026-03-23	85.91	BACS	SETTLED	2026-03-23
+PAY00007734	SP3200877	2026-03-30	85.91	BACS	SETTLED	2026-03-30
+PAY00007737	SP3200878	2025-12-15	278.08	BACS	SETTLED	2025-12-15
+PAY00007738	SP3200878	2026-01-12	278.08	BACS	SETTLED	2026-01-12
+PAY00007739	SP3200878	2026-02-09	278.08	POST_OFFICE	SETTLED	2026-02-09
+PAY00007740	SP3200878	2026-03-09	278.08	POST_OFFICE	SETTLED	2026-03-09
+PAY00007743	SP3200879	2025-11-13	353.92	BACS	SETTLED	2025-11-13
+PAY00007744	SP3200879	2025-12-11	353.92	BACS	SETTLED	2025-12-11
+PAY00007745	SP3200879	2026-01-08	353.92	BACS	SETTLED	2026-01-08
+PAY00007746	SP3200879	2026-02-05	353.92	BACS	SETTLED	2026-02-05
+PAY00007747	SP3200879	2026-03-05	353.92	BACS	SETTLED	2026-03-05
+PAY00007748	SP3200879	2026-04-02	353.92	POST_OFFICE	SETTLED	2026-04-02
+PAY00007751	SP3200880	2025-01-02	985.92	BACS	SETTLED	2025-01-02
+PAY00007752	SP3200880	2025-04-03	985.92	POST_OFFICE	SETTLED	2025-04-03
+PAY00007753	SP3200880	2025-07-03	985.92	CHEQUE	SETTLED	2025-07-03
+PAY00007754	SP3200880	2025-10-02	985.92	BACS	SETTLED	2025-10-02
+PAY00007755	SP3200880	2026-01-01	985.92	POST_OFFICE	SETTLED	2026-01-01
+PAY00007756	SP3200880	2026-04-02	985.92	BACS	SETTLED	2026-04-02
+PAY00007759	SP3200881	2024-07-04	1951.95	POST_OFFICE	SETTLED	2024-07-04
+PAY00007760	SP3200881	2024-10-03	1951.95	BACS	SETTLED	2024-10-03
+PAY00007761	SP3200881	2025-01-02	1951.95	BACS	SETTLED	2025-01-02
+PAY00007762	SP3200881	2025-04-03	1951.95	BACS	SETTLED	2025-04-03
+PAY00007763	SP3200881	2025-07-03	1951.95	POST_OFFICE	SETTLED	2025-07-03
+PAY00007764	SP3200881	2025-10-02	1951.95	BACS	SETTLED	2025-10-02
+PAY00007765	SP3200881	2026-01-01	1951.95	BACS	SETTLED	2026-01-01
+PAY00007766	SP3200881	2026-04-02	1951.95	BACS	SETTLED	2026-04-02
+PAY00007769	SP3200882	2026-02-15	132.72	BACS	SETTLED	2026-02-15
+PAY00007770	SP3200882	2026-02-22	132.72	BACS	SETTLED	2026-02-22
+PAY00007771	SP3200882	2026-03-01	132.72	BACS	SETTLED	2026-03-01
+PAY00007772	SP3200882	2026-03-08	132.72	CHEQUE	SETTLED	2026-03-08
+PAY00007773	SP3200882	2026-03-15	132.72	BACS	SETTLED	2026-03-15
+PAY00007774	SP3200882	2026-03-22	132.72	BACS	SETTLED	2026-03-22
+PAY00007775	SP3200882	2026-03-29	132.72	CHEQUE	SETTLED	2026-03-29
+PAY00007776	SP3200882	2026-04-05	132.72	POST_OFFICE	SETTLED	2026-04-05
+PAY00007779	SP3200883	2025-08-22	606.72	BACS	SETTLED	2025-08-22
+PAY00007780	SP3200883	2025-09-19	606.72	BACS	SETTLED	2025-09-19
+PAY00007781	SP3200883	2025-10-17	606.72	POST_OFFICE	SETTLED	2025-10-17
+PAY00007782	SP3200883	2025-11-14	606.72	BACS	SETTLED	2025-11-14
+PAY00007783	SP3200883	2025-12-12	606.72	BACS	SETTLED	2025-12-12
+PAY00007784	SP3200883	2026-01-09	606.72	BACS	SETTLED	2026-01-09
+PAY00007785	SP3200883	2026-02-06	606.72	BACS	SETTLED	2026-02-06
+PAY00007786	SP3200883	2026-03-06	606.72	BACS	SETTLED	2026-03-06
+PAY00007787	SP3200883	2026-04-03	606.72	BACS	SETTLED	2026-04-03
+PAY00007790	SP3200884	2025-09-21	783.68	BACS	SETTLED	2025-09-21
+PAY00007791	SP3200884	2025-10-19	783.68	BACS	SETTLED	2025-10-19
+PAY00007792	SP3200884	2025-11-16	783.68	CHEQUE	SETTLED	2025-11-16
+PAY00007793	SP3200884	2025-12-14	783.68	BACS	SETTLED	2025-12-14
+PAY00007794	SP3200884	2026-01-11	783.68	CHEQUE	SETTLED	2026-01-11
+PAY00007795	SP3200884	2026-02-08	783.68	BACS	SETTLED	2026-02-08
+PAY00007796	SP3200884	2026-03-08	783.68	CHEQUE	SETTLED	2026-03-08
+PAY00007797	SP3200884	2026-04-05	783.68	BACS	SETTLED	2026-04-05
+PAY00007800	SP3200885	2026-02-21	107.44	BACS	SETTLED	2026-02-21
+PAY00007801	SP3200885	2026-02-28	107.44	BACS	SETTLED	2026-02-28
+PAY00007802	SP3200885	2026-03-07	107.44	BACS	SETTLED	2026-03-07
+PAY00007803	SP3200885	2026-03-14	107.44	BACS	SETTLED	2026-03-14
+PAY00007804	SP3200885	2026-03-21	107.44	BACS	SETTLED	2026-03-21
+PAY00007805	SP3200885	2026-03-28	107.44	BACS	SETTLED	2026-03-28
+PAY00007806	SP3200885	2026-04-04	107.44	BACS	SETTLED	2026-04-04
+PAY00007809	SP3200886	2026-02-09	71.76	BACS	SETTLED	2026-02-09
+PAY00007810	SP3200886	2026-02-16	71.76	BACS	SETTLED	2026-02-16
+PAY00007811	SP3200886	2026-02-23	71.76	BACS	SETTLED	2026-02-23
+PAY00007812	SP3200886	2026-03-02	71.76	BACS	SETTLED	2026-03-02
+PAY00007813	SP3200886	2026-03-09	71.76	BACS	SETTLED	2026-03-09
+PAY00007814	SP3200886	2026-03-16	71.76	BACS	SETTLED	2026-03-16
+PAY00007815	SP3200886	2026-03-23	71.76	BACS	SETTLED	2026-03-23
+PAY00007816	SP3200886	2026-03-30	71.76	POST_OFFICE	SETTLED	2026-03-30
+PAY00007819	SP3200887	2025-09-21	617.80	BACS	SETTLED	2025-09-21
+PAY00007820	SP3200887	2025-10-19	617.80	POST_OFFICE	SETTLED	2025-10-19
+PAY00007821	SP3200887	2025-11-16	617.80	BACS	SETTLED	2025-11-16
+PAY00007822	SP3200887	2025-12-14	617.80	POST_OFFICE	SETTLED	2025-12-14
+PAY00007823	SP3200887	2026-01-11	617.80	BACS	SETTLED	2026-01-11
+PAY00007824	SP3200887	2026-02-08	617.80	BACS	SETTLED	2026-02-08
+PAY00007825	SP3200887	2026-03-08	617.80	CHEQUE	SETTLED	2026-03-08
+PAY00007826	SP3200887	2026-04-05	617.80	BACS	SETTLED	2026-04-05
+PAY00007829	SP3200888	2026-02-22	94.80	BACS	SETTLED	2026-02-22
+PAY00007830	SP3200888	2026-03-01	94.80	BACS	SETTLED	2026-03-01
+PAY00007831	SP3200888	2026-03-08	94.80	POST_OFFICE	SETTLED	2026-03-08
+PAY00007832	SP3200888	2026-03-15	94.80	POST_OFFICE	SETTLED	2026-03-15
+PAY00007833	SP3200888	2026-03-22	94.80	BACS	SETTLED	2026-03-22
+PAY00007834	SP3200888	2026-03-29	94.80	BACS	SETTLED	2026-03-29
+PAY00007835	SP3200888	2026-04-05	94.80	BACS	SETTLED	2026-04-05
+PAY00007838	SP3200889	2026-02-12	151.68	BACS	SETTLED	2026-02-12
+PAY00007839	SP3200889	2026-02-19	151.68	BACS	SETTLED	2026-02-19
+PAY00007840	SP3200889	2026-02-26	151.68	BACS	SETTLED	2026-02-26
+PAY00007841	SP3200889	2026-03-05	151.68	CHEQUE	SETTLED	2026-03-05
+PAY00007842	SP3200889	2026-03-12	151.68	BACS	SETTLED	2026-03-12
+PAY00007843	SP3200889	2026-03-19	151.68	BACS	SETTLED	2026-03-19
+PAY00007844	SP3200889	2026-03-26	151.68	BACS	SETTLED	2026-03-26
+PAY00007845	SP3200889	2026-04-02	151.68	BACS	SETTLED	2026-04-02
+PAY00007848	SP3200890	2025-10-19	252.80	BACS	SETTLED	2025-10-19
+PAY00007849	SP3200890	2025-11-16	252.80	BACS	SETTLED	2025-11-16
+PAY00007850	SP3200890	2025-12-14	252.80	BACS	SETTLED	2025-12-14
+PAY00007851	SP3200890	2026-01-11	252.80	BACS	SETTLED	2026-01-11
+PAY00007852	SP3200890	2026-02-08	252.80	BACS	SETTLED	2026-02-08
+PAY00007853	SP3200890	2026-03-08	252.80	BACS	SETTLED	2026-03-08
+PAY00007854	SP3200890	2026-04-05	252.80	BACS	SETTLED	2026-04-05
+PAY00007857	SP3200891	2025-10-20	884.80	BACS	SETTLED	2025-10-20
+PAY00007858	SP3200891	2025-11-17	884.80	BACS	SETTLED	2025-11-17
+PAY00007859	SP3200891	2025-12-15	884.80	BACS	SETTLED	2025-12-15
+PAY00007860	SP3200891	2026-01-12	884.80	BACS	SETTLED	2026-01-12
+PAY00007861	SP3200891	2026-02-09	884.80	BACS	SETTLED	2026-02-09
+PAY00007862	SP3200891	2026-03-09	884.80	BACS	SETTLED	2026-03-09
+PAY00007865	SP3200892	2025-04-06	2814.89	BACS	SETTLED	2025-04-06
+PAY00007866	SP3200892	2025-07-06	2814.89	BACS	SETTLED	2025-07-06
+PAY00007867	SP3200892	2025-10-05	2814.89	BACS	SETTLED	2025-10-05
+PAY00007868	SP3200892	2026-01-04	2814.89	BACS	SETTLED	2026-01-04
+PAY00007869	SP3200892	2026-04-05	2814.89	BACS	SETTLED	2026-04-05
+PAY00007872	SP3200893	2025-10-20	379.20	BACS	SETTLED	2025-10-20
+PAY00007873	SP3200893	2025-11-17	379.20	BACS	SETTLED	2025-11-17
+PAY00007874	SP3200893	2025-12-15	379.20	POST_OFFICE	SETTLED	2025-12-15
+PAY00007875	SP3200893	2026-01-12	379.20	POST_OFFICE	SETTLED	2026-01-12
+PAY00007876	SP3200893	2026-02-09	379.20	BACS	SETTLED	2026-02-09
+PAY00007877	SP3200893	2026-03-09	379.20	BACS	SETTLED	2026-03-09
+PAY00007880	SP3200894	2025-11-17	328.64	BACS	SETTLED	2025-11-17
+PAY00007881	SP3200894	2025-12-15	328.64	BACS	SETTLED	2025-12-15
+PAY00007882	SP3200894	2026-01-12	328.64	BACS	SETTLED	2026-01-12
+PAY00007883	SP3200894	2026-02-09	328.64	BACS	SETTLED	2026-02-09
+PAY00007884	SP3200894	2026-03-09	328.64	BACS	SETTLED	2026-03-09
+PAY00007887	SP3200895	2026-02-21	214.88	BACS	SETTLED	2026-02-21
+PAY00007888	SP3200895	2026-02-28	214.88	BACS	SETTLED	2026-02-28
+PAY00007889	SP3200895	2026-03-07	214.88	BACS	SETTLED	2026-03-07
+PAY00007890	SP3200895	2026-03-14	214.88	BACS	SETTLED	2026-03-14
+PAY00007891	SP3200895	2026-03-21	214.88	BACS	SETTLED	2026-03-21
+PAY00007892	SP3200895	2026-03-28	214.88	BACS	SETTLED	2026-03-28
+PAY00007893	SP3200895	2026-04-04	214.88	BACS	SETTLED	2026-04-04
+PAY00007896	SP3200896	2025-12-09	632.00	BACS	SETTLED	2025-12-09
+PAY00007897	SP3200896	2026-01-06	632.00	BACS	SETTLED	2026-01-06
+PAY00007898	SP3200896	2026-02-03	632.00	CHEQUE	SETTLED	2026-02-03
+PAY00007899	SP3200896	2026-03-03	632.00	BACS	SETTLED	2026-03-03
+PAY00007900	SP3200896	2026-03-31	632.00	BACS	SETTLED	2026-03-31
+PAY00007903	SP3200897	2026-02-10	120.08	BACS	SETTLED	2026-02-10
+PAY00007904	SP3200897	2026-02-17	120.08	BACS	SETTLED	2026-02-17
+PAY00007905	SP3200897	2026-02-24	120.08	CHEQUE	SETTLED	2026-02-24
+PAY00007906	SP3200897	2026-03-03	120.08	BACS	SETTLED	2026-03-03
+PAY00007907	SP3200897	2026-03-10	120.08	POST_OFFICE	SETTLED	2026-03-10
+PAY00007908	SP3200897	2026-03-17	120.08	POST_OFFICE	SETTLED	2026-03-17
+PAY00007909	SP3200897	2026-03-24	120.08	BACS	SETTLED	2026-03-24
+PAY00007910	SP3200897	2026-03-31	120.08	BACS	SETTLED	2026-03-31
+PAY00007913	SP3200898	2025-11-17	758.40	BACS	SETTLED	2025-11-17
+PAY00007914	SP3200898	2025-12-15	758.40	BACS	SETTLED	2025-12-15
+PAY00007915	SP3200898	2026-01-12	758.40	BACS	SETTLED	2026-01-12
+PAY00007916	SP3200898	2026-02-09	758.40	BACS	SETTLED	2026-02-09
+PAY00007917	SP3200898	2026-03-09	758.40	BACS	SETTLED	2026-03-09
+PAY00007920	SP3200899	2025-11-12	670.80	BACS	SETTLED	2025-11-12
+PAY00007921	SP3200899	2025-12-10	670.80	BACS	SETTLED	2025-12-10
+PAY00007922	SP3200899	2026-01-07	670.80	BACS	SETTLED	2026-01-07
+PAY00007923	SP3200899	2026-02-04	670.80	BACS	SETTLED	2026-02-04
+PAY00007924	SP3200899	2026-03-04	670.80	BACS	SETTLED	2026-03-04
+PAY00007925	SP3200899	2026-04-01	670.80	POST_OFFICE	SETTLED	2026-04-01
+PAY00007928	SP3200900	2025-12-09	632.00	BACS	SETTLED	2025-12-09
+PAY00007929	SP3200900	2026-01-06	632.00	CHEQUE	SETTLED	2026-01-06
+PAY00007930	SP3200900	2026-02-03	632.00	BACS	SETTLED	2026-02-03
+PAY00007931	SP3200900	2026-03-03	632.00	CHEQUE	SETTLED	2026-03-03
+PAY00007932	SP3200900	2026-03-31	632.00	BACS	SETTLED	2026-03-31
+PAY00007935	SP3200901	2025-09-20	632.00	BACS	SETTLED	2025-09-20
+PAY00007936	SP3200901	2025-10-18	632.00	BACS	SETTLED	2025-10-18
+PAY00007937	SP3200901	2025-11-15	632.00	POST_OFFICE	SETTLED	2025-11-15
+PAY00007938	SP3200901	2025-12-13	632.00	BACS	SETTLED	2025-12-13
+PAY00007939	SP3200901	2026-01-10	632.00	BACS	SETTLED	2026-01-10
+PAY00007940	SP3200901	2026-02-07	632.00	BACS	SETTLED	2026-02-07
+PAY00007941	SP3200901	2026-03-07	632.00	BACS	SETTLED	2026-03-07
+PAY00007942	SP3200901	2026-04-04	632.00	BACS	SETTLED	2026-04-04
+PAY00007945	SP3200902	2025-11-11	808.96	BACS	SETTLED	2025-11-11
+PAY00007946	SP3200902	2025-12-09	808.96	BACS	SETTLED	2025-12-09
+PAY00007947	SP3200902	2026-01-06	808.96	POST_OFFICE	SETTLED	2026-01-06
+PAY00007948	SP3200902	2026-02-03	808.96	BACS	SETTLED	2026-02-03
+PAY00007949	SP3200902	2026-03-03	808.96	BACS	SETTLED	2026-03-03
+PAY00007950	SP3200902	2026-03-31	808.96	POST_OFFICE	SETTLED	2026-03-31
+PAY00007953	SP3200903	2025-12-15	859.52	BACS	SETTLED	2025-12-15
+PAY00007954	SP3200903	2026-01-12	859.52	BACS	SETTLED	2026-01-12
+PAY00007955	SP3200903	2026-02-09	859.52	POST_OFFICE	SETTLED	2026-02-09
+PAY00007956	SP3200903	2026-03-09	859.52	BACS	SETTLED	2026-03-09
+PAY00007959	SP3200904	2026-02-12	88.48	BACS	SETTLED	2026-02-12
+PAY00007960	SP3200904	2026-02-19	88.48	BACS	SETTLED	2026-02-19
+PAY00007961	SP3200904	2026-02-26	88.48	BACS	SETTLED	2026-02-26
+PAY00007962	SP3200904	2026-03-05	88.48	BACS	SETTLED	2026-03-05
+PAY00007963	SP3200904	2026-03-12	88.48	BACS	SETTLED	2026-03-12
+PAY00007964	SP3200904	2026-03-19	88.48	BACS	SETTLED	2026-03-19
+PAY00007965	SP3200904	2026-03-26	88.48	BACS	SETTLED	2026-03-26
+PAY00007966	SP3200904	2026-04-02	88.48	BACS	SETTLED	2026-04-02
+PAY00007969	SP3200905	2025-09-22	379.20	POST_OFFICE	SETTLED	2025-09-22
+PAY00007970	SP3200905	2025-10-20	379.20	CHEQUE	SETTLED	2025-10-20
+PAY00007971	SP3200905	2025-11-17	379.20	BACS	SETTLED	2025-11-17
+PAY00007972	SP3200905	2025-12-15	379.20	BACS	SETTLED	2025-12-15
+PAY00007973	SP3200905	2026-01-12	379.20	BACS	SETTLED	2026-01-12
+PAY00007974	SP3200905	2026-02-09	379.20	BACS	SETTLED	2026-02-09
+PAY00007975	SP3200905	2026-03-09	379.20	BACS	SETTLED	2026-03-09
+PAY00007978	SP3200906	2025-08-21	884.80	POST_OFFICE	SETTLED	2025-08-21
+PAY00007979	SP3200906	2025-09-18	884.80	BACS	SETTLED	2025-09-18
+PAY00007980	SP3200906	2025-10-16	884.80	POST_OFFICE	SETTLED	2025-10-16
+PAY00007981	SP3200906	2025-11-13	884.80	POST_OFFICE	SETTLED	2025-11-13
+PAY00007982	SP3200906	2025-12-11	884.80	BACS	SETTLED	2025-12-11
+PAY00007983	SP3200906	2026-01-08	884.80	BACS	SETTLED	2026-01-08
+PAY00007984	SP3200906	2026-02-05	884.80	BACS	SETTLED	2026-02-05
+PAY00007985	SP3200906	2026-03-05	884.80	BACS	SETTLED	2026-03-05
+PAY00007986	SP3200906	2026-04-02	884.80	CHEQUE	SETTLED	2026-04-02
+PAY00007989	SP3200907	2025-08-21	808.96	BACS	SETTLED	2025-08-21
+PAY00007990	SP3200907	2025-09-18	808.96	BACS	SETTLED	2025-09-18
+PAY00007991	SP3200907	2025-10-16	808.96	BACS	SETTLED	2025-10-16
+PAY00007992	SP3200907	2025-11-13	808.96	BACS	SETTLED	2025-11-13
+PAY00007993	SP3200907	2025-12-11	808.96	BACS	SETTLED	2025-12-11
+PAY00007994	SP3200907	2026-01-08	808.96	BACS	SETTLED	2026-01-08
+PAY00007995	SP3200907	2026-02-05	808.96	POST_OFFICE	SETTLED	2026-02-05
+PAY00007996	SP3200907	2026-03-05	808.96	BACS	SETTLED	2026-03-05
+PAY00007997	SP3200907	2026-04-02	808.96	POST_OFFICE	SETTLED	2026-04-02
+PAY00008000	SP3200908	2025-04-02	1561.04	BACS	SETTLED	2025-04-02
+PAY00008001	SP3200908	2025-07-02	1561.04	POST_OFFICE	SETTLED	2025-07-02
+PAY00008002	SP3200908	2025-10-01	1561.04	BACS	SETTLED	2025-10-01
+PAY00008003	SP3200908	2025-12-31	1561.04	BACS	SETTLED	2025-12-31
+PAY00008004	SP3200908	2026-04-01	1561.04	BACS	SETTLED	2026-04-01
+PAY00008007	SP3200909	2025-12-15	414.52	BACS	SETTLED	2025-12-15
+PAY00008008	SP3200909	2026-01-12	414.52	BACS	SETTLED	2026-01-12
+PAY00008009	SP3200909	2026-02-09	414.52	POST_OFFICE	SETTLED	2026-02-09
+PAY00008010	SP3200909	2026-03-09	414.52	BACS	SETTLED	2026-03-09
+PAY00008013	SP3200910	2025-12-13	1004.36	BACS	SETTLED	2025-12-13
+PAY00008014	SP3200910	2026-01-10	1004.36	BACS	SETTLED	2026-01-10
+PAY00008015	SP3200910	2026-02-07	1004.36	BACS	SETTLED	2026-02-07
+PAY00008016	SP3200910	2026-03-07	1004.36	BACS	SETTLED	2026-03-07
+PAY00008017	SP3200910	2026-04-04	1004.36	BACS	SETTLED	2026-04-04
+PAY00008020	SP3200911	2025-12-13	404.48	BACS	SETTLED	2025-12-13
+PAY00008021	SP3200911	2026-01-10	404.48	BACS	SETTLED	2026-01-10
+PAY00008022	SP3200911	2026-02-07	404.48	BACS	SETTLED	2026-02-07
+PAY00008023	SP3200911	2026-03-07	404.48	BACS	SETTLED	2026-03-07
+PAY00008024	SP3200911	2026-04-04	404.48	POST_OFFICE	SETTLED	2026-04-04
+PAY00008027	SP3200912	2026-02-14	183.08	BACS	SETTLED	2026-02-14
+PAY00008028	SP3200912	2026-02-21	183.08	BACS	SETTLED	2026-02-21
+PAY00008029	SP3200912	2026-02-28	183.08	BACS	SETTLED	2026-02-28
+PAY00008030	SP3200912	2026-03-07	183.08	POST_OFFICE	SETTLED	2026-03-07
+PAY00008031	SP3200912	2026-03-14	183.08	POST_OFFICE	SETTLED	2026-03-14
+PAY00008032	SP3200912	2026-03-21	183.08	BACS	SETTLED	2026-03-21
+PAY00008033	SP3200912	2026-03-28	183.08	BACS	SETTLED	2026-03-28
+PAY00008034	SP3200912	2026-04-04	183.08	BACS	SETTLED	2026-04-04
+PAY00008037	SP3200913	2025-08-19	404.48	BACS	SETTLED	2025-08-19
+PAY00008038	SP3200913	2025-09-16	404.48	BACS	SETTLED	2025-09-16
+PAY00008039	SP3200913	2025-10-14	404.48	BACS	SETTLED	2025-10-14
+PAY00008040	SP3200913	2025-11-11	404.48	BACS	SETTLED	2025-11-11
+PAY00008041	SP3200913	2025-12-09	404.48	BACS	SETTLED	2025-12-09
+PAY00008042	SP3200913	2026-01-06	404.48	BACS	SETTLED	2026-01-06
+PAY00008043	SP3200913	2026-02-03	404.48	BACS	SETTLED	2026-02-03
+PAY00008044	SP3200913	2026-03-03	404.48	BACS	SETTLED	2026-03-03
+PAY00008045	SP3200913	2026-03-31	404.48	BACS	SETTLED	2026-03-31
+PAY00008048	SP3200914	2026-03-04	59.57	POST_OFFICE	SETTLED	2026-03-04
+PAY00008049	SP3200914	2026-03-11	59.57	BACS	SETTLED	2026-03-11
+PAY00008050	SP3200914	2026-03-18	59.57	BACS	SETTLED	2026-03-18
+PAY00008051	SP3200914	2026-03-25	59.57	BACS	SETTLED	2026-03-25
+PAY00008052	SP3200914	2026-04-01	59.57	POST_OFFICE	SETTLED	2026-04-01
+PAY00008055	SP3200915	2026-03-09	108.08	CHEQUE	SETTLED	2026-03-09
+PAY00008056	SP3200915	2026-03-16	108.08	CHEQUE	SETTLED	2026-03-16
+PAY00008057	SP3200915	2026-03-23	108.08	BACS	SETTLED	2026-03-23
+PAY00008058	SP3200915	2026-03-30	108.08	CHEQUE	SETTLED	2026-03-30
+PAY00008061	SP3200916	2025-09-19	505.60	BACS	SETTLED	2025-09-19
+PAY00008062	SP3200916	2025-10-17	505.60	BACS	SETTLED	2025-10-17
+PAY00008063	SP3200916	2025-11-14	505.60	BACS	SETTLED	2025-11-14
+PAY00008064	SP3200916	2025-12-12	505.60	CHEQUE	SETTLED	2025-12-12
+PAY00008065	SP3200916	2026-01-09	505.60	BACS	SETTLED	2026-01-09
+PAY00008066	SP3200916	2026-02-06	505.60	POST_OFFICE	SETTLED	2026-02-06
+PAY00008067	SP3200916	2026-03-06	505.60	BACS	SETTLED	2026-03-06
+PAY00008068	SP3200916	2026-04-03	505.60	BACS	SETTLED	2026-04-03
+PAY00008071	SP3200917	2026-02-16	237.21	BACS	SETTLED	2026-02-16
+PAY00008072	SP3200917	2026-02-23	237.21	BACS	SETTLED	2026-02-23
+PAY00008073	SP3200917	2026-03-02	237.21	POST_OFFICE	SETTLED	2026-03-02
+PAY00008074	SP3200917	2026-03-09	237.21	BACS	SETTLED	2026-03-09
+PAY00008075	SP3200917	2026-03-16	237.21	BACS	SETTLED	2026-03-16
+PAY00008076	SP3200917	2026-03-23	237.21	BACS	SETTLED	2026-03-23
+PAY00008077	SP3200917	2026-03-30	237.21	CHEQUE	SETTLED	2026-03-30
+PAY00008080	SP3200918	2026-02-21	63.20	BACS	SETTLED	2026-02-21
+PAY00008081	SP3200918	2026-02-28	63.20	BACS	SETTLED	2026-02-28
+PAY00008082	SP3200918	2026-03-07	63.20	CHEQUE	SETTLED	2026-03-07
+PAY00008083	SP3200918	2026-03-14	63.20	CHEQUE	SETTLED	2026-03-14
+PAY00008084	SP3200918	2026-03-21	63.20	BACS	SETTLED	2026-03-21
+PAY00008085	SP3200918	2026-03-28	63.20	BACS	SETTLED	2026-03-28
+PAY00008086	SP3200918	2026-04-04	63.20	BACS	SETTLED	2026-04-04
+PAY00008089	SP3200919	2025-10-19	480.32	BACS	SETTLED	2025-10-19
+PAY00008090	SP3200919	2025-11-16	480.32	BACS	SETTLED	2025-11-16
+PAY00008091	SP3200919	2025-12-14	480.32	BACS	SETTLED	2025-12-14
+PAY00008092	SP3200919	2026-01-11	480.32	BACS	SETTLED	2026-01-11
+PAY00008093	SP3200919	2026-02-08	480.32	POST_OFFICE	SETTLED	2026-02-08
+PAY00008094	SP3200919	2026-03-08	480.32	POST_OFFICE	SETTLED	2026-03-08
+PAY00008095	SP3200919	2026-04-05	480.32	BACS	SETTLED	2026-04-05
+PAY00008098	SP3200920	2026-02-26	147.72	POST_OFFICE	SETTLED	2026-02-26
+PAY00008099	SP3200920	2026-03-05	147.72	BACS	SETTLED	2026-03-05
+PAY00008100	SP3200920	2026-03-12	147.72	BACS	SETTLED	2026-03-12
+PAY00008101	SP3200920	2026-03-19	147.72	BACS	SETTLED	2026-03-19
+PAY00008102	SP3200920	2026-03-26	147.72	BACS	SETTLED	2026-03-26
+PAY00008103	SP3200920	2026-04-02	147.72	BACS	SETTLED	2026-04-02
+PAY00008106	SP3200921	2025-10-19	657.28	BACS	SETTLED	2025-10-19
+PAY00008107	SP3200921	2025-11-16	657.28	BACS	SETTLED	2025-11-16
+PAY00008108	SP3200921	2025-12-14	657.28	CHEQUE	SETTLED	2025-12-14
+PAY00008109	SP3200921	2026-01-11	657.28	BACS	SETTLED	2026-01-11
+PAY00008110	SP3200921	2026-02-08	657.28	BACS	SETTLED	2026-02-08
+PAY00008111	SP3200921	2026-03-08	657.28	BACS	SETTLED	2026-03-08
+PAY00008112	SP3200921	2026-04-05	657.28	BACS	SETTLED	2026-04-05
+PAY00008115	SP3200922	2026-03-05	94.80	BACS	SETTLED	2026-03-05
+PAY00008116	SP3200922	2026-03-12	94.80	POST_OFFICE	SETTLED	2026-03-12
+PAY00008117	SP3200922	2026-03-19	94.80	BACS	SETTLED	2026-03-19
+PAY00008118	SP3200922	2026-03-26	94.80	BACS	SETTLED	2026-03-26
+PAY00008119	SP3200922	2026-04-02	94.80	BACS	SETTLED	2026-04-02
+PAY00008122	SP3200923	2025-10-14	758.40	BACS	SETTLED	2025-10-14
+PAY00008123	SP3200923	2025-11-11	758.40	BACS	SETTLED	2025-11-11
+PAY00008124	SP3200923	2025-12-09	758.40	BACS	SETTLED	2025-12-09
+PAY00008125	SP3200923	2026-01-06	758.40	BACS	SETTLED	2026-01-06
+PAY00008126	SP3200923	2026-02-03	758.40	BACS	SETTLED	2026-02-03
+PAY00008127	SP3200923	2026-03-03	758.40	POST_OFFICE	SETTLED	2026-03-03
+PAY00008128	SP3200923	2026-03-31	758.40	POST_OFFICE	SETTLED	2026-03-31
+PAY00008131	SP3200924	2025-11-13	429.76	CHEQUE	SETTLED	2025-11-13
+PAY00008132	SP3200924	2025-12-11	429.76	BACS	SETTLED	2025-12-11
+PAY00008133	SP3200924	2026-01-08	429.76	BACS	SETTLED	2026-01-08
+PAY00008134	SP3200924	2026-02-05	429.76	BACS	SETTLED	2026-02-05
+PAY00008135	SP3200924	2026-03-05	429.76	POST_OFFICE	SETTLED	2026-03-05
+PAY00008136	SP3200924	2026-04-02	429.76	BACS	SETTLED	2026-04-02
+PAY00008139	SP3200925	2025-12-09	554.00	POST_OFFICE	SETTLED	2025-12-09
+PAY00008140	SP3200925	2026-01-06	554.00	BACS	SETTLED	2026-01-06
+PAY00008141	SP3200925	2026-02-03	554.00	BACS	SETTLED	2026-02-03
+PAY00008142	SP3200925	2026-03-03	554.00	BACS	SETTLED	2026-03-03
+PAY00008143	SP3200925	2026-03-31	554.00	POST_OFFICE	SETTLED	2026-03-31
+PAY00008146	SP3200926	2025-11-15	791.64	BACS	SETTLED	2025-11-15
+PAY00008147	SP3200926	2025-12-13	791.64	POST_OFFICE	SETTLED	2025-12-13
+PAY00008148	SP3200926	2026-01-10	791.64	BACS	SETTLED	2026-01-10
+PAY00008149	SP3200926	2026-02-07	791.64	BACS	SETTLED	2026-02-07
+PAY00008150	SP3200926	2026-03-07	791.64	BACS	SETTLED	2026-03-07
+PAY00008151	SP3200926	2026-04-04	791.64	BACS	SETTLED	2026-04-04
+PAY00008154	SP3200927	2025-08-22	328.64	POST_OFFICE	SETTLED	2025-08-22
+PAY00008155	SP3200927	2025-09-19	328.64	BACS	SETTLED	2025-09-19
+PAY00008156	SP3200927	2025-10-17	328.64	BACS	SETTLED	2025-10-17
+PAY00008157	SP3200927	2025-11-14	328.64	BACS	SETTLED	2025-11-14
+PAY00008158	SP3200927	2025-12-12	328.64	BACS	SETTLED	2025-12-12
+PAY00008159	SP3200927	2026-01-09	328.64	BACS	SETTLED	2026-01-09
+PAY00008160	SP3200927	2026-02-06	328.64	BACS	SETTLED	2026-02-06
+PAY00008161	SP3200927	2026-03-06	328.64	BACS	SETTLED	2026-03-06
+PAY00008162	SP3200927	2026-04-03	328.64	BACS	SETTLED	2026-04-03
+PAY00008165	SP3200928	2026-02-24	75.84	BACS	SETTLED	2026-02-24
+PAY00008166	SP3200928	2026-03-03	75.84	POST_OFFICE	SETTLED	2026-03-03
+PAY00008167	SP3200928	2026-03-10	75.84	BACS	SETTLED	2026-03-10
+PAY00008168	SP3200928	2026-03-17	75.84	BACS	SETTLED	2026-03-17
+PAY00008169	SP3200928	2026-03-24	75.84	POST_OFFICE	SETTLED	2026-03-24
+PAY00008170	SP3200928	2026-03-31	75.84	BACS	SETTLED	2026-03-31
+PAY00008173	SP3200929	2025-08-22	278.08	BACS	SETTLED	2025-08-22
+PAY00008174	SP3200929	2025-09-19	278.08	BACS	SETTLED	2025-09-19
+PAY00008175	SP3200929	2025-10-17	278.08	BACS	SETTLED	2025-10-17
+PAY00008176	SP3200929	2025-11-14	278.08	BACS	SETTLED	2025-11-14
+PAY00008177	SP3200929	2025-12-12	278.08	BACS	SETTLED	2025-12-12
+PAY00008178	SP3200929	2026-01-09	278.08	CHEQUE	SETTLED	2026-01-09
+PAY00008179	SP3200929	2026-02-06	278.08	BACS	SETTLED	2026-02-06
+PAY00008180	SP3200929	2026-03-06	278.08	BACS	SETTLED	2026-03-06
+PAY00008181	SP3200929	2026-04-03	278.08	BACS	SETTLED	2026-04-03
+PAY00008184	SP3200930	2025-12-10	303.36	BACS	SETTLED	2025-12-10
+PAY00008185	SP3200930	2026-01-07	303.36	BACS	SETTLED	2026-01-07
+PAY00008186	SP3200930	2026-02-04	303.36	POST_OFFICE	SETTLED	2026-02-04
+PAY00008187	SP3200930	2026-03-04	303.36	POST_OFFICE	SETTLED	2026-03-04
+PAY00008188	SP3200930	2026-04-01	303.36	BACS	SETTLED	2026-04-01
+PAY00008191	SP3200931	2024-04-04	788.32	BACS	SETTLED	2024-04-04
+PAY00008192	SP3200931	2024-07-04	788.32	BACS	SETTLED	2024-07-04
+PAY00008193	SP3200931	2024-10-03	788.32	BACS	SETTLED	2024-10-03
+PAY00008194	SP3200931	2025-01-02	788.32	BACS	SETTLED	2025-01-02
+PAY00008195	SP3200931	2025-04-03	788.32	CHEQUE	SETTLED	2025-04-03
+PAY00008196	SP3200931	2025-07-03	788.32	BACS	SETTLED	2025-07-03
+PAY00008197	SP3200931	2025-10-02	788.32	BACS	SETTLED	2025-10-02
+PAY00008198	SP3200931	2026-01-01	788.32	BACS	SETTLED	2026-01-01
+PAY00008199	SP3200931	2026-04-02	788.32	BACS	SETTLED	2026-04-02
+PAY00008202	SP3200932	2025-11-15	306.24	BACS	SETTLED	2025-11-15
+PAY00008203	SP3200932	2025-12-13	306.24	BACS	SETTLED	2025-12-13
+PAY00008204	SP3200932	2026-01-10	306.24	BACS	SETTLED	2026-01-10
+PAY00008205	SP3200932	2026-02-07	306.24	BACS	SETTLED	2026-02-07
+PAY00008206	SP3200932	2026-03-07	306.24	BACS	SETTLED	2026-03-07
+PAY00008207	SP3200932	2026-04-04	306.24	BACS	SETTLED	2026-04-04
+PAY00008210	SP3200933	2025-12-09	404.48	POST_OFFICE	SETTLED	2025-12-09
+PAY00008211	SP3200933	2026-01-06	404.48	BACS	SETTLED	2026-01-06
+PAY00008212	SP3200933	2026-02-03	404.48	BACS	SETTLED	2026-02-03
+PAY00008213	SP3200933	2026-03-03	404.48	BACS	SETTLED	2026-03-03
+PAY00008214	SP3200933	2026-03-31	404.48	BACS	SETTLED	2026-03-31
+PAY00008217	SP3200934	2026-02-10	78.32	BACS	SETTLED	2026-02-10
+PAY00008218	SP3200934	2026-02-17	78.32	BACS	SETTLED	2026-02-17
+PAY00008219	SP3200934	2026-02-24	78.32	BACS	SETTLED	2026-02-24
+PAY00008220	SP3200934	2026-03-03	78.32	BACS	SETTLED	2026-03-03
+PAY00008221	SP3200934	2026-03-10	78.32	BACS	SETTLED	2026-03-10
+PAY00008222	SP3200934	2026-03-17	78.32	BACS	SETTLED	2026-03-17
+PAY00008223	SP3200934	2026-03-24	78.32	CHEQUE	SETTLED	2026-03-24
+PAY00008224	SP3200934	2026-03-31	78.32	BACS	SETTLED	2026-03-31
+PAY00008227	SP3200935	2026-02-12	176.96	POST_OFFICE	SETTLED	2026-02-12
+PAY00008228	SP3200935	2026-02-19	176.96	POST_OFFICE	SETTLED	2026-02-19
+PAY00008229	SP3200935	2026-02-26	176.96	BACS	SETTLED	2026-02-26
+PAY00008230	SP3200935	2026-03-05	176.96	BACS	SETTLED	2026-03-05
+PAY00008231	SP3200935	2026-03-12	176.96	BACS	SETTLED	2026-03-12
+PAY00008232	SP3200935	2026-03-19	176.96	BACS	SETTLED	2026-03-19
+PAY00008233	SP3200935	2026-03-26	176.96	BACS	SETTLED	2026-03-26
+PAY00008234	SP3200935	2026-04-02	176.96	BACS	SETTLED	2026-04-02
+PAY00008237	SP3200936	2024-07-06	1889.68	BACS	SETTLED	2024-07-06
+PAY00008238	SP3200936	2024-10-05	1889.68	BACS	SETTLED	2024-10-05
+PAY00008239	SP3200936	2025-01-04	1889.68	BACS	SETTLED	2025-01-04
+PAY00008240	SP3200936	2025-04-05	1889.68	POST_OFFICE	SETTLED	2025-04-05
+PAY00008241	SP3200936	2025-07-05	1889.68	BACS	SETTLED	2025-07-05
+PAY00008242	SP3200936	2025-10-04	1889.68	POST_OFFICE	SETTLED	2025-10-04
+PAY00008243	SP3200936	2026-01-03	1889.68	CHEQUE	SETTLED	2026-01-03
+PAY00008244	SP3200936	2026-04-04	1889.68	BACS	SETTLED	2026-04-04
+PAY00008247	SP3200937	2025-11-13	602.16	BACS	SETTLED	2025-11-13
+PAY00008248	SP3200937	2025-12-11	602.16	POST_OFFICE	SETTLED	2025-12-11
+PAY00008249	SP3200937	2026-01-08	602.16	BACS	SETTLED	2026-01-08
+PAY00008250	SP3200937	2026-02-05	602.16	BACS	SETTLED	2026-02-05
+PAY00008251	SP3200937	2026-03-05	602.16	BACS	SETTLED	2026-03-05
+PAY00008252	SP3200937	2026-04-02	602.16	BACS	SETTLED	2026-04-02
+PAY00008255	SP3200938	2026-02-14	63.20	BACS	SETTLED	2026-02-14
+PAY00008256	SP3200938	2026-02-21	63.20	BACS	SETTLED	2026-02-21
+PAY00008257	SP3200938	2026-02-28	63.20	POST_OFFICE	SETTLED	2026-02-28
+PAY00008258	SP3200938	2026-03-07	63.20	BACS	SETTLED	2026-03-07
+PAY00008259	SP3200938	2026-03-14	63.20	POST_OFFICE	SETTLED	2026-03-14
+PAY00008260	SP3200938	2026-03-21	63.20	BACS	SETTLED	2026-03-21
+PAY00008261	SP3200938	2026-03-28	63.20	BACS	SETTLED	2026-03-28
+PAY00008262	SP3200938	2026-04-04	63.20	BACS	SETTLED	2026-04-04
+PAY00008265	SP3200939	2025-10-19	733.12	BACS	SETTLED	2025-10-19
+PAY00008266	SP3200939	2025-11-16	733.12	BACS	SETTLED	2025-11-16
+PAY00008267	SP3200939	2025-12-14	733.12	BACS	SETTLED	2025-12-14
+PAY00008268	SP3200939	2026-01-11	733.12	BACS	SETTLED	2026-01-11
+PAY00008269	SP3200939	2026-02-08	733.12	POST_OFFICE	SETTLED	2026-02-08
+PAY00008270	SP3200939	2026-03-08	733.12	BACS	SETTLED	2026-03-08
+PAY00008271	SP3200939	2026-04-05	733.12	BACS	SETTLED	2026-04-05
+PAY00008274	SP3200940	2025-12-13	328.64	BACS	SETTLED	2025-12-13
+PAY00008275	SP3200940	2026-01-10	328.64	BACS	SETTLED	2026-01-10
+PAY00008276	SP3200940	2026-02-07	328.64	BACS	SETTLED	2026-02-07
+PAY00008277	SP3200940	2026-03-07	328.64	POST_OFFICE	SETTLED	2026-03-07
+PAY00008278	SP3200940	2026-04-04	328.64	BACS	SETTLED	2026-04-04
+PAY00008281	SP3200941	2025-08-24	328.64	BACS	SETTLED	2025-08-24
+PAY00008282	SP3200941	2025-09-21	328.64	BACS	SETTLED	2025-09-21
+PAY00008283	SP3200941	2025-10-19	328.64	POST_OFFICE	SETTLED	2025-10-19
+PAY00008284	SP3200941	2025-11-16	328.64	BACS	SETTLED	2025-11-16
+PAY00008285	SP3200941	2025-12-14	328.64	POST_OFFICE	SETTLED	2025-12-14
+PAY00008286	SP3200941	2026-01-11	328.64	POST_OFFICE	SETTLED	2026-01-11
+PAY00008287	SP3200941	2026-02-08	328.64	CHEQUE	SETTLED	2026-02-08
+PAY00008288	SP3200941	2026-03-08	328.64	CHEQUE	SETTLED	2026-03-08
+PAY00008289	SP3200941	2026-04-05	328.64	BACS	SETTLED	2026-04-05
+PAY00008292	SP3200942	2025-08-20	876.40	BACS	SETTLED	2025-08-20
+PAY00008293	SP3200942	2025-09-17	876.40	BACS	SETTLED	2025-09-17
+PAY00008294	SP3200942	2025-10-15	876.40	BACS	SETTLED	2025-10-15
+PAY00008295	SP3200942	2025-11-12	876.40	BACS	SETTLED	2025-11-12
+PAY00008296	SP3200942	2025-12-10	876.40	BACS	SETTLED	2025-12-10
+PAY00008297	SP3200942	2026-01-07	876.40	BACS	SETTLED	2026-01-07
+PAY00008298	SP3200942	2026-02-04	876.40	BACS	SETTLED	2026-02-04
+PAY00008299	SP3200942	2026-03-04	876.40	BACS	SETTLED	2026-03-04
+PAY00008300	SP3200942	2026-04-01	876.40	BACS	SETTLED	2026-04-01
+PAY00008303	SP3200943	2024-10-03	2711.28	BACS	SETTLED	2024-10-03
+PAY00008304	SP3200943	2025-01-02	2711.28	CHEQUE	SETTLED	2025-01-02
+PAY00008305	SP3200943	2025-04-03	2711.28	POST_OFFICE	SETTLED	2025-04-03
+PAY00008306	SP3200943	2025-07-03	2711.28	BACS	SETTLED	2025-07-03
+PAY00008307	SP3200943	2025-10-02	2711.28	BACS	SETTLED	2025-10-02
+PAY00008308	SP3200943	2026-01-01	2711.28	BACS	SETTLED	2026-01-01
+PAY00008309	SP3200943	2026-04-02	2711.28	BACS	SETTLED	2026-04-02
+PAY00008312	SP3200944	2026-02-13	60.83	BACS	SETTLED	2026-02-13
+PAY00008313	SP3200944	2026-02-20	60.83	CHEQUE	SETTLED	2026-02-20
+PAY00008314	SP3200944	2026-02-27	60.83	BACS	SETTLED	2026-02-27
+PAY00008315	SP3200944	2026-03-06	60.83	BACS	SETTLED	2026-03-06
+PAY00008316	SP3200944	2026-03-13	60.83	BACS	SETTLED	2026-03-13
+PAY00008317	SP3200944	2026-03-20	60.83	BACS	SETTLED	2026-03-20
+PAY00008318	SP3200944	2026-03-27	60.83	BACS	SETTLED	2026-03-27
+PAY00008319	SP3200944	2026-04-03	60.83	BACS	SETTLED	2026-04-03
+PAY00008322	SP3200945	2026-03-03	208.56	BACS	SETTLED	2026-03-03
+PAY00008323	SP3200945	2026-03-10	208.56	BACS	SETTLED	2026-03-10
+PAY00008324	SP3200945	2026-03-17	208.56	POST_OFFICE	SETTLED	2026-03-17
+PAY00008325	SP3200945	2026-03-24	208.56	POST_OFFICE	SETTLED	2026-03-24
+PAY00008326	SP3200945	2026-03-31	208.56	BACS	SETTLED	2026-03-31
+PAY00008329	SP3200946	2025-08-22	413.24	BACS	SETTLED	2025-08-22
+PAY00008330	SP3200946	2025-09-19	413.24	BACS	SETTLED	2025-09-19
+PAY00008331	SP3200946	2025-10-17	413.24	BACS	SETTLED	2025-10-17
+PAY00008332	SP3200946	2025-11-14	413.24	BACS	SETTLED	2025-11-14
+PAY00008333	SP3200946	2025-12-12	413.24	POST_OFFICE	SETTLED	2025-12-12
+PAY00008334	SP3200946	2026-01-09	413.24	BACS	SETTLED	2026-01-09
+PAY00008335	SP3200946	2026-02-06	413.24	POST_OFFICE	SETTLED	2026-02-06
+PAY00008336	SP3200946	2026-03-06	413.24	BACS	SETTLED	2026-03-06
+PAY00008337	SP3200946	2026-04-03	413.24	POST_OFFICE	SETTLED	2026-04-03
+PAY00008340	SP3200947	2026-02-13	165.55	BACS	SETTLED	2026-02-13
+PAY00008341	SP3200947	2026-02-20	165.55	BACS	SETTLED	2026-02-20
+PAY00008342	SP3200947	2026-02-27	165.55	BACS	SETTLED	2026-02-27
+PAY00008343	SP3200947	2026-03-06	165.55	BACS	SETTLED	2026-03-06
+PAY00008344	SP3200947	2026-03-13	165.55	BACS	SETTLED	2026-03-13
+PAY00008345	SP3200947	2026-03-20	165.55	BACS	SETTLED	2026-03-20
+PAY00008346	SP3200947	2026-03-27	165.55	BACS	SETTLED	2026-03-27
+PAY00008347	SP3200947	2026-04-03	165.55	BACS	SETTLED	2026-04-03
+PAY00008350	SP3200948	2026-02-08	113.76	POST_OFFICE	SETTLED	2026-02-08
+PAY00008351	SP3200948	2026-02-15	113.76	BACS	SETTLED	2026-02-15
+PAY00008352	SP3200948	2026-02-22	113.76	POST_OFFICE	SETTLED	2026-02-22
+PAY00008353	SP3200948	2026-03-01	113.76	BACS	SETTLED	2026-03-01
+PAY00008354	SP3200948	2026-03-08	113.76	BACS	SETTLED	2026-03-08
+PAY00008355	SP3200948	2026-03-15	113.76	BACS	SETTLED	2026-03-15
+PAY00008356	SP3200948	2026-03-22	113.76	BACS	SETTLED	2026-03-22
+PAY00008357	SP3200948	2026-03-29	113.76	POST_OFFICE	SETTLED	2026-03-29
+PAY00008358	SP3200948	2026-04-05	113.76	CHEQUE	SETTLED	2026-04-05
+PAY00008361	SP3200949	2024-10-02	2136.16	BACS	SETTLED	2024-10-02
+PAY00008362	SP3200949	2025-01-01	2136.16	CHEQUE	SETTLED	2025-01-01
+PAY00008363	SP3200949	2025-04-02	2136.16	BACS	SETTLED	2025-04-02
+PAY00008364	SP3200949	2025-07-02	2136.16	BACS	SETTLED	2025-07-02
+PAY00008365	SP3200949	2025-10-01	2136.16	BACS	SETTLED	2025-10-01
+PAY00008366	SP3200949	2025-12-31	2136.16	BACS	SETTLED	2025-12-31
+PAY00008367	SP3200949	2026-04-01	2136.16	BACS	SETTLED	2026-04-01
+PAY00008370	SP3200950	2025-09-18	530.88	BACS	SETTLED	2025-09-18
+PAY00008371	SP3200950	2025-10-16	530.88	BACS	SETTLED	2025-10-16
+PAY00008372	SP3200950	2025-11-13	530.88	BACS	SETTLED	2025-11-13
+PAY00008373	SP3200950	2025-12-11	530.88	BACS	SETTLED	2025-12-11
+PAY00008374	SP3200950	2026-01-08	530.88	BACS	SETTLED	2026-01-08
+PAY00008375	SP3200950	2026-02-05	530.88	BACS	SETTLED	2026-02-05
+PAY00008376	SP3200950	2026-03-05	530.88	BACS	SETTLED	2026-03-05
+PAY00008377	SP3200950	2026-04-02	530.88	BACS	SETTLED	2026-04-02
+PAY00008380	SP3200951	2026-02-15	82.16	BACS	SETTLED	2026-02-15
+PAY00008381	SP3200951	2026-02-22	82.16	BACS	SETTLED	2026-02-22
+PAY00008382	SP3200951	2026-03-01	82.16	BACS	SETTLED	2026-03-01
+PAY00008383	SP3200951	2026-03-08	82.16	BACS	SETTLED	2026-03-08
+PAY00008384	SP3200951	2026-03-15	82.16	BACS	SETTLED	2026-03-15
+PAY00008385	SP3200951	2026-03-22	82.16	BACS	SETTLED	2026-03-22
+PAY00008386	SP3200951	2026-03-29	82.16	BACS	SETTLED	2026-03-29
+PAY00008387	SP3200951	2026-04-05	82.16	BACS	SETTLED	2026-04-05
+PAY00008390	SP3200952	2025-04-01	2213.38	CHEQUE	SETTLED	2025-04-01
+PAY00008391	SP3200952	2025-07-01	2213.38	BACS	SETTLED	2025-07-01
+PAY00008392	SP3200952	2025-09-30	2213.38	BACS	SETTLED	2025-09-30
+PAY00008393	SP3200952	2025-12-30	2213.38	BACS	SETTLED	2025-12-30
+PAY00008394	SP3200952	2026-03-31	2213.38	BACS	SETTLED	2026-03-31
+PAY00008397	SP3200953	2025-11-17	328.64	BACS	SETTLED	2025-11-17
+PAY00008398	SP3200953	2025-12-15	328.64	BACS	SETTLED	2025-12-15
+PAY00008399	SP3200953	2026-01-12	328.64	POST_OFFICE	SETTLED	2026-01-12
+PAY00008400	SP3200953	2026-02-09	328.64	BACS	SETTLED	2026-02-09
+PAY00008401	SP3200953	2026-03-09	328.64	BACS	SETTLED	2026-03-09
+PAY00008404	SP3200954	2025-10-18	581.44	BACS	SETTLED	2025-10-18
+PAY00008405	SP3200954	2025-11-15	581.44	BACS	SETTLED	2025-11-15
+PAY00008406	SP3200954	2025-12-13	581.44	BACS	SETTLED	2025-12-13
+PAY00008407	SP3200954	2026-01-10	581.44	BACS	SETTLED	2026-01-10
+PAY00008408	SP3200954	2026-02-07	581.44	BACS	SETTLED	2026-02-07
+PAY00008409	SP3200954	2026-03-07	581.44	BACS	SETTLED	2026-03-07
+PAY00008410	SP3200954	2026-04-04	581.44	BACS	SETTLED	2026-04-04
+PAY00008413	SP3200955	2025-08-24	404.48	BACS	SETTLED	2025-08-24
+PAY00008414	SP3200955	2025-09-21	404.48	BACS	SETTLED	2025-09-21
+PAY00008415	SP3200955	2025-10-19	404.48	BACS	SETTLED	2025-10-19
+PAY00008416	SP3200955	2025-11-16	404.48	BACS	SETTLED	2025-11-16
+PAY00008417	SP3200955	2025-12-14	404.48	BACS	SETTLED	2025-12-14
+PAY00008418	SP3200955	2026-01-11	404.48	BACS	SETTLED	2026-01-11
+PAY00008419	SP3200955	2026-02-08	404.48	BACS	SETTLED	2026-02-08
+PAY00008420	SP3200955	2026-03-08	404.48	POST_OFFICE	SETTLED	2026-03-08
+PAY00008421	SP3200955	2026-04-05	404.48	BACS	SETTLED	2026-04-05
+PAY00008424	SP3200956	2025-11-14	657.28	BACS	SETTLED	2025-11-14
+PAY00008425	SP3200956	2025-12-12	657.28	CHEQUE	SETTLED	2025-12-12
+PAY00008426	SP3200956	2026-01-09	657.28	BACS	SETTLED	2026-01-09
+PAY00008427	SP3200956	2026-02-06	657.28	POST_OFFICE	SETTLED	2026-02-06
+PAY00008428	SP3200956	2026-03-06	657.28	BACS	SETTLED	2026-03-06
+PAY00008429	SP3200956	2026-04-03	657.28	BACS	SETTLED	2026-04-03
+PAY00008432	SP3200957	2025-09-20	353.92	BACS	SETTLED	2025-09-20
+PAY00008433	SP3200957	2025-10-18	353.92	BACS	SETTLED	2025-10-18
+PAY00008434	SP3200957	2025-11-15	353.92	BACS	SETTLED	2025-11-15
+PAY00008435	SP3200957	2025-12-13	353.92	BACS	SETTLED	2025-12-13
+PAY00008436	SP3200957	2026-01-10	353.92	BACS	SETTLED	2026-01-10
+PAY00008437	SP3200957	2026-02-07	353.92	BACS	SETTLED	2026-02-07
+PAY00008438	SP3200957	2026-03-07	353.92	CHEQUE	SETTLED	2026-03-07
+PAY00008439	SP3200957	2026-04-04	353.92	BACS	SETTLED	2026-04-04
+PAY00008442	SP3200958	2026-02-06	126.40	BACS	SETTLED	2026-02-06
+PAY00008443	SP3200958	2026-02-13	126.40	BACS	SETTLED	2026-02-13
+PAY00008444	SP3200958	2026-02-20	126.40	BACS	SETTLED	2026-02-20
+PAY00008445	SP3200958	2026-02-27	126.40	BACS	SETTLED	2026-02-27
+PAY00008446	SP3200958	2026-03-06	126.40	BACS	SETTLED	2026-03-06
+PAY00008447	SP3200958	2026-03-13	126.40	BACS	SETTLED	2026-03-13
+PAY00008448	SP3200958	2026-03-20	126.40	BACS	SETTLED	2026-03-20
+PAY00008449	SP3200958	2026-03-27	126.40	BACS	SETTLED	2026-03-27
+PAY00008450	SP3200958	2026-04-03	126.40	BACS	SETTLED	2026-04-03
+PAY00008453	SP3200959	2024-10-07	1069.51	BACS	SETTLED	2024-10-07
+PAY00008454	SP3200959	2025-01-06	1069.51	BACS	SETTLED	2025-01-06
+PAY00008455	SP3200959	2025-04-07	1069.51	BACS	SETTLED	2025-04-07
+PAY00008456	SP3200959	2025-07-07	1069.51	BACS	SETTLED	2025-07-07
+PAY00008457	SP3200959	2025-10-06	1069.51	BACS	SETTLED	2025-10-06
+PAY00008458	SP3200959	2026-01-05	1069.51	BACS	SETTLED	2026-01-05
+PAY00008461	SP3200960	2024-07-03	2382.64	BACS	SETTLED	2024-07-03
+PAY00008462	SP3200960	2024-10-02	2382.64	BACS	SETTLED	2024-10-02
+PAY00008463	SP3200960	2025-01-01	2382.64	CHEQUE	SETTLED	2025-01-01
+PAY00008464	SP3200960	2025-04-02	2382.64	POST_OFFICE	SETTLED	2025-04-02
+PAY00008465	SP3200960	2025-07-02	2382.64	BACS	SETTLED	2025-07-02
+PAY00008466	SP3200960	2025-10-01	2382.64	BACS	SETTLED	2025-10-01
+PAY00008467	SP3200960	2025-12-31	2382.64	BACS	SETTLED	2025-12-31
+PAY00008468	SP3200960	2026-04-01	2382.64	BACS	SETTLED	2026-04-01
+PAY00008471	SP3200961	2024-10-05	1478.88	CHEQUE	SETTLED	2024-10-05
+PAY00008472	SP3200961	2025-01-04	1478.88	BACS	SETTLED	2025-01-04
+PAY00008473	SP3200961	2025-04-05	1478.88	BACS	SETTLED	2025-04-05
+PAY00008474	SP3200961	2025-07-05	1478.88	BACS	SETTLED	2025-07-05
+PAY00008475	SP3200961	2025-10-04	1478.88	BACS	SETTLED	2025-10-04
+PAY00008476	SP3200961	2026-01-03	1478.88	BACS	SETTLED	2026-01-03
+PAY00008477	SP3200961	2026-04-04	1478.88	BACS	SETTLED	2026-04-04
+PAY00008480	SP3200962	2026-03-07	145.19	BACS	SETTLED	2026-03-07
+PAY00008481	SP3200962	2026-03-14	145.19	BACS	SETTLED	2026-03-14
+PAY00008482	SP3200962	2026-03-21	145.19	BACS	SETTLED	2026-03-21
+PAY00008483	SP3200962	2026-03-28	145.19	CHEQUE	SETTLED	2026-03-28
+PAY00008484	SP3200962	2026-04-04	145.19	BACS	SETTLED	2026-04-04
+PAY00008487	SP3200963	2025-11-11	379.20	POST_OFFICE	SETTLED	2025-11-11
+PAY00008488	SP3200963	2025-12-09	379.20	BACS	SETTLED	2025-12-09
+PAY00008489	SP3200963	2026-01-06	379.20	BACS	SETTLED	2026-01-06
+PAY00008490	SP3200963	2026-02-03	379.20	BACS	SETTLED	2026-02-03
+PAY00008491	SP3200963	2026-03-03	379.20	POST_OFFICE	SETTLED	2026-03-03
+PAY00008492	SP3200963	2026-03-31	379.20	POST_OFFICE	SETTLED	2026-03-31
+PAY00008495	SP3200964	2025-08-24	326.08	BACS	SETTLED	2025-08-24
+PAY00008496	SP3200964	2025-09-21	326.08	CHEQUE	SETTLED	2025-09-21
+PAY00008497	SP3200964	2025-10-19	326.08	BACS	SETTLED	2025-10-19
+PAY00008498	SP3200964	2025-11-16	326.08	BACS	SETTLED	2025-11-16
+PAY00008499	SP3200964	2025-12-14	326.08	BACS	SETTLED	2025-12-14
+PAY00008500	SP3200964	2026-01-11	326.08	POST_OFFICE	SETTLED	2026-01-11
+PAY00008501	SP3200964	2026-02-08	326.08	BACS	SETTLED	2026-02-08
+PAY00008502	SP3200964	2026-03-08	326.08	BACS	SETTLED	2026-03-08
+PAY00008503	SP3200964	2026-04-05	326.08	BACS	SETTLED	2026-04-05
+PAY00008506	SP3200965	2025-08-24	314.12	BACS	SETTLED	2025-08-24
+PAY00008507	SP3200965	2025-09-21	314.12	BACS	SETTLED	2025-09-21
+PAY00008508	SP3200965	2025-10-19	314.12	BACS	SETTLED	2025-10-19
+PAY00008509	SP3200965	2025-11-16	314.12	BACS	SETTLED	2025-11-16
+PAY00008510	SP3200965	2025-12-14	314.12	POST_OFFICE	SETTLED	2025-12-14
+PAY00008511	SP3200965	2026-01-11	314.12	CHEQUE	SETTLED	2026-01-11
+PAY00008512	SP3200965	2026-02-08	314.12	BACS	SETTLED	2026-02-08
+PAY00008513	SP3200965	2026-03-08	314.12	BACS	SETTLED	2026-03-08
+PAY00008514	SP3200965	2026-04-05	314.12	BACS	SETTLED	2026-04-05
+PAY00008517	SP3200966	2025-09-22	444.80	BACS	SETTLED	2025-09-22
+PAY00008518	SP3200966	2025-10-20	444.80	POST_OFFICE	SETTLED	2025-10-20
+PAY00008519	SP3200966	2025-11-17	444.80	BACS	SETTLED	2025-11-17
+PAY00008520	SP3200966	2025-12-15	444.80	BACS	SETTLED	2025-12-15
+PAY00008521	SP3200966	2026-01-12	444.80	BACS	SETTLED	2026-01-12
+PAY00008522	SP3200966	2026-02-09	444.80	BACS	SETTLED	2026-02-09
+PAY00008523	SP3200966	2026-03-09	444.80	BACS	SETTLED	2026-03-09
+PAY00008526	SP3200967	2025-11-17	329.28	BACS	SETTLED	2025-11-17
+PAY00008527	SP3200967	2025-12-15	329.28	BACS	SETTLED	2025-12-15
+PAY00008528	SP3200967	2026-01-12	329.28	BACS	SETTLED	2026-01-12
+PAY00008529	SP3200967	2026-02-09	329.28	BACS	SETTLED	2026-02-09
+PAY00008530	SP3200967	2026-03-09	329.28	BACS	SETTLED	2026-03-09
+PAY00008533	SP3200968	2025-10-19	758.40	BACS	SETTLED	2025-10-19
+PAY00008534	SP3200968	2025-11-16	758.40	BACS	SETTLED	2025-11-16
+PAY00008535	SP3200968	2025-12-14	758.40	BACS	SETTLED	2025-12-14
+PAY00008536	SP3200968	2026-01-11	758.40	BACS	SETTLED	2026-01-11
+PAY00008537	SP3200968	2026-02-08	758.40	BACS	SETTLED	2026-02-08
+PAY00008538	SP3200968	2026-03-08	758.40	BACS	SETTLED	2026-03-08
+PAY00008539	SP3200968	2026-04-05	758.40	BACS	SETTLED	2026-04-05
+PAY00008542	SP3200969	2025-01-06	1725.36	BACS	SETTLED	2025-01-06
+PAY00008543	SP3200969	2025-04-07	1725.36	BACS	SETTLED	2025-04-07
+PAY00008544	SP3200969	2025-07-07	1725.36	BACS	SETTLED	2025-07-07
+PAY00008545	SP3200969	2025-10-06	1725.36	BACS	SETTLED	2025-10-06
+PAY00008546	SP3200969	2026-01-05	1725.36	BACS	SETTLED	2026-01-05
+PAY00008549	SP3200970	2026-02-24	139.04	BACS	SETTLED	2026-02-24
+PAY00008550	SP3200970	2026-03-03	139.04	CHEQUE	SETTLED	2026-03-03
+PAY00008551	SP3200970	2026-03-10	139.04	BACS	SETTLED	2026-03-10
+PAY00008552	SP3200970	2026-03-17	139.04	BACS	SETTLED	2026-03-17
+PAY00008553	SP3200970	2026-03-24	139.04	BACS	SETTLED	2026-03-24
+PAY00008554	SP3200970	2026-03-31	139.04	BACS	SETTLED	2026-03-31
+PAY00008557	SP3200971	2024-04-04	2136.16	BACS	SETTLED	2024-04-04
+PAY00008558	SP3200971	2024-07-04	2136.16	BACS	SETTLED	2024-07-04
+PAY00008559	SP3200971	2024-10-03	2136.16	BACS	SETTLED	2024-10-03
+PAY00008560	SP3200971	2025-01-02	2136.16	CHEQUE	SETTLED	2025-01-02
+PAY00008561	SP3200971	2025-04-03	2136.16	BACS	SETTLED	2025-04-03
+PAY00008562	SP3200971	2025-07-03	2136.16	CHEQUE	SETTLED	2025-07-03
+PAY00008563	SP3200971	2025-10-02	2136.16	BACS	SETTLED	2025-10-02
+PAY00008564	SP3200971	2026-01-01	2136.16	BACS	SETTLED	2026-01-01
+PAY00008565	SP3200971	2026-04-02	2136.16	BACS	SETTLED	2026-04-02
+PAY00008568	SP3200972	2025-08-24	581.44	BACS	SETTLED	2025-08-24
+PAY00008569	SP3200972	2025-09-21	581.44	POST_OFFICE	SETTLED	2025-09-21
+PAY00008570	SP3200972	2025-10-19	581.44	POST_OFFICE	SETTLED	2025-10-19
+PAY00008571	SP3200972	2025-11-16	581.44	BACS	SETTLED	2025-11-16
+PAY00008572	SP3200972	2025-12-14	581.44	POST_OFFICE	SETTLED	2025-12-14
+PAY00008573	SP3200972	2026-01-11	581.44	BACS	SETTLED	2026-01-11
+PAY00008574	SP3200972	2026-02-08	581.44	BACS	SETTLED	2026-02-08
+PAY00008575	SP3200972	2026-03-08	581.44	POST_OFFICE	SETTLED	2026-03-08
+PAY00008576	SP3200972	2026-04-05	581.44	BACS	SETTLED	2026-04-05
+PAY00008579	SP3200973	2025-08-19	837.40	BACS	SETTLED	2025-08-19
+PAY00008580	SP3200973	2025-09-16	837.40	BACS	SETTLED	2025-09-16
+PAY00008581	SP3200973	2025-10-14	837.40	BACS	SETTLED	2025-10-14
+PAY00008582	SP3200973	2025-11-11	837.40	BACS	SETTLED	2025-11-11
+PAY00008583	SP3200973	2025-12-09	837.40	BACS	SETTLED	2025-12-09
+PAY00008584	SP3200973	2026-01-06	837.40	POST_OFFICE	SETTLED	2026-01-06
+PAY00008585	SP3200973	2026-02-03	837.40	BACS	SETTLED	2026-02-03
+PAY00008586	SP3200973	2026-03-03	837.40	BACS	SETTLED	2026-03-03
+PAY00008587	SP3200973	2026-03-31	837.40	BACS	SETTLED	2026-03-31
+PAY00008590	SP3200974	2025-10-16	808.96	CHEQUE	SETTLED	2025-10-16
+PAY00008591	SP3200974	2025-11-13	808.96	BACS	SETTLED	2025-11-13
+PAY00008592	SP3200974	2025-12-11	808.96	BACS	SETTLED	2025-12-11
+PAY00008593	SP3200974	2026-01-08	808.96	BACS	SETTLED	2026-01-08
+PAY00008594	SP3200974	2026-02-05	808.96	BACS	SETTLED	2026-02-05
+PAY00008595	SP3200974	2026-03-05	808.96	BACS	SETTLED	2026-03-05
+PAY00008596	SP3200974	2026-04-02	808.96	BACS	SETTLED	2026-04-02
+PAY00008599	SP3200975	2025-10-16	252.80	CHEQUE	SETTLED	2025-10-16
+PAY00008600	SP3200975	2025-11-13	252.80	BACS	SETTLED	2025-11-13
+PAY00008601	SP3200975	2025-12-11	252.80	BACS	SETTLED	2025-12-11
+PAY00008602	SP3200975	2026-01-08	252.80	BACS	SETTLED	2026-01-08
+PAY00008603	SP3200975	2026-02-05	252.80	BACS	SETTLED	2026-02-05
+PAY00008604	SP3200975	2026-03-05	252.80	POST_OFFICE	SETTLED	2026-03-05
+PAY00008605	SP3200975	2026-04-02	252.80	POST_OFFICE	SETTLED	2026-04-02
+PAY00008608	SP3200976	2026-02-22	180.39	BACS	SETTLED	2026-02-22
+PAY00008609	SP3200976	2026-03-01	180.39	BACS	SETTLED	2026-03-01
+PAY00008610	SP3200976	2026-03-08	180.39	BACS	SETTLED	2026-03-08
+PAY00008611	SP3200976	2026-03-15	180.39	BACS	SETTLED	2026-03-15
+PAY00008612	SP3200976	2026-03-22	180.39	BACS	SETTLED	2026-03-22
+PAY00008613	SP3200976	2026-03-29	180.39	BACS	SETTLED	2026-03-29
+PAY00008614	SP3200976	2026-04-05	180.39	POST_OFFICE	SETTLED	2026-04-05
+PAY00008617	SP3200977	2025-10-14	657.28	BACS	SETTLED	2025-10-14
+PAY00008618	SP3200977	2025-11-11	657.28	BACS	SETTLED	2025-11-11
+PAY00008619	SP3200977	2025-12-09	657.28	BACS	SETTLED	2025-12-09
+PAY00008620	SP3200977	2026-01-06	657.28	BACS	SETTLED	2026-01-06
+PAY00008621	SP3200977	2026-02-03	657.28	BACS	SETTLED	2026-02-03
+PAY00008622	SP3200977	2026-03-03	657.28	POST_OFFICE	SETTLED	2026-03-03
+PAY00008623	SP3200977	2026-03-31	657.28	BACS	SETTLED	2026-03-31
+PAY00008626	SP3200978	2026-02-14	151.68	BACS	SETTLED	2026-02-14
+PAY00008627	SP3200978	2026-02-21	151.68	BACS	SETTLED	2026-02-21
+PAY00008628	SP3200978	2026-02-28	151.68	BACS	SETTLED	2026-02-28
+PAY00008629	SP3200978	2026-03-07	151.68	POST_OFFICE	SETTLED	2026-03-07
+PAY00008630	SP3200978	2026-03-14	151.68	BACS	SETTLED	2026-03-14
+PAY00008631	SP3200978	2026-03-21	151.68	BACS	SETTLED	2026-03-21
+PAY00008632	SP3200978	2026-03-28	151.68	BACS	SETTLED	2026-03-28
+PAY00008633	SP3200978	2026-04-04	151.68	BACS	SETTLED	2026-04-04
+PAY00008636	SP3200979	2026-02-21	126.40	BACS	SETTLED	2026-02-21
+PAY00008637	SP3200979	2026-02-28	126.40	BACS	SETTLED	2026-02-28
+PAY00008638	SP3200979	2026-03-07	126.40	BACS	SETTLED	2026-03-07
+PAY00008639	SP3200979	2026-03-14	126.40	BACS	SETTLED	2026-03-14
+PAY00008640	SP3200979	2026-03-21	126.40	BACS	SETTLED	2026-03-21
+PAY00008641	SP3200979	2026-03-28	126.40	POST_OFFICE	SETTLED	2026-03-28
+PAY00008642	SP3200979	2026-04-04	126.40	BACS	SETTLED	2026-04-04
+PAY00008645	SP3200980	2026-02-17	161.77	BACS	SETTLED	2026-02-17
+PAY00008646	SP3200980	2026-02-24	161.77	BACS	SETTLED	2026-02-24
+PAY00008647	SP3200980	2026-03-03	161.77	BACS	SETTLED	2026-03-03
+PAY00008648	SP3200980	2026-03-10	161.77	BACS	SETTLED	2026-03-10
+PAY00008649	SP3200980	2026-03-17	161.77	BACS	SETTLED	2026-03-17
+PAY00008650	SP3200980	2026-03-24	161.77	BACS	SETTLED	2026-03-24
+PAY00008651	SP3200980	2026-03-31	161.77	BACS	SETTLED	2026-03-31
+PAY00008654	SP3200981	2025-11-17	632.00	BACS	SETTLED	2025-11-17
+PAY00008655	SP3200981	2025-12-15	632.00	BACS	SETTLED	2025-12-15
+PAY00008656	SP3200981	2026-01-12	632.00	BACS	SETTLED	2026-01-12
+PAY00008657	SP3200981	2026-02-09	632.00	BACS	SETTLED	2026-02-09
+PAY00008658	SP3200981	2026-03-09	632.00	BACS	SETTLED	2026-03-09
+PAY00008661	SP3200982	2025-11-17	682.56	BACS	SETTLED	2025-11-17
+PAY00008662	SP3200982	2025-12-15	682.56	POST_OFFICE	SETTLED	2025-12-15
+PAY00008663	SP3200982	2026-01-12	682.56	BACS	SETTLED	2026-01-12
+PAY00008664	SP3200982	2026-02-09	682.56	BACS	SETTLED	2026-02-09
+PAY00008665	SP3200982	2026-03-09	682.56	BACS	SETTLED	2026-03-09
+PAY00008668	SP3200983	2026-02-27	208.56	BACS	SETTLED	2026-02-27
+PAY00008669	SP3200983	2026-03-06	208.56	BACS	SETTLED	2026-03-06
+PAY00008670	SP3200983	2026-03-13	208.56	BACS	SETTLED	2026-03-13
+PAY00008671	SP3200983	2026-03-20	208.56	BACS	SETTLED	2026-03-20
+PAY00008672	SP3200983	2026-03-27	208.56	BACS	SETTLED	2026-03-27
+PAY00008673	SP3200983	2026-04-03	208.56	BACS	SETTLED	2026-04-03
+PAY00008676	SP3200984	2025-12-09	480.32	BACS	SETTLED	2025-12-09
+PAY00008677	SP3200984	2026-01-06	480.32	BACS	SETTLED	2026-01-06
+PAY00008678	SP3200984	2026-02-03	480.32	BACS	SETTLED	2026-02-03
+PAY00008679	SP3200984	2026-03-03	480.32	BACS	SETTLED	2026-03-03
+PAY00008680	SP3200984	2026-03-31	480.32	POST_OFFICE	SETTLED	2026-03-31
+PAY00008683	SP3200985	2024-10-07	821.60	BACS	SETTLED	2024-10-07
+PAY00008684	SP3200985	2025-01-06	821.60	BACS	SETTLED	2025-01-06
+PAY00008685	SP3200985	2025-04-07	821.60	BACS	SETTLED	2025-04-07
+PAY00008686	SP3200985	2025-07-07	821.60	BACS	SETTLED	2025-07-07
+PAY00008687	SP3200985	2025-10-06	821.60	BACS	SETTLED	2025-10-06
+PAY00008688	SP3200985	2026-01-05	821.60	BACS	SETTLED	2026-01-05
+PAY00008691	SP3200986	2025-10-15	497.52	POST_OFFICE	SETTLED	2025-10-15
+PAY00008692	SP3200986	2025-11-12	497.52	BACS	SETTLED	2025-11-12
+PAY00008693	SP3200986	2025-12-10	497.52	BACS	SETTLED	2025-12-10
+PAY00008694	SP3200986	2026-01-07	497.52	BACS	SETTLED	2026-01-07
+PAY00008695	SP3200986	2026-02-04	497.52	BACS	SETTLED	2026-02-04
+PAY00008696	SP3200986	2026-03-04	497.52	BACS	SETTLED	2026-03-04
+PAY00008697	SP3200986	2026-04-01	497.52	BACS	SETTLED	2026-04-01
+PAY00008700	SP3200987	2025-12-13	808.96	BACS	SETTLED	2025-12-13
+PAY00008701	SP3200987	2026-01-10	808.96	BACS	SETTLED	2026-01-10
+PAY00008702	SP3200987	2026-02-07	808.96	BACS	SETTLED	2026-02-07
+PAY00008703	SP3200987	2026-03-07	808.96	BACS	SETTLED	2026-03-07
+PAY00008704	SP3200987	2026-04-04	808.96	BACS	SETTLED	2026-04-04
+PAY00008707	SP3200988	2026-03-02	214.88	BACS	SETTLED	2026-03-02
+PAY00008708	SP3200988	2026-03-09	214.88	POST_OFFICE	SETTLED	2026-03-09
+PAY00008709	SP3200988	2026-03-16	214.88	BACS	SETTLED	2026-03-16
+PAY00008710	SP3200988	2026-03-23	214.88	BACS	SETTLED	2026-03-23
+PAY00008711	SP3200988	2026-03-30	214.88	BACS	SETTLED	2026-03-30
+PAY00008714	SP3200989	2025-12-13	733.12	BACS	SETTLED	2025-12-13
+PAY00008715	SP3200989	2026-01-10	733.12	BACS	SETTLED	2026-01-10
+PAY00008716	SP3200989	2026-02-07	733.12	POST_OFFICE	SETTLED	2026-02-07
+PAY00008717	SP3200989	2026-03-07	733.12	BACS	SETTLED	2026-03-07
+PAY00008718	SP3200989	2026-04-04	733.12	BACS	SETTLED	2026-04-04
+PAY00008721	SP3200990	2024-10-01	2300.48	BACS	SETTLED	2024-10-01
+PAY00008722	SP3200990	2024-12-31	2300.48	POST_OFFICE	SETTLED	2024-12-31
+PAY00008723	SP3200990	2025-04-01	2300.48	BACS	SETTLED	2025-04-01
+PAY00008724	SP3200990	2025-07-01	2300.48	BACS	SETTLED	2025-07-01
+PAY00008725	SP3200990	2025-09-30	2300.48	BACS	SETTLED	2025-09-30
+PAY00008726	SP3200990	2025-12-30	2300.48	BACS	SETTLED	2025-12-30
+PAY00008727	SP3200990	2026-03-31	2300.48	BACS	SETTLED	2026-03-31
+PAY00008730	SP3200991	2026-02-26	253.48	CHEQUE	SETTLED	2026-02-26
+PAY00008731	SP3200991	2026-03-05	253.48	POST_OFFICE	SETTLED	2026-03-05
+PAY00008732	SP3200991	2026-03-12	253.48	BACS	SETTLED	2026-03-12
+PAY00008733	SP3200991	2026-03-19	253.48	BACS	SETTLED	2026-03-19
+PAY00008734	SP3200991	2026-03-26	253.48	BACS	SETTLED	2026-03-26
+PAY00008735	SP3200991	2026-04-02	253.48	BACS	SETTLED	2026-04-02
+PAY00008738	SP3200992	2025-08-25	643.24	BACS	SETTLED	2025-08-25
+PAY00008739	SP3200992	2025-09-22	643.24	BACS	SETTLED	2025-09-22
+PAY00008740	SP3200992	2025-10-20	643.24	BACS	SETTLED	2025-10-20
+PAY00008741	SP3200992	2025-11-17	643.24	BACS	SETTLED	2025-11-17
+PAY00008742	SP3200992	2025-12-15	643.24	POST_OFFICE	SETTLED	2025-12-15
+PAY00008743	SP3200992	2026-01-12	643.24	POST_OFFICE	SETTLED	2026-01-12
+PAY00008744	SP3200992	2026-02-09	643.24	POST_OFFICE	SETTLED	2026-02-09
+PAY00008745	SP3200992	2026-03-09	643.24	BACS	SETTLED	2026-03-09
+PAY00008748	SP3200993	2026-03-08	183.28	BACS	SETTLED	2026-03-08
+PAY00008749	SP3200993	2026-03-15	183.28	BACS	SETTLED	2026-03-15
+PAY00008750	SP3200993	2026-03-22	183.28	BACS	SETTLED	2026-03-22
+PAY00008751	SP3200993	2026-03-29	183.28	BACS	SETTLED	2026-03-29
+PAY00008752	SP3200993	2026-04-05	183.28	BACS	SETTLED	2026-04-05
+PAY00008755	SP3200994	2026-02-07	176.96	BACS	SETTLED	2026-02-07
+PAY00008756	SP3200994	2026-02-14	176.96	BACS	SETTLED	2026-02-14
+PAY00008757	SP3200994	2026-02-21	176.96	BACS	SETTLED	2026-02-21
+PAY00008758	SP3200994	2026-02-28	176.96	BACS	SETTLED	2026-02-28
+PAY00008759	SP3200994	2026-03-07	176.96	BACS	SETTLED	2026-03-07
+PAY00008760	SP3200994	2026-03-14	176.96	BACS	SETTLED	2026-03-14
+PAY00008761	SP3200994	2026-03-21	176.96	BACS	SETTLED	2026-03-21
+PAY00008762	SP3200994	2026-03-28	176.96	BACS	SETTLED	2026-03-28
+PAY00008763	SP3200994	2026-04-04	176.96	POST_OFFICE	SETTLED	2026-04-04
+PAY00008766	SP3200995	2025-08-25	468.20	BACS	SETTLED	2025-08-25
+PAY00008767	SP3200995	2025-09-22	468.20	BACS	SETTLED	2025-09-22
+PAY00008768	SP3200995	2025-10-20	468.20	BACS	SETTLED	2025-10-20
+PAY00008769	SP3200995	2025-11-17	468.20	BACS	SETTLED	2025-11-17
+PAY00008770	SP3200995	2025-12-15	468.20	BACS	SETTLED	2025-12-15
+PAY00008771	SP3200995	2026-01-12	468.20	BACS	SETTLED	2026-01-12
+PAY00008772	SP3200995	2026-02-09	468.20	BACS	SETTLED	2026-02-09
+PAY00008773	SP3200995	2026-03-09	468.20	BACS	SETTLED	2026-03-09
+PAY00008776	SP3200996	2025-10-19	404.48	BACS	SETTLED	2025-10-19
+PAY00008777	SP3200996	2025-11-16	404.48	BACS	SETTLED	2025-11-16
+PAY00008778	SP3200996	2025-12-14	404.48	POST_OFFICE	SETTLED	2025-12-14
+PAY00008779	SP3200996	2026-01-11	404.48	BACS	SETTLED	2026-01-11
+PAY00008780	SP3200996	2026-02-08	404.48	BACS	SETTLED	2026-02-08
+PAY00008781	SP3200996	2026-03-08	404.48	BACS	SETTLED	2026-03-08
+PAY00008782	SP3200996	2026-04-05	404.48	BACS	SETTLED	2026-04-05
+PAY00008785	SP3200997	2025-12-11	556.16	BACS	SETTLED	2025-12-11
+PAY00008786	SP3200997	2026-01-08	556.16	BACS	SETTLED	2026-01-08
+PAY00008787	SP3200997	2026-02-05	556.16	BACS	SETTLED	2026-02-05
+PAY00008788	SP3200997	2026-03-05	556.16	BACS	SETTLED	2026-03-05
+PAY00008789	SP3200997	2026-04-02	556.16	BACS	SETTLED	2026-04-02
+PAY00008792	SP3200998	2025-11-11	726.60	BACS	SETTLED	2025-11-11
+PAY00008793	SP3200998	2025-12-09	726.60	BACS	SETTLED	2025-12-09
+PAY00008794	SP3200998	2026-01-06	726.60	BACS	SETTLED	2026-01-06
+PAY00008795	SP3200998	2026-02-03	726.60	BACS	SETTLED	2026-02-03
+PAY00008796	SP3200998	2026-03-03	726.60	BACS	SETTLED	2026-03-03
+PAY00008797	SP3200998	2026-03-31	726.60	BACS	SETTLED	2026-03-31
+PAY00008800	SP3200999	2025-11-15	632.00	BACS	SETTLED	2025-11-15
+PAY00008801	SP3200999	2025-12-13	632.00	BACS	SETTLED	2025-12-13
+PAY00008802	SP3200999	2026-01-10	632.00	BACS	SETTLED	2026-01-10
+PAY00008803	SP3200999	2026-02-07	632.00	CHEQUE	SETTLED	2026-02-07
+PAY00008804	SP3200999	2026-03-07	632.00	BACS	SETTLED	2026-03-07
+PAY00008805	SP3200999	2026-04-04	632.00	POST_OFFICE	SETTLED	2026-04-04
+PAY00008808	SP3201000	2025-09-19	556.16	BACS	SETTLED	2025-09-19
+PAY00008809	SP3201000	2025-10-17	556.16	CHEQUE	SETTLED	2025-10-17
+PAY00008810	SP3201000	2025-11-14	556.16	BACS	SETTLED	2025-11-14
+PAY00008811	SP3201000	2025-12-12	556.16	BACS	SETTLED	2025-12-12
+PAY00008812	SP3201000	2026-01-09	556.16	BACS	SETTLED	2026-01-09
+PAY00008813	SP3201000	2026-02-06	556.16	BACS	SETTLED	2026-02-06
+PAY00008814	SP3201000	2026-03-06	556.16	BACS	SETTLED	2026-03-06
+PAY00008815	SP3201000	2026-04-03	556.16	BACS	SETTLED	2026-04-03
+PAY00008818	SP3201001	2025-12-09	848.44	BACS	SETTLED	2025-12-09
+PAY00008819	SP3201001	2026-01-06	848.44	BACS	SETTLED	2026-01-06
+PAY00008820	SP3201001	2026-02-03	848.44	POST_OFFICE	SETTLED	2026-02-03
+PAY00008821	SP3201001	2026-03-03	848.44	BACS	SETTLED	2026-03-03
+PAY00008822	SP3201001	2026-03-31	848.44	BACS	SETTLED	2026-03-31
+PAY00008825	SP3201002	2025-09-21	404.48	BACS	SETTLED	2025-09-21
+PAY00008826	SP3201002	2025-10-19	404.48	BACS	SETTLED	2025-10-19
+PAY00008827	SP3201002	2025-11-16	404.48	POST_OFFICE	SETTLED	2025-11-16
+PAY00008828	SP3201002	2025-12-14	404.48	POST_OFFICE	SETTLED	2025-12-14
+PAY00008829	SP3201002	2026-01-11	404.48	BACS	SETTLED	2026-01-11
+PAY00008830	SP3201002	2026-02-08	404.48	BACS	SETTLED	2026-02-08
+PAY00008831	SP3201002	2026-03-08	404.48	POST_OFFICE	SETTLED	2026-03-08
+PAY00008832	SP3201002	2026-04-05	404.48	BACS	SETTLED	2026-04-05
+PAY00008835	SP3201003	2025-11-13	808.96	BACS	SETTLED	2025-11-13
+PAY00008836	SP3201003	2025-12-11	808.96	BACS	SETTLED	2025-12-11
+PAY00008837	SP3201003	2026-01-08	808.96	BACS	SETTLED	2026-01-08
+PAY00008838	SP3201003	2026-02-05	808.96	BACS	SETTLED	2026-02-05
+PAY00008839	SP3201003	2026-03-05	808.96	BACS	SETTLED	2026-03-05
+PAY00008840	SP3201003	2026-04-02	808.96	BACS	SETTLED	2026-04-02
+PAY00008843	SP3201004	2025-09-21	581.44	POST_OFFICE	SETTLED	2025-09-21
+PAY00008844	SP3201004	2025-10-19	581.44	BACS	SETTLED	2025-10-19
+PAY00008845	SP3201004	2025-11-16	581.44	BACS	SETTLED	2025-11-16
+PAY00008846	SP3201004	2025-12-14	581.44	POST_OFFICE	SETTLED	2025-12-14
+PAY00008847	SP3201004	2026-01-11	581.44	BACS	SETTLED	2026-01-11
+PAY00008848	SP3201004	2026-02-08	581.44	BACS	SETTLED	2026-02-08
+PAY00008849	SP3201004	2026-03-08	581.44	BACS	SETTLED	2026-03-08
+PAY00008850	SP3201004	2026-04-05	581.44	POST_OFFICE	SETTLED	2026-04-05
+PAY00008853	SP3201005	2025-12-15	569.68	BACS	SETTLED	2025-12-15
+PAY00008854	SP3201005	2026-01-12	569.68	BACS	SETTLED	2026-01-12
+PAY00008855	SP3201005	2026-02-09	569.68	BACS	SETTLED	2026-02-09
+PAY00008856	SP3201005	2026-03-09	569.68	BACS	SETTLED	2026-03-09
+PAY00008859	SP3201006	2024-07-02	2629.12	BACS	SETTLED	2024-07-02
+PAY00008860	SP3201006	2024-10-01	2629.12	CHEQUE	SETTLED	2024-10-01
+PAY00008861	SP3201006	2024-12-31	2629.12	BACS	SETTLED	2024-12-31
+PAY00008862	SP3201006	2025-04-01	2629.12	POST_OFFICE	SETTLED	2025-04-01
+PAY00008863	SP3201006	2025-07-01	2629.12	BACS	SETTLED	2025-07-01
+PAY00008864	SP3201006	2025-09-30	2629.12	BACS	SETTLED	2025-09-30
+PAY00008865	SP3201006	2025-12-30	2629.12	BACS	SETTLED	2025-12-30
+PAY00008866	SP3201006	2026-03-31	2629.12	POST_OFFICE	SETTLED	2026-03-31
+PAY00008869	SP3201007	2026-02-18	65.80	BACS	SETTLED	2026-02-18
+PAY00008870	SP3201007	2026-02-25	65.80	BACS	SETTLED	2026-02-25
+PAY00008871	SP3201007	2026-03-04	65.80	BACS	SETTLED	2026-03-04
+PAY00008872	SP3201007	2026-03-11	65.80	BACS	SETTLED	2026-03-11
+PAY00008873	SP3201007	2026-03-18	65.80	BACS	SETTLED	2026-03-18
+PAY00008874	SP3201007	2026-03-25	65.80	BACS	SETTLED	2026-03-25
+PAY00008875	SP3201007	2026-04-01	65.80	BACS	SETTLED	2026-04-01
+PAY00008878	SP3201008	2026-02-18	221.20	BACS	SETTLED	2026-02-18
+PAY00008879	SP3201008	2026-02-25	221.20	POST_OFFICE	SETTLED	2026-02-25
+PAY00008880	SP3201008	2026-03-04	221.20	POST_OFFICE	SETTLED	2026-03-04
+PAY00008881	SP3201008	2026-03-11	221.20	POST_OFFICE	SETTLED	2026-03-11
+PAY00008882	SP3201008	2026-03-18	221.20	BACS	SETTLED	2026-03-18
+PAY00008883	SP3201008	2026-03-25	221.20	BACS	SETTLED	2026-03-25
+PAY00008884	SP3201008	2026-04-01	221.20	BACS	SETTLED	2026-04-01
+PAY00008887	SP3201009	2026-02-04	205.79	BACS	SETTLED	2026-02-04
+PAY00008888	SP3201009	2026-02-11	205.79	BACS	SETTLED	2026-02-11
+PAY00008889	SP3201009	2026-02-18	205.79	BACS	SETTLED	2026-02-18
+PAY00008890	SP3201009	2026-02-25	205.79	BACS	SETTLED	2026-02-25
+PAY00008891	SP3201009	2026-03-04	205.79	BACS	SETTLED	2026-03-04
+PAY00008892	SP3201009	2026-03-11	205.79	BACS	SETTLED	2026-03-11
+PAY00008893	SP3201009	2026-03-18	205.79	BACS	SETTLED	2026-03-18
+PAY00008894	SP3201009	2026-03-25	205.79	BACS	SETTLED	2026-03-25
+PAY00008895	SP3201009	2026-04-01	205.79	BACS	SETTLED	2026-04-01
+PAY00008898	SP3201010	2025-09-21	353.92	BACS	SETTLED	2025-09-21
+PAY00008899	SP3201010	2025-10-19	353.92	BACS	SETTLED	2025-10-19
+PAY00008900	SP3201010	2025-11-16	353.92	BACS	SETTLED	2025-11-16
+PAY00008901	SP3201010	2025-12-14	353.92	BACS	SETTLED	2025-12-14
+PAY00008902	SP3201010	2026-01-11	353.92	BACS	SETTLED	2026-01-11
+PAY00008903	SP3201010	2026-02-08	353.92	BACS	SETTLED	2026-02-08
+PAY00008904	SP3201010	2026-03-08	353.92	BACS	SETTLED	2026-03-08
+PAY00008905	SP3201010	2026-04-05	353.92	BACS	SETTLED	2026-04-05
+PAY00008908	SP3201011	2025-11-12	558.56	BACS	SETTLED	2025-11-12
+PAY00008909	SP3201011	2025-12-10	558.56	BACS	SETTLED	2025-12-10
+PAY00008910	SP3201011	2026-01-07	558.56	BACS	SETTLED	2026-01-07
+PAY00008911	SP3201011	2026-02-04	558.56	BACS	SETTLED	2026-02-04
+PAY00008912	SP3201011	2026-03-04	558.56	BACS	SETTLED	2026-03-04
+PAY00008913	SP3201011	2026-04-01	558.56	BACS	SETTLED	2026-04-01
+PAY00008916	SP3201012	2026-03-04	164.32	POST_OFFICE	SETTLED	2026-03-04
+PAY00008917	SP3201012	2026-03-11	164.32	BACS	SETTLED	2026-03-11
+PAY00008918	SP3201012	2026-03-18	164.32	BACS	SETTLED	2026-03-18
+PAY00008919	SP3201012	2026-03-25	164.32	BACS	SETTLED	2026-03-25
+PAY00008920	SP3201012	2026-04-01	164.32	BACS	SETTLED	2026-04-01
+PAY00008923	SP3201013	2025-10-16	379.20	POST_OFFICE	SETTLED	2025-10-16
+PAY00008924	SP3201013	2025-11-13	379.20	BACS	SETTLED	2025-11-13
+PAY00008925	SP3201013	2025-12-11	379.20	BACS	SETTLED	2025-12-11
+PAY00008926	SP3201013	2026-01-08	379.20	BACS	SETTLED	2026-01-08
+PAY00008927	SP3201013	2026-02-05	379.20	BACS	SETTLED	2026-02-05
+PAY00008928	SP3201013	2026-03-05	379.20	BACS	SETTLED	2026-03-05
+PAY00008929	SP3201013	2026-04-02	379.20	BACS	SETTLED	2026-04-02
+PAY00008932	SP3201014	2024-07-04	2136.16	BACS	SETTLED	2024-07-04
+PAY00008933	SP3201014	2024-10-03	2136.16	BACS	SETTLED	2024-10-03
+PAY00008934	SP3201014	2025-01-02	2136.16	BACS	SETTLED	2025-01-02
+PAY00008935	SP3201014	2025-04-03	2136.16	BACS	SETTLED	2025-04-03
+PAY00008936	SP3201014	2025-07-03	2136.16	BACS	SETTLED	2025-07-03
+PAY00008937	SP3201014	2025-10-02	2136.16	BACS	SETTLED	2025-10-02
+PAY00008938	SP3201014	2026-01-01	2136.16	BACS	SETTLED	2026-01-01
+PAY00008939	SP3201014	2026-04-02	2136.16	BACS	SETTLED	2026-04-02
+PAY00008942	SP3201015	2026-03-06	63.20	BACS	SETTLED	2026-03-06
+PAY00008943	SP3201015	2026-03-13	63.20	BACS	SETTLED	2026-03-13
+PAY00008944	SP3201015	2026-03-20	63.20	BACS	SETTLED	2026-03-20
+PAY00008945	SP3201015	2026-03-27	63.20	BACS	SETTLED	2026-03-27
+PAY00008946	SP3201015	2026-04-03	63.20	BACS	SETTLED	2026-04-03
+PAY00008949	SP3201016	2026-02-10	63.20	POST_OFFICE	SETTLED	2026-02-10
+PAY00008950	SP3201016	2026-02-17	63.20	POST_OFFICE	SETTLED	2026-02-17
+PAY00008951	SP3201016	2026-02-24	63.20	POST_OFFICE	SETTLED	2026-02-24
+PAY00008952	SP3201016	2026-03-03	63.20	POST_OFFICE	SETTLED	2026-03-03
+PAY00008953	SP3201016	2026-03-10	63.20	POST_OFFICE	SETTLED	2026-03-10
+PAY00008954	SP3201016	2026-03-17	63.20	BACS	SETTLED	2026-03-17
+PAY00008955	SP3201016	2026-03-24	63.20	BACS	SETTLED	2026-03-24
+PAY00008956	SP3201016	2026-03-31	63.20	CHEQUE	SETTLED	2026-03-31
+PAY00008959	SP3201017	2025-09-22	495.76	BACS	SETTLED	2025-09-22
+PAY00008960	SP3201017	2025-10-20	495.76	BACS	SETTLED	2025-10-20
+PAY00008961	SP3201017	2025-11-17	495.76	BACS	SETTLED	2025-11-17
+PAY00008962	SP3201017	2025-12-15	495.76	BACS	SETTLED	2025-12-15
+PAY00008963	SP3201017	2026-01-12	495.76	BACS	SETTLED	2026-01-12
+PAY00008964	SP3201017	2026-02-09	495.76	BACS	SETTLED	2026-02-09
+PAY00008965	SP3201017	2026-03-09	495.76	BACS	SETTLED	2026-03-09
+PAY00008968	SP3201018	2025-08-24	252.80	BACS	SETTLED	2025-08-24
+PAY00008969	SP3201018	2025-09-21	252.80	BACS	SETTLED	2025-09-21
+PAY00008970	SP3201018	2025-10-19	252.80	POST_OFFICE	SETTLED	2025-10-19
+PAY00008971	SP3201018	2025-11-16	252.80	BACS	SETTLED	2025-11-16
+PAY00008972	SP3201018	2025-12-14	252.80	POST_OFFICE	SETTLED	2025-12-14
+PAY00008973	SP3201018	2026-01-11	252.80	BACS	SETTLED	2026-01-11
+PAY00008974	SP3201018	2026-02-08	252.80	BACS	SETTLED	2026-02-08
+PAY00008975	SP3201018	2026-03-08	252.80	BACS	SETTLED	2026-03-08
+PAY00008976	SP3201018	2026-04-05	252.80	CHEQUE	SETTLED	2026-04-05
+PAY00008979	SP3201019	2025-12-11	733.12	BACS	SETTLED	2025-12-11
+PAY00008980	SP3201019	2026-01-08	733.12	BACS	SETTLED	2026-01-08
+PAY00008981	SP3201019	2026-02-05	733.12	BACS	SETTLED	2026-02-05
+PAY00008982	SP3201019	2026-03-05	733.12	BACS	SETTLED	2026-03-05
+PAY00008983	SP3201019	2026-04-02	733.12	BACS	SETTLED	2026-04-02
+PAY00008986	SP3201020	2025-12-11	657.28	BACS	SETTLED	2025-12-11
+PAY00008987	SP3201020	2026-01-08	657.28	POST_OFFICE	SETTLED	2026-01-08
+PAY00008988	SP3201020	2026-02-05	657.28	BACS	SETTLED	2026-02-05
+PAY00008989	SP3201020	2026-03-05	657.28	BACS	SETTLED	2026-03-05
+PAY00008990	SP3201020	2026-04-02	657.28	BACS	SETTLED	2026-04-02
+PAY00008993	SP3201021	2025-08-19	837.68	BACS	SETTLED	2025-08-19
+PAY00008994	SP3201021	2025-09-16	837.68	BACS	SETTLED	2025-09-16
+PAY00008995	SP3201021	2025-10-14	837.68	BACS	SETTLED	2025-10-14
+PAY00008996	SP3201021	2025-11-11	837.68	BACS	SETTLED	2025-11-11
+PAY00008997	SP3201021	2025-12-09	837.68	BACS	SETTLED	2025-12-09
+PAY00008998	SP3201021	2026-01-06	837.68	BACS	SETTLED	2026-01-06
+PAY00008999	SP3201021	2026-02-03	837.68	BACS	SETTLED	2026-02-03
+PAY00009000	SP3201021	2026-03-03	837.68	BACS	SETTLED	2026-03-03
+PAY00009001	SP3201021	2026-03-31	837.68	BACS	SETTLED	2026-03-31
+PAY00009004	SP3201022	2025-09-19	328.64	BACS	SETTLED	2025-09-19
+PAY00009005	SP3201022	2025-10-17	328.64	BACS	SETTLED	2025-10-17
+PAY00009006	SP3201022	2025-11-14	328.64	BACS	SETTLED	2025-11-14
+PAY00009007	SP3201022	2025-12-12	328.64	POST_OFFICE	SETTLED	2025-12-12
+PAY00009008	SP3201022	2026-01-09	328.64	BACS	SETTLED	2026-01-09
+PAY00009009	SP3201022	2026-02-06	328.64	BACS	SETTLED	2026-02-06
+PAY00009010	SP3201022	2026-03-06	328.64	BACS	SETTLED	2026-03-06
+PAY00009011	SP3201022	2026-04-03	328.64	BACS	SETTLED	2026-04-03
+PAY00009014	SP3201023	2026-02-11	69.69	BACS	SETTLED	2026-02-11
+PAY00009015	SP3201023	2026-02-18	69.69	BACS	SETTLED	2026-02-18
+PAY00009016	SP3201023	2026-02-25	69.69	BACS	SETTLED	2026-02-25
+PAY00009017	SP3201023	2026-03-04	69.69	BACS	SETTLED	2026-03-04
+PAY00009018	SP3201023	2026-03-11	69.69	BACS	SETTLED	2026-03-11
+PAY00009019	SP3201023	2026-03-18	69.69	BACS	SETTLED	2026-03-18
+PAY00009020	SP3201023	2026-03-25	69.69	BACS	SETTLED	2026-03-25
+PAY00009021	SP3201023	2026-04-01	69.69	BACS	SETTLED	2026-04-01
+PAY00009024	SP3201024	2026-03-05	182.89	BACS	SETTLED	2026-03-05
+PAY00009025	SP3201024	2026-03-12	182.89	BACS	SETTLED	2026-03-12
+PAY00009026	SP3201024	2026-03-19	182.89	POST_OFFICE	SETTLED	2026-03-19
+PAY00009027	SP3201024	2026-03-26	182.89	BACS	SETTLED	2026-03-26
+PAY00009028	SP3201024	2026-04-02	182.89	BACS	SETTLED	2026-04-02
+PAY00009031	SP3201025	2024-07-08	821.60	BACS	SETTLED	2024-07-08
+PAY00009032	SP3201025	2024-10-07	821.60	BACS	SETTLED	2024-10-07
+PAY00009033	SP3201025	2025-01-06	821.60	BACS	SETTLED	2025-01-06
+PAY00009034	SP3201025	2025-04-07	821.60	BACS	SETTLED	2025-04-07
+PAY00009035	SP3201025	2025-07-07	821.60	BACS	SETTLED	2025-07-07
+PAY00009036	SP3201025	2025-10-06	821.60	BACS	SETTLED	2025-10-06
+PAY00009037	SP3201025	2026-01-05	821.60	BACS	SETTLED	2026-01-05
+PAY00009040	SP3201026	2025-11-15	707.84	BACS	SETTLED	2025-11-15
+PAY00009041	SP3201026	2025-12-13	707.84	BACS	SETTLED	2025-12-13
+PAY00009042	SP3201026	2026-01-10	707.84	POST_OFFICE	SETTLED	2026-01-10
+PAY00009043	SP3201026	2026-02-07	707.84	BACS	SETTLED	2026-02-07
+PAY00009044	SP3201026	2026-03-07	707.84	BACS	SETTLED	2026-03-07
+PAY00009045	SP3201026	2026-04-04	707.84	BACS	SETTLED	2026-04-04
+PAY00009048	SP3201027	2025-08-21	328.64	BACS	SETTLED	2025-08-21
+PAY00009049	SP3201027	2025-09-18	328.64	BACS	SETTLED	2025-09-18
+PAY00009050	SP3201027	2025-10-16	328.64	BACS	SETTLED	2025-10-16
+PAY00009051	SP3201027	2025-11-13	328.64	CHEQUE	SETTLED	2025-11-13
+PAY00009052	SP3201027	2025-12-11	328.64	BACS	SETTLED	2025-12-11
+PAY00009053	SP3201027	2026-01-08	328.64	BACS	SETTLED	2026-01-08
+PAY00009054	SP3201027	2026-02-05	328.64	POST_OFFICE	SETTLED	2026-02-05
+PAY00009055	SP3201027	2026-03-05	328.64	BACS	SETTLED	2026-03-05
+PAY00009056	SP3201027	2026-04-02	328.64	BACS	SETTLED	2026-04-02
+PAY00009059	SP3201028	2025-09-22	785.16	BACS	SETTLED	2025-09-22
+PAY00009060	SP3201028	2025-10-20	785.16	BACS	SETTLED	2025-10-20
+PAY00009061	SP3201028	2025-11-17	785.16	BACS	SETTLED	2025-11-17
+PAY00009062	SP3201028	2025-12-15	785.16	BACS	SETTLED	2025-12-15
+PAY00009063	SP3201028	2026-01-12	785.16	POST_OFFICE	SETTLED	2026-01-12
+PAY00009064	SP3201028	2026-02-09	785.16	BACS	SETTLED	2026-02-09
+PAY00009065	SP3201028	2026-03-09	785.16	CHEQUE	SETTLED	2026-03-09
+PAY00009068	SP3201029	2025-10-18	353.92	BACS	SETTLED	2025-10-18
+PAY00009069	SP3201029	2025-11-15	353.92	BACS	SETTLED	2025-11-15
+PAY00009070	SP3201029	2025-12-13	353.92	BACS	SETTLED	2025-12-13
+PAY00009071	SP3201029	2026-01-10	353.92	BACS	SETTLED	2026-01-10
+PAY00009072	SP3201029	2026-02-07	353.92	BACS	SETTLED	2026-02-07
+PAY00009073	SP3201029	2026-03-07	353.92	BACS	SETTLED	2026-03-07
+PAY00009074	SP3201029	2026-04-04	353.92	BACS	SETTLED	2026-04-04
+PAY00009077	SP3201030	2025-12-10	303.36	BACS	SETTLED	2025-12-10
+PAY00009078	SP3201030	2026-01-07	303.36	BACS	SETTLED	2026-01-07
+PAY00009079	SP3201030	2026-02-04	303.36	BACS	SETTLED	2026-02-04
+PAY00009080	SP3201030	2026-03-04	303.36	BACS	SETTLED	2026-03-04
+PAY00009081	SP3201030	2026-04-01	303.36	BACS	SETTLED	2026-04-01
+PAY00009084	SP3201031	2025-08-20	418.60	BACS	SETTLED	2025-08-20
+PAY00009085	SP3201031	2025-09-17	418.60	BACS	SETTLED	2025-09-17
+PAY00009086	SP3201031	2025-10-15	418.60	POST_OFFICE	SETTLED	2025-10-15
+PAY00009087	SP3201031	2025-11-12	418.60	BACS	SETTLED	2025-11-12
+PAY00009088	SP3201031	2025-12-10	418.60	BACS	SETTLED	2025-12-10
+PAY00009089	SP3201031	2026-01-07	418.60	BACS	SETTLED	2026-01-07
+PAY00009090	SP3201031	2026-02-04	418.60	POST_OFFICE	SETTLED	2026-02-04
+PAY00009091	SP3201031	2026-03-04	418.60	POST_OFFICE	SETTLED	2026-03-04
+PAY00009092	SP3201031	2026-04-01	418.60	CHEQUE	SETTLED	2026-04-01
+PAY00009095	SP3201032	2026-02-03	75.84	POST_OFFICE	SETTLED	2026-02-03
+PAY00009096	SP3201032	2026-02-10	75.84	BACS	SETTLED	2026-02-10
+PAY00009097	SP3201032	2026-02-17	75.84	POST_OFFICE	SETTLED	2026-02-17
+PAY00009098	SP3201032	2026-02-24	75.84	BACS	SETTLED	2026-02-24
+PAY00009099	SP3201032	2026-03-03	75.84	POST_OFFICE	SETTLED	2026-03-03
+PAY00009100	SP3201032	2026-03-10	75.84	BACS	SETTLED	2026-03-10
+PAY00009101	SP3201032	2026-03-17	75.84	BACS	SETTLED	2026-03-17
+PAY00009102	SP3201032	2026-03-24	75.84	BACS	SETTLED	2026-03-24
+PAY00009103	SP3201032	2026-03-31	75.84	BACS	SETTLED	2026-03-31
+PAY00009106	SP3201033	2026-02-17	198.98	BACS	SETTLED	2026-02-17
+PAY00009107	SP3201033	2026-02-24	198.98	BACS	SETTLED	2026-02-24
+PAY00009108	SP3201033	2026-03-03	198.98	BACS	SETTLED	2026-03-03
+PAY00009109	SP3201033	2026-03-10	198.98	BACS	SETTLED	2026-03-10
+PAY00009110	SP3201033	2026-03-17	198.98	POST_OFFICE	SETTLED	2026-03-17
+PAY00009111	SP3201033	2026-03-24	198.98	BACS	SETTLED	2026-03-24
+PAY00009112	SP3201033	2026-03-31	198.98	BACS	SETTLED	2026-03-31
+PAY00009115	SP3201034	2026-02-16	173.63	POST_OFFICE	SETTLED	2026-02-16
+PAY00009116	SP3201034	2026-02-23	173.63	BACS	SETTLED	2026-02-23
+PAY00009117	SP3201034	2026-03-02	173.63	POST_OFFICE	SETTLED	2026-03-02
+PAY00009118	SP3201034	2026-03-09	173.63	BACS	SETTLED	2026-03-09
+PAY00009119	SP3201034	2026-03-16	173.63	BACS	SETTLED	2026-03-16
+PAY00009120	SP3201034	2026-03-23	173.63	BACS	SETTLED	2026-03-23
+PAY00009121	SP3201034	2026-03-30	173.63	BACS	SETTLED	2026-03-30
+PAY00009124	SP3201035	2025-08-23	982.72	BACS	SETTLED	2025-08-23
+PAY00009125	SP3201035	2025-09-20	982.72	BACS	SETTLED	2025-09-20
+PAY00009126	SP3201035	2025-10-18	982.72	BACS	SETTLED	2025-10-18
+PAY00009127	SP3201035	2025-11-15	982.72	BACS	SETTLED	2025-11-15
+PAY00009128	SP3201035	2025-12-13	982.72	BACS	SETTLED	2025-12-13
+PAY00009129	SP3201035	2026-01-10	982.72	BACS	SETTLED	2026-01-10
+PAY00009130	SP3201035	2026-02-07	982.72	POST_OFFICE	SETTLED	2026-02-07
+PAY00009131	SP3201035	2026-03-07	982.72	BACS	SETTLED	2026-03-07
+PAY00009132	SP3201035	2026-04-04	982.72	POST_OFFICE	SETTLED	2026-04-04
+PAY00009135	SP3201036	2025-08-21	808.96	BACS	SETTLED	2025-08-21
+PAY00009136	SP3201036	2025-09-18	808.96	BACS	SETTLED	2025-09-18
+PAY00009137	SP3201036	2025-10-16	808.96	BACS	SETTLED	2025-10-16
+PAY00009138	SP3201036	2025-11-13	808.96	CHEQUE	SETTLED	2025-11-13
+PAY00009139	SP3201036	2025-12-11	808.96	BACS	SETTLED	2025-12-11
+PAY00009140	SP3201036	2026-01-08	808.96	BACS	SETTLED	2026-01-08
+PAY00009141	SP3201036	2026-02-05	808.96	BACS	SETTLED	2026-02-05
+PAY00009142	SP3201036	2026-03-05	808.96	POST_OFFICE	SETTLED	2026-03-05
+PAY00009143	SP3201036	2026-04-02	808.96	BACS	SETTLED	2026-04-02
+PAY00009146	SP3201037	2026-02-04	74.58	BACS	SETTLED	2026-02-04
+PAY00009147	SP3201037	2026-02-11	74.58	BACS	SETTLED	2026-02-11
+PAY00009148	SP3201037	2026-02-18	74.58	BACS	SETTLED	2026-02-18
+PAY00009149	SP3201037	2026-02-25	74.58	BACS	SETTLED	2026-02-25
+PAY00009150	SP3201037	2026-03-04	74.58	BACS	SETTLED	2026-03-04
+PAY00009151	SP3201037	2026-03-11	74.58	POST_OFFICE	SETTLED	2026-03-11
+PAY00009152	SP3201037	2026-03-18	74.58	BACS	SETTLED	2026-03-18
+PAY00009153	SP3201037	2026-03-25	74.58	BACS	SETTLED	2026-03-25
+PAY00009154	SP3201037	2026-04-01	74.58	BACS	SETTLED	2026-04-01
+PAY00009157	SP3201038	2026-02-04	107.44	BACS	SETTLED	2026-02-04
+PAY00009158	SP3201038	2026-02-11	107.44	BACS	SETTLED	2026-02-11
+PAY00009159	SP3201038	2026-02-18	107.44	CHEQUE	SETTLED	2026-02-18
+PAY00009160	SP3201038	2026-02-25	107.44	BACS	SETTLED	2026-02-25
+PAY00009161	SP3201038	2026-03-04	107.44	BACS	SETTLED	2026-03-04
+PAY00009162	SP3201038	2026-03-11	107.44	BACS	SETTLED	2026-03-11
+PAY00009163	SP3201038	2026-03-18	107.44	BACS	SETTLED	2026-03-18
+PAY00009164	SP3201038	2026-03-25	107.44	BACS	SETTLED	2026-03-25
+PAY00009165	SP3201038	2026-04-01	107.44	BACS	SETTLED	2026-04-01
+PAY00009168	SP3201039	2026-02-17	88.48	BACS	SETTLED	2026-02-17
+PAY00009169	SP3201039	2026-02-24	88.48	BACS	SETTLED	2026-02-24
+PAY00009170	SP3201039	2026-03-03	88.48	BACS	SETTLED	2026-03-03
+PAY00009171	SP3201039	2026-03-10	88.48	BACS	SETTLED	2026-03-10
+PAY00009172	SP3201039	2026-03-17	88.48	BACS	SETTLED	2026-03-17
+PAY00009173	SP3201039	2026-03-24	88.48	BACS	SETTLED	2026-03-24
+PAY00009174	SP3201039	2026-03-31	88.48	BACS	SETTLED	2026-03-31
+PAY00009177	SP3201040	2025-12-10	758.40	BACS	SETTLED	2025-12-10
+PAY00009178	SP3201040	2026-01-07	758.40	POST_OFFICE	SETTLED	2026-01-07
+PAY00009179	SP3201040	2026-02-04	758.40	BACS	SETTLED	2026-02-04
+PAY00009180	SP3201040	2026-03-04	758.40	BACS	SETTLED	2026-03-04
+PAY00009181	SP3201040	2026-04-01	758.40	POST_OFFICE	SETTLED	2026-04-01
+PAY00009184	SP3201041	2026-02-23	107.44	BACS	SETTLED	2026-02-23
+PAY00009185	SP3201041	2026-03-02	107.44	BACS	SETTLED	2026-03-02
+PAY00009186	SP3201041	2026-03-09	107.44	BACS	SETTLED	2026-03-09
+PAY00009187	SP3201041	2026-03-16	107.44	BACS	SETTLED	2026-03-16
+PAY00009188	SP3201041	2026-03-23	107.44	BACS	SETTLED	2026-03-23
+PAY00009189	SP3201041	2026-03-30	107.44	BACS	SETTLED	2026-03-30
+PAY00009192	SP3201042	2025-11-12	480.32	BACS	SETTLED	2025-11-12
+PAY00009193	SP3201042	2025-12-10	480.32	BACS	SETTLED	2025-12-10
+PAY00009194	SP3201042	2026-01-07	480.32	BACS	SETTLED	2026-01-07
+PAY00009195	SP3201042	2026-02-04	480.32	BACS	SETTLED	2026-02-04
+PAY00009196	SP3201042	2026-03-04	480.32	BACS	SETTLED	2026-03-04
+PAY00009197	SP3201042	2026-04-01	480.32	BACS	SETTLED	2026-04-01
+PAY00009200	SP3201043	2025-11-11	494.92	CHEQUE	SETTLED	2025-11-11
+PAY00009201	SP3201043	2025-12-09	494.92	BACS	SETTLED	2025-12-09
+PAY00009202	SP3201043	2026-01-06	494.92	BACS	SETTLED	2026-01-06
+PAY00009203	SP3201043	2026-02-03	494.92	BACS	SETTLED	2026-02-03
+PAY00009204	SP3201043	2026-03-03	494.92	BACS	SETTLED	2026-03-03
+PAY00009205	SP3201043	2026-03-31	494.92	CHEQUE	SETTLED	2026-03-31
+PAY00009208	SP3201044	2025-12-14	768.60	BACS	SETTLED	2025-12-14
+PAY00009209	SP3201044	2026-01-11	768.60	BACS	SETTLED	2026-01-11
+PAY00009210	SP3201044	2026-02-08	768.60	BACS	SETTLED	2026-02-08
+PAY00009211	SP3201044	2026-03-08	768.60	BACS	SETTLED	2026-03-08
+PAY00009212	SP3201044	2026-04-05	768.60	POST_OFFICE	SETTLED	2026-04-05
+PAY00009215	SP3201045	2025-08-22	328.64	CHEQUE	SETTLED	2025-08-22
+PAY00009216	SP3201045	2025-09-19	328.64	BACS	SETTLED	2025-09-19
+PAY00009217	SP3201045	2025-10-17	328.64	BACS	SETTLED	2025-10-17
+PAY00009218	SP3201045	2025-11-14	328.64	BACS	SETTLED	2025-11-14
+PAY00009219	SP3201045	2025-12-12	328.64	BACS	SETTLED	2025-12-12
+PAY00009220	SP3201045	2026-01-09	328.64	BACS	SETTLED	2026-01-09
+PAY00009221	SP3201045	2026-02-06	328.64	BACS	SETTLED	2026-02-06
+PAY00009222	SP3201045	2026-03-06	328.64	BACS	SETTLED	2026-03-06
+PAY00009223	SP3201045	2026-04-03	328.64	BACS	SETTLED	2026-04-03
+PAY00009226	SP3201046	2026-02-15	189.60	BACS	SETTLED	2026-02-15
+PAY00009227	SP3201046	2026-02-22	189.60	BACS	SETTLED	2026-02-22
+PAY00009228	SP3201046	2026-03-01	189.60	BACS	SETTLED	2026-03-01
+PAY00009229	SP3201046	2026-03-08	189.60	POST_OFFICE	SETTLED	2026-03-08
+PAY00009230	SP3201046	2026-03-15	189.60	BACS	SETTLED	2026-03-15
+PAY00009231	SP3201046	2026-03-22	189.60	BACS	SETTLED	2026-03-22
+PAY00009232	SP3201046	2026-03-29	189.60	BACS	SETTLED	2026-03-29
+PAY00009233	SP3201046	2026-04-05	189.60	BACS	SETTLED	2026-04-05
+PAY00009236	SP3201047	2025-08-24	375.80	BACS	SETTLED	2025-08-24
+PAY00009237	SP3201047	2025-09-21	375.80	BACS	SETTLED	2025-09-21
+PAY00009238	SP3201047	2025-10-19	375.80	BACS	SETTLED	2025-10-19
+PAY00009239	SP3201047	2025-11-16	375.80	POST_OFFICE	SETTLED	2025-11-16
+PAY00009240	SP3201047	2025-12-14	375.80	BACS	SETTLED	2025-12-14
+PAY00009241	SP3201047	2026-01-11	375.80	BACS	SETTLED	2026-01-11
+PAY00009242	SP3201047	2026-02-08	375.80	BACS	SETTLED	2026-02-08
+PAY00009243	SP3201047	2026-03-08	375.80	BACS	SETTLED	2026-03-08
+PAY00009244	SP3201047	2026-04-05	375.80	BACS	SETTLED	2026-04-05
+PAY00009247	SP3201048	2026-02-06	166.28	BACS	SETTLED	2026-02-06
+PAY00009248	SP3201048	2026-02-13	166.28	BACS	SETTLED	2026-02-13
+PAY00009249	SP3201048	2026-02-20	166.28	BACS	SETTLED	2026-02-20
+PAY00009250	SP3201048	2026-02-27	166.28	POST_OFFICE	SETTLED	2026-02-27
+PAY00009251	SP3201048	2026-03-06	166.28	BACS	SETTLED	2026-03-06
+PAY00009252	SP3201048	2026-03-13	166.28	BACS	SETTLED	2026-03-13
+PAY00009253	SP3201048	2026-03-20	166.28	BACS	SETTLED	2026-03-20
+PAY00009254	SP3201048	2026-03-27	166.28	BACS	SETTLED	2026-03-27
+PAY00009255	SP3201048	2026-04-03	166.28	BACS	SETTLED	2026-04-03
+PAY00009258	SP3201049	2026-02-03	88.48	BACS	SETTLED	2026-02-03
+PAY00009259	SP3201049	2026-02-10	88.48	BACS	SETTLED	2026-02-10
+PAY00009260	SP3201049	2026-02-17	88.48	POST_OFFICE	SETTLED	2026-02-17
+PAY00009261	SP3201049	2026-02-24	88.48	BACS	SETTLED	2026-02-24
+PAY00009262	SP3201049	2026-03-03	88.48	BACS	SETTLED	2026-03-03
+PAY00009263	SP3201049	2026-03-10	88.48	BACS	SETTLED	2026-03-10
+PAY00009264	SP3201049	2026-03-17	88.48	POST_OFFICE	SETTLED	2026-03-17
+PAY00009265	SP3201049	2026-03-24	88.48	BACS	SETTLED	2026-03-24
+PAY00009266	SP3201049	2026-03-31	88.48	BACS	SETTLED	2026-03-31
+PAY00009269	SP3201050	2026-02-23	127.65	POST_OFFICE	SETTLED	2026-02-23
+PAY00009270	SP3201050	2026-03-02	127.65	POST_OFFICE	SETTLED	2026-03-02
+PAY00009271	SP3201050	2026-03-09	127.65	BACS	SETTLED	2026-03-09
+PAY00009272	SP3201050	2026-03-16	127.65	BACS	SETTLED	2026-03-16
+PAY00009273	SP3201050	2026-03-23	127.65	POST_OFFICE	SETTLED	2026-03-23
+PAY00009274	SP3201050	2026-03-30	127.65	BACS	SETTLED	2026-03-30
+PAY00009277	SP3201051	2025-09-21	864.48	BACS	SETTLED	2025-09-21
+PAY00009278	SP3201051	2025-10-19	864.48	BACS	SETTLED	2025-10-19
+PAY00009279	SP3201051	2025-11-16	864.48	BACS	SETTLED	2025-11-16
+PAY00009280	SP3201051	2025-12-14	864.48	BACS	SETTLED	2025-12-14
+PAY00009281	SP3201051	2026-01-11	864.48	CHEQUE	SETTLED	2026-01-11
+PAY00009282	SP3201051	2026-02-08	864.48	BACS	SETTLED	2026-02-08
+PAY00009283	SP3201051	2026-03-08	864.48	POST_OFFICE	SETTLED	2026-03-08
+PAY00009284	SP3201051	2026-04-05	864.48	BACS	SETTLED	2026-04-05
+PAY00009287	SP3201052	2025-10-17	278.08	BACS	SETTLED	2025-10-17
+PAY00009288	SP3201052	2025-11-14	278.08	BACS	SETTLED	2025-11-14
+PAY00009289	SP3201052	2025-12-12	278.08	BACS	SETTLED	2025-12-12
+PAY00009290	SP3201052	2026-01-09	278.08	BACS	SETTLED	2026-01-09
+PAY00009291	SP3201052	2026-02-06	278.08	CHEQUE	SETTLED	2026-02-06
+PAY00009292	SP3201052	2026-03-06	278.08	BACS	SETTLED	2026-03-06
+PAY00009293	SP3201052	2026-04-03	278.08	BACS	SETTLED	2026-04-03
+PAY00009296	SP3201053	2024-04-07	1150.24	BACS	SETTLED	2024-04-07
+PAY00009297	SP3201053	2024-07-07	1150.24	BACS	SETTLED	2024-07-07
+PAY00009298	SP3201053	2024-10-06	1150.24	CHEQUE	SETTLED	2024-10-06
+PAY00009299	SP3201053	2025-01-05	1150.24	BACS	SETTLED	2025-01-05
+PAY00009300	SP3201053	2025-04-06	1150.24	BACS	SETTLED	2025-04-06
+PAY00009301	SP3201053	2025-07-06	1150.24	BACS	SETTLED	2025-07-06
+PAY00009302	SP3201053	2025-10-05	1150.24	POST_OFFICE	SETTLED	2025-10-05
+PAY00009303	SP3201053	2026-01-04	1150.24	BACS	SETTLED	2026-01-04
+PAY00009304	SP3201053	2026-04-05	1150.24	BACS	SETTLED	2026-04-05
+PAY00009307	SP3201054	2026-02-17	197.41	BACS	SETTLED	2026-02-17
+PAY00009308	SP3201054	2026-02-24	197.41	BACS	SETTLED	2026-02-24
+PAY00009309	SP3201054	2026-03-03	197.41	BACS	SETTLED	2026-03-03
+PAY00009310	SP3201054	2026-03-10	197.41	BACS	SETTLED	2026-03-10
+PAY00009311	SP3201054	2026-03-17	197.41	BACS	SETTLED	2026-03-17
+PAY00009312	SP3201054	2026-03-24	197.41	BACS	SETTLED	2026-03-24
+PAY00009313	SP3201054	2026-03-31	197.41	BACS	SETTLED	2026-03-31
+PAY00009316	SP3201055	2025-10-16	859.52	BACS	SETTLED	2025-10-16
+PAY00009317	SP3201055	2025-11-13	859.52	BACS	SETTLED	2025-11-13
+PAY00009318	SP3201055	2025-12-11	859.52	POST_OFFICE	SETTLED	2025-12-11
+PAY00009319	SP3201055	2026-01-08	859.52	BACS	SETTLED	2026-01-08
+PAY00009320	SP3201055	2026-02-05	859.52	BACS	SETTLED	2026-02-05
+PAY00009321	SP3201055	2026-03-05	859.52	BACS	SETTLED	2026-03-05
+PAY00009322	SP3201055	2026-04-02	859.52	BACS	SETTLED	2026-04-02
+PAY00009325	SP3201056	2025-12-14	893.60	BACS	SETTLED	2025-12-14
+PAY00009326	SP3201056	2026-01-11	893.60	CHEQUE	SETTLED	2026-01-11
+PAY00009327	SP3201056	2026-02-08	893.60	CHEQUE	SETTLED	2026-02-08
+PAY00009328	SP3201056	2026-03-08	893.60	BACS	SETTLED	2026-03-08
+PAY00009329	SP3201056	2026-04-05	893.60	BACS	SETTLED	2026-04-05
+PAY00009332	SP3201057	2026-03-07	183.28	BACS	SETTLED	2026-03-07
+PAY00009333	SP3201057	2026-03-14	183.28	BACS	SETTLED	2026-03-14
+PAY00009334	SP3201057	2026-03-21	183.28	BACS	SETTLED	2026-03-21
+PAY00009335	SP3201057	2026-03-28	183.28	BACS	SETTLED	2026-03-28
+PAY00009336	SP3201057	2026-04-04	183.28	BACS	SETTLED	2026-04-04
+PAY00009339	SP3201058	2025-11-14	657.28	BACS	SETTLED	2025-11-14
+PAY00009340	SP3201058	2025-12-12	657.28	BACS	SETTLED	2025-12-12
+PAY00009341	SP3201058	2026-01-09	657.28	CHEQUE	SETTLED	2026-01-09
+PAY00009342	SP3201058	2026-02-06	657.28	POST_OFFICE	SETTLED	2026-02-06
+PAY00009343	SP3201058	2026-03-06	657.28	BACS	SETTLED	2026-03-06
+PAY00009344	SP3201058	2026-04-03	657.28	BACS	SETTLED	2026-04-03
+PAY00009347	SP3201059	2024-10-05	1314.56	POST_OFFICE	SETTLED	2024-10-05
+PAY00009348	SP3201059	2025-01-04	1314.56	BACS	SETTLED	2025-01-04
+PAY00009349	SP3201059	2025-04-05	1314.56	BACS	SETTLED	2025-04-05
+PAY00009350	SP3201059	2025-07-05	1314.56	BACS	SETTLED	2025-07-05
+PAY00009351	SP3201059	2025-10-04	1314.56	POST_OFFICE	SETTLED	2025-10-04
+PAY00009352	SP3201059	2026-01-03	1314.56	BACS	SETTLED	2026-01-03
+PAY00009353	SP3201059	2026-04-04	1314.56	POST_OFFICE	SETTLED	2026-04-04
+PAY00009356	SP3201060	2025-12-09	707.84	BACS	SETTLED	2025-12-09
+PAY00009357	SP3201060	2026-01-06	707.84	BACS	SETTLED	2026-01-06
+PAY00009358	SP3201060	2026-02-03	707.84	BACS	SETTLED	2026-02-03
+PAY00009359	SP3201060	2026-03-03	707.84	BACS	SETTLED	2026-03-03
+PAY00009360	SP3201060	2026-03-31	707.84	BACS	SETTLED	2026-03-31
+PAY00009363	SP3201061	2026-03-02	118.78	BACS	SETTLED	2026-03-02
+PAY00009364	SP3201061	2026-03-09	118.78	BACS	SETTLED	2026-03-09
+PAY00009365	SP3201061	2026-03-16	118.78	BACS	SETTLED	2026-03-16
+PAY00009366	SP3201061	2026-03-23	118.78	BACS	SETTLED	2026-03-23
+PAY00009367	SP3201061	2026-03-30	118.78	BACS	SETTLED	2026-03-30
+PAY00009370	SP3201062	2025-09-20	353.92	POST_OFFICE	SETTLED	2025-09-20
+PAY00009371	SP3201062	2025-10-18	353.92	BACS	SETTLED	2025-10-18
+PAY00009372	SP3201062	2025-11-15	353.92	BACS	SETTLED	2025-11-15
+PAY00009373	SP3201062	2025-12-13	353.92	BACS	SETTLED	2025-12-13
+PAY00009374	SP3201062	2026-01-10	353.92	BACS	SETTLED	2026-01-10
+PAY00009375	SP3201062	2026-02-07	353.92	CHEQUE	SETTLED	2026-02-07
+PAY00009376	SP3201062	2026-03-07	353.92	BACS	SETTLED	2026-03-07
+PAY00009377	SP3201062	2026-04-04	353.92	BACS	SETTLED	2026-04-04
+PAY00009380	SP3201063	2025-12-13	682.56	BACS	SETTLED	2025-12-13
+PAY00009381	SP3201063	2026-01-10	682.56	BACS	SETTLED	2026-01-10
+PAY00009382	SP3201063	2026-02-07	682.56	BACS	SETTLED	2026-02-07
+PAY00009383	SP3201063	2026-03-07	682.56	BACS	SETTLED	2026-03-07
+PAY00009384	SP3201063	2026-04-04	682.56	BACS	SETTLED	2026-04-04
+PAY00009387	SP3201064	2025-09-16	303.36	BACS	SETTLED	2025-09-16
+PAY00009388	SP3201064	2025-10-14	303.36	BACS	SETTLED	2025-10-14
+PAY00009389	SP3201064	2025-11-11	303.36	CHEQUE	SETTLED	2025-11-11
+PAY00009390	SP3201064	2025-12-09	303.36	BACS	SETTLED	2025-12-09
+PAY00009391	SP3201064	2026-01-06	303.36	CHEQUE	SETTLED	2026-01-06
+PAY00009392	SP3201064	2026-02-03	303.36	BACS	SETTLED	2026-02-03
+PAY00009393	SP3201064	2026-03-03	303.36	BACS	SETTLED	2026-03-03
+PAY00009394	SP3201064	2026-03-31	303.36	POST_OFFICE	SETTLED	2026-03-31
+PAY00009397	SP3201065	2026-02-21	88.48	CHEQUE	SETTLED	2026-02-21
+PAY00009398	SP3201065	2026-02-28	88.48	BACS	SETTLED	2026-02-28
+PAY00009399	SP3201065	2026-03-07	88.48	BACS	SETTLED	2026-03-07
+PAY00009400	SP3201065	2026-03-14	88.48	POST_OFFICE	SETTLED	2026-03-14
+PAY00009401	SP3201065	2026-03-21	88.48	BACS	SETTLED	2026-03-21
+PAY00009402	SP3201065	2026-03-28	88.48	BACS	SETTLED	2026-03-28
+PAY00009403	SP3201065	2026-04-04	88.48	BACS	SETTLED	2026-04-04
+PAY00009406	SP3201066	2025-10-16	328.64	BACS	SETTLED	2025-10-16
+PAY00009407	SP3201066	2025-11-13	328.64	BACS	SETTLED	2025-11-13
+PAY00009408	SP3201066	2025-12-11	328.64	POST_OFFICE	SETTLED	2025-12-11
+PAY00009409	SP3201066	2026-01-08	328.64	BACS	SETTLED	2026-01-08
+PAY00009410	SP3201066	2026-02-05	328.64	CHEQUE	SETTLED	2026-02-05
+PAY00009411	SP3201066	2026-03-05	328.64	BACS	SETTLED	2026-03-05
+PAY00009412	SP3201066	2026-04-02	328.64	BACS	SETTLED	2026-04-02
+PAY00009415	SP3201067	2025-08-21	652.08	POST_OFFICE	SETTLED	2025-08-21
+PAY00009416	SP3201067	2025-09-18	652.08	POST_OFFICE	SETTLED	2025-09-18
+PAY00009417	SP3201067	2025-10-16	652.08	CHEQUE	SETTLED	2025-10-16
+PAY00009418	SP3201067	2025-11-13	652.08	BACS	SETTLED	2025-11-13
+PAY00009419	SP3201067	2025-12-11	652.08	BACS	SETTLED	2025-12-11
+PAY00009420	SP3201067	2026-01-08	652.08	BACS	SETTLED	2026-01-08
+PAY00009421	SP3201067	2026-02-05	652.08	BACS	SETTLED	2026-02-05
+PAY00009422	SP3201067	2026-03-05	652.08	BACS	SETTLED	2026-03-05
+PAY00009423	SP3201067	2026-04-02	652.08	BACS	SETTLED	2026-04-02
+PAY00009426	SP3201068	2025-09-22	859.52	BACS	SETTLED	2025-09-22
+PAY00009427	SP3201068	2025-10-20	859.52	POST_OFFICE	SETTLED	2025-10-20
+PAY00009428	SP3201068	2025-11-17	859.52	BACS	SETTLED	2025-11-17
+PAY00009429	SP3201068	2025-12-15	859.52	BACS	SETTLED	2025-12-15
+PAY00009430	SP3201068	2026-01-12	859.52	BACS	SETTLED	2026-01-12
+PAY00009431	SP3201068	2026-02-09	859.52	BACS	SETTLED	2026-02-09
+PAY00009432	SP3201068	2026-03-09	859.52	BACS	SETTLED	2026-03-09
+PAY00009435	SP3201069	2024-07-05	840.19	BACS	SETTLED	2024-07-05
+PAY00009436	SP3201069	2024-10-04	840.19	BACS	SETTLED	2024-10-04
+PAY00009437	SP3201069	2025-01-03	840.19	BACS	SETTLED	2025-01-03
+PAY00009438	SP3201069	2025-04-04	840.19	BACS	SETTLED	2025-04-04
+PAY00009439	SP3201069	2025-07-04	840.19	POST_OFFICE	SETTLED	2025-07-04
+PAY00009440	SP3201069	2025-10-03	840.19	BACS	SETTLED	2025-10-03
+PAY00009441	SP3201069	2026-01-02	840.19	BACS	SETTLED	2026-01-02
+PAY00009442	SP3201069	2026-04-03	840.19	POST_OFFICE	SETTLED	2026-04-03
+PAY00009445	SP3201070	2025-12-10	429.76	BACS	SETTLED	2025-12-10
+PAY00009446	SP3201070	2026-01-07	429.76	BACS	SETTLED	2026-01-07
+PAY00009447	SP3201070	2026-02-04	429.76	BACS	SETTLED	2026-02-04
+PAY00009448	SP3201070	2026-03-04	429.76	BACS	SETTLED	2026-03-04
+PAY00009449	SP3201070	2026-04-01	429.76	BACS	SETTLED	2026-04-01
+PAY00009452	SP3201071	2026-02-15	88.48	BACS	SETTLED	2026-02-15
+PAY00009453	SP3201071	2026-02-22	88.48	POST_OFFICE	SETTLED	2026-02-22
+PAY00009454	SP3201071	2026-03-01	88.48	BACS	SETTLED	2026-03-01
+PAY00009455	SP3201071	2026-03-08	88.48	BACS	SETTLED	2026-03-08
+PAY00009456	SP3201071	2026-03-15	88.48	BACS	SETTLED	2026-03-15
+PAY00009457	SP3201071	2026-03-22	88.48	BACS	SETTLED	2026-03-22
+PAY00009458	SP3201071	2026-03-29	88.48	CHEQUE	SETTLED	2026-03-29
+PAY00009459	SP3201071	2026-04-05	88.48	BACS	SETTLED	2026-04-05
+PAY00009462	SP3201072	2025-12-13	530.88	BACS	SETTLED	2025-12-13
+PAY00009463	SP3201072	2026-01-10	530.88	BACS	SETTLED	2026-01-10
+PAY00009464	SP3201072	2026-02-07	530.88	POST_OFFICE	SETTLED	2026-02-07
+PAY00009465	SP3201072	2026-03-07	530.88	BACS	SETTLED	2026-03-07
+PAY00009466	SP3201072	2026-04-04	530.88	BACS	SETTLED	2026-04-04
+PAY00009469	SP3201073	2025-12-09	382.40	BACS	SETTLED	2025-12-09
+PAY00009470	SP3201073	2026-01-06	382.40	BACS	SETTLED	2026-01-06
+PAY00009471	SP3201073	2026-02-03	382.40	BACS	SETTLED	2026-02-03
+PAY00009472	SP3201073	2026-03-03	382.40	CHEQUE	SETTLED	2026-03-03
+PAY00009473	SP3201073	2026-03-31	382.40	BACS	SETTLED	2026-03-31
+PAY00009476	SP3201074	2026-02-10	69.52	BACS	SETTLED	2026-02-10
+PAY00009477	SP3201074	2026-02-17	69.52	BACS	SETTLED	2026-02-17
+PAY00009478	SP3201074	2026-02-24	69.52	POST_OFFICE	SETTLED	2026-02-24
+PAY00009479	SP3201074	2026-03-03	69.52	BACS	SETTLED	2026-03-03
+PAY00009480	SP3201074	2026-03-10	69.52	BACS	SETTLED	2026-03-10
+PAY00009481	SP3201074	2026-03-17	69.52	BACS	SETTLED	2026-03-17
+PAY00009482	SP3201074	2026-03-24	69.52	BACS	SETTLED	2026-03-24
+PAY00009483	SP3201074	2026-03-31	69.52	CHEQUE	SETTLED	2026-03-31
+PAY00009486	SP3201075	2025-08-19	404.48	CHEQUE	SETTLED	2025-08-19
+PAY00009487	SP3201075	2025-09-16	404.48	BACS	SETTLED	2025-09-16
+PAY00009488	SP3201075	2025-10-14	404.48	BACS	SETTLED	2025-10-14
+PAY00009489	SP3201075	2025-11-11	404.48	BACS	SETTLED	2025-11-11
+PAY00009490	SP3201075	2025-12-09	404.48	BACS	SETTLED	2025-12-09
+PAY00009491	SP3201075	2026-01-06	404.48	CHEQUE	SETTLED	2026-01-06
+PAY00009492	SP3201075	2026-02-03	404.48	BACS	SETTLED	2026-02-03
+PAY00009493	SP3201075	2026-03-03	404.48	BACS	SETTLED	2026-03-03
+PAY00009494	SP3201075	2026-03-31	404.48	BACS	SETTLED	2026-03-31
+PAY00009497	SP3201076	2025-10-14	687.56	BACS	SETTLED	2025-10-14
+PAY00009498	SP3201076	2025-11-11	687.56	BACS	SETTLED	2025-11-11
+PAY00009499	SP3201076	2025-12-09	687.56	BACS	SETTLED	2025-12-09
+PAY00009500	SP3201076	2026-01-06	687.56	BACS	SETTLED	2026-01-06
+PAY00009501	SP3201076	2026-02-03	687.56	BACS	SETTLED	2026-02-03
+PAY00009502	SP3201076	2026-03-03	687.56	BACS	SETTLED	2026-03-03
+PAY00009503	SP3201076	2026-03-31	687.56	BACS	SETTLED	2026-03-31
+PAY00009506	SP3201077	2026-03-09	113.76	BACS	SETTLED	2026-03-09
+PAY00009507	SP3201077	2026-03-16	113.76	POST_OFFICE	SETTLED	2026-03-16
+PAY00009508	SP3201077	2026-03-23	113.76	BACS	SETTLED	2026-03-23
+PAY00009509	SP3201077	2026-03-30	113.76	POST_OFFICE	SETTLED	2026-03-30
+PAY00009512	SP3201078	2025-10-18	314.32	BACS	SETTLED	2025-10-18
+PAY00009513	SP3201078	2025-11-15	314.32	BACS	SETTLED	2025-11-15
+PAY00009514	SP3201078	2025-12-13	314.32	BACS	SETTLED	2025-12-13
+PAY00009515	SP3201078	2026-01-10	314.32	POST_OFFICE	SETTLED	2026-01-10
+PAY00009516	SP3201078	2026-02-07	314.32	BACS	SETTLED	2026-02-07
+PAY00009517	SP3201078	2026-03-07	314.32	BACS	SETTLED	2026-03-07
+PAY00009518	SP3201078	2026-04-04	314.32	BACS	SETTLED	2026-04-04
+PAY00009521	SP3201079	2025-10-14	700.36	POST_OFFICE	SETTLED	2025-10-14
+PAY00009522	SP3201079	2025-11-11	700.36	BACS	SETTLED	2025-11-11
+PAY00009523	SP3201079	2025-12-09	700.36	BACS	SETTLED	2025-12-09
+PAY00009524	SP3201079	2026-01-06	700.36	BACS	SETTLED	2026-01-06
+PAY00009525	SP3201079	2026-02-03	700.36	POST_OFFICE	SETTLED	2026-02-03
+PAY00009526	SP3201079	2026-03-03	700.36	BACS	SETTLED	2026-03-03
+PAY00009527	SP3201079	2026-03-31	700.36	CHEQUE	SETTLED	2026-03-31
+PAY00009530	SP3201080	2025-10-17	505.60	BACS	SETTLED	2025-10-17
+PAY00009531	SP3201080	2025-11-14	505.60	BACS	SETTLED	2025-11-14
+PAY00009532	SP3201080	2025-12-12	505.60	BACS	SETTLED	2025-12-12
+PAY00009533	SP3201080	2026-01-09	505.60	BACS	SETTLED	2026-01-09
+PAY00009534	SP3201080	2026-02-06	505.60	CHEQUE	SETTLED	2026-02-06
+PAY00009535	SP3201080	2026-03-06	505.60	BACS	SETTLED	2026-03-06
+PAY00009536	SP3201080	2026-04-03	505.60	BACS	SETTLED	2026-04-03
+PAY00009539	SP3201081	2024-04-07	1068.08	BACS	SETTLED	2024-04-07
+PAY00009540	SP3201081	2024-07-07	1068.08	BACS	SETTLED	2024-07-07
+PAY00009541	SP3201081	2024-10-06	1068.08	BACS	SETTLED	2024-10-06
+PAY00009542	SP3201081	2025-01-05	1068.08	BACS	SETTLED	2025-01-05
+PAY00009543	SP3201081	2025-04-06	1068.08	POST_OFFICE	SETTLED	2025-04-06
+PAY00009544	SP3201081	2025-07-06	1068.08	BACS	SETTLED	2025-07-06
+PAY00009545	SP3201081	2025-10-05	1068.08	BACS	SETTLED	2025-10-05
+PAY00009546	SP3201081	2026-01-04	1068.08	BACS	SETTLED	2026-01-04
+PAY00009547	SP3201081	2026-04-05	1068.08	BACS	SETTLED	2026-04-05
+PAY00009550	SP3201082	2026-02-14	214.88	BACS	SETTLED	2026-02-14
+PAY00009551	SP3201082	2026-02-21	214.88	BACS	SETTLED	2026-02-21
+PAY00009552	SP3201082	2026-02-28	214.88	BACS	SETTLED	2026-02-28
+PAY00009553	SP3201082	2026-03-07	214.88	BACS	SETTLED	2026-03-07
+PAY00009554	SP3201082	2026-03-14	214.88	BACS	SETTLED	2026-03-14
+PAY00009555	SP3201082	2026-03-21	214.88	BACS	SETTLED	2026-03-21
+PAY00009556	SP3201082	2026-03-28	214.88	BACS	SETTLED	2026-03-28
+PAY00009557	SP3201082	2026-04-04	214.88	POST_OFFICE	SETTLED	2026-04-04
+PAY00009560	SP3201083	2025-11-16	543.52	BACS	SETTLED	2025-11-16
+PAY00009561	SP3201083	2025-12-14	543.52	BACS	SETTLED	2025-12-14
+PAY00009562	SP3201083	2026-01-11	543.52	BACS	SETTLED	2026-01-11
+PAY00009563	SP3201083	2026-02-08	543.52	BACS	SETTLED	2026-02-08
+PAY00009564	SP3201083	2026-03-08	543.52	BACS	SETTLED	2026-03-08
+PAY00009565	SP3201083	2026-04-05	543.52	BACS	SETTLED	2026-04-05
+PAY00009568	SP3201084	2026-02-04	126.40	BACS	SETTLED	2026-02-04
+PAY00009569	SP3201084	2026-02-11	126.40	BACS	SETTLED	2026-02-11
+PAY00009570	SP3201084	2026-02-18	126.40	POST_OFFICE	SETTLED	2026-02-18
+PAY00009571	SP3201084	2026-02-25	126.40	BACS	SETTLED	2026-02-25
+PAY00009572	SP3201084	2026-03-04	126.40	BACS	SETTLED	2026-03-04
+PAY00009573	SP3201084	2026-03-11	126.40	BACS	SETTLED	2026-03-11
+PAY00009574	SP3201084	2026-03-18	126.40	CHEQUE	SETTLED	2026-03-18
+PAY00009575	SP3201084	2026-03-25	126.40	POST_OFFICE	SETTLED	2026-03-25
+PAY00009576	SP3201084	2026-04-01	126.40	BACS	SETTLED	2026-04-01
+PAY00009579	SP3201085	2025-08-19	455.04	BACS	SETTLED	2025-08-19
+PAY00009580	SP3201085	2025-09-16	455.04	CHEQUE	SETTLED	2025-09-16
+PAY00009581	SP3201085	2025-10-14	455.04	BACS	SETTLED	2025-10-14
+PAY00009582	SP3201085	2025-11-11	455.04	BACS	SETTLED	2025-11-11
+PAY00009583	SP3201085	2025-12-09	455.04	BACS	SETTLED	2025-12-09
+PAY00009584	SP3201085	2026-01-06	455.04	BACS	SETTLED	2026-01-06
+PAY00009585	SP3201085	2026-02-03	455.04	BACS	SETTLED	2026-02-03
+PAY00009586	SP3201085	2026-03-03	455.04	BACS	SETTLED	2026-03-03
+PAY00009587	SP3201085	2026-03-31	455.04	BACS	SETTLED	2026-03-31
+PAY00009590	SP3201086	2025-11-13	758.40	BACS	SETTLED	2025-11-13
+PAY00009591	SP3201086	2025-12-11	758.40	CHEQUE	SETTLED	2025-12-11
+PAY00009592	SP3201086	2026-01-08	758.40	BACS	SETTLED	2026-01-08
+PAY00009593	SP3201086	2026-02-05	758.40	BACS	SETTLED	2026-02-05
+PAY00009594	SP3201086	2026-03-05	758.40	CHEQUE	SETTLED	2026-03-05
+PAY00009595	SP3201086	2026-04-02	758.40	BACS	SETTLED	2026-04-02
+PAY00009598	SP3201087	2024-04-08	2597.40	BACS	SETTLED	2024-04-08
+PAY00009599	SP3201087	2024-07-08	2597.40	BACS	SETTLED	2024-07-08
+PAY00009600	SP3201087	2024-10-07	2597.40	BACS	SETTLED	2024-10-07
+PAY00009601	SP3201087	2025-01-06	2597.40	BACS	SETTLED	2025-01-06
+PAY00009602	SP3201087	2025-04-07	2597.40	BACS	SETTLED	2025-04-07
+PAY00009603	SP3201087	2025-07-07	2597.40	BACS	SETTLED	2025-07-07
+PAY00009604	SP3201087	2025-10-06	2597.40	POST_OFFICE	SETTLED	2025-10-06
+PAY00009605	SP3201087	2026-01-05	2597.40	POST_OFFICE	SETTLED	2026-01-05
+PAY00009608	SP3201088	2026-02-28	75.84	POST_OFFICE	SETTLED	2026-02-28
+PAY00009609	SP3201088	2026-03-07	75.84	POST_OFFICE	SETTLED	2026-03-07
+PAY00009610	SP3201088	2026-03-14	75.84	BACS	SETTLED	2026-03-14
+PAY00009611	SP3201088	2026-03-21	75.84	BACS	SETTLED	2026-03-21
+PAY00009612	SP3201088	2026-03-28	75.84	BACS	SETTLED	2026-03-28
+PAY00009613	SP3201088	2026-04-04	75.84	BACS	SETTLED	2026-04-04
+PAY00009616	SP3201089	2025-11-12	592.04	BACS	SETTLED	2025-11-12
+PAY00009617	SP3201089	2025-12-10	592.04	BACS	SETTLED	2025-12-10
+PAY00009618	SP3201089	2026-01-07	592.04	BACS	SETTLED	2026-01-07
+PAY00009619	SP3201089	2026-02-04	592.04	POST_OFFICE	SETTLED	2026-02-04
+PAY00009620	SP3201089	2026-03-04	592.04	BACS	SETTLED	2026-03-04
+PAY00009621	SP3201089	2026-04-01	592.04	CHEQUE	SETTLED	2026-04-01
+PAY00009624	SP3201090	2025-09-19	278.08	BACS	SETTLED	2025-09-19
+PAY00009625	SP3201090	2025-10-17	278.08	BACS	SETTLED	2025-10-17
+PAY00009626	SP3201090	2025-11-14	278.08	POST_OFFICE	SETTLED	2025-11-14
+PAY00009627	SP3201090	2025-12-12	278.08	BACS	SETTLED	2025-12-12
+PAY00009628	SP3201090	2026-01-09	278.08	BACS	SETTLED	2026-01-09
+PAY00009629	SP3201090	2026-02-06	278.08	BACS	SETTLED	2026-02-06
+PAY00009630	SP3201090	2026-03-06	278.08	BACS	SETTLED	2026-03-06
+PAY00009631	SP3201090	2026-04-03	278.08	BACS	SETTLED	2026-04-03
+PAY00009634	SP3201091	2025-11-16	328.64	CHEQUE	SETTLED	2025-11-16
+PAY00009635	SP3201091	2025-12-14	328.64	POST_OFFICE	SETTLED	2025-12-14
+PAY00009636	SP3201091	2026-01-11	328.64	BACS	SETTLED	2026-01-11
+PAY00009637	SP3201091	2026-02-08	328.64	BACS	SETTLED	2026-02-08
+PAY00009638	SP3201091	2026-03-08	328.64	BACS	SETTLED	2026-03-08
+PAY00009639	SP3201091	2026-04-05	328.64	BACS	SETTLED	2026-04-05
+PAY00009642	SP3201092	2025-12-11	920.48	BACS	SETTLED	2025-12-11
+PAY00009643	SP3201092	2026-01-08	920.48	BACS	SETTLED	2026-01-08
+PAY00009644	SP3201092	2026-02-05	920.48	BACS	SETTLED	2026-02-05
+PAY00009645	SP3201092	2026-03-05	920.48	BACS	SETTLED	2026-03-05
+PAY00009646	SP3201092	2026-04-02	920.48	BACS	SETTLED	2026-04-02
+PAY00009649	SP3201093	2024-10-04	2793.44	POST_OFFICE	SETTLED	2024-10-04
+PAY00009650	SP3201093	2025-01-03	2793.44	BACS	SETTLED	2025-01-03
+PAY00009651	SP3201093	2025-04-04	2793.44	BACS	SETTLED	2025-04-04
+PAY00009652	SP3201093	2025-07-04	2793.44	BACS	SETTLED	2025-07-04
+PAY00009653	SP3201093	2025-10-03	2793.44	BACS	SETTLED	2025-10-03
+PAY00009654	SP3201093	2026-01-02	2793.44	BACS	SETTLED	2026-01-02
+PAY00009655	SP3201093	2026-04-03	2793.44	BACS	SETTLED	2026-04-03
+PAY00009658	SP3201094	2025-04-06	1561.04	BACS	SETTLED	2025-04-06
+PAY00009659	SP3201094	2025-07-06	1561.04	BACS	SETTLED	2025-07-06
+PAY00009660	SP3201094	2025-10-05	1561.04	BACS	SETTLED	2025-10-05
+PAY00009661	SP3201094	2026-01-04	1561.04	BACS	SETTLED	2026-01-04
+PAY00009662	SP3201094	2026-04-05	1561.04	BACS	SETTLED	2026-04-05
+PAY00009665	SP3201095	2026-02-21	183.28	BACS	SETTLED	2026-02-21
+PAY00009666	SP3201095	2026-02-28	183.28	BACS	SETTLED	2026-02-28
+PAY00009667	SP3201095	2026-03-07	183.28	BACS	SETTLED	2026-03-07
+PAY00009668	SP3201095	2026-03-14	183.28	POST_OFFICE	SETTLED	2026-03-14
+PAY00009669	SP3201095	2026-03-21	183.28	POST_OFFICE	SETTLED	2026-03-21
+PAY00009670	SP3201095	2026-03-28	183.28	BACS	SETTLED	2026-03-28
+PAY00009671	SP3201095	2026-04-04	183.28	BACS	SETTLED	2026-04-04
+PAY00009674	SP3201096	2025-08-24	666.76	BACS	SETTLED	2025-08-24
+PAY00009675	SP3201096	2025-09-21	666.76	CHEQUE	SETTLED	2025-09-21
+PAY00009676	SP3201096	2025-10-19	666.76	BACS	SETTLED	2025-10-19
+PAY00009677	SP3201096	2025-11-16	666.76	BACS	SETTLED	2025-11-16
+PAY00009678	SP3201096	2025-12-14	666.76	BACS	SETTLED	2025-12-14
+PAY00009679	SP3201096	2026-01-11	666.76	BACS	SETTLED	2026-01-11
+PAY00009680	SP3201096	2026-02-08	666.76	BACS	SETTLED	2026-02-08
+PAY00009681	SP3201096	2026-03-08	666.76	POST_OFFICE	SETTLED	2026-03-08
+PAY00009682	SP3201096	2026-04-05	666.76	BACS	SETTLED	2026-04-05
+PAY00009685	SP3201097	2026-02-03	167.66	BACS	SETTLED	2026-02-03
+PAY00009686	SP3201097	2026-02-10	167.66	BACS	SETTLED	2026-02-10
+PAY00009687	SP3201097	2026-02-17	167.66	POST_OFFICE	SETTLED	2026-02-17
+PAY00009688	SP3201097	2026-02-24	167.66	BACS	SETTLED	2026-02-24
+PAY00009689	SP3201097	2026-03-03	167.66	BACS	SETTLED	2026-03-03
+PAY00009690	SP3201097	2026-03-10	167.66	CHEQUE	SETTLED	2026-03-10
+PAY00009691	SP3201097	2026-03-17	167.66	BACS	SETTLED	2026-03-17
+PAY00009692	SP3201097	2026-03-24	167.66	BACS	SETTLED	2026-03-24
+PAY00009693	SP3201097	2026-03-31	167.66	BACS	SETTLED	2026-03-31
+PAY00009696	SP3201098	2025-09-22	808.96	BACS	SETTLED	2025-09-22
+PAY00009697	SP3201098	2025-10-20	808.96	BACS	SETTLED	2025-10-20
+PAY00009698	SP3201098	2025-11-17	808.96	POST_OFFICE	SETTLED	2025-11-17
+PAY00009699	SP3201098	2025-12-15	808.96	BACS	SETTLED	2025-12-15
+PAY00009700	SP3201098	2026-01-12	808.96	POST_OFFICE	SETTLED	2026-01-12
+PAY00009701	SP3201098	2026-02-09	808.96	BACS	SETTLED	2026-02-09
+PAY00009702	SP3201098	2026-03-09	808.96	POST_OFFICE	SETTLED	2026-03-09
+PAY00009705	SP3201099	2025-08-20	404.48	BACS	SETTLED	2025-08-20
+PAY00009706	SP3201099	2025-09-17	404.48	BACS	SETTLED	2025-09-17
+PAY00009707	SP3201099	2025-10-15	404.48	BACS	SETTLED	2025-10-15
+PAY00009708	SP3201099	2025-11-12	404.48	BACS	SETTLED	2025-11-12
+PAY00009709	SP3201099	2025-12-10	404.48	BACS	SETTLED	2025-12-10
+PAY00009710	SP3201099	2026-01-07	404.48	BACS	SETTLED	2026-01-07
+PAY00009711	SP3201099	2026-02-04	404.48	BACS	SETTLED	2026-02-04
+PAY00009712	SP3201099	2026-03-04	404.48	BACS	SETTLED	2026-03-04
+PAY00009713	SP3201099	2026-04-01	404.48	BACS	SETTLED	2026-04-01
+PAY00009716	SP3201100	2025-08-21	711.76	POST_OFFICE	SETTLED	2025-08-21
+PAY00009717	SP3201100	2025-09-18	711.76	BACS	SETTLED	2025-09-18
+PAY00009718	SP3201100	2025-10-16	711.76	BACS	SETTLED	2025-10-16
+PAY00009719	SP3201100	2025-11-13	711.76	BACS	SETTLED	2025-11-13
+PAY00009720	SP3201100	2025-12-11	711.76	BACS	SETTLED	2025-12-11
+PAY00009721	SP3201100	2026-01-08	711.76	BACS	SETTLED	2026-01-08
+PAY00009722	SP3201100	2026-02-05	711.76	BACS	SETTLED	2026-02-05
+PAY00009723	SP3201100	2026-03-05	711.76	BACS	SETTLED	2026-03-05
+PAY00009724	SP3201100	2026-04-02	711.76	BACS	SETTLED	2026-04-02
+PAY00009727	SP3201101	2025-09-17	404.48	BACS	SETTLED	2025-09-17
+PAY00009728	SP3201101	2025-10-15	404.48	BACS	SETTLED	2025-10-15
+PAY00009729	SP3201101	2025-11-12	404.48	BACS	SETTLED	2025-11-12
+PAY00009730	SP3201101	2025-12-10	404.48	POST_OFFICE	SETTLED	2025-12-10
+PAY00009731	SP3201101	2026-01-07	404.48	BACS	SETTLED	2026-01-07
+PAY00009732	SP3201101	2026-02-04	404.48	BACS	SETTLED	2026-02-04
+PAY00009733	SP3201101	2026-03-04	404.48	POST_OFFICE	SETTLED	2026-03-04
+PAY00009734	SP3201101	2026-04-01	404.48	BACS	SETTLED	2026-04-01
+PAY00009737	SP3201102	2026-02-13	126.40	BACS	SETTLED	2026-02-13
+PAY00009738	SP3201102	2026-02-20	126.40	BACS	SETTLED	2026-02-20
+PAY00009739	SP3201102	2026-02-27	126.40	POST_OFFICE	SETTLED	2026-02-27
+PAY00009740	SP3201102	2026-03-06	126.40	CHEQUE	SETTLED	2026-03-06
+PAY00009741	SP3201102	2026-03-13	126.40	BACS	SETTLED	2026-03-13
+PAY00009742	SP3201102	2026-03-20	126.40	BACS	SETTLED	2026-03-20
+PAY00009743	SP3201102	2026-03-27	126.40	BACS	SETTLED	2026-03-27
+PAY00009744	SP3201102	2026-04-03	126.40	POST_OFFICE	SETTLED	2026-04-03
+PAY00009747	SP3201103	2025-09-21	834.24	BACS	SETTLED	2025-09-21
+PAY00009748	SP3201103	2025-10-19	834.24	BACS	SETTLED	2025-10-19
+PAY00009749	SP3201103	2025-11-16	834.24	BACS	SETTLED	2025-11-16
+PAY00009750	SP3201103	2025-12-14	834.24	BACS	SETTLED	2025-12-14
+PAY00009751	SP3201103	2026-01-11	834.24	BACS	SETTLED	2026-01-11
+PAY00009752	SP3201103	2026-02-08	834.24	BACS	SETTLED	2026-02-08
+PAY00009753	SP3201103	2026-03-08	834.24	BACS	SETTLED	2026-03-08
+PAY00009754	SP3201103	2026-04-05	834.24	BACS	SETTLED	2026-04-05
+PAY00009757	SP3201104	2026-03-01	101.12	BACS	SETTLED	2026-03-01
+PAY00009758	SP3201104	2026-03-08	101.12	BACS	SETTLED	2026-03-08
+PAY00009759	SP3201104	2026-03-15	101.12	BACS	SETTLED	2026-03-15
+PAY00009760	SP3201104	2026-03-22	101.12	BACS	SETTLED	2026-03-22
+PAY00009761	SP3201104	2026-03-29	101.12	BACS	SETTLED	2026-03-29
+PAY00009762	SP3201104	2026-04-05	101.12	BACS	SETTLED	2026-04-05
+PAY00009765	SP3201105	2024-04-06	1807.52	BACS	SETTLED	2024-04-06
+PAY00009766	SP3201105	2024-07-06	1807.52	BACS	SETTLED	2024-07-06
+PAY00009767	SP3201105	2024-10-05	1807.52	BACS	SETTLED	2024-10-05
+PAY00009768	SP3201105	2025-01-04	1807.52	BACS	SETTLED	2025-01-04
+PAY00009769	SP3201105	2025-04-05	1807.52	BACS	SETTLED	2025-04-05
+PAY00009770	SP3201105	2025-07-05	1807.52	BACS	SETTLED	2025-07-05
+PAY00009771	SP3201105	2025-10-04	1807.52	BACS	SETTLED	2025-10-04
+PAY00009772	SP3201105	2026-01-03	1807.52	BACS	SETTLED	2026-01-03
+PAY00009773	SP3201105	2026-04-04	1807.52	BACS	SETTLED	2026-04-04
+PAY00009776	SP3201106	2025-09-16	595.40	BACS	SETTLED	2025-09-16
+PAY00009777	SP3201106	2025-10-14	595.40	BACS	SETTLED	2025-10-14
+PAY00009778	SP3201106	2025-11-11	595.40	BACS	SETTLED	2025-11-11
+PAY00009779	SP3201106	2025-12-09	595.40	BACS	SETTLED	2025-12-09
+PAY00009780	SP3201106	2026-01-06	595.40	BACS	SETTLED	2026-01-06
+PAY00009781	SP3201106	2026-02-03	595.40	BACS	SETTLED	2026-02-03
+PAY00009782	SP3201106	2026-03-03	595.40	BACS	SETTLED	2026-03-03
+PAY00009783	SP3201106	2026-03-31	595.40	BACS	SETTLED	2026-03-31
+PAY00009786	SP3201107	2025-10-19	404.48	BACS	SETTLED	2025-10-19
+PAY00009787	SP3201107	2025-11-16	404.48	BACS	SETTLED	2025-11-16
+PAY00009788	SP3201107	2025-12-14	404.48	BACS	SETTLED	2025-12-14
+PAY00009789	SP3201107	2026-01-11	404.48	CHEQUE	SETTLED	2026-01-11
+PAY00009790	SP3201107	2026-02-08	404.48	BACS	SETTLED	2026-02-08
+PAY00009791	SP3201107	2026-03-08	404.48	BACS	SETTLED	2026-03-08
+PAY00009792	SP3201107	2026-04-05	404.48	BACS	SETTLED	2026-04-05
+PAY00009795	SP3201108	2025-08-19	530.88	BACS	SETTLED	2025-08-19
+PAY00009796	SP3201108	2025-09-16	530.88	BACS	SETTLED	2025-09-16
+PAY00009797	SP3201108	2025-10-14	530.88	BACS	SETTLED	2025-10-14
+PAY00009798	SP3201108	2025-11-11	530.88	BACS	SETTLED	2025-11-11
+PAY00009799	SP3201108	2025-12-09	530.88	BACS	SETTLED	2025-12-09
+PAY00009800	SP3201108	2026-01-06	530.88	CHEQUE	SETTLED	2026-01-06
+PAY00009801	SP3201108	2026-02-03	530.88	BACS	SETTLED	2026-02-03
+PAY00009802	SP3201108	2026-03-03	530.88	CHEQUE	SETTLED	2026-03-03
+PAY00009803	SP3201108	2026-03-31	530.88	BACS	SETTLED	2026-03-31
+PAY00009806	SP3201109	2026-03-03	54.82	BACS	SETTLED	2026-03-03
+PAY00009807	SP3201109	2026-03-10	54.82	BACS	SETTLED	2026-03-10
+PAY00009808	SP3201109	2026-03-17	54.82	BACS	SETTLED	2026-03-17
+PAY00009809	SP3201109	2026-03-24	54.82	BACS	SETTLED	2026-03-24
+PAY00009810	SP3201109	2026-03-31	54.82	POST_OFFICE	SETTLED	2026-03-31
+PAY00009813	SP3201110	2025-10-14	505.60	POST_OFFICE	SETTLED	2025-10-14
+PAY00009814	SP3201110	2025-11-11	505.60	BACS	SETTLED	2025-11-11
+PAY00009815	SP3201110	2025-12-09	505.60	CHEQUE	SETTLED	2025-12-09
+PAY00009816	SP3201110	2026-01-06	505.60	BACS	SETTLED	2026-01-06
+PAY00009817	SP3201110	2026-02-03	505.60	CHEQUE	SETTLED	2026-02-03
+PAY00009818	SP3201110	2026-03-03	505.60	BACS	SETTLED	2026-03-03
+PAY00009819	SP3201110	2026-03-31	505.60	BACS	SETTLED	2026-03-31
+PAY00009822	SP3201111	2025-01-04	1150.24	BACS	SETTLED	2025-01-04
+PAY00009823	SP3201111	2025-04-05	1150.24	BACS	SETTLED	2025-04-05
+PAY00009824	SP3201111	2025-07-05	1150.24	BACS	SETTLED	2025-07-05
+PAY00009825	SP3201111	2025-10-04	1150.24	BACS	SETTLED	2025-10-04
+PAY00009826	SP3201111	2026-01-03	1150.24	BACS	SETTLED	2026-01-03
+PAY00009827	SP3201111	2026-04-04	1150.24	BACS	SETTLED	2026-04-04
+PAY00009830	SP3201112	2025-08-20	379.20	BACS	SETTLED	2025-08-20
+PAY00009831	SP3201112	2025-09-17	379.20	BACS	SETTLED	2025-09-17
+PAY00009832	SP3201112	2025-10-15	379.20	BACS	SETTLED	2025-10-15
+PAY00009833	SP3201112	2025-11-12	379.20	CHEQUE	SETTLED	2025-11-12
+PAY00009834	SP3201112	2025-12-10	379.20	POST_OFFICE	SETTLED	2025-12-10
+PAY00009835	SP3201112	2026-01-07	379.20	BACS	SETTLED	2026-01-07
+PAY00009836	SP3201112	2026-02-04	379.20	POST_OFFICE	SETTLED	2026-02-04
+PAY00009837	SP3201112	2026-03-04	379.20	BACS	SETTLED	2026-03-04
+PAY00009838	SP3201112	2026-04-01	379.20	BACS	SETTLED	2026-04-01
+PAY00009841	SP3201113	2025-08-24	834.24	BACS	SETTLED	2025-08-24
+PAY00009842	SP3201113	2025-09-21	834.24	BACS	SETTLED	2025-09-21
+PAY00009843	SP3201113	2025-10-19	834.24	BACS	SETTLED	2025-10-19
+PAY00009844	SP3201113	2025-11-16	834.24	BACS	SETTLED	2025-11-16
+PAY00009845	SP3201113	2025-12-14	834.24	BACS	SETTLED	2025-12-14
+PAY00009846	SP3201113	2026-01-11	834.24	CHEQUE	SETTLED	2026-01-11
+PAY00009847	SP3201113	2026-02-08	834.24	CHEQUE	SETTLED	2026-02-08
+PAY00009848	SP3201113	2026-03-08	834.24	BACS	SETTLED	2026-03-08
+PAY00009849	SP3201113	2026-04-05	834.24	POST_OFFICE	SETTLED	2026-04-05
+PAY00009852	SP3201114	2025-11-17	884.80	CHEQUE	SETTLED	2025-11-17
+PAY00009853	SP3201114	2025-12-15	884.80	BACS	SETTLED	2025-12-15
+PAY00009854	SP3201114	2026-01-12	884.80	BACS	SETTLED	2026-01-12
+PAY00009855	SP3201114	2026-02-09	884.80	BACS	SETTLED	2026-02-09
+PAY00009856	SP3201114	2026-03-09	884.80	POST_OFFICE	SETTLED	2026-03-09
+PAY00009859	SP3201115	2024-04-02	1643.20	POST_OFFICE	SETTLED	2024-04-02
+PAY00009860	SP3201115	2024-07-02	1643.20	BACS	SETTLED	2024-07-02
+PAY00009861	SP3201115	2024-10-01	1643.20	POST_OFFICE	SETTLED	2024-10-01
+PAY00009862	SP3201115	2024-12-31	1643.20	BACS	SETTLED	2024-12-31
+PAY00009863	SP3201115	2025-04-01	1643.20	BACS	SETTLED	2025-04-01
+PAY00009864	SP3201115	2025-07-01	1643.20	BACS	SETTLED	2025-07-01
+PAY00009865	SP3201115	2025-09-30	1643.20	BACS	SETTLED	2025-09-30
+PAY00009866	SP3201115	2025-12-30	1643.20	BACS	SETTLED	2025-12-30
+PAY00009867	SP3201115	2026-03-31	1643.20	BACS	SETTLED	2026-03-31
+PAY00009870	SP3201116	2026-03-02	88.48	POST_OFFICE	SETTLED	2026-03-02
+PAY00009871	SP3201116	2026-03-09	88.48	BACS	SETTLED	2026-03-09
+PAY00009872	SP3201116	2026-03-16	88.48	POST_OFFICE	SETTLED	2026-03-16
+PAY00009873	SP3201116	2026-03-23	88.48	BACS	SETTLED	2026-03-23
+PAY00009874	SP3201116	2026-03-30	88.48	POST_OFFICE	SETTLED	2026-03-30
+\.

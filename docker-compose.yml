@@ -1,0 +1,50 @@
+# State Pension Data Hackathon - local database
+#
+# You should not need to edit this file. Use ./start.sh instead.
+#
+# Notes:
+#   - Host port is 55432, NOT the usual 5432. This avoids clashing with any
+#     Postgres you may already have installed.
+#   - Everything in ./initdb runs automatically the FIRST time the database
+#     starts. It does NOT re-run on restart. Use ./reset.sh to start fresh.
+
+services:
+  db:
+    image: postgres:16
+    container_name: hackathon-db
+    restart: unless-stopped
+    environment:
+      # POSTGRES_USER becomes the superuser. You need superuser rights for
+      # this hackathon - you create tables, drop them, and in Challenge 2
+      # create a role - so a locked-down account would get in the way.
+      #
+      # A password of 'hackathon' in a public repo is fine HERE and only
+      # here: the container is thrown away after the event, the data is
+      # invented, and the port is bound to your own machine. None of those
+      # three things is true of a real database. Do not copy this pattern.
+      POSTGRES_USER: hackathon
+      POSTGRES_PASSWORD: hackathon
+      POSTGRES_DB: pension
+      # Which team's dataset to load. Set by ./start.sh
+      TEAM: "${TEAM:-1}"
+      # Deterministic sorting so everyone gets identical results
+      LANG: C
+      LC_ALL: C
+    ports:
+      # Bound to 127.0.0.1 deliberately. Without the address Docker listens
+      # on every network interface, which would put a superuser database
+      # with a published password on the conference wifi. Your SQL client
+      # connects to localhost, so this changes nothing for you.
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./initdb:/docker-entrypoint-initdb.d:ro
+      - ./data:/teamdata:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hackathon -d pension"]
+      interval: 3s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  pgdata:

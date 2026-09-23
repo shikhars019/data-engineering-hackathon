@@ -1,0 +1,13 @@
+# Organiser-only material - never published to students
+_organiser/
+
+# Local scratch
+*.log
+.DS_Store
+.idea/
+.vscode/
+scratch/
+my_notes*
+
+# Which team this checkout is set up as
+.team
