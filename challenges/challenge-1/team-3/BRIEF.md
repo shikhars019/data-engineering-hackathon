@@ -78,6 +78,27 @@ can currently answer: **how many pensioners live in each region?**
 
 ---
 
+### Hints are there if you want them
+
+Your folder has three files:
+
+| File | What it is |
+|---|---|
+| `BRIEF.md` | this page — the problem, and why it matters |
+| `solution.sql` | the file you edit |
+| `hints.md` | **optional.** A full walkthrough: what to look at, what is going on, and the SQL for every task |
+
+**Using `hints.md` is completely fine and nobody is counting.** It is there so
+that being stuck never costs you the rest of the hour.
+
+**Not using it is harder and more satisfying.** If you want the tougher run,
+work from `BRIEF.md` and the failing tests alone, and open `hints.md` only
+when you have genuinely run out of ideas — for one task, not the whole thing.
+
+Either way you can change your mind at any point.
+
+---
+
 ## How to work
 
 ```bash

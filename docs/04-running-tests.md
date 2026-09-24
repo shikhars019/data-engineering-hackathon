@@ -123,6 +123,10 @@ SELECT * FROM test.result WHERE status = 'FAIL';    -- just the failures
 **Run it constantly.** After every change. It takes seconds. A mistake you
 catch immediately is much easier than one you find with ten minutes left.
 
+**Stuck on one test?** Your team folder has a `hints.md` with a walkthrough
+for every task. Using it is completely fine. Skipping it makes for a harder
+run — and you can open it for a single task without reading the rest.
+
 **Tests can go backwards.** If something that was passing starts failing, the
 change you just made broke it. That is useful information, not a disaster.
 

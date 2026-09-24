@@ -59,6 +59,14 @@ Your job is to turn it into something trustworthy.
 
 **Every team has a different dataset and a different problem.**
 
+Each team folder holds three files: `BRIEF.md` (the problem), `solution.sql`
+(the file you edit) and `hints.md` (**optional** — a full walkthrough).
+
+**`hints.md` is yours to use or ignore.** Using it is completely fine and
+nobody is counting. Ignoring it makes for a harder, more satisfying
+hackathon: work from the brief and the failing tests alone, and open the
+hints only when you are genuinely stuck — for one task, not the whole thing.
+
 | Team | Challenge | Your brief |
 |---|---|---|
 | 1 | The Duplicate Claimants | [team-1/BRIEF.md](challenges/challenge-1/team-1/BRIEF.md) |
