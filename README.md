@@ -83,6 +83,9 @@ keep the join between them working.
 
 **The same challenge for every team** → [challenge-2/BRIEF.md](challenges/challenge-2/BRIEF.md)
 
+Same three files: a brief, the `solution.sql` you edit, and an optional
+`hints.md`.
+
 You do **not** need Challenge 1 finished to start Challenge 2. It reads a
 separate, already-clean dataset.
 
