@@ -86,7 +86,7 @@ You only need to do this once. It keeps running in the background, and
 
 ```bash
 cd ~/Documents
-git clone https://github.com/shikhars019/data-engineering-hackathon.git
+git clone -b dev https://github.com/shikhars019/data-engineering-hackathon.git
 cd data-engineering-hackathon
 ```
 
@@ -96,7 +96,40 @@ command from here on. If you close Terminal and come back, run
 
 ---
 
-## Step 6 — Install a SQL client
+## Step 6 — Install a text editor
+
+Both challenges work the same way: you open **one file**, change a few marked
+lines, and save it. So you need something to open that file with.
+
+```bash
+brew install --cask visual-studio-code
+```
+
+Then, from inside the hackathon folder:
+
+```bash
+code .
+```
+
+That opens the whole project in one window. The file you will spend the day in
+is `challenges/challenge-1/team-3/solution.sql` — with **your** team number in
+place of the 3.
+
+Do not want to install it? Either of these works:
+
+```bash
+open -e challenges/challenge-1/team-3/solution.sql   # opens in TextEdit
+nano challenges/challenge-1/team-3/solution.sql      # edits in the Terminal
+```
+
+In `nano`, `Ctrl-O` then `Enter` saves, and `Ctrl-X` quits.
+
+> A SQL client such as TablePlus (next step) is for **looking at the data**.
+> It does not edit `solution.sql` for you — that is what the editor is for.
+
+---
+
+## Step 7 — Install a SQL client
 
 You will spend the day *looking* at data, and a grid is far easier to read
 than terminal output. This is optional but strongly recommended.
@@ -112,7 +145,7 @@ works just as well, though it is a heavier download.
 
 ---
 
-## Step 7 — Check everything works
+## Step 8 — Check everything works
 
 ```bash
 ./preflight.sh

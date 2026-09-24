@@ -63,8 +63,9 @@ with the guidance next to the code.
 | 5 | Throw out addresses for people who do not exist | C3.04 |
 | 6 | Work out which address each person actually lives at | C3.05, C3.06 |
 
-**You do not have to write the postcode pattern.** One is provided in your
-file. Your job is to use it, not invent it.
+**You do not have to write the postcode pattern.** One is written out for you
+in [docs/05-sql-cheatsheet.md](../../../docs/05-sql-cheatsheet.md), under
+*Patterns*. Copy it. Your job is to use it, not invent it.
 
 **Nothing on the scorecard is free.** Every test starts red, and each one goes
 green because of something you did.
@@ -118,8 +119,9 @@ Browse the data in TablePlus (`localhost:55432`), or from the terminal:
 That command wraps every value in brackets, so `[ sw1a 1aa ]` shows you the
 stray spaces you would never spot otherwise.
 
-**Look at the data before you write any SQL.** Every task in your file starts
-with a LOOK FIRST query for exactly this reason.
+**Look at the data before you write any SQL.** You cannot clean something you
+have not seen, and `./explore.sh` is how you look. (If you open `hints.md`,
+every task there starts with a suggested LOOK FIRST query.)
 
 Made a mess? `./reset.sh` gives you a fresh database in twenty seconds. It is
 not cheating and nobody is counting.

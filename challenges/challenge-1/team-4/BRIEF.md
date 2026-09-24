@@ -70,8 +70,8 @@ with the guidance next to the code.
 
 | # | Task | Tests it turns green |
 |---|---|---|
-| 1 | Strip the pound signs off the weekly amounts | C4.02, C4.03 |
-| 2 | Strip the spaces and the `GBP` | C4.02, C4.03 |
+| 1 | Strip the pound signs off the weekly amounts | C4.01, C4.02, C4.03 |
+| 2 | Strip the spaces and the `GBP` | C4.01, C4.02, C4.03 |
 | 3 | Do the same for payments, plus the commas and brackets | *(feeds 4–6)* |
 | 4 | Make bracketed amounts negative | C4.06, C4.08 |
 | 5 | Keep only money that actually moved | C4.04, C4.07 |
@@ -126,8 +126,9 @@ Browse the data in TablePlus (`localhost:55432`), or from the terminal:
 ./explore.sh values raw.claim weekly_amount
 ```
 
-**Look at the data before you write any SQL.** Every task in your file starts
-with a LOOK FIRST query for exactly this reason.
+**Look at the data before you write any SQL.** You cannot clean something you
+have not seen, and `./explore.sh` is how you look. (If you open `hints.md`,
+every task there starts with a suggested LOOK FIRST query.)
 
 Made a mess? `./reset.sh` gives you a fresh database in twenty seconds. It is
 not cheating and nobody is counting.

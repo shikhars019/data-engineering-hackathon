@@ -113,8 +113,9 @@ Browse the data in TablePlus (`localhost:55432`), or from the terminal:
 ./explore.sh sql "SELECT source_system, date_of_birth FROM raw.claimant LIMIT 30"
 ```
 
-**Look at the data before you write any SQL.** Every task in your file starts
-with a LOOK FIRST query for exactly this reason.
+**Look at the data before you write any SQL.** You cannot clean something you
+have not seen, and `./explore.sh` is how you look. (If you open `hints.md`,
+every task there starts with a suggested LOOK FIRST query.)
 
 Made a mess? `./reset.sh` gives you a fresh database in twenty seconds. It is
 not cheating and nobody is counting.

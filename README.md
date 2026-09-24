@@ -149,9 +149,10 @@ what the job is.
 
 ## How to work
 
-**Look at the data before you write any SQL.** Every task in your file starts
-with a LOOK FIRST query for exactly this reason. Real data engineers spend
-more time reading data than writing code.
+**Look at the data before you write any SQL.** Real data engineers spend more
+time reading data than writing code. `./explore.sh` is how you look, and it
+works whether or not you use the hints. (If you do open `hints.md`, every
+task there starts with a suggested LOOK FIRST query.)
 
 ```bash
 ./explore.sh values raw.claim claim_status

@@ -249,6 +249,29 @@ duplicates.
 
 ---
 
+## md5 — turning a value into a pseudonym
+
+Challenge 2 only. `md5()` turns any text into the same 32-character
+fingerprint every time, and you cannot turn the fingerprint back into the
+text.
+
+```sql
+md5('ZZ123456C')                    -- always 237db44f...  32 characters
+md5('pepper' || 'ZZ123456C')        -- a completely different 32 characters
+```
+
+Two things follow from "the same every time", and both matter:
+
+- Hash the same person in two tables and you get the same value, so the
+  tables still **join**. Hash them differently and nothing joins.
+- Anybody can hash every possible National Insurance number and look yours
+  up. Gluing a secret word on the front first — a **salt** — stops that.
+
+`||` joins two pieces of text together. Challenge 2's brief tells you where
+the salt lives.
+
+---
+
 ## Patterns (already written for you)
 
 You will never have to write one of these today, but you will use them.
