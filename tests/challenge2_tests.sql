@@ -54,9 +54,9 @@ SELECT test.check('D.02', 'core', '3', $n$analytics.payment_anon has one row per
 SELECT test.check('D.03', 'core', '5', $n$No column in analytics is named after personal data$n$, $e$0$e$,
     $q$SELECT count(*)::text FROM information_schema.columns WHERE table_schema = 'analytics' AND column_name ~* '(nino|national_insurance|full_name|surname|first_name|last_name|email|phone|telephone|date_of_birth|^dob$)'$q$,
     $h$If a column is called nino, it should not be here at all.$h$);
-SELECT test.check('D.04', 'core', '5', $n$No value anywhere in analytics looks like a National Insurance number$n$, $e$0$e$,
+SELECT test.check('D.04', 'core', '3', $n$No value anywhere in analytics looks like a National Insurance number$n$, $e$0$e$,
     $q$SELECT test.scan_analytics('[A-Z]{2}[0-9]{6}[A-Z]')::text$q$,
-    $h$A renamed column is still a leak. Do not carry the value through.$h$);
+    $h$The payment table is still publishing raw National Insurance numbers.$h$);
 SELECT test.check('D.05', 'core', '2', $n$Every person has a different 32-character pseudonym$n$, $e$1200$e$,
     $q$SELECT count(DISTINCT person_id)::text FROM analytics.claimant_anon WHERE person_id ~ '^[0-9a-f]{32}$'$q$,
     $h$md5() returns 32 hex characters. Two people sharing one would corrupt every count.$h$);
