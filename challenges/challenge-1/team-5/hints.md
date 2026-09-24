@@ -14,8 +14,8 @@ problem is; this page is only *how*.
 
 ## Task 1 — Claim status. Read this one.
 
-Already done, and its test already passes. It is the pattern for Tasks 2
-and 4, so read it before you write anything.
+Already written for you. It scores nothing on its own — it is the pattern
+for Tasks 2 and 4, so read it before you write anything.
 
 ```bash
 ./explore.sh values raw.claim claim_status

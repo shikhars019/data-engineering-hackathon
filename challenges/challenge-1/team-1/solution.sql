@@ -28,8 +28,8 @@
 -- call - and you can dip in for one task without reading the rest.
 -- ---------------------------------------------------------------------------
 --
--- It already runs. Run ./check.sh 1 now, before changing anything, so you
--- can see where you are starting from.
+-- It already runs, and every test starts red. Run ./check.sh 1 now,
+-- before changing anything, so you can see where you are starting from.
 -- ===========================================================================
 
 -- Start from empty every time, so you can run this file as often as you like.

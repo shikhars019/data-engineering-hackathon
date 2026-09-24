@@ -111,6 +111,9 @@ hiding the answer from you.
   Next thing to fix:  Task 2   Placeholder text like N/A and UNKNOWN is gone
 ```
 
+**Everything starts red.** Nothing on the scorecard passes until you have made
+it pass — there are no free ticks, on either challenge.
+
 **It is sorted by task, not by test number** — so it reads like a to-do list.
 Work down it from the top, and `./check.sh` tells you the next thing to fix.
 

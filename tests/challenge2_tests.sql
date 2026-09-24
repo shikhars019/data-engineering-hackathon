@@ -45,31 +45,22 @@ BEGIN
 END;
 $fn$ LANGUAGE plpgsql;
 
-SELECT test.check('D.01', 'core', '2', $n$analytics.claimant_anon has one row per person$n$, $e$1200$e$,
-    $q$SELECT count(*)::text FROM analytics.claimant_anon$q$,
-    $h$Anonymising must not lose anybody.$h$);
-SELECT test.check('D.02', 'core', '3', $n$analytics.payment_anon has one row per payment$n$, $e$8808$e$,
-    $q$SELECT count(*)::text FROM analytics.payment_anon$q$,
-    $h$Every payment should come through.$h$);
-SELECT test.check('D.03', 'core', '5', $n$No column in analytics is named after personal data$n$, $e$0$e$,
-    $q$SELECT count(*)::text FROM information_schema.columns WHERE table_schema = 'analytics' AND column_name ~* '(nino|national_insurance|full_name|surname|first_name|last_name|email|phone|telephone|date_of_birth|^dob$)'$q$,
-    $h$If a column is called nino, it should not be here at all.$h$);
-SELECT test.check('D.04', 'core', '3', $n$No value anywhere in analytics looks like a National Insurance number$n$, $e$0$e$,
-    $q$SELECT test.scan_analytics('[A-Z]{2}[0-9]{6}[A-Z]')::text$q$,
+SELECT test.check('D.01', 'core', '2', $n$Every person is published, each under a different SALTED pseudonym$n$, $e$1200$e$,
+    $q$SELECT count(*)::text FROM ( SELECT DISTINCT a.person_id FROM analytics.claimant_anon a WHERE a.person_id ~ '^[0-9a-f]{32}$' AND a.person_id NOT IN (SELECT md5(c.nino) FROM curated.claimant c) ) x$q$,
+    $h$md5(salt || nino), with the salt read from meta.etl_config. A plain md5(nino) is crackable in minutes and does not count.$h$);
+SELECT test.check('D.02', 'core', '3', $n$Every payment is published with a pseudonym in place of the NINO$n$, $e$8808$e$,
+    $q$SELECT count(*)::text FROM analytics.payment_anon WHERE person_id ~ '^[0-9a-f]{32}$'$q$,
     $h$The payment table is still publishing raw National Insurance numbers.$h$);
-SELECT test.check('D.05', 'core', '2', $n$Every person has a different 32-character pseudonym$n$, $e$1200$e$,
-    $q$SELECT count(DISTINCT person_id)::text FROM analytics.claimant_anon WHERE person_id ~ '^[0-9a-f]{32}$'$q$,
-    $h$md5() returns 32 hex characters. Two people sharing one would corrupt every count.$h$);
-SELECT test.check('D.06', 'core', '2', $n$The pseudonym is SALTED, not a plain hash of the NINO$n$, $e$0$e$,
-    $q$SELECT count(*)::text FROM analytics.claimant_anon a JOIN curated.claimant c ON a.person_id = md5(c.nino)$q$,
-    $h$Use md5(salt || nino). Read the salt from meta.etl_config.$h$);
-SELECT test.check('D.07', 'core', '3', $n$THE JOIN STILL WORKS: every payment finds its person$n$, $e$8808$e$,
+SELECT test.check('D.03', 'core', '3 and 5', $n$Nothing in analytics is a National Insurance number, by name or by value$n$, $e$0$e$,
+    $q$SELECT ((SELECT count(*) FROM information_schema.columns WHERE table_schema = 'analytics' AND column_name ~* '(nino|national_insurance|full_name|surname|first_name|last_name|email|phone|telephone|date_of_birth|^dob$)') + test.scan_analytics('[A-Z]{2}[0-9]{6}[A-Z]'))::text$q$,
+    $h$No column should be called nino, and no value should look like one.$h$);
+SELECT test.check('D.04', 'core', '3', $n$THE JOIN STILL WORKS: every payment finds its person$n$, $e$8808$e$,
     $q$SELECT count(*)::text FROM analytics.payment_anon p JOIN analytics.claimant_anon c ON c.person_id = p.person_id$q$,
     $h$Both tables must build the pseudonym exactly the same way, or nothing joins.$h$);
-SELECT test.check('D.08', 'core', '3', $n$The joined total still comes to 8932219.75$n$, $e$8932219.75$e$,
+SELECT test.check('D.05', 'core', '3', $n$The joined total still comes to 8932219.75$n$, $e$8932219.75$e$,
     $q$SELECT to_char(sum(p.amount), 'FM99999999990.00') FROM analytics.payment_anon p JOIN analytics.claimant_anon c ON c.person_id = p.person_id$q$,
     $h$If this is short, some payments are not joining to a person.$h$);
-SELECT test.check('D.09', 'core', '4', $n$84 people are flagged as deceased$n$, $e$84$e$,
+SELECT test.check('D.06', 'core', '4', $n$84 people are flagged as deceased$n$, $e$84$e$,
     $q$SELECT count(*)::text FROM analytics.claimant_anon WHERE is_deceased$q$,
     $h$Publish the fact, not the date. is_deceased is true when a date of death exists.$h$);
 SELECT test.check('D.B1', 'bonus', NULL, $n$Everybody has an age band$n$, $e$0$e$,

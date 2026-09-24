@@ -26,9 +26,9 @@
 
 SELECT test.reset();
 
-SELECT test.check('C4.01', 'core', '1 and 2', $n$clean.claim has every claim$n$, $e$1200$e$,
-    $q$SELECT count(*)::text FROM clean.claim$q$,
-    $h$Every claim should make it through.$h$);
+SELECT test.check('C4.01', 'core', '1 and 2', $n$Every claim came through, each with a readable weekly amount$n$, $e$1200$e$,
+    $q$SELECT count(*)::text FROM clean.claim WHERE weekly_amount IS NOT NULL$q$,
+    $h$Every claim should make it through, and every one needs a number.$h$);
 SELECT test.check('C4.02', 'core', '1 and 2', $n$Weekly amounts are sensible numbers$n$, $e$0$e$,
     $q$SELECT count(*)::text FROM clean.claim WHERE weekly_amount IS NULL OR weekly_amount <= 0 OR weekly_amount > 300$q$,
     $h$A stray comma turns 185.15 into something odd.$h$);

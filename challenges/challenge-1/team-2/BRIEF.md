@@ -59,15 +59,16 @@ with the guidance next to the code.
 
 | # | Task | Tests it turns green |
 |---|---|---|
-| 1 | Read `CIS` dates — **already done for you**, and already passing | C2.06 |
+| 1 | Read `CIS` dates — **already written for you** | *(none — it is your worked example)* |
 | 2 | Read `LEGACY_CSV` dates (day/month/year) | C2.04 |
 | 3 | Read `DIGITAL` dates (`12-Jul-1948`) | C2.05 |
-| 4 | Convert dates of death the same three ways | *(feeds Task 5)* |
+| 4 | Convert dates of death the same three ways | C2.06 |
 | 5 | Discard impossible deaths | C2.07 |
 | 6 | Leave out the birth dates that cannot be rescued | C2.01, C2.02, C2.03, C2.08 |
 
-**Task 1 is finished and its test already passes.** Read it first — it is the
-pattern for Tasks 2 and 3, which are one word each.
+**Task 1 is already finished.** Read it first — it is the pattern for Tasks 2
+and 3, which are one word each. Nothing scores for it: every test on the
+scorecard starts red, and each one goes green because of something you did.
 
 ### Bonus, once all eight core tests are green
 

@@ -9,11 +9,11 @@
 -- Five lines to change. Every one is marked   <<<<<< EDIT THIS LINE
 -- Search for EDIT to jump between them.
 --
---   Tasks 1+2  Turn the weekly amount into a number   line 74  <- start here
---   Task 3     Payment amounts: commas and brackets   line 95
---   Task 4     Make bracketed amounts negative        line 103
---   Task 5     Keep only money that actually moved    line 110
---   Task 6     Remove payments entered twice          line 127
+--   Tasks 1+2  Turn the weekly amount into a number   line 75  <- start here
+--   Task 3     Payment amounts: commas and brackets   line 96
+--   Task 4     Make bracketed amounts negative        line 104
+--   Task 5     Keep only money that actually moved    line 111
+--   Task 6     Remove payments entered twice          line 128
 --
 -- DO THEM IN THAT ORDER - parse, then filter, then de-duplicate. A
 -- different order gives a different, wrong, answer.
@@ -31,7 +31,8 @@
 -- call - and you can dip in for one task without reading the rest.
 -- ---------------------------------------------------------------------------
 --
--- It already runs. Run ./check.sh 1 now, before changing anything.
+-- It already runs, and every test starts red. Run ./check.sh 1 now,
+-- before changing anything, so you can see where you are starting from.
 -- ===========================================================================
 
 TRUNCATE clean.payment;

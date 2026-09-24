@@ -81,16 +81,21 @@ with the guidance next to the code.
 
 | # | Task | Tests it turns green |
 |---|---|---|
-| 1 | `claim_status` — **written for you**, already passing. This is your pattern. | C5.02 |
+| 1 | `claim_status` — **written for you.** This is your pattern. | *(none — it is your worked example)* |
 | 2 | `pension_type` — two schemes, one answer | C5.05, C5.06 |
 | 3 | `deferral_indicator` — eleven spellings, one boolean | C5.07 |
 | 4 | `payment_frequency` | *(bonus B)* |
-| 5 | Drop claims for people who do not exist | C5.01, C5.03, C5.04 |
+| 5 | Drop claims for people who do not exist | C5.01, C5.02, C5.03, C5.04 |
 | 6 | Payment methods via the lookup — and cope with the gaps | C5.09 |
-| 7 | Drop payments for claims that do not exist | C5.08 |
+| 7 | Drop payments for claims that do not exist | C5.02, C5.08 |
 
-**Task 1 is finished and its test already passes.** Read it before you write
-anything — Tasks 2 and 4 are exactly the same shape.
+**Task 1 is already finished.** Read it before you write anything — Tasks 2
+and 4 are exactly the same shape. Nothing scores for it: every test on the
+scorecard starts red, and each one goes green because of something you did.
+
+**Thirty claims and forty-five payments are orphans.** They are spread across
+every status, so until Task 5 drops them, *all* your status counts are too
+high — not just one of them.
 
 ### Bonus, once all nine core tests are green
 

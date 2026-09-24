@@ -9,7 +9,7 @@
 -- Six lines to change. Every one is marked   <<<<<< EDIT THIS LINE
 -- Search for EDIT to jump between them.
 --
---   Task 1  Read CIS dates                     (done for you - read it)
+--   Task 1  Read CIS dates                (written for you - it is the pattern)
 --   Task 2  Read LEGACY_CSV dates              line  50   <- start here
 --   Task 3  Read DIGITAL dates                 line  51
 --   Task 4  Read the dates of death            lines 57 and 58
@@ -29,7 +29,7 @@
 -- call - and you can dip in for one task without reading the rest.
 -- ---------------------------------------------------------------------------
 --
--- It already runs, and Task 1 is already passing. Run ./check.sh 1 now,
+-- It already runs, and every test starts red. Run ./check.sh 1 now,
 -- before changing anything, so you can see where you are starting from.
 -- ===========================================================================
 
@@ -43,8 +43,8 @@ WITH parsed AS (
     SELECT
 
         -- TASKS 1, 2 and 3 - Read each system's dates        <<< START HERE
-        -- Task 1 (CIS) is done and its test passes. Change only the text
-        -- inside the quotes on the other two.
+        -- Task 1 (CIS) is written for you. Change only the text inside
+        -- the quotes on the other two.
         CASE source_system
             WHEN 'CIS'        THEN util.to_date(date_of_birth, 'YYYY-MM-DD')
             WHEN 'LEGACY_CSV' THEN util.to_date(date_of_birth, 'YYYY-MM-DD')  -- <<<<<< EDIT THIS LINE

@@ -56,15 +56,18 @@ with the guidance next to the code.
 
 | # | Task | Tests it turns green |
 |---|---|---|
-| 1 | Load the people — **written for you**, already passing | C3.01 |
-| 2 | Tidy the town names and address lines | C3.07 |
+| 1 | Load the people — **written for you** | *(none — leave it alone)* |
+| 2 | Tidy the town names and address lines | C3.01, C3.07 |
 | 3 | Squash the postcode flat, then put one space back | C3.03, C3.08 |
 | 4 | Throw out the postcodes that are not postcodes | C3.02 |
 | 5 | Throw out addresses for people who do not exist | C3.04 |
-| 6 | Work out which address each person actually lives at | C3.05 |
+| 6 | Work out which address each person actually lives at | C3.05, C3.06 |
 
 **You do not have to write the postcode pattern.** One is provided in your
 file. Your job is to use it, not invent it.
+
+**Nothing on the scorecard is free.** Every test starts red, and each one goes
+green because of something you did.
 
 ### Bonus, once all eight core tests are green
 

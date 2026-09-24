@@ -26,9 +26,9 @@
 
 SELECT test.reset();
 
-SELECT test.check('C3.01', 'core', '1', $n$clean.claimant is populated (this part is written for you)$n$, $e$1200$e$,
-    $q$SELECT count(*)::text FROM clean.claimant$q$,
-    $h$Just run the INSERT that is already in your file.$h$);
+SELECT test.check('C3.01', 'core', '2', $n$The first address line is tidy$n$, $e$0$e$,
+    $q$SELECT count(*)::text FROM clean.address WHERE line_1 <> initcap(btrim(line_1))$q$,
+    $h$Same treatment as the town: btrim() then initcap().$h$);
 SELECT test.check('C3.02', 'core', '4 and 5', $n$clean.address holds only usable addresses$n$, $e$1362$e$,
     $q$SELECT count(*)::text FROM clean.address$q$,
     $h$38 bad postcodes and 25 orphans must go.$h$);
@@ -41,9 +41,9 @@ SELECT test.check('C3.04', 'core', '5', $n$Addresses belonging to unknown people
 SELECT test.check('C3.05', 'core', '6', $n$Each claimant has ONE current address, and it is the latest one$n$, $e$0$e$,
     $q$SELECT count(*)::text FROM ( SELECT nino FROM clean.address GROUP BY nino HAVING count(*) FILTER (WHERE is_current) <> 1 OR max(valid_from) FILTER (WHERE is_current) IS DISTINCT FROM max(valid_from) ) bad$q$,
     $h$Do not trust is_current - the latest valid_from wins.$h$);
-SELECT test.check('C3.06', 'core', '4', $n$Nobody was left without an address$n$, $e$0$e$,
-    $q$SELECT count(*)::text FROM clean.claimant c LEFT JOIN clean.address a ON a.nino = c.nino WHERE a.nino IS NULL$q$,
-    $h$Only ever drop an address the person is no longer at.$h$);
+SELECT test.check('C3.06', 'core', '6', $n$Previous addresses were kept, just not marked as current$n$, $e$162$e$,
+    $q$SELECT count(*)::text FROM clean.address WHERE NOT is_current$q$,
+    $h$Moving house is history, not a mistake. Keep the old row, flag the new one.$h$);
 SELECT test.check('C3.07', 'core', '2', $n$Town names are tidy$n$, $e$0$e$,
     $q$SELECT count(*)::text FROM clean.address WHERE town <> initcap(btrim(town))$q$,
     $h$btrim() then initcap().$h$);

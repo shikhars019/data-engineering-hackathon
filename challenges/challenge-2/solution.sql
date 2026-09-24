@@ -44,8 +44,8 @@
 -- call - and you can dip in for one task without reading the rest.
 -- ---------------------------------------------------------------------------
 --
--- It already runs. Run ./check.sh 2 now, before changing anything, so you
--- can see where you are starting from.
+-- It already runs, and every test starts red. Run ./check.sh 2 now,
+-- before changing anything, so you can see where you are starting from.
 -- ===========================================================================
 
 DROP TABLE IF EXISTS analytics.payment_summary;

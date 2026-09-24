@@ -1,6 +1,6 @@
 # Challenge 2 — Safe Data for Analysts
 
-**60 minutes · 9 core tests + 3 bonus · the same challenge for every team**
+**60 minutes · 6 core tests + 3 bonus · the same challenge for every team**
 
 ---
 
@@ -62,6 +62,9 @@ change**, and the file names them at the top.
 | 4 | Publish a flag, not a date of death | Derive the fact you need |
 | 5 | Leave name, email, phone and DOB out | The easiest task and the most important |
 
+**Nothing on the scorecard is free.** All six core tests start red, and each
+one goes green because of one of the three lines you change.
+
 ### Task 2 is worth understanding properly
 
 `md5()` turns text into a 32-character fingerprint you cannot reverse.
@@ -72,7 +75,7 @@ in a couple of minutes and match them against your "anonymous" data.
 Mixing in a secret **salt** first makes that impossible. The salt lives in
 `meta.etl_config`, which is never published.
 
-One test deliberately checks for this. An unsalted hash fails it.
+The first test on the scorecard checks for this. A plain `md5(nino)` fails it.
 
 **Read the salt from the config table rather than typing it into your SQL.**
 Both work today, but salts get rotated — and when yours does, you want to
@@ -89,7 +92,7 @@ Two tests prove it worked: one counts the payments that find their person
 through the join, and one adds up the money. If your two recipes differ by
 so much as a space, both come back empty.
 
-### Bonus, once all nine core tests are green
+### Bonus, once all six core tests are green
 
 - **A** — An age band instead of a date of birth. The `age_band` column is
   already there and empty. Ages are worked out against `DATE '2026-04-06'`,

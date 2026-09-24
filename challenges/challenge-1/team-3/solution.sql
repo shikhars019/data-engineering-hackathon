@@ -29,7 +29,7 @@
 -- call - and you can dip in for one task without reading the rest.
 -- ---------------------------------------------------------------------------
 --
--- It already runs, and Task 1 is already passing. Run ./check.sh 1 now,
+-- It already runs, and every test starts red. Run ./check.sh 1 now,
 -- before changing anything, so you can see where you are starting from.
 -- ===========================================================================
 

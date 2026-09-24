@@ -14,7 +14,8 @@ problem is; this page is only *how*.
 
 ## Task 1 — Load the people
 
-Written for you. Leave it alone — your work is the addresses.
+Written for you, and it scores nothing. Leave it alone — your work is the
+addresses.
 
 ---
 
@@ -181,6 +182,10 @@ ROW_NUMBER() OVER (PARTITION BY nino
 
 The `(rn = 1) AS is_current` at the bottom is already written. It always
 trusts number 1 — your `ORDER BY` decides who that is.
+
+Nothing is deleted here. Somebody's old addresses stay in the table with
+`is_current` false, which is how you keep a history of where they have
+lived. One of the tests counts those old rows, so do not filter them out.
 
 ---
 

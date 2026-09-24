@@ -195,3 +195,8 @@ JOIN clean.claimant cc ON cc.nino              = upper(btrim(c.claimant_ref));
 Once Bonus A works, the last test checks that no claim starts before the
 claimant's 66th birthday. If your date formats are right, it should already
 be true.
+
+That test reports two numbers — how many claims were too early, **and how
+many it looked at**. The second one is there on purpose: an empty
+`clean.claim` also has zero claims that are too early, and that is not the
+same thing as a clean one.
