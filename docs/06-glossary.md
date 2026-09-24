@@ -127,20 +127,10 @@ postcode becomes a region.
 **Suppression** — leaving something out entirely because publishing it would
 identify someone.
 
-**k-anonymity** — the rule that every published combination of attributes
-must describe at least *k* people. The agency uses k = 5.
-
-Why it matters: nobody is identified by "female", or by "80-84", or by
-"Northern Ireland". Put all three together and you might be describing two
-people in the country. **The danger is never in one column. It is in the
-combination.** This is the whole point of Challenge 2.
-
-**Small-number suppression** — the same idea applied to summary tables. A
-cell reading "2" tells you there are two such people, which leaks just as
-badly as publishing their rows.
-
-**Quasi-identifier** — a column that does not identify anybody on its own but
-helps do so in combination. Age band, sex and region are the classic three.
+**Consistency** — a pseudonym is only useful if the same person gets the
+same pseudonym everywhere they appear. Build it differently in two tables and
+those tables stop joining — and nothing tells you, because an empty
+result is not an error.
 
 ---
 

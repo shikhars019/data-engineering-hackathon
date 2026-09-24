@@ -70,7 +70,8 @@ Your job is to turn it into something trustworthy.
 ### Challenge 2 — Share it safely *(60 minutes)*
 
 Analysts and researchers need this data. They must never see who anybody is.
-Build the pipeline that publishes it safely.
+Replace the National Insurance number with a pseudonym in two tables — and
+keep the join between them working.
 
 **The same challenge for every team** → [challenge-2/BRIEF.md](challenges/challenge-2/BRIEF.md)
 
@@ -183,7 +184,7 @@ SQL is the easy half.
 | [docs/01-setup-macos.md](docs/01-setup-macos.md) | Installing everything |
 | [docs/04-running-tests.md](docs/04-running-tests.md) | Reading your score, fixing common errors |
 | [docs/05-sql-cheatsheet.md](docs/05-sql-cheatsheet.md) | Every SQL function you need today |
-| [docs/06-glossary.md](docs/06-glossary.md) | NINO? k-anonymity? Explained plainly |
+| [docs/06-glossary.md](docs/06-glossary.md) | NINO? Pseudonymisation? Explained plainly |
 | [docs/99-fallback-postgres-app.md](docs/99-fallback-postgres-app.md) | If Docker will not work on your Mac |
 
 ---

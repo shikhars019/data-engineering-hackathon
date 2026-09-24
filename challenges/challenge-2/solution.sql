@@ -5,279 +5,224 @@
 -- THIS IS YOUR FILE. Edit it, save it, then run:   ./check.sh 2
 --
 -- THE SITUATION
---   Analysts, researchers and the Office for National Statistics all want
---   to study State Pension data. They have good reasons: spotting regional
---   inequality, forecasting spending, checking nobody is being missed.
+--   Analysts and researchers want to study pension payments. They have good
+--   reasons: forecasting spending, spotting gaps, checking nobody is missed.
 --
 --   They must never see who anybody is.
 --
---   The curated schema is clean, finished data - and full of names, dates
---   of birth, home addresses and National Insurance numbers. Your job is
---   to publish a version of it into the analytics schema that is useful
---   to an analyst and useless to someone trying to find their neighbour.
+--   The curated schema holds two clean tables, joined on the National
+--   Insurance number:
 --
---   This is a real job. It has a name: disclosure control.
+--        curated.claimant  ----- nino ----->  curated.payment
+--        (who they are)                       (what they were paid)
+--
+--   Your job is to publish both tables into the analytics schema with the
+--   National Insurance number replaced by a pseudonym - and with the join
+--   between them still working.
+--
+--   That last part is the whole challenge. Anyone can delete a column. The
+--   skill is removing the identifier while keeping the data usable.
 --
 -- ---------------------------------------------------------------------------
--- YOUR JOB: SEVEN LINES
+-- YOUR JOB: THREE LINES
 --
 -- Most of this file is explanation. The pipeline is already written, and
 -- you should leave nearly all of it alone.
 --
--- There are exactly seven lines to change. Every one is marked like this:
+-- There are exactly three lines to change. Every one is marked like this:
 --
 --        <<<<<< EDIT THIS LINE
 --
 -- Search for EDIT to jump between them.
 --
---   Task 1  Create the tables            (done for you - read the columns)
---   Task 2  Pseudonymise the person      line  109   <- start here
---   Task 3  Age band instead of birthday (done for you - Task 7 revisits it)
---   Task 4  Region instead of postcode   line  147
---   Task 5  Leave the personal data out  (nothing to do - that is the point)
---   Task 6  The claims table             lines 174 and 175
---   Task 7  k-anonymity                  lines 126 and 127  (the two age bands)
---   Task 8  The summary table            line  256
+--   Task 1  Create the two tables      (done for you - read the columns)
+--   Task 2  Pseudonymise the claimant  line  120   <- start here
+--   Task 3  Pseudonymise the payment   line  181
+--   Task 4  Publish a flag, not a date line  142
+--   Task 5  Leave the personal columns out   (nothing to do - that is the point)
 --
--- It already runs, and eight tests already pass. Run ./check.sh 2 now,
--- before changing anything, so you can see where you are starting from.
+-- Then two bonus tasks at the bottom, once the core tests are green.
+--
+-- It already runs. Run ./check.sh 2 now, before changing anything, so you
+-- can see where you are starting from.
 -- ===========================================================================
 
-DROP TABLE IF EXISTS analytics.agg_claims_by_region;
-DROP TABLE IF EXISTS analytics.fct_claim_anon;
-DROP TABLE IF EXISTS analytics.dim_claimant_anon;
+DROP TABLE IF EXISTS analytics.payment_summary;
+DROP TABLE IF EXISTS analytics.payment_anon;
+DROP TABLE IF EXISTS analytics.claimant_anon;
 
 
 -- ---------------------------------------------------------------------------
 -- TASK 1 - The shape of what you are publishing. Written for you.
 --
--- Read the column lists. Notice what is NOT there: no name, no NINO, no
--- date of birth, no postcode, no email, no phone. Deciding what not to
--- publish is most of this job, and it has already been decided here.
+-- Read the column lists, and notice what is NOT there: no name, no National
+-- Insurance number, no date of birth, no email, no phone.
+--
+-- Deciding what not to publish is most of this job, and it has already been
+-- decided for you here.
 -- ---------------------------------------------------------------------------
-CREATE TABLE analytics.dim_claimant_anon (
-    person_pseudo_id  TEXT PRIMARY KEY,
-    age_band          TEXT,
-    sex               TEXT,
-    region            TEXT,
-    marital_status    TEXT,
-    is_deceased       BOOLEAN
+CREATE TABLE analytics.claimant_anon (
+    person_id    TEXT PRIMARY KEY,
+    sex          CHAR(1),
+    age_band     TEXT,          -- stays empty until Bonus A
+    is_deceased  BOOLEAN
 );
 
-CREATE TABLE analytics.fct_claim_anon (
-    claim_pseudo_id     TEXT PRIMARY KEY,
-    person_pseudo_id    TEXT,
-    claim_year_month    TEXT,
-    claim_status        TEXT,
-    pension_type        TEXT,
-    weekly_amount_band  TEXT,
-    payment_frequency   TEXT
+CREATE TABLE analytics.payment_anon (
+    payment_id      TEXT PRIMARY KEY,
+    person_id       TEXT,
+    payment_date    DATE,
+    amount          NUMERIC(10,2),
+    payment_method  TEXT
 );
 
 
-INSERT INTO analytics.dim_claimant_anon
+INSERT INTO analytics.claimant_anon
 SELECT
     ----------------------------------------------------------------
     -- TASK 2 - Replace the person with a pseudonym   <<< START HERE
     --
     -- md5(text) turns any text into a 32-character fingerprint. The same
-    -- input always gives the same fingerprint, which is what lets you
-    -- still join tables together - but you cannot turn a fingerprint
-    -- back into the original.
+    -- input always gives the same fingerprint - which is exactly what lets
+    -- the join keep working - but you cannot turn a fingerprint back into
+    -- the original.
     --
-    -- Except you can, if the input is predictable. There are only about
-    -- a billion possible NINOs. A laptop can hash every single one of
-    -- them in a couple of minutes, build a lookup table, and match your
-    -- "anonymous" data straight back to real people. That is called a
-    -- dictionary attack.
+    -- Except you can, if the input is predictable. There are only about a
+    -- billion possible National Insurance numbers. A laptop can hash every
+    -- single one of them in a couple of minutes, build a lookup table, and
+    -- match your "anonymous" data straight back to real people. That is
+    -- called a dictionary attack.
     --
     -- The fix is a SALT: a secret string mixed in before hashing. Without
-    -- it the attacker cannot build their table. The salt lives in
-    -- meta.etl_config, which is NOT published.
+    -- it an attacker cannot build that table. The salt lives in
+    -- meta.etl_config, which is never published.
     --
     -- LOOK FIRST:
-    --   SELECT * FROM meta.etl_config;
+    --   ./explore.sh sql "SELECT * FROM meta.etl_config"
     --
-    -- One of the tests deliberately checks for this. An unsalted hash
-    -- will fail it.
+    -- The line below hashes the NINO, but with no salt at all. One of the
+    -- tests deliberately catches that.
     --
-    -- TODO: mix the salt in before the NINO. The salt is:
+    -- TODO: mix the salt in before the NINO. The salt is
+    --
     --         (SELECT value FROM meta.etl_config
     --          WHERE setting = 'pseudonymisation_salt')
-    --       and  ||  glues text together.
+    --
+    --       and  ||  glues text together, so you want
+    --       md5( <the salt>  ||  c.nino ).
+    --
+    -- READ the salt from meta.etl_config rather than typing the text
+    -- into your SQL. Both give the same answer today - but a salt gets
+    -- rotated, and when it does you want to change it in one place, not
+    -- hunt through every script that ever hardcoded it. Secrets pasted
+    -- into code also end up in version control, where they stay forever.
     ----------------------------------------------------------------
     md5(c.nino),                                                  -- <<<<<< EDIT THIS LINE
 
-    ----------------------------------------------------------------
-    -- TASK 3 - Age band instead of date of birth
-    --
-    -- An exact date of birth identifies people. An age band does not.
-    --
-    -- Ages are worked out against DATE '2026-04-06', never today's date,
-    -- so that everybody's answer matches.
-    --
-    -- This is written for you and it works. You WILL come back and
-    -- change the last two bands in Task 7 - that is the point of Task 7.
-    ----------------------------------------------------------------
-    CASE
-        WHEN date_part('year', age(DATE '2026-04-06', c.date_of_birth)) < 70 THEN '65-69'
-        WHEN date_part('year', age(DATE '2026-04-06', c.date_of_birth)) < 75 THEN '70-74'
-        WHEN date_part('year', age(DATE '2026-04-06', c.date_of_birth)) < 80 THEN '75-79'
-        WHEN date_part('year', age(DATE '2026-04-06', c.date_of_birth)) < 85 THEN '80-84'  -- <<<<<< EDIT THIS LINE
-        ELSE '85+'                                                                          -- <<<<<< EDIT THIS LINE
-    END,
-
     c.sex,
 
+    -- age_band stays empty for now. Bonus A fills it in.
+    NULL,
+
     ----------------------------------------------------------------
-    -- TASK 4 - Region instead of postcode
+    -- TASK 4 - Publish the fact, not the date
     --
-    -- Right now this publishes the full postcode. A full UK postcode
-    -- covers about fifteen houses. Combined with an age and a sex, that
-    -- is a name and address.
+    -- curated.claimant has a date_of_death. An exact date of death is
+    -- personal information, and an analyst almost never needs it - what
+    -- they need is whether the person has died.
     --
-    -- What an analyst actually needs is the region.
+    -- So publish a true/false, not a date.
     --
-    -- The join to ref.postcode_area is already written below - it takes
-    -- the letters off the front of the postcode ('SW1A 1AA' -> 'SW') and
-    -- looks up which region that is.
+    -- In SQL a comparison is already true or false, so you do not need a
+    -- CASE here. c.date_of_death IS NOT NULL is true for somebody who has
+    -- died and false for somebody who has not.
     --
-    -- TODO: publish  r.region  instead of the postcode.
+    -- TODO: replace  false  with  (c.date_of_death IS NOT NULL)
     ----------------------------------------------------------------
-    a.postcode,                                                   -- <<<<<< EDIT THIS LINE
+    false                                                         -- <<<<<< EDIT THIS LINE
 
-    c.marital_status,
-    (c.date_of_death IS NOT NULL)
-
--- TASK 5 - Notice there is no line here for name, email, phone or NINO.
--- Not selecting them IS the suppression step. It is the easiest task of
--- the day and the one that matters most.
-FROM curated.claimant c
-JOIN curated.address a
-  ON a.nino = c.nino AND a.is_current
-LEFT JOIN ref.postcode_area r
-  ON r.area_code = substring(a.postcode from '^[A-Z]{1,2}');
+-- TASK 5 - Notice there is no line here for the name, the email, the phone
+-- or the date of birth. Not selecting them IS the suppression step. It is
+-- the easiest task of the day and the one that matters most.
+FROM curated.claimant c;
 
 
 -- ---------------------------------------------------------------------------
--- TASK 6 - The claims table
+-- TASK 3 - The payment table, and the point of the whole challenge
 --
--- The important bit: person_pseudo_id must be made EXACTLY the same way
--- here as in the table above. If the recipes differ by so much as a
--- space, nothing joins and the whole warehouse is useless.
+-- Run this file, then look at what came out:
 --
--- TODO: apply the same salted hash you worked out in Task 2 - in BOTH
---       places below.
+--   ./explore.sh peek analytics.payment_anon
+--
+-- The person_id column is still full of raw National Insurance numbers.
+-- That is the exact thing you were told not to publish, and a test is
+-- already failing because of it.
+--
+-- But there is a second, subtler problem. Try joining your two published
+-- tables together:
+--
+--   ./explore.sh sql "SELECT count(*) FROM analytics.payment_anon p
+--                     JOIN analytics.claimant_anon c ON c.person_id = p.person_id"
+--
+-- You get 0. Not an error - just nothing. One table holds hashes and the
+-- other holds NINOs, so no row matches any other row. The data is
+-- published, it looks fine, and it is completely useless.
+--
+-- THIS IS THE LESSON. A pseudonym has to be built the SAME WAY everywhere
+-- it appears, or the tables stop joining and nobody notices until an
+-- analyst quietly reports a total of zero.
+--
+-- TODO: use exactly the same expression you worked out in Task 2, with
+--       p.nino instead of c.nino. Copy it character for character.
 -- ---------------------------------------------------------------------------
-INSERT INTO analytics.fct_claim_anon
+INSERT INTO analytics.payment_anon
 SELECT
-    md5(cl.claim_ref),                                            -- <<<<<< EDIT THIS LINE
-    md5(cl.nino),                                                 -- <<<<<< EDIT THIS LINE
-    to_char(cl.claim_start_date, 'YYYY-MM'),
-    cl.claim_status,
-    cl.pension_type,
-    CASE
-        WHEN cl.weekly_amount < 100 THEN 'under 100'
-        WHEN cl.weekly_amount < 150 THEN '100-149'
-        WHEN cl.weekly_amount < 200 THEN '150-199'
-        WHEN cl.weekly_amount < 250 THEN '200-249'
-        ELSE '250 and over'
-    END,
-    cl.payment_frequency
-FROM curated.claim cl;
-
-
--- ===========================================================================
--- TASK 7 - k-anonymity: the real lesson of the whole challenge
---
--- Run ./check.sh 2 now. However carefully you did Tasks 2 to 6, the
--- k-anonymity test still fails. Nothing is broken - you have just met the
--- actual problem.
---
--- Every column you published is harmless on its own. Nobody is identified
--- by "female", or by "80-84", or by "Northern Ireland". But put all three
--- together and you might be describing two people in the whole country -
--- and anyone who knows their neighbour is an 82-year-old widow in Belfast
--- now knows what she is paid.
---
--- k-anonymity is the rule that stops this: every published combination
--- must describe at least k people. The agency uses k = 5.
---
--- SEE THE PROBLEM FOR YOURSELF - run this:
---
---     SELECT age_band, sex, region, count(*) AS people
---     FROM analytics.dim_claimant_anon
---     GROUP BY 1, 2, 3
---     HAVING count(*) < 5
---     ORDER BY people;
---
--- Look at which band keeps appearing. There simply are not many people
--- aged 85 and over in any one region.
---
--- THE FIX: make the bands wider. If '80-84' and '85+' were a single
--- '80+' band, every one of those small groups would be big enough.
---
--- You lose a little detail. You gain the ability to publish at all. That
--- trade-off is the job.
---
--- TODO: go back to Task 3 and merge the last two bands into a single
---       '80+'. The two marked lines up there become one:
---
---           ELSE '80+'
---
---       Then run ./check.sh 2 again.
--- ===========================================================================
-
-
--- ===========================================================================
--- TASK 8 - The summary table, and the same trap one level up
---
--- Most analysts never touch the row-level data. They want a summary:
--- how many claims, by region and age band.
---
--- But a summary leaks in exactly the same way. A cell reading "2" tells
--- you there are two people in that region and age band - which is no
--- better than publishing the two rows themselves. Widening the age bands
--- in Task 7 protected the detailed table; it does not automatically
--- protect a count.
---
--- So the same rule applies: any count below 5 is replaced with NULL.
---
--- Note NULL, not zero, and not a deleted row. An analyst needs to be
--- able to tell "too small to publish" apart from "nobody lives here".
--- Deleting the row would quietly change the total.
---
--- TODO: finish the CASE below so counts under 5 become NULL.
--- ---------------------------------------------------------------------------
-CREATE TABLE analytics.agg_claims_by_region AS
-SELECT
-    d.region,
-    d.age_band,
-    count(*) AS claim_count                                       -- <<<<<< EDIT THIS LINE
-FROM analytics.fct_claim_anon f
-JOIN analytics.dim_claimant_anon d
-  ON d.person_pseudo_id = f.person_pseudo_id
-GROUP BY d.region, d.age_band;
+    p.payment_id,
+    p.nino,                                                       -- <<<<<< EDIT THIS LINE
+    p.payment_date,
+    p.amount,
+    p.payment_method
+FROM curated.payment p;
 
 
 -- ===========================================================================
 -- BONUS - only once every core test is green
 -- ===========================================================================
 --
--- BONUS A - Check you suppressed the counts rather than dropping the
---   rows. Every region should still appear in the summary, even if some
---   of its numbers are blank.
+-- BONUS A - An age band instead of a date of birth
 --
--- BONUS B - None of this helps if an analyst can just read curated
---   instead. Create a role that can read analytics and nothing else:
+--   An exact date of birth identifies people; an age band does not. The
+--   age_band column is sitting there empty.
 --
---   CREATE ROLE analyst_ro NOLOGIN;
---   GRANT USAGE ON SCHEMA analytics TO analyst_ro;
---   GRANT SELECT ON ALL TABLES IN SCHEMA analytics TO analyst_ro;
---   REVOKE ALL ON SCHEMA curated FROM analyst_ro;
---   REVOKE ALL ON ALL TABLES IN SCHEMA curated FROM analyst_ro;
+--   Work the age out against DATE '2026-04-06', never today's date, so
+--   that everybody's answer matches:
 --
--- BONUS C - Run ./check.sh 2 twice in a row. Does it still pass? A
---   pipeline you cannot safely re-run is a pipeline somebody has to
---   babysit at 3am.
+--       date_part('year', age(DATE '2026-04-06', c.date_of_birth))
+--
+--   Replace the  NULL  in the claimant query above with a CASE giving
+--   '65-69', '70-74', '75-79', '80-84' or '85+'. Watch your boundaries:
+--   70-74 means 70, 71, 72, 73 and 74.
+--
+--       CASE
+--           WHEN date_part('year', age(DATE '2026-04-06', c.date_of_birth)) < 70 THEN '65-69'
+--           ...
+--           ELSE '85+'
+--       END
+--
+--
+-- BONUS B - A summary table, built through the join
+--
+--   Analysts mostly want totals, not rows. Build one row per person: how
+--   many payments, and how much in total. This only works if Task 3 is
+--   right, so it doubles as proof that your join survived.
+--
+--   Uncomment and finish:
+--
+-- CREATE TABLE analytics.payment_summary AS
+-- SELECT c.person_id,
+--        count(*)::int                AS payment_count,
+--        sum(p.amount)::numeric(12,2) AS total_paid
+-- FROM analytics.payment_anon p
+-- JOIN analytics.claimant_anon c ON ...   -- TODO: join them on person_id
+-- GROUP BY ...;                           -- TODO
 -- ===========================================================================

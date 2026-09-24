@@ -1,68 +1,71 @@
 # Challenge 2 — Safe Data for Analysts
 
-**60 minutes · 12 core tests + 3 bonus · the same challenge for every team**
+**60 minutes · 9 core tests + 3 bonus · the same challenge for every team**
 
 ---
 
 ## The situation
 
-It is the afternoon. Overnight, the pipeline has landed a clean, finished
-dataset in the `curated` schema — 1,468 pensioners, properly typed, properly
-conformed. Somebody else did the cleaning. It is good data.
+Overnight the pipeline has landed two clean tables in the `curated` schema.
+Somebody else did the cleaning. It is good data.
 
-It is also **full of personal information**: names, dates of birth, home
-addresses, National Insurance numbers.
+```
+   curated.claimant  ----- joined on nino ----->  curated.payment
+   who they are                                   what they were paid
+```
 
-Three groups have asked for access:
+It is also **full of personal information** — names, dates of birth, email
+addresses, phone numbers and National Insurance numbers.
 
-- **The agency's own analysts** forecasting how much State Pension will cost next year
-- **The Office for National Statistics** publishing regional breakdowns
-- **University researchers** studying pensioner poverty
+Analysts and researchers want it: forecasting what pensions will cost next
+year, checking nobody is being missed. They have good reasons. **None of
+them may ever see who anybody is.**
 
-All three have good reasons. None of them may ever see who anybody is.
+Your job is to publish both tables into the `analytics` schema with the
+National Insurance number replaced by a pseudonym — **and with the join
+between them still working**.
 
-> This is a real job with a real name: **disclosure control**. Every
-> statistical agency in the world employs people to do it, and when they get
-> it wrong it makes the news.
-
-Your job is to publish a version of `curated` into the `analytics` schema
-that is **useful to an analyst and useless to someone trying to find their
-neighbour**.
+> This is a real job with a real name: **pseudonymisation**. Anyone can
+> delete a column. The skill is removing the identifier while keeping the
+> data usable.
 
 ---
 
-## What you must not publish
+## The thing that makes it hard
 
-Names. National Insurance numbers. Email addresses. Phone numbers. Exact
-dates of birth. Full postcodes.
+Deleting the NINO is easy. Deleting it *and* keeping the two tables linked
+is not.
 
-The tests check for all of these — and not just by column name. One test
-searches **every text value in every analytics table** for anything shaped
-like a National Insurance number, and another does the same for postcodes.
-Renaming a column does not hide its contents.
+If you replace it with something random, the tables stop joining and the
+data is worthless. If you replace it with something predictable, you have
+not really hidden anything. It has to be **the same value every time, in
+both tables, and impossible to reverse**.
+
+Your starter file already gets this wrong on purpose. When you first run
+it, one table holds hashes and the other still holds raw National Insurance
+numbers, so joining them returns **zero rows**. Not an error — just
+nothing. That is the failure mode you are learning to avoid, and it is the
+one that gets shipped in real life, because nothing looks broken.
 
 ---
 
 ## Your tasks
 
-Open `challenges/challenge-2/solution.sql`. Everything is in there, with the
-guidance next to the code.
+Open `challenges/challenge-2/solution.sql`. There are **three lines to
+change**, and the file names them at the top.
 
 | # | Task | The idea |
 |---|---|---|
-| 1 | Create the tables — **written for you** | Notice what is *not* in the column list |
-| 2 | Replace each person with a pseudonym | Hashing, and why a **salt** matters |
-| 3 | Age band instead of date of birth | Generalisation |
-| 4 | Region instead of postcode | Generalisation |
-| 5 | Leave the personal columns out | The easiest task and the most important |
-| 6 | Build the claims table | Pseudonyms must be **consistent** or nothing joins |
-| 7 | **k-anonymity** | The real lesson. See below. |
-| 8 | The summary table | Small counts leak too |
+| 1 | Create the two tables — **written for you** | Notice what is *not* in the column list |
+| 2 | Pseudonymise the claimant | Hashing, and why a **salt** matters |
+| 3 | Pseudonymise the payment **the same way** | Consistency, or nothing joins |
+| 4 | Publish a flag, not a date of death | Derive the fact you need |
+| 5 | Leave name, email, phone and DOB out | The easiest task and the most important |
 
 ### Task 2 is worth understanding properly
 
-`md5()` turns text into a 32-character fingerprint that cannot be reversed.
-Except it can, if the input is predictable — there are only about a billion
+`md5()` turns text into a 32-character fingerprint you cannot reverse.
+Except you can, if the input is predictable — there are only about a billion
 possible National Insurance numbers, and a laptop can hash every one of them
 in a couple of minutes and match them against your "anonymous" data.
 
@@ -71,28 +74,29 @@ Mixing in a secret **salt** first makes that impossible. The salt lives in
 
 One test deliberately checks for this. An unsalted hash fails it.
 
-### Task 7 is the point of the whole challenge
+**Read the salt from the config table rather than typing it into your SQL.**
+Both work today, but salts get rotated — and when yours does, you want to
+change it in one place rather than hunting through every script that
+hardcoded it. Secrets pasted into code also end up in version control,
+where they stay forever.
 
-You will finish Tasks 2 to 6, run the tests, and one will still fail. Nothing
-is broken — you have met the actual problem.
+### Task 3 is the point of the whole challenge
 
-Every column you published is harmless on its own. Nobody is identified by
-"female", or by "80-84", or by "Northern Ireland". Put all three together and
-you may be describing **two people in the country** — and anybody who knows
-their neighbour is an 82-year-old widow in Belfast now knows what she is paid.
+Use **exactly** the same expression as Task 2, with `p.nino` instead of
+`c.nino`. Character for character.
 
-**k-anonymity** is the rule that prevents this: every published combination
-must describe at least *k* people. The agency uses k = 5.
+Two tests prove it worked: one counts the payments that find their person
+through the join, and one adds up the money. If your two recipes differ by
+so much as a space, both come back empty.
 
-Your file shows you how to see the failing groups for yourself, and how to
-fix them. The fix costs you a little detail and buys you the ability to
-publish at all. That trade-off is the job.
+### Bonus, once all nine core tests are green
 
-### Bonus, once all twelve core tests are green
-
-- **A** — Check you *suppressed* the small counts rather than deleting the rows
-- **B** — Create an `analyst_ro` role that can read `analytics` and nothing else
-- **C** — Run `./check.sh 2` twice. Does it still pass?
+- **A** — An age band instead of a date of birth. The `age_band` column is
+  already there and empty. Ages are worked out against `DATE '2026-04-06'`,
+  never today's date, so that everyone's answer matches.
+- **B** — Build `analytics.payment_summary`: one row per person, how many
+  payments and how much in total. It only works if Task 3 is right, so it
+  doubles as proof your join survived.
 
 ---
 
@@ -104,10 +108,8 @@ publish at all. That trade-off is the job.
 
 Your database is already running from this morning. You do not need to
 restart anything, and **you do not need Challenge 1 finished** — this
-challenge reads `curated`, which was prepared for you.
-
-The people in `curated` are a completely different set from the ones in your
-Challenge 1 data. Nothing you did this morning affects this.
+challenge reads `curated`, which was prepared for you. The people in it are
+a completely different set from your Challenge 1 data.
 
 ```bash
 ./explore.sh peek curated.claimant
@@ -118,10 +120,9 @@ Challenge 1 data. Nothing you did this morning affects this.
 
 ## The one thing to take away
 
-Anonymisation is not a checkbox, and deleting the name column is not the end
-of it. Identity hides in **combinations** — three harmless facts about
-somebody can add up to one person. Protecting people means thinking about
-what your data reveals together, not just field by field.
+Anonymising data is not deleting columns. It is replacing the parts that
+identify somebody while keeping everything that makes the data worth having.
 
-That is the difference between data that can be shared and data that cannot,
-and it is why this job exists.
+Get that wrong in the obvious direction and you publish someone's identity.
+Get it wrong in the other direction and you publish a table that joins to
+nothing, reports zero, and looks perfectly fine while doing it.
